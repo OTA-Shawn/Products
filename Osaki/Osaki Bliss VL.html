@@ -1,0 +1,921 @@
+<link
+  href="https://ota-shawn.github.io/productGlobalCss/style.css"
+  rel="stylesheet"
+/>
+<!-- <ul id="feature-section">
+<li><strong>Height Adjustable Ottoman</strong></li>
+<li>360° Swivel</li>
+<li><strong>SL-Track</strong></li>
+<li>Air Compression Hip Massage</li>
+<li><strong>Convenient Remote Controller</strong></li>
+<li>5 Auto Programs</li>
+<li>5 Massage Styles</li>
+</ul> -->
+<!-- more -->
+<script>
+  const youtube_link = "";
+
+  const osakiusa = false;
+
+  const imgs = [
+    {
+      img_order: "1",
+      img_name: "bliss_VL_main",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/1.bliss_VL_main-100.jpg?v=1689185401",
+    },
+    {
+      img_order: "2",
+      img_name: "bliss_VL_3D_massage",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/2.bliss_VL_3D_massage.jpg?v=1689185401",
+    },
+    {
+      img_order: "3",
+      img_name: "bliss_VL_remote",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.bliss_VL_remote-100.jpg?v=1689185401",
+    },
+    {
+      img_order: "4",
+      img_name: "bliss_VL_SL",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4.bliss_VL_SL-100.jpg?v=1689185401",
+    },
+    {
+      img_order: "5",
+      img_name: "bliss_VL_air-cells",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/5.bliss_VL_air-cells-100.jpg?v=1689185401",
+    },
+    {
+      img_order: "6",
+      img_name: "bliss_VL_reclining",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/6.bliss_VL_reclining-100.jpg?v=1689185401",
+    },
+    {
+      img_order: "7",
+      img_name: "bliss_VL_heating",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/7.bliss_VL_heating-100.jpg?v=1689185401",
+    },
+    {
+      img_order: "8",
+      img_name: "bliss_VL_icon_comfort",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/8.bliss_VL_icon_comfort-100.jpg?v=1689185415",
+    },
+    {
+      img_order: "9",
+      img_name: "bliss_VL_icon_back_waist",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/9.bliss_VL_icon_back_waist-100.jpg?v=1689185414",
+    },
+    {
+      img_order: "10",
+      img_name: "bliss_VL_icon_relax",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.bliss_VL_icon_relax-100.jpg?v=1689185414",
+    },
+    {
+      img_order: "11",
+      img_name: "bliss_VL_icon_full_body",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/11.bliss_VL_icon_full_body-100.jpg?v=1689185414",
+    },
+    {
+      img_order: "12",
+      img_name: "bliss_VL_icon_shoulder_neck",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12.bliss_VL_icon_shoulder_neck-100.jpg?v=1689185414",
+    },
+    {
+      img_order: "13",
+      img_name: "bliss_VL_icon_knead",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/13.bliss_VL_icon_knead-100.jpg?v=1689185427",
+    },
+    {
+      img_order: "14",
+      img_name: "bliss_VL_icon_shiatsu",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/14.bliss_VL_icon_shiatsu-100.jpg?v=1689185427",
+    },
+    {
+      img_order: "15",
+      img_name: "bliss_VL_icon_tapping",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/15.bliss_VL_icon_tapping-100.jpg?v=1689185427",
+    },
+    {
+      img_order: "16",
+      img_name: "bliss_VL_icon_knock",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/16.bliss_VL_icon_knock-100.jpg?v=1689185427",
+    },
+    {
+      img_order: "17",
+      img_name: "bliss_VL_icon_kenad-pat",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/17.bliss_VL_icon_kenad-pat-100.jpg?v=1689185427",
+    },
+    {
+      img_order: "18",
+      img_name: "bliss_VL_height",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/18.bliss_VL_height-100.jpg?v=1689185401",
+    },
+    {
+      img_order: "19",
+      img_name: "bliss_VL_360_swivel",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19.bliss_VL_360_swivel-100.jpg?v=1689185401",
+    },
+    {
+      img_order: "20",
+      img_name: "bliss_VL_headrest",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/20.bliss_VL_headrest-100.jpg?v=1689185401",
+    },
+    {
+      img_order: "21",
+      img_name: "bliss_VL_pockets",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/21.bliss_VL_pockets-100.jpg?v=1689185402",
+    },
+    {
+      img_order: "22",
+      img_name: "Bluetooth_icon",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/22.Bluetooth_icon-100.jpg?v=1689185572",
+    },
+    {
+      img_order: "23",
+      img_name: "bliss_VL_speakers",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/23.bliss_VL_speakers-100.jpg?v=1689185401",
+    },
+    {
+      img_order: "24",
+      img_name: "bliss_VL_USB",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/24.bliss_VL_USB-100.jpg?v=1689185401",
+    },
+    {
+      img_order: "25",
+      img_name: "bliss_VL_dimension1",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/25.bliss_VL_dimension1-100.jpg?v=1689185401",
+    },
+    {
+      img_order: "26",
+      img_name: "bliss_VL_dimension2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/26.bliss_VL_dimension2-100.jpg?v=1689185401",
+    },
+  ];
+</script>
+<meta charset="UTF-8" />
+<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<script
+  crossorigin="anonymous"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  <!--
+    :root {
+      --section-bg-color: #f2f2f2;
+      --section-strong-color: #58595b;
+      --section-header-color: #58595b;
+      --section-content-color: #a0a2a3;
+      --section-grid-color: #a0a2a3;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .sections {
+      max-width: 1024px;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sections strong {
+      color: var(--section-strong-color);
+    }
+
+    .sections .section {
+      background-color: var(--section-bg-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
+    .section img,
+    .section-content {
+      flex: 1 1 0%;
+    }
+
+    .section-content {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 50px;
+    }
+
+    .section-header {
+      font-size: 52px;
+      line-height: 65px;
+      color: var(--section-header-color);
+    }
+
+    .section-description {
+      color: var(--section-content-color);
+      font-size: 22px;
+      line-height: 33px;
+    }
+
+    .circle {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 32px;
+    }
+
+    .circle > :first-child {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    .grid-section {
+      background-color: var(--section-bg-color);
+      color: var(--section-grid-color);
+      display: grid;
+      grid-column: span 2 / span 2;
+      padding: 50px 100px 50px;
+      gap: 50px;
+      margin-bottom: 50px;
+    }
+
+    .grid-section img {
+      margin: 0 0 0px 50px;
+    }
+
+    .grid-section .grid-item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .app-icon {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .app-icon img {
+      flex: 0 0 0;
+      width: 40%;
+    }
+
+    .grid-align {
+      text-align: left;
+    }
+
+    @media (max-width: 1024px) {
+      .sections {
+        max-width: 768px;
+      }
+
+      .sections .section {
+        margin-bottom: 35px;
+      }
+
+      .section img {
+        width: 50%;
+      }
+
+      .section .section-content {
+        gap: 22px;
+        padding: 35px;
+      }
+
+      .section-header {
+        font-size: 39px;
+        line-height: 58px;
+      }
+
+      .section-description {
+        font-size: 15px;
+        line-height: 24px;
+      }
+
+      .circle {
+        gap: 5px;
+        font-size: 24px;
+      }
+
+      .circle > :first-child {
+        width: 30px;
+        height: 30px;
+      }
+
+      .grid-section {
+        padding: 35px 75px 35px;
+        gap: 35px;
+        margin-bottom: 35px;
+      }
+
+      .grid-section img {
+        margin: 0 0 0px 35px;
+      }
+
+      .grid-section .grid-item {
+        gap: 15px;
+      }
+
+      .grid-align {
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .sections {
+        max-width: 480px;
+      }
+
+      .sections .section {
+        margin-bottom: 22px;
+      }
+
+      .section .section-content {
+        gap: 14px;
+        padding: 22px;
+      }
+
+      .section-header {
+        font-size: 26px;
+        line-height: 38px;
+      }
+
+      .section-description {
+        font-size: 10px;
+        line-height: 16px;
+      }
+
+      .circle {
+        gap: 4px;
+        font-size: 16px;
+      }
+
+      .circle > :first-child {
+        width: 20px;
+        height: 20px;
+      }
+
+      .grid-section {
+        padding: 20px 50px 20px;
+        gap: 20px;
+        margin-bottom: 20px;
+      }
+
+      .grid-section img {
+        margin: 0 0 0px 20px;
+        width: 20%;
+      }
+
+      .grid-section .grid-item {
+        gap: 10px;
+      }
+    }
+
+    .active-tab {
+      color: #191919;
+      border-bottom: 0.25em solid gray;
+    }
+  -->
+</style>
+<div id="tab-buttons" class="max-w-6xl mx-auto my-4">
+  <button
+    id="tab-button1"
+    class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center dark:text-gray-400 dark:hover:text-gray-300 active-tab"
+  >
+    Description
+  </button>
+  <button
+    id="tab-button2"
+    class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center t dark:text-gray-400 dark:hover:text-gray-300"
+  >
+    Reviews
+  </button>
+</div>
+<div class="sections">
+  <div id="youtube-link"></div>
+  <div class="section !bg-white !flex-col !mb-40 md:!mb-80">
+    <img alt="" class="!w-full" />
+    <div class="px-10 pt-10 pb-5 text-xl md:text-2xl lg:text-3xl text-center">
+      Introducing the Bliss Massage Chair, your ultimate source of relaxation
+      and rejuvenation. Designed with state-of-the-art technology and ergonomic
+      craftsmanship, the Bliss combines luxurious comfort with therapeutic
+      benefits, creating a truly blissful experience.
+    </div>
+    <div class="flex gap-10 justify-center">
+      <div class="circle">
+        <div class="bg-[#8E8680]"></div>
+        <div>Taupe</div>
+      </div>
+      <div class="circle">
+        <div class="bg-[#3A2521]"></div>
+        <div>Brown</div>
+      </div>
+      <div class="circle">
+        <div class="bg-[#1D1D1D]"></div>
+        <div>Black</div>
+      </div>
+    </div>
+  </div>
+  <div class="section flex flex-row-reverse">
+    <div class="section-content">
+      <div class="section-header">Shoulder Position Adjustment</div>
+      <div class="section-description">
+        The Bliss allows the rollers to move not only up and down, but also left
+        and right. This technology enables the chair to simulate the experience
+        of human hands while allowing the user to adjust the
+        <strong> speed in three levels </strong> and the
+        <strong>width in three increments</strong>.
+      </div>
+    </div>
+    <img alt="" />
+  </div>
+  <div class="section flex-row-reverse">
+    <img alt="" />
+    <div class="section-content">
+      <div class="section-header">Convenient Remote Controller</div>
+      <div class="section-description">
+        The Bliss includes a remote controller for easy navigation and
+        adjustment settings.
+      </div>
+    </div>
+  </div>
+  <div class="section flex flex-row-reverse">
+    <div class="section-content">
+      <div class="section-header">SL-track System</div>
+      <div class="section-description">
+        The SL-Track is made up of <strong>Laser-Crafted Steel</strong>. The
+        track allows the massage rollers to effortlessly reach all the way from
+        the head to the hip areas.
+      </div>
+    </div>
+    <img alt="" />
+  </div>
+  <div class="section flex-row-reverse">
+    <img alt="" />
+    <div class="section-content">
+      <div class="section-header">Air Compression Hip Massage</div>
+      <div class="section-description">
+        The Bliss incorporates <strong>2 air cells</strong> in the hip area to
+        provide a relaxing air compression massage. This massage can be adjusted
+        in <strong> two air intensity levels </strong>.
+      </div>
+    </div>
+  </div>
+  <div class="section flex flex-row-reverse">
+    <div class="section-content">
+      <div class="section-header">Easy Reclining Position</div>
+      <div class="section-description">
+        The Bliss massage chair allows you to recline back to about a
+        <strong> 60 degree angle </strong>. By turning the knob under the chair,
+        you are able to adjust the tension to bring the chair back up to the
+        upright position.
+      </div>
+    </div>
+    <img alt="" />
+  </div>
+  <div class="section flex flex-row-reverse">
+    <div class="section-content">
+      <div class="section-header">Lumbar Heat Therapy</div>
+      <div class="section-description">
+        The <strong>carbon coil</strong> in the Bliss will effectively warm and
+        help release tension in your lower back area.
+      </div>
+    </div>
+    <img alt="" />
+  </div>
+  <div class="grid-section text-black">
+    <div
+      class="col-span-2 text-2xl md:text-4xl text-center gap-5 flex justify-center items-center"
+    >
+      <strong>5 Auto Massage Programs</strong>
+    </div>
+    <div class="grid-item">
+      <img alt="" />
+      <div>1. Comfort</div>
+    </div>
+    <div class="grid-item">
+      <img alt="" />
+      <div>4. Back &amp; Waist</div>
+    </div>
+    <div class="grid-item">
+      <img alt="" />
+      <div>2. Relax</div>
+    </div>
+    <div class="grid-item">
+      <img alt="" />
+      <div>5. Full Body Massage</div>
+    </div>
+    <div class="grid-item">
+      <img alt="" />
+      <div>3. Shoulder &amp; Neck</div>
+    </div>
+  </div>
+  <div class="grid-section text-black">
+    <div
+      class="col-span-2 text-2xl md:text-4xl text-center gap-5 flex justify-center items-center"
+    >
+      <strong>5 Manual Massage Modes</strong>
+    </div>
+    <div class="grid-item">
+      <img alt="" />
+      <div class="display flex flex-col">
+        <svg height="20" width="100">
+          <circle
+            cx="11"
+            cy="10"
+            r="9"
+            stroke="#a0a2a3"
+            stroke-width="2"
+            fill="#a0a2a3"
+          ></circle>
+          <circle
+            cx="36"
+            cy="10"
+            r="9"
+            stroke="#a0a2a3"
+            stroke-width="2"
+            fill="none"
+          ></circle>
+          <circle
+            cx="61"
+            cy="10"
+            r="9"
+            stroke="#a0a2a3"
+            stroke-width="2"
+            fill="none"
+          ></circle>
+        </svg>
+        <div>Kneading</div>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img alt="" />
+      <div class="display flex flex-col">
+        <svg height="20" width="100">
+          <circle
+            cx="11"
+            cy="10"
+            r="9"
+            stroke="#a0a2a3"
+            stroke-width="2"
+            fill="#a0a2a3"
+          ></circle>
+          <circle
+            cx="36"
+            cy="10"
+            r="9"
+            stroke="#a0a2a3"
+            stroke-width="2"
+            fill="#a0a2a3"
+          ></circle>
+          <circle
+            cx="61"
+            cy="10"
+            r="9"
+            stroke="#a0a2a3"
+            stroke-width="2"
+            fill="none"
+          ></circle>
+        </svg>
+        <div>Shiatsu</div>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img alt="" />
+      <div class="display flex flex-col">
+        <svg height="20" width="100">
+          <circle
+            cx="11"
+            cy="10"
+            r="9"
+            stroke="#a0a2a3"
+            stroke-width="2"
+            fill="none"
+          ></circle>
+          <circle
+            cx="36"
+            cy="10"
+            r="9"
+            stroke="#a0a2a3"
+            stroke-width="2"
+            fill="#a0a2a3"
+          ></circle>
+          <circle
+            cx="61"
+            cy="10"
+            r="9"
+            stroke="#a0a2a3"
+            stroke-width="2"
+            fill="none"
+          ></circle>
+        </svg>
+        <div>Tapping</div>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img alt="" />
+      <div class="display flex flex-col">
+        <svg height="20" width="100">
+          <circle
+            cx="11"
+            cy="10"
+            r="9"
+            stroke="#a0a2a3"
+            stroke-width="2"
+            fill="none"
+          ></circle>
+          <circle
+            cx="36"
+            cy="10"
+            r="9"
+            stroke="#a0a2a3"
+            stroke-width="2"
+            fill="#a0a2a3"
+          ></circle>
+          <circle
+            cx="61"
+            cy="10"
+            r="9"
+            stroke="#a0a2a3"
+            stroke-width="2"
+            fill="#a0a2a3"
+          ></circle>
+        </svg>
+        <div>Knock</div>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img alt="" />
+      <div class="display flex flex-col">
+        <svg height="20" width="100">
+          <circle
+            cx="11"
+            cy="10"
+            r="9"
+            stroke="#a0a2a3"
+            stroke-width="2"
+            fill="none"
+          ></circle>
+          <circle
+            cx="36"
+            cy="10"
+            r="9"
+            stroke="#a0a2a3"
+            stroke-width="2"
+            fill="none"
+          ></circle>
+          <circle
+            cx="61"
+            cy="10"
+            r="9"
+            stroke="#a0a2a3"
+            stroke-width="2"
+            fill="#a0a2a3"
+          ></circle>
+        </svg>
+        <div>Knead Pat</div>
+      </div>
+    </div>
+  </div>
+  <div class="section flex-row-reverse">
+    <img alt="" class="" />
+    <div class="section-content">
+      <div class="section-header">Adjustable Ottoman Height</div>
+      <div class="section-description">
+        The ottoman can be easily lift up to <strong>7 inches</strong> by
+        pulling on the handle
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <img alt="" class="" />
+    <div class="section-content">
+      <div class="section-header">360° Swivel</div>
+      <div class="section-description">
+        The Bliss gives a full 360° swivel, allowing for easy rotation.
+      </div>
+    </div>
+  </div>
+  <div class="section flex-row-reverse">
+    <img alt="" class="" />
+    <div class="section-content">
+      <div class="section-header">Removable Headrest</div>
+      <div class="section-description">
+        The Bliss has a removable headrest pillow that can be flipped back to
+        experience a much deeper neck and shoulder massage.
+      </div>
+    </div>
+  </div>
+  <div class="section flex flex-row-reverse">
+    <img alt="" class="" />
+    <div class="section-content">
+      <div class="section-description">Side Pockets for Phone and Remote</div>
+    </div>
+  </div>
+  <div class="flex justify-between gap-5 md:gap-10 mb-5 md:mb-10">
+    <div
+      class="!p-0 section-content md:text-xl lg:text-2xl flex-1 flex flex-col justify-between"
+      style="background-color: var(--section-bg-color)"
+    >
+      <div class="flex items-center gap-4 p-4 md:p-8 lg:p-10 !pb-0">
+        <img alt="" class="" />
+        <div class="text-sm md:text-xl lg:text-2xl font-semibold md:mb-2">
+          Bluetooth Surround Sound Speakers
+        </div>
+      </div>
+      <img alt="" class="w-full" />
+    </div>
+    <div
+      class="section-content md:text-xl lg:text-2xl flex-1 flex flex-col-reverse justify-between relative !p-0 !gap-0"
+      style="background-color: var(--section-bg-color)"
+    >
+      <div class="section-content !pb-0">
+        <div class="section-header !text-2xl">USB Charging Ports</div>
+        <div class="section-description">for USB Type C and Type A</div>
+      </div>
+      <img alt="" class="" />
+    </div>
+  </div>
+  <div class="section-dimensions">
+    <div class="text-3xl lg:text-5xl text-center mt-40">Dimensions</div>
+    <div class="flex flex-col lg:flex-row justify-between gap-5 md:gap-10">
+      <img alt="" /><img alt="" />
+    </div>
+  </div>
+</div>
+<section class="section-specs section-pad-bottom">
+  <div class="table-tap">
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Product Name</div>
+        <div class="specs-column">OS Bliss VL</div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">User Manual</div>
+        <div class="specs-column">
+          <a
+            href="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/Bliss_VL_Manual.pdf?v=1689196199"
+            style="color: #ff4800"
+            target="_blank"
+          >
+            Download
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Power Supply</div>
+        <div class="specs-column">110~120V AC</div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Rated Frequency</div>
+        <div class="specs-column">50/60 Hz</div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">
+          Dimensions <br />
+          (W x L x H)
+        </div>
+        <div class="specs-column">26" x 38.5" x 42"</div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Minimum Doorway Size</div>
+        <div class="specs-column">
+          <strong> Disassembled </strong> <br />
+          26"
+        </div>
+        <div class="specs-column">
+          <strong> Assembled </strong> <br />
+          26"
+        </div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Width</div>
+        <div class="specs-column">
+          <strong> Shoulder </strong> <br />
+          18"
+        </div>
+        <div class="specs-column">
+          <strong> Seat </strong> <br />
+          13"
+        </div>
+      </div>
+    </div>
+    <!-- <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Weight</div>
+          <div class="specs-column">
+            <strong> Net </strong>
+            <br />
+            213lbs
+          </div>
+          <div class="specs-column">
+            <strong> Gross </strong>
+            <br />
+            255lbs
+          </div>
+        </div>
+      </div> -->
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Auto Timer</div>
+        <div class="specs-column">20 Minutes</div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Max. User Weight</div>
+        <div class="specs-column">260lbs</div>
+      </div>
+    </div>
+    <!-- <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Length of Wire</div>
+          <div class="specs-column">
+            <strong> Controller Wire </strong>
+            <br />
+            1.2m
+          </div>
+          <div class="specs-column">
+            <strong> Power Supply Wire </strong>
+            <br />
+            2.1m
+          </div>
+        </div>
+      </div> -->
+  </div>
+</section>
+<script>
+  $(function () {
+    $.each($(".sections img"), (i, img) => {
+      $(img).attr("src", imgs[i].img_src);
+      $(img).attr("alt", imgs[i].img_name);
+    });
+
+    if (youtube_link != "") {
+      var youtube_id = youtube_link.split("watch?v=")[1].split("&")[0];
+      var src =
+        "https://www.youtube.com/embed/" + youtube_id + "?autoplay=1&mute=1";
+      var embed_html =
+        '<iframe class="w-full aspect-video mb-20" src=' +
+        src +
+        ' title="YouTube video player" frameborder="0" allowfullscreen></iframe>';
+      $("#youtube-link").append(embed_html);
+    }
+    $("#tab-button1").on("click", () => {
+      $("#tab-button1").addClass("active-tab");
+      $("#tab-button2").removeClass("active-tab");
+      $(".sections").fadeIn("slow");
+      $(".section-specs").fadeIn("slow");
+    });
+    $("#tab-button2").on("click", () => {
+      $("#tab-button1").removeClass("active-tab");
+      $("#tab-button2").addClass("active-tab");
+      $(".sections").fadeOut("slow");
+      $(".section-specs").fadeOut("slow");
+    });
+    if (osakiusa) {
+      $("#tab-buttons").addClass("hidden");
+      $("#feature-section").addClass("hidden");
+    }
+  });
+</script>

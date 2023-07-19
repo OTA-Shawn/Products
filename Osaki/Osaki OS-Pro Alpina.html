@@ -1,0 +1,888 @@
+<link
+  href="https://ota-shawn.github.io/productGlobalCss/style.css"
+  rel="stylesheet"
+/>
+<!-- <ul id="feature-section">
+<li>SL-Track</li>
+<li>Touchscreen Control</li>
+<li>Surround Sound Bluetooth Speakers</li>
+<li>12 Auto Programs</li>
+<li>6 Massage Styles</li>
+<li>Zero Gravity Reclining</li>
+<li>Specialized Foot Rollers</li>
+<li><strong> Full Body Compression Massage </strong></li>
+<li>Chromotherapy</li>
+<li><strong> Multi-lingual Support </strong></li>
+<li><strong> Auto Pressure Point Detection </strong></li>
+</ul> -->
+<!-- more -->
+<script>
+  const youtube_link =
+    "https://www.youtube.com/watch?v=E_iBWhqht7w&ab_channel=OfficialTitanOsakiMassageChannel";
+
+  const osakiusa = false;
+
+  const imgs = [
+    {
+      img_order: "1",
+      img_name: "alpina_main",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/1.alpina_main-100.jpg?v=1689373567",
+    },
+    {
+      img_order: "2",
+      img_name: "alpina_4D",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/2.alpina_4D-100.jpg?v=1689373567",
+    },
+    {
+      img_order: "3",
+      img_name: "alpina_touchscreen",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.alpina_touchscreen-100.jpg?v=1689373567",
+    },
+    {
+      img_order: "4",
+      img_name: "alpina_body_scan",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4.alpina_body_scan-100.jpg?v=1689373566",
+    },
+    {
+      img_order: "5",
+      img_name: "alpina_ache_sensor",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/5.alpina_ache_sensor-100.jpg?v=1689373566",
+    },
+    {
+      img_order: "6",
+      img_name: "alpina_SL-track",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/6.alpina_SL-track-100.jpg?v=1689373567",
+    },
+    {
+      img_order: "7",
+      img_name: "alpina_ZG",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/7.alpina_ZG-100.jpg?v=1689373567",
+    },
+    {
+      img_order: "8",
+      img_name: "alpina_SL-track",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/8.alpina_SL-track-100.jpg?v=1689373567",
+    },
+    {
+      img_order: "9",
+      img_name: "alpina_icon_general",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/9.alpina_icon_general-100.jpg?v=1689373567",
+    },
+    {
+      img_order: "10",
+      img_name: "alpina_icon_deep_tissue",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.alpina_icon_deep_tissue-100.jpg?v=1689373567",
+    },
+    {
+      img_order: "11",
+      img_name: "alpina_icon_recovery",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/11.alpina_icon_recovery-100.jpg?v=1689373567",
+    },
+    {
+      img_order: "12",
+      img_name: "alpina_icon_wakeup",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12.alpina_icon_wakeup-100.jpg?v=1689373567",
+    },
+    {
+      img_order: "13",
+      img_name: "alpina_icon_sleeping",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/13.alpina_icon_sleeping-100.jpg?v=1689373567",
+    },
+    {
+      img_order: "14",
+      img_name: "alpina_icon_healthy",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/14.alpina_icon_healthy-100.jpg?v=1689373567",
+    },
+    {
+      img_order: "15",
+      img_name: "alpina_icon_stretch",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/15.alpina_icon_stretch-100.jpg?v=1689373567",
+    },
+    {
+      img_order: "16",
+      img_name: "alpina_icon_older",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/16.alpina_icon_older-100.jpg?v=1689373567",
+    },
+    {
+      img_order: "17",
+      img_name: "alpina_icon_man_health",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/17.alpina_icon_man_health-100.jpg?v=1689373567",
+    },
+    {
+      img_order: "18",
+      img_name: "alpina_icon_woman",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/18.alpina_icon_woman-100.jpg?v=1689373567",
+    },
+    {
+      img_order: "19",
+      img_name: "alpina_icon_kidney_vigor",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19.alpina_icon_kidney_vigor-100.jpg?v=1689373567",
+    },
+    {
+      img_order: "20",
+      img_name: "alpina_icon_spleen_digest",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/20.alpina_icon_spleen_digest-100.jpg?v=1689373567",
+    },
+    {
+      img_order: "21",
+      img_name: "alpina_icon_ache_sensor",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/21.alpina_icon_ache_sensor-100.jpg?v=1689373567",
+    },
+    {
+      img_order: "22",
+      img_name: "alpina_icon_kneading",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/22.alpina_icon_kneading-100.jpg?v=1689373567",
+    },
+    {
+      img_order: "23",
+      img_name: "alpina_icon_shiatsu",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/23.alpina_icon_shiatsu-100.jpg?v=1689373567",
+    },
+    {
+      img_order: "24",
+      img_name: "alpina_icon_swedish",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/24.alpina_icon_swedish-100.jpg?v=1689373567",
+    },
+    {
+      img_order: "25",
+      img_name: "alpina_icon_clapping",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/25.alpina_icon_clapping-100.jpg?v=1689373567",
+    },
+    {
+      img_order: "26",
+      img_name: "alpina_icon_tapping",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/26.alpina_icon_tapping-100.jpg?v=1689373567",
+    },
+    {
+      img_order: "27",
+      img_name: "alpina_icon_rolling",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/27.alpina_icon_rolling-100.jpg?v=1689373567",
+    },
+    {
+      img_order: "28",
+      img_name: "alpina_heating",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/28.alpina_heating-100.jpg?v=1689373567",
+    },
+    {
+      img_order: "29",
+      img_name: "alpina_foot_rollers",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/29.alpina_foot_rollers-100.jpg?v=1689373567",
+    },
+    {
+      img_order: "30",
+      img_name: "alpina_seat_vibrations",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/30.alpina_seat_vibrations-100.jpg?v=1689373566",
+    },
+    {
+      img_order: "31",
+      img_name: "alpina_speakesr",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/31.alpina_speakesr-100.jpg?v=1689373567",
+    },
+    {
+      img_order: "32",
+      img_name: "alpina_dimension_1",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/32.alpina_dimension_1-100.jpg?v=1689373567",
+    },
+    {
+      img_order: "33",
+      img_name: "alpina_dimension_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/32.alpina_dimension_2-100.jpg?v=1689373567",
+    },
+  ];
+</script>
+<meta charset="UTF-8" />
+<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<script
+  crossorigin="anonymous"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  <!--
+    :root {
+      --section-bg-color: #f4f4f4;
+      --section-strong-color: #000000;
+      --section-header-color: #000000;
+      --section-content-color: #8b8d8f;
+      --section-grid-color: #000000;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .sections {
+      max-width: 1024px;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sections strong {
+      color: var(--section-strong-color);
+    }
+
+    .sections .section {
+      background-color: var(--section-bg-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
+    .section img,
+    .section-content {
+      flex: 1 1 0%;
+    }
+
+    .section-content {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 50px;
+    }
+
+    .section-header {
+      font-size: 52px;
+      line-height: 65px;
+      color: var(--section-header-color);
+    }
+
+    .section-description {
+      color: var(--section-content-color);
+      font-size: 22px;
+      line-height: 33px;
+    }
+
+    .circle {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 32px;
+    }
+
+    .circle > :first-child {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    .grid-section {
+      background-color: var(--section-bg-color);
+      color: var(--section-grid-color);
+      display: grid;
+      grid-column: span 2 / span 2;
+      padding: 50px 100px 50px;
+      gap: 50px;
+      margin-bottom: 50px;
+    }
+
+    .grid-section img {
+      margin: 0 0 0px 50px;
+    }
+
+    .grid-section .grid-item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .app-icon {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .app-icon img {
+      flex: 0 0 0;
+      width: 40%;
+    }
+
+    .grid-align {
+      text-align: left;
+    }
+
+    @media (max-width: 1024px) {
+      .sections {
+        max-width: 768px;
+      }
+
+      .sections .section {
+        margin-bottom: 35px;
+      }
+
+      .section img {
+        width: 50%;
+      }
+
+      .section .section-content {
+        gap: 22px;
+        padding: 35px;
+      }
+
+      .section-header {
+        font-size: 39px;
+        line-height: 58px;
+      }
+
+      .section-description {
+        font-size: 15px;
+        line-height: 24px;
+      }
+
+      .circle {
+        gap: 5px;
+        font-size: 24px;
+      }
+
+      .circle > :first-child {
+        width: 30px;
+        height: 30px;
+      }
+
+      .grid-section {
+        padding: 35px 75px 35px;
+        gap: 35px;
+        margin-bottom: 35px;
+      }
+
+      .grid-section img {
+        margin: 0 0 0px 35px;
+      }
+
+      .grid-section .grid-item {
+        gap: 15px;
+      }
+
+      .grid-align {
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .sections {
+        max-width: 480px;
+      }
+
+      .sections .section {
+        margin-bottom: 22px;
+      }
+
+      .section .section-content {
+        gap: 14px;
+        padding: 22px;
+      }
+
+      .section-header {
+        font-size: 26px;
+        line-height: 38px;
+      }
+
+      .section-description {
+        font-size: 10px;
+        line-height: 16px;
+      }
+
+      .circle {
+        gap: 4px;
+        font-size: 16px;
+      }
+
+      .circle > :first-child {
+        width: 20px;
+        height: 20px;
+      }
+
+      .grid-section {
+        padding: 20px 50px 20px;
+        gap: 20px;
+        margin-bottom: 20px;
+      }
+
+      .grid-section img {
+        margin: 0 0 0px 20px;
+        width: 20%;
+      }
+
+      .grid-section .grid-item {
+        gap: 10px;
+      }
+    }
+
+    .active-tab {
+      color: #191919;
+      border-bottom: 0.25em solid gray;
+    }
+  -->
+</style>
+<div id="tab-buttons" class="max-w-6xl mx-auto my-4">
+  <button
+    id="tab-button1"
+    class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center dark:text-gray-400 dark:hover:text-gray-300 active-tab"
+  >
+    Description
+  </button>
+  <button
+    id="tab-button2"
+    class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center t dark:text-gray-400 dark:hover:text-gray-300"
+  >
+    Reviews
+  </button>
+</div>
+<div class="sections">
+  <div id="youtube-link"></div>
+  <div class="section !bg-white !flex-col !mb-40 md:!mb-80">
+    <img alt="" class="!w-full" />
+    <div class="px-10 pt-10 pb-5 text-xl md:text-2xl lg:text-3xl text-center">
+      The OS-Pro Alpina offers a convenient and effective way to relieve muscle
+      tension and promote relaxation in the comfort of your own home. With body
+      ache scan technology, these chairs can provide a more targeted and
+      personalized massage experience to help alleviate pain and discomfort in
+      specific areas of the body.
+    </div>
+    <div class="flex gap-10 justify-center">
+      <div class="circle">
+        <div class="bg-[#8E8680]"></div>
+        <div>Taupe</div>
+      </div>
+      <div class="circle">
+        <div class="bg-[#3A2521]"></div>
+        <div>Brown</div>
+      </div>
+      <div class="circle">
+        <div class="bg-[#1D1D1D]"></div>
+        <div>Black</div>
+      </div>
+    </div>
+  </div>
+  <div class="section flex flex-row-reverse">
+    <div class="section-content">
+      <div class="section-header">Advanced Massage Mechanism</div>
+      <div class="section-description">
+        The advanced message mechanism lets you adjust the speed and width of
+        the rollers at any time in a massage, whether you are in auto or manual
+        mode.
+      </div>
+    </div>
+    <img alt="" />
+  </div>
+  <div class="section flex-row-reverse">
+    <img alt="" class="" />
+    <div class="section-content">
+      <div class="section-header">Touchscreen Remote</div>
+      <div class="section-description">
+        The Osaki OS-Pro Alpina is integrated with a touchscreen remote that
+        allows you to see all the functions along with the automatic programs.
+        The touchscreen is able to switch between English, Chinese, Spanish, and
+        French.
+      </div>
+    </div>
+  </div>
+  <div class="section flex-row-reverse">
+    <div class="section-content">
+      <div class="section-header">Auto Body Scan</div>
+      <div class="section-description">
+        Before initiating any automatic program, the Osaki OS-Pro Alpina will
+        conduct a body scan and map the key areas of the neck and back to ensure
+        a consistent amount of pressure. The scanning technology will also
+        detect your shoulder height, which can be recalibrated once the scan is
+        complete.
+      </div>
+    </div>
+    <img alt="" />
+  </div>
+  <div class="section flex-row-reverse">
+    <img alt="" />
+    <div class="section-content">
+      <div class="section-header">Ache Sensor</div>
+      <div class="section-description">
+        Sensors for your fingers rest in the armrest of the Osaki OS-Pro Alpina
+        massage chair. This helps the massage chair to detect points where you
+        have tension to focus your massage where you need it most.
+      </div>
+    </div>
+  </div>
+  <div class="section flex-row-reverse relative">
+    <img alt="" />
+    <div class="section-content absolute top-0 right-0 text-right items-end">
+      <div class="section-header">SL-track Technology</div>
+      <div class="section-description w-1/2">
+        The SL-Track is made up of Laser-Crafted Steel. The track allows the
+        massage rollers to cover the entirety of your body. The SL-Track reaches
+        all the way
+        <strong>from your neck and shoulders to your hamstrings</strong>.
+      </div>
+    </div>
+  </div>
+  <div class="section flex flex-col">
+    <div class="section-content">
+      <div class="section-header">Zero Gravity Reclining</div>
+      <div class="section-description">
+        Inspired by NASA, the <strong>Zero Gravity position</strong> is the
+        perfect position for ultimate relaxation. When you are placed in the
+        Zero Gravity position, the weight of your back is virtually supported by
+        the backrest which reduces compression along your spine. Your weight add
+        to the intensity of the massage.
+      </div>
+    </div>
+    <img alt="" />
+  </div>
+  <div class="section flex flex-row-reverse">
+    <div class="section-content">
+      <div class="section-header">
+        22 Cell <br />
+        Full Body <br />
+        Air Massage
+      </div>
+      <div class="section-description">
+        The Osaki OS-Pro Alpina includes <strong>22 airbags</strong> making it
+        efficient and reliable. The airbags are made from the latest technology,
+        allowing for the airbags to contour to the body an evenly distributing
+        the pressure.
+      </div>
+    </div>
+    <img alt="" />
+  </div>
+  <div class="grid-section text-black">
+    <div
+      class="col-span-2 text-2xl md:text-4xl text-center gap-5 flex justify-center items-center"
+    >
+      <strong>13 Auto Massage Modes</strong>
+    </div>
+    <div class="grid-item">
+      <img alt="" />
+      <div>General</div>
+    </div>
+    <div class="grid-item">
+      <img alt="" />
+      <div>Deep Tissue</div>
+    </div>
+    <div class="grid-item">
+      <img alt="" />
+      <div>Recovery</div>
+    </div>
+    <div class="grid-item">
+      <img alt="" />
+      <div>Wake up</div>
+    </div>
+    <div class="grid-item">
+      <img alt="" />
+      <div>Sleeping</div>
+    </div>
+    <div class="grid-item">
+      <img alt="" />
+      <div>Healthy Regimen</div>
+    </div>
+    <div class="grid-item">
+      <img alt="" />
+      <div>Stretching</div>
+    </div>
+    <div class="grid-item">
+      <img alt="" />
+      <div>Older Vitality</div>
+    </div>
+    <div class="grid-item">
+      <img alt="" />
+      <div>Man Health</div>
+    </div>
+    <div class="grid-item">
+      <img alt="" />
+      <div>Woman Beauty</div>
+    </div>
+    <div class="grid-item">
+      <img alt="" />
+      <div>Kidney Vigor</div>
+    </div>
+    <div class="grid-item">
+      <img alt="" />
+      <div>Spleen Digest</div>
+    </div>
+    <div class="grid-item">
+      <img alt="" />
+      <div>Ache Sensor</div>
+    </div>
+  </div>
+  <div class="grid-section text-black">
+    <div
+      class="col-span-2 text-2xl md:text-4xl text-center gap-5 flex justify-center items-center"
+    >
+      <strong>6 Manual Massage Modes</strong>
+    </div>
+    <div class="grid-item">
+      <img alt="" />
+      <div>Kneading</div>
+    </div>
+    <div class="grid-item">
+      <img alt="" />
+      <div>Shiatsu</div>
+    </div>
+    <div class="grid-item">
+      <img alt="" />
+      <div>Swedish</div>
+    </div>
+    <div class="grid-item">
+      <img alt="" />
+      <div>Clapping</div>
+    </div>
+    <div class="grid-item">
+      <img alt="" />
+      <div>Tapping</div>
+    </div>
+    <div class="grid-item">
+      <img alt="" />
+      <div>Rolling</div>
+    </div>
+  </div>
+  <div class="section flex-row-reverse">
+    <img alt="" class="" />
+    <div class="section-content">
+      <div class="section-header">Heating <br />Therapy</div>
+      <div class="section-description">
+        At the touch of the button, you can turn on the lower lumbar heat in a
+        massage mode. 2 pads are conveniently located to help loosen up the
+        lower lumbar area for a more thorough massage.
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <img alt="" class="" />
+    <div class="section-content">
+      <div class="section-header">Specialized <br />Foot Rollers</div>
+      <div class="section-description">
+        The Osaki OS-Pro Alpina provides soothing reflexology massage to the
+        soles of your feet, targeting the acupressure points to relieve tension
+        throughout the body. The spinning rollers knead away foot pain and
+        discomfort while the airbags increase circulation.
+      </div>
+    </div>
+  </div>
+  <div class="section flex-row-reverse">
+    <img alt="" class="" />
+    <div class="section-content">
+      <div class="section-header">Seat Vibrations</div>
+      <div class="section-description">
+        The Osaki OS-Pro Alpina is equipped with seat vibrations, which will
+        provide a soothing vibration through the seat area.
+      </div>
+    </div>
+  </div>
+  <div class="section relative">
+    <img alt="" class="mr-[30%]" />
+    <div
+      class="section-content section-description absolute !text-black top-0 right-0 m-[5%]"
+    >
+      HD Surround Sound Speakers
+    </div>
+  </div>
+  <div class="section-dimensions">
+    <div class="text-3xl lg:text-5xl text-center mt-40">Dimensions</div>
+    <div class="flex flex-col lg:flex-row justify-between gap-5 md:gap-10">
+      <img alt="" /><img alt="" />
+    </div>
+  </div>
+</div>
+<section class="section-specs section-pad-bottom">
+  <div class="table-tap">
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Product Name</div>
+        <div class="specs-column">Osaki Pro Alpina</div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">User Manual</div>
+        <div class="specs-column">
+          <a
+            href="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/Alpina_Manual.pdf?v=1654550698"
+            style="color: #ff4800"
+            target="_blank"
+          >
+            Download
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Rated Power Input</div>
+        <div class="specs-column">220W</div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Rate Voltage</div>
+        <div class="specs-column">50 / 60Hz</div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Rate Voltage</div>
+        <div class="specs-column">110 - 120V</div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Timer</div>
+        <div class="specs-column">30 min</div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">
+          Dimensions <br />
+          (W x L x H)
+        </div>
+        <div class="specs-column">
+          <strong> Upright </strong> <br />
+          33.1" x 63" x 45.3"
+        </div>
+        <div class="specs-column">
+          <strong> Reclined </strong> <br />
+          33.1" x 78.7" x 35.4"
+        </div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Shoulder Width</div>
+        <div class="specs-column">20 Inches</div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Seat Width</div>
+        <div class="specs-column">17 Inches</div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Minimum Doorway Size</div>
+        <div class="specs-column">32 Inches</div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Weight</div>
+        <div class="specs-column">
+          <strong> Net </strong> <br />
+          236.5lbs
+        </div>
+        <div class="specs-column">
+          <strong> Gross </strong> <br />
+          285.3lbs
+        </div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Length of Wire <br /></div>
+        <div class="specs-column">
+          <strong> Controller Wire </strong> <br />
+          59.0"
+        </div>
+        <div class="specs-column">
+          <strong> Power Supply Wire </strong> <br />
+          70.9"
+        </div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Storage Condition <br /></div>
+        <div class="specs-column">
+          <strong> Storage Temperature </strong> <br />
+          23°F~95°F
+        </div>
+        <div class="specs-column">
+          <strong> Storage Humidity </strong> <br />
+          20-80RH
+        </div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Maximum User Weight</div>
+        <div class="specs-column">260lbs</div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Maximum User Height</div>
+        <div class="specs-column">6'4"</div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  $(function () {
+    $.each($(".sections img"), (i, img) => {
+      $(img).attr("src", imgs[i].img_src);
+      $(img).attr("alt", imgs[i].img_name);
+    });
+
+    if (youtube_link != "") {
+      var youtube_id = youtube_link.split("watch?v=")[1].split("&")[0];
+      var src =
+        "https://www.youtube.com/embed/" + youtube_id + "?autoplay=1&mute=1";
+      var embed_html =
+        '<iframe class="w-full aspect-video mb-20" src=' +
+        src +
+        ' title="YouTube video player" frameborder="0" allowfullscreen></iframe>';
+      $("#youtube-link").append(embed_html);
+    }
+    $("#tab-button1").on("click", () => {
+      $("#tab-button1").addClass("active-tab");
+      $("#tab-button2").removeClass("active-tab");
+      $(".sections").fadeIn("slow");
+      $(".section-specs").fadeIn("slow");
+    });
+    $("#tab-button2").on("click", () => {
+      $("#tab-button1").removeClass("active-tab");
+      $("#tab-button2").addClass("active-tab");
+      $(".sections").fadeOut("slow");
+      $(".section-specs").fadeOut("slow");
+    });
+    if (osakiusa) {
+      $("#tab-buttons").addClass("hidden");
+      $("#feature-section").addClass("hidden");
+    }
+  });
+</script>

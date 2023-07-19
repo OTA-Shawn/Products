@@ -1,0 +1,986 @@
+<link
+  rel="stylesheet"
+  href="https://ota-shawn.github.io/productGlobalCss/style.css"
+/>
+<!-- <ul id="feature-section">
+    <li>
+      <strong> 4D Massage Mechanism </strong>
+    </li>
+    <li>
+      <strong> Heated Back Roller </strong>
+    </li>
+    <li>Computerized Body Scanning</li>
+    <li>SL-Track</li>
+    <li>8 Auto Programs &amp; 6 Massage Styles</li>
+    <li>Space Saving Technology</li>
+    <li>Zero Gravity Reclining</li>
+    <li>
+      <strong> Deep Calf Kneading </strong>
+    </li>
+    <li>Convenient Shortcut Panel</li>
+    <li>
+      <strong> Touchscreen Control </strong>
+    </li>
+    <li>Surround Sound Bluetooth Speakers</li>
+    <li>USB &amp; Wireless Phone Charger</li>
+  
+</ul> -->
+<!-- more -->
+<script>
+  const youtube_link =
+    "https://www.youtube.com/watch?v=tXcIyFM8OPw&t=3s&ab_channel=OfficialTitanOsakiMassageChannel";
+
+  const osakiusa = false;
+
+  const imgs = [
+    {
+      img_order: "1",
+      img_name: "maestroLE_main",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/1.maestroLE_main-100.jpg?v=1689358718",
+    },
+    {
+      img_order: "2",
+      img_name: "maestroLE__body_scan",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/2.maestroLE__body_scan-100.jpg?v=1689358718",
+    },
+    {
+      img_order: "3",
+      img_name: "maestroLE_touchscreen",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.maestroLE_touchscreen-100.jpg?v=1689358718",
+    },
+    {
+      img_order: "4",
+      img_name: "maestroLE_4D",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4.maestroLE_4D-100.jpg?v=1689358718",
+    },
+    {
+      img_order: "5",
+      img_name: "maestroLE_SL-track",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/5.maestroLE_SL-track-100.jpg?v=1689358718",
+    },
+    {
+      img_order: "6",
+      img_name: "maestroLE_ZG",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/6.maestroLE_ZG-100.jpg?v=1689358718",
+    },
+    {
+      img_order: "7",
+      img_name: "maestroLE_air_cells",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/7.maestroLE_air_cells-100.jpg?v=1689358718",
+    },
+    {
+      img_order: "8",
+      img_name: "maestroLE_icon_demo",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/8.maestroLE_icon_demo-100.jpg?v=1689358726",
+    },
+    {
+      img_order: "9",
+      img_name: "maestroLE_icon_scraping",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/9.maestroLE_icon_scraping-100.jpg?v=1689358725",
+    },
+    {
+      img_order: "10",
+      img_name: "maestroLE_icon_relax",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.maestroLE_icon_relax-100.jpg?v=1689358725",
+    },
+    {
+      img_order: "11",
+      img_name: "maestroLE_icon_shiatsu",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/11.maestroLE_icon_shiatsu-100.jpg?v=1689358725",
+    },
+    {
+      img_order: "12",
+      img_name: "maestroLE_icon_swing",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12.maestroLE_icon_swing-100.jpg?v=1689358725",
+    },
+    {
+      img_order: "13",
+      img_name: "maestroLE_icon_gentleman",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/13.maestroLE_icon_gentleman-100.jpg?v=1689358725",
+    },
+    {
+      img_order: "14",
+      img_name: "maestroLE_icon_stretch",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/14.maestroLE_icon_stretch-100.jpg?v=1689358725",
+    },
+    {
+      img_order: "15",
+      img_name: "maestroLE_icon_rejuvenate",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/15.maestroLE_icon_rejuvenate-100.jpg?v=1689358725",
+    },
+    {
+      img_order: "16",
+      img_name: "maestroLE_icon_kneading",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/16.maestroLE_icon_kneading-100.jpg?v=1689358734",
+    },
+    {
+      img_order: "17",
+      img_name: "maestroLE_icon_shiatsu",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/17.maestroLE_icon_shiatsu-100.jpg?v=1689358734",
+    },
+    {
+      img_order: "18",
+      img_name: "maestroLE_icon_tapping",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/18.maestroLE_icon_tapping-100.jpg?v=1689358734",
+    },
+    {
+      img_order: "19",
+      img_name: "maestroLE_icon_rolling",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19.maestroLE_icon_rolling-100.jpg?v=1689358735",
+    },
+    {
+      img_order: "20",
+      img_name: "maestroLE_icon_knead_tap",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/20.maestroLE_icon_knead_tap-100.jpg?v=1689358735",
+    },
+    {
+      img_order: "21",
+      img_name: "maestroLE_icon_knead_shiatsu",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/21.maestroLE_icon_knead_shiatsu-100.jpg?v=1689358735",
+    },
+    {
+      img_order: "22",
+      img_name: "maestroLE_calf-kneading",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/22.maestroLE_calf-kneading-100.jpg?v=1689358718",
+    },
+    {
+      img_order: "23",
+      img_name: "maestroLE_rollers",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/23.maestroLE_rollers-100.jpg?v=1689358718",
+    },
+    {
+      img_order: "24",
+      img_name: "maestroLE_extension",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/24.maestroLE_extension-100.jpg?v=1689358718",
+    },
+    {
+      img_order: "25",
+      img_name: "maestroLE_app",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/25.maestroLE_app-100.jpg?v=1689358718",
+    },
+    {
+      img_order: "26",
+      img_name: "maestroLE_button_apple",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/26.maestroLE_button_apple-100.jpg?v=1689364328",
+    },
+    {
+      img_order: "27",
+      img_name: "maestroLE_button_play",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/27.maestroLE_button_play-100.jpg?v=1689364314",
+    },
+    {
+      img_order: "28",
+      img_name: "maestroLE_panels",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/28.maestroLE_panels-100.jpg?v=1689358719",
+    },
+    {
+      img_order: "29",
+      img_name: "maestroLE_speakers",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/29.maestroLE_speakers-100.jpg?v=1689358718",
+    },
+    {
+      img_order: "30",
+      img_name: "maestroLE_phone",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/30.maestroLE_phone-100.jpg?v=1689358718",
+    },
+    {
+      img_order: "31",
+      img_name: "maestroLE_dimension_1",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/31.maestroLE_dimension_1-100.jpg?v=1689358718",
+    },
+    {
+      img_order: "32",
+      img_name: "maestroLE_dimension_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/32.maestroLE_dimension_2-100.jpg?v=1689358718",
+    },
+  ];
+</script>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  crossorigin="anonymous"
+></script>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+  :root {
+    --section-bg-color: #ededed;
+    --section-strong-color: #000000;
+    --section-header-color: #000000;
+    --section-content-color: #8b8d8f;
+    --section-grid-color: #000000;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .sections {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sections strong {
+    color: var(--section-strong-color);
+  }
+
+  .sections .section {
+    background-color: var(--section-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .section img,
+  .section-content {
+    flex: 1 1 0%;
+  }
+
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+  }
+
+  .section-header {
+    font-size: 52px;
+    line-height: 65px;
+    color: var(--section-header-color);
+  }
+
+  .section-description {
+    color: var(--section-content-color);
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  .circle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 32px;
+  }
+
+  .circle > :first-child {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .grid-section {
+    background-color: var(--section-bg-color);
+    color: var(--section-grid-color);
+    display: grid;
+    grid-column: span 2 / span 2;
+    padding: 50px 100px 50px;
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+
+  .grid-section img {
+    margin: 0 0 0px 50px;
+  }
+
+  .grid-section .grid-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .app-icon {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .app-icon img {
+    flex: 0 0 0;
+    width: 40%;
+  }
+
+  .grid-align {
+    text-align: left;
+  }
+
+  @media (max-width: 1024px) {
+    .sections {
+      max-width: 768px;
+    }
+
+    .sections .section {
+      margin-bottom: 35px;
+    }
+
+    .section img {
+      width: 50%;
+    }
+
+    .section .section-content {
+      gap: 22px;
+      padding: 35px;
+    }
+
+    .section-header {
+      font-size: 39px;
+      line-height: 58px;
+    }
+
+    .section-description {
+      font-size: 15px;
+      line-height: 24px;
+    }
+
+    .circle {
+      gap: 5px;
+      font-size: 24px;
+    }
+
+    .circle > :first-child {
+      width: 30px;
+      height: 30px;
+    }
+
+    .grid-section {
+      padding: 35px 75px 35px;
+      gap: 35px;
+      margin-bottom: 35px;
+    }
+
+    .grid-section img {
+      margin: 0 0 0px 35px;
+    }
+
+    .grid-section .grid-item {
+      gap: 15px;
+    }
+
+    .grid-align {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .sections {
+      max-width: 480px;
+    }
+
+    .sections .section {
+      margin-bottom: 22px;
+    }
+
+    .section .section-content {
+      gap: 14px;
+      padding: 22px;
+    }
+
+    .section-header {
+      font-size: 26px;
+      line-height: 38px;
+    }
+
+    .section-description {
+      font-size: 10px;
+      line-height: 16px;
+    }
+
+    .circle {
+      gap: 4px;
+      font-size: 16px;
+    }
+
+    .circle > :first-child {
+      width: 20px;
+      height: 20px;
+    }
+
+    .grid-section {
+      padding: 20px 50px 20px;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .grid-section img {
+      margin: 0 0 0px 20px;
+      width: 20%;
+    }
+
+    .grid-section .grid-item {
+      gap: 10px;
+    }
+  }
+
+  .active-tab {
+    color: #191919;
+    border-bottom: 0.25em solid gray;
+  }
+</style>
+
+<div id="tab-buttons" class="max-w-6xl mx-auto my-4">
+  <button
+    id="tab-button1"
+    class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center dark:text-gray-400 dark:hover:text-gray-300 active-tab"
+  >
+    Description
+  </button>
+  <button
+    id="tab-button2"
+    class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center t dark:text-gray-400 dark:hover:text-gray-300"
+  >
+    Reviews
+  </button>
+</div>
+<div class="sections">
+  <div id="youtube-link"></div>
+  <div class="section !bg-white !flex-col !mb-40 md:!mb-80">
+    <img src="" alt="" class="!w-full" />
+    <div class="px-10 pt-10 pb-5 text-xl md:text-2xl lg:text-3xl text-center">
+      Relax and unwind at the touch of a button with the Premier- your personal
+      oasis of calm. The Premier offers a series of features, including 3D
+      Massage Mechanism, extensive footrollers, and heating elements, all
+      utilized with the intelligence voice control.
+    </div>
+    <div class="flex gap-10 justify-center">
+      <div class="circle">
+        <div class="bg-[#8E8680]"></div>
+        <div>Taupe</div>
+      </div>
+      <div class="circle">
+        <div class="bg-[#3A2521]"></div>
+        <div>Brown</div>
+      </div>
+      <div class="circle">
+        <div class="bg-[#1D1D1D]"></div>
+        <div>Black</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section flex">
+    <div class="section-content">
+      <div class="section-header">Body Scan Technology</div>
+      <div class="section-description">
+        The OS-4D Pro Maestro LE will perform a body scan to map the key areas
+        of the neck and back to ensure the optimal amount of pressure applied
+        during the massage. The scanning technology will detect your shoulders
+        height, which can be re-calibrated once the scan is complete.
+      </div>
+    </div>
+    <img src="" alt="" />
+  </div>
+  <div class="section">
+    <img src="" alt="" />
+    <div class="section-content">
+      <div class="section-header">Touchscreen Controller</div>
+      <div class="section-description">
+        The remote controller is upgraded to a larger screen for user’s
+        convenience to operate the massage chair. It has an easy view screen
+        displaying the function the chair has activated. It also has magnetic
+        holder that fixes the remote into place.
+      </div>
+    </div>
+  </div>
+  <div class="section flex flex-row-reverse">
+    <div class="section-content">
+      <div class="section-header">4D Massage Mechanism</div>
+      <div class="section-description">
+        The 4D massage allows another experience with account for the speed and
+        rhythm of the massage. The Osaki OS-4D Pro Maestro LE provides
+        <strong> 8 levels of adjustment </strong> for the 4D massage with heated
+        back rollers.
+      </div>
+    </div>
+    <img src="" alt="" />
+  </div>
+  <div class="section flex-row-reverse relative">
+    <img src="" alt="" />
+    <div class="section-content absolute top-0 right-0 text-right items-end">
+      <div class="section-header">SL-track Technology</div>
+      <div class="section-description w-1/2">
+        The SL-Track is made up of Laser-Crafted Steel. The track allows the
+        massage rollers to cover the entirety of your body. The SL-Track reaches
+        all the way
+        <strong>from your neck and shoulders to your hamstrings.</strong>
+      </div>
+    </div>
+  </div>
+  <div class="section flex flex-col">
+    <div class="section-content">
+      <div class="section-header">
+        Zero Gravity Reclining <br />
+        and Space Saving
+      </div>
+      <div class="section-description">
+        Inspired by NASA, the <strong>Zero Gravity position</strong> is the
+        perfect position for ultimate relaxation and helping maximize the
+        intensity of the massage. With Osaki’s
+        <strong>Space Saving Technology</strong>, you may set the chair 5 inches
+        from the wall and still achieve a complete recline.
+      </div>
+    </div>
+    <img src="" alt="" />
+  </div>
+  <div class="section flex flex-row-reverse">
+    <div class="section-content">
+      <div class="section-header">
+        32 Cell <br />
+        Full Body <br />
+        Air Massage
+      </div>
+      <div class="section-description">
+        The Osaki OS-4D Pro Maestro offers a total of
+        <strong>32 airbags</strong> in the massage chair. This compression
+        massage helps to continue increasing blood circulation throughout the
+        body to relieve pain and tension.
+      </div>
+    </div>
+    <img src="" alt="" />
+  </div>
+
+  <div class="grid-section text-black">
+    <div
+      class="col-span-2 text-2xl md:text-4xl text-center gap-5 flex justify-center items-center"
+    >
+      <strong>8 Auto Massage Modes</strong>
+    </div>
+    <div class="grid-item">
+      <img src="" alt="" />
+      <div>Demo</div>
+    </div>
+    <div class="grid-item">
+      <img src="" alt="" />
+      <div>Scraping</div>
+    </div>
+    <div class="grid-item">
+      <img src="" alt="" />
+      <div>Relax</div>
+    </div>
+    <div class="grid-item">
+      <img src="" alt="" />
+      <div>Shiatsu</div>
+    </div>
+    <div class="grid-item">
+      <img src="" alt="" />
+      <div>Swing</div>
+    </div>
+    <div class="grid-item">
+      <img src="" alt="" />
+      <div>Gentleman</div>
+    </div>
+    <div class="grid-item">
+      <img src="" alt="" />
+      <div>Stretch</div>
+    </div>
+    <div class="grid-item">
+      <img src="" alt="" />
+      <div>Rejuvenate</div>
+    </div>
+  </div>
+  <div class="grid-section text-black">
+    <div
+      class="col-span-2 text-2xl md:text-4xl text-center gap-5 flex justify-center items-center"
+    >
+      <strong>6 Manual Massage Modes</strong>
+    </div>
+    <div class="grid-item">
+      <img src="" alt="" />
+      <div>Kneading</div>
+    </div>
+    <div class="grid-item">
+      <img src="" alt="" />
+      <div>Shiatsu</div>
+    </div>
+    <div class="grid-item">
+      <img src="" alt="" />
+      <div>Tapping</div>
+    </div>
+    <div class="grid-item">
+      <img src="" alt="" />
+      <div>Rolling</div>
+    </div>
+    <div class="grid-item">
+      <img src="" alt="" />
+      <div>
+        Kneading <br />
+        &amp; Tapping
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="" alt="" />
+      <div>
+        Kneading <br />
+        &amp; Shiatsu
+      </div>
+    </div>
+  </div>
+
+  <div class="section flex-row-reverse">
+    <img src="" alt="" class="" />
+    <div class="section-content">
+      <div class="section-header">
+        Kneading <br />
+        Calf Massage
+      </div>
+      <div class="section-description">
+        The calf kneading motion will increase the blood flow of the legs,
+        helping them to reach a higher level of relaxation. On the upper section
+        of the leg rest, the air massagers will rotate in a circular motion to
+        add a new dimension to the calf massage.
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <img src="" alt="" class="" />
+    <div class="section-content">
+      <div class="section-header">
+        Specialized <br />
+        Foot Rollers
+      </div>
+      <div class="section-description">
+        The foot extenders include
+        <strong>one spinning reflexology roller</strong> to provide an
+        outstanding foot massage. The rollers under the feet will travel along
+        the sides and middle of your feet to provide a more hand on kneading
+        experience.
+      </div>
+    </div>
+  </div>
+  <div class="section flex-row-reverse">
+    <img src="" alt="" class="" />
+    <div class="section-content">
+      <div class="section-header">Automatic Extendable Footrest</div>
+      <div class="section-description">
+        The ottoman will scan your legs to ensure the optimal leg length for
+        your height. Maestro LE’s
+        <strong>Automatic Extendable Footrest</strong> stretches up to
+        <strong>8 inches</strong> for maximum comfort.
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <img src="" alt="" class="" />
+    <div class="section-content">
+      <div class="section-header">Easy App Control</div>
+      <div class="section-description">
+        If you have an iPhone or Android, go to the App Store or Google Play
+        Store to download the <strong>Osaki Maestro LE App</strong> to control
+        the massage chair with the full features of the remote from your phone.
+      </div>
+      <div class="flex justify-evenly">
+        <a href="https://apps.apple.com/us/app/pro-maestro/id1411143529"
+          ><img alt="" class="!flex-initial" />
+        </a>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.easepal.project806c"
+          class="text-center"
+          ><img alt="" class="!flex-initial"
+        /></a>
+      </div>
+    </div>
+  </div>
+  <div class="section flex-row-reverse">
+    <img src="" alt="" class="" />
+    <div class="section-content">
+      <div class="section-header">Accessible Shortcut Panel</div>
+      <div class="section-description">
+        Conveniently control the chair at your fingertips by using the shortcut
+        panel.
+      </div>
+    </div>
+  </div>
+
+  <div class="flex justify-between gap-5 md:gap-10 mb-5 md:mb-10">
+    <div
+      class="!p-0 section-content md:text-xl lg:text-2xl flex-1 flex flex-col justify-between"
+      style="background-color: var(--section-bg-color)"
+    >
+      <div
+        class="text-sm md:text-xl lg:text-2xl font-semibold md:mb-2 p-10 pb-0"
+      >
+        HD Surround Sound Speakers
+      </div>
+
+      <img src="" alt="" class="w-full" />
+    </div>
+    <div
+      class="section-content md:text-xl lg:text-2xl flex-1 flex flex-col-reverse justify-between relative !gap-0 !p-0"
+      style="background-color: var(--section-bg-color)"
+    >
+      <div class="section-header !text-2xl p-10 pb-0">Wireless Charger</div>
+      <img src="" alt="" class="" />
+    </div>
+  </div>
+
+  <div class="section-dimensions">
+    <div class="text-3xl lg:text-5xl text-center mt-40">Dimensions</div>
+    <div class="flex flex-col lg:flex-row justify-between gap-5 md:gap-10">
+      <img src="" alt="" /><img src="" alt="" />
+    </div>
+  </div>
+</div>
+
+<section class="section-specs section-pad-bottom">
+  <div class="table-tap">
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Product Name</div>
+        <div class="specs-column">OS-Pro Maestro LE</div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">User Manual</div>
+        <div class="specs-column">
+          <a
+            href="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/osaki_os-4d_pro_maestro_le_instruction_manual.pdf?v=1664306890"
+            style="color: #ff4800"
+            target="_blank"
+          >
+            Download
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Power Supply</div>
+        <div class="specs-column">110-120V</div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Rate Frequency</div>
+        <div class="specs-column">60Hz</div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Power</div>
+        <div class="specs-column">250W</div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Rate Timer</div>
+        <div class="specs-column">15 minutes</div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">
+          Dimensions
+          <br />
+          (W x L x H)
+        </div>
+        <div class="specs-column">
+          <strong> Upright </strong>
+          <br />
+          31.9" x 61.1" x 48.1"
+        </div>
+        <div class="specs-column">
+          <strong> Reclined </strong>
+          <br />
+          31.9" x 79.5" x 46.9"
+        </div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">
+          Box Dimensions
+          <br />
+          (W x L x H)
+        </div>
+        <div class="specs-column">
+          <strong> Box 1 </strong>
+          <br />
+          30.0" x 57.9" x 40.2"
+        </div>
+        <div class="specs-column">
+          <strong> Box 2 </strong>
+          <br />
+          13.8" x 41.8" x 29.2"
+        </div>
+        <div class="specs-column">
+          <br />
+          <strong> Box 3 </strong>
+          <br />
+          19.7" x 22.9" x 20.9"
+        </div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Width</div>
+        <div class="specs-column">
+          <strong> Shoulder </strong>
+          <br />
+          20.5"
+        </div>
+        <div class="specs-column">
+          <strong> Seat </strong>
+          <br />
+          17"
+        </div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Minimum Doorway Size</div>
+        <div class="specs-column">
+          <strong> Assembled </strong>
+          <br />
+          31.9"
+        </div>
+        <div class="specs-column">
+          <strong> Disassembled </strong>
+          <br />
+          27"
+        </div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Weight</div>
+        <div class="specs-column">Approx. 244.6 lbs</div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Maximum User Weight</div>
+        <div class="specs-column">260 lbs</div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">
+          Weight
+          <br />
+          (Net / Gross)
+        </div>
+        <div class="specs-column">
+          <strong> Box 1 </strong>
+          <br />
+          163.0 / 191.8lbs
+        </div>
+        <div class="specs-column">
+          <strong> Box 2 </strong>
+          <br />
+          35.3 / 46.3lbs
+        </div>
+        <div class="specs-column">
+          <br />
+          <strong> Box 3 </strong>
+          <br />
+          46.3 / 52.9lbs
+        </div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Usage Condition</div>
+        <div class="specs-column">
+          <strong> Environment Temperature </strong>
+          <br />
+          32°F ~ 95°F
+        </div>
+        <div class="specs-column">
+          <strong> Contrasting Humidity </strong>
+          <br />
+          20 ~ 80RH
+        </div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Storage Condition</div>
+        <div class="specs-column">
+          <strong> Environment Temperature </strong>
+          <br />
+          32°F ~ 95°F
+        </div>
+        <div class="specs-column">
+          <strong> Contrasting Humidity </strong>
+          <br />
+          20 ~ 80RH
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  $(function () {
+    $.each($(".sections img"), (i, img) => {
+      $(img).attr("src", imgs[i].img_src);
+      $(img).attr("alt", imgs[i].img_name);
+    });
+
+    if (youtube_link != "") {
+      var youtube_id = youtube_link.split("watch?v=")[1].split("&")[0];
+      var src =
+        "https://www.youtube.com/embed/" + youtube_id + "?autoplay=1&mute=1";
+      var embed_html =
+        '<iframe class="w-full aspect-video mb-20" src=' +
+        src +
+        ' title="YouTube video player" frameborder="0" allowfullscreen></iframe>';
+      $("#youtube-link").append(embed_html);
+    }
+    $("#tab-button1").on("click", () => {
+      $("#tab-button1").addClass("active-tab");
+      $("#tab-button2").removeClass("active-tab");
+      $(".sections").fadeIn("slow");
+      $(".section-specs").fadeIn("slow");
+    });
+    $("#tab-button2").on("click", () => {
+      $("#tab-button1").removeClass("active-tab");
+      $("#tab-button2").addClass("active-tab");
+      $(".sections").fadeOut("slow");
+      $(".section-specs").fadeOut("slow");
+    });
+    if (osakiusa) {
+      $("#tab-buttons").addClass("hidden");
+      $("#feature-section").addClass("hidden");
+    }
+  });
+</script>
