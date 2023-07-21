@@ -55,726 +55,751 @@
    </section> -->
 <!-- more -->
 
-<ul class="tabs">
-  <li class="active">Description</li>
-  <li>Reviews</li>
-</ul>
-<ul class="tabs-content">
-  <li class="active">
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script
+  crossorigin="anonymous"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+></script>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.4.min.js"
-      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      const imgs = [
-        {
-          img_order: "-1",
-          img_name: "",
-          img_src:
-            "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/titan_product_page_banner-100.jpg?v=1686584960",
-        },
-        {
-          img_order: "1",
-          img_name: "premier_main",
-          img_src:
-            "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/1.premier_main-100.jpg?v=1683578934",
-        },
-        {
-          img_order: "2",
-          img_name: "premier_3D_massage",
-          img_src:
-            "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/2.premier_3D_massage-100.jpg?v=1683578934",
-        },
-        {
-          img_order: "3",
-          img_name: "premier_voice_control",
-          img_src:
-            "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.premier_voice_control-100.jpg?v=1683578934",
-        },
-        {
-          img_order: "4",
-          img_name: "premier_icon_voice",
-          img_src:
-            "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4.premier_icon_voice-100.jpg?v=1683578939",
-        },
-        {
-          img_order: "5",
-          img_name: "premier_air_cells",
-          img_src:
-            "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/5.premier_air_cells-100.jpg?v=1683578934",
-        },
-        {
-          img_order: "6",
-          img_name: "premier_SL-track",
-          img_src:
-            "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/6.premier_SL-track-100.jpg?v=1683578934",
-        },
-        {
-          img_order: "7",
-          img_name: "premier_ZG",
-          img_src:
-            "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/7.premier_ZG-100.jpg?v=1683578934",
-        },
-        {
-          img_order: "8",
-          img_name: "premier_heating",
-          img_src:
-            "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/8.premier_heating-100.jpg?v=1683578934",
-        },
-        {
-          img_order: "9",
-          img_name: "premier_icon_comfort",
-          img_src:
-            "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/9.premier_icon_comfort-100.jpg?v=1683578939",
-        },
-        {
-          img_order: "10",
-          img_name: "premier_icon_stretch",
-          img_src:
-            "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.premier_icon_stretch-100.jpg?v=1683578939",
-        },
-        {
-          img_order: "11",
-          img_name: "premier_icon_relax",
-          img_src:
-            "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/11.premier_icon_relax-100.jpg?v=1683578939",
-        },
-        {
-          img_order: "12",
-          img_name: "premier_icon_back_waist",
-          img_src:
-            "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12.premier_icon_back_waist-100.jpg?v=1683578940",
-        },
-        {
-          img_order: "13",
-          img_name: "premier_icon_neck_shoulder",
-          img_src:
-            "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/13.premier_icon_neck_shoulder-100.jpg?v=1683578940",
-        },
-        {
-          img_order: "14",
-          img_name: "premier_icon_full_body",
-          img_src:
-            "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/14.premier_icon_full_body-100.jpg?v=1683578940",
-        },
-        {
-          img_order: "15",
-          img_name: "premier_icon_knead",
-          img_src:
-            "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/15.premier_icon_knead-100.jpg?v=1683578940",
-        },
-        {
-          img_order: "16",
-          img_name: "premier_icon_grab",
-          img_src:
-            "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/16.premier_icon_grab-100.jpg?v=1683578940",
-        },
-        {
-          img_order: "17",
-          img_name: "premier_icon_tapping",
-          img_src:
-            "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/17.premier_icon_tapping-100.jpg?v=1683578940",
-        },
-        {
-          img_order: "18",
-          img_name: "premier_icon_3D",
-          img_src:
-            "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/18.premier_icon_3D-100.jpg?v=1683578939",
-        },
-        {
-          img_order: "19",
-          img_name: "premier_icon_knead_tap",
-          img_src:
-            "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19.premier_icon_knead_tap-100.jpg?v=1683578940",
-        },
-        {
-          img_order: "20",
-          img_name: "premier_icon_shiatsu",
-          img_src:
-            "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/20.premier_icon_shiatsu-100.jpg?v=1683578940",
-        },
-        {
-          img_order: "21",
-          img_name: "premier_foot_rollers",
-          img_src:
-            "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/21.premier_foot_rollers-100.jpg?v=1683578934",
-        },
-        {
-          img_order: "22",
-          img_name: "premier_extension",
-          img_src:
-            "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/22.premier_extension-100.jpg?v=1683578934",
-        },
-        {
-          img_order: "23",
-          img_name: "premier_panels",
-          img_src:
-            "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/23.premier_panels-100.jpg?v=1683578934",
-        },
-        {
-          img_order: "24",
-          img_name: "premier_headrest",
-          img_src:
-            "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/24.premier_headrest-100.jpg?v=1683578934",
-        },
-        {
-          img_order: "25",
-          img_name: "premier_LED",
-          img_src:
-            "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/25.premier_LED-100.jpg?v=1683578934",
-        },
-        {
-          img_order: "26",
-          img_name: "premier_speakers",
-          img_src:
-            "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/26.premier_speakers-100.jpg?v=1683578934",
-        },
-        {
-          img_order: "27",
-          img_name: "premier_USB",
-          img_src:
-            "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/27.premier_USB-100.jpg?v=1683578934",
-        },
-        {
-          img_order: "28",
-          img_name: "premier_dimension_1",
-          img_src:
-            "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/28.premier_dimension_1-100.jpg?v=1683578934",
-        },
-        {
-          img_order: "29",
-          img_name: "premier_dimension_2",
-          img_src:
-            "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/29.premier_dimension_2-100.jpg?v=1683578934",
-        },
-      ];
-      $(function () {
-        // jQuery methods go here...
+<script>
+  const imgs = [
+    {
+      img_order: "-1",
+      img_name: "",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/titan_product_page_banner-100.jpg?v=1686584960",
+    },
+    {
+      img_order: "1",
+      img_name: "premier_main",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/1.premier_main-100.jpg?v=1683578934",
+    },
+    {
+      img_order: "2",
+      img_name: "premier_3D_massage",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/2.premier_3D_massage-100.jpg?v=1683578934",
+    },
+    {
+      img_order: "3",
+      img_name: "premier_voice_control",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.premier_voice_control-100.jpg?v=1683578934",
+    },
+    {
+      img_order: "4",
+      img_name: "premier_icon_voice",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4.premier_icon_voice-100.jpg?v=1683578939",
+    },
+    {
+      img_order: "5",
+      img_name: "premier_air_cells",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/5.premier_air_cells-100.jpg?v=1683578934",
+    },
+    {
+      img_order: "6",
+      img_name: "premier_SL-track",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/6.premier_SL-track-100.jpg?v=1683578934",
+    },
+    {
+      img_order: "7",
+      img_name: "premier_ZG",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/7.premier_ZG-100.jpg?v=1683578934",
+    },
+    {
+      img_order: "8",
+      img_name: "premier_heating",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/8.premier_heating-100.jpg?v=1683578934",
+    },
+    {
+      img_order: "9",
+      img_name: "premier_icon_comfort",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/9.premier_icon_comfort-100.jpg?v=1683578939",
+    },
+    {
+      img_order: "10",
+      img_name: "premier_icon_stretch",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.premier_icon_stretch-100.jpg?v=1683578939",
+    },
+    {
+      img_order: "11",
+      img_name: "premier_icon_relax",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/11.premier_icon_relax-100.jpg?v=1683578939",
+    },
+    {
+      img_order: "12",
+      img_name: "premier_icon_back_waist",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12.premier_icon_back_waist-100.jpg?v=1683578940",
+    },
+    {
+      img_order: "13",
+      img_name: "premier_icon_neck_shoulder",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/13.premier_icon_neck_shoulder-100.jpg?v=1683578940",
+    },
+    {
+      img_order: "14",
+      img_name: "premier_icon_full_body",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/14.premier_icon_full_body-100.jpg?v=1683578940",
+    },
+    {
+      img_order: "15",
+      img_name: "premier_icon_knead",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/15.premier_icon_knead-100.jpg?v=1683578940",
+    },
+    {
+      img_order: "16",
+      img_name: "premier_icon_grab",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/16.premier_icon_grab-100.jpg?v=1683578940",
+    },
+    {
+      img_order: "17",
+      img_name: "premier_icon_tapping",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/17.premier_icon_tapping-100.jpg?v=1683578940",
+    },
+    {
+      img_order: "18",
+      img_name: "premier_icon_3D",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/18.premier_icon_3D-100.jpg?v=1683578939",
+    },
+    {
+      img_order: "19",
+      img_name: "premier_icon_knead_tap",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19.premier_icon_knead_tap-100.jpg?v=1683578940",
+    },
+    {
+      img_order: "20",
+      img_name: "premier_icon_shiatsu",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/20.premier_icon_shiatsu-100.jpg?v=1683578940",
+    },
+    {
+      img_order: "21",
+      img_name: "premier_foot_rollers",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/21.premier_foot_rollers-100.jpg?v=1683578934",
+    },
+    {
+      img_order: "22",
+      img_name: "premier_extension",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/22.premier_extension-100.jpg?v=1683578934",
+    },
+    {
+      img_order: "23",
+      img_name: "premier_panels",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/23.premier_panels-100.jpg?v=1683578934",
+    },
+    {
+      img_order: "24",
+      img_name: "premier_headrest",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/24.premier_headrest-100.jpg?v=1683578934",
+    },
+    {
+      img_order: "25",
+      img_name: "premier_LED",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/25.premier_LED-100.jpg?v=1683578934",
+    },
+    {
+      img_order: "26",
+      img_name: "premier_speakers",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/26.premier_speakers-100.jpg?v=1683578934",
+    },
+    {
+      img_order: "27",
+      img_name: "premier_USB",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/27.premier_USB-100.jpg?v=1683578934",
+    },
+    {
+      img_order: "28",
+      img_name: "premier_dimension_1",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/28.premier_dimension_1-100.jpg?v=1683578934",
+    },
+    {
+      img_order: "29",
+      img_name: "premier_dimension_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/29.premier_dimension_2-100.jpg?v=1683578934",
+    },
+  ];
+  $(function () {
+    // jQuery methods go here...
 
-        $.each($("sections img"), (i, v) => {
-          $(v).attr("src", imgs[i].img_src);
-          $(v).attr("alt", imgs[i].img_name);
-        });
-      });
-    </script>
-    <style>
-      * {
-        box-sizing: border-box;
-      }
+    $.each($("sections img"), (i, v) => {
+      $(v).attr("src", imgs[i].img_src);
+      $(v).attr("alt", imgs[i].img_name);
+    });
+  });
+</script>
+<style>
+  * {
+    box-sizing: border-box;
+  }
 
-      sections {
-        max-width: 1024px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-      }
-      sections .circle {
-        border-radius: 50%;
-        height: 40px;
-        width: 40px;
-      }
+  sections {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  sections .circle {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+  }
 
-      sections h1 {
-        font-family: "Arial" !important;
-        margin-top: 0 !important;
-      }
-      sections p {
-        font-size: 22px;
-        font-weight: 500;
-        color: #808080;
-      }
+  sections h1 {
+    font-family: "Arial" !important;
+    margin-top: 0 !important;
+  }
+  sections p {
+    font-size: 22px;
+    font-weight: 500;
+    color: #808080;
+  }
 
-      sections strong {
-        color: black;
-      }
+  sections strong {
+    color: black;
+  }
 
-      sections section {
-        display: flex;
-        align-items: center;
-        gap: 50px;
-        background-color: #e5e0df;
-        width: 100%;
-      }
-      sections section img {
-        flex: 1 1 0%;
-        width: 100%;
-      }
-      sections section div.section-content {
-        display: flex;
-        flex: 1 1 0%;
-        flex-direction: column;
-        gap: 10px;
-        padding: 50px;
-        font-family: "Arial";
-      }
+  sections section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background-color: #e5e0df;
+    width: 100%;
+  }
+  sections section img {
+    flex: 1 1 0%;
+    width: 100%;
+  }
+  sections section div.section-content {
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+    gap: 10px;
+    padding: 50px;
+    font-family: "Arial";
+  }
 
-      sections section .section-title {
-        font-size: 56px;
-        font-weight: 700;
-        line-height: 80px;
-      }
+  sections section .section-title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 80px;
+  }
 
-      sections .grid-section {
-        margin: auto 160px 80px;
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        align-items: center;
-        gap: 40px 0;
-        padding: 80px 0 80px;
-        text-align: center;
-      }
-      sections .grid-section img {
-        flex: 0 1 auto;
-        width: 20%;
-      }
+  sections .grid-section {
+    margin: auto 160px 80px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    gap: 40px 0;
+    padding: 80px 0 80px;
+    text-align: center;
+  }
+  sections .grid-section img {
+    flex: 0 1 auto;
+    width: 20%;
+  }
 
-      sections .grid-section div {
-        margin: auto 80px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 12px;
-      }
-      sections .grid-section p {
-        color: black;
-        font-weight: 700;
-      }
+  sections .grid-section div {
+    margin: auto 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+  }
+  sections .grid-section p {
+    color: black;
+    font-weight: 700;
+  }
 
-      /* 768 < screen < 1024 */
-      @media (max-width: 1024px) {
-        sections {
-          max-width: 768px;
-          gap: 30px;
-        }
-        sections .circle {
-          border-radius: 50%;
-          height: 30px;
-          width: 30px;
-        }
+  /* 768 < screen < 1024 */
+  @media (max-width: 1024px) {
+    sections {
+      max-width: 768px;
+      gap: 30px;
+    }
+    sections .circle {
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+    }
 
-        sections p {
-          font-size: 16px;
-        }
+    sections p {
+      font-size: 16px;
+    }
 
-        sections section {
-          gap: 35px;
-        }
-        sections section img {
-          flex: 0 1 auto;
-          width: 50%;
-        }
-        sections section div.section-content {
-          flex: 1 1 0%;
-          gap: 7px;
-          padding: 35px;
-          font-family: "Arial";
-        }
+    sections section {
+      gap: 35px;
+    }
+    sections section img {
+      flex: 0 1 auto;
+      width: 50%;
+    }
+    sections section div.section-content {
+      flex: 1 1 0%;
+      gap: 7px;
+      padding: 35px;
+      font-family: "Arial";
+    }
 
-        sections section .section-title {
-          font-size: 42px;
-          line-height: 60px;
-        }
+    sections section .section-title {
+      font-size: 42px;
+      line-height: 60px;
+    }
 
-        sections .grid-section {
-          margin: auto 120px 60px;
-          gap: 30px 0;
-          padding: 60px 0 60px;
-        }
-        sections .grid-section img {
-          width: 40%;
-        }
+    sections .grid-section {
+      margin: auto 120px 60px;
+      gap: 30px 0;
+      padding: 60px 0 60px;
+    }
+    sections .grid-section img {
+      width: 40%;
+    }
 
-        sections .grid-section div {
-          margin: auto 60px;
-          gap: 8px;
-        }
-      }
+    sections .grid-section div {
+      margin: auto 60px;
+      gap: 8px;
+    }
+  }
 
-      @media (max-width: 768px) {
-        sections {
-          max-width: 480px;
-          gap: 20px;
-        }
-        sections .circle {
-          border-radius: 50%;
-          height: 20px;
-          width: 20px;
-        }
+  @media (max-width: 768px) {
+    sections {
+      max-width: 480px;
+      gap: 20px;
+    }
+    sections .circle {
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+    }
 
-        sections p {
-          font-size: 10px;
-        }
+    sections p {
+      font-size: 10px;
+    }
 
-        sections section {
-          gap: 20px;
-        }
-        sections section img {
-          flex: 0 1 auto;
-          width: 50%;
-        }
-        sections section div.section-content {
-          flex: 1 1 0%;
-          gap: 4px;
-          padding: 20px;
-          font-family: "Arial";
-        }
+    sections section {
+      gap: 20px;
+    }
+    sections section img {
+      flex: 0 1 auto;
+      width: 50%;
+    }
+    sections section div.section-content {
+      flex: 1 1 0%;
+      gap: 4px;
+      padding: 20px;
+      font-family: "Arial";
+    }
 
-        sections section .section-title {
-          font-size: 20px;
-          line-height: 30px;
-        }
+    sections section .section-title {
+      font-size: 20px;
+      line-height: 30px;
+    }
 
-        sections .grid-section {
-          margin: auto 80px 40px;
-          gap: 20px 0;
-          padding: 40px 0 40px;
-        }
-        sections .grid-section img {
-          width: 40%;
-        }
+    sections .grid-section {
+      margin: auto 80px 40px;
+      gap: 20px 0;
+      padding: 40px 0 40px;
+    }
+    sections .grid-section img {
+      width: 40%;
+    }
 
-        sections .grid-section div {
-          margin: auto 40px;
-          gap: 5px;
-        }
-      }
-    </style>
+    sections .grid-section div {
+      margin: auto 40px;
+      gap: 5px;
+    }
+  }
+</style>
+<div id="tab-buttons" class="max-w-6xl mx-auto my-4">
+  <button
+    id="tab-button1"
+    class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center dark:text-gray-400 dark:hover:text-gray-300 active-tab"
+  >
+    Description
+  </button>
+  <button
+    id="tab-button2"
+    class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center t dark:text-gray-400 dark:hover:text-gray-300"
+  >
+    Reviews
+  </button>
+</div>
 
-    <sections>
-      <section class="mb-20 flex-col bg-white md:mb-80">
-        <img />
-        <img src="" alt="" class="w-full" />
-        <p
-          class="mb-12 mt-14 px-12 text-center text-xl font-semibold text-black md:mb-24 md:text-3xl"
-        >
-          Relax and unwind at the touch of a button with the Premier- your
-          personal oasis of calm. The Premier offers a series of features,
-          including 3D Massage Mechanism, extensive footrollers, and heating
-          elements, all utilized with the intelligence voice control.
-        </p>
-        <div
-          class="align:items-center flex gap-5 text-xl font-semibold md:gap-10 md:text-3xl [&amp;&gt;*]:flex [&amp;&gt;*]:gap-3"
-        >
-          <div>
-            <div class="circle bg-[#918980]"></div>
-            <div class="bg-white">Taupe</div>
-          </div>
-          <div>
-            <div class="circle bg-[#3A2521]"></div>
-            <div class="bg-white">Brown</div>
-          </div>
-          <div>
-            <div class="circle bg-[#1D1D1D]"></div>
-            <div class="bg-white">Black</div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <img src="" alt="" />
-        <div class="section-content">
-          <h1 class="section-title">3D Massage Mechanism</h1>
-          <p>
-            The Premier allows the rollers to move not only up and down, left
-            and right, but also forward and backward, creating a 3D massage
-            effect. This technology enables the chair to simulate the experience
-            of human hands, providing a more lifelike massage experience.
-          </p>
-        </div>
-      </section>
-      <section class="flex-row-reverse">
-        <img src="" alt="" />
-        <div class="section-content flex flex-col">
-          <img src="" alt="" class="w-1/6" />
-          <h1 class="section-title">
-            Intelligent <br />
-            Voice Control
-          </h1>
-          <p>
-            Easily utilize the chair without having to lift a finger. When you
-            make a command, the chair will react accordingly.
-          </p>
-        </div>
-      </section>
-      <section>
-        <img src="" alt="" />
-        <div class="section-content">
-          <h1 class="section-title">
-            38 Cell <br />
-            Full Body <br />
-            Air Massage
-          </h1>
-          <p>
-            The Premier holds 38 air cells to give a thorough compression
-            therapy for your body.
-          </p>
-        </div>
-      </section>
-      <section class="relative">
-        <img src="" alt="" class="w-full" />
-        <p class="absolute top-0 w-2/3 p-10">
-          The SL-Track is made up of
-          <strong>Laser-Crafted Steel.</strong> The track allows the massage
-          rollers to cover the entirety of your body. The SL-Track reaches all
-          the way from your neck and shoulders to your hamstrings.
-        </p>
-      </section>
-      <section class="flex-col-reverse">
-        <img src="" alt="" class="w-full" />
-        <div class="section-content mx-10 pb-0 text-black md:mx-20">
-          <h1 class="section-title">
-            Zero Gravity Reclining <br />
-            and Space Saving
-          </h1>
-          <p>
-            With the Premier’s two stage zero gravity reclining, you can
-            experience a state of relaxation and weightlessness. This imperative
-            technology was inspired by NASA. With Osaki’s
-            <strong class="color-black"> Space Saving Technology </strong>, you
-            may set the chair <strong class="color-black">4 inches</strong> from
-            the wall and still achieve a complete recline.
-          </p>
-        </div>
-      </section>
-      <section>
-        <img src="" alt="" />
-        <div class="section-content !pl-0">
-          <h1 class="section-title">Lumbar and Calf Heat Therapy</h1>
-          <p>
-            The <strong>carbon coil</strong> in the Premier will effectively
-            warm and help alleviate soreness in your lower back area and calves.
-          </p>
-        </div>
-      </section>
-      <section class="grid-section">
-        <h1 class="section-title col-span-2 mb-10">6 Auto Massage Modes</h1>
-        <div class="">
-          <img src="" alt="" class="" />
-          <p class="">Comfort Massage</p>
-        </div>
-        <div class="">
-          <img src="" alt="" class="" />
-          <p class="">Stretch Massage</p>
-        </div>
-        <div class="">
-          <img src="" alt="" class="" />
-          <p class="">Relax Massage</p>
-        </div>
-        <div class="">
-          <img src="" alt="" class="" />
-          <p class="">Back &amp; Waist Massage</p>
-        </div>
-        <div class="">
-          <img src="" alt="" class="" />
-          <p class="">Neck &amp; Shoulder Massage</p>
-        </div>
-        <div class="">
-          <img src="" alt="" class="" />
-          <p class="">Full Body Massage</p>
-        </div>
-      </section>
-      <section class="grid-section">
-        <h1 class="section-title col-span-2 mb-10">8 Manual Massage Modes</h1>
-        <div class="">
-          <img src="" alt="" />
-          <p class="">Knead</p>
-        </div>
-        <div class="">
-          <img src="" alt="" />
-          <p class="">Grab Massage</p>
-        </div>
-        <div class="">
-          <img src="" alt="" />
-          <p class="">Tapping (I, II)</p>
-        </div>
-        <div class="">
-          <img src="" alt="" />
-          <p class="">3D Massage (I, II, III, IV)</p>
-        </div>
-        <div class="">
-          <img src="" alt="" />
-          <p class="">Knead &amp; Tap</p>
-        </div>
-        <div class="">
-          <img src="" alt="" />
-          <p class="">Shiatsu (I, II)</p>
-        </div>
-      </section>
-      <section class="flex-row-reverse">
-        <img src="" alt="" />
-        <div class="section-content !pr-0">
-          <h1 class="section-title">Specialized Foot Rollers</h1>
-          <p>
-            The Premier’s
-            <strong>Specialized Foot Rollers</strong>
-            includes several
-            <strong> acupuncture points </strong> through the method of
-            scientifically designed reflexology ridges. The foot extenders
-            contain <strong>one roller</strong> for each foot, for they assist
-            in a thorough massage from heel to toe.
-          </p>
-        </div>
-      </section>
-      <section class="">
-        <img src="" alt="" />
-        <div class="section-content">
-          <h1 class="section-title">Spring Extendable Footrest</h1>
-          <p>
-            Created with any user in mind, the Premier’s
-            <strong> Spring Extendable Footrest </strong> stretches up to
-            <strong>5.5 inches</strong> for maximum comfort.
-          </p>
-        </div>
-      </section>
-      <section class="flex-row-reverse">
-        <img src="" alt="" />
-        <div class="section-content !pr-0">
-          <h1 class="section-title">Accessible Shortcut Panel</h1>
-          <p>
-            Conveniently control the Premier at your fingers by using the
-            shortcut panel.
-          </p>
-        </div>
-      </section>
-      <section>
-        <img src="" alt="" />
-        <div class="section-content !pl-0">
-          <h1 class="section-title">Removable Headrest</h1>
-          <p>
-            The Premier includes a removable headrest, which helps you optimize
-            the best massage for all head positions.
-          </p>
-        </div>
-      </section>
-      <section>
-        <img src="" alt="" />
-        <div class="section-content">
-          <p><strong>LED Lighting</strong></p>
-        </div>
-      </section>
-      <section class="grid grid-cols-2 justify-between bg-white">
-        <section class="relative flex-col items-start bg-[#e5e0df]">
-          <p class="ml-5 mt-5 h-10 md:pl-10 md:pt-10">
-            <strong>HD Surround Sound Speakers</strong>
-          </p>
-          <img src="" alt="" class="w-full" />
-        </section>
-        <section class="relative flex-col items-start bg-[#e5e0df]">
-          <p class="ml-5 mt-5 h-10 md:pl-10 md:pt-10">
-            <strong>USB Charger</strong>
-          </p>
-          <img src="" alt="" class="w-full" />
-        </section>
-      </section>
+<sections class="sections">
+  <section class="mb-20 flex-col bg-white md:mb-80">
+    <img />
+    <img src="" alt="" class="w-full" />
+    <p
+      class="mb-12 mt-14 px-12 text-center text-xl font-semibold text-black md:mb-24 md:text-3xl"
+    >
+      Relax and unwind at the touch of a button with the Premier- your personal
+      oasis of calm. The Premier offers a series of features, including 3D
+      Massage Mechanism, extensive footrollers, and heating elements, all
+      utilized with the intelligence voice control.
+    </p>
+    <div
+      class="align:items-center flex gap-5 text-xl font-semibold md:gap-10 md:text-3xl [&amp;&gt;*]:flex [&amp;&gt;*]:gap-3"
+    >
+      <div>
+        <div class="circle bg-[#918980]"></div>
+        <div class="bg-white">Taupe</div>
+      </div>
+      <div>
+        <div class="circle bg-[#3A2521]"></div>
+        <div class="bg-white">Brown</div>
+      </div>
+      <div>
+        <div class="circle bg-[#1D1D1D]"></div>
+        <div class="bg-white">Black</div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <img src="" alt="" />
+    <div class="section-content">
+      <h1 class="section-title">3D Massage Mechanism</h1>
+      <p>
+        The Premier allows the rollers to move not only up and down, left and
+        right, but also forward and backward, creating a 3D massage effect. This
+        technology enables the chair to simulate the experience of human hands,
+        providing a more lifelike massage experience.
+      </p>
+    </div>
+  </section>
+  <section class="flex-row-reverse">
+    <img src="" alt="" />
+    <div class="section-content flex flex-col">
+      <img src="" alt="" class="w-1/6" />
+      <h1 class="section-title">
+        Intelligent <br />
+        Voice Control
+      </h1>
+      <p>
+        Easily utilize the chair without having to lift a finger. When you make
+        a command, the chair will react accordingly.
+      </p>
+    </div>
+  </section>
+  <section>
+    <img src="" alt="" />
+    <div class="section-content">
+      <h1 class="section-title">
+        38 Cell <br />
+        Full Body <br />
+        Air Massage
+      </h1>
+      <p>
+        The Premier holds 38 air cells to give a thorough compression therapy
+        for your body.
+      </p>
+    </div>
+  </section>
+  <section class="relative">
+    <img src="" alt="" class="w-full" />
+    <p class="absolute top-0 w-2/3 p-10">
+      The SL-Track is made up of
+      <strong>Laser-Crafted Steel.</strong> The track allows the massage rollers
+      to cover the entirety of your body. The SL-Track reaches all the way from
+      your neck and shoulders to your hamstrings.
+    </p>
+  </section>
+  <section class="flex-col-reverse">
+    <img src="" alt="" class="w-full" />
+    <div class="section-content mx-10 pb-0 text-black md:mx-20">
+      <h1 class="section-title">
+        Zero Gravity Reclining <br />
+        and Space Saving
+      </h1>
+      <p>
+        With the Premier’s two stage zero gravity reclining, you can experience
+        a state of relaxation and weightlessness. This imperative technology was
+        inspired by NASA. With Osaki’s
+        <strong class="color-black"> Space Saving Technology </strong>, you may
+        set the chair <strong class="color-black">4 inches</strong> from the
+        wall and still achieve a complete recline.
+      </p>
+    </div>
+  </section>
+  <section>
+    <img src="" alt="" />
+    <div class="section-content !pl-0">
+      <h1 class="section-title">Lumbar and Calf Heat Therapy</h1>
+      <p>
+        The <strong>carbon coil</strong> in the Premier will effectively warm
+        and help alleviate soreness in your lower back area and calves.
+      </p>
+    </div>
+  </section>
+  <section class="grid-section">
+    <h1 class="section-title col-span-2 mb-10">6 Auto Massage Modes</h1>
+    <div class="">
+      <img src="" alt="" class="" />
+      <p class="">Comfort Massage</p>
+    </div>
+    <div class="">
+      <img src="" alt="" class="" />
+      <p class="">Stretch Massage</p>
+    </div>
+    <div class="">
+      <img src="" alt="" class="" />
+      <p class="">Relax Massage</p>
+    </div>
+    <div class="">
+      <img src="" alt="" class="" />
+      <p class="">Back &amp; Waist Massage</p>
+    </div>
+    <div class="">
+      <img src="" alt="" class="" />
+      <p class="">Neck &amp; Shoulder Massage</p>
+    </div>
+    <div class="">
+      <img src="" alt="" class="" />
+      <p class="">Full Body Massage</p>
+    </div>
+  </section>
+  <section class="grid-section">
+    <h1 class="section-title col-span-2 mb-10">8 Manual Massage Modes</h1>
+    <div class="">
+      <img src="" alt="" />
+      <p class="">Knead</p>
+    </div>
+    <div class="">
+      <img src="" alt="" />
+      <p class="">Grab Massage</p>
+    </div>
+    <div class="">
+      <img src="" alt="" />
+      <p class="">Tapping (I, II)</p>
+    </div>
+    <div class="">
+      <img src="" alt="" />
+      <p class="">3D Massage (I, II, III, IV)</p>
+    </div>
+    <div class="">
+      <img src="" alt="" />
+      <p class="">Knead &amp; Tap</p>
+    </div>
+    <div class="">
+      <img src="" alt="" />
+      <p class="">Shiatsu (I, II)</p>
+    </div>
+  </section>
+  <section class="flex-row-reverse">
+    <img src="" alt="" />
+    <div class="section-content !pr-0">
+      <h1 class="section-title">Specialized Foot Rollers</h1>
+      <p>
+        The Premier’s
+        <strong>Specialized Foot Rollers</strong>
+        includes several
+        <strong> acupuncture points </strong> through the method of
+        scientifically designed reflexology ridges. The foot extenders contain
+        <strong>one roller</strong> for each foot, for they assist in a thorough
+        massage from heel to toe.
+      </p>
+    </div>
+  </section>
+  <section class="">
+    <img src="" alt="" />
+    <div class="section-content">
+      <h1 class="section-title">Spring Extendable Footrest</h1>
+      <p>
+        Created with any user in mind, the Premier’s
+        <strong> Spring Extendable Footrest </strong> stretches up to
+        <strong>5.5 inches</strong> for maximum comfort.
+      </p>
+    </div>
+  </section>
+  <section class="flex-row-reverse">
+    <img src="" alt="" />
+    <div class="section-content !pr-0">
+      <h1 class="section-title">Accessible Shortcut Panel</h1>
+      <p>
+        Conveniently control the Premier at your fingers by using the shortcut
+        panel.
+      </p>
+    </div>
+  </section>
+  <section>
+    <img src="" alt="" />
+    <div class="section-content !pl-0">
+      <h1 class="section-title">Removable Headrest</h1>
+      <p>
+        The Premier includes a removable headrest, which helps you optimize the
+        best massage for all head positions.
+      </p>
+    </div>
+  </section>
+  <section>
+    <img src="" alt="" />
+    <div class="section-content">
+      <p><strong>LED Lighting</strong></p>
+    </div>
+  </section>
+  <section class="grid grid-cols-2 justify-between bg-white">
+    <section class="relative flex-col items-start bg-[#e5e0df]">
+      <p class="ml-5 mt-5 h-10 md:pl-10 md:pt-10">
+        <strong>HD Surround Sound Speakers</strong>
+      </p>
+      <img src="" alt="" class="w-full" />
+    </section>
+    <section class="relative flex-col items-start bg-[#e5e0df]">
+      <p class="ml-5 mt-5 h-10 md:pl-10 md:pt-10">
+        <strong>USB Charger</strong>
+      </p>
+      <img src="" alt="" class="w-full" />
+    </section>
+  </section>
 
-      <section class="mt-20 flex flex-col bg-white md:mt-80">
-        <h1 class="section-title">Dimensions</h1>
-        <div class="flex flex-col lg:flex-row">
-          <img src="" alt="" class="w-full" />
-          <img src="" alt="" class="w-full" />
-        </div>
-      </section>
-    </sections>
-    <section class="section-specs section-pad-bottom">
-      <div class="table-tap">
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">Product Name</div>
-            <div class="specs-column">OS-3D Premier</div>
-          </div>
-        </div>
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">User Manual</div>
-            <div class="specs-column">
-              <a
-                href="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/OS-3D_Premier_Manual.pdf?v=1683586770"
-                style="color: #ff4800"
-                target="_blank"
-              >
-                Download
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">Power Supply</div>
-            <div class="specs-column">110-120V ~</div>
-          </div>
-        </div>
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">Rate Frequency</div>
-            <div class="specs-column">50/60 Hz</div>
-          </div>
-        </div>
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">Auto Timer</div>
-            <div class="specs-column">20 Minutes</div>
-          </div>
-        </div>
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">
-              Dimensions
-              <br />
-              (W x L x H)
-            </div>
-            <div class="specs-column">
-              <strong> Upright </strong>
-              <br />
-              30” x 61.0“ x 47.2”
-            </div>
-            <div class="specs-column">
-              <strong> Reclined </strong>
-              <br />
-              30” x 68” x 38.5”
-            </div>
-          </div>
-        </div>
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">Width</div>
-            <div class="specs-column">
-              <strong> Shoulder </strong>
-              <br />
-              23.6”
-            </div>
-            <div class="specs-column">
-              <strong> Seat </strong>
-              <br />
-              19.7”
-            </div>
-          </div>
-        </div>
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">
-              Minimum
-              <br />
-              Doorway Size
-            </div>
-            <div class="specs-column">31.1"</div>
-          </div>
-        </div>
-
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">Maximum User Weight</div>
-            <div class="specs-column">260 lbs</div>
-          </div>
+  <section class="mt-20 flex flex-col bg-white md:mt-80">
+    <h1 class="section-title">Dimensions</h1>
+    <div class="flex flex-col lg:flex-row">
+      <img src="" alt="" class="w-full" />
+      <img src="" alt="" class="w-full" />
+    </div>
+  </section>
+</sections>
+<section class="section-specs section-pad-bottom">
+  <div class="table-tap">
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Product Name</div>
+        <div class="specs-column">OS-3D Premier</div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">User Manual</div>
+        <div class="specs-column">
+          <a
+            href="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/OS-3D_Premier_Manual.pdf?v=1683586770"
+            style="color: #ff4800"
+            target="_blank"
+          >
+            Download
+          </a>
         </div>
       </div>
-    </section>
-  </li>
-  <li></li>
-</ul>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Power Supply</div>
+        <div class="specs-column">110-120V ~</div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Rate Frequency</div>
+        <div class="specs-column">50/60 Hz</div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Auto Timer</div>
+        <div class="specs-column">20 Minutes</div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">
+          Dimensions
+          <br />
+          (W x L x H)
+        </div>
+        <div class="specs-column">
+          <strong> Upright </strong>
+          <br />
+          30” x 61.0“ x 47.2”
+        </div>
+        <div class="specs-column">
+          <strong> Reclined </strong>
+          <br />
+          30” x 68” x 38.5”
+        </div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Width</div>
+        <div class="specs-column">
+          <strong> Shoulder </strong>
+          <br />
+          23.6”
+        </div>
+        <div class="specs-column">
+          <strong> Seat </strong>
+          <br />
+          19.7”
+        </div>
+      </div>
+    </div>
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">
+          Minimum
+          <br />
+          Doorway Size
+        </div>
+        <div class="specs-column">31.1"</div>
+      </div>
+    </div>
+
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Maximum User Weight</div>
+        <div class="specs-column">260 lbs</div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  $(function () {
+    $("#tab-button1").on("click", () => {
+      $("#tab-button1").addClass("active-tab");
+      $("#tab-button2").removeClass("active-tab");
+      $(".sections").fadeIn("slow");
+      $(".section-specs").fadeIn("slow");
+    });
+    $("#tab-button2").on("click", () => {
+      $("#tab-button1").removeClass("active-tab");
+      $("#tab-button2").addClass("active-tab");
+      $(".sections").fadeOut("slow");
+      $(".section-specs").fadeOut("slow");
+    });
+    if (osakiusa) {
+      $("#tab-buttons").addClass("hidden");
+      $("#feature-section").addClass("hidden");
+    }
+  });
+</script>

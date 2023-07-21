@@ -23,37 +23,68 @@
  </ul>
 </section> -->
 <!-- more -->
-<ul class="tabs">
-  <li class="active">Description</li>
-  <li>Reviews</li>
-</ul>
-<ul class="tabs-content">
-  <li class="active">
-    <section class="section-content">
-      <div class="section-wrapper large-direction-column large-offset-bottom-1">
-        <img
-          alt="OS-HL138 Massage Cushion Main Banner"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/OS-HL138_Main.jpg?v=1651083035"
-        />
+<div id="tab-buttons" class="max-w-6xl mx-auto my-4">
+  <button
+    id="tab-button1"
+    class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center dark:text-gray-400 dark:hover:text-gray-300 active-tab"
+  >
+    Description
+  </button>
+  <button
+    id="tab-button2"
+    class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center t dark:text-gray-400 dark:hover:text-gray-300"
+  >
+    Reviews
+  </button>
+</div>
+
+<section class="section-content sections">
+  <div class="section-wrapper large-direction-column large-offset-bottom-1">
+    <img
+      alt="OS-HL138 Massage Cushion Main Banner"
+      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/OS-HL138_Main.jpg?v=1651083035"
+    />
+  </div>
+  <div class="section-wrapper large-direction-column large-offset-bottom-1">
+    <img
+      alt="Exquisite &amp; Compact Massage Cushion"
+      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/OS-HL138_Description.jpg?v=1651083035"
+    />
+  </div>
+</section>
+<section class="section-specs section-pad-bottom">
+  <div class="table-tap">
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Product Name</div>
+        <div class="specs-column">OS-HL138 Massage Cushion</div>
       </div>
-      <div class="section-wrapper large-direction-column large-offset-bottom-1">
-        <img
-          alt="Exquisite &amp; Compact Massage Cushion"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/OS-HL138_Description.jpg?v=1651083035"
-        />
-      </div>
-    </section>
-    <section class="section-specs section-pad-bottom">
-      <div class="table-tap">
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">Product Name</div>
-            <div class="specs-column">OS-HL138 Massage Cushion</div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </li>
-  <li></li>
-  <!--Specification-->
-</ul>
+    </div>
+  </div>
+</section>
+<script src="https://cdn.tailwindcss.com"></script>
+<script
+  crossorigin="anonymous"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+></script>
+<script>
+  $(function () {
+    $("#tab-button1").on("click", () => {
+      $("#tab-button1").addClass("active-tab");
+      $("#tab-button2").removeClass("active-tab");
+      $(".sections").fadeIn("slow");
+      $(".section-specs").fadeIn("slow");
+    });
+    $("#tab-button2").on("click", () => {
+      $("#tab-button1").removeClass("active-tab");
+      $("#tab-button2").addClass("active-tab");
+      $(".sections").fadeOut("slow");
+      $(".section-specs").fadeOut("slow");
+    });
+    if (osakiusa) {
+      $("#tab-buttons").addClass("hidden");
+      $("#feature-section").addClass("hidden");
+    }
+  });
+</script>

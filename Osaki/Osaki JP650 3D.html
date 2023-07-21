@@ -23,50 +23,38 @@
 </li>
 </ul>
 </section> -->
-<section>
-  <ul class="font-light list-disc list-outside">
-    <li>
-      <div class="bg-black p-1 rounded-full flex font-bold w-40">
-        <div
-          class="rounded-full text-center w-32 py-1 bg-gradient-to-r ml-10 from-[#ffa500] to-[#ff0000]"
-        >
-          5 - 8
-        </div>
-      </div>
-    </li>
-  </ul>
-</section>
 <!-- more -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
-  <!--
-    body {
-      /* font-family: 'Lato', sans-serif; */
-      font-family: "Arial";
-      font-weight: 700;
-    }
-  -->
+  body {
+    /* font-family: 'Lato', sans-serif; */
+    font-family: "Arial";
+    font-weight: 700;
+  }
 </style>
-<iframe
-  style="width: 100%; aspect-ratio: 16/9; border: 0"
-  src="https://www.youtube.com/embed/dU3fsuXuUnM?mute=1&amp;autoplay=1"
-></iframe>
-<!-- <div
-        class="flex flex-col text-sm md:text-lg lg:text-2xl font-semibold items-end md:absolute top-0 right-0 md:p-3 md:items-center"
-      >
-        <div class="md:text-white">INTENSITY LEVEL</div>
-        <div class="md:bg-black p-1 rounded-full flex">
-          <div
-            class="rounded-full text-center px-10 py-1 bg-gradient-to-r md:ml-10 from-[#ffa500] to-[#ff0000]"
-          >
-            5 - 8
-          </div>
-        </div>
-      </div> -->
+<div id="tab-buttons" class="max-w-6xl mx-auto my-4">
+  <button
+    id="tab-button1"
+    class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center dark:text-gray-400 dark:hover:text-gray-300 active-tab"
+  >
+    Description
+  </button>
+  <button
+    id="tab-button2"
+    class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center t dark:text-gray-400 dark:hover:text-gray-300"
+  >
+    Reviews
+  </button>
+</div>
+
 <main
-  class="min-[480px]:w-[480px] md:w-[768px] lg:w-[1024px] px-5 mx-auto flex flex-col"
+  class="min-[480px]:w-[480px] md:w-[768px] lg:w-[1024px] px-5 mx-auto flex flex-col sections"
 >
+  <iframe
+    style="width: 100%; aspect-ratio: 16/9; border: 0"
+    src="https://www.youtube.com/embed/dU3fsuXuUnM?mute=1&amp;autoplay=1"
+  ></iframe>
   <section class="py-3 flex flex-col justify-center md:relative">
     <img
       alt="JP650"
@@ -751,3 +739,29 @@
     </div>
   </div>
 </section>
+<script src="https://cdn.tailwindcss.com"></script>
+<script
+  crossorigin="anonymous"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+></script>
+<script>
+  $(function () {
+    $("#tab-button1").on("click", () => {
+      $("#tab-button1").addClass("active-tab");
+      $("#tab-button2").removeClass("active-tab");
+      $(".sections").fadeIn("slow");
+      $(".section-specs").fadeIn("slow");
+    });
+    $("#tab-button2").on("click", () => {
+      $("#tab-button1").removeClass("active-tab");
+      $("#tab-button2").addClass("active-tab");
+      $(".sections").fadeOut("slow");
+      $(".section-specs").fadeOut("slow");
+    });
+    if (osakiusa) {
+      $("#tab-buttons").addClass("hidden");
+      $("#feature-section").addClass("hidden");
+    }
+  });
+</script>

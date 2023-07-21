@@ -1,482 +1,962 @@
+<!-- <ul id="feature-section">
+  <li><strong>Height Adjustable Ottoman</strong></li>
+  <li>360° Swivel</li>
+  <li><strong>SL-Track</strong></li>
+  <li>Air Compression Hip Massage</li>
+  <li><strong>Convenient Remote Controller</strong></li>
+  <li>5 Auto Programs</li>
+  <li>5 Massage Styles</li>
+</ul> -->
+<!-- more -->
 <link
   rel="stylesheet"
   href="https://ota-shawn.github.io/productGlobalCss/style.css"
-/><!--Features-->
-<!-- <section class="feature-section shortdesc">
-    <ul>
-     <li>
-      <strong>
-       4D Massage Mechanism
-      </strong>
-     </li>
-     <li>
-      Computerized Body Scanning
-     </li>
-     <li>
-      <strong>
-       J-Track
-      </strong>
-     </li>
-     <li>
-      6 Auto Programs &amp; 6 Massage Styles
-     </li>
-     <li>
-      34 Air Cell Full Body Compression
-     </li>
-     <li>
-      Space Saving Technology
-     </li>
-     <li>
-      <strong>
-       Heated Back Roller
-      </strong>
-     </li>
-     <li>
-      <strong>
-       Foot Roller &amp; Calf Heating
-      </strong>
-     </li>
-     <li>
-      Extendable Footrest
-     </li>
-     <li>
-      Surround Sound Bluetooth Speakers
-     </li>
-     <li>
-      USB &amp; Wireless Charger
-     </li>
-     <li>
-      <strong>
-       Adjustable Shoulder
-      </strong>
-     </li>
-    </ul>
-   </section> -->
-<!-- more -->
-<ul class="tabs">
-  <li class="active">Description</li>
-  <li>Reviews</li>
-</ul>
-<ul class="tabs-content">
-  <li class="active">
-    <!--Detail Info-->
-    <section class="section-content">
-      <iframe
-        style="width: 100%; aspect-ratio: 16/9; border: 0"
-        src="https://www.youtube.com/embed/xYxvt4ZA4Qs?mute=1&amp;autoplay=1"
-      ></iframe>
-      <div
-        class="section-wrapper large-direction-column large-align-items-center large-offset-bottom-3 large-position-relative"
-      >
-        <div class="intensity-content intensity-wrapper">
-          <p class="intensity-headline">Intensity Level</p>
-          <div class="intensity-bar">
-            <span class="intensity-range typography-intensity range-2">
-              4-8
-            </span>
+/>
+<script>
+  const youtube_link =
+    "https://www.youtube.com/watch?v=xYxvt4ZA4Qs&ab_channel=OfficialTitanOsakiMassageChannel";
+
+  const osakiusa = false;
+
+  const imgs = [
+    {
+      img_order: "1",
+      img_name: "OS-Soho_II_Main",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/1.OS-Soho_II_Main.jpg?v=1689960699",
+    },
+    {
+      img_order: "2",
+      img_name: "OS-Soho_II_Colors",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/2.OS-Soho_II_Colors.jpg?v=1689960699",
+    },
+    {
+      img_order: "3",
+      img_name: "OS-Soho_II_4D",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.OS-Soho_II_4D.jpg?v=1689960700",
+    },
+    {
+      img_order: "4",
+      img_name: "OS-Soho_II_Scan",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4.OS-Soho_II_Scan.jpg?v=1689960699",
+    },
+    {
+      img_order: "5",
+      img_name: "OS-Soho_II_J_Track",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/5.OS-Soho_II_J_Track.jpg?v=1689960700",
+    },
+    {
+      img_order: "6",
+      img_name: "OS-Soho_II_Zero_Grave",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/6.OS-Soho_II_Zero_Grave.jpg?v=1689960699",
+    },
+    {
+      img_order: "7",
+      img_name: "OS-Soho_II_Space_Saving",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/7.OS-Soho_II_Space_Saving.jpg?v=1689960699",
+    },
+    {
+      img_order: "8",
+      img_name: "OS-Soho_II_Air",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/8.OS-Soho_II_Air.jpg?v=1689960700",
+    },
+    {
+      img_order: "9",
+      img_name: "OS-Soho_II_Shoulder_Air",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/9.OS-Soho_II_Shoulder_Air.jpg?v=1689960699",
+    },
+    {
+      img_order: "10",
+      img_name: "OS-Soho_II_Heating_4D",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.OS-Soho_II_Heating_4D.jpg?v=1689960699",
+    },
+    {
+      img_order: "11",
+      img_name: "OS-Soho_II_Foot_Heating",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/11.OS-Soho_II_Foot_Heating.jpg?v=1689960699",
+    },
+    {
+      img_order: "12-1",
+      img_name: "OS-Soho_II_Icon1",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12-1.OS-Soho_II_Icon1.jpg?v=1689960699",
+    },
+    {
+      img_order: "12-2",
+      img_name: "OS-Soho_II_Icon1_3",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12-2.OS-Soho_II_Icon1_3.jpg?v=1689960699",
+    },
+    {
+      img_order: "12-3",
+      img_name: "OS-Soho_II_Icon1_1",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12-3.OS-Soho_II_Icon1_1.jpg?v=1689960699",
+    },
+    {
+      img_order: "12-4",
+      img_name: "OS-Soho_II_Icon1_4",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12-4.OS-Soho_II_Icon1_4.jpg?v=1689960699",
+    },
+    {
+      img_order: "12-5",
+      img_name: "OS-Soho_II_Icon1_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12-5.OS-Soho_II_Icon1_2.jpg?v=1689960699",
+    },
+    {
+      img_order: "12-6",
+      img_name: "OS-Soho_II_Icon1_5",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12-6.OS-Soho_II_Icon1_5.jpg?v=1689960700",
+    },
+    {
+      img_order: "12-7",
+      img_name: "OS-Soho_II_Icon1_6",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12-7.OS-Soho_II_Icon1_6.jpg?v=1689960699",
+    },
+    {
+      img_order: "12-8",
+      img_name: "OS-Soho_II_Icon1_7",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12-8.OS-Soho_II_Icon1_7.jpg?v=1689960699",
+    },
+    {
+      img_order: "12-9",
+      img_name: "OS-Soho_II_Icon1_8",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12-9.OS-Soho_II_Icon1_8.jpg?v=1689960699",
+    },
+    {
+      img_order: "12-10",
+      img_name: "OS-Soho_II_Icon1_11",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12-10.OS-Soho_II_Icon1_11.jpg?v=1689960699",
+    },
+    {
+      img_order: "12-11",
+      img_name: "OS-Soho_II_Icon1_10",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12-11.OS-Soho_II_Icon1_10.jpg?v=1689960700",
+    },
+    {
+      img_order: "12-12",
+      img_name: "OS-Soho_II_Icon1_9",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12-12.OS-Soho_II_Icon1_9.jpg?v=1689960699",
+    },
+    {
+      img_order: "13",
+      img_name: "OS-Soho_II_Footresst",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/13.OS-Soho_II_Footresst.jpg?v=1689960699",
+    },
+    {
+      img_order: "14",
+      img_name: "OS-Soho_II_Icon_Foot_Rollers",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/14.OS-Soho_II_Icon_Foot_Rollers.jpg?v=1689960699",
+    },
+    {
+      img_order: "15",
+      img_name: "OS-Soho_II_Bluetooth_Speaker",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/15.OS-Soho_II_Bluetooth_Speaker.jpg?v=1689960700",
+    },
+    {
+      img_order: "16",
+      img_name: "OS-Soho_II_Phone_Holder",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/16.OS-Soho_II_Phone_Holder.jpg?v=1689960700",
+    },
+    {
+      img_order: "17",
+      img_name: "OS-Soho_II_Remote",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/17.OS-Soho_II_Remote.jpg?v=1689960700",
+    },
+    {
+      img_order: "18",
+      img_name: "OS-Soho_II_Door_Size",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/18.OS-Soho_II_Door_Size.jpg?v=1689960700",
+    },
+    {
+      img_order: "19-1",
+      img_name: "OS-Soho_II_Front_Demension",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19.OS-Soho_II_Front_Demension.jpg?v=1689960699",
+    },
+    {
+      img_order: "19-2",
+      img_name: "OS-Soho_II_Side_Demension",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19.OS-Soho_II_Side_Demension.jpg?v=1689960700",
+    },
+    {
+      img_order: "19-3",
+      img_name: "OS-Soho_II_Zero_Grave_Demension",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19.OS-Soho_II_Zero_Grave_Demension.jpg?v=1689960699",
+    },
+    {
+      img_order: "20",
+      img_name: "OS-Soho_II_Information",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/20.OS-Soho_II_Information.jpg?v=1689960699",
+    },
+  ];
+</script>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  crossorigin="anonymous"
+></script>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+  :root {
+    --section-bg-color: #eae4df;
+    --section-strong-color: #1d1d1d;
+    --section-header-color: #1d1d1d;
+    --section-content-color: #a0a2a3;
+    --section-grid-color: #a0a2a3;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .sections {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sections strong {
+    color: var(--section-strong-color);
+  }
+
+  .sections .section {
+    background-color: var(--section-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .section img,
+  .section-content {
+    flex: 1 1 0%;
+    width: 50%;
+  }
+
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+  }
+
+  .section-header {
+    font-size: 52px;
+    line-height: 65px;
+    color: var(--section-header-color);
+  }
+  .section-header2 {
+    font-size: 36px;
+    line-height: 45px;
+    color: var(--section-header-color);
+  }
+
+  .section-description {
+    color: var(--section-content-color);
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  .circle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 32px;
+  }
+
+  .circle > :first-child {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .grid-section {
+    background-color: var(--section-bg-color);
+    color: var(--section-grid-color);
+    display: grid;
+    grid-column: span 2 / span 2;
+    padding: 50px 100px 50px;
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+
+  .grid-section img {
+    margin: 0 0 0px 50px;
+  }
+
+  .grid-section .grid-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .app-icon {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .app-icon img {
+    flex: 0 0 0;
+    width: 40%;
+  }
+
+  .grid-align {
+    text-align: left;
+  }
+
+  @media (max-width: 1024px) {
+    .sections {
+      max-width: 768px;
+    }
+
+    .sections .section {
+      margin-bottom: 35px;
+    }
+
+    .section img {
+      width: 50%;
+    }
+
+    .section .section-content {
+      gap: 22px;
+      padding: 35px;
+    }
+
+    .section-header {
+      font-size: 39px;
+      line-height: 58px;
+    }
+
+    .section-header2 {
+      font-size: 27px;
+      line-height: 40px;
+    }
+
+    .section-description {
+      font-size: 15px;
+      line-height: 24px;
+    }
+
+    .circle {
+      gap: 5px;
+      font-size: 24px;
+    }
+
+    .circle > :first-child {
+      width: 30px;
+      height: 30px;
+    }
+
+    .grid-section {
+      padding: 35px 75px 35px;
+      gap: 35px;
+      margin-bottom: 35px;
+    }
+
+    .grid-section img {
+      margin: 0 0 0px 35px;
+    }
+
+    .grid-section .grid-item {
+      gap: 15px;
+    }
+
+    .grid-align {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .sections {
+      max-width: 480px;
+    }
+
+    .sections .section {
+      margin-bottom: 22px;
+    }
+
+    .section .section-content {
+      gap: 14px;
+      padding: 22px;
+    }
+
+    .section-header {
+      font-size: 26px;
+      line-height: 38px;
+    }
+    .section-header {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    .section-description {
+      font-size: 10px;
+      line-height: 16px;
+    }
+
+    .circle {
+      gap: 4px;
+      font-size: 16px;
+    }
+
+    .circle > :first-child {
+      width: 20px;
+      height: 20px;
+    }
+
+    .grid-section {
+      padding: 20px 50px 20px;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .grid-section img {
+      margin: 0 0 0px 20px;
+      width: 20%;
+    }
+
+    .grid-section .grid-item {
+      gap: 10px;
+    }
+  }
+
+  .active-tab {
+    color: #191919;
+    border-bottom: 0.25em solid gray;
+  }
+</style>
+
+<body>
+  <div id="tab-buttons" class="max-w-6xl mx-auto my-4">
+    <button
+      id="tab-button1"
+      class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center dark:text-gray-400 dark:hover:text-gray-300 active-tab"
+    >
+      Description
+    </button>
+    <button
+      id="tab-button2"
+      class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center t dark:text-gray-400 dark:hover:text-gray-300"
+    >
+      Reviews
+    </button>
+  </div>
+  <div class="sections">
+    <div id="youtube-link"></div>
+    <div class="section !bg-white !flex-col !mb-40 md:!mb-80">
+      <img src="" alt="" class="!w-full" />
+      <div class="px-10 pt-10 pb-5 text-xl md:text-2xl lg:text-3xl text-center">
+        Introducing the new Soho II! This luxurious 4D Massage Chair offers
+        maximum comfort at an affordable price. With lumbar heating, full body
+        air massage, J-track system, focused foot massage, and zero gravity
+        reclining, the Soho II is perfect for massage chair enthusiasts and
+        first-time buyers. Osaki's Soho II combines clean design with
+        cutting-edge technology.
+      </div>
+      <img src="" alt="" class="!w-full" />
+    </div>
+
+    <div class="section flex !bg-black !mb-0 !pb-10">
+      <div class="section-content">
+        <div class="section-header !text-white">
+          Adjustable <br />
+          <strong class="!text-[#53D39B]">4D</strong> Massage
+        </div>
+        <div class="section-description">
+          The Soho II offers a customizable massage with adjustable speed,
+          width, intensity, and air pressure. Its 4D massage heads provide a
+          lifelike experience.
+        </div>
+        <div class="flex text-white text-center justify-between">
+          <div class="flex flex-col">
+            <strong class="!text-[#53D39B] text-lg md:text-3xl lg:text-4xl"
+              >5</strong
+            >
+            <div class="text-[10px] md:text-base">
+              Intensity <br />
+              Levels
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <strong class="!text-[#53D39B] text-lg md:text-3xl lg:text-4xl"
+              >5</strong
+            >
+            <div class="text-[10px] md:text-base">
+              Levels of <br />
+              Speed
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <strong class="!text-[#53D39B] text-lg md:text-3xl lg:text-4xl"
+              >5</strong
+            >
+            <div class="text-[10px] md:text-base">
+              Levels of <br />
+              Air Pressure
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <strong class="!text-[#53D39B] text-lg md:text-3xl lg:text-4xl"
+              >3</strong
+            >
+            <div class="text-[10px] md:text-base">
+              Varying <br />
+              Widths
+            </div>
           </div>
         </div>
-        <img
-          alt="Osaki Pro Soho II"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/1-Main_Visual-OsakiPro-Soho2_69d5cb35-3a0c-4def-91fe-f775734d15f6.jpg?v=1647380960"
-        />
-        <p class="large-pad-top-1 large-text-align-center large-10">
-          Say hello to the new Soho II! This luxurious 4D Massage Chair builds
-          upon the innovations of its predecessor while still providing maximum
-          comfort at an affordable price. When you sit down in your Soho II
-          you’ll be greeted with lumbar heating, an intensive full body air
-          massage, a uniquely designed J-track system, a focused foot massage,
-          and NASA-inspired zero gravity reclining. Whether you’re a massage
-          chair aficionado, or looking to buy for the first time, Osaki’s Soho
-          II will not disappoint. The Osaki Soho II has a clean simple design
-          packed with the latest technology and innovation.
-        </p>
       </div>
-      <div class="large-offset-top-1 large-offset-bottom-1">
-        <img
-          alt="Taupe, Brown and Black colors"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/2-Colors-OsakiPro-Soho2_fe68fb3a-c3c9-41b9-a2a2-4621ee186430.jpg?v=1647380959"
-        />
+      <img src="" alt="" />
+    </div>
+    <div class="section !bg-black !mb-0 !pb-10">
+      <img src="" alt="" />
+      <div class="section-content">
+        <div class="section-header !text-white">
+          <strong class="!text-[#53D39B]">Smart Computer</strong> <br />
+          Body Scanning
+        </div>
+        <div class="section-description">
+          The Soho II automatically measures your body and maps key points for a
+          personalized massage experience.
+        </div>
       </div>
+    </div>
+    <div class="section !bg-black !mb-0 !pb-10">
+      <div class="section-content">
+        <div class="section-header !text-white">
+          Ergonomic <br />
+          <strong class="!text-[#53D39B]">J-Track</strong>
+        </div>
+        <div class="section-description">
+          The Soho II's J-track conforms to your spine's curvature, including
+          the glutes, and features a quad massage roller head system for a
+          human-like massage.
+        </div>
+      </div>
+      <img src="" alt="" />
+    </div>
+    <div class="section flex-col !bg-black !mb-0 !pb-10">
+      <div class="section-content !w-4/5">
+        <div class="section-header !text-white text-center">
+          <strong class="!text-[#53D39B]">Zero Gravity</strong> Full Reclining
+        </div>
+        <div class="section-description">
+          Osaki incorporates NASA-inspired technology into the Soho II, offering
+          two-stage zero gravity reclining for weightless relaxation and
+          suspension.
+        </div>
+      </div>
+      <img src="" alt="" class="!w-full" />
+    </div>
+    <div class="section flex-col !bg-black">
+      <div class="section-content !w-4/5">
+        <div class="section-header !text-white text-center">
+          <strong class="!text-[#53D39B]">Space Saving</strong> Design
+        </div>
+        <div class="section-description">
+          Osaki incorporates NASA-inspired technology into the Soho II, offering
+          two-stage zero gravity reclining for weightless relaxation and
+          suspension.
+        </div>
+      </div>
+      <img src="" alt="" class="!w-full" />
+    </div>
+    <div class="section flex-row-reverse">
+      <img src="" alt="" class="px-12 !flex-initial" />
+      <div class="section-content">
+        <div class="section-header">
+          34 Air Cells <br />
+          Full Body <br />
+          Air Massage
+        </div>
+        <div class="section-description">
+          The Soho II includes a touchscreen controller for convenient
+          navigation and adjustment settings.
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <img src="" alt="" />
+      <div class="section-content">
+        <div class="section-header2">Up to 26”</div>
+        <div class="section-header">Adjustable Shoulder Width</div>
+      </div>
+    </div>
+
+    <div class="section flex flex-col">
+      <div class="flex">
+        <div class="section-content !gap-0 !pb-0">
+          <div class="section-header">Heated Back Roller</div>
+          <div class="section-header2">Comforting Massage</div>
+          <div class="section-description">
+            The Soho II's heated massage functions help soothe muscle tension,
+            alleviate back pain, and improve blood flow.
+          </div>
+        </div>
+        <img src="" alt="" class="!flex-initial" />
+      </div>
+      <div class="w-full h-4 lg:h-0 bg-white"></div>
+      <div class="flex flex-row-reverse lg:!mt-[-10em]">
+        <div class="section-content !gap-0 justify-center !pb-0">
+          <div class="section-header">Calf Heating</div>
+          <div class="section-description">
+            the Soho II both rolls and scrapes your foot with extra care and
+            deliberation.
+          </div>
+        </div>
+        <img src="" alt="" class="!flex-initial !ml-[2em]" />
+      </div>
+    </div>
+
+    <!-- <div class="section flex flex-row-reverse">
+      <div class="section-content">
+        <div class="section-header">Lumbar Heat Therapy</div>
+        <div class="section-description">
+          The <strong>carbon coil</strong> in the Bliss will effectively warm
+          and help release tension in your lower back area.
+        </div>
+      </div>
+      <img src="" alt="" />
+    </div>  -->
+
+    <div class="grid-section text-black">
       <div
-        class="section-wrapper large-direction-column large-align-items-center"
+        class="col-span-2 text-2xl md:text-4xl text-center gap-5 flex justify-center items-center"
       >
-        <img
-          alt="4D Massage"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/3-4D-Massage-OsakiPro-Soho2_4e4ca174-d2f7-4433-ab49-143276f3505a.jpg?v=1647380960"
-        />
-        <p
-          class="large-text-align-center large-10 large-pad-top-1 large-pad-bottom-3"
-        >
-          The Soho II offers a highly customizable massage, with five degrees of
-          speed, three varying widths, five levels of massage intensity, and
-          five distinct air pressure intensities. The 4D massage heads move,
-          vertically, horizontally, in and out and rotates at variable speeds.
-          This chair offers one of the most life-like massages in the market.
-        </p>
+        <strong>6 Auto Massage Programs</strong>
       </div>
-      <div
-        class="section-wrapper large-direction-column large-align-items-center"
-      >
-        <img
-          alt="Smart Computer Body Scanning"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/4-Body_Scanning-OsakiPro-Soho2.jpg?v=1647380959"
-        />
-        <p
-          class="large-text-align-center large-10 large-pad-top-1 large-pad-bottom-3"
-        >
-          As you initiate your massage, the Soho II will begin automatically
-          measuring your body to administer the perfect massage; additionally,
-          key points of the body are mapped and remembered so that every massage
-          is individually personalized.
-        </p>
+      <div class="grid-item flex-col md:flex-row">
+        <img src="" alt="" class="w-1/6 !ml-0" />
+        <div class="text-center md:text-left">
+          <strong class="lg:text-2xl">Neck & Shoulder</strong>
+          <div>Massages from neck to shoulder</div>
+        </div>
       </div>
-      <div
-        class="section-wrapper large-direction-column large-align-items-center"
-      >
-        <img
-          alt="J-Track Massage"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/5-J-Track-OsakiPro-Soho2.jpg?v=1647380959"
-        />
-        <p
-          class="large-text-align-center large-10 large-pad-top-1 large-pad-bottom-3"
-        >
-          The Soho II comes equipped with the J-track, which conforms to the
-          curvature of the spine and extends all the way down to your glutes.
-          Additionally, Osaki has incorporated a new quad massage roller head
-          system to invoke a human-esque massage.
-        </p>
+      <div class="grid-item flex-col md:flex-row">
+        <img src="" alt="" class="w-1/6 !ml-0" />
+        <div class="text-center md:text-left">
+          <strong class="lg:text-2xl">Strengthen</strong>
+          <div>Eases any physical and mental tension to have a sound sleep</div>
+        </div>
       </div>
-      <div
-        class="section-wrapper large-direction-column large-align-items-center"
-      >
-        <img
-          alt="Full Body Air Massage"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/6-Air-Cells-OsakiPro-Soho2.jpg?v=1647380959"
-        />
-        <p
-          class="large-text-align-center large-10 large-pad-top-1 large-pad-bottom-3"
-        >
-          Some massage chairs are just rigid shells for the underlying massage
-          rollers, not the Soho II, however. This dynamic chair cradles and
-          compresses every inch of you with its full body air massage, from your
-          shoulders and arms to your calves and feet.
-        </p>
+      <div class="grid-item flex-col md:flex-row">
+        <img src="" alt="" class="w-1/6 !ml-0" />
+        <div class="text-center md:text-left">
+          <strong class="lg:text-2xl">Relax</strong>
+          <div>Massages from back to hip along the spine</div>
+        </div>
       </div>
-      <div
-        class="section-wrapper large-direction-column large-align-items-center"
-      >
-        <img
-          alt="Zero Gravity"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/7-Zero-Gravity-OsakiPro-Soho2.jpg?v=1647380959"
-        />
-        <p
-          class="large-text-align-center large-10 large-pad-top-1 large-pad-bottom-3"
-        >
-          Osaki’s engineers have started utilizing technology originally
-          developed by NASA to provide weightless relaxation. The Soho II
-          incorporates two stage zero gravity reclining to position your body in
-          such a way that you experience virtually weightless suspension.
-        </p>
+      <div class="grid-item flex-col md:flex-row">
+        <img src="" alt="" class="w-1/6 !ml-0" />
+        <div class="text-center md:text-left">
+          <strong class="lg:text-2xl">Thai</strong>
+          <div>
+            Helps relieve your stiff muscles and improve blood circulation
+          </div>
+        </div>
       </div>
-      <div
-        class="section-wrapper large-direction-column large-align-items-center"
-      >
-        <img
-          alt="Space Saving Technology"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/8-Space-Saving-OsakiPro-Soho2.jpg?v=1647380959"
-        />
-        <p
-          class="large-text-align-center large-10 large-pad-top-1 large-pad-bottom-3"
-        >
-          Too much stuff? Not enough space? No worries! The Soho’s space saving
-          design requires a mere 4.5 inches from the wall in order to achieve a
-          full recline. This allows your chair to fit in even the tightest of
-          spaces with no loss of functionality.
-        </p>
+      <div class="grid-item flex-col md:flex-row">
+        <img src="" alt="" class="w-1/6 !ml-0" />
+        <div class="text-center md:text-left">
+          <strong class="lg:text-2xl">Recover</strong>
+          <div>Massages the whole body from neck to toe</div>
+        </div>
       </div>
-      <div
-        class="section-wrapper large-direction-column large-align-items-center"
-      >
-        <img
-          alt="8 auto massage programs"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/9-Auto-Programs-OsakiPro-Soho2.jpg?v=1647380959"
-        />
-        <p
-          class="large-text-align-center large-10 large-pad-top-1 large-pad-bottom-3"
-        >
-          <strong> Neck/Shoulder: </strong>
-          <br />
-          This auto program takes a heavy focus on your upper body, providing a
-          deep and thorough massage along your shoulders and neck.
-          <br />
-          <strong> Strengthen: </strong>
-          <br />
-          Use this program for a great general massage, broadly focusing on all
-          parts of the body for maximum comfort.
-          <br />
-          <strong> Relax: </strong>
-          <br />
-          This gentle massage is well-suited for individuals with tender areas,
-          looking for a quick refresh after a stressful day.
-          <br />
-          <strong> Thai: </strong>
-          <br />
-          The Thai massage is fantastic for those wanting a strong and intense
-          massage, broadly focusing on the back and lumbar.
-          <br />
-          <strong> Recover: </strong>
-          <br />
-          The recover mode can be utilized after intense physical work,
-          loosening muscles and promoting increased blood flow across the board.
-          <br />
-          <strong> Sleeping: </strong>
-          <br />
-          Finally, this gentle massage should be used before you go to bed,
-          routine use will condition your body for long restful nights.
-        </p>
+      <div class="grid-item flex-col md:flex-row">
+        <img src="" alt="" class="w-1/6 !ml-0" />
+        <div class="text-center md:text-left">
+          <strong>Sleeping</strong>
+          <div>Alleviates strain on your joints and improves flexibility</div>
+        </div>
       </div>
+    </div>
+    <div class="grid-section text-black !grid-cols-3 !bg-white !gap-2">
       <div
-        class="section-wrapper large-direction-column large-align-items-center"
+        class="col-span-3 text-2xl md:text-4xl text-center flex justify-center items-center"
       >
-        <img
-          alt="6 Massage Styles (Kneading, Tapping, Swedish, Shiatsu, Clapping, Rolling)"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/10-Manual-Massage-OsakiPro-Soho2.jpg?v=1647380960"
-        />
-        <p
-          class="large-text-align-center large-10 large-pad-top-1 large-pad-bottom-3"
-        >
-          Osaki’s Soho II provides a plethora of unique massage techniques to
-          help anyone and everyone. These styles include, kneading, tapping,
-          clapping, rolling, shiatsu, and finally, Swedish. Try each one for
-          yourself and manually select the mode that works best for you!
-        </p>
+        <strong class="my-4">6 Manual Massage Modes</strong>
       </div>
-      <div
-        class="section-wrapper large-direction-column large-align-items-center"
-      >
-        <img
-          alt="Heated Back roller"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/11-Heated-Backroller-OsakiPro-Soho2.jpg?v=1647380959"
-        />
-        <p
-          class="large-text-align-center large-10 large-pad-top-1 large-pad-bottom-3"
-        >
-          Dealing with muscle tension and back pain? The Soho II’s heated
-          massage functions work to soothe mild pain by releasing muscle tension
-          and promoting healthier blood flow.
-        </p>
+      <div class="grid-item flex-col bg-[#eae4df] aspect-square justify-center">
+        <img src="" alt="" class="!ml-0 w-1/4" />
+        <strong>Kneading</strong>
       </div>
-      <div
-        class="section-wrapper large-direction-column large-align-items-center"
-      >
-        <img
-          alt="Foot Roller Massage"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/12-Footrollers-OsakiPro-Soho2.jpg?v=1647380959"
-        />
-        <p
-          class="large-text-align-center large-10 large-pad-top-1 large-pad-bottom-3"
-        >
-          The Soho II’s unique foot massage is unlike any other on the market,
-          its specialized rollers pay special attention to the sole of your
-          foot. By naturally following the contour of the foot, the Soho II both
-          rolls and scrapes your foot with extra care and deliberation.
-        </p>
+      <div class="grid-item flex-col bg-[#eae4df] aspect-square justify-center">
+        <img src="" alt="" class="!ml-0 w-1/4" />
+        <strong class="mt-[-.6em] lg:mt-[-1em]">Tapping</strong>
       </div>
-      <div
-        class="section-wrapper large-direction-column large-align-items-center"
-      >
-        <img
-          alt="Extendable Footrest"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/13-Extendable-Footrest-OsakiPro-Soho2.jpg?v=1647380960"
-        />
-        <p
-          class="large-text-align-center large-10 large-pad-top-1 large-pad-bottom-3"
-        >
+      <div class="grid-item flex-col bg-[#eae4df] aspect-square justify-center">
+        <img src="" alt="" class="!ml-0 w-1/4" />
+
+        <strong>Swedish</strong>
+      </div>
+      <div class="grid-item flex-col bg-[#eae4df] aspect-square justify-center">
+        <img src="" alt="" class="!ml-0 w-1/4" />
+
+        <strong>Shiatsu</strong>
+      </div>
+      <div class="grid-item flex-col bg-[#eae4df] aspect-square justify-center">
+        <img src="" alt="" class="!ml-0 w-1/4" />
+        <strong class="mt-[-.3em] lg:mt-[-1em]">Clapping</strong>
+      </div>
+      <div class="grid-item flex-col bg-[#eae4df] aspect-square justify-center">
+        <img src="" alt="" class="!ml-0 w-1/4" />
+
+        <strong>Rolling</strong>
+      </div>
+    </div>
+
+    <div class="section flex-row-reverse">
+      <img src="" alt="" class="" />
+      <div class="section-content">
+        <div class="section-header">Extendable Footrest</div>
+        <div class="section-description">
           Regardless of your height, everyone deserves a comfortable massage, as
           such, the Soho II comes equipped with an extendable footrest reaching
           upwards of eight inches.
-        </p>
+        </div>
       </div>
-      <div
-        class="section-wrapper large-direction-column large-align-items-center"
-      >
-        <img
-          alt="Bluetooth Speaker"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/14-Bluetooth-OsakiPro-Soho2.jpg?v=1647380959"
-        />
-        <p
-          class="large-text-align-center large-10 large-pad-top-1 large-pad-bottom-3"
-        >
+    </div>
+    <div class="section">
+      <img src="" alt="" class="" />
+      <div class="section-content">
+        <div class="section-header">Foot Rollers</div>
+        <div class="section-description">
+          Foot Roller Massage The Soho II’s unique foot massage is unlike any
+          other on the market, its specialized rollers pay special attention to
+          the sole of your foot.
+        </div>
+      </div>
+    </div>
+    <div class="section flex-row-reverse">
+      <img src="" alt="" class="" />
+      <div class="section-content">
+        <div class="section-header">Bluetooth Speaker</div>
+        <div class="section-description">
           Connect your mobile device via bluetooth to enjoy relaxing sounds,
           music, or even podcasts through the Soho’s dual surround sound
           speakers.
-        </p>
-      </div>
-      <div class="large-offset-top-1 large-offset-bottom-1">
-        <img
-          alt="Phone Holder"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/15-Phone-Holder-OsakiPro-Soho2.jpg?v=1647380960"
-        />
-      </div>
-      <div class="large-offset-top-1 large-offset-bottom-1">
-        <img
-          alt="Adjustable Shoulder Width"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/16-Adjustable-Shoulder-OsakiPro-Soho2.jpg?v=1647380962"
-        />
-      </div>
-      <div class="large-offset-top-1 large-offset-bottom-3">
-        <img
-          alt="Minimum Doorway Size"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/17-Doorway-OsakiPro-Soho2.jpg?v=1647380960"
-        />
-      </div>
-      <div class="section-wrapper large-direction-column">
-        <h2 class="text-align-center">Dimensions</h2>
-        <div
-          class="section-wrapper small-direction-column large-align-items-center"
-        >
-          <div class="large-6 small-12">
-            <img
-              alt="Osaki OS-Pro Soho II Dimension Upright"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/SohoII_Dimension_Upright.jpg?v=1649282485"
-            />
-          </div>
-          <div class="large-6 small-12">
-            <img
-              alt="Osaki OS-Pro Soho II Dimension Reclined"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/SohoII_Dimension_Reclined.jpg?v=1649282485"
-            />
-          </div>
         </div>
       </div>
-    </section>
-    <section class="section-specs section-pad-bottom">
-      <div class="table-tap">
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">Product Name</div>
-            <div class="specs-column">Osaki OS-Pro Soho II</div>
-          </div>
-        </div>
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">User Manual</div>
-            <div class="specs-column">
-              <a
-                href="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/Soho_II_EC-626E-TIT_Manual.pdf?v=1689196269"
-                style="color: #ff4800"
-                target="_blank"
-              >
-                Download
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">Power Supply</div>
-            <div class="specs-column">AC 110 - 120V</div>
-          </div>
-        </div>
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">Rate Frequency</div>
-            <div class="specs-column">60 Hz</div>
-          </div>
-        </div>
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">Rate Timer</div>
-            <div class="specs-column">5 / 10 / 15 / 20 / 25 / 30 min</div>
-          </div>
-        </div>
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">
-              Dimensions
-              <br />
-              (W x L x H)
-            </div>
-            <div class="specs-column">
-              <strong> Upright </strong>
-              <br />
-              29.53" x 57.48" x 44.88"
-            </div>
-            <div class="specs-column">
-              <strong> Reclined </strong>
-              <br />
-              29.53" x 64.96" x 42.52"
-            </div>
-          </div>
-        </div>
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">Width</div>
-            <div class="specs-column">
-              <strong> Shoulder </strong>
-              <br />
-              20.5"
-            </div>
-            <div class="specs-column">
-              <strong> Seat </strong>
-              <br />
-              17"
-            </div>
-          </div>
-        </div>
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">Minimum Doorway Size</div>
-            <div class="specs-column">29.53"</div>
-          </div>
-        </div>
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">
-              Weight
-              <br />
-            </div>
-            <div class="specs-column">
-              <strong> Net Weight </strong>
-              <br />
-              205.03 lbs
-            </div>
-            <div class="specs-column">
-              <strong> Gross Weight </strong>
-              <br />
-              245.82 lbs
-            </div>
-          </div>
-        </div>
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">Maximum User Weight</div>
-            <div class="specs-column">260 lbs</div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
 
-    <script>
-      const iframe = document.querySelector("iframe");
-      const revealIframe = function (entries, observer) {
-        const [entry] = entries;
-        if (!entry.isIntersecting) {
-          entry.target.src = entry.target.src.replace("&autoplay=1", "");
-        } else {
-          entry.target.src = entry.target.src + "&autoplay=1";
-        }
-      };
-      const sectionObserver = new IntersectionObserver(revealIframe, {
-        root: null,
-        rootMargin: "100px",
-        threshold: 1.0,
-      });
-      sectionObserver.observe(iframe);
-    </script>
-  </li>
-  <li></li>
+    <div class="flex justify-between gap-5 md:gap-10 mb-5 md:mb-10">
+      <div
+        class="!p-0 section-content md:text-xl lg:text-2xl flex-1 flex flex-col justify-between"
+        style="background-color: var(--section-bg-color)"
+      >
+        <img src="" alt="" class="w-full" />
+      </div>
+      <div
+        class="section-content md:text-xl lg:text-2xl flex-1 flex flex-col-reverse justify-between relative !p-0 !gap-0"
+        style="background-color: var(--section-bg-color)"
+        ;
+      >
+        <img src="" alt="" class="" />
+      </div>
+    </div>
 
-  <!--Specification-->
-</ul>
+    <img src="" alt="" />
+
+    <div class="section-dimensions">
+      <div class="text-3xl lg:text-5xl text-center mt-40">Dimensions</div>
+      <div
+        class="flex flex-col md:flex-row justify-between gap-5 md:gap-10 items-center"
+      >
+        <img src="" alt="" class="!w-1/2 md:p-20" />
+        <div class="flex flex-col justify-center">
+          <img src="" alt="" class="" /><img src="" alt="" class="" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section-specs section-pad-bottom">
+    <div class="table-tap">
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Product Name</div>
+          <div class="specs-column">OS Bliss VL</div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">User Manual</div>
+          <div class="specs-column">
+            <a
+              href="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/Bliss_VL_Manual.pdf?v=1689196199"
+              style="color: #ff4800"
+              target="_blank"
+            >
+              Download
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Power Supply</div>
+          <div class="specs-column">110~120V AC</div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Rated Frequency</div>
+          <div class="specs-column">50/60 Hz</div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">
+            Dimensions
+            <br />
+            (W x L x H)
+          </div>
+          <div class="specs-column">26" x 38.5" x 42"</div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Minimum Doorway Size</div>
+          <div class="specs-column">
+            <strong> Disassembled </strong>
+            <br />
+            26"
+          </div>
+          <div class="specs-column">
+            <strong> Assembled </strong>
+            <br />
+            26"
+          </div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Width</div>
+          <div class="specs-column">
+            <strong> Shoulder </strong>
+            <br />
+            18"
+          </div>
+          <div class="specs-column">
+            <strong> Seat </strong>
+            <br />
+            13"
+          </div>
+        </div>
+      </div>
+      <!-- <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Weight</div>
+          <div class="specs-column">
+            <strong> Net </strong>
+            <br />
+            213lbs
+          </div>
+          <div class="specs-column">
+            <strong> Gross </strong>
+            <br />
+            255lbs
+          </div>
+        </div>
+      </div> -->
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Auto Timer</div>
+          <div class="specs-column">20 Minutes</div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Max. User Weight</div>
+          <div class="specs-column">260lbs</div>
+        </div>
+      </div>
+      <!-- <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Length of Wire</div>
+          <div class="specs-column">
+            <strong> Controller Wire </strong>
+            <br />
+            1.2m
+          </div>
+          <div class="specs-column">
+            <strong> Power Supply Wire </strong>
+            <br />
+            2.1m
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </section>
+</body>
+<script>
+  $(function () {
+    $.each($(".sections img"), (i, img) => {
+      $(img).attr("src", imgs[i].img_src);
+      $(img).attr("alt", imgs[i].img_name);
+    });
+
+    if (youtube_link != "") {
+      var youtube_id = youtube_link.split("watch?v=")[1].split("&")[0];
+      var src =
+        "https://www.youtube.com/embed/" + youtube_id + "?autoplay=1&mute=1";
+      var embed_html =
+        '<iframe class="w-full aspect-video mb-20" src=' +
+        src +
+        ' title="YouTube video player" frameborder="0" allowfullscreen></iframe>';
+      $("#youtube-link").append(embed_html);
+    }
+    $("#tab-button1").on("click", () => {
+      $("#tab-button1").addClass("active-tab");
+      $("#tab-button2").removeClass("active-tab");
+      $(".sections").fadeIn("slow");
+      $(".section-specs").fadeIn("slow");
+    });
+    $("#tab-button2").on("click", () => {
+      $("#tab-button1").removeClass("active-tab");
+      $("#tab-button2").addClass("active-tab");
+      $(".sections").fadeOut("slow");
+      $(".section-specs").fadeOut("slow");
+    });
+    if (osakiusa) {
+      $("#tab-buttons").addClass("hidden");
+      $("#feature-section").addClass("hidden");
+    }
+  });
+</script>

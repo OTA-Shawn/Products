@@ -20,7 +20,22 @@
 </section> -->
 <!--Specification-->
 <!-- more -->
-<section class="section-content">
+<div id="tab-buttons" class="max-w-6xl mx-auto my-4">
+  <button
+    id="tab-button1"
+    class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center dark:text-gray-400 dark:hover:text-gray-300 active-tab"
+  >
+    Description
+  </button>
+  <button
+    id="tab-button2"
+    class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center t dark:text-gray-400 dark:hover:text-gray-300"
+  >
+    Reviews
+  </button>
+</div>
+
+<section class="section-content sections">
   <iframe
     style="width: 100%; aspect-ratio: 16/9; border: 0"
     src="https://www.youtube.com/embed/zX56FFr2Lpo?mute=1&amp;autoplay=1"
@@ -437,3 +452,29 @@
     </div>
   </div>
 </section>
+<script src="https://cdn.tailwindcss.com"></script>
+<script
+  crossorigin="anonymous"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+></script>
+<script>
+  $(function () {
+    $("#tab-button1").on("click", () => {
+      $("#tab-button1").addClass("active-tab");
+      $("#tab-button2").removeClass("active-tab");
+      $(".sections").fadeIn("slow");
+      $(".section-specs").fadeIn("slow");
+    });
+    $("#tab-button2").on("click", () => {
+      $("#tab-button1").removeClass("active-tab");
+      $("#tab-button2").addClass("active-tab");
+      $(".sections").fadeOut("slow");
+      $(".section-specs").fadeOut("slow");
+    });
+    if (osakiusa) {
+      $("#tab-buttons").addClass("hidden");
+      $("#feature-section").addClass("hidden");
+    }
+  });
+</script>
