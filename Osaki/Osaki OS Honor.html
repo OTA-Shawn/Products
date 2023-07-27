@@ -3,9 +3,6 @@
   rel="stylesheet"
   href="https://ota-shawn.github.io/productGlobalCss/style.css"
 />
-<script>
-  var youtube_link = "https://www.youtube.com/watch?v=u3RxKsd1x6c";
-</script>
 <!--   <ul>
     <li>
       <strong> 3D Massage Mechanism </strong>
@@ -29,26 +26,24 @@
   </ul>
  -->
 <!-- more -->
-<ul class="tabs">
-  <li class="active">Description</li>
-  <li>Reviews</li>
-</ul>
-<ul class="tabs-content">
-  <li class="active">
-    <section id="youtube-link" style="display: none">
-      <iframe
-        width="100%"
-        height="100%"
-        src=""
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-    </section>
+<div id="tab-buttons" class="max-w-6xl mx-auto my-4">
+      <button id="tab-button1"
+            class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center dark:text-gray-400 dark:hover:text-gray-300 active-tab">
+            Description
+      </button>
+      <button id="tab-button2"
+            class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center t dark:text-gray-400 dark:hover:text-gray-300">
+            Reviews
+      </button>
+</div>
+      
     <div
-      class="section-wrapper large-direction-column large-align-items-center large-offset-bottom-3 large-position-relative"
+      class="sections section-wrapper large-direction-column large-align-items-center large-offset-bottom-3 large-position-relative"
     >
+      <iframe
+        style="width:100%; aspect-ratio:16/9; border:0;"
+        src="https://www.youtube.com/watch?v=u3RxKsd1x6c?autoplay=1&mute=1"
+      ></iframe>
       <div class="intensity-content intensity-wrapper">
         <p class="intensity-headline">Intensity Level</p>
         <div class="intensity-bar">
@@ -510,15 +505,25 @@
       </div>
     </section>
 
-    <script>
-      if (youtube_link !== "") {
-        var youtube_id = youtube_link.split("=")[1];
-        var dst = "https://www.youtube.com/embed/" + youtube_id;
-        var d = document.getElementById("youtube-link");
-        d.style.display = "block";
-        d.children[0].setAttribute("src", dst);
-      }
-    </script>
-  </li>
-  <li></li>
-</ul>
+<script crossorigin="anonymous" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+      $(function () {
+            $("#tab-button1").on("click", () => {
+                  $("#tab-button1").addClass("active-tab");
+                  $("#tab-button2").removeClass("active-tab");
+                  $(".sections").fadeIn("slow");
+                  $(".section-specs").fadeIn("slow");
+            });
+            $("#tab-button2").on("click", () => {
+                  $("#tab-button1").removeClass("active-tab");
+                  $("#tab-button2").addClass("active-tab");
+                  $(".sections").fadeOut("slow");
+                  $(".section-specs").fadeOut("slow");
+            });
+            if (osakiusa) {
+                  $("#tab-buttons").addClass("hidden");
+                  $("#feature-section").addClass("hidden");
+            }
+      });
+</script>
