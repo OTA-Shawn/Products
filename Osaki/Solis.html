@@ -1,0 +1,978 @@
+<!-- <ul class="feature-section">
+  <li><strong>Flexible Track System</strong></li>
+  <li><strong>190° Stretch Flexibility </strong></li>
+  <li><strong>Intelligent Voice Recognition </strong></li>
+  <li>Touchscreen
+Controller</li>
+  <li>Lumbar
+Heating Therapy</li>
+  <li>18 Auto Programs &amp; 5 Massage Styles</li>
+  <li><strong>Spinning Calf Rollers</strong></li>
+<li>HD Bluetooth Surround Speakers</li>
+</ul> -->
+
+<!-- more -->
+
+<script>
+  const youtube_link = "";
+
+  const imgs = [
+    {
+      img_order: "1",
+      img_name: "solis_main",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/1.solis_main.jpg?v=1691446097",
+    },
+    {
+      img_order: "2",
+      img_name: "solis_flexible_track",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/2.solis_flexible_track.jpg?v=1691446097",
+    },
+    {
+      img_order: "3",
+      img_name: "solis_flexibility",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.solis_flexibility.jpg?v=1691446097",
+    },
+    {
+      img_order: "4",
+      img_name: "solis_calf-rest",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4.solis_calf-rest.jpg?v=1691446097",
+    },
+    {
+      img_order: "5",
+      img_name: "solis_calfrest",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/5.solis_calfrest.jpg?v=1691446097",
+    },
+    {
+      img_order: "6",
+      img_name: "solis_touchscreen",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/6.solis_touchscreen.jpg?v=1691446097",
+    },
+    {
+      img_order: "7",
+      img_name: "solis_air-cells",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/7.solis_air-cells.jpg?v=1691446097",
+    },
+    {
+      img_order: "8",
+      img_name: "solis_ZG",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/8.solis_ZG.jpg?v=1691446097",
+    },
+    {
+      img_order: "9",
+      img_name: "solis_heating",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/9.solis_heating.jpg?v=1691446097",
+    },
+    {
+      img_order: "10",
+      img_name: "solis_icon_full_body",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.solis_icon_full_body.jpg?v=1691446097",
+    },
+    {
+      img_order: "11",
+      img_name: "solis_icon_alignment",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/11.solis_icon_alignment.jpg?v=1691446097",
+    },
+    {
+      img_order: "12",
+      img_name: "solis_icon_chinese",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12.solis_icon_chinese.jpg?v=1691446097",
+    },
+    {
+      img_order: "13",
+      img_name: "solis_icon_neck_shoulder",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/13.solis_icon_neck_shoulder.jpg?v=1691446097",
+    },
+    {
+      img_order: "14",
+      img_name: "solis_icon_japanese",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/14.solis_icon_japanese.jpg?v=1691446097",
+    },
+    {
+      img_order: "15",
+      img_name: "solis_icon_waist_hip",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/15.solis_icon_waist_hip.jpg?v=1691446097",
+    },
+    {
+      img_order: "16",
+      img_name: "solis_icon_handstand",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/16.solis_icon_handstand.jpg?v=1691446097",
+    },
+    {
+      img_order: "17",
+      img_name: "solis_icon_exercise",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/17.solis_icon_exercise.jpg?v=1691446097",
+    },
+    {
+      img_order: "18",
+      img_name: "solis_icon_sleep",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/18.solis_icon_sleep.jpg?v=1691446097",
+    },
+    {
+      img_order: "19",
+      img_name: "solis_icon_release",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19.solis_icon_release.jpg?v=1691446097",
+    },
+    {
+      img_order: "20",
+      img_name: "solis_icon_super-stretch",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/20.solis_icon_super-stretch.jpg?v=1691446097",
+    },
+    {
+      img_order: "21",
+      img_name: "solis_icon_full_body-relaxation",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/21.solis_icon_full_body-relaxation.jpg?v=1691446097",
+    },
+    {
+      img_order: "22",
+      img_name: "solis_icon_man_healthcare",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/22.solis_icon_man_healthcare.jpg?v=1691446097",
+    },
+    {
+      img_order: "23",
+      img_name: "solis_icon_upper_body",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/23.solis_icon_upper_body.jpg?v=1691446097",
+    },
+    {
+      img_order: "24",
+      img_name: "solis_icon_woman_healthcare",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/24.solis_icon_woman_healthcare.jpg?v=1691446097",
+    },
+    {
+      img_order: "25",
+      img_name: "solis_icon_lower_body",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/25.solis_icon_lower_body.jpg?v=1691446097",
+    },
+    {
+      img_order: "26",
+      img_name: "solis_icon_elderly",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/26.solis_icon_elderly.jpg?v=1691446097",
+    },
+    {
+      img_order: "27",
+      img_name: "solis_icon_quick_massage",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/27.solis_icon_quick_massage.jpg?v=1691446097",
+    },
+    {
+      img_order: "28",
+      img_name: "solis_icon_knead",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/28.solis_icon_knead.jpg?v=1691446097",
+    },
+    {
+      img_order: "29",
+      img_name: "solis_icon_tap",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/29.solis_icon_tap.jpg?v=1691446097",
+    },
+    {
+      img_order: "30",
+      img_name: "solis_icon_knead_tap",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/30.solis_icon_knead_tap.jpg?v=1691446097",
+    },
+    {
+      img_order: "31",
+      img_name: "solis_icon_shiatsu",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/31.solis_icon_shiatsu.jpg?v=1691446097",
+    },
+    {
+      img_order: "32",
+      img_name: "solis_icon_rolling",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/32.solis_icon_rolling.jpg?v=1691446097",
+    },
+    {
+      img_order: "33",
+      img_name: "solis_calf-kneading",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/33.solis_calf-kneading.jpg?v=1691446097",
+    },
+    {
+      img_order: "34",
+      img_name: "solis_extendable-footrest",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/34.solis_extendable-footrest.jpg?v=1691446097",
+    },
+    {
+      img_order: "35",
+      img_name: "solis_footrollers",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/35.solis_footrollers.jpg?v=1691446097",
+    },
+    {
+      img_order: "36",
+      img_name: "solis_headrest",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/36.solis_headrest.jpg?v=1691446097",
+    },
+    {
+      img_order: "37",
+      img_name: "solis_LED",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/37.solis_LED.jpg?v=1691446097",
+    },
+    {
+      img_order: "38",
+      img_name: "solis_control_panel",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/38.solis_control_panel.jpg?v=1691446097",
+    },
+    {
+      img_order: "39",
+      img_name: "solis_speakers",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/39.solis_speakers.jpg?v=1691446097",
+    },
+    {
+      img_order: "41",
+      img_name: "solis_phone_holder",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/41.solis_phone_holder.jpg?v=1691446097",
+    },
+    {
+      img_order: "42",
+      img_name: "solis_USB",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/42.solis_USB.jpg?v=1691446097",
+    },
+    {
+      img_order: "43",
+      img_name: "solis_dimensions1",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/43.solis_dimensions1.jpg?v=1691446097",
+    },
+    {
+      img_order: "44",
+      img_name: "solis_dimensions2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/44.solis_dimensions2.jpg?v=1691446097",
+    },
+  ];
+</script>
+<meta charset="UTF-8" />
+<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<script
+  crossorigin="anonymous"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  :root {
+    --section-bg-color: #eeeae7;
+    --section-strong-color: #564b4b;
+    --section-header-color: #564b4b;
+    --section-content-color: #a09a95;
+    --section-grid-color: #a09a95;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .sections {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sections strong {
+    color: var(--section-strong-color);
+  }
+  .sections .section {
+    background-color: var(--section-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .section > img,
+  .section-content {
+    flex: 1 1 0%;
+  }
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+  }
+  .section-header {
+    font-size: 52px;
+    line-height: 65px;
+    color: var(--section-header-color);
+  }
+  .section-description {
+    color: var(--section-content-color);
+    font-size: 22px;
+    line-height: 33px;
+  }
+  .circle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 32px;
+  }
+  .circle > :first-child {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .grid-section {
+    background-color: var(--section-bg-color);
+    color: var(--section-grid-color);
+    display: grid;
+    grid-column: span 2 / span 2;
+    padding: 50px 100px 50px;
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+  .grid-section img {
+    margin: 0 0 0px 50px;
+  }
+  .grid-section .grid-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .app-icon {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .app-icon img {
+    flex: 0 0 0;
+    width: 40%;
+  }
+  .grid-align {
+    text-align: left;
+  }
+  @media (max-width: 1024px) {
+    .sections {
+      max-width: 768px;
+    }
+    .sections .section {
+      margin-bottom: 35px;
+    }
+    .section > img {
+      width: 50%;
+    }
+    .section .section-content {
+      gap: 22px;
+      padding: 35px;
+    }
+    .section-header {
+      font-size: 39px;
+      line-height: 58px;
+    }
+    .section-description {
+      font-size: 15px;
+      line-height: 24px;
+    }
+    .circle {
+      gap: 5px;
+      font-size: 24px;
+    }
+    .circle > :first-child {
+      width: 30px;
+      height: 30px;
+    }
+    .grid-section {
+      padding: 35px 75px 35px;
+      gap: 35px;
+      margin-bottom: 35px;
+    }
+    .grid-section img {
+      margin: 0 0 0px 35px;
+    }
+    .grid-section .grid-item {
+      gap: 15px;
+    }
+    .grid-align {
+      text-align: center;
+    }
+  }
+  @media (max-width: 768px) {
+    .sections {
+      max-width: 480px;
+    }
+    .sections .section {
+      margin-bottom: 22px;
+    }
+
+    .section .section-content {
+      gap: 14px;
+      padding: 22px;
+    }
+    .section-header {
+      font-size: 26px;
+      line-height: 38px;
+    }
+    .section-description {
+      font-size: 10px;
+      line-height: 16px;
+    }
+    .circle {
+      gap: 4px;
+      font-size: 16px;
+    }
+    .circle > :first-child {
+      width: 20px;
+      height: 20px;
+    }
+    .grid-section {
+      padding: 20px 50px 20px;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    .grid-section img {
+      margin: 0 0 0px 20px;
+      width: 20%;
+    }
+    .grid-section .grid-item {
+      gap: 10px;
+    }
+  }
+  .active-tab {
+    color: #191919;
+    border-bottom: 0.25em solid gray;
+  }
+</style>
+<div id="tab-buttons" class="max-w-6xl mx-auto my-4">
+  <button
+    id="tab-button1"
+    class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center dark:text-gray-400 dark:hover:text-gray-300 active-tab"
+  >
+    Description
+  </button>
+  <button
+    id="tab-button2"
+    class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center t dark:text-gray-400 dark:hover:text-gray-300"
+  >
+    Reviews
+  </button>
+</div>
+<body>
+  <div class="sections">
+    <div id="youtube-link"></div>
+    <div class="section">
+      <!-- <img src="" alt="" /> -->
+    </div>
+    <div class="section !bg-white !flex-col !mb-40 md:!mb-80">
+      <img alt="" class="!w-full" />
+      <div class="px-10 pt-10 pb-5 text-xl md:text-2xl lg:text-3xl text-center">
+        Introducing Solis, the revolutionary 4D massage chair that will
+        transport you to a realm of ultimate relaxation and rejuvenation.
+        Designed with cutting-edge technology and a passion for comfort, Solis
+        promises to be the ultimate indulgence for your body and soul. With its
+        state-of-the-art 4D massage system, Solis offers a personalized massage
+        experience, deeply targeting every muscle and pressure point. You can
+        customize the intensity and focus of the massage to suit your
+        preferences while utilizing its flexible dual mechanism technology.
+      </div>
+      <div class="flex gap-10 justify-center">
+        <div class="circle">
+          <div class="bg-[#8E8680]"></div>
+          <div>Taupe</div>
+        </div>
+        <div class="circle">
+          <div class="bg-[#3A2521]"></div>
+          <div>Brown</div>
+        </div>
+        <div class="circle">
+          <div class="bg-[#1D1D1D]"></div>
+          <div>Black</div>
+        </div>
+      </div>
+    </div>
+    <div class="section flex-col">
+      <div class="section-content">
+        <div class="section-header">Flexible Track System</div>
+        <div class="section-description">
+          By utilizing new innovation of a flexible track system, the Solis
+          breaks the boundaries of the standard SL-Track where the base of the
+          chair can be at a fixed angle relative to the backrest. The Solis’
+          flexible track system allows the chair to recline beyond 180°, while
+          its advanced <strong>4D massage technology</strong> offers precise
+          control over the <strong>intensity and depth of the massage</strong>.
+        </div>
+      </div>
+      <img alt="" class="!w-full" />
+    </div>
+    <div class="section flex-col">
+      <div class="section-content">
+        <div class="section-header">190° Stretch Flexibility</div>
+        <div class="section-description">
+          Offering a higher level of flexibility than most modern massage
+          chairs, the Solis can extend 190° for a full body stretch, allowing
+          for a more complex massage.
+        </div>
+      </div>
+      <img alt="" class="!w-full" />
+    </div>
+    <div
+      class="section flex-col-reverse md:flex-row-reverse md:relative md:!justify-start"
+    >
+      <div class="section-content md:!pl-0">
+        <div class="section-header">
+          Intelligent <br />
+          Voice Recognition
+        </div>
+        <div class="section-description">
+          The Solis holds intelligent voice recognition capabilities to add more
+          convenience while using the massage chair. Just follow the guidelines
+          and commands in the manual and the chair will respond with fast
+          reactivity.
+        </div>
+      </div>
+      <img alt="" class="!w-full md:!w-1/2" />
+    </div>
+    <div class="section">
+      <div class="section-content">
+        <div class="section-header">Extended Calf Rest</div>
+        <div class="section-description">
+          The length of the calf rest is <strong>13.5 inches</strong>, which is
+          more extensive than the calfrest length of typical massage chairs. The
+          Solis provides <strong>more coverage</strong> for the calf areas while
+          also being inclusive to users of various body types.
+        </div>
+      </div>
+      <img alt="" class="w-1/2" />
+    </div>
+    <div class="section flex-col-reverse md:flex-row-reverse">
+      <div class="section-content">
+        <div class="section-header">Touchscreen Controller</div>
+        <div class="section-description">
+          The Solis includes a touchscreen controller that allows for easy
+          navigation and adjustment settings, making it user-friendly.
+        </div>
+      </div>
+      <img alt="" class="!w-full md:!w-2/5 !flex-initial" />
+    </div>
+    <div class="section flex-col-reverse md:flex-row">
+      <div class="section-content !pt-0">
+        <div class="section-header">54 Air Cell Compression Massage</div>
+        <div class="section-description">
+          The Solis is designed with efficiency in mind. The Solis offers a
+          total of 54 airbags in the massage chair, providing coverage to
+          shoulders, arms, hips, calves, and feet.
+        </div>
+      </div>
+      <img alt="" class="!w-full md:!w-2/5 !flex-initial" />
+    </div>
+    <div class="section flex-col">
+      <div class="section-content !pb-0">
+        <div class="section-header">
+          Zero Gravity Reclining <br />
+          and Space Saving Technology
+        </div>
+        <div class="section-description">
+          Inspired by NASA, the Zero Gravity position is the perfect position
+          for ultimate relaxation. By reclining into
+          <strong>zero-gravity position</strong>, users can experience a state
+          of weightlessness that helps release pressure on the body. With
+          <strong>Osaki’s Space Saving Technology</strong>, the massage chair
+          can be placed <strong>10 inches</strong> from the wall and still
+          accomplish a complete recline.
+        </div>
+      </div>
+      <img alt="" class="!w-full" />
+    </div>
+    <div class="section flex-col-reverse md:flex-row-reverse">
+      <div class="section-content">
+        <div class="section-header">
+          Lumbar <br />
+          Heating Therapy
+        </div>
+        <div class="section-description">
+          The lumbar heating system in the Solis uses its
+          <strong>graphene heating</strong> to warm and reduce soreness along
+          the back area.
+        </div>
+      </div>
+      <img alt="" class="!w-full md:!w-2/5 !flex-initial" />
+    </div>
+
+    <div
+      class="grid-section !px-4 !grid-cols-2 text-center text-[var(--section-strong-color)] !pl-[10%]"
+    >
+      <div
+        class="col-span-2 text-2xl md:text-4xl text-center gap-1 flex justify-center items-center"
+      >
+        18 Auto Massage Programs
+      </div>
+      <div class="grid-item !flex !flex-row bg-[var(--section-bg-color)] p-2">
+        <img alt="" class="!ml-0 !w-1/4" />
+        <div class="">Full Body Relaxation</div>
+      </div>
+      <div class="grid-item !flex !flex-row bg-[var(--section-bg-color)] p-2">
+        <img alt="" class="!ml-0 !w-1/4" />
+        <div class="">Alignment Mode</div>
+      </div>
+      <div class="grid-item !flex !flex-row bg-[var(--section-bg-color)] p-2">
+        <img alt="" class="!ml-0 !w-1/4" />
+        <div class="">Chinese Massage</div>
+      </div>
+      <div class="grid-item !flex !flex-row bg-[var(--section-bg-color)] p-2">
+        <img alt="" class="!ml-0 !w-1/4" />
+        <div class="">Neck & Shoulder Massage</div>
+      </div>
+      <div class="grid-item !flex !flex-row bg-[var(--section-bg-color)] p-2">
+        <img alt="" class="!ml-0 !w-1/4" />
+        <div class="">Japanese Massage</div>
+      </div>
+      <div class="grid-item !flex !flex-row bg-[var(--section-bg-color)] p-2">
+        <img alt="" class="!ml-0 !w-1/4" />
+        <div class="">Waist & Hip Massage</div>
+      </div>
+      <div class="grid-item !flex !flex-row bg-[var(--section-bg-color)] p-2">
+        <img alt="" class="!ml-0 !w-1/4" />
+        <div class="">Handstand Stretch</div>
+      </div>
+      <div class="grid-item !flex !flex-row bg-[var(--section-bg-color)] p-2">
+        <img alt="" class="!ml-0 !w-1/4" />
+        <div class="">Exercise Relaxation</div>
+      </div>
+      <div class="grid-item !flex !flex-row bg-[var(--section-bg-color)] p-2">
+        <img alt="" class="!ml-0 !w-1/4" />
+        <div class="">Lay Down To Sleep</div>
+      </div>
+      <div class="grid-item !flex !flex-row bg-[var(--section-bg-color)] p-2">
+        <img alt="" class="!ml-0 !w-1/4" />
+        <div class="">Release Pressure Mode</div>
+      </div>
+      <div class="grid-item !flex !flex-row bg-[var(--section-bg-color)] p-2">
+        <img alt="" class="!ml-0 !w-1/4" />
+        <div class="">Super Stretch</div>
+      </div>
+      <div class="grid-item !flex !flex-row bg-[var(--section-bg-color)] p-2">
+        <img alt="" class="!ml-0 !w-1/4" />
+        <div class="">Full Body Air Pressure</div>
+      </div>
+      <div class="grid-item !flex !flex-row bg-[var(--section-bg-color)] p-2">
+        <img alt="" class="!ml-0 !w-1/4" />
+        <div class="">Man Healthcare</div>
+      </div>
+      <div class="grid-item !flex !flex-row bg-[var(--section-bg-color)] p-2">
+        <img alt="" class="!ml-0 !w-1/4" />
+        <div class="">Upper Body</div>
+      </div>
+      <div class="grid-item !flex !flex-row bg-[var(--section-bg-color)] p-2">
+        <img alt="" class="!ml-0 !w-1/4" />
+        <div class="">Woman Healthcare</div>
+      </div>
+      <div class="grid-item !flex !flex-row bg-[var(--section-bg-color)] p-2">
+        <img alt="" class="!ml-0 !w-1/4" />
+        <div class="">Lower Body</div>
+      </div>
+      <div class="grid-item !flex !flex-row bg-[var(--section-bg-color)] p-2">
+        <img alt="" class="!ml-0 !w-1/4" />
+        <div class="">Elderly Healthcare</div>
+      </div>
+      <div class="grid-item !flex !flex-row bg-[var(--section-bg-color)] p-2">
+        <img alt="" class="!ml-0 !w-1/4" />
+        <div class="">Quick Massage</div>
+      </div>
+    </div>
+
+    <div
+      class="grid-section !px-4 !grid-cols-2 text-center text-[var(--section-strong-color)] !pl-[10%]"
+    >
+      <div
+        class="col-span-2 text-2xl md:text-4xl text-center gap-1 flex justify-center items-center"
+      >
+        5 Manual Massage Programs
+      </div>
+      <div class="grid-item !flex !flex-row bg-[var(--section-bg-color)] p-2">
+        <img alt="" class="!ml-0 !w-1/4" />
+        <div class="">Knead</div>
+      </div>
+      <div class="grid-item !flex !flex-row bg-[var(--section-bg-color)] p-2">
+        <img alt="" class="!ml-0 !w-1/4" />
+        <div class="">Tap</div>
+      </div>
+      <div class="grid-item !flex !flex-row bg-[var(--section-bg-color)] p-2">
+        <img alt="" class="!ml-0 !w-1/4" />
+        <div class="">Knead & Tap</div>
+      </div>
+      <div class="grid-item !flex !flex-row bg-[var(--section-bg-color)] p-2">
+        <img alt="" class="!ml-0 !w-1/4" />
+        <div class="">Shiatsu</div>
+      </div>
+      <div class="grid-item !flex !flex-row bg-[var(--section-bg-color)] p-2">
+        <img alt="" class="!ml-0 !w-1/4" />
+        <div class="">Rolling</div>
+      </div>
+    </div>
+
+    <div class="section flex-col md:flex-row-reverse">
+      <img alt="" class="!w-full md:!w-1/2" />
+      <div class="section-content">
+        <div class="section-header">Calf Kneading Massage</div>
+        <div class="section-description">
+          The Solis provides deep calf kneading massage for leg muscles, which
+          is an overlooked aspect of modern massage chairs. The Solis addresses
+          the calf areas by utilizing
+          <strong>airbag compression massage</strong>.
+        </div>
+      </div>
+    </div>
+    <div class="section flex-col md:flex-row">
+      <img alt="" class="!w-full md:!w-1/2" />
+      <div class="section-content">
+        <div class="section-header">Automatic Extendable Footrest</div>
+        <div class="section-description">
+          The Solis was created for users of different heights and body types,
+          offering an automatic extendable footrest. The footrest has the
+          ability to stretch up to <strong>5 inches</strong> to adjust to
+          <strong>any user in mind</strong>.
+        </div>
+      </div>
+    </div>
+    <div class="section flex-col md:flex-row-reverse">
+      <img alt="" class="!w-full md:!w-1/2" />
+      <div class="section-content">
+        <div class="section-description">
+          The Solis provides <strong>Specialized Foot Rollers</strong> and
+          <strong>Spinning Calf Rollers</strong>
+          that were created to activate a series of acupuncture points using
+          <strong>scientifically designed reflexology ridges</strong>. The
+          footrest holds 1 roller in each calf and
+          <strong>2 rollers</strong> for each foot, to give a thorough massage
+          from heel to toe.
+        </div>
+      </div>
+    </div>
+    <div class="section flex-col-reverse md:flex-row relative">
+      <img alt="" class="!w-full md:!w-1/2" />
+      <div class="section-content !pb-0 absolute md:relative top-0">
+        <div class="section-header">Removable Headrest</div>
+        <div class="section-description">
+          The Solis includes a removable headrest, which may help you customize
+          the best massage for all head positions.
+        </div>
+      </div>
+    </div>
+    <div
+      class="grid grid-cols-2 gap-5 md:gap-9 lg:gap-12 mb-5 md:mb-9 lg:mb-12 text-[var(--section-strong-color)]"
+    >
+      <div class="flex text-center flex-col bg-[var(--section-bg-color)]">
+        <div class="p-4 md:p-7 lg:p-10 !pb-0 text-base md:text-lg lg:text-xl">
+          LED Mood Lighting
+        </div>
+        <img src="" alt="" class="flex-1" />
+      </div>
+      <div class="flex text-center flex-col bg-[var(--section-bg-color)]">
+        <div class="p-4 md:p-7 lg:p-10 !pb-0 text-base md:text-lg lg:text-xl">
+          Side Control Panel
+        </div>
+        <img src="" alt="" class="" />
+      </div>
+    </div>
+    <div
+      class="section flex-col !items-start text-[var(--section-strong-color)]"
+    >
+      <div class="p-4 md:p-7 lg:p-10 !pb-0 text-base md:text-lg lg:text-xl">
+        HD Bluetooth Surround Speakers
+      </div>
+      <img src="" alt="" class="!w-full" />
+    </div>
+    <div
+      class="grid grid-cols-2 gap-5 md:gap-9 lg:gap-12 mb-5 md:mb-9 lg:mb-12 text-[var(--section-strong-color)]"
+    >
+      <div class="flex flex-col bg-[var(--section-bg-color)]">
+        <div class="p-4 md:p-7 lg:p-10 !pb-0 text-base md:text-lg lg:text-xl">
+          Phone Holder
+        </div>
+        <img src="" alt="" class="flex-1" />
+      </div>
+      <div class="flex bg-[var(--section-bg-color)] relative">
+        <div
+          class="p-4 md:p-7 lg:p-10 !pb-0 text-base md:text-lg lg:text-xl absolute"
+        >
+          USB Charger
+        </div>
+        <img src="" alt="" class="!w-full" />
+      </div>
+    </div>
+
+    <div class="section-dimensions">
+      <div class="text-3xl lg:text-5xl text-center mt-40">Dimensions</div>
+      <div class="flex flex-col lg:flex-row gap-5 md:gap-10">
+        <img alt="" class="basis-1/3 min-w-0" />
+        <img alt="" class="basis-2/3 min-w-0" />
+      </div>
+    </div>
+  </div>
+
+  <!-- <section class="section-specs section-pad-bottom">
+    <div class="text-center text-3xl md:text-4xl lg:text-5xl p-10">
+      Specification
+    </div>
+    <div class="table-tap">
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Product Name</div>
+          <div class="specs-column">OP-Xrest 4D</div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">User Manual</div>
+          <div class="specs-column">
+            <a
+              href="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/Web_Version_Updated_manual_for_Xrest_20230328.pdf?v=1680030718"
+              style="color: #ff4800"
+              target="_blank"
+            >
+              Download
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Power Supply</div>
+          <div class="specs-column">110-120V ~</div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Rate Frequency</div>
+          <div class="specs-column">50/60 Hz</div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Auto Timer</div>
+          <div class="specs-column">15 Minutes</div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">
+            Dimensions
+            <br />
+            (W x L x H)
+          </div>
+          <div class="specs-column">
+            <strong> Upright </strong>
+            <br />
+            31.5.” x 65.0“ x 60.6”
+          </div>
+          <div class="specs-column">
+            <strong> Reclined </strong>
+            <br />
+            31.5” x 81.1” x 54.3”
+          </div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Width</div>
+          <div class="specs-column">
+            <strong> Shoulder </strong>
+            <br />
+            20”
+          </div>
+          <div class="specs-column">
+            <strong> Seat </strong>
+            <br />
+            17”
+          </div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">
+            Minimum
+            <br />
+            Doorway Size
+          </div>
+          <div class="specs-column">31.5"</div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Weight</div>
+          <div class="specs-column">
+            <strong> Net </strong>
+            <br />
+            265.7 lbs
+          </div>
+          <div class="specs-column">
+            <strong> Gross </strong>
+            <br />
+            310.8 lbs
+          </div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Maximum User Weight</div>
+          <div class="specs-column">260 lbs</div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <script>
+    $(function () {
+      $.each($(".sections img"), (i, img) => {
+        $(img).attr("src", imgs[i].img_src);
+        $(img).attr("alt", imgs[i].img_name);
+      });
+
+      if (youtube_link != "") {
+        var youtube_id = youtube_link.split("watch?v=")[1].split("&")[0];
+        var src =
+          "https://www.youtube.com/embed/" + youtube_id + "?autoplay=1&mute=1";
+        var embed_html =
+          '<iframe class="w-full aspect-video mb-20" src=' +
+          src +
+          ' title="YouTube video player" frameborder="0" allowfullscreen></iframe>';
+        $("#youtube-link").append(embed_html);
+      }
+      $("#tab-button1").on("click", () => {
+        $("#tab-button1").addClass("active-tab");
+        $("#tab-button2").removeClass("active-tab");
+        $(".sections").fadeIn("slow");
+        $(".section-specs").fadeIn("slow");
+      });
+      $("#tab-button2").on("click", () => {
+        $("#tab-button1").removeClass("active-tab");
+        $("#tab-button2").addClass("active-tab");
+        $(".sections").fadeOut("slow");
+        $(".section-specs").fadeOut("slow");
+      });
+    });
+  </script>
+</body>
