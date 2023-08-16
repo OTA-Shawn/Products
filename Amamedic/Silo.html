@@ -524,8 +524,8 @@
         </div>
       </div>
     </div>
-    <div class="section flex-row !bg-[#ececee]">
-      <img alt="" class="!w-1/4 !flex-initial" />
+    <div class="section flex-col md:flex-row !bg-[#ececee]">
+      <img alt="" class="!w-2/3 md:!w-1/4 !flex-initial self-start" />
       <div class="section-content">
         <div class="section-header">
           Convenient <br />
@@ -538,7 +538,7 @@
       </div>
     </div>
     <div class="section flex-col md:flex-row">
-      <img alt="" class="!w-full md:!w-1/2" />
+      <img alt="" class="!w-2/3 md:!w-1/2 self-end" />
       <div class="section-content">
         <div class="section-header">Lock Button</div>
         <div class="section-description">
@@ -547,17 +547,15 @@
         </div>
       </div>
     </div>
-    <div class="section relative !justify-end">
-      <img alt="" class="!w-2/3 !flex-initial" />
-      <div class="section-content absolute left-0">
+    <div class="section flex-col-reverse relative !justify-end">
+      <img alt="" class="!w-2/3 !flex-initial self-end" />
+      <div class="section-content md:absolute left-0 !w-full !pb-0">
         <div class="section-header">
-          Faux <br class="md:hidden" />
-          Speaker
+          Faux Speaker
           <div
             class="text-xs md:text-sm lg:text-lg text-[var(--section-content-color)]"
           >
-            * Non-functional <br class="md:hidden" />
-            speaker
+            * Non-functional speaker
           </div>
         </div>
       </div>
