@@ -44,6 +44,25 @@
         "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4.Silo_Air.jpg?v=1692137553",
     },
     {
+      img_order: "4-1",
+      img_name: "Silo_Icon_1",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/Silo_Icon_1.jpg?v=1692206808",
+    },
+    {
+      img_order: "4-2",
+      img_name: "Silo_Icon_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/Silo_Icon_2.jpg?v=1692206808",
+    },
+    {
+      img_order: "4-3",
+      img_name: "Silo_Icon_3",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/Silo_Icon_3.jpg?v=1692206808",
+    },
+
+    {
       img_order: "5",
       img_name: "Silo_Icon_2",
       img_src:
@@ -130,6 +149,8 @@
   rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
 />
+<link rel="preconnect" href="https://rsms.me/" />
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
 <style>
   :root {
     --section-bg-color: #eeeef0;
@@ -137,16 +158,23 @@
     --section-header-color: #1d1d1d;
     --section-content-color: #86868b;
     --section-grid-color: #414e59;
+    font-family: "Inter", sans-serif;
+  }
+  @supports (font-variation-settings: normal) {
+    :root {
+      font-family: "Inter var", sans-serif;
+    }
   }
   * {
     box-sizing: border-box;
   }
+
   .sections {
     max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-weight: bold; */
+    /* font-family: Arial, Helvetica, sans-serif; */
     display: flex;
     flex-direction: column;
   }
@@ -173,7 +201,8 @@
   }
   .section-header {
     font-size: 52px;
-    line-height: 65px;
+    line-height: 1.07;
+    font-weight: 600;
     color: var(--section-header-color);
   }
   .section-description {
@@ -236,7 +265,7 @@
     }
     .section-header {
       font-size: 39px;
-      line-height: 58px;
+      line-height: 1.08;
     }
     .section-description {
       font-size: 15px;
@@ -279,7 +308,7 @@
     }
     .section-header {
       font-size: 26px;
-      line-height: 38px;
+      line-height: 1.11;
     }
     .section-description {
       font-size: 10px;
@@ -331,7 +360,7 @@
     <div class="section">
       <!-- <img src="" alt="" /> -->
     </div>
-    <div class="section !bg-white !flex-col !mb-40 md:!mb-80">
+    <div class="section !bg-white !flex-col !mb-20 md:!mb-80">
       <img alt="" class="!w-full" />
       <div class="px-10 pt-10 pb-5 text-xl md:text-2xl lg:text-3xl text-center">
         Packed with upscale attributes like a remote controller, 2D massage
@@ -358,7 +387,7 @@
     <div class="section !flex-row-reverse !bg-black">
       <img alt="" class="md:w-1/2" />
       <div class="section-content">
-        <div class="section-header text-[#808080]">
+        <div class="section-header !text-[#808080]">
           <strong class="!text-[#2D59EE]">SL- Track</strong> System
         </div>
         <div class="section-description">
@@ -373,7 +402,7 @@
       <div class="section-content rounded-3xl bg-gray-800 m-4">
         <div class="gap-4 md:gap-8 flex items-center">
           <img src="" alt="" class="min-w-0 w-10 md:w-12" />
-          <div class="section-header text-[#808080]">
+          <div class="section-header !text-[#808080]">
             <strong class="!text-[#2D59EE]">Zero Gravity</strong> Reclining
           </div>
         </div>
@@ -407,18 +436,21 @@
       >
         Auto Massage Modes
       </div>
-      <div class="grid-section !px-4 !text-black">
-        <div>
+      <div class="grid-section !grid grid-cols-3 !px-4 !text-black">
+        <div class="flex flex-col">
+          <img src="" alt="" class="!w-full !ml-0" />
           <strong class="!text-lg md:!text-xl lg:!text-2xl">Comfort</strong>
           <div>The most comfortable massage experience</div>
         </div>
-        <div>
+        <div class="flex flex-col">
+          <img src="" alt="" class="!w-full !ml-0" />
           <strong class="!text-lg md:!text-xl lg:!text-2xl"
             >Back & Waist</strong
           >
           <div>Focus on back and waist massage</div>
         </div>
-        <div>
+        <div class="flex flex-col">
+          <img src="" alt="" class="!w-full !ml-0" />
           <strong class="!text-lg md:!text-xl lg:!text-2xl"
             >Shoulder & Neck</strong
           >
@@ -456,7 +488,7 @@
     </div>
 
     <div class="section flex-row-reverse">
-      <img alt="" class="!w-1/2" />
+      <img alt="" class="!w-1/2 !self-start" />
       <div class="section-content">
         <div class="section-header">Foot Rollers</div>
         <div class="section-description">
@@ -468,7 +500,7 @@
       </div>
     </div>
     <div class="section flex-row">
-      <img alt="" class="!w-1/2" />
+      <img alt="" class="!w-1/2 !self-start" />
       <div class="section-content">
         <div class="section-header">Extendable Footrest</div>
         <div class="section-description">
@@ -479,7 +511,7 @@
       </div>
     </div>
     <div class="section flex-row-reverse">
-      <img alt="" class="!w-1/2" />
+      <img alt="" class="!w-1/2 !self-end" />
       <div class="section-content">
         <div class="section-header">LED Lighting</div>
         <div class="section-description">
@@ -501,8 +533,8 @@
         </div>
       </div>
     </div>
-    <div class="section flex-row">
-      <img alt="" class="!w-1/2" />
+    <div class="section flex-col md:flex-row">
+      <img alt="" class="!w-full md:!w-1/2" />
       <div class="section-content">
         <div class="section-header">Lock Button</div>
         <div class="section-description">
@@ -514,10 +546,15 @@
     <div class="section relative !justify-end">
       <img alt="" class="!w-2/3 !flex-initial" />
       <div class="section-content absolute left-0">
-        <div class="section-header">Faux Speaker</div>
-        <div class="section-description flex items-center">
-          <span class="material-symbols-outlined"> priority_high </span
-          >Non-functional speaker
+        <div class="section-header">
+          Faux <br class="md:hidden" />
+          Speaker
+          <div
+            class="text-xs md:text-sm lg:text-lg text-[var(--section-content-color)]"
+          >
+            * Non-functional <br class="md:hidden" />
+            speaker
+          </div>
         </div>
       </div>
     </div>
