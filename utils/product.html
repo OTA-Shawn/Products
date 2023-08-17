@@ -5,7 +5,7 @@
   <li>SL-Track System</li>
   <li>32 Air Cell Compression Massage</li>
   <li>11 Auto Programs &amp; 5 Massage Styles</li>
-  <li>Spring Extendable Footrest</li>
+  <li>Spring res Footrest</li>
   <li>Foot Rollers</li>
   <li>Intelligent Voice Control</li>
 </ul>
@@ -18,13 +18,21 @@
   href="https://ota-shawn.github.io/productGlobalCss/style.css"
 />
 <div id="externalURL"></div>
-<script
-  src="https://code.jquery.com/jquery-3.7.0.min.js"
-  integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
-  crossorigin="anonymous"
-></script>
-<script>
+<!-- <script>
   $("#externalURL").load(externalURL, () => {
     $("#externalURL").contents().unwrap();
   });
+</script> -->
+<script>
+  fetch(externalURL)
+    // .then((res) => res.text())
+    .then((res) => res.blob())
+    .then((blob) => {
+      var objectURL = URL.createObjectURL(blob);
+      var sc = document.createElement("script");
+      sc.setAttribute("src", objectURL);
+      sc.setAttribute("type", "text/javascript");
+      document.head.appendChild(sc);
+    });
+  // .then((res) => (document.getElementById("externalURL").innerHTML = res));
 </script>

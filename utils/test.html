@@ -139,11 +139,6 @@
 <meta charset="UTF-8" />
 <meta content="IE=edge" http-equiv="X-UA-Compatible" />
 <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-<script
-  crossorigin="anonymous"
-  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
-  src="https://code.jquery.com/jquery-3.6.4.min.js"
-></script>
 <script src="https://cdn.tailwindcss.com"></script>
 <link
   rel="stylesheet"
@@ -361,7 +356,11 @@
       <!-- <img src="" alt="" /> -->
     </div>
     <div class="section !bg-white !flex-col !mb-20 md:!mb-80">
-      <img alt="" class="!w-full" />
+      <!-- <img alt="" class="!w-full" /> -->
+      <img
+        src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/1.Silo_Product_Page_Banner.jpg?v=1692137553"
+        alt=""
+      />
       <div
         class="mx-4 md:px-10 pt-10 pb-5 text-xl md:text-2xl lg:text-3xl md:text-center"
       >
@@ -681,34 +680,40 @@
     </div>
   </section>
   <script>
-    $(function () {
-      $.each($(".sections img"), (i, img) => {
-        $(img).attr("src", imgs[i].img_src);
-        $(img).attr("alt", imgs[i].img_name);
-      });
+    //     $(function () {
+    //       $.each($(".sections img"), (i, img) => {
+    //         $(img).attr("src", imgs[i].img_src);
+    //         $(img).attr("alt", imgs[i].img_name);
+    //       });
 
-      if (youtube_link != "") {
-        var youtube_id = youtube_link.split("watch?v=")[1].split("&")[0];
-        var src =
-          "https://www.youtube.com/embed/" + youtube_id + "?autoplay=1&mute=1";
-        var embed_html =
-          '<iframe class="w-full aspect-video mb-20" src=' +
-          src +
-          ' title="YouTube video player" frameborder="0" allowfullscreen></iframe>';
-        $("#youtube-link").append(embed_html);
-      }
-      $("#tab-button1").on("click", () => {
-        $("#tab-button1").addClass("active-tab");
-        $("#tab-button2").removeClass("active-tab");
-        $(".sections").fadeIn("slow");
-        $(".section-specs").fadeIn("slow");
-      });
-      $("#tab-button2").on("click", () => {
-        $("#tab-button1").removeClass("active-tab");
-        $("#tab-button2").addClass("active-tab");
-        $(".sections").fadeOut("slow");
-        $(".section-specs").fadeOut("slow");
-      });
+    //       if (youtube_link != "") {
+    //         var youtube_id = youtube_link.split("watch?v=")[1].split("&")[0];
+    //         var src =
+    //           "https://www.youtube.com/embed/" + youtube_id + "?autoplay=1&mute=1";
+    //         var embed_html =
+    //           '<iframe class="w-full aspect-video mb-20" src=' +
+    //           src +
+    //           ' title="YouTube video player" frameborder="0" allowfullscreen></iframe>';
+    //         $("#youtube-link").append(embed_html);
+    //       }
+    //       $("#tab-button1").on("click", () => {
+    //         $("#tab-button1").addClass("active-tab");
+    //         $("#tab-button2").removeClass("active-tab");
+    //         $(".sections").fadeIn("slow");
+    //         $(".section-specs").fadeIn("slow");
+    //       });
+    //       $("#tab-button2").on("click", () => {
+    //         $("#tab-button1").removeClass("active-tab");
+    //         $("#tab-button2").addClass("active-tab");
+    //         $(".sections").fadeOut("slow");
+    //         $(".section-specs").fadeOut("slow");
+    //       });
+    //     });
+    //
+
+    document.querySelectorAll(".sections img").forEach((img, i) => {
+      img.src = imgs[i].img_src;
+      img.alt = imgs[i].img_name;
     });
   </script>
 </body>
