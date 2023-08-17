@@ -679,41 +679,43 @@
       </div>
     </div>
   </section>
+  <script
+    src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+    crossorigin="anonymous"
+  ></script>
   <script>
-    //     $(function () {
-    //       $.each($(".sections img"), (i, img) => {
-    //         $(img).attr("src", imgs[i].img_src);
-    //         $(img).attr("alt", imgs[i].img_name);
-    //       });
+    const $j = jQuery.noConflict(true);
+  </script>
+  <script>
+    $j(function () {
+      $j.each($j(".sections img"), (i, img) => {
+        $j(img).attr("src", imgs[i].img_src);
+        $j(img).attr("alt", imgs[i].img_name);
+      });
 
-    //       if (youtube_link != "") {
-    //         var youtube_id = youtube_link.split("watch?v=")[1].split("&")[0];
-    //         var src =
-    //           "https://www.youtube.com/embed/" + youtube_id + "?autoplay=1&mute=1";
-    //         var embed_html =
-    //           '<iframe class="w-full aspect-video mb-20" src=' +
-    //           src +
-    //           ' title="YouTube video player" frameborder="0" allowfullscreen></iframe>';
-    //         $("#youtube-link").append(embed_html);
-    //       }
-    //       $("#tab-button1").on("click", () => {
-    //         $("#tab-button1").addClass("active-tab");
-    //         $("#tab-button2").removeClass("active-tab");
-    //         $(".sections").fadeIn("slow");
-    //         $(".section-specs").fadeIn("slow");
-    //       });
-    //       $("#tab-button2").on("click", () => {
-    //         $("#tab-button1").removeClass("active-tab");
-    //         $("#tab-button2").addClass("active-tab");
-    //         $(".sections").fadeOut("slow");
-    //         $(".section-specs").fadeOut("slow");
-    //       });
-    //     });
-    //
-
-    document.querySelectorAll(".sections img").forEach((img, i) => {
-      img.src = imgs[i].img_src;
-      img.alt = imgs[i].img_name;
+      if (youtube_link != "") {
+        var youtube_id = youtube_link.split("watch?v=")[1].split("&")[0];
+        var src =
+          "https://www.youtube.com/embed/" + youtube_id + "?autoplay=1&mute=1";
+        var embed_html =
+          '<iframe class="w-full aspect-video mb-20" src=' +
+          src +
+          ' title="YouTube video player" frameborder="0" allowfullscreen></iframe>';
+        $j("#youtube-link").append(embed_html);
+      }
+      $j("#tab-button1").on("click", () => {
+        $j("#tab-button1").addClass("active-tab");
+        $j("#tab-button2").removeClass("active-tab");
+        $j(".sections").fadeIn("slow");
+        $j(".section-specs").fadeIn("slow");
+      });
+      $j("#tab-button2").on("click", () => {
+        $j("#tab-button1").removeClass("active-tab");
+        $j("#tab-button2").addClass("active-tab");
+        $j(".sections").fadeOut("slow");
+        $j(".section-specs").fadeOut("slow");
+      });
     });
   </script>
 </body>
