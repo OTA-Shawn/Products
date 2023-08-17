@@ -25,11 +25,35 @@
       img_src:
         "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/2.duomax_health_detection.jpg?v=1691764941",
     },
+    // {
+    //   img_order: "3",
+    //   img_name: "duomax_4D",
+    //   img_src:
+    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.duomax_4D.jpg?v=1691764941",
+    // },
     {
       img_order: "3",
-      img_name: "duomax_4D",
+      img_name: "duomax_4D_e88367af-f313-4092-9677-5b0b132d84f0",
       img_src:
-        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.duomax_4D.jpg?v=1691764941",
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.duomax_4D_e88367af-f313-4092-9677-5b0b132d84f0.jpg?v=1692296728",
+    },
+    {
+      img_order: "4",
+      img_name: "duomax_heating_core_side",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4.duomax_heating_core_side.jpg?v=1692296898",
+    },
+    {
+      img_order: "5",
+      img_name: "duomax_heating_cores",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/5.duomax_heating_cores.jpg?v=1692296601",
+    },
+    {
+      img_order: "6",
+      img_name: "duomax_flex_track",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/6.duomax_flex_track.jpg?v=1692296601",
     },
     {
       img_order: "6",
@@ -44,22 +68,22 @@
         "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/7.duoxmax_app.jpg?v=1691764941",
     },
     {
-      img_order: "8",
-      img_name: "duomax_air_cells",
-      img_src:
-        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/8.duomax_air_cells.jpg?v=1691764941",
-    },
-    {
       img_order: "9",
-      img_name: "duomax_SL-track",
+      img_name: "Google-play-icon",
       img_src:
-        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/9.duomax_SL-track.jpg?v=1691764941",
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/9.Google-play-icon.jpg?v=1692302823",
     },
     {
       img_order: "10",
-      img_name: "duomax_negative_ions",
+      img_name: "Apple-store-icon",
       img_src:
-        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.duomax_negative_ions.jpg?v=1691764942",
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.Apple-store-icon.jpg?v=1692302836",
+    },
+    {
+      img_order: "8",
+      img_name: "duomax_air_cells",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/8.duomax_air_cells.jpg?v=1692303259",
     },
     {
       img_order: "11",
@@ -67,6 +91,13 @@
       img_src:
         "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/11.duomax_ZG.jpg?v=1691764941",
     },
+    // {
+    //   img_order: "9",
+    //   img_name: "duomax_SL-track",
+    //   img_src:
+    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/9.duomax_SL-track.jpg?v=1691764941",
+    // },
+
     {
       img_order: "12",
       img_name: "duomax_heating",
@@ -75,7 +106,7 @@
     },
     {
       img_order: "12",
-      img_name: "5",
+      img_name: "duomax_heating_detail",
       img_src:
         "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12.5.duomax_heating_shawl.jpg?v=1691764941",
     },
@@ -284,6 +315,12 @@
         "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/46.duomax_footrollers.jpg?v=1691764941",
     },
     {
+      img_order: "10",
+      img_name: "duomax_negative_ions",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.duomax_negative_ions.jpg?v=1691764942",
+    },
+    {
       img_order: "47",
       img_name: "duomax_headrest",
       img_src:
@@ -352,10 +389,14 @@
     --section-grid-color: #9b9694;
   }
 
-  * {
-    box-sizing: border-box;
+  @keyframes huerotate {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    100% {
+      filter: hue-rotate(360deg);
+    }
   }
-
   .sections {
     max-width: 1024px;
     margin-left: auto;
@@ -640,12 +681,38 @@
     </div>
     <div class="section !flex-row-reverse">
       <div class="section-content">
-        <div class="section-header">4D Massage Mechanism</div>
+        <div class="section-header">Dual 4D Massage Mechanism</div>
         <div class="section-description !text-[#989898]">
           With its 4D massage mechanism, users can enjoy a wide range of massage
-          techniques that simulate human-like movements. The chair's
-          multidimensional rollers can adjust their depth and speed, ensuring
-          precise and effective relief for muscle tension and stress.
+          techniques that simulate human-like movements. Its quad precision
+          rollers can adjust their depth and speed, ensuring precise and
+          effective relief for muscle tension and stress.
+        </div>
+      </div>
+      <img src="" alt="" class="" />
+    </div>
+    <div class="section !flex-row">
+      <div class="section-content">
+        <div class="section-header">2 Heating Cores</div>
+        <div class="section-description !text-[#989898]">
+          Integrating heated jade cores that move along the contours of your
+          body, this function delivers targeted relief by combining the benefits
+          of massage and heat.
+        </div>
+        <img src="" alt="" class="w-2/3 self-end" />
+      </div>
+      <img src="" alt="" class="" />
+    </div>
+    <div class="section">
+      <div class="section-content">
+        <div class="section-header">SL Flex Track</div>
+        <div class="section-description !text-[#989898]">
+          The DuoMax breaks the boundaries of a standard SL-track by
+          incorporating a level of flexibility. The SL Flex Track holds the
+          ability to be at a fixed angle relative to the backrest. This new
+          innovation of a flexible track system is implemented while providing
+          full coverage of the body from your neck and shoulders to your
+          hamstrings.
         </div>
       </div>
       <img src="" alt="" class="" />
@@ -662,7 +729,8 @@
         </div>
       </div>
     </div>
-    <div class="section !flex-row-reverse">
+    <div class="section !flex-row">
+      <img src="" alt="" class="" />
       <div class="section-content">
         <div class="section-header">
           Easy <br />
@@ -673,16 +741,47 @@
           Store to download the Osaki DuoMax App to control the massage chair
           with the full features from the remote on your phone.
         </div>
+        <div class="flex justify-around">
+          <a
+            style="
+              border: 2px solid;
+              border-image: linear-gradient(45deg, gold, deeppink) 1;
+              /* clip-path: inset(0px round 10px); */
+              animation: huerotate 6s infinite linear;
+              filter: hue-rotate(360deg);
+            "
+            href="https://play.google.com/store/apps/details?id=org.robotmassage.com"
+          >
+            <img src="" alt="" class="" />
+          </a>
+          <a
+            style="
+              border: 2px solid;
+              border-image: linear-gradient(45deg, lightblue, silver) 1;
+              /* clip-path: inset(0px round 10px); */
+              animation: huerotate 6s infinite linear;
+              filter: hue-rotate(90deg);
+            "
+            href="https://apps.apple.com/us/app/robot-massage/id1637357798"
+            ><img src="" alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-content">
+        <div class="section-header">36 Air Cells Massage</div>
+        <div class="section-description !text-[#989898] !w-2/3">
+          The DuoMax includes a total of 36 airbags in the massage chair,
+          providing coverage to shoulders, arms, hips, calves, and feet.
+        </div>
       </div>
       <img src="" alt="" class="" />
     </div>
-    <div class="section !bg-white gap-5 md:gap-9 lg:gap-12 !grid grid-cols-2">
+    <!-- <div class="section !bg-white gap-5 md:gap-9 lg:gap-12 !grid grid-cols-2">
       <div
         class="flex flex-col justify-center h-full bg-[var(--section-bg-color)]"
       >
-        <!-- <div class="section-content section-description !pb-0 !w-full">
-          Multi-Controller
-        </div> -->
         <img src="" alt="" class="" />
       </div>
       <div
@@ -696,22 +795,8 @@
         </div>
         <img src="" alt="" class="" />
       </div>
-    </div>
-    <div class="section relative !justify-end">
-      <div class="section-content absolute left-0 !w-2/3 !flex-initial">
-        <div class="section-header">
-          Negative <br />
-          Oxygen Ions
-        </div>
-        <div class="section-description !text-[#989898] !w-2/3">
-          The DuoMax is equipped with built-in
-          <strong>negative air ionization therapy</strong>. According to
-          research, negative air ionization therapy helps relieve stress and
-          improve energy.
-        </div>
-      </div>
-      <img src="" alt="" class="!w-2/3 !flex-initial" />
-    </div>
+    </div> -->
+
     <div class="section flex-col-reverse">
       <img src="" alt="" class="!w-full" />
       <div class="section-content !w-full !pb-0">
@@ -955,6 +1040,21 @@
           thorough massage from heel to toe.
         </div>
       </div>
+    </div>
+    <div class="section relative !justify-end">
+      <div class="section-content absolute left-0 !w-2/3 !flex-initial">
+        <div class="section-header">
+          Negative <br />
+          Oxygen Ions
+        </div>
+        <div class="section-description !text-[#989898] !w-2/3">
+          The DuoMax is equipped with built-in
+          <strong>negative air ionization therapy</strong>. According to
+          research, negative air ionization therapy helps relieve stress and
+          improve energy.
+        </div>
+      </div>
+      <img src="" alt="" class="!w-2/3 !flex-initial" />
     </div>
     <div class="section">
       <img src="" alt="" class="self-start" />
