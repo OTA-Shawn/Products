@@ -1,38 +1,34 @@
 <ul class="feature-section">
   <li><strong>Intelligent Health Detection</strong></li>
-  <li><strong>Soothing Heating Therapy </strong></li>
-  <li><strong>3D Massage Mechanism </strong></li>
-  <li>SL-Track System</li>
-  <li>32 Air Cell Compression Massage</li>
-  <li>11 Auto Programs &amp; 5 Massage Styles</li>
-  <li>Spring res Footrest</li>
-  <li>Foot Rollers</li>
-  <li>Intelligent Voice Control</li>
+  <li><strong>Dual 4D Mechanism</strong></li>
+  <li><strong>8 Roller-Track Massage </strong></li>
+  <li><strong>2 Heating Cores</strong></li>
+  <li>SL Flex Track</li>
+  <li>Smart Voice Control<br /></li>
+  <li>Body Heat Therapy</li>
+  <li>36 Air Cell Full Body Compression</li>
+  <li>20 Auto Programs &amp; 11 Massage Styles</li>
+  <li><strong>Automatic Extendable Footrest</strong></li>
+  <li>Wireless Charging</li>
 </ul>
 <!-- more -->
 <script>
-  const externalURL = "https://ota-shawn.github.io/Products/utils/test.html";
+  const externalURL =
+    "https://ota-shawn.github.io/Products/Osaki/OS-Pro%204D%20DuoMax.html";
 </script>
 <link
-  rel="stylesheet"
   href="https://ota-shawn.github.io/productGlobalCss/style.css"
+  rel="stylesheet"
 />
 <div id="externalURL"></div>
-<!-- <script>
-  $("#externalURL").load(externalURL, () => {
-    $("#externalURL").contents().unwrap();
-  });
-</script> -->
+<script
+  crossorigin="anonymous"
+  integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+  src="https://code.jquery.com/jquery-3.7.0.min.js"
+></script>
 <script>
-  fetch(externalURL)
-    // .then((res) => res.text())
-    .then((res) => res.blob())
-    .then((blob) => {
-      var objectURL = URL.createObjectURL(blob);
-      var sc = document.createElement("script");
-      sc.setAttribute("src", objectURL);
-      sc.setAttribute("type", "text/javascript");
-      document.head.appendChild(sc);
-    });
-  // .then((res) => (document.getElementById("externalURL").innerHTML = res));
+  const $j = jQuery.noConflict(true);
+  $j("#externalURL").load(externalURL, () => {
+    $j("#externalURL").contents().unwrap();
+  });
 </script>
