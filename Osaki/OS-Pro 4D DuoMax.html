@@ -407,7 +407,7 @@
     max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
@@ -451,8 +451,8 @@
 
   .section-description {
     color: var(--section-content-color);
-    font-size: 22px;
-    line-height: 33px;
+    font-size: 26px;
+    line-height: 39px;
   }
 
   .circle {
@@ -692,18 +692,22 @@
       </div>
       <img src="" alt="" class="" />
     </div>
-    <div class="section !grid grid-cols-2 !items-start">
-      <div class="section-content !w-full !h-full !pb-0">
-        <div class="section-header">2 Heating Cores</div>
-        <div class="section-description !text-[#989898]">
-          Integrating heated jade cores that move along the contours of your
-          body, this function delivers targeted relief by combining the benefits
-          of massage and heat.
+
+    <div>
+      <div class="section !grid grid-cols-2 !items-start">
+        <div class="section-content !w-full !pb-0 h-full">
+          <div class="section-header">2 Heating Cores</div>
+          <div class="section-description !text-[#989898]">
+            Integrating heated jade cores that move along the contours of your
+            body, this function delivers targeted relief by combining the
+            benefits of massage and heat.
+          </div>
+          <img src="" alt="" class="!w-2/3 self-end mt-auto" />
         </div>
-        <img src="" alt="" class="!w-2/3 self-end mt-auto" />
+        <img src="" alt="" class="!w-full" />
       </div>
-      <img src="" alt="" class="!w-full" />
     </div>
+
     <div class="section">
       <div class="section-content">
         <div class="section-header">SL Flex Track</div>
@@ -1086,54 +1090,54 @@
         </div>
       </div>
     </div>
-    <div class="section">
-      <img src="" alt="" class="!w-3/4 !flex-initial" />
-      <div class="section-content !pl-0">
-        <div class="section-description text-[var(--section-header-color)]">
-          Side Control Panel
+    <div>
+      <div class="section">
+        <img src="" alt="" class="!w-3/4 !flex-initial" />
+        <div class="section-content !pl-0">
+          <div class="section-description text-[var(--section-header-color)]">
+            Side Control Panel
+          </div>
+        </div>
+      </div>
+      <div class="section !bg-white gap-5 md:gap-9 lg:gap-12 !grid grid-cols-2">
+        <div
+          class="flex flex-col justify-between bg-[var(--section-bg-color)] !h-full"
+        >
+          <div
+            class="section-content section-description !pb-0 !w-full !text-[var(--section-header-color)]"
+          >
+            Wireless Charging
+          </div>
+          <img src="" alt="" class="" />
+        </div>
+        <div class="flex flex-col relative">
+          <div
+            class="section-content !pb-0 section-description !w-full absolute top-0 left-0 !text-[var(--section-header-color)]"
+          >
+            LED Lighting
+          </div>
+          <img src="" alt="" class="" />
         </div>
       </div>
     </div>
-    <div class="section !bg-white gap-5 md:gap-9 lg:gap-12 !grid grid-cols-2">
-      <div
-        class="flex flex-col justify-between h-full bg-[var(--section-bg-color)]"
-      >
-        <div
-          class="section-content section-description !pb-0 !w-full !text-[var(--section-header-color)]"
-        >
-          Wireless Charging
+    <div>
+      <div class="section !bg-white gap-5 md:gap-9 lg:gap-12 !grid grid-cols-2">
+        <div class="flex flex-col h-full bg-[var(--section-bg-color)]">
+          <div
+            class="section-content section-description !pb-0 !w-full !text-[var(--section-header-color)]"
+          >
+            USB Charging
+          </div>
+          <img src="" alt="" class="" />
         </div>
-        <img src="" alt="" class="" />
-      </div>
-      <div class="flex flex-col justify-between h-full relative">
-        <div
-          class="section-content !pb-0 section-description !w-full absolute top-0 left-0 !text-[var(--section-header-color)]"
-        >
-          LED Lighting
+        <div class="flex flex-col h-full bg-[var(--section-bg-color)]">
+          <div
+            class="section-content section-description !pb-0 !w-full !text-[var(--section-header-color)]"
+          >
+            HD Bluetooth Surround Speakers
+          </div>
+          <img src="" alt="" class="" />
         </div>
-        <img src="" alt="" class="" />
-      </div>
-    </div>
-    <div class="section !bg-white gap-5 md:gap-9 lg:gap-12 !grid grid-cols-2">
-      <div
-        class="flex flex-col justify-between h-full bg-[var(--section-bg-color)]"
-      >
-        <div
-          class="section-content section-description !pb-0 !w-full !text-[var(--section-header-color)]"
-        >
-          USB Charging
-        </div>
-        <img src="" alt="" class="" />
-      </div>
-      <div
-        class="flex flex-col justify-between h-full bg-[var(--section-bg-color)]"
-      >
-        <div
-          class="section-content !pb-0 section-description !w-full !text-[var(--section-header-color)]"
-        >
-          HD Bluetooth Surround Speakers
-        </div>
-        <img src="" alt="" class="" />
       </div>
     </div>
 
@@ -1217,7 +1221,7 @@
           </div>
         </div>
       </div>
-      <!-- <div class="specs-section">
+      <div class="specs-section">
         <div class="specs-row">
           <div class="specs-rowheader">
             Box Dimensions <br />
@@ -1240,7 +1244,7 @@
             59" x 32.6" x 38"
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
   </section>
 </body>
