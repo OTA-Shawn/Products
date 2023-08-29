@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --section-bg-color: #f2edeb;
+        --section-strong-color: #514745;
+        --section-header-color: #514745;
+        --section-content-color: #9b9694;
+        --section-grid-color: #9b9694;
+      }
+
+      .sections {
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+        /* font-weight: bold; */
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .sections strong {
+        color: var(--section-strong-color);
+      }
+
+      .sections .section {
+        background-color: var(--section-bg-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+      }
+
+      .section > img,
+      .section-content {
+        flex: 1 1 0%;
+        width: 50%;
+      }
+
+      .section-content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 50px;
+      }
+
+      .section-header {
+        font-size: 52px;
+        line-height: 65px;
+        color: var(--section-header-color);
+      }
+      .section-header2 {
+        font-size: 36px;
+        line-height: 45px;
+        color: var(--section-header-color);
+      }
+
+      .section-description {
+        color: var(--section-content-color);
+        font-size: 26px;
+        line-height: 39px;
+      }
+
+      .circle {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 32px;
+      }
+
+      .circle > :first-child {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+
+      .grid-section {
+        background-color: var(--section-bg-color);
+        color: var(--section-grid-color);
+        display: grid;
+        grid-column: span 2 / span 2;
+        padding: 50px 100px 50px;
+        gap: 50px;
+        margin-bottom: 50px;
+      }
+
+      .grid-section img {
+        margin: 0 0 0px 50px;
+      }
+
+      .grid-section .grid-item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .app-icon {
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .app-icon img {
+        flex: 0 0 0;
+        width: 40%;
+      }
+
+      .grid-align {
+        text-align: left;
+      }
+
+      @media (max-width: 1024px) {
+        .sections {
+          max-width: 768px;
+        }
+
+        .sections .section {
+          margin-bottom: 35px;
+        }
+
+        .section > img {
+          width: 50%;
+        }
+
+        .section .section-content {
+          gap: 22px;
+          padding: 35px;
+        }
+
+        .section-header {
+          font-size: 39px;
+          line-height: 58px;
+        }
+
+        .section-header2 {
+          font-size: 27px;
+          line-height: 40px;
+        }
+
+        .section-description {
+          font-size: 15px;
+          line-height: 24px;
+        }
+
+        .circle {
+          gap: 5px;
+          font-size: 24px;
+        }
+
+        .circle > :first-child {
+          width: 30px;
+          height: 30px;
+        }
+
+        .grid-section {
+          padding: 35px 75px 35px;
+          gap: 35px;
+          margin-bottom: 35px;
+        }
+
+        .grid-section img {
+          margin: 0 0 0px 35px;
+        }
+
+        .grid-section .grid-item {
+          gap: 15px;
+        }
+
+        .grid-align {
+          text-align: center;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .sections {
+          max-width: 480px;
+        }
+
+        .sections .section {
+          margin-bottom: 22px;
+        }
+
+        .section .section-content {
+          gap: 14px;
+          padding: 22px;
+        }
+
+        .section-header {
+          font-size: 26px;
+          line-height: 38px;
+        }
+        .section-header {
+          font-size: 18px;
+          line-height: 26px;
+        }
+        .section-description {
+          font-size: 10px;
+          line-height: 16px;
+        }
+
+        .circle {
+          gap: 4px;
+          font-size: 16px;
+        }
+
+        .circle > :first-child {
+          width: 20px;
+          height: 20px;
+        }
+
+        .grid-section {
+          padding: 20px 50px 20px;
+          gap: 20px;
+          margin-bottom: 20px;
+        }
+
+        .grid-section img {
+          margin: 0 0 0px 20px;
+          width: 20%;
+        }
+
+        .grid-section .grid-item {
+          gap: 10px;
+        }
+      }
+
+      .active-tab {
+        color: #191919;
+        border-bottom: 0.25em solid gray;
+      }
+
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sections block">
+      <div class="section gap-5 md:gap-9 lg:gap-12 !grid grid-cols-2 !bg-white">
+        <div class="flex flex-col bg-[var(--section-bg-color)] h-full">
+          <div
+            class="section-content section-description !pb-0 !w-full !text-[var(--section-header-color)]"
+          >
+            USB Charging
+          </div>
+          <img
+            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/51.duomax_USB.jpg?v=1691764942"
+            alt=""
+            class=""
+          />
+        </div>
+        <div class="flex flex-col bg-[var(--section-bg-color)] h-full">
+          <div
+            class="section-content section-description !pb-0 !w-full !text-[var(--section-header-color)]"
+          >
+            HD Bluetooth Surround Speakers
+          </div>
+          <img
+            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/52.duomax_speakers.jpg?v=1691764941"
+            alt=""
+            class=""
+          />
+        </div>
+      </div>
+      <div class="section gap-5 md:gap-9 lg:gap-12 !grid grid-cols-2 !bg-white">
+        <div class="flex flex-col bg-[var(--section-bg-color)] h-full">
+          <div
+            class="section-content section-description !pb-0 !w-full !text-[var(--section-header-color)]"
+          >
+            USB Charging
+          </div>
+          <img
+            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/51.duomax_USB.jpg?v=1691764942"
+            alt=""
+            class=""
+          />
+        </div>
+        <div class="flex flex-col bg-[var(--section-bg-color)] h-full">
+          <div
+            class="section-content section-description !pb-0 !w-full !text-[var(--section-header-color)]"
+          >
+            HD Bluetooth Surround Speakers
+          </div>
+          <img
+            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/52.duomax_speakers.jpg?v=1691764941"
+            alt=""
+            class=""
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
