@@ -26,6 +26,19 @@
     font-family: "Arial";
     font-weight: 700;
   }
+
+  .circle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 32px;
+  }
+
+  .circle > :first-child {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
 </style>
 <div id="tab-buttons" class="max-w-6xl mx-auto my-4">
   <button
@@ -64,19 +77,17 @@
       advanced features, the JP650 is the perfect addition to any home or office
       space for those seeking a high-quality massage experience.
     </div>
-    <div
-      class="flex text-lg md:text-2xl lg:text-4xl font-semibold justify-center gap-3 md:gap-10 my-5 mb-24"
-    >
-      <div class="flex items-center gap-2">
-        <div class="bg-[#bfb7a9] p-3 rounded-full"><br /></div>
+    <div class="flex gap-10 justify-center flex-wrap gap-y-3">
+      <div class="circle">
+        <div class="bg-[#B8B0A2]"></div>
         <div>Taupe</div>
       </div>
-      <div class="flex items-center gap-2">
-        <div class="bg-[#3a2521] p-3 rounded-full"><br /></div>
+      <div class="circle">
+        <div class="bg-[#964B00]"></div>
         <div>Brown</div>
       </div>
-      <div class="flex items-center gap-2">
-        <div class="bg-[#1d1d1f] p-3 rounded-full"><br /></div>
+      <div class="circle">
+        <div class="bg-[#121212]"></div>
         <div>Black</div>
       </div>
     </div>
