@@ -61,16 +61,16 @@
   -->
 </style>
 <body>
-  <div id="tab-buttons" class="max-w-6xl mx-auto my-4">
+  <div id="tab-buttons" class="mx-auto my-4 max-w-6xl">
     <button
       id="tab-button1"
-      class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center dark:text-gray-400 dark:hover:text-gray-300 active-tab"
+      class="active-tab inline-block px-1 py-2 text-center text-sm font-semibold text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"
     >
       Description
     </button>
     <button
       id="tab-button2"
-      class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center t dark:text-gray-400 dark:hover:text-gray-300"
+      class="t inline-block px-1 py-2 text-center text-sm font-semibold text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"
     >
       Reviews
     </button>
@@ -135,7 +135,7 @@
           </div>
         </div>
       </div>
-      <div class="grid large-pad-bottom-7 small-pad-bottom-4">
+      <div class="large-pad-bottom-7 small-pad-bottom-4 grid">
         <div
           class="grid-item large-flex large-grid-span-12 large-direction-column large-justify-content-space-between large-align-items-center small-column-reverse"
         >
@@ -268,6 +268,7 @@
             <li class="typography-grid-copy">Foot</li>
           </ul>
           <img
+            style="width: 50%"
             alt="24 Cell Full Body Air Massage"
             src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/6.luxe_air_massage_2x-100.jpg?v=1672954012"
           />
@@ -333,7 +334,7 @@
           15 Auto Massage Modes
         </h2>
         <div
-          class="grid bg-[#f2f4f3] grid-cols-3 md:grid-cols-4 p-4 py-10 justify-items-center !text-center md:text-left"
+          class="grid grid-cols-3 justify-items-center bg-[#f2f4f3] p-4 py-10 !text-center md:grid-cols-4 md:text-left"
         >
           <div class="flex flex-col items-center">
             <img
@@ -464,7 +465,7 @@
           7 Manual Massage Modes
         </h2>
         <div
-          class="grid bg-[#f2f4f3] grid-cols-3 md:grid-cols-4 p-4 py-10 justify-items-center !text-center md:text-left"
+          class="grid grid-cols-3 justify-items-center bg-[#f2f4f3] p-4 py-10 !text-center md:grid-cols-4 md:text-left"
         >
           <div class="flex flex-col items-center">
             <img
@@ -807,16 +808,16 @@
 <script>
   $(function () {
     $("#tab-button1").on("click", () => {
-      $("#tab-button1").addClass("active-tab");
-      $("#tab-button2").removeClass("active-tab");
-      $(".sections").fadeIn("slow");
-      $(".section-specs").fadeIn("slow");
-    });
+      $("#tab-button1").addClass("active-tab")
+      $("#tab-button2").removeClass("active-tab")
+      $(".sections").fadeIn("slow")
+      $(".section-specs").fadeIn("slow")
+    })
     $("#tab-button2").on("click", () => {
-      $("#tab-button1").removeClass("active-tab");
-      $("#tab-button2").addClass("active-tab");
-      $(".sections").fadeOut("slow");
-      $(".section-specs").fadeOut("slow");
-    });
-  });
+      $("#tab-button1").removeClass("active-tab")
+      $("#tab-button2").addClass("active-tab")
+      $(".sections").fadeOut("slow")
+      $(".section-specs").fadeOut("slow")
+    })
+  })
 </script>
