@@ -189,8 +189,8 @@
     --section-bg-color: #ebebeb;
     --section-strong-color: #121212;
     --section-header-color: #121212;
-    --section-content-color: #808080;
-    --section-grid-color: #808080;
+    --section-content-color: #97999a;
+    --section-grid-color: #97999a;
   }
 
   * {
@@ -201,7 +201,6 @@
     max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
-    font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     /* display: flex;
     flex-direction: column; */
@@ -236,6 +235,7 @@
     font-size: 52px;
     line-height: 65px;
     color: var(--section-header-color);
+    font-weight: bold;
   }
   .section-header2 {
     font-size: 36px;
@@ -377,12 +377,12 @@
       line-height: 38px;
     }
     .section-header {
-      font-size: 18px;
-      line-height: 26px;
+      font-size: 24px;
+      line-height: 1.1;
     }
     .section-description {
-      font-size: 10px;
-      line-height: 16px;
+      font-size: 18px;
+      line-height: 1.3;
     }
 
     .circle {
@@ -445,7 +445,7 @@
       </div>
       <div class="mb-20 grid grid-cols-4 justify-items-center gap-3">
         <div class="circle">
-          <div class="bg-[#e2dcd4]"></div>
+          <div class="bg-[#B7AE9F]"></div>
           <div>Taupe</div>
         </div>
         <div class="circle">
@@ -453,159 +453,134 @@
           <div>Brown</div>
         </div>
         <div class="circle">
-          <div class="bg-[#8c8b8e]"></div>
-          <div>Gray</div>
+          <div class="bg-[#1d1d1d]"></div>
+          <div>Black</div>
         </div>
         <div class="circle">
-          <div class="bg-[#e2dcd4]"></div>
-          <div>Taupe</div>
+          <div class="bg-[#D8D0C7]"></div>
+          <div>Beige</div>
         </div>
       </div>
     </div>
 
-    <div class="section !flex-row !bg-black">
-      <div class="section-content">
-        <div class="section-header !text-white">Body Scan System</div>
-        <div class="section-description !text-[#808080]">
-          The Monarch will perform a body scan to map the key areas of the neck
-          and back to ensure the optimal amount of pressure applied during the
-          massage. The scanning technology will detect your shoulders height,
-          which can be re-calibrated once the scan is complete.
-        </div>
-      </div>
-      <img src="" alt="" class="" />
-    </div>
-
-    <div class="section !flex-row-reverse !bg-black">
-      <div class="section-content">
-        <div class="section-header !text-white">3D Massage</div>
-        <div class="section-description !text-[#808080]">
-          The next generation of 3D massage rollers are designed for outstanding
-          range and flexibility. The 3D technology allows the user to control
-          the length of rollers that extend out from the backrest. OS-Monarch
-          has 4 levels of 3D intensity control.
-        </div>
-      </div>
-      <img src="" alt="" class="" />
-    </div>
-    <div class="section !bg-black">
-      <div class="section-content">
-        <div class="section-header !text-white">L-Track Massage</div>
-        <div class="section-description !text-[#808080]">
-          As the roller system massages the neck area, it continues through to
-          the lower back and then proceeds to massage the glutes and upper
-          hamstrings.
-        </div>
-      </div>
-      <img src="" alt="" class="" />
-    </div>
-    <div class="section !flex-row-reverse !bg-black">
-      <div class="section-content">
-        <div class="section-header !text-white">Space Saving Technology</div>
-        <div class="section-description !text-[#808080]">
-          Osaki's innovative design team has engineered a space saving
-          technology that slides the chair forward as the chair reclines. As a
-          result, OS-Monarch takes only one inch to get to the fully reclined
-          position.
-        </div>
-      </div>
-      <img src="" alt="" class="" />
-    </div>
-    <div class="section !flex-col !bg-black">
+    <div class="section !flex-col-reverse">
       <div class="section-content !w-full">
-        <div class="section-header text-center !text-white">
-          <strong class="!text-[#0510E2]">Intelligent</strong> Body Scanning
+        <div class="section-header">3D Massage Mechanism</div>
+        <div class="section-description !text-[#808080]">
+          The 3D features in Osaki 3D Honor allow for the massage rollers to
+          extend out and retract in on the backrest. The massage head 3D
+          function will dictate the intensity of the massage. As the rollers
+          extend out, the stronger the massage will be. On the remote this
+          feature can be easy controlled by pressing the 3D+ or the 3D- button.
         </div>
+      </div>
+      <img src="" alt="" class="!w-full" />
+    </div>
+
+    <div class="section !flex-col-reverse">
+      <div class="section-content !w-full">
+        <div class="section-header">Backrest Scanning System</div>
+        <div class="section-description !text-[#808080]">
+          The Osaki 3D Honor computer body scan has an upgraded 3 core processor
+          to improve the accuracy and speed of mapping the back prior to
+          delivering an incredible massage. The starting point of the massage
+          can be adjusted. Right after the computer scan is completed you have a
+          5 second window to raise or lower the massage starting point. The body
+          scan will map out he curvature of the back to ensue that consistent
+          amount of massage pressure is being applied top to bottom.
+        </div>
+      </div>
+      <img src="" alt="" class="!w-full" />
+    </div>
+    <div class="section !flex-col-reverse">
+      <div class="section-content !w-full">
+        <div class="section-header">SL-Track</div>
+        <div class="section-description !text-[#808080]">
+          The SL-Track has length of 52” starting from the neck to down through
+          the glutes to the hamstrings.
+        </div>
+      </div>
+      <img src="" alt="" class="!w-full" />
+    </div>
+    <div class="section !flex-col-reverse">
+      <div class="section-content !w-full">
+        <div class="section-header">Zero Gravity & Space-Saving Technology</div>
         <div class="section-description !text-[#808080]">
           Inspired by NASA technology, the Zero gravity position is the perfect
           position to enjoy a massage, aligning your back relative to your thigh
-          at an optimal level of comfort. When reclined into the zero-gravity
-          position, the complete weight of your back is virtually supported by
-          the backrest which maximizes the intensity of the massage.
+          at an optimal level of comfort. Osaki's innovative design team has
+          engineered a space saving technology that slides the chair forward as
+          the chair reclines. As a result, the OS Honor takes only 4.5 inches to
+          get to the fully reclined position.
         </div>
       </div>
-      <img src="" alt="" class="" />
+      <img src="" alt="" class="!w-full" />
     </div>
-    <div class="section !bg-white">
-      <div class="section-content">
-        <div class="section-header !text-black">
-          <strong class="!text-[#0510E2]">Air</strong> Massage
-        </div>
+    <div class="section !flex-col-reverse">
+      <div class="section-content !w-full">
+        <div class="section-header">Full Body Air Massage</div>
         <div class="section-description !text-[#808080]">
-          There are multiple airbags located throughout the massage chair to
-          offer a full body massage experience. Airbags are located at the
-          shoulders, the arms, the feet, and the calf areas. This compression
-          massage helps to continue increasing blood circulation throughout the
-          body to relieve pain and tension.
+          The Honor offers a total of 14 highly efficient airbags in the massage
+          chair. This compression massage promotes blood circulation and muscle
+          relaxation. The latest engineering has dramatically reduced the airbag
+          count making the chair far more efficient and increasing reliability
+          without compromising massage coverage.
         </div>
       </div>
-      <img src="" alt="" class="" />
+      <img src="" alt="" class="!w-full" />
     </div>
-    <div class="section !flex-row-reverse !bg-white">
-      <div class="section-content">
-        <div class="section-header !text-black">
-          <strong class="!text-[#E02D2D]">Lumbar</strong> Heat Therapy
-        </div>
+    <div class="section !flex-col-reverse">
+      <div class="section-content !w-full">
+        <div class="section-header">Lumbar Heating Therapy</div>
         <div class="section-description !text-[#808080]">
-          With Monarch’s heat shawl lumbar therapy, the incorporated graphene
-          effectively warm and help ease soreness in the lower back area.
+          The lumbar heat therapy is a great compliment to the roller and airbag
+          massage. Heating the body’s temperature is known to increase blood
+          circulation and loosen tense muscles.
         </div>
       </div>
-      <img src="" alt="" class="" />
+      <img src="" alt="" class="!w-full" />
     </div>
 
     <div
-      class="col-span-2 flex items-center justify-center gap-5 p-10 text-center text-2xl md:text-4xl"
+      class="col-span-2 flex items-center justify-center gap-5 bg-[var(--section-bg-color)] p-10 text-center text-2xl md:text-4xl"
     >
-      <strong class="">9 Auto Massage Modes</strong>
+      <strong class="">6 Auto Massage Modes</strong>
     </div>
     <div
-      class="mb-10 grid grid-cols-2 bg-[var(--section-bg-color)] p-10 md:pl-[15%]"
+      class="mb-10 grid grid-cols-2 bg-[var(--section-bg-color)] p-10 text-[var(--section-grid-color)] md:pl-[15%]"
     >
       <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
         <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
-        <div class="md:text-xl">Recovery</div>
+        <div class="md:text-xl">Neck/Shoulder</div>
       </div>
       <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
         <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
-        <div class="md:text-xl">Pain Relief</div>
+        <div class="md:text-xl">Thai</div>
       </div>
       <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
         <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
-        <div class="md:text-xl">Stretch</div>
+        <div class="md:text-xl">Strengthen</div>
       </div>
       <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
         <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
-        <div class="md:text-xl">Shopaholic</div>
+        <div class="md:text-xl">Recover</div>
+      </div>
+      <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
+        <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
+        <div class="md:text-xl">Relax</div>
       </div>
       <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
         <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
         <div class="md:text-xl">Sleeping</div>
       </div>
-      <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
-        <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
-        <div class="md:text-xl">Neck & Shoulder</div>
-      </div>
-      <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
-        <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
-        <div class="md:text-xl">Experience</div>
-      </div>
-      <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
-        <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
-        <div class="md:text-xl">Back & Waist</div>
-      </div>
-      <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
-        <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
-        <div class="md:text-xl">Athlete Mode</div>
-      </div>
     </div>
     <div
-      class="col-span-2 flex items-center justify-center gap-5 p-10 text-center text-2xl md:text-4xl"
+      class="col-span-2 flex items-center justify-center gap-5 bg-[var(--section-bg-color)] p-10 text-center text-2xl md:text-4xl"
     >
-      <strong class="">4 Manual Massage Modes</strong>
+      <strong class="">6 Manual Massage Modes</strong>
     </div>
     <div
-      class="mb-10 grid grid-cols-2 bg-[var(--section-bg-color)] p-10 md:pl-[15%]"
+      class="mb-10 grid grid-cols-2 bg-[var(--section-bg-color)] p-10 text-[var(--section-grid-color)] md:pl-[15%]"
     >
       <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
         <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
@@ -613,7 +588,7 @@
       </div>
       <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
         <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
-        <div class="md:text-xl">Knocking</div>
+        <div class="md:text-xl">Shiatsu</div>
       </div>
       <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
         <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
@@ -621,74 +596,53 @@
       </div>
       <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
         <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
-        <div class="md:text-xl">Shiatsu</div>
+        <div class="md:text-xl">Rolling</div>
+      </div>
+      <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
+        <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
+        <div class="md:text-xl">Kneading & Tapping</div>
+      </div>
+      <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
+        <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
+        <div class="md:text-xl">Kneading & Shiatsu</div>
       </div>
     </div>
 
-    <div class="section !flex-row-reverse">
-      <img src="" alt="" class="self-start" />
-      <div class="section-content">
-        <div class="section-header">Spring Loaded Extendable Footrest</div>
+    <div class="section !flex-col">
+      <img src="" alt="" class="!w-full" />
+      <div class="section-content !w-full">
+        <div class="section-header">Foot Roller Massage</div>
         <div class="section-description">
-          OS-Monarch has Spring Loaded Extendable Footrest which can be extended
-          up to 13.5 Inches.
+          OS 3D Honor has 2 spinning reflexology massage rollers located on the
+          bottom of the feet that provide a soothing kneading style application.
+          As the rollers spin it will stimulate acupuncture points and as the
+          air bags inflate it will generate a much deeper massage along the
+          bottoms of your feet. It also has ankle grip function that heightens
+          your foot massage experience.
         </div>
       </div>
     </div>
-    <div class="section">
-      <img src="" alt="" class="!self-start" />
-      <div class="section-content">
-        <div class="section-header">Unique Foot Roller Massage</div>
+    <div class="section !flex-col">
+      <img src="" alt="" class="!w-full" />
+      <div class="section-content !w-full">
+        <div class="section-header">Extendable Legrest</div>
         <div class="section-description">
-          OS-Monarch has Three Rollers located on the bottom of the feet are
-          spinning reflexology massagers which provide a soothing kneading style
-          application. As the rollers spin it will stimulate acupuncture points
-          and as the air bags inflate it will generate a much deeper massage
-          along the bottoms of your feet.
+          Osaki OS 3D Honor has Extendable Footrest which can be extended up to
+          7 Inches to reach the desired comfortable position which fits a user’s
+          various height.
         </div>
       </div>
     </div>
-    <div class="section !flex-row-reverse">
-      <img src="" alt="" class="self-end" />
-      <div class="section-content">
-        <div class="section-header">Built in Bluetooth Speakers</div>
+    <div class="section !flex-col">
+      <img src="" alt="" class="!w-full" />
+      <div class="section-content !w-full">
+        <div class="section-header">Easy Remote Control</div>
         <div class="section-description">
-          The Osaki OS-Monarch is equipped with Bluetooth technology that allows
-          the user to listen to their favorite music and phone calls on high
-          quality speakers in the headrest.
+          The Osaki Honor remote has an easy view screen displaying the function
+          the chair has activated. On the remote it allows you to select the
+          massage type, intensity, speed, and location. You can also operate the
+          functions independently in the Manual Mode.
         </div>
-      </div>
-    </div>
-    <div class="section">
-      <img src="" alt="" class="" />
-      <div class="section-content">
-        <div class="section-header">Easy to Use LCD Remote</div>
-        <div class="section-description">
-          The Osaki OS-Monarch remote is an easy view screen displaying the
-          functions the chair has activated. On the remote it allows you to
-          select the massage type, intensity, speed and location. You can also
-          operate the functions independently in manual mode.
-        </div>
-      </div>
-    </div>
-    <div class="section !grid grid-cols-2 gap-5 !bg-white md:gap-9 lg:gap-9">
-      <div
-        class="relative flex h-full flex-col justify-between !bg-[var(--section-bg-color)]"
-      >
-        <div
-          class="section-content section-description absolute right-0 top-0 !text-black"
-        >
-          USB Connector
-        </div>
-        <img src="" alt="" class="" />
-      </div>
-      <div class="flex h-full flex-col justify-between !bg-[#e6e8ea]">
-        <div
-          class="section-content section-description !w-full !pb-0 text-center !text-black"
-        >
-          Multi Language Support
-        </div>
-        <img src="" alt="" class="!w-1/2 self-center md:!w-2/3" />
       </div>
     </div>
 
