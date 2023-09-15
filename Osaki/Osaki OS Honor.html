@@ -1,4 +1,3 @@
-<!-- Need Completely New Design -->
 <!--  
   <ul class="feature-section">
     <li>
@@ -22,502 +21,872 @@
     <li>Intuitive Remote Control</li>
   </ul>
  -->
+
 <!-- more -->
+<script>
+  const youtube_link =
+    "https://www.youtube.com/watch?v=u3RxKsd1x6c&t=1s&ab_channel=OfficialTitanOsakiMassageChannel"
+
+  const imgs = [
+    {
+      img_order: "1",
+      img_name: "honor_main",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/1.honor_main.webp?v=1694814942",
+    },
+    {
+      img_order: "2",
+      img_name: "honor_3D",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/2.honor_3D.webp?v=1694814942",
+    },
+    {
+      img_order: "3",
+      img_name: "honor_body_scan",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.honor_body_scan.webp?v=1694814942",
+    },
+    {
+      img_order: "4",
+      img_name: "honor_SL-track",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4.honor_SL-track.webp?v=1694814942",
+    },
+    {
+      img_order: "5",
+      img_name: "honor_ZG",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/5.honor_ZG.webp?v=1694814942",
+    },
+    {
+      img_order: "6",
+      img_name: "honor_air_cells",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/6.honor_air_cells.webp?v=1694814942",
+    },
+    {
+      img_order: "7",
+      img_name: "honor_heating",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/7.honor_heating.webp?v=1694814942",
+    },
+    {
+      img_order: "8",
+      img_name: "honor_icon_neck-shoulder",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/8.honor_icon_neck-shoulder.webp?v=1694814943",
+    },
+    {
+      img_order: "9",
+      img_name: "honor_icon_thai",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/9.honor_icon_thai.webp?v=1694814943",
+    },
+    {
+      img_order: "10",
+      img_name: "honor_icon_strengthen",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.honor_icon_strengthen.webp?v=1694814943",
+    },
+    {
+      img_order: "11",
+      img_name: "honor_icon_recover",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/11.honor_icon_recover.webp?v=1694814942",
+    },
+    {
+      img_order: "12",
+      img_name: "honor_icon_relax",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12.honor_icon_relax.webp?v=1694814942",
+    },
+    {
+      img_order: "13",
+      img_name: "honor_icon_sleeping",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/13.honor_icon_sleeping.webp?v=1694814942",
+    },
+    {
+      img_order: "14",
+      img_name: "honor_icon_kneading",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/14.honor_icon_kneading.webp?v=1694814943",
+    },
+    {
+      img_order: "15",
+      img_name: "honor_icon_shiatsu",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/15.honor_icon_shiatsu.webp?v=1694814942",
+    },
+    {
+      img_order: "16",
+      img_name: "honor_icon_tapping",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/16.honor_icon_tapping.webp?v=1694814942",
+    },
+    {
+      img_order: "17",
+      img_name: "honor_icon_rolling",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/17.honor_icon_rolling.webp?v=1694814943",
+    },
+    {
+      img_order: "18",
+      img_name: "honor_icon_kneading_tapping",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/18.honor_icon_kneading_tapping.webp?v=1694814943",
+    },
+    {
+      img_order: "19",
+      img_name: "honor_icon_kneading_shiatsu",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19.honor_icon_kneading_shiatsu.webp?v=1694814943",
+    },
+    {
+      img_order: "20",
+      img_name: "honor_foot_roller",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/20.honor_foot_roller.webp?v=1694814943",
+    },
+    {
+      img_order: "21",
+      img_name: "honor_extension_legrest",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/21.honor_extension_legrest.webp?v=1694814942",
+    },
+    {
+      img_order: "22",
+      img_name: "honor_remote",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/22.honor_remote.webp?v=1694814942",
+    },
+    {
+      img_order: "23",
+      img_name: "honor_dimension1",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/23.honor_dimension1.webp?v=1694814943",
+    },
+    {
+      img_order: "24",
+      img_name: "honor_dimension2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/24.honor_dimension2.webp?v=1694814943",
+    },
+  ]
+</script>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  crossorigin="anonymous"
+></script>
 <script src="https://cdn.tailwindcss.com"></script>
 
-<div id="tab-buttons" class="max-w-6xl mx-auto my-4">
-      <button id="tab-button1"
-            class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center dark:text-gray-400 dark:hover:text-gray-300 active-tab">
-            Description
-      </button>
-      <button id="tab-button2"
-            class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center t dark:text-gray-400 dark:hover:text-gray-300">
-            Reviews
-      </button>
-</div>
-      
-    <div
-      class="sections section-wrapper large-direction-column large-align-items-center large-offset-bottom-3 large-position-relative"
+<style>
+  :root {
+    --section-bg-color: #ebebeb;
+    --section-strong-color: #121212;
+    --section-header-color: #121212;
+    --section-content-color: #808080;
+    --section-grid-color: #808080;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .sections {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    /* display: flex;
+    flex-direction: column; */
+  }
+
+  .sections strong {
+    color: var(--section-strong-color);
+  }
+
+  .sections .section {
+    background-color: var(--section-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .section > img,
+  .section-content {
+    flex: 1 1 0%;
+    width: 50%;
+  }
+
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+  }
+
+  .section-header {
+    font-size: 52px;
+    line-height: 65px;
+    color: var(--section-header-color);
+  }
+  .section-header2 {
+    font-size: 36px;
+    line-height: 45px;
+    color: var(--section-header-color);
+  }
+
+  .section-description {
+    color: var(--section-content-color);
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  .circle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 32px;
+  }
+
+  .circle > :first-child {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .grid-section {
+    background-color: var(--section-bg-color);
+    color: var(--section-grid-color);
+    display: grid;
+    grid-column: span 2 / span 2;
+    padding: 50px 100px 50px;
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+
+  .grid-section img {
+    margin: 0 0 0px 50px;
+  }
+
+  .grid-section .grid-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .app-icon {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .app-icon img {
+    flex: 0 0 0;
+    width: 40%;
+  }
+
+  .grid-align {
+    text-align: left;
+  }
+
+  @media (max-width: 1024px) {
+    .sections {
+      max-width: 768px;
+    }
+
+    .sections .section {
+      margin-bottom: 35px;
+    }
+
+    .section > img {
+      width: 50%;
+    }
+
+    .section .section-content {
+      gap: 22px;
+      padding: 35px;
+    }
+
+    .section-header {
+      font-size: 39px;
+      line-height: 58px;
+    }
+
+    .section-header2 {
+      font-size: 27px;
+      line-height: 40px;
+    }
+
+    .section-description {
+      font-size: 15px;
+      line-height: 24px;
+    }
+
+    .circle {
+      gap: 5px;
+      font-size: 24px;
+    }
+
+    .circle > :first-child {
+      width: 30px;
+      height: 30px;
+    }
+
+    .grid-section {
+      padding: 35px 75px 35px;
+      gap: 35px;
+      margin-bottom: 35px;
+    }
+
+    .grid-section img {
+      margin: 0 0 0px 35px;
+    }
+
+    .grid-section .grid-item {
+      gap: 15px;
+    }
+
+    .grid-align {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .sections {
+      max-width: 480px;
+    }
+
+    .sections .section {
+      margin-bottom: 22px;
+    }
+
+    .section .section-content {
+      gap: 14px;
+      padding: 22px;
+    }
+
+    .section-header {
+      font-size: 26px;
+      line-height: 38px;
+    }
+    .section-header {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    .section-description {
+      font-size: 10px;
+      line-height: 16px;
+    }
+
+    .circle {
+      gap: 4px;
+      font-size: 16px;
+    }
+
+    .circle > :first-child {
+      width: 20px;
+      height: 20px;
+    }
+
+    .grid-section {
+      padding: 20px 50px 20px;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .grid-section img {
+      margin: 0 0 0px 20px;
+      width: 20%;
+    }
+
+    .grid-section .grid-item {
+      gap: 10px;
+    }
+  }
+
+  .active-tab {
+    color: #191919;
+    border-bottom: 0.25em solid gray;
+  }
+</style>
+
+<body>
+  <div id="tab-buttons" class="mx-auto my-4 max-w-6xl">
+    <button
+      id="tab-button1"
+      class="active-tab inline-block px-1 py-2 text-center text-sm font-semibold text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"
     >
-         <iframe style="width:100%; aspect-ratio:16/9; border:0"
-      src="https://www.youtube.com/embed/u3RxKsd1x6c?mute=1&amp;autoplay=1"></iframe>                          
-      ></iframe>
-      <div class="intensity-content intensity-wrapper">
-        <p class="intensity-headline">Intensity Level</p>
-        <div class="intensity-bar">
-          <span class="intensity-range typography-intensity range-3">
-            5-8
-          </span>
+      Description
+    </button>
+    <button
+      id="tab-button2"
+      class="t inline-block px-1 py-2 text-center text-sm font-semibold text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"
+    >
+      Reviews
+    </button>
+  </div>
+  <div class="sections">
+    <div id="youtube-link"></div>
+    <div class="section !mb-10 !flex-col !bg-white md:!mb-40">
+      <img src="" alt="" class="!w-full" />
+      <div class="px-10 pb-5 pt-10 text-center text-xl md:text-2xl lg:text-3xl">
+        Introducing Osaki’s latest 3D massage chair that has been in the works
+        for many years, carefully engineered and designed in Japan. The
+        innovative brushless motors make it one of the most reliable and quiet
+        motors in the industry. Decades of Japanese massage techniques and
+        technology has been poured into the Osaki 3D Honor Massage Chair.
+      </div>
+      <div class="mb-20 grid grid-cols-4 justify-items-center gap-3">
+        <div class="circle">
+          <div class="bg-[#e2dcd4]"></div>
+          <div>Taupe</div>
+        </div>
+        <div class="circle">
+          <div class="bg-[#6f3801]"></div>
+          <div>Brown</div>
+        </div>
+        <div class="circle">
+          <div class="bg-[#8c8b8e]"></div>
+          <div>Gray</div>
+        </div>
+        <div class="circle">
+          <div class="bg-[#e2dcd4]"></div>
+          <div>Taupe</div>
         </div>
       </div>
-      <img
-        alt="Osaki OS Honor"
-        src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/Banner_B_Honor.jpg?v=1648059754"
-      />
-      <p class="large-pad-top-1 large-text-align-center large-10">
-        Introducing Osaki’s latest 3D massage chair that has been in the works
-        for many years, carefully engineered and designed in Japan. The chair is
-        thoughtfully designed for comfort and an incredible massage experience.
-        The innovative brushless motors make it one of the most reliable and
-        quiet motors in the industry. The SL-Track massage roller system is
-        smooth and delivers an incredibly consistent massage that can be
-        adjusted to be deep yet smooth. Decades of Japanese massage techniques
-        and technology has been poured into the Osaki 3D Honor Massage Chair.
-        The chair has been developed with the only the user in mind. With years
-        of feedback from our valued customers the evolution of massage chairs is
-        displayed in this unique model.
-      </p>
     </div>
-    <div
-      class="section-wrapper large-align-items-center small-direction-column large-offset-bottom-3"
-    >
-      <div class="large-2 medium-3 small-5 small-offset-bottom-1">
-        <img
-          alt="3D Massage Mechanism"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/honor_3D_Plus_Minus_1000x1000_5f699e48-12e2-4d21-8367-18d0caae68df.jpg?v=1648059754"
-        />
+
+    <div class="section !flex-row !bg-black">
+      <div class="section-content">
+        <div class="section-header !text-white">Body Scan System</div>
+        <div class="section-description !text-[#808080]">
+          The Monarch will perform a body scan to map the key areas of the neck
+          and back to ensure the optimal amount of pressure applied during the
+          massage. The scanning technology will detect your shoulders height,
+          which can be re-calibrated once the scan is complete.
+        </div>
       </div>
-      <div
-        class="large-12 large-text-align-left large-pad-left-2 medium-pad-left-2 small-pad-left-0 small-text-align-center"
-      >
-        <h3>3D Massage Mechanism</h3>
-        <p>
-          The Osaki 3D Honor is equipped with the lasted generation of 3D
-          massage technology. The 3D features allow for the massage rollers to
-          extend out and retract in on the backrest. The massage head 3D
-          function will dictate the intensity of the massage. As the rollers
-          extend out, the stronger the massage will be. On the remote this
-          feature can be easy controlled by pressing the 3D+ or the 3D- button.
-        </p>
-      </div>
+      <img src="" alt="" class="" />
     </div>
-    <div
-      class="section-wrapper large-align-items-center small-direction-column large-offset-bottom-3"
-    >
-      <div class="large-2 medium-3 small-5 small-offset-bottom-1">
-        <img
-          alt="Backrest Scanning System"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/honor_Backrest_Scan_1000x1000_4c59a251-aa7b-434c-b3e6-68a4957e0a6e.jpg?v=1648059755"
-        />
+
+    <div class="section !flex-row-reverse !bg-black">
+      <div class="section-content">
+        <div class="section-header !text-white">3D Massage</div>
+        <div class="section-description !text-[#808080]">
+          The next generation of 3D massage rollers are designed for outstanding
+          range and flexibility. The 3D technology allows the user to control
+          the length of rollers that extend out from the backrest. OS-Monarch
+          has 4 levels of 3D intensity control.
+        </div>
       </div>
-      <div
-        class="large-12 large-text-align-left large-pad-left-2 medium-pad-left-2 small-pad-left-0 small-text-align-center"
-      >
-        <h3>Backrest Scanning System</h3>
-        <p>
-          The Osaki 3D Honor computer body scan has an upgraded 3 core processor
-          to improve the accuracy and speed of mapping the back prior to
-          delivering an incredible massage. The starting point of the massage
-          can be adjusted. Right after the computer scan is completed you have a
-          5 second window to raise or lower the massage starting point. The body
-          scan will map out he curvature of the back to ensue that consistent
-          amount of massage pressure is being applied top to bottom.
-        </p>
-      </div>
+      <img src="" alt="" class="" />
     </div>
-    <div
-      class="section-wrapper large-align-items-center small-direction-column large-offset-bottom-3"
-    >
-      <div class="large-2 medium-3 small-5 small-offset-bottom-1">
-        <img
-          alt="SL-Track"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/honor_L-Track_1000x1000_b256f179-5a9d-42c6-a8b0-a0b6bf1365c2.jpg?v=1648059754"
-        />
+    <div class="section !bg-black">
+      <div class="section-content">
+        <div class="section-header !text-white">L-Track Massage</div>
+        <div class="section-description !text-[#808080]">
+          As the roller system massages the neck area, it continues through to
+          the lower back and then proceeds to massage the glutes and upper
+          hamstrings.
+        </div>
       </div>
-      <div
-        class="large-12 large-text-align-left large-pad-left-2 medium-pad-left-2 small-pad-left-0 small-text-align-center"
-      >
-        <h3>SL-Track</h3>
-        <p>
-          The SL-Track has length of 52” starting from the neck to down through
-          the glutes to the hamstrings.
-        </p>
-      </div>
+      <img src="" alt="" class="" />
     </div>
-    <div
-      class="section-wrapper large-align-items-center small-direction-column large-offset-bottom-3"
-    >
-      <div class="large-2 medium-3 small-5 small-offset-bottom-1">
-        <img
-          alt="Zero Gravity Mode"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/honor_Zero_Gravity_1000x1000_3eb7a98f-2fce-418d-bcbe-f861835cdd0c.jpg?v=1648059754"
-        />
+    <div class="section !flex-row-reverse !bg-black">
+      <div class="section-content">
+        <div class="section-header !text-white">Space Saving Technology</div>
+        <div class="section-description !text-[#808080]">
+          Osaki's innovative design team has engineered a space saving
+          technology that slides the chair forward as the chair reclines. As a
+          result, OS-Monarch takes only one inch to get to the fully reclined
+          position.
+        </div>
       </div>
-      <div
-        class="large-12 large-text-align-left large-pad-left-2 medium-pad-left-2 small-pad-left-0 small-text-align-center"
-      >
-        <h3>Zero Gravity Mode</h3>
-        <p>
+      <img src="" alt="" class="" />
+    </div>
+    <div class="section !flex-col !bg-black">
+      <div class="section-content !w-full">
+        <div class="section-header text-center !text-white">
+          <strong class="!text-[#0510E2]">Intelligent</strong> Body Scanning
+        </div>
+        <div class="section-description !text-[#808080]">
           Inspired by NASA technology, the Zero gravity position is the perfect
           position to enjoy a massage, aligning your back relative to your thigh
           at an optimal level of comfort. When reclined into the zero-gravity
           position, the complete weight of your back is virtually supported by
-          the backrest which maximizes the intensity of the massage. In this
-          position when the knees are brought above the chest will optimize your
-          blood flow, in order to relax the body more.
-        </p>
+          the backrest which maximizes the intensity of the massage.
+        </div>
       </div>
+      <img src="" alt="" class="" />
     </div>
-    <div
-      class="section-wrapper large-align-items-center small-direction-column large-offset-bottom-3"
-    >
-      <div class="large-2 medium-3 small-5 small-offset-bottom-1">
-        <img
-          alt="Space Saving"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/honor_4.5_inches_1000x1000_2f7c0a67-6bbc-48ef-9d1f-13f3dbb9d2c6.jpg?v=1648059754"
-        />
-      </div>
-      <div
-        class="large-12 large-text-align-left large-pad-left-2 medium-pad-left-2 small-pad-left-0 small-text-align-center"
-      >
-        <h3>Space Saving</h3>
-        <p>
-          Osaki's innovative design team has engineered a space saving
-          technology that slides the chair forward as the chair reclines. As a
-          result, the OS Honor takes only 4.5 inches to get to the fully
-          reclined position.
-        </p>
-      </div>
-    </div>
-    <div
-      class="section-wrapper large-align-items-center small-direction-column large-offset-bottom-3"
-    >
-      <div class="large-2 medium-3 small-5 small-offset-bottom-1">
-        <img
-          alt="Full Body Air Massages"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/honor_Full_Body_Air_Massage_1000x1000_027f81f1-49f1-43a7-bc6e-7be66180cfe2.jpg?v=1648059754"
-        />
-      </div>
-      <div
-        class="large-12 large-text-align-left large-pad-left-2 medium-pad-left-2 small-pad-left-0 small-text-align-center"
-      >
-        <h3>Full Body Air Massages</h3>
-        <p>
+    <div class="section !bg-white">
+      <div class="section-content">
+        <div class="section-header !text-black">
+          <strong class="!text-[#0510E2]">Air</strong> Massage
+        </div>
+        <div class="section-description !text-[#808080]">
           There are multiple airbags located throughout the massage chair to
-          offer a full body massage experience. The Honor offers a total of 14
-          highly efficient airbags in the massage chair. Airbags are located at
-          the shoulders, arms, lower back, feet, and the calf areas. This
-          compression massage promotes blood circulation and muscle relaxation.
-          The latest engineering has dramatically reduced the airbag count
-          making the chair far more efficient and increasing reliability without
-          compromising massage coverage.
-        </p>
-      </div>
-    </div>
-    <div
-      class="section-wrapper large-align-items-center small-direction-column large-offset-bottom-3"
-    >
-      <div class="large-2 medium-3 small-5 small-offset-bottom-1">
-        <img
-          alt="Heating on Lumbar"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/honor_Heat_Therapy_1000x1000_10ed5f9e-3ba5-4463-96d2-a53d08a53d1e.png?v=1648059755"
-        />
-      </div>
-      <div
-        class="large-12 large-text-align-left large-pad-left-2 medium-pad-left-2 small-pad-left-0 small-text-align-center"
-      >
-        <h3>Heating on Lumbar</h3>
-        <p>
-          The Osaki Honor has heating pads located on the Lumbar area. It offers
-          the heat therapy which is a great compliment to the roller and airbag
-          massage. Heating the body’s temperature is known to increase blood
-          circulation and loosen tense muscles.
-        </p>
-      </div>
-    </div>
-    <div
-      class="section-wrapper large-align-items-center small-direction-column large-offset-bottom-3"
-    >
-      <div class="large-2 medium-3 small-5 small-offset-bottom-1">
-        <img
-          alt="Foot Roller Massage"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/honor_Footrest_1000x1000_68456f2f-004a-41c1-936f-1b8fa07a947c.jpg?v=1648059755"
-        />
-      </div>
-      <div
-        class="large-12 large-text-align-left large-pad-left-2 medium-pad-left-2 small-pad-left-0 small-text-align-center"
-      >
-        <h3>Foot Roller Massage</h3>
-        <p>
-          OS 3D Honor has 2 spinning reflexology massage rollers located on the
-          bottom of the feet that provide a soothing kneading style application.
-          As the rollers spin it will stimulate acupuncture points and as the
-          air bags inflate it will generate a much deeper massage along the
-          bottoms of your feet. It also has ankle grip function that heightens
-          your foot massage experience.
-        </p>
-      </div>
-    </div>
-    <div
-      class="section-wrapper large-align-items-center small-direction-column large-offset-bottom-3"
-    >
-      <div class="large-2 medium-3 small-5 small-offset-bottom-1">
-        <img
-          alt="Extendable Legrest"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/honor_Extendable_Footrest_d5405a99-7951-431e-b8e3-71720ef4c3a1.jpg?v=1648059754"
-        />
-      </div>
-      <div
-        class="large-12 large-text-align-left large-pad-left-2 medium-pad-left-2 small-pad-left-0 small-text-align-center"
-      >
-        <h3>Extendable Legrest</h3>
-        <p>
-          Osaki OS 3D honor has Extendable Footrest which can be extended up to
-          7 Inches to reach the desired comfortable position which fits a user’s
-          various height.
-        </p>
-      </div>
-    </div>
-    <div
-      class="section-wrapper large-align-items-center small-direction-column large-offset-bottom-3"
-    >
-      <div class="large-2 medium-3 small-5 small-offset-bottom-1">
-        <img
-          alt="6 Auto Massage Programs"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/honor_6_Massage_Programs.jpg?v=1648059754"
-        />
-      </div>
-      <div
-        class="large-12 large-text-align-left large-pad-left-2 medium-pad-left-2 small-pad-left-0 small-text-align-center"
-      >
-        <h3>6 Auto Massage Programs</h3>
-        <p>
-          The Osaki Honor has 6 unique pre-programmed massage functions. Each
-          offering different combination of massage styles and focused area.
-          Neck / Shoulder, Strengthen, Relax, Thai, Recover, Sleeping
-        </p>
-      </div>
-    </div>
-    <div
-      class="section-wrapper large-align-items-center small-direction-column large-offset-bottom-3"
-    >
-      <div class="large-2 medium-3 small-5 small-offset-bottom-1">
-        <img
-          alt="Easy Remote Control"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/honor_Remote_Control_Pocket_1000x1000_306cdc27-ff85-477a-8b69-ad56acab3713.jpg?v=1648059755"
-        />
-      </div>
-      <div
-        class="large-12 large-text-align-left large-pad-left-2 medium-pad-left-2 small-pad-left-0 small-text-align-center"
-      >
-        <h3>Easy Remote Control</h3>
-        <p>
-          The Osaki Honor remote has an easy view screen displaying the function
-          the chair has activated. On the remote it allows you to select the
-          massage type, intensity, speed, and location. You can also operate the
-          functions independently in the Manual Mode. The user can customize
-          massage by pressing Spot or Partial Back Massage button which allows
-          the user to select spot massage for any specific part of the back.
-        </p>
-      </div>
-    </div>
-    <div
-      class="section-wrapper large-direction-column large-align-items-center large-offset-bottom-3 large-position-relative"
-    >
-      <h3 class="large-pad-top-1 large-text-align-center large-10">
-        6 Massage Styles
-      </h3>
-      <img
-        alt="Osaki Honor - 6 Massage Styles"
-        src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/6_massage_styles_e326c447-db8c-421e-bcd9-136caf6ece23.jpg?v=1649174580"
-      />
-    </div>
-    <div class="section-wrapper large-direction-column">
-      <h2 class="large-text-align-center">Dimensions</h2>
-      <div
-        class="section-wrapper small-direction-column large-align-items-center"
-      >
-        <div class="large-6 small-12">
-          <img
-            alt="Osaki Honor Dimension Upright"
-            src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/Honor_Dimension_Upright.jpg?v=1649441299"
-          />
+          offer a full body massage experience. Airbags are located at the
+          shoulders, the arms, the feet, and the calf areas. This compression
+          massage helps to continue increasing blood circulation throughout the
+          body to relieve pain and tension.
         </div>
-        <div class="large-6 small-12">
-          <img
-            alt="Osaki Honor Dimension Reclined"
-            src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/Honor_Dimension_Reclined.jpg?v=1649441299"
-          />
+      </div>
+      <img src="" alt="" class="" />
+    </div>
+    <div class="section !flex-row-reverse !bg-white">
+      <div class="section-content">
+        <div class="section-header !text-black">
+          <strong class="!text-[#E02D2D]">Lumbar</strong> Heat Therapy
         </div>
+        <div class="section-description !text-[#808080]">
+          With Monarch’s heat shawl lumbar therapy, the incorporated graphene
+          effectively warm and help ease soreness in the lower back area.
+        </div>
+      </div>
+      <img src="" alt="" class="" />
+    </div>
+
+    <div
+      class="col-span-2 flex items-center justify-center gap-5 p-10 text-center text-2xl md:text-4xl"
+    >
+      <strong class="">9 Auto Massage Modes</strong>
+    </div>
+    <div
+      class="mb-10 grid grid-cols-2 bg-[var(--section-bg-color)] p-10 md:pl-[15%]"
+    >
+      <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
+        <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
+        <div class="md:text-xl">Recovery</div>
+      </div>
+      <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
+        <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
+        <div class="md:text-xl">Pain Relief</div>
+      </div>
+      <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
+        <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
+        <div class="md:text-xl">Stretch</div>
+      </div>
+      <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
+        <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
+        <div class="md:text-xl">Shopaholic</div>
+      </div>
+      <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
+        <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
+        <div class="md:text-xl">Sleeping</div>
+      </div>
+      <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
+        <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
+        <div class="md:text-xl">Neck & Shoulder</div>
+      </div>
+      <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
+        <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
+        <div class="md:text-xl">Experience</div>
+      </div>
+      <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
+        <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
+        <div class="md:text-xl">Back & Waist</div>
+      </div>
+      <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
+        <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
+        <div class="md:text-xl">Athlete Mode</div>
+      </div>
+    </div>
+    <div
+      class="col-span-2 flex items-center justify-center gap-5 p-10 text-center text-2xl md:text-4xl"
+    >
+      <strong class="">4 Manual Massage Modes</strong>
+    </div>
+    <div
+      class="mb-10 grid grid-cols-2 bg-[var(--section-bg-color)] p-10 md:pl-[15%]"
+    >
+      <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
+        <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
+        <div class="md:text-xl">Kneading</div>
+      </div>
+      <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
+        <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
+        <div class="md:text-xl">Knocking</div>
+      </div>
+      <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
+        <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
+        <div class="md:text-xl">Tapping</div>
+      </div>
+      <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
+        <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
+        <div class="md:text-xl">Shiatsu</div>
       </div>
     </div>
 
-    <section class="section-specs section-pad-bottom">
-      <div class="table-tap">
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">Product Name</div>
-            <div class="specs-column">OS-Honor</div>
-          </div>
+    <div class="section !flex-row-reverse">
+      <img src="" alt="" class="self-start" />
+      <div class="section-content">
+        <div class="section-header">Spring Loaded Extendable Footrest</div>
+        <div class="section-description">
+          OS-Monarch has Spring Loaded Extendable Footrest which can be extended
+          up to 13.5 Inches.
         </div>
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">User Manual</div>
-            <div class="specs-column">
-              <a
-                href="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/OS-Honor_Instruction_Manual.pdf?v=1654552499"
-                style="color: #ff4800"
-                target="_blank"
-              >
-                Download
-              </a>
-            </div>
-          </div>
+      </div>
+    </div>
+    <div class="section">
+      <img src="" alt="" class="!self-start" />
+      <div class="section-content">
+        <div class="section-header">Unique Foot Roller Massage</div>
+        <div class="section-description">
+          OS-Monarch has Three Rollers located on the bottom of the feet are
+          spinning reflexology massagers which provide a soothing kneading style
+          application. As the rollers spin it will stimulate acupuncture points
+          and as the air bags inflate it will generate a much deeper massage
+          along the bottoms of your feet.
         </div>
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">Rated Voltage</div>
-            <div class="specs-column">110~120V</div>
-          </div>
+      </div>
+    </div>
+    <div class="section !flex-row-reverse">
+      <img src="" alt="" class="self-end" />
+      <div class="section-content">
+        <div class="section-header">Built in Bluetooth Speakers</div>
+        <div class="section-description">
+          The Osaki OS-Monarch is equipped with Bluetooth technology that allows
+          the user to listen to their favorite music and phone calls on high
+          quality speakers in the headrest.
         </div>
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">Rated Frequency</div>
-            <div class="specs-column">60Hz</div>
-          </div>
+      </div>
+    </div>
+    <div class="section">
+      <img src="" alt="" class="" />
+      <div class="section-content">
+        <div class="section-header">Easy to Use LCD Remote</div>
+        <div class="section-description">
+          The Osaki OS-Monarch remote is an easy view screen displaying the
+          functions the chair has activated. On the remote it allows you to
+          select the massage type, intensity, speed and location. You can also
+          operate the functions independently in manual mode.
         </div>
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">Rated Power Consumption</div>
-            <div class="specs-column">100W</div>
-          </div>
+      </div>
+    </div>
+    <div class="section !grid grid-cols-2 gap-5 !bg-white md:gap-9 lg:gap-9">
+      <div
+        class="relative flex h-full flex-col justify-between !bg-[var(--section-bg-color)]"
+      >
+        <div
+          class="section-content section-description absolute right-0 top-0 !text-black"
+        >
+          USB Connector
         </div>
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">Rated Time</div>
-            <div class="specs-column">15 Minutes</div>
-          </div>
+        <img src="" alt="" class="" />
+      </div>
+      <div class="flex h-full flex-col justify-between !bg-[#e6e8ea]">
+        <div
+          class="section-content section-description !w-full !pb-0 text-center !text-black"
+        >
+          Multi Language Support
         </div>
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">
-              Dimensions
-              <br />
-              (W x L x H)
-            </div>
-            <div class="specs-column">
-              <strong> Upright </strong>
-              <br />
-              28.0" x 59.1" x 47.2"
-            </div>
-            <div class="specs-column">
-              <strong> Reclined </strong>
-              <br />
-              28.0" x 70.1" x 38.6"
-            </div>
-          </div>
+        <img src="" alt="" class="!w-1/2 self-center md:!w-2/3" />
+      </div>
+    </div>
+
+    <div class="section-dimensions mb-20">
+      <div class="mt-40 text-center text-3xl lg:text-5xl">Dimensions</div>
+      <div
+        class="flex flex-col items-center justify-between gap-5 md:flex-row md:gap-10"
+      >
+        <img src="" alt="" class="min-w-0" />
+        <img src="" alt="" class="min-w-0" />
+      </div>
+    </div>
+  </div>
+  <section class="section-specs section-pad-bottom">
+    <div class="table-tap">
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Product Name</div>
+          <div class="specs-column">OS-Honor</div>
         </div>
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">Width</div>
-            <div class="specs-column">
-              <strong> Shoulder </strong>
-              <br />
-              20.5"
-            </div>
-            <div class="specs-column">
-              <strong> Seat </strong>
-              <br />
-              19"
-            </div>
-          </div>
-        </div>
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">Weight</div>
-            <div class="specs-column">
-              <strong> Net </strong>
-              <br />
-              220.5 lbs
-            </div>
-            <div class="specs-column">
-              <strong> Gross </strong>
-              <br />
-              264.5 lbs
-            </div>
-          </div>
-        </div>
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">Minimum Doorway Size</div>
-            <div class="specs-column">28"</div>
-          </div>
-        </div>
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">Length of Wire</div>
-            <div class="specs-column">
-              <strong> Controller </strong>
-              <br />
-              59.0"
-            </div>
-            <div class="specs-column">
-              <strong> Power Supply </strong>
-              <br />
-              70.9"
-            </div>
-          </div>
-        </div>
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">Usage Condition</div>
-            <div class="specs-column">
-              <strong> Environment Temperature </strong>
-              <br />
-              32°F~95°F
-            </div>
-            <div class="specs-column">
-              <strong> Contrasting Humidity </strong>
-              <br />
-              20-80RH
-            </div>
-          </div>
-        </div>
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">Storage Condition</div>
-            <div class="specs-column">
-              <strong> Temperature </strong>
-              <br />
-              32°F~95°F
-            </div>
-            <div class="specs-column">
-              <strong> Humidity </strong>
-              <br />
-              20-80RH
-            </div>
-          </div>
-        </div>
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">Safety Feature</div>
-            <div class="specs-column">Equipped with overheated and power</div>
-          </div>
-        </div>
-        <div class="specs-section">
-          <div class="specs-row">
-            <div class="specs-rowheader">Maximum User Body Weight</div>
-            <div class="specs-column">260lbs</div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">User Manual</div>
+          <div class="specs-column">
+            <a
+              href="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/OS-Honor_Instruction_Manual.pdf?v=1654552499"
+              style="color: #ff4800"
+              target="_blank"
+            >
+              Download
+            </a>
           </div>
         </div>
       </div>
-    </section>
-
-<script crossorigin="anonymous" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
-      src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Rated Voltage</div>
+          <div class="specs-column">110~120V</div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Rated Frequency</div>
+          <div class="specs-column">60Hz</div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Rated Power Consumption</div>
+          <div class="specs-column">100W</div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Rated Time</div>
+          <div class="specs-column">15 Minutes</div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">
+            Dimensions
+            <br />
+            (W x L x H)
+          </div>
+          <div class="specs-column">
+            <strong> Upright </strong>
+            <br />
+            28.0" x 59.1" x 47.2"
+          </div>
+          <div class="specs-column">
+            <strong> Reclined </strong>
+            <br />
+            28.0" x 70.1" x 38.6"
+          </div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Width</div>
+          <div class="specs-column">
+            <strong> Shoulder </strong>
+            <br />
+            20.5"
+          </div>
+          <div class="specs-column">
+            <strong> Seat </strong>
+            <br />
+            19"
+          </div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Weight</div>
+          <div class="specs-column">
+            <strong> Net </strong>
+            <br />
+            220.5 lbs
+          </div>
+          <div class="specs-column">
+            <strong> Gross </strong>
+            <br />
+            264.5 lbs
+          </div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Minimum Doorway Size</div>
+          <div class="specs-column">28"</div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Length of Wire</div>
+          <div class="specs-column">
+            <strong> Controller </strong>
+            <br />
+            59.0"
+          </div>
+          <div class="specs-column">
+            <strong> Power Supply </strong>
+            <br />
+            70.9"
+          </div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Usage Condition</div>
+          <div class="specs-column">
+            <strong> Environment Temperature </strong>
+            <br />
+            32°F~95°F
+          </div>
+          <div class="specs-column">
+            <strong> Contrasting Humidity </strong>
+            <br />
+            20-80RH
+          </div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Storage Condition</div>
+          <div class="specs-column">
+            <strong> Temperature </strong>
+            <br />
+            32°F~95°F
+          </div>
+          <div class="specs-column">
+            <strong> Humidity </strong>
+            <br />
+            20-80RH
+          </div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Safety Feature</div>
+          <div class="specs-column">Equipped with overheated and power</div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Maximum User Body Weight</div>
+          <div class="specs-column">260lbs</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
 <script>
-      $(function () {
-            $("#tab-button1").on("click", () => {
-                  $("#tab-button1").addClass("active-tab");
-                  $("#tab-button2").removeClass("active-tab");
-                  $(".sections").fadeIn("slow");
-                  $(".section-specs").fadeIn("slow");
-            });
-            $("#tab-button2").on("click", () => {
-                  $("#tab-button1").removeClass("active-tab");
-                  $("#tab-button2").addClass("active-tab");
-                  $(".sections").fadeOut("slow");
-                  $(".section-specs").fadeOut("slow");
-            });
-      });
+  $(function () {
+    $.each($(".sections img"), (i, img) => {
+      $(img).attr("src", imgs[i].img_src)
+      $(img).attr("alt", imgs[i].img_name)
+    })
+
+    if (youtube_link !== "") {
+      var youtube_id = youtube_link.split("watch?v=")[1].split("&")[0]
+      var src = `https://www.youtube.com/embed/${youtube_id}?autoplay=1&mute=1`
+      var embed_html = `<iframe class="w-full aspect-video mb-20" src="${src}"></iframe>`
+      $("#youtube-link").append(embed_html)
+    }
+    $("#tab-button1").on("click", () => {
+      $("#tab-button1").addClass("active-tab")
+      $("#tab-button2").removeClass("active-tab")
+      $(".sections").fadeIn("slow")
+      $(".section-specs").fadeIn("slow")
+    })
+    $("#tab-button2").on("click", () => {
+      $("#tab-button1").removeClass("active-tab")
+      $("#tab-button2").addClass("active-tab")
+      $(".sections").fadeOut("slow")
+      $(".section-specs").fadeOut("slow")
+    })
+  })
 </script>
