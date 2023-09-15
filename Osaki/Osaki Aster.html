@@ -27,369 +27,718 @@
      </li>
     </ul>
    -->
+
 <!-- more -->
-<div id="tab-buttons" class="max-w-6xl mx-auto my-4">
-  <button
-    id="tab-button1"
-    class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center dark:text-gray-400 dark:hover:text-gray-300 active-tab"
-  >
-    Description
-  </button>
-  <button
-    id="tab-button2"
-    class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center t dark:text-gray-400 dark:hover:text-gray-300"
-  >
-    Reviews
-  </button>
-</div>
-<section class="section-content sections">
-  <iframe
-    style="width: 100%; aspect-ratio: 16/9; border: 0"
-    src="https://www.youtube.com/embed/umPmXI-Oxfc?mute=1&amp;autoplay=1"
-  ></iframe>
-  <div
-    class="section-wrapper large-direction-column large-align-items-center large-offset-bottom-3 large-position-relative"
-  >
-    <div class="intensity-content intensity-wrapper">
-      <p class="intensity-headline theme-dark-intensity-headline">
-        Intensity Level
-      </p>
-      <div class="intensity-bar">
-        <span class="intensity-range typography-intensity range-1"> 3-5 </span>
+<script>
+  const youtube_link =
+    "https://www.youtube.com/watch?v=umPmXI-Oxfc&t=3s&ab_channel=OfficialTitanOsakiMassageChannel"
+
+  const imgs = [
+    {
+      img_order: "2",
+      img_name: "Aster_Banner",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/2.Aster_Banner.webp?v=1694816284",
+    },
+    {
+      img_order: "3",
+      img_name: "Aster_Scan",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.Aster_Scan.webp?v=1694816284",
+    },
+    {
+      img_order: "4",
+      img_name: "Aster_Track",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4.Aster_Track.webp?v=1694816284",
+    },
+    {
+      img_order: "5",
+      img_name: "Aster_Gravity",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/5.Aster_Gravity.webp?v=1694816285",
+    },
+    {
+      img_order: "6",
+      img_name: "Aster_Air",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/6.Aster_Air.webp?v=1694816284",
+    },
+    {
+      img_order: "7",
+      img_name: "Aster_Heating",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/7.Aster_Heating.webp?v=1694816284",
+    },
+    {
+      img_order: "8",
+      img_name: "Aster_Icon1",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/8.Aster_Icon1.webp?v=1694816284",
+    },
+    {
+      img_order: "9",
+      img_name: "Aster_Icon2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/9.Aster_Icon2.webp?v=1694816284",
+    },
+    {
+      img_order: "10",
+      img_name: "Aster_Icon3",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.Aster_Icon3.webp?v=1694816284",
+    },
+    {
+      img_order: "11",
+      img_name: "Aster_Icon4",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/11.Aster_Icon4.webp?v=1694816284",
+    },
+    {
+      img_order: "12",
+      img_name: "Aster_Icon5",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12.Aster_Icon5.webp?v=1694816284",
+    },
+    {
+      img_order: "13",
+      img_name: "Aster_Icon6",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/13.Aster_Icon6.webp?v=1694816284",
+    },
+    {
+      img_order: "14",
+      img_name: "Aster_Icon8",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/14.Aster_Icon8.webp?v=1694816284",
+    },
+    {
+      img_order: "15",
+      img_name: "Aster_Icon9",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/15.Aster_Icon9.webp?v=1694816284",
+    },
+    {
+      img_order: "16",
+      img_name: "Aster_Icon10",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/16.Aster_Icon10.webp?v=1694816284",
+    },
+    {
+      img_order: "17",
+      img_name: "Aster_Icon11",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/17.Aster_Icon11.webp?v=1694816284",
+    },
+    {
+      img_order: "18",
+      img_name: "Aster_Icon7",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/18.Aster_Icon7.webp?v=1694816284",
+    },
+    {
+      img_order: "19",
+      img_name: "Aster_Foot_Rollers",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19.Aster_Foot_Rollers.webp?v=1694816284",
+    },
+    {
+      img_order: "20",
+      img_name: "Aster_Footrest",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/20.Aster_Footrest.webp?v=1694816284",
+    },
+    {
+      img_order: "21",
+      img_name: "Aster_Remote",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/21.Aster_Remote.webp?v=1694816284",
+    },
+    {
+      img_order: "22",
+      img_name: "Aster_Dimension",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/22.Aster_Dimension.webp?v=1694816284",
+    },
+    {
+      img_order: "23",
+      img_name: "Aster_Dimension2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/23.Aster_Dimension2.webp?v=1694816284",
+    },
+  ]
+</script>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  crossorigin="anonymous"
+></script>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+  :root {
+    --section-bg-color: #eef0f2;
+    --section-strong-color: #121212;
+    --section-header-color: #121212;
+    --section-content-color: #808082;
+    --section-grid-color: #1d1d1d;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .sections {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    /* display: flex;
+    flex-direction: column; */
+  }
+
+  .sections strong {
+    color: var(--section-strong-color);
+  }
+
+  .sections .section {
+    background-color: var(--section-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .section > img,
+  .section-content {
+    flex: 1 1 0%;
+    width: 50%;
+  }
+
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+  }
+
+  .section-header {
+    font-size: 52px;
+    line-height: 65px;
+    color: var(--section-header-color);
+    font-weight: bold;
+  }
+  .section-header2 {
+    font-size: 36px;
+    line-height: 45px;
+    color: var(--section-header-color);
+  }
+
+  .section-description {
+    color: var(--section-content-color);
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  .circle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 32px;
+  }
+
+  .circle > :first-child {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .grid-section {
+    background-color: var(--section-bg-color);
+    color: var(--section-grid-color);
+    display: grid;
+    grid-column: span 2 / span 2;
+    padding: 50px 100px 50px;
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+
+  .grid-section img {
+    margin: 0 0 0px 50px;
+  }
+
+  .grid-section .grid-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .app-icon {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .app-icon img {
+    flex: 0 0 0;
+    width: 40%;
+  }
+
+  .grid-align {
+    text-align: left;
+  }
+
+  @media (max-width: 1024px) {
+    .sections {
+      max-width: 768px;
+    }
+
+    .sections .section {
+      margin-bottom: 35px;
+    }
+
+    .section > img {
+      width: 50%;
+    }
+
+    .section .section-content {
+      gap: 22px;
+      padding: 35px;
+    }
+
+    .section-header {
+      font-size: 39px;
+      line-height: 58px;
+    }
+
+    .section-header2 {
+      font-size: 27px;
+      line-height: 40px;
+    }
+
+    .section-description {
+      font-size: 15px;
+      line-height: 24px;
+    }
+
+    .circle {
+      gap: 5px;
+      font-size: 24px;
+    }
+
+    .circle > :first-child {
+      width: 30px;
+      height: 30px;
+    }
+
+    .grid-section {
+      padding: 35px 75px 35px;
+      gap: 35px;
+      margin-bottom: 35px;
+    }
+
+    .grid-section img {
+      margin: 0 0 0px 35px;
+    }
+
+    .grid-section .grid-item {
+      gap: 15px;
+    }
+
+    .grid-align {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .sections {
+      max-width: 480px;
+    }
+
+    .sections .section {
+      margin-bottom: 22px;
+    }
+
+    .section .section-content {
+      gap: 14px;
+      padding: 22px;
+    }
+
+    .section-header {
+      font-size: 26px;
+      line-height: 38px;
+    }
+    .section-header {
+      font-size: 24px;
+      line-height: 1.1;
+    }
+    .section-description {
+      font-size: 18px;
+      line-height: 1.3;
+    }
+
+    .circle {
+      gap: 4px;
+      font-size: 16px;
+    }
+
+    .circle > :first-child {
+      width: 20px;
+      height: 20px;
+    }
+
+    .grid-section {
+      padding: 20px 50px 20px;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .grid-section img {
+      margin: 0 0 0px 20px;
+      width: 20%;
+    }
+
+    .grid-section .grid-item {
+      gap: 10px;
+    }
+  }
+
+  .active-tab {
+    color: #191919;
+    border-bottom: 0.25em solid gray;
+  }
+</style>
+
+<body>
+  <div id="tab-buttons" class="mx-auto my-4 max-w-6xl">
+    <button
+      id="tab-button1"
+      class="active-tab inline-block px-1 py-2 text-center text-sm font-semibold text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"
+    >
+      Description
+    </button>
+    <button
+      id="tab-button2"
+      class="t inline-block px-1 py-2 text-center text-sm font-semibold text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"
+    >
+      Reviews
+    </button>
+  </div>
+  <div class="sections">
+    <div id="youtube-link"></div>
+    <div class="section !mb-10 !flex-col !bg-white md:!mb-40">
+      <img src="" alt="" class="!w-full" />
+      <div class="px-10 pb-5 pt-10 text-center text-xl md:text-2xl lg:text-3xl">
+        The Osaki OS-Aster has a modern design with slick line, a comfortable
+        feel, and wide range of settings and capabilities. The OS-Aster can
+        massage you from neck area to glutes and upper hamstrings with S,
+        L-Track roller. OS-Aster has 5 massage style (Kneading, Knocking,
+        Tapping, Kneading-Tapping and Shiatsu) that makes you completely
+        relaxed. With Osaki OS-Aster, you can feel the most effective massage on
+        pelvis area through 6 Auto massage programs.
       </div>
     </div>
-    <img
-      alt="Osaki OS-Aster banner"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/Aster_Black_Grey_Lifestyle.jpg?v=1670446321"
-    />
-    <p class="large-pad-top-1 large-text-align-center large-10">
-      The Osaki OS-Aster has a modern design with slick line, a comfortable
-      feel, and wide range of settings and capabilities. The OS-Aster can
-      massage you from neck area to glutes and upper hamstrings with S, L-Track
-      roller. OS-Aster has 5 massage style (Kneading, Knocking, Tapping,
-      Kneading-Tapping and Shiatsu) that makes you completely relaxed. With
-      Osaki OS-Aster, you can feel the most effective massage on pelvis area
-      through 6 Auto massage programs.
-    </p>
-  </div>
-  <div
-    class="section-wrapper large-align-items-center small-direction-column large-offset-bottom-3"
-  >
-    <div class="large-2 medium-3 small-5 small-offset-bottom-1">
-      <img
-        alt="Osaki OS Aster - SL Track Massage"
-        src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/SL_track_OS-Aster.jpg?v=1648239827"
-      />
+
+    <div class="section !flex-col-reverse !bg-black md:!flex-row-reverse">
+      <div class="section-content !w-full">
+        <div class="section-header !text-white">
+          <strong class="block !text-[#0510EB]">Intelligent</strong> Body
+          Scanning
+        </div>
+        <div class="section-description !text-[#808080]">
+          Sensor in the back massage module scans the curvature of user’s body
+          for the accurate massager movement.
+        </div>
+      </div>
+      <img src="" alt="" class="" />
+    </div>
+
+    <div class="section !flex-col md:!flex-row">
+      <div class="section-content !w-full">
+        <div class="section-header">SL-Track Massage</div>
+        <div class="section-description !text-[#808080]">
+          S, L-type backrest track fits the human body curve. As the roller
+          system massages the neck area, it continues through to the lower back
+          and then proceeds to massage the glutes and upper hamstrings.
+        </div>
+      </div>
+      <img src="" alt="" class="" />
+    </div>
+    <div class="section !flex-col">
+      <div class="section-content !w-full">
+        <div class="section-header text-center">Zero Gravity</div>
+        <div class="section-description !text-[#808080]">
+          Inspired by NASA technology, the Zero gravity position is the perfect
+          position to enjoy a massage, aligning your back relative to your thigh
+          at an optimal level of comfort. When reclined into the zero-gravity
+          position, the complete weight of your back is virtually supported by
+          the backrest which maximizes the intensity of the massage.
+        </div>
+      </div>
+      <img src="" alt="" class="!w-2/3" />
+    </div>
+    <div class="section !flex-col-reverse md:flex-row">
+      <div class="section-content !w-full">
+        <div class="section-header">
+          <strong class="!text-[#0013FF]">Air</strong> Massage
+        </div>
+        <div class="section-description !text-[#808080]">
+          There are multiple airbags located throughout the massage chair to
+          offer a full body massage experience. The OS-Aster offers a total of
+          18 airbags in the massage chair. Airbags are located at the shoulders,
+          the arms, the feet, and the calf areas. This compression massage helps
+          to continue increasing blood circulation throughout the body to
+          relieve pain and tension.
+        </div>
+      </div>
+      <img src="" alt="" class="" />
+    </div>
+    <div class="section !flex-col-reverse md:!flex-row-reverse">
+      <div class="section-content !w-full">
+        <div class="section-header">
+          <strong class="block !text-[#E92D2D]">Lumbar</strong> Heat Therapy
+        </div>
+        <div class="section-description !text-[#808080]">
+          With Aster’s heat shawl lumbar therapy, the incorporated graphene
+          effectively warm and help ease soreness in the lower back area.
+        </div>
+      </div>
+      <img src="" alt="" class="" />
+    </div>
+
+    <div
+      class="col-span-2 flex items-center justify-center gap-5 bg-[var(--section-bg-color)] p-10 text-center text-2xl md:text-4xl"
+    >
+      <strong class="">6 Auto Massage Modes</strong>
     </div>
     <div
-      class="large-12 large-text-align-left large-pad-left-2 medium-pad-left-2 small-pad-left-0 small-text-align-center"
+      class="mb-10 grid grid-cols-2 bg-[var(--section-bg-color)] p-10 text-[var(--section-grid-color)] md:pl-[15%]"
     >
-      <h3>SL-Track Massage</h3>
-      <p>
-        S, L-type backrest track fits the human body curve. As the roller system
-        massages the neck area, it continues through to the lower back and then
-        proceeds to massage the glutes and upper hamstrings.
-      </p>
-    </div>
-  </div>
-  <div
-    class="section-wrapper large-align-items-center small-direction-column large-offset-bottom-3"
-  >
-    <div class="large-2 medium-3 small-5 small-offset-bottom-1">
-      <img
-        alt="Zero Gravity"
-        src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/Zero_Gravity_OS-Aster.jpg?v=1648239827"
-      />
-    </div>
-    <div
-      class="large-12 large-text-align-left large-pad-left-2 medium-pad-left-2 small-pad-left-0 small-text-align-center"
-    >
-      <h3>Zero Gravity</h3>
-      <p>
-        Inspired by NASA technology, the Zero gravity position is the perfect
-        position to enjoy a massage, aligning your back relative to your thigh
-        at an optimal level of comfort. When reclined into the zero-gravity
-        position, the complete weight of your back is virtually supported by the
-        backrest which maximizes the intensity of the massage.
-      </p>
-    </div>
-  </div>
-  <div
-    class="section-wrapper large-align-items-center small-direction-column large-offset-bottom-3"
-  >
-    <div class="large-2 medium-3 small-5 small-offset-bottom-1">
-      <img
-        alt="Space Saving Technology"
-        src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/Space_Saving_OS-Aster.jpg?v=1648239827"
-      />
-    </div>
-    <div
-      class="large-12 large-text-align-left large-pad-left-2 medium-pad-left-2 small-pad-left-0 small-text-align-center"
-    >
-      <h3>Space Saving Technology</h3>
-      <p>
-        Osaki's innovative design team has engineered a space saving technology
-        that slides the chair forward as the chair reclines. As a result,
-        OS-Aster takes only ten inches to get to the fully reclined position.
-      </p>
-    </div>
-  </div>
-  <div
-    class="section-wrapper large-align-items-center small-direction-column large-offset-bottom-3"
-  >
-    <div class="large-2 medium-3 small-5 small-offset-bottom-1">
-      <img
-        alt="6 Auto Massage Program"
-        src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/remote_7e86f97f-a1b8-45b2-99b4-5a3caa0b787c.jpg?v=1649431391"
-      />
-    </div>
-    <div
-      class="large-12 large-text-align-left large-pad-left-2 medium-pad-left-2 small-pad-left-0 small-text-align-center"
-    >
-      <h3>6 Auto Massage Program</h3>
-      <p>The OS-Aster has 6 different auto massage programs.</p>
-    </div>
-  </div>
-  <div
-    class="section-wrapper large-align-items-center small-direction-column large-offset-bottom-3"
-  >
-    <div class="large-2 medium-3 small-5 small-offset-bottom-1">
-      <img
-        alt="Air Massage"
-        src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/airbag-os-aster_orig_afc0cd0b-a10d-4a5b-8347-0e07ec805e56.jpg?v=1648239827"
-      />
-    </div>
-    <div
-      class="large-12 large-text-align-left large-pad-left-2 medium-pad-left-2 small-pad-left-0 small-text-align-center"
-    >
-      <h3>Air Massage</h3>
-      <p>
-        There are multiple airbags located throughout the massage chair to offer
-        a full body massage experience. The OS-Aster offers a total of 18
-        airbags in the massage chair. Airbags are located at the shoulders, the
-        arms, the feet, and the calf areas. This compression massage helps to
-        continue increasing blood circulation throughout the body to relieve
-        pain and tension.
-      </p>
-    </div>
-  </div>
-  <div
-    class="section-wrapper large-align-items-center small-direction-column large-offset-bottom-3"
-  >
-    <div class="large-2 medium-3 small-5 small-offset-bottom-1">
-      <img
-        alt="Foot Roller Massage"
-        src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/foot-roller-os-aster_orig_ac7305f4-9580-4aab-a6c3-4df5d685ceb5.jpg?v=1648239827"
-      />
-    </div>
-    <div
-      class="large-12 large-text-align-left large-pad-left-2 medium-pad-left-2 small-pad-left-0 small-text-align-center"
-    >
-      <h3>Foot Roller Massage</h3>
-      <p>
-        OS-Aster has Two Rollers located on the bottom of the feet are spinning
-        reflexology massagers which provide a soothing kneading style
-        application. As the rollers spin it will stimulate acupuncture points
-        and as the air bags inflate it will generate a much deeper massage along
-        the bottoms of your feet.
-      </p>
-    </div>
-  </div>
-  <div
-    class="section-wrapper large-align-items-center small-direction-column large-offset-bottom-3"
-  >
-    <div class="large-2 medium-3 small-5 small-offset-bottom-1">
-      <img
-        alt="Extendable Footrest"
-        src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/footrest-extention-os-aster_orig_b59fb121-9cdb-4fd3-9732-0df26f2cd33a.jpg?v=1648239827"
-      />
-    </div>
-    <div
-      class="large-12 large-text-align-left large-pad-left-2 medium-pad-left-2 small-pad-left-0 small-text-align-center"
-    >
-      <h3>Extendable Footrest</h3>
-      <p>
-        OS-Aster has Extendable Footrest which can be extended up to 7 inches.
-      </p>
-    </div>
-  </div>
-  <div
-    class="section-wrapper large-align-items-center small-direction-column large-offset-bottom-3"
-  >
-    <div class="large-2 medium-3 small-5 small-offset-bottom-1">
-      <img
-        alt="Easy to use LCD Remote"
-        src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/remote-os-aster_orig_e3e8aa6c-2f82-4925-94bb-4aedd77519d1.jpg?v=1648239827"
-      />
-    </div>
-    <div
-      class="large-12 large-text-align-left large-pad-left-2 medium-pad-left-2 small-pad-left-0 small-text-align-center"
-    >
-      <h3>Easy to use LCD Remote</h3>
-      <p>
-        The Osaki OS-Aster remote is an easy view screen displaying the
-        functions the chair has activated. On the remote it allows you to select
-        the massage type, speed and location. You can also operate the functions
-        independently in manually.
-      </p>
-    </div>
-  </div>
-  <div
-    class="section-wrapper large-direction-column large-align-items-center large-offset-bottom-3 large-position-relative"
-  >
-    <img
-      alt="5 Massage Styles"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/5_massage_mode_Aster.jpg?v=1648239827"
-    />
-    <h3 class="large-pad-top-1 large-text-align-center large-10">
-      5 Massage Styles
-    </h3>
-    <p class="large-pad-top-1 large-text-align-center large-10">
-      You can meet variety of options to custom your massage. OS-Aster has
-      Manual control function for Mode, Position, Width, Speed and back stretch.
-      Each category has many options to adjust. You can also control Air, Foot
-      Roller and Timer setting.
-    </p>
-  </div>
-  <div
-    class="section-wrapper large-align-items-center small-direction-column large-offset-bottom-3"
-  >
-    <div class="large-2 medium-3 small-5 small-offset-bottom-1">
-      <img
-        alt="Manual Massage"
-        src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/manual-setting-os-aster_orig.jpg?v=1648239828"
-      />
-    </div>
-    <div
-      class="large-12 large-text-align-left large-pad-left-2 medium-pad-left-2 small-pad-left-0 small-text-align-center"
-    >
-      <h3>Manual Massage</h3>
-      <p>
-        You can meet variety of options to custom your massage. OS-Aster has
-        Manual control function for Mode, Position, Width, Speed and back
-        stretch. Each category has many options to adjust. You can also control
-        Air, Foot Roller and Timer setting.
-      </p>
-    </div>
-  </div>
-  <div
-    class="section-wrapper large-align-items-center small-direction-column large-offset-bottom-3"
-  >
-    <div class="large-2 medium-3 small-5 small-offset-bottom-1">
-      <img
-        alt="Adjustable Shoulder and Back Roller Position"
-        src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/sholder-and-roller-os-aster_orig.jpg?v=1648239827"
-      />
-    </div>
-    <div
-      class="large-12 large-text-align-left large-pad-left-2 medium-pad-left-2 small-pad-left-0 small-text-align-center"
-    >
-      <h3>Adjustable Shoulder and Back Roller Position</h3>
-      <p>
-        The OS-Aster has subtle shoulder and back massage option. You can adjust
-        the positions for a more accurate shoulder and back massage. It will
-        massage specific area of the back like the shoulders, waist, and the
-        whole back.
-      </p>
-    </div>
-  </div>
-  <!--     <div class="section-wrapper large-direction-column">         <h2 class="large-text-align-center">Dimensions</h2>         <div class="section-wrapper small-direction-column large-align-items-center">             <div class="large-6 small-12">                 <img alt="Osaki Aster Dimension Upright" src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/Aster_Dimension_Upright.jpg?v=1649435356">             </div>             <div class="large-6 small-12">                 <img alt="Osaki Aster Dimension Reclined" src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/Aster_Dimension_Reclined.jpg?v=1649435356">             </div>         </div>     </div> -->
-</section>
-<section class="section-specs section-pad-bottom">
-  <div class="table-tap">
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Product Name</div>
-        <div class="specs-column">Osaki OS-Aster</div>
+      <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
+        <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
+        <div class="md:text-xl">Comfort</div>
+      </div>
+      <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
+        <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
+        <div class="md:text-xl">Stretch</div>
+      </div>
+      <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
+        <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
+        <div class="md:text-xl">Relax</div>
+      </div>
+      <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
+        <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
+        <div class="md:text-xl">Neck & Shoulder</div>
+      </div>
+      <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
+        <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
+        <div class="md:text-xl">Full Body</div>
+      </div>
+      <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
+        <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
+        <div class="md:text-xl">Back & Waist</div>
       </div>
     </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">User Manual</div>
-        <div class="specs-column">
-          <a
-            href="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/Osaki_OS-Aster_Manual.pdf?v=1654538257"
-            style="color: #ff4800"
-            target="_blank"
-          >
-            Download
-          </a>
+    <div
+      class="col-span-2 flex items-center justify-center gap-5 bg-[var(--section-bg-color)] p-10 text-center text-2xl md:text-4xl"
+    >
+      <strong class="">5 Manual Massage Modes</strong>
+    </div>
+    <div
+      class="mb-10 grid grid-cols-2 bg-[var(--section-bg-color)] p-10 text-[var(--section-grid-color)] md:pl-[15%]"
+    >
+      <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
+        <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
+        <div class="md:text-xl">Kneading</div>
+      </div>
+      <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
+        <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
+        <div class="md:text-xl">Knocking</div>
+      </div>
+      <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
+        <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
+        <div class="md:text-xl">Tapping</div>
+      </div>
+      <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
+        <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
+        <div class="md:text-xl">Shiatsu</div>
+      </div>
+      <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
+        <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
+        <div class="md:text-xl">Tapping & Kneading</div>
+      </div>
+    </div>
+
+    <div class="section !flex-col md:flex-row">
+      <img src="" alt="" class="md:!self-start" />
+      <div class="section-content !w-full">
+        <div class="section-header">Foot Roller Massage</div>
+        <div class="section-description">
+          OS-Aster has Two Rollers located on the bottom of the feet are
+          spinning reflexology massagers which provide a soothing kneading style
+          application. As the rollers spin it will stimulate acupuncture points
+          and as the air bags inflate it will generate a much deeper massage
+          along the bottoms of your feet.
+        </div>
+      </div>
+    </div>
+    <div class="section !flex-col-reverse md:!flex-row-reverse">
+      <img src="" alt="" class="self-end" />
+      <div class="section-content !w-full">
+        <div class="section-header">Extendable Footrest</div>
+        <div class="section-description">
+          OS-Aster has Extendable Footrest which can be extended up to 7 inches.
+        </div>
+      </div>
+    </div>
+    <div class="section !flex-col md:!flex-row">
+      <img src="" alt="" class="!w-full" />
+      <div class="section-content !w-full">
+        <div class="section-header">
+          Easy to use <br />
+          LCD Remote
+        </div>
+        <div class="section-description">
+          The Osaki OS-Aster remote is an easy view screen displaying the
+          functions the chair has activated. On the remote it allows you to
+          select the massage type, speed and location. You can also operate the
+          functions independently in manually.
+        </div>
+      </div>
+    </div>
+
+    <div class="section-dimensions mb-20">
+      <div class="mt-40 text-center text-3xl lg:text-5xl">Dimensions</div>
+      <div
+        class="flex flex-col items-center justify-between gap-5 md:flex-row md:gap-10"
+      >
+        <img src="" alt="" class="min-w-0" />
+        <img src="" alt="" class="min-w-0" />
+      </div>
+    </div>
+    <div class="mb-20 grid grid-cols-3 justify-items-center gap-3">
+      <!-- <div class="circle">
+        <div class="bg-[#B7AE9F]"></div>
+        <div>Taupe</div>
+      </div> -->
+      <div class="circle">
+        <div class="bg-[#6f3801]"></div>
+        <div>Brown</div>
+      </div>
+      <div class="circle">
+        <div class="bg-[#1d1d1d]"></div>
+        <div>Black</div>
+      </div>
+      <div class="circle">
+        <div class="bg-[#9D9D9D]"></div>
+        <div>Black & Gray</div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section-specs section-pad-bottom">
+    <div class="table-tap">
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Product Name</div>
+          <div class="specs-column">Osaki OS-Aster</div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">User Manual</div>
+          <div class="specs-column">
+            <a
+              href="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/Osaki_OS-Aster_Manual.pdf?v=1654538257"
+              style="color: #ff4800"
+              target="_blank"
+            >
+              Download
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Rated Power Input</div>
+          <div class="specs-column">110W</div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Rated Timer</div>
+          <div class="specs-column">20 Minutes</div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Rated Voltage</div>
+          <div class="specs-column">110~120V, 60Hz</div>
         </div>
       </div>
     </div>
     <div class="specs-section">
       <div class="specs-row">
-        <div class="specs-rowheader">Rated Power Input</div>
-        <div class="specs-column">110W</div>
+        <div class="specs-rowheader">
+          Dimensions
+          <br />
+          (W x L x H)
+        </div>
+        <div class="specs-column">
+          <strong> Upright </strong>
+          <br />
+          29" x 57" x 44"
+          <br />
+        </div>
+        <!--             <div class="specs-column">                 <strong>Reclined</strong><br>29" x 63" x 38"             </div> -->
       </div>
     </div>
     <div class="specs-section">
       <div class="specs-row">
-        <div class="specs-rowheader">Rated Timer</div>
-        <div class="specs-column">20 Minutes</div>
+        <div class="specs-rowheader">Seat Width</div>
+        <div class="specs-column">20"</div>
       </div>
     </div>
     <div class="specs-section">
       <div class="specs-row">
-        <div class="specs-rowheader">Rated Voltage</div>
-        <div class="specs-column">110~120V, 60Hz</div>
+        <div class="specs-rowheader">Minimum Doorway Size</div>
+        <div class="specs-column">29"</div>
       </div>
     </div>
-  </div>
-  <div class="specs-section">
-    <div class="specs-row">
-      <div class="specs-rowheader">
-        Dimensions
-        <br />
-        (W x L x H)
+    <div class="specs-section">
+      <div class="specs-row">
+        <div class="specs-rowheader">Maximum User Weight</div>
+        <div class="specs-column">260 lbs</div>
       </div>
-      <div class="specs-column">
-        <strong> Upright </strong>
-        <br />
-        29" x 57" x 44"
-        <br />
-      </div>
-      <!--             <div class="specs-column">                 <strong>Reclined</strong><br>29" x 63" x 38"             </div> -->
     </div>
-  </div>
-  <div class="specs-section">
-    <div class="specs-row">
-      <div class="specs-rowheader">Seat Width</div>
-      <div class="specs-column">20"</div>
-    </div>
-  </div>
-  <div class="specs-section">
-    <div class="specs-row">
-      <div class="specs-rowheader">Minimum Doorway Size</div>
-      <div class="specs-column">29"</div>
-    </div>
-  </div>
-  <div class="specs-section">
-    <div class="specs-row">
-      <div class="specs-rowheader">Maximum User Weight</div>
-      <div class="specs-column">260 lbs</div>
-    </div>
-  </div>
-</section>
-<script src="https://cdn.tailwindcss.com"></script>
-<script
-  crossorigin="anonymous"
-  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
-  src="https://code.jquery.com/jquery-3.6.4.min.js"
-></script>
+  </section>
+</body>
 <script>
   $(function () {
+    $.each($(".sections img"), (i, img) => {
+      $(img).attr("src", imgs[i].img_src)
+      $(img).attr("alt", imgs[i].img_name)
+    })
+
+    if (youtube_link !== "") {
+      var youtube_id = youtube_link.split("watch?v=")[1].split("&")[0]
+      var src = `https://www.youtube.com/embed/${youtube_id}?autoplay=1&mute=1`
+      var embed_html = `<iframe class="w-full aspect-video mb-20" src="${src}"></iframe>`
+      $("#youtube-link").append(embed_html)
+    }
     $("#tab-button1").on("click", () => {
-      $("#tab-button1").addClass("active-tab");
-      $("#tab-button2").removeClass("active-tab");
-      $(".sections").fadeIn("slow");
-      $(".section-specs").fadeIn("slow");
-    });
+      $("#tab-button1").addClass("active-tab")
+      $("#tab-button2").removeClass("active-tab")
+      $(".sections").fadeIn("slow")
+      $(".section-specs").fadeIn("slow")
+    })
     $("#tab-button2").on("click", () => {
-      $("#tab-button1").removeClass("active-tab");
-      $("#tab-button2").addClass("active-tab");
-      $(".sections").fadeOut("slow");
-      $(".section-specs").fadeOut("slow");
-    });
-  });
+      $("#tab-button1").removeClass("active-tab")
+      $("#tab-button2").addClass("active-tab")
+      $(".sections").fadeOut("slow")
+      $(".section-specs").fadeOut("slow")
+    })
+  })
 </script>
