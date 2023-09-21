@@ -13,7 +13,7 @@
 <!-- more -->
 
 <script>
-  const youtube_link = "";
+  const youtube_link = ""
 
   const imgs = [
     {
@@ -112,7 +112,7 @@
       img_src:
         "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/15.Massage_Chair_Cover_Icon5.webp?v=1692744635",
     },
-  ];
+  ]
 </script>
 <meta charset="UTF-8" />
 <meta content="IE=edge" http-equiv="X-UA-Compatible" />
@@ -147,7 +147,7 @@
     line-height: 1.2 !important;
   }
 
-  .section {
+  .sections .section {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     margin-bottom: 72px;
@@ -156,7 +156,7 @@
     justify-content: center;
     align-items: center;
   }
-  .section > img {
+  .sections .section > img {
     grid-column: span 6 / span 6;
   }
   .section-content {
@@ -180,7 +180,7 @@
     .sections {
       max-width: 768px;
     }
-    .section {
+    .sections .section {
       margin-bottom: 40px;
     }
     .section-content {
@@ -214,21 +214,21 @@
   }
 </style>
 <body>
-  <div id="tab-buttons" class="max-w-6xl mx-auto my-4">
+  <div id="tab-buttons" class="mx-auto my-4 max-w-6xl">
     <button
       id="tab-button1"
-      class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center dark:text-gray-400 dark:hover:text-gray-300 active-tab"
+      class="active-tab inline-block px-1 py-2 text-center text-sm font-semibold text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"
     >
       Description
     </button>
     <button
       id="tab-button2"
-      class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center t dark:text-gray-400 dark:hover:text-gray-300"
+      class="t inline-block px-1 py-2 text-center text-sm font-semibold text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"
     >
       Reviews
     </button>
   </div>
-  <div class="sections px-[20px] mx-auto">
+  <div class="sections mx-auto px-[20px]">
     <div id="youtube-link"></div>
     <div class="mb-[24px] lg:mb-[58px]">
       <img src="" alt="" />
@@ -265,8 +265,8 @@
         </div>
       </div>
     </div>
-    <div class="section !bg-white relative md:!mb-24 lg:!mb-40">
-      <div class="!col-span-5 section-content !self-start">
+    <div class="section relative !bg-white md:!mb-24 lg:!mb-40">
+      <div class="section-content !col-span-5 !self-start">
         <div class="section-header absolute top-0 w-2/3">
           Showcasing precise polished cover
         </div>
@@ -280,7 +280,7 @@
     </div>
     <div class="section !bg-white">
       <img src="" alt="" class="!col-span-7" />
-      <div class="!col-span-5 section-content self-end max-[768px]:!pb-0">
+      <div class="section-content !col-span-5 self-end max-[768px]:!pb-0">
         <div class="section-header">Soft Material</div>
         <div class="section-description">
           Flexible fit, <br />comfortable usage,<br />
@@ -292,24 +292,24 @@
 
     <div class="section !flex flex-col !bg-white">
       <div
-        class="font-bold text-[18px] md:text-[36px] lg:text-[44px] text-center mt-[50px] mb-[30px]"
+        class="mb-[30px] mt-[50px] text-center text-[18px] font-bold md:text-[36px] lg:text-[44px]"
       >
         Fit by Size
       </div>
       <div
-        class="flex flex-col gap-[6px] mb-[24px] lg:mb-[58px] text-center px-[10px] items-center"
+        class="mb-[24px] flex flex-col items-center gap-[6px] px-[10px] text-center lg:mb-[58px]"
       >
         <img src="" alt="" class="" />
-        <div class="flex justify-around w-full">
+        <div class="flex w-full justify-around">
           <div class="flex flex-col text-[11px] lg:text-[25px]">
-            <div class="text-[14px] md:text-xl lg:text-[34px] font-bold mb-1">
+            <div class="mb-1 text-[14px] font-bold md:text-xl lg:text-[34px]">
               Small
             </div>
             <div class="">Osaki Platinum- Vera 4D+</div>
             <div class="">(W x L x H) 30.5" x 51" x 50"</div>
           </div>
           <div class="flex flex-col text-[11px] lg:text-[25px]">
-            <div class="text-[14px] md:text-xl lg:text-[34px] font-bold mb-1">
+            <div class="mb-1 text-[14px] font-bold md:text-xl lg:text-[34px]">
               Large
             </div>
             <div class="">OS-Pro 4D DuoMax</div>
@@ -318,30 +318,30 @@
         </div>
       </div>
     </div>
-    <div class="section !flex flex-col items-center !bg-white !hidden">
+    <div class="section !flex !hidden flex-col items-center !bg-white">
       <div
-        class="font-bold text-[18px] md:text-[36px] lg:text-[44px] text-center"
+        class="text-center text-[18px] font-bold md:text-[36px] lg:text-[44px]"
       >
         Dimension
       </div>
       <div class="flex">
         <div
-          class="flex flex-col text-center font-bold text-[14px] lg:text-[34px] justify-between"
+          class="flex flex-col justify-between text-center text-[14px] font-bold lg:text-[34px]"
         >
           <img src="" alt="" class="" />
-          <div class="-ml-6 md:-ml-12 lg:-ml-20 md:text-xl lg:text-3xl">
+          <div class="-ml-6 md:-ml-12 md:text-xl lg:-ml-20 lg:text-3xl">
             Package
           </div>
-          <div class="font-normal text-[10px] md:text-[16px] lg:text-[24px]">
+          <div class="text-[10px] font-normal md:text-[16px] lg:text-[24px]">
             &nbsp;
           </div>
         </div>
         <div
-          class="flex flex-col text-center font-bold text-[14px] lg:text-[34px]"
+          class="flex flex-col text-center text-[14px] font-bold lg:text-[34px]"
         >
           <img src="" alt="" class="" />
           <div class="md:text-xl lg:text-3xl">Product</div>
-          <div class="font-normal text-[10px] md:text-[16px] lg:text-[24px]">
+          <div class="text-[10px] font-normal md:text-[16px] lg:text-[24px]">
             *Flexible fit
           </div>
         </div>
@@ -349,18 +349,18 @@
     </div>
     <div class="section !flex flex-col gap-y-[14px] !bg-white">
       <div
-        class="text-center font-bold text-[18px] md:text-[36px] lg:text-[44px]"
+        class="text-center text-[18px] font-bold md:text-[36px] lg:text-[44px]"
       >
         Care Information
       </div>
       <div
-        class="text-[9px] md:text-[16px] lg:text-[24px] flex flex-col gap-4 bg-cover bg-[url('https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.Massage_Chair_Cover_Information_Background.webp?v=1692717789')] !w-full p-4 md:p-10 lg:p-16 md:!px-36 lg:!px-56"
+        class="flex !w-full flex-col gap-4 bg-[url('https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.Massage_Chair_Cover_Information_Background.webp?v=1692717789')] bg-cover p-4 text-[9px] md:p-10 md:!px-36 md:text-[16px] lg:p-16 lg:!px-56 lg:text-[24px]"
       >
         <div class="flex items-center gap-x-[14px]">
           <img
             src=""
             alt=""
-            class="w-[40px] h-[40px] lg:w-[100px] lg:h-[100px]"
+            class="h-[40px] w-[40px] lg:h-[100px] lg:w-[100px]"
           />
           <div>
             Low tumble dry, remove damp, air-dry flat/hang. Avoid high heat.
@@ -370,7 +370,7 @@
           <img
             src=""
             alt=""
-            class="w-[40px] h-[40px] lg:w-[100px] lg:h-[100px]"
+            class="h-[40px] w-[40px] lg:h-[100px] lg:w-[100px]"
           />
           <div>Dry clean with trichloroethylene-free solvents.</div>
         </div>
@@ -378,7 +378,7 @@
           <img
             src=""
             alt=""
-            class="w-[40px] h-[40px] lg:w-[100px] lg:h-[100px]"
+            class="h-[40px] w-[40px] lg:h-[100px] lg:w-[100px]"
           />
           <div>Do not use chlorine bleach on chair cover.</div>
         </div>
@@ -386,7 +386,7 @@
           <img
             src=""
             alt=""
-            class="w-[40px] h-[40px] lg:w-[100px] lg:h-[100px]"
+            class="h-[40px] w-[40px] lg:h-[100px] lg:w-[100px]"
           />
           <div>Cold, gentle cycle with washing bag.</div>
         </div>
@@ -394,7 +394,7 @@
           <img
             src=""
             alt=""
-            class="w-[40px] h-[40px] lg:w-[100px] lg:h-[100px]"
+            class="h-[40px] w-[40px] lg:h-[100px] lg:w-[100px]"
           />
           <div>No iron needed. For a crisp look, steam iron.</div>
         </div>
@@ -515,32 +515,32 @@
   <script>
     $(function () {
       $.each($(".sections img"), (i, img) => {
-        $(img).attr("src", imgs[i].img_src);
-        $(img).attr("alt", imgs[i].img_name);
-      });
+        $(img).attr("src", imgs[i].img_src)
+        $(img).attr("alt", imgs[i].img_name)
+      })
 
       if (youtube_link != "") {
-        var youtube_id = youtube_link.split("watch?v=")[1].split("&")[0];
+        var youtube_id = youtube_link.split("watch?v=")[1].split("&")[0]
         var src =
-          "https://www.youtube.com/embed/" + youtube_id + "?autoplay=1&mute=1";
+          "https://www.youtube.com/embed/" + youtube_id + "?autoplay=1&mute=1"
         var embed_html =
           '<iframe class="w-full aspect-video mb-20" src=' +
           src +
-          ' title="YouTube video player" frameborder="0" allowfullscreen></iframe>';
-        $("#youtube-link").append(embed_html);
+          ' title="YouTube video player" frameborder="0" allowfullscreen></iframe>'
+        $("#youtube-link").append(embed_html)
       }
       $("#tab-button1").on("click", () => {
-        $("#tab-button1").addClass("active-tab");
-        $("#tab-button2").removeClass("active-tab");
-        $(".sections").fadeIn("slow");
-        $(".section-specs").fadeIn("slow");
-      });
+        $("#tab-button1").addClass("active-tab")
+        $("#tab-button2").removeClass("active-tab")
+        $(".sections").fadeIn("slow")
+        $(".section-specs").fadeIn("slow")
+      })
       $("#tab-button2").on("click", () => {
-        $("#tab-button1").removeClass("active-tab");
-        $("#tab-button2").addClass("active-tab");
-        $(".sections").fadeOut("slow");
-        $(".section-specs").fadeOut("slow");
-      });
-    });
+        $("#tab-button1").removeClass("active-tab")
+        $("#tab-button2").addClass("active-tab")
+        $(".sections").fadeOut("slow")
+        $(".section-specs").fadeOut("slow")
+      })
+    })
   </script>
 </body>
