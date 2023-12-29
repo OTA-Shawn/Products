@@ -1,0 +1,941 @@
+<!-- <ul class="feature-section">
+    <li>Computer Body Scan</li>
+    <li>Intelligent Voice Control</li>
+    <li>Deep Calf Kneading</li>
+    <li>4D Massage Mechanism</li>
+    <li>SL-Track</li>
+    <li>Lumbar & Feat Heating</li>
+    <li>24 Auto Programs</li>
+    <li>6 Manual Programs</li>
+    <li>26 Cell Full Body Air Massage</li>
+    <li>6.5 inches Extendable Footrest</li>
+  </ul> -->
+<!-- more -->
+<script>
+  const youtube_link = ""
+
+  const imgs = [
+    {
+      img_order: "1",
+      img_name: "vesper_main",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/1.vesper_main.webp?v=1703883447",
+    },
+    {
+      img_order: "2",
+      img_name: "vesper_2D",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/2.vesper_2D.webp?v=1703883447",
+    },
+    {
+      img_order: "3",
+      img_name: "vesper_hand_reflexology",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.vesper_hand_reflexology.webp?v=1703883447",
+    },
+    {
+      img_order: "4",
+      img_name: "vesper_SL-track",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4.vesper_SL-track.webp?v=1703883447",
+    },
+    {
+      img_order: "5",
+      img_name: "vesper_touchscreen",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/5.vesper_touchscreen.webp?v=1703883447",
+    },
+    {
+      img_order: "6_vesper_icon_work_relief_webp",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/6_vesper_icon_work_relief_webp.webp?v=1703883447",
+    },
+    {
+      img_order: "7",
+      img_name: "vesper_icon_recovery",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/7.vesper_icon_recovery.webp?v=1703883447",
+    },
+    {
+      img_order: "8",
+      img_name: "vesper_icon_deep_tissue",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/8.vesper_icon_deep_tissue.webp?v=1703883447",
+    },
+    {
+      img_order: "9",
+      img_name: "vesper_icon_rest_sleep",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/9.vesper_icon_rest_sleep.webp?v=1703883447",
+    },
+    {
+      img_order: "10",
+      img_name: "vesper_icon_thai",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.vesper_icon_thai.webp?v=1703883447",
+    },
+    {
+      img_order: "11",
+      img_name: "vesper_icon_gentle",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/11.vesper_icon_gentle.webp?v=1703883447",
+    },
+    {
+      img_order: "12",
+      img_name: "vesper_icon_athletic",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12.vesper_icon_athletic.webp?v=1703883447",
+    },
+    {
+      img_order: "13",
+      img_name: "vesper_icon_for_her",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/13.vesper_icon_for_her.webp?v=1703883447",
+    },
+    {
+      img_order: "14",
+      img_name: "vesper_icon_vertebral",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/14.vesper_icon_vertebral.webp?v=1703883447",
+    },
+    {
+      img_order: "15",
+      img_name: "vesper_icon_for_him",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/15.vesper_icon_for_him.webp?v=1703883447",
+    },
+    {
+      img_order: "16",
+      img_name: "vesper_icon_neck_shoulders",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/16.vesper_icon_neck_shoulders.webp?v=1703883447",
+    },
+    {
+      img_order: "17",
+      img_name: "vesper_icon_waist_hip",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/17.vesper_icon_waist_hip.webp?v=1703883447",
+    },
+    {
+      img_order: "18",
+      img_name: "vesper_icon_shiatsu",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/18.vesper_icon_shiatsu.webp?v=1703883447",
+    },
+    {
+      img_order: "19",
+      img_name: "vesper_icon_knocking",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19.vesper_icon_knocking.webp?v=1703883447",
+    },
+    {
+      img_order: "20",
+      img_name: "vesper_icon_rubbing",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/20.vesper_icon_rubbing.webp?v=1703883447",
+    },
+    {
+      img_order: "21",
+      img_name: "vesper_icon_knead_knock",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/21.vesper_icon_knead_knock.webp?v=1703883447",
+    },
+    {
+      img_order: "22",
+      img_name: "vesper_icon_kneading",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/22.vesper_icon_kneading.webp?v=1703883447",
+    },
+    {
+      img_order: "23",
+      img_name: "vesper_icon_tapping",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/23.vesper_icon_tapping.webp?v=1703883447",
+    },
+    {
+      img_order: "24",
+      img_name: "vesper_heating",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/24.vesper_heating.webp?v=1703883447",
+    },
+    {
+      img_order: "25",
+      img_name: "vesper_ZG",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/25.vesper_ZG.webp?v=1703883447",
+    },
+    {
+      img_order: "26",
+      img_name: "vesper_air-cells",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/26.vesper_air-cells.webp?v=1703883447",
+    },
+    {
+      img_order: "27",
+      img_name: "vesper_foot_massager",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/27.vesper_foot_massager.webp?v=1703883447",
+    },
+    {
+      img_order: "28",
+      img_name: "vesper_extension",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/28.vesper_extension.webp?v=1703883447",
+    },
+    {
+      img_order: "29",
+      img_name: "vesper_headrest",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/29.vesper_headrest.webp?v=1703883447",
+    },
+    {
+      img_order: "30",
+      img_name: "vesper_phone-charging",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/30.vesper_phone-charging.webp?v=1703883448",
+    },
+    {
+      img_order: "31",
+      img_name: "vesper_side_panel",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/31.vesper_side_panel.webp?v=1703883447",
+    },
+    {
+      img_order: "32",
+      img_name: "vesper_speakers",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/32.vesper_speakers.webp?v=1703883447",
+    },
+    {
+      img_order: "33",
+      img_name: "vesper_dimension1",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/33.vesper_dimension1.webp?v=1703883447",
+    },
+    {
+      img_order: "34",
+      img_name: "vesper_dimension2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/34.vesper_dimension2.webp?v=1703883447",
+    },
+  ]
+</script>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  crossorigin="anonymous"
+></script>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+  :root {
+    --section-bg-color: #ffffff;
+    --section-strong-color: #1d1d1d;
+    --section-header-color: #1d1d1d;
+    --section-content-color: #1d1d1d;
+    --section-grid-color: #929394;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .sections {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  .sections strong {
+    color: var(--section-strong-color);
+  }
+
+  .sections .section {
+    background-color: var(--section-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .section > img,
+  .section-content {
+    flex: 1 1 0%;
+    width: 50%;
+  }
+
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+  }
+
+  .section-header {
+    font-size: 52px;
+    line-height: 1.1;
+    font-weight: bold;
+    color: var(--section-header-color);
+  }
+
+  .section-header2 {
+    font-size: 26px;
+    line-height: 32px;
+    color: var(--section-header-color);
+  }
+
+  .section-description {
+    color: var(--section-content-color);
+    font-size: 30px;
+    line-height: 1.5;
+    font-weight: lighter;
+  }
+
+  .circle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 32px;
+  }
+
+  .circle > :first-child {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .grid-section {
+    background-color: var(--section-bg-color);
+    color: var(--section-grid-color);
+    display: grid;
+    grid-column: span 2 / span 2;
+    padding: 50px 100px 50px;
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+
+  .grid-section img {
+    margin: 0 0 0px 50px;
+  }
+
+  .grid-section .grid-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .app-icon {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .app-icon img {
+    flex: 0 0 0;
+    width: 40%;
+  }
+
+  .grid-align {
+    text-align: left;
+  }
+
+  @media (max-width: 1024px) {
+    .sections {
+      max-width: 768px;
+    }
+
+    .sections .section {
+      margin-bottom: 35px;
+    }
+
+    .section > img {
+      width: 50%;
+    }
+
+    .section .section-content {
+      gap: 22px;
+      padding: 35px;
+    }
+
+    .section-header {
+      font-size: 39px;
+      line-height: 1.2px;
+    }
+
+    .section-header2 {
+      font-size: 26px;
+      line-height: 32px;
+    }
+
+    .section-description {
+      font-size: 24px;
+      line-height: 1.1;
+    }
+
+    .circle {
+      gap: 5px;
+      font-size: 24px;
+    }
+
+    .circle > :first-child {
+      width: 30px;
+      height: 30px;
+    }
+
+    .grid-section {
+      padding: 35px 75px 35px;
+      gap: 35px;
+      margin-bottom: 35px;
+    }
+
+    .grid-section img {
+      margin: 0 0 0px 35px;
+    }
+
+    .grid-section .grid-item {
+      gap: 15px;
+    }
+
+    .grid-align {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .sections {
+      max-width: 480px;
+    }
+
+    .sections .section {
+      margin-bottom: 22px;
+    }
+
+    .section .section-content {
+      gap: 14px;
+      padding: 22px;
+    }
+
+    .section-header {
+      font-size: 26px;
+      line-height: 1.1;
+    }
+
+    .section-header2 {
+      font-size: 13px;
+      line-height: 19px;
+    }
+
+    .section-description {
+      font-size: 16px;
+      line-height: 1.3;
+    }
+
+    .circle {
+      gap: 4px;
+      font-size: 16px;
+    }
+
+    .circle > :first-child {
+      width: 20px;
+      height: 20px;
+    }
+
+    .grid-section {
+      padding: 20px 50px 20px;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .grid-section img {
+      margin: 0 0 0px 20px;
+      width: 20%;
+    }
+
+    .grid-section .grid-item {
+      gap: 10px;
+    }
+  }
+
+  .active-tab {
+    color: #191919;
+    border-bottom: 0.25em solid gray;
+  }
+</style>
+
+<body>
+  <div id="tab-buttons" class="mx-auto my-4 max-w-6xl">
+    <button
+      id="tab-button1"
+      class="active-tab inline-block px-1 py-2 text-center text-sm font-semibold text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"
+    >
+      Description
+    </button>
+    <button
+      id="tab-button2"
+      class="t inline-block px-1 py-2 text-center text-sm font-semibold text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"
+    >
+      Reviews
+    </button>
+  </div>
+  <div class="sections">
+    <div id="youtube-link"></div>
+    <div
+      class="section !mb-10 !flex-col !items-start gap-6 !bg-white md:!mb-20"
+    >
+      <img src="" alt="" class="!w-full" />
+      <div class="text-4xl font-semibold md:text-6xl">Vesper</div>
+      <div class="text-xl md:text-2xl lg:text-3xl">
+        Where relaxation meets innovation in an evening of soothing massages.
+      </div>
+      <div class="text-xl text-gray-400 md:text-2xl lg:text-3xl">COLORS:</div>
+      <div class="flex flex-col">
+        <div class="flex justify-center gap-10">
+          <div class="circle">
+            <div class="bg-[#1d1d1d]"></div>
+            <!-- <div>Black</div> -->
+          </div>
+          <div class="circle">
+            <div class="bg-[#492f2c]"></div>
+            <!-- <div>Dark Brown</div> -->
+          </div>
+          <div class="circle">
+            <div class="bg-[#968480]"></div>
+            <!-- <div>Taupe</div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section !flex-col">
+      <img src="" alt="" class="!w-full" />
+      <div class="section-content !w-full !pl-0">
+        <div class="section-header">Massage Mechanism</div>
+        <div class="section-description">
+          A 2D massage mechanism in a massage chair refers to a two-dimensional
+          movement capability that involves up-and-down and side-to-side
+          motions. This mechanism provides targeted and effective massage by
+          adjusting the rollers along these two axes, delivering a comforting
+          and customizable experience.
+        </div>
+      </div>
+    </div>
+    <div class="section !flex-col">
+      <img src="" alt="" class="!w-full" />
+      <div class="section-content !w-full !pl-0">
+        <div class="section-header">Hand Reflexology</div>
+        <div class="section-description">
+          Mini nodes are incorporated in the arms of Vesper for acupuncture hand
+          reflexology. These mini nodes will help restore arm fatigue and
+          circulate blood pressure.
+        </div>
+      </div>
+    </div>
+    <div class="section !flex-col">
+      <img src="" alt="" class="!w-full" />
+      <div class="section-content !w-full !pl-0">
+        <div class="section-header">SL-Track System</div>
+        <div class="section-description">
+          The SL-Track is made up of Laser-Crafted Steel. The track allows the
+          massage rollers to cover the entirety of your body. The SL-Track
+          reaches all the way from your neck and shoulders to your hamstrings,
+          having a moving range of 34 inches.
+        </div>
+      </div>
+    </div>
+    <div class="section !flex-col">
+      <img src="" alt="" class="!w-full" />
+      <div class="section-content !w-full !pl-0">
+        <div class="section-header">Simple Touchscreen Controller</div>
+        <div class="section-description">
+          With a sleek and intuitive touch display, users can navigate through
+          various massage programs, adjust intensity levels, and target specific
+          areas for massage. Just tap any buttons that are teal or green colors
+          to adjust.
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="mb-10 bg-[var(--section-bg-color)] p-4 font-bold text-[var(--section-grid-color)] md:p-10"
+    >
+      <div
+        class="flex items-center justify-center gap-5 p-10 text-center text-lg md:text-2xl"
+      >
+        <div class="section-header text-left">12 Auto Programs</div>
+      </div>
+      <div class="m-auto grid w-5/6 grid-cols-2 md:w-4/5">
+        <div
+          class="flex items-center pb-5 md:ml-0 md:gap-4 md:px-10 md:text-xl lg:text-2xl"
+        >
+          <img src="" alt="" class="!h-12 !w-12 md:!h-20 md:!w-20" />
+          <div>Work Relief</div>
+        </div>
+        <div
+          class="flex items-center pb-5 md:ml-0 md:gap-4 md:px-10 md:text-xl lg:text-2xl"
+        >
+          <img src="" alt="" class="!h-12 !w-12 md:!h-20 md:!w-20" />
+          <div>Recovery</div>
+        </div>
+        <div
+          class="flex items-center pb-5 md:ml-0 md:gap-4 md:px-10 md:text-xl lg:text-2xl"
+        >
+          <img src="" alt="" class="!h-12 !w-12 md:!h-20 md:!w-20" />
+          <div>Deep Tissue</div>
+        </div>
+        <div
+          class="flex items-center pb-5 md:ml-0 md:gap-4 md:px-10 md:text-xl lg:text-2xl"
+        >
+          <img src="" alt="" class="!h-12 !w-12 md:!h-20 md:!w-20" />
+          <div>Rest & Sleep</div>
+        </div>
+        <div
+          class="flex items-center pb-5 md:ml-0 md:gap-4 md:px-10 md:text-xl lg:text-2xl"
+        >
+          <img src="" alt="" class="!h-12 !w-12 md:!h-20 md:!w-20" />
+          <div>Thai</div>
+        </div>
+        <div
+          class="flex items-center pb-5 md:ml-0 md:gap-4 md:px-10 md:text-xl lg:text-2xl"
+        >
+          <img src="" alt="" class="!h-12 !w-12 md:!h-20 md:!w-20" />
+          <div>Gentle</div>
+        </div>
+        <div
+          class="flex items-center pb-5 md:ml-0 md:gap-4 md:px-10 md:text-xl lg:text-2xl"
+        >
+          <img src="" alt="" class="!h-12 !w-12 md:!h-20 md:!w-20" />
+          <div>Athletic</div>
+        </div>
+        <div
+          class="flex items-center pb-5 md:ml-0 md:gap-4 md:px-10 md:text-xl lg:text-2xl"
+        >
+          <img src="" alt="" class="!h-12 !w-12 md:!h-20 md:!w-20" />
+          <div>For Her</div>
+        </div>
+        <div
+          class="flex items-center pb-5 md:ml-0 md:gap-4 md:px-10 md:text-xl lg:text-2xl"
+        >
+          <img src="" alt="" class="!h-12 !w-12 md:!h-20 md:!w-20" />
+          <div>Vertebral</div>
+        </div>
+        <div
+          class="flex items-center pb-5 md:ml-0 md:gap-4 md:px-10 md:text-xl lg:text-2xl"
+        >
+          <img src="" alt="" class="!h-12 !w-12 md:!h-20 md:!w-20" />
+          <div>For Him</div>
+        </div>
+        <div
+          class="flex items-center pb-5 md:ml-0 md:gap-4 md:px-10 md:text-xl lg:text-2xl"
+        >
+          <img src="" alt="" class="!h-12 !w-12 md:!h-20 md:!w-20" />
+          <div>Neck & Shoulders</div>
+        </div>
+        <div
+          class="flex items-center pb-5 md:ml-0 md:gap-4 md:px-10 md:text-xl lg:text-2xl"
+        >
+          <img src="" alt="" class="!h-12 !w-12 md:!h-20 md:!w-20" />
+          <div>Waist & Hip</div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-10 bg-[var(--section-bg-color)] p-4 font-bold text-[var(--section-grid-color)] md:p-10"
+    >
+      <div
+        class="flex items-center justify-center gap-5 p-10 text-center text-lg md:text-2xl"
+      >
+        <div class="section-header text-left">6 Manual Styles</div>
+      </div>
+      <div class="m-auto grid w-5/6 grid-cols-2 md:w-4/5">
+        <div
+          class="flex items-center pb-5 md:ml-0 md:gap-4 md:px-10 md:text-xl lg:text-2xl"
+        >
+          <img src="" alt="" class="!h-12 !w-12 md:!h-20 md:!w-20" />
+          <div>Shiatsu</div>
+        </div>
+        <div
+          class="flex items-center pb-5 md:ml-0 md:gap-4 md:px-10 md:text-xl lg:text-2xl"
+        >
+          <img src="" alt="" class="!h-12 !w-12 md:!h-20 md:!w-20" />
+          <div>Knocking</div>
+        </div>
+        <div
+          class="flex items-center pb-5 md:ml-0 md:gap-4 md:px-10 md:text-xl lg:text-2xl"
+        >
+          <img src="" alt="" class="!h-12 !w-12 md:!h-20 md:!w-20" />
+          <div>Rubbing</div>
+        </div>
+        <div
+          class="flex items-center pb-5 md:ml-0 md:gap-4 md:px-10 md:text-xl lg:text-2xl"
+        >
+          <img src="" alt="" class="!h-12 !w-12 md:!h-20 md:!w-20" />
+          <div>Knead & Knock</div>
+        </div>
+        <div
+          class="flex items-center pb-5 md:ml-0 md:gap-4 md:px-10 md:text-xl lg:text-2xl"
+        >
+          <img src="" alt="" class="!h-12 !w-12 md:!h-20 md:!w-20" />
+          <div>Kneading</div>
+        </div>
+        <div
+          class="flex items-center pb-5 md:ml-0 md:gap-4 md:px-10 md:text-xl lg:text-2xl"
+        >
+          <img src="" alt="" class="!h-12 !w-12 md:!h-20 md:!w-20" />
+          <div>Tapping</div>
+        </div>
+      </div>
+    </div>
+    <div class="section !flex-col">
+      <img src="" alt="" class="!w-full" />
+      <div class="section-content !w-full !pl-0">
+        <div class="section-header">
+          Lumbar & Calves <br />
+          Heating Therapy
+        </div>
+        <div class="section-description">
+          This targeted heat therapy aims to promote relaxation, alleviate
+          muscle tension in the lower back and calf areas, and enhance the
+          overall massage experience.
+        </div>
+      </div>
+    </div>
+    <div class="section flex-col">
+      <img src="" alt="" class="!w-full" />
+      <div class="section-content !w-full !pl-0">
+        <div class="section-header">
+          Zero Gravity & Space <br />
+          Saving Technology
+        </div>
+        <div class="section-description">
+          Inspired by NASA, the Vesper utilizes its 3-stage Zero Gravity to give
+          the user a relaxing experience and helps utilize body weight evenly.
+          With Osaki’s Space Saving Technology the chair can be 6 inches away
+          from the wall and still achieve a full recline.
+        </div>
+      </div>
+    </div>
+    <div class="section flex-col">
+      <img src="" alt="" class="!w-full" />
+      <div class="section-content !w-full !pl-0">
+        <div class="section-header">20 Cell Full Body Air Massage</div>
+        <div class="section-description">
+          The Vesper incorporates an advanced system of 20 air cells
+          strategically placed throughout the chair to deliver a comprehensive
+          and enveloping massage experience. These air cells inflate and deflate
+          in a synchronized manner, applying gentle pressure to various parts of
+          the body.
+        </div>
+      </div>
+    </div>
+    <div class="section flex-col">
+      <img src="" alt="" class="!w-full" />
+      <div class="section-content !w-full !pl-0">
+        <div class="section-header">Specialized Kneading Plates</div>
+        <div class="section-description">
+          The TP-Ronin 4D includes acupuncture points through the method of
+          scientifically designed reflexology ridges. The foot rests each
+          contains <strong>three rollers</strong> on each side, helping relieve
+          tension in the foot.
+        </div>
+      </div>
+    </div>
+
+    <div class="section flex-col">
+      <img src="" alt="" class="!w-full" />
+      <div class="section-content !w-full !pl-0">
+        <div class="section-header">Spring Loaded Extendable Footrest</div>
+        <div class="section-description">
+          With a simple and adjustable mechanism, users can manually extend the
+          footrest up to 5 inches to accommodate their height and leg
+          preferences. This feature ensures that individuals of various sizes
+          can fully stretch their legs.
+        </div>
+      </div>
+    </div>
+
+    <div class="section flex-col">
+      <img src="" alt="" class="!w-full" />
+      <div class="section-content !w-full !pl-0">
+        <div class="section-header">Removable Headrest</div>
+        <div class="section-description">
+          A removable headrest in a massage chair adds versatility and
+          customization to the user's experience. This feature allows users to
+          easily detach the headrest for cleaning or to accommodate personal
+          preferences.
+        </div>
+      </div>
+    </div>
+
+    <div class="section flex-col">
+      <img src="" alt="" class="!w-full" />
+      <div class="section-content !w-full !pl-0">
+        <div class="section-header">Wireless Phone Charger</div>
+        <div class="section-description">
+          A wireless phone charger seamlessly integrates modern convenience into
+          relaxation. This feature allows users to recharge their smartphones
+          effortlessly while enjoying a massage session.
+        </div>
+      </div>
+    </div>
+
+    <div class="section flex-col">
+      <img src="" alt="" class="!w-full" />
+      <div class="section-content !w-full !pl-0">
+        <div class="section-header">Convenient Control Panels</div>
+        <div class="section-description">
+          Featuring intuitive interfaces, these panels allow users to seamlessly
+          adjust their massage experience. The convenience lies in the
+          user-friendly design, providing easy access to a range of massage
+          options with just a few clicks.
+        </div>
+      </div>
+    </div>
+    <div class="section flex-col">
+      <img src="" alt="" class="!w-full" />
+      <div class="section-content !w-full !pl-0">
+        <div class="section-header">Bluetooth Speakers</div>
+        <div class="section-description">
+          Seamlessly integrated into the chair, these wireless speakers allow
+          users to connect their devices and enjoy their favorite music or
+          soothing sounds during a massage session.
+        </div>
+      </div>
+    </div>
+
+    <div class="section-dimensions">
+      <div class="section-header mt-40 text-center">Dimensions</div>
+      <div class="flex flex-col items-center">
+        <img src="" alt="" class="min-w-0" />
+        <img src="" alt="" class="min-w-0" />
+      </div>
+    </div>
+  </div>
+  <!-- <section class="section-specs section-pad-bottom">
+    <div class="table-tap">
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Product Name</div>
+          <div class="specs-column">TP-Ronin 4D</div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">User Manual</div>
+          <div class="specs-column">
+            <a
+              href="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/TP_Ronin_Manual.pdf?v=1701879687"
+              style="color: #ff4800"
+              target="_blank"
+            >
+              Download
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Power Supply</div>
+          <div class="specs-column">AC 110 - 120V</div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Rate Frequency</div>
+          <div class="specs-column">60 Hz</div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Rate Power Consumption</div>
+          <div class="specs-column">280W</div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Rate Time</div>
+          <div class="specs-column">5/10/15/20/25/30 minutes</div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">
+            Dimensions
+            <br />
+            (W x L x H)
+          </div>
+          <div class="specs-column">
+            <b> Upright </b>
+            <br />
+            30.5" x 62.0" x 45.0"
+          </div>
+          <div class="specs-column">
+            <b> Reclined </b>
+            <br />
+            30.5" x 72.0" x 41.5"
+          </div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Width</div>
+          <div class="specs-column">
+            <b> Seat </b>
+            <br />
+            17.5"
+          </div>
+          <div class="specs-column">
+            <b> Shoulder Width </b>
+            <br />
+            22"
+          </div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Minimum Doorway Size</div>
+          <div class="specs-column">30.5"</div>
+        </div>
+      </div>
+      <div class="specs-section">
+        <div class="specs-row">
+          <div class="specs-rowheader">Maximum User Weight</div>
+          <div class="specs-column">270 lbs</div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+</body>
+<script>
+  $(function () {
+    $.each($(".sections img"), (i, img) => {
+      $(img).attr("src", imgs[i].img_src)
+      $(img).attr("alt", imgs[i].img_name)
+    })
+
+    if (youtube_link != "") {
+      var youtube_id = youtube_link.split("watch?v=")[1].split("&")[0]
+      var src =
+        "https://www.youtube.com/embed/" + youtube_id + "?autoplay=1&mute=1"
+      var embed_html =
+        '<iframe class="w-full aspect-video mb-20" src=' +
+        src +
+        ' title="YouTube video player" frameborder="0" allowfullscreen></iframe>'
+      $("#youtube-link").append(embed_html)
+    }
+    $("#tab-button1").on("click", () => {
+      $("#tab-button1").addClass("active-tab")
+      $("#tab-button2").removeClass("active-tab")
+      $(".sections").fadeIn("slow")
+      $(".section-specs").fadeIn("slow")
+    })
+    $("#tab-button2").on("click", () => {
+      $("#tab-button1").removeClass("active-tab")
+      $("#tab-button2").addClass("active-tab")
+      $(".sections").fadeOut("slow")
+      $(".section-specs").fadeOut("slow")
+    })
+  })
+</script>
