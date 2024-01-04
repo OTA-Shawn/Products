@@ -300,11 +300,6 @@
   border-bottom-width: 1px;
 }
 
-.tw-border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
 .tw-bg-\[\#000000\] {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -540,7 +535,7 @@
 ::after {
   border-width: 0;
   border-style: solid;
-  border-color: #d1d5db;
+  border-color: #e5e7eb;
 }
 
 @media (min-width: 480px) {
