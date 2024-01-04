@@ -212,6 +212,10 @@
   width: 100%;
 }
 
+.tw-w-52 {
+  width: 13rem;
+}
+
 .tw-flex-1 {
   flex: 1 1 0%;
 }
@@ -416,6 +420,16 @@
 .tw-py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.tw-py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.tw-py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .tw-pb-0 {
