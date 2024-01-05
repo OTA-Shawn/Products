@@ -25,10 +25,10 @@
   <li>USB Charger &amp; Wireless Charger</li>
 </ul> -->
 
-<!-- more -->
+<!--- more -->
 <script>
   const youtube_link =
-    "https://www.youtube.com/watch?v=7iG1LJc1X5w&ab_channel=OfficialTitanOsakiMassageChannel";
+    "https://www.youtube.com/watch?v=7iG1LJc1X5w&ab_channel=OfficialTitanOsakiMassageChannel"
 
   const imgs = [
     {
@@ -229,17 +229,17 @@
       img_src:
         "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/34.Amamedic-Hilux.jpg?v=1690482598",
     },
-  ];
+  ]
 </script>
+
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script
-  src="https://code.jquery.com/jquery-3.6.4.min.js"
-  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
-  crossorigin="anonymous"
-></script>
-<script src="https://cdn.tailwindcss.com"></script>
+<link
+  href="https://ota-shawn.github.io/Products/globalProductDescription.css"
+  rel="stylesheet"
+/>
+<link href="../globalProductDescription.css" rel="stylesheet" />
 
 <style>
   :root {
@@ -251,7 +251,7 @@
   }
 
   * {
-    box-sizing: border-box;
+    box-sizing: tw-border-box;
   }
 
   .sections {
@@ -345,7 +345,7 @@
   }
 
   .app-icon img {
-    flex: 0 0 0;
+    flex: 1 1 0;
     width: 40%;
   }
 
@@ -475,54 +475,47 @@
 </style>
 
 <body>
-  <div id="tab-buttons" class="max-w-6xl mx-auto my-4">
-    <button
-      id="tab-button1"
-      class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center dark:text-gray-400 dark:hover:text-gray-300 active-tab"
-    >
-      Description
-    </button>
-    <button
-      id="tab-button2"
-      class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center t dark:text-gray-400 dark:hover:text-gray-300"
-    >
-      Reviews
-    </button>
-  </div>
   <div class="sections">
-    <div id="youtube-link"></div>
-    <div class="section !bg-white !flex-col !mb-40 md:!mb-80">
-      <img src="" alt="" class="!w-full" />
-      <div class="px-10 pt-10 pb-5 text-xl md:text-2xl lg:text-3xl text-center">
+    <iframe
+      id="youtube-link"
+      src=""
+      frameborder="0"
+      class="tw-aspect-video tw-w-full tw-mb-10"
+    ></iframe>
+    <div class="section !tw-mb-40 !tw-flex-col !tw-bg-white md:!tw-mb-80">
+      <img src="" alt="" class="!tw-w-full" />
+      <div
+        class="tw-px-10 tw-pb-5 tw-pt-10 tw-text-center tw-text-xl md:tw-text-2xl lg:tw-text-3xl"
+      >
         Introducing the ALL NEW luxurious AmaMedic Hilux 4D massage chair,
         designed with all the newest technology, luxury, and stylish elegance.
         Even the smallest of details have been carefully inspected and crafted
         with the highest quality.
       </div>
-      <div class="flex gap-10 justify-evenly w-full">
+      <div class="tw-flex tw-w-full tw-justify-evenly tw-gap-10">
         <div class="circle">
-          <div class="bg-[#B7AD9F]"></div>
+          <div class="tw-bg-[#B7AD9F]"></div>
           <div>Taupe</div>
         </div>
         <div class="circle">
-          <div class="bg-[#352723]"></div>
+          <div class="tw-bg-[#352723]"></div>
           <div>Brown</div>
         </div>
         <div class="circle">
-          <div class="bg-[#1d1d1d]"></div>
+          <div class="tw-bg-[#1d1d1d]"></div>
           <div>Black</div>
         </div>
       </div>
-      <img src="" alt="" class="!w-full my-4 md:my-7 lg:my-10" />
+      <img src="" alt="" class="tw-my-4 md:tw-my-7 lg:tw-my-10 !tw-w-full" />
     </div>
 
-    <div class="section !bg-black">
+    <div class="section !tw-bg-black">
       <div class="section-content">
-        <div class="section-header !text-white">
+        <div class="section-header !tw-text-white">
           4D Massage <br />
           Mechanism
         </div>
-        <div class="section-description !text-white">
+        <div class="section-description !tw-text-white">
           Enhanced 4D L-track massage with professional hands mimicry. AmaMedic
           Hilux 4D offers 8 intensity levels, 5 air massage levels, and
           adjustable roller speed.
@@ -530,10 +523,10 @@
       </div>
       <img src="" alt="" class="" />
     </div>
-    <div class="section !bg-black flex-row-reverse">
+    <div class="section tw-flex-row-reverse !tw-bg-black">
       <div class="section-content">
-        <div class="section-header !text-white">4D SL-Track Massage</div>
-        <div class="section-description !text-white">
+        <div class="section-header !tw-text-white">4D SL-Track Massage</div>
+        <div class="section-description !tw-text-white">
           Hilux combines S and L track tech for exceptional massage. S-Track
           contours spine, L-Track covers neck to thighs, 50% more area than
           average S-Track chairs.
@@ -541,49 +534,49 @@
       </div>
       <img src="" alt="" class="" />
     </div>
-    <!-- <div class="section !bg-black">
+    <!--- <div class="section !tw-bg-black">
       <div class="section-content">
-        <div class="section-header !text-white">
+        <div class="section-header !tw-text-white">
           52” Long <br />
           SL-Track
         </div>
-        <div class="section-description !text-[#808084]">
+        <div class="section-description !tw-text-[#808084]">
           Innovative quad rollers,
-          <strong class="!text-white">SL track</strong>. Combines S and L track
+          <strong class="!tw-text-white">SL track</strong>. Combines S and L track
           for exceptional massage with 50% more coverage.
         </div>
       </div>
       <img src="" alt="" class="" />
     </div> -->
-    <div class="section flex-col !bg-black">
-      <div class="section-content !w-full">
-        <div class="section-header !text-white">2 Stage Zero Gravity</div>
-        <div class="section-description !text-white">
+    <div class="section tw-flex-col !tw-bg-black">
+      <div class="section-content !tw-w-full">
+        <div class="section-header !tw-text-white">2 Stage Zero Gravity</div>
+        <div class="section-description !tw-text-white">
           Hilux offers 2 stages of zero gravity for weightless massage. Auto or
           manual adjustment. NASA-inspired design reduces back stress.
         </div>
-        <img src="" alt="" class="!w-2/3 self-center" />
       </div>
+      <img src="" alt="" class="tw-self-center !tw-w-2/3" />
     </div>
 
-    <div class="section flex-col-reverse !bg-black">
-      <div class="section-content !w-full">
-        <div class="section-header !text-white">Technology Space Saving</div>
-        <div class="section-description !text-white">
+    <div class="section tw-flex-col-reverse !tw-bg-black">
+      <div class="section-content !tw-w-full">
+        <div class="section-header !tw-text-white">Technology Space Saving</div>
+        <div class="section-description !tw-text-white">
           Hilux 4D requires only 4.7" from backrest to wall, saving space and
           maximizing living area.
         </div>
-        <img src="" alt="" class="!w-4/5 self-center" />
+        <img src="" alt="" class="tw-self-center !tw-w-4/5" />
       </div>
     </div>
-    <!-- <div class="section flex-col !bg-black !mb-0">
-      <img src="" alt="" class="!w-4/5" />
-      <div class="section-content !w-4/5 pb-10 mb-10 bg-[#1E1E1E] rounded-xl">
-        <img src="" alt="" class="!w-10 lg:!w-20" />
-        <div class="section-header !text-white">
-          <strong class="!text-[#2D59F2]">3 Steps Zero Gravity </strong>
+    <!-- <div class="section tw-flex-col !tw-bg-black !tw-mb-0">
+      <img src="" alt="" class="!tw-w-4/5" />
+      <div class="section-content !tw-w-4/5 tw-pb-10 tw-mb-10 bg-[#1E1E1E] tw-rounded-xl">
+        <img src="" alt="" class="!tw-w-10 lg:!tw-w-20" />
+        <div class="section-header !tw-text-white">
+          <strong class="!tw-text-[#2D59F2]">3 Steps Zero Gravity </strong>
         </div>
-        <div class="section-description !text-[#808084]">
+        <div class="section-description !tw-text-[#808084]">
           The Ador 3D Allure has 3 Zero Gravity modes for a weightless massage
           experience. Users can choose the recline level automatically or adjust
           it manually with the remote, including Initial, Comfort, and Deep
@@ -592,11 +585,11 @@
       </div>
     </div> -->
 
-    <div class="section !bg-white">
-      <img src="" alt="" class="!w-1/3" />
+    <div class="section !tw-bg-white">
+      <img src="" alt="" class="!tw-w-1/3" />
       <div class="section-content">
         <div class="section-header">
-          <strong class="!text-blue-700">18 Cell</strong> <br />
+          <strong class="!tw-text-blue-700">18 Cell</strong> <br />
           Air Massage
         </div>
         <div class="section-description">
@@ -606,11 +599,11 @@
         </div>
       </div>
     </div>
-    <div class="section !bg-white flex-row-reverse">
+    <div class="section tw-flex-row-reverse !tw-bg-white">
       <img src="" alt="" />
       <div class="section-content">
         <div class="section-header">
-          <strong class="!text-red-700">Heated</strong>
+          <strong class="!tw-text-red-700">Heated</strong>
           Back Roller Massage
         </div>
         <div class="section-description">
@@ -622,79 +615,113 @@
     </div>
 
     <div
-      class="col-span-2 text-2xl md:text-4xl text-center gap-5 flex justify-center items-center p-10"
+      class="tw-col-span-2 tw-flex tw-items-center tw-justify-center tw-gap-5 tw-p-10 tw-text-center tw-text-2xl md:tw-text-4xl"
     >
       <strong class="">8 Auto Massage Modes</strong>
     </div>
-    <div class="grid grid-cols-2 p-10 mb-10 bg-[#ece7e3] gap-2">
-      <div class="flex pb-5 text-lg md:text-xl lg:text-2xl items-center">
-        <img src="" alt="" class="w-1/4" />
+    <div
+      class="tw-mb-10 tw-grid tw-grid-cols-2 tw-gap-2 tw-p-10 tw-bg-[#ece7e3]"
+    >
+      <div
+        class="tw-flex tw-items-center tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="tw-w-1/4" />
         <div class="">
           <div>Demo</div>
-          <div class="text-base font-normal text-[var(--section-grid-color)]">
+          <div
+            class="tw-text-base tw-font-normal text-[var(--section-grid-color)]"
+          >
             Program cycles messages briefly.
           </div>
         </div>
       </div>
-      <div class="flex pb-5 text-lg md:text-xl lg:text-2xl items-center">
-        <img src="" alt="" class="w-1/4" />
+      <div
+        class="tw-flex tw-items-center tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="tw-w-1/4" />
         <div class="">
           <div>Scraping</div>
-          <div class="text-base font-normal text-[var(--section-grid-color)]">
+          <div
+            class="tw-text-base tw-font-normal text-[var(--section-grid-color)]"
+          >
             Program scrapes and stretches muscles with up-down motion.
           </div>
         </div>
       </div>
-      <div class="flex pb-5 text-lg md:text-xl lg:text-2xl items-center">
-        <img src="" alt="" class="w-1/4" />
+      <div
+        class="tw-flex tw-items-center tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="tw-w-1/4" />
         <div class="">
           <div>Relax</div>
-          <div class="text-base font-normal text-[var(--section-grid-color)]">
+          <div
+            class="tw-text-base tw-font-normal text-[var(--section-grid-color)]"
+          >
             This program offers a gentle massage to relax the user.
           </div>
         </div>
       </div>
-      <div class="flex pb-5 text-lg md:text-xl lg:text-2xl items-center">
-        <img src="" alt="" class="w-1/4" />
+      <div
+        class="tw-flex tw-items-center tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="tw-w-1/4" />
         <div class="">
           <div>Shiatsu</div>
-          <div class="text-base font-normal text-[var(--section-grid-color)]">
+          <div
+            class="tw-text-base tw-font-normal text-[var(--section-grid-color)]"
+          >
             Back massage, targeting tense muscles.
           </div>
         </div>
       </div>
-      <div class="flex pb-5 text-lg md:text-xl lg:text-2xl items-center">
-        <img src="" alt="" class="w-1/4" />
+      <div
+        class="tw-flex tw-items-center tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="tw-w-1/4" />
         <div class="">
           <div>Swing</div>
-          <div class="text-base font-normal text-[var(--section-grid-color)]">
+          <div
+            class="tw-text-base tw-font-normal text-[var(--section-grid-color)]"
+          >
             Program rocks and massages user for calm experience.
           </div>
         </div>
       </div>
-      <div class="flex pb-5 text-lg md:text-xl lg:text-2xl items-center">
-        <img src="" alt="" class="w-1/4" />
+      <div
+        class="tw-flex tw-items-center tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="tw-w-1/4" />
         <div class="">
           <div>Gentle Relief</div>
-          <div class="text-base font-normal text-[var(--section-grid-color)]">
+          <div
+            class="tw-text-base tw-font-normal text-[var(--section-grid-color)]"
+          >
             This program helps to performs a tapping action with tapping.
           </div>
         </div>
       </div>
-      <div class="flex pb-5 text-lg md:text-xl lg:text-2xl items-center">
-        <img src="" alt="" class="w-1/4" />
+      <div
+        class="tw-flex tw-items-center tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="tw-w-1/4" />
         <div class="">
           <div>Stretch</div>
-          <div class="text-base font-normal text-[var(--section-grid-color)]">
+          <div
+            class="tw-text-base tw-font-normal text-[var(--section-grid-color)]"
+          >
             Program inflates, pins, and massages from legs to shoulders.
           </div>
         </div>
       </div>
-      <div class="flex pb-5 text-lg md:text-xl lg:text-2xl items-center">
-        <img src="" alt="" class="w-1/4" />
+      <div
+        class="tw-flex tw-items-center tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="tw-w-1/4" />
         <div class="">
           <div>Rejuvenate</div>
-          <div class="text-base font-normal text-[var(--section-grid-color)]">
+          <div
+            class="tw-text-base tw-font-normal text-[var(--section-grid-color)]"
+          >
             Strong and aggressive back massage program.
           </div>
         </div>
@@ -702,74 +729,74 @@
     </div>
 
     <div
-      class="col-span-2 text-2xl md:text-4xl text-center gap-5 flex justify-center items-center p-10 bg-white"
+      class="tw-col-span-2 tw-flex tw-items-center tw-justify-center tw-gap-5 tw-bg-white tw-p-10 tw-text-center tw-text-2xl md:tw-text-4xl"
     >
       <strong class="">9 Manual Massage Modes</strong>
     </div>
     <div
-      class="flex flex-wrap-reverse p-10 mb-10 bg-[#ece7e3] gap-3 justify-center"
+      class="tw-mb-10 tw-flex tw-flex-wrap-reverse tw-justify-center tw-gap-3 tw-p-10 tw-bg-[#ece7e3]"
     >
       <div
-        class="flex flex-col aspect-square text-md md:text-lg lg:text-xl justify-center items-center p-4 w-1/4 md:w-1/6 text-center"
+        class="text-md tw-flex tw-w-1/4 tw-flex-col tw-items-center tw-justify-center tw-p-4 tw-text-center md:tw-w-1/6 md:tw-text-lg lg:tw-text-xl aspect-square"
       >
         <img src="" alt="" class="" />
         <div>Neck/Shoulder</div>
       </div>
       <div
-        class="flex flex-col aspect-square text-md md:text-lg lg:text-xl justify-center items-center p-4 w-1/4 md:w-1/6 text-center"
+        class="text-md tw-flex tw-w-1/4 tw-flex-col tw-items-center tw-justify-center tw-p-4 tw-text-center md:tw-w-1/6 md:tw-text-lg lg:tw-text-xl aspect-square"
       >
         <img src="" alt="" class="" />
         <div>Upper Back</div>
       </div>
       <div
-        class="flex flex-col aspect-square text-md md:text-lg lg:text-xl justify-center items-center p-4 w-1/4 md:w-1/6 text-center"
+        class="text-md tw-flex tw-w-1/4 tw-flex-col tw-items-center tw-justify-center tw-p-4 tw-text-center md:tw-w-1/6 md:tw-text-lg lg:tw-text-xl aspect-square"
       >
         <img src="" alt="" class="" />
         <div>Lower Back</div>
       </div>
       <div
-        class="flex flex-col aspect-square text-md md:text-lg lg:text-xl justify-center items-center p-4 w-1/4 md:w-1/6 text-center"
+        class="text-md tw-flex tw-w-1/4 tw-flex-col tw-items-center tw-justify-center tw-p-4 tw-text-center md:tw-w-1/6 md:tw-text-lg lg:tw-text-xl aspect-square"
       >
         <img src="" alt="" class="" />
         <div>Full Back</div>
       </div>
       <div
-        class="flex flex-col aspect-square text-md md:text-lg lg:text-xl justify-center items-center p-4 w-1/4 md:w-1/6 text-center"
+        class="text-md tw-flex tw-w-1/4 tw-flex-col tw-items-center tw-justify-center tw-p-4 tw-text-center md:tw-w-1/6 md:tw-text-lg lg:tw-text-xl aspect-square"
       >
         <img src="" alt="" class="" />
         <div>Kneading</div>
       </div>
       <div
-        class="flex flex-col aspect-square text-md md:text-lg lg:text-xl justify-center items-center p-4 w-1/4 md:w-1/6 text-center"
+        class="text-md tw-flex tw-w-1/4 tw-flex-col tw-items-center tw-justify-center tw-p-4 tw-text-center md:tw-w-1/6 md:tw-text-lg lg:tw-text-xl aspect-square"
       >
         <img src="" alt="" class="" />
         <div>Tapping</div>
       </div>
       <div
-        class="flex flex-col aspect-square text-md md:text-lg lg:text-xl justify-center items-center p-4 w-1/4 md:w-1/6 text-center"
+        class="text-md tw-flex tw-w-1/4 tw-flex-col tw-items-center tw-justify-center tw-p-4 tw-text-center md:tw-w-1/6 md:tw-text-lg lg:tw-text-xl aspect-square"
       >
         <img src="" alt="" class="" />
         <div>Rolling</div>
       </div>
       <div
-        class="flex flex-col aspect-square text-md md:text-lg lg:text-xl justify-center items-center p-4 w-1/4 md:w-1/6 text-center"
+        class="text-md tw-flex tw-w-1/4 tw-flex-col tw-items-center tw-justify-center tw-p-4 tw-text-center md:tw-w-1/6 md:tw-text-lg lg:tw-text-xl aspect-square"
       >
         <img src="" alt="" class="" />
         <div>Shiatsu</div>
       </div>
       <div
-        class="flex flex-col aspect-square text-md md:text-lg lg:text-xl justify-center items-center p-4 w-1/4 md:w-1/6 text-center"
+        class="text-md tw-flex tw-w-1/4 tw-flex-col tw-items-center tw-justify-center tw-p-4 tw-text-center md:tw-w-1/6 md:tw-text-lg lg:tw-text-xl aspect-square"
       >
         <img src="" alt="" class="" />
         <div>Clapping</div>
       </div>
     </div>
 
-    <div class="section flex-row-reverse">
+    <div class="section tw-flex-row-reverse">
       <img src="" alt="" class="" />
       <div class="section-content">
         <div class="section-header">Shoulder Massager</div>
-        <div class="section-description !text-[var(--section-grid-color)]">
+        <div class="section-description !tw-text-[var(--section-grid-color)]">
           Adjustable shoulder massager fits all body types. Easily tighten by
           pushing inward. 3 adjustable sizes on each side. Reset to default
           width by pushing in on both sides.
@@ -777,21 +804,21 @@
       </div>
     </div>
     <div class="section">
-      <img src="" alt="" class="self-start" />
+      <img src="" alt="" class="tw-self-start" />
       <div class="section-content">
         <div class="section-header">Calf Kneading Massage</div>
-        <div class="section-description !text-[var(--section-grid-color)]">
+        <div class="section-description !tw-text-[var(--section-grid-color)]">
           Upper leg rest has air massagers for circular calf massage. Added
           components for foot stretch and massage at bridge and heel. Unique
           experience.
         </div>
       </div>
     </div>
-    <div class="section flex-row-reverse">
-      <img src="" alt="" class="self-start" />
+    <div class="section tw-flex-row-reverse">
+      <img src="" alt="" class="tw-self-start" />
       <div class="section-content">
         <div class="section-header">Foot Kneading</div>
-        <div class="section-description !text-[var(--section-grid-color)]">
+        <div class="section-description !tw-text-[var(--section-grid-color)]">
           Underneath the feet, spinning reflexology rollers offer an outstanding
           foot massage. Rollers travel along sides and arches for a dimensional
           kneading experience.
@@ -799,21 +826,21 @@
       </div>
     </div>
     <div class="section">
-      <img src="" alt="" class="self-start" />
+      <img src="" alt="" class="tw-self-start" />
       <div class="section-content">
         <div class="section-header">Auto Extendable Footrest</div>
-        <div class="section-description !text-[var(--section-grid-color)]">
+        <div class="section-description !tw-text-[var(--section-grid-color)]">
           The foot component extends and retracts while scanning the user's
           legs. Apply pressure to indicate desired position. Remote enables auto
           legrest adjustment.
         </div>
       </div>
     </div>
-    <div class="section flex-row-reverse">
-      <img src="" alt="" class="self-end" />
+    <div class="section tw-flex-row-reverse">
+      <img src="" alt="" class="tw-self-end" />
       <div class="section-content">
         <div class="section-header">Bluetooth HD Speaker</div>
-        <div class="section-description !text-[var(--section-grid-color)]">
+        <div class="section-description !tw-text-[var(--section-grid-color)]">
           Bluetooth, Amphitheater sound, reduces noise, high-grade headrest
           speakers. Start at low volume, increase gradually.
         </div>
@@ -823,19 +850,19 @@
       <img src="" alt="" />
     </div>
     <div class="section">
-      <img src="" alt="" class="self-start" />
+      <img src="" alt="" class="tw-self-start" />
     </div>
     <div class="section">
       <div class="section-content">
         <div class="section-header2">USB Charger & Wireless Charger</div>
-        <div class="section-description !text-[var(--section-grid-color)]">
+        <div class="section-description !tw-text-[var(--section-grid-color)]">
           AmaMedic Hilux 4D has wireless charger on armrest for smartphones.
           Requires wireless charging capability.
         </div>
       </div>
       <div class="section-content">
         <div class="section-header2">Touch Screen Controller</div>
-        <div class="section-description !text-[var(--section-grid-color)]">
+        <div class="section-description !tw-text-[var(--section-grid-color)]">
           AmaMedic Hilux 4D has Touch Screen Remote Tablet with easy view and
           magnetic holder. User-friendly interface for adjusting settings.
         </div>
@@ -843,266 +870,189 @@
     </div>
 
     <div class="section-dimensions">
-      <div class="text-3xl lg:text-5xl text-center mt-40">Dimensions</div>
+      <div class="tw-mt-40 tw-text-center tw-text-3xl lg:tw-text-5xl">
+        Dimensions
+      </div>
       <div
-        class="flex flex-col md:flex-row justify-between gap-5 md:gap-10 items-end"
+        class="tw-flex tw-flex-col tw-items-end tw-justify-between tw-gap-5 md:tw-flex-row md:tw-gap-10"
       >
         <img src="" alt="" class="" />
-        <!-- <img src="" alt="" class="md:w-2/3" /> -->
+        <!-- <img src="" alt="" class="md:tw-w-2/3" /> -->
       </div>
     </div>
-  </div>
+    <section>
+      <div
+        class="tw-p-10 tw-text-3xl md:tw-text-4xl lg:tw-text-5xl tw-text-center tw-font-bold"
+      >
+        Specification
+      </div>
+      <div class="tw-text-xl tw-font-normal">
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-font-bold">Product Name</div>
+          <div>AmaMedic Hilux 4D</div>
+        </div>
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-font-bold">User Manual</div>
+          <a
+            class="!tw-text-red-500 !tw-no-underline"
+            href="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/Hilux_Manual.pdf?v=1654703061"
+            target="_blank"
+            >Download</a
+          >
+        </div>
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-font-bold">Power Supply</div>
+          <div>110-120V~</div>
+        </div>
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-font-bold">Rate Frequency</div>
+          <div>50/60 Hz</div>
+        </div>
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-font-bold">Auto Timer</div>
+          <div>15 minutes</div>
+        </div>
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            <div>Dimensions</div>
+            <div>(W x L x H)</div>
+          </div>
+          <div class="tw-w-full tw-grid-cols-2 tw-grid tw-gap-2">
+            <div>
+              <div class="tw-font-bold">Upright</div>
+              <div>31.8” x 62.2“ x 47.6”</div>
+            </div>
+            <div>
+              <div class="tw-font-bold">Reclined</div>
+              <div>31.8” x 76.4” x 42.5”</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            <div>Width</div>
+            <div>(W x L x H)</div>
+          </div>
+          <div class="tw-w-full tw-grid-cols-2 tw-grid tw-gap-2">
+            <div>
+              <div class="tw-font-bold">Shoulder</div>
+              <div>20.5"</div>
+            </div>
+            <div>
+              <div class="tw-font-bold">Seat</div>
+              <div>17"</div>
+            </div>
+          </div>
+        </div>
+        <!-- <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            <div>Width</div>
+          </div>
+          <div class="tw-w-full tw-grid-cols-2 tw-grid tw-gap-2">
+            <div>
+              <div class="tw-font-bold">Shoulder</div>
+              <div>19”</div>
+            </div>
+            <div>
+              <div class="tw-font-bold">Seat</div>
+              <div>20”</div>
+            </div>
+          </div>
+        </div> -->
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            <div>Minimum Doorway Size</div>
+          </div>
+          <div>31.8"</div>
+        </div>
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            <div>Weight of Chair</div>
+          </div>
+          <div>Approx 244.6 lbs</div>
+        </div>
 
-  <section class="section-specs section-pad-bottom">
-    <div class="table-tap">
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Product Name</div>
-          <div class="specs-column">AmaMedic Hilux 4D</div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">User Manual</div>
-          <div class="specs-column">
-            <a
-              href="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/Hilux_Manual.pdf?v=1654703061"
-              style="color: #ff4800"
-              target="_blank"
-            >
-              Download
-            </a>
+        <!-- <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            <div>Weight</div>
+          </div>
+          <div class="tw-w-full tw-grid-cols-2 tw-grid tw-gap-2">
+            <div>
+              <div class="tw-font-bold">Net</div>
+              <div>185.1 lbs</div>
+            </div>
+            <div>
+              <div class="tw-font-bold">Gross</div>
+              <div>221.5 lbs</div>
+            </div>
+          </div>
+        </div> -->
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            <div>
+              Weight of Box <br />
+              (N.W. / G.W.)
+            </div>
+          </div>
+          <div class="tw-w-full tw-grid-cols-2 tw-grid tw-gap-2">
+            <div>
+              <div class="tw-font-bold">Box 1</div>
+              <div>210.5 / 246.9 lbs</div>
+            </div>
+            <div>
+              <div class="tw-font-bold">Box 2</div>
+              <div>48.5 / 55.1 lbs</div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Power Supply</div>
-          <div class="specs-column">AC 110 - 120V</div>
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-font-bold">
+            <div>Maximum User Weight</div>
+          </div>
+          <div>270 lbs</div>
         </div>
       </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Rate Power Consumption</div>
-          <div class="specs-column">250W</div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Rate Frequency</div>
-          <div class="specs-column">60 Hz</div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Rate Timer</div>
-          <div class="specs-column">15 minutes</div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Guide</div>
-          <div class="specs-column">SL-Track 52.8"</div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">4D Massage Roller</div>
-          <div class="specs-column">
-            <strong> Forward distance </strong>
-            <br />
-            8 level Approx 3.9"
-          </div>
-          <div class="specs-column">
-            <strong> Strength &amp; Intensity </strong>
-            <br />
-            5 level
-          </div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Airbag</div>
-          <div class="specs-column">5 level</div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Angle Adjustment</div>
-          <div class="specs-column">
-            <strong> Backrest </strong>
-            <br />
-            Approx 128 - 155 (Ground Angle)
-          </div>
-          <div class="specs-column">
-            <strong> Footrest </strong>
-            <br />
-            Approx 9 - 75 (Wall Angle)
-          </div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">
-            Dimensions
-            <br />
-            (W x L x H)
-          </div>
-          <div class="specs-column">
-            <strong> Upright </strong>
-            <br />
-            31.8” x 62.2“ x 47.6”
-          </div>
-          <div class="specs-column">
-            <strong> Reclined </strong>
-            <br />
-            31.8” x 76.4” x 42.5”
-          </div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Width</div>
-          <div class="specs-column">
-            <strong> Shoulder </strong>
-            <br />
-            20.5"
-          </div>
-          <div class="specs-column">
-            <strong> Seat </strong>
-            <br />
-            17"
-          </div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Minimum Doorway Size</div>
-          <div class="specs-column">31.8"</div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Extension of Footrest</div>
-          <div class="specs-column">Approx 7.1"</div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">
-            Package Dimensions
-            <br />
-            (W x L x H)
-          </div>
-          <div class="specs-column">
-            <strong> Box 1 </strong>
-            <br />
-            52.4" x 33.5" x 49.5"
-          </div>
-          <div class="specs-column">
-            <strong> Box 2 </strong>
-            <br />
-            23.2" x 20.1" x 21.7"
-          </div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Weight of Chair</div>
-          <div class="specs-column">Approx 244.6 lbs</div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">
-            Weight of Box (N.W. / G.W.)
-            <br />
-          </div>
-          <div class="specs-column">
-            <strong> Box 1 </strong>
-            <br />
-            210.5 / 246.9 lbs
-          </div>
-          <div class="specs-column">
-            <strong> Box 2 </strong>
-            <br />
-            48.5 / 55.1 lbs
-          </div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Maximum User Weight</div>
-          <div class="specs-column">270 lbs</div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">
-            Usage Condition
-            <br />
-          </div>
-          <div class="specs-column">
-            <strong> Environment Temperature </strong>
-            <br />
-            32°F ~ 95°F
-          </div>
-          <div class="specs-column">
-            <strong> Contrasting humidity </strong>
-            <br />
-            20 ~ 80RH
-          </div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">
-            Storage Condition
-            <br />
-          </div>
-          <div class="specs-column">
-            <strong> Storage Temperature </strong>
-            <br />
-            23°F ~ 95°F
-          </div>
-          <div class="specs-column">
-            <strong> Contrasting humidity </strong>
-            <br />
-            20 ~ 80RH
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </body>
 <script>
-  $(function () {
-    $.each($(".sections img"), (i, img) => {
-      $(img).attr("src", imgs[i].img_src);
-      $(img).attr("alt", imgs[i].img_name);
-    });
+  document.querySelectorAll(".sections img").forEach((img, i) => {
+    img.src = imgs[i].img_src
+  })
 
-    if (youtube_link != "") {
-      var youtube_id = youtube_link.split("watch?v=")[1].split("&")[0];
-      var src =
-        "https://www.youtube.com/embed/" + youtube_id + "?autoplay=1&mute=1";
-      var embed_html =
-        '<iframe class="w-full aspect-video mb-20" src=' +
-        src +
-        ' title="YouTube video player" frameborder="0" allowfullscreen></iframe>';
-      $("#youtube-link").append(embed_html);
-    }
-    $("#tab-button1").on("click", () => {
-      $("#tab-button1").addClass("active-tab");
-      $("#tab-button2").removeClass("active-tab");
-      $(".sections").fadeIn("slow");
-      $(".section-specs").fadeIn("slow");
-    });
-    $("#tab-button2").on("click", () => {
-      $("#tab-button1").removeClass("active-tab");
-      $("#tab-button2").addClass("active-tab");
-      $(".sections").fadeOut("slow");
-      $(".section-specs").fadeOut("slow");
-    });
-  });
+  const getYoutubeSrc = (src) => {
+    const regex =
+      /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/gi
+    const id = src.match(regex)[0]
+    const embed = id.replace("watch?v=", "embed/")
+    const dst = "https://www." + embed + "?mute=1&autoplay=1"
+    return dst
+  }
+  document.getElementById("youtube-link").src = getYoutubeSrc(youtube_link)
 </script>
