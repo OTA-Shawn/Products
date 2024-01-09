@@ -26,91 +26,58 @@
   </li>
  </ul>
  -->
-<!-- more -->
-<div id="tab-buttons" class="max-w-6xl mx-auto my-4">
-  <button
-    id="tab-button1"
-    class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center dark:text-gray-400 dark:hover:text-gray-300 active-tab"
-  >
-    Description
-  </button>
-  <button
-    id="tab-button2"
-    class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center t dark:text-gray-400 dark:hover:text-gray-300"
-  >
-    Reviews
-  </button>
-</div>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  href="https://ota-shawn.github.io/Products/globalProductDescription.css"
+  rel="stylesheet"
+/>
+<link href="../globalProductDescription.css" rel="stylesheet" />
 
-<section class="section-content sections">
-  <div class="section-wrapper large-direction-column large-offset-bottom-1">
+<body>
+  <div
+    class="sections tw-font-sans md:tw-w-[768px] lg:tw-w-[1024px] tw-flex tw-flex-col min-[480px]:tw-w-[480px] tw-m-auto tw-leading-normal"
+  >
     <img
-      alt="OS-AA12 Neck Massager - Shiatsu massage, intensity control, heating"
       src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/1._Main_Banner_OS-AA12.jpg?v=1651077511"
+      alt=""
     />
-  </div>
-  <div class="section-wrapper large-direction-column large-offset-bottom-1">
     <img
-      alt="3D Massage"
       src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/2._3D_Massage_Banner_OS-AA12.jpg?v=1651077511"
+      alt=""
     />
-  </div>
-  <div class="section-wrapper large-direction-column large-offset-bottom-1">
     <img
-      alt="Power on/off button, Direction change button, intensity button, heating button"
       src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/3._Button_OS-AA12.jpg?v=1651077511"
+      alt=""
     />
-  </div>
-  <div class="section-wrapper large-direction-column large-offset-bottom-1">
     <img
-      alt="OS-AA12 Neck Massager Dimension"
       src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/4._Product_dimension_OS-AA12.jpg?v=1651077511"
+      alt=""
     />
-  </div>
-</section>
-<section class="section-specs section-pad-bottom">
-  <div class="table-tap">
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Product Name</div>
-        <div class="specs-column">OS-AA12 Neck Massager</div>
+    <section>
+      <div
+        class="tw-p-10 tw-text-3xl md:tw-text-4xl lg:tw-text-5xl tw-text-center tw-font-bold"
+      >
+        Specification
       </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">User Manual</div>
-        <div class="specs-column">
+      <div class="tw-text-xl tw-font-normal">
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-font-bold">Product Name</div>
+          <div>OS-AA12 Neck Massager</div>
+        </div>
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-font-bold">User Manual</div>
           <a
+            class="!tw-text-red-500 !tw-no-underline"
             href="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/OS-AA12_Manual.pdf?v=1654809083"
-            style="color: #ff4800"
             target="_blank"
+            >Download</a
           >
-            Download
-          </a>
         </div>
       </div>
-    </div>
+    </section>
   </div>
-</section>
-<script src="https://cdn.tailwindcss.com"></script>
-<script
-  crossorigin="anonymous"
-  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
-  src="https://code.jquery.com/jquery-3.6.4.min.js"
-></script>
-<script>
-  $(function () {
-    $("#tab-button1").on("click", () => {
-      $("#tab-button1").addClass("active-tab");
-      $("#tab-button2").removeClass("active-tab");
-      $(".sections").fadeIn("slow");
-      $(".section-specs").fadeIn("slow");
-    });
-    $("#tab-button2").on("click", () => {
-      $("#tab-button1").removeClass("active-tab");
-      $("#tab-button2").addClass("active-tab");
-      $(".sections").fadeOut("slow");
-      $(".section-specs").fadeOut("slow");
-    });
-  });
-</script>
+</body>

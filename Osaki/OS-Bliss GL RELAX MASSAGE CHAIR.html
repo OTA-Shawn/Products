@@ -182,12 +182,11 @@
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script
-  src="https://code.jquery.com/jquery-3.6.4.min.js"
-  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
-  crossorigin="anonymous"
-></script>
-<script src="https://cdn.tailwindcss.com"></script>
+<link
+  href="https://ota-shawn.github.io/Products/globalProductDescription.css"
+  rel="stylesheet"
+/>
+<link href="../globalProductDescription.css" rel="stylesheet" />
 
 <style>
   :root {
@@ -418,58 +417,41 @@
       gap: 10px;
     }
   }
-
-  .active-tab {
-    color: #191919;
-    border-bottom: 0.25em solid gray;
-  }
 </style>
 
 <body>
-  <div id="tab-buttons" class="mx-auto my-4 max-w-6xl">
-    <button
-      id="tab-button1"
-      class="active-tab inline-block px-1 py-2 text-center text-sm font-semibold text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"
-    >
-      Description
-    </button>
-    <button
-      id="tab-button2"
-      class="t inline-block px-1 py-2 text-center text-sm font-semibold text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"
-    >
-      Reviews
-    </button>
-  </div>
   <div class="sections">
     <div id="youtube-link"></div>
-    <div class="section !mb-10 !flex-col !bg-white md:!mb-20">
-      <img src="" alt="" class="!w-full" />
-      <div class="px-10 pb-5 pt-10 text-center text-xl md:text-2xl lg:text-3xl">
+    <div class="section !tw-mb-10 !tw-flex-col !tw-bg-white md:!tw-mb-20">
+      <img src="" alt="" class="!tw-w-full" />
+      <div
+        class="tw-px-10 tw-pb-5 tw-pt-10 tw-text-center tw-text-xl md:tw-text-2xl lg:tw-text-3xl"
+      >
         Introducing the Bliss Massage Chair, your ultimate source of relaxation
         and rejuvenation. Designed with state-of-the-art technology and
         ergonomic craftsmanship, the Bliss combines luxurious comfort with
         therapeutic benefits, creating a truly blissful experience.
       </div>
-      <div class="flex justify-center gap-10">
+      <div class="tw-flex tw-justify-center tw-gap-10">
         <!-- <div class="circle">
           <div class="bg-[#B7AD9F]"></div>
           <div>Taupe</div>
         </div> -->
         <div class="circle">
-          <div class="bg-[#352723]"></div>
+          <div class="tw-bg-[#352723]"></div>
           <div>Brown</div>
         </div>
         <div class="circle">
-          <div class="bg-[#1d1d1d]"></div>
+          <div class="tw-bg-[#1d1d1d]"></div>
           <div>Black</div>
         </div>
       </div>
     </div>
     <div
-      class="section relative !flex-col !bg-[var(--section-bg-color)] md:!flex-row-reverse md:!bg-white"
+      class="section tw-relative !tw-flex-col !tw-tw-bg-[var(--section-bg-color)] md:!tw-flex-row-reverse md:!tw-bg-white"
     >
-      <img src="" alt="" class="self-end md:self-auto" />
-      <div class="section-content !w-full">
+      <img src="" alt="" class="tw-self-end md:tw-self-auto" />
+      <div class="section-content !tw-w-full">
         <div class="section-header">Solid Luxurious Material</div>
         <div class="section-description">
           Bliss's Solid Luxurious Material plays a pivotal role in providing
@@ -477,7 +459,9 @@
           design contribute to making Bliss products truly exceptional,
           elevating interior spaces and lifestyle in an elegant manner.
         </div>
-        <div class="absolute top-10 flex !w-1/2 gap-2 md:static md:!w-full">
+        <div
+          class="tw-absolute tw-top-10 tw-flex tw-gap-2 md:tw-static !tw-w-1/2 md:!tw-w-full"
+        >
           <div class="">
             <img src="" alt="" class="" />
             <div>Black Leather</div>
@@ -489,9 +473,9 @@
         </div>
       </div>
     </div>
-    <div class="section !flex-col md:!flex-row">
-      <img src="" alt="" class="!w-2/5" />
-      <div class="section-content !w-full">
+    <div class="section !tw-flex-col md:!tw-flex-row">
+      <img src="" alt="" class="!tw-w-2/5" />
+      <div class="section-content !tw-w-full">
         <div class="section-header">Shoulder Position Adjustment</div>
         <div class="section-description">
           The Bliss allows the rollers to move not only up and down, but also
@@ -502,9 +486,9 @@
         </div>
       </div>
     </div>
-    <div class="section !flex-col md:!flex-row-reverse">
-      <img src="" alt="" class="!w-3/5" />
-      <div class="section-content !w-full">
+    <div class="section !tw-flex-col md:!tw-flex-row-reverse">
+      <img src="" alt="" class="!tw-w-3/5" />
+      <div class="section-content !tw-w-full">
         <div class="section-header">Convenient Remote Controller</div>
         <div class="section-description">
           The Bliss includes a remote controller for easy navigation and
@@ -512,9 +496,9 @@
         </div>
       </div>
     </div>
-    <div class="section !flex-col md:!flex-row">
-      <img src="" alt="" class="!w-2/5" />
-      <div class="section-content !w-full">
+    <div class="section !tw-flex-col md:!tw-flex-row">
+      <img src="" alt="" class="!tw-w-2/5" />
+      <div class="section-content !tw-w-full">
         <div class="section-header">SL-track System</div>
         <div class="section-description">
           The SL-Track is made up of <strong>Laser-Crafted Steel</strong>. The
@@ -523,9 +507,9 @@
         </div>
       </div>
     </div>
-    <div class="section !flex-row-reverse">
+    <div class="section !tw-flex-row-reverse">
       <img src="" alt="" class="" />
-      <div class="section-content !w-full">
+      <div class="section-content !tw-w-full">
         <div class="section-header">Air Compression Hip Massage</div>
         <div class="section-description">
           The Bliss incorporates <strong>2 air cells</strong> in the hip area to
@@ -534,11 +518,11 @@
         </div>
       </div>
     </div>
-    <div class="section !flex-col md:!flex-row">
+    <div class="section !tw-flex-col md:!tw-flex-row">
       <img src="" alt="" class="" />
-      <div class="section-content !w-full">
+      <div class="section-content !tw-w-full">
         <div class="section-header">Easy Reclining Position</div>
-        <div class="section-description !text-[#808084]">
+        <div class="section-description !tw-tw-text-[#808084]">
           The Bliss massage chair allows you to recline back to about a
           <strong> 60 degree angle.</strong> By turning the knob under the
           chair, you are able to adjust the tension to bring the chair back up
@@ -549,7 +533,7 @@
 
     <div class="section">
       <img src="" alt="" class="" />
-      <div class="section-content !w-full">
+      <div class="section-content !tw-w-full">
         <div class="section-header">Lumbar Heat Therapy</div>
         <div class="section-description">
           The <strong>carbon coil</strong> in the Bliss will effectively warm
@@ -559,140 +543,162 @@
     </div>
 
     <div
-      class="mb-[22px] bg-[var(--section-bg-color)] p-6 md:mb-[35px] md:p-10 lg:mb-[50px]"
+      class="tw-p-6 md:tw-p-10 tw-bg-[var(--section-bg-color)] mb-[22px] md:mb-[35px] lg:mb-[50px]"
     >
-      <div class="section-header p-4 text-center md:p-10">
+      <div class="section-header tw-p-4 tw-text-center md:tw-p-10">
         5 Auto Massage Modes
       </div>
       <div
-        class="m-auto grid grid-cols-2 gap-10 bg-[var(--section-background-color)]"
+        class="tw-m-auto tw-grid tw-grid-cols-2 tw-gap-10 tw-bg-[var(--section-background-color)]"
       >
-        <div class="m-auto flex w-full items-center gap-2 md:w-2/3">
-          <img src="" alt="" class="!w-12 md:!w-24" />
-          <div class="text-[var(--section-grid-color)]">1. Comfort</div>
+        <div
+          class="tw-m-auto tw-flex tw-w-full tw-items-center tw-gap-2 md:tw-w-2/3"
+        >
+          <img src="" alt="" class="!tw-w-12 md:!tw-w-24" />
+          <div class="tw-text-[var(--section-grid-color)]">1. Comfort</div>
         </div>
-        <div class="m-auto flex w-full items-center gap-2 md:w-2/3">
-          <img src="" alt="" class="!w-12 md:!w-24" />
-          <div class="text-[var(--section-grid-color)]">4. Back & Waist</div>
+        <div
+          class="tw-m-auto tw-flex tw-w-full tw-items-center tw-gap-2 md:tw-w-2/3"
+        >
+          <img src="" alt="" class="!tw-w-12 md:!tw-w-24" />
+          <div class="tw-text-[var(--section-grid-color)]">4. Back & Waist</div>
         </div>
-        <div class="m-auto flex w-full items-center gap-2 md:w-2/3">
-          <img src="" alt="" class="!w-12 md:!w-24" />
-          <div class="text-[var(--section-grid-color)]">2. Relax</div>
+        <div
+          class="tw-m-auto tw-flex tw-w-full tw-items-center tw-gap-2 md:tw-w-2/3"
+        >
+          <img src="" alt="" class="!tw-w-12 md:!tw-w-24" />
+          <div class="tw-text-[var(--section-grid-color)]">2. Relax</div>
         </div>
-        <div class="m-auto flex w-full items-center gap-2 md:w-2/3">
-          <img src="" alt="" class="!w-12 md:!w-24" />
-          <div class="text-[var(--section-grid-color)]">
+        <div
+          class="tw-m-auto tw-flex tw-w-full tw-items-center tw-gap-2 md:tw-w-2/3"
+        >
+          <img src="" alt="" class="!tw-w-12 md:!tw-w-24" />
+          <div class="tw-text-[var(--section-grid-color)]">
             5. Full Body Massage
           </div>
         </div>
-        <div class="m-auto flex w-full items-center gap-2 md:w-2/3">
-          <img src="" alt="" class="!w-12 md:!w-24" />
-          <div class="text-[var(--section-grid-color)]">3. Shoulder & Neck</div>
+        <div
+          class="tw-m-auto tw-flex tw-w-full tw-items-center tw-gap-2 md:tw-w-2/3"
+        >
+          <img src="" alt="" class="!tw-w-12 md:!tw-w-24" />
+          <div class="tw-text-[var(--section-grid-color)]">
+            3. Shoulder & Neck
+          </div>
         </div>
       </div>
     </div>
 
     <div
-      class="mb-[22px] bg-[var(--section-bg-color)] p-6 md:mb-[35px] md:p-10 lg:mb-[50px]"
+      class="tw-p-6 md:tw-p-10 tw-bg-[var(--section-bg-color)] mb-[22px] md:mb-[35px] lg:mb-[50px]"
     >
-      <div class="section-header p-4 text-center md:p-10">
+      <div class="section-header tw-p-4 tw-text-center md:tw-p-10">
         5 Manual Massage Techniques
       </div>
       <div
-        class="m-auto grid grid-cols-2 gap-10 bg-[var(--section-background-color)]"
+        class="tw-m-auto tw-grid tw-grid-cols-2 tw-gap-10 tw-bg-[var(--section-background-color)]"
       >
-        <div class="m-auto flex w-full items-center gap-4 md:w-2/3">
-          <img src="" alt="" class="!w-12 md:!w-24" />
-          <div class="flex flex-col gap-1">
-            <div class="flex gap-2">
+        <div
+          class="tw-m-auto tw-flex tw-w-full tw-items-center tw-gap-4 md:tw-w-2/3"
+        >
+          <img src="" alt="" class="!tw-w-12 md:!tw-w-24" />
+          <div class="tw-flex tw-flex-col tw-gap-1">
+            <div class="tw-flex tw-gap-2">
               <div
-                class="h-4 w-4 rounded-full border border-[var(--section-grid-color)] bg-[var(--section-grid-color)]"
+                class="tw-h-4 tw-w-4 tw-rounded-full tw-border tw-border-[var(--section-grid-color)] tw-bg-[var(--section-grid-color)]"
               ></div>
               <div
-                class="h-4 w-4 rounded-full border border-[var(--section-grid-color)]"
+                class="tw-h-4 tw-w-4 tw-rounded-full tw-border tw-border-[var(--section-grid-color)]"
               ></div>
               <div
-                class="h-4 w-4 rounded-full border border-[var(--section-grid-color)]"
+                class="tw-h-4 tw-w-4 tw-rounded-full tw-border tw-border-[var(--section-grid-color)]"
               ></div>
             </div>
-            <div class="text-[var(--section-grid-color)]">Knead</div>
+            <div class="tw-text-[var(--section-grid-color)]">Knead</div>
           </div>
         </div>
-        <div class="m-auto flex w-full items-center gap-4 md:w-2/3">
-          <img src="" alt="" class="!w-12 md:!w-24" />
-          <div class="flex flex-col gap-1">
-            <div class="flex gap-2">
+        <div
+          class="tw-m-auto tw-flex tw-w-full tw-items-center tw-gap-4 md:tw-w-2/3"
+        >
+          <img src="" alt="" class="!tw-w-12 md:!tw-w-24" />
+          <div class="tw-flex tw-flex-col tw-gap-1">
+            <div class="tw-flex tw-gap-2">
               <div
-                class="h-4 w-4 rounded-full border border-[var(--section-grid-color)] bg-[var(--section-grid-color)]"
+                class="tw-h-4 tw-w-4 tw-rounded-full tw-border tw-border-[var(--section-grid-color)] tw-bg-[var(--section-grid-color)]"
               ></div>
               <div
-                class="h-4 w-4 rounded-full border border-[var(--section-grid-color)] bg-[var(--section-grid-color)]"
+                class="tw-h-4 tw-w-4 tw-rounded-full tw-border tw-border-[var(--section-grid-color)] tw-bg-[var(--section-grid-color)]"
               ></div>
 
               <div
-                class="h-4 w-4 rounded-full border border-[var(--section-grid-color)]"
+                class="tw-h-4 tw-w-4 tw-rounded-full tw-border tw-border-[var(--section-grid-color)]"
               ></div>
             </div>
-            <div class="text-[var(--section-grid-color)]">Shiatsu</div>
+            <div class="tw-text-[var(--section-grid-color)]">Shiatsu</div>
           </div>
         </div>
-        <div class="m-auto flex w-full items-center gap-4 md:w-2/3">
-          <img src="" alt="" class="!w-12 md:!w-24" />
-          <div class="flex flex-col gap-1">
-            <div class="flex gap-2">
+        <div
+          class="tw-m-auto tw-flex tw-w-full tw-items-center tw-gap-4 md:tw-w-2/3"
+        >
+          <img src="" alt="" class="!tw-w-12 md:!tw-w-24" />
+          <div class="tw-flex tw-flex-col tw-gap-1">
+            <div class="tw-flex tw-gap-2">
               <div
-                class="h-4 w-4 rounded-full border border-[var(--section-grid-color)]"
+                class="tw-h-4 tw-w-4 tw-rounded-full tw-border tw-border-[var(--section-grid-color)]"
               ></div>
               <div
-                class="h-4 w-4 rounded-full border border-[var(--section-grid-color)] bg-[var(--section-grid-color)]"
+                class="tw-h-4 tw-w-4 tw-rounded-full tw-border tw-border-[var(--section-grid-color)] tw-bg-[var(--section-grid-color)]"
               ></div>
               <div
-                class="h-4 w-4 rounded-full border border-[var(--section-grid-color)]"
+                class="tw-h-4 tw-w-4 tw-rounded-full tw-border tw-border-[var(--section-grid-color)]"
               ></div>
             </div>
-            <div class="text-[var(--section-grid-color)]">Tapping</div>
+            <div class="tw-text-[var(--section-grid-color)]">Tapping</div>
           </div>
         </div>
-        <div class="m-auto flex w-full items-center gap-4 md:w-2/3">
-          <img src="" alt="" class="!w-12 md:!w-24" />
-          <div class="flex flex-col gap-1">
-            <div class="flex gap-2">
+        <div
+          class="tw-m-auto tw-flex tw-w-full tw-items-center tw-gap-4 md:tw-w-2/3"
+        >
+          <img src="" alt="" class="!tw-w-12 md:!tw-w-24" />
+          <div class="tw-flex tw-flex-col tw-gap-1">
+            <div class="tw-flex tw-gap-2">
               <div
-                class="h-4 w-4 rounded-full border border-[var(--section-grid-color)]"
+                class="tw-h-4 tw-w-4 tw-rounded-full tw-border tw-border-[var(--section-grid-color)]"
               ></div>
               <div
-                class="h-4 w-4 rounded-full border border-[var(--section-grid-color)] bg-[var(--section-grid-color)]"
+                class="tw-h-4 tw-w-4 tw-rounded-full tw-border tw-border-[var(--section-grid-color)] tw-bg-[var(--section-grid-color)]"
               ></div>
               <div
-                class="h-4 w-4 rounded-full border border-[var(--section-grid-color)] bg-[var(--section-grid-color)]"
+                class="tw-h-4 tw-w-4 tw-rounded-full tw-border tw-border-[var(--section-grid-color)] tw-bg-[var(--section-grid-color)]"
               ></div>
             </div>
-            <div class="text-[var(--section-grid-color)]">Knock</div>
+            <div class="tw-text-[var(--section-grid-color)]">Knock</div>
           </div>
         </div>
-        <div class="m-auto flex w-full items-center gap-4 md:w-2/3">
-          <img src="" alt="" class="!w-12 md:!w-24" />
-          <div class="flex flex-col gap-1">
-            <div class="flex gap-2">
+        <div
+          class="tw-m-auto tw-flex tw-w-full tw-items-center tw-gap-4 md:tw-w-2/3"
+        >
+          <img src="" alt="" class="!tw-w-12 md:!tw-w-24" />
+          <div class="tw-flex tw-flex-col tw-gap-1">
+            <div class="tw-flex tw-gap-2">
               <div
-                class="h-4 w-4 rounded-full border border-[var(--section-grid-color)]"
+                class="tw-h-4 tw-w-4 tw-rounded-full tw-border tw-border-[var(--section-grid-color)]"
               ></div>
               <div
-                class="h-4 w-4 rounded-full border border-[var(--section-grid-color)]"
+                class="tw-h-4 tw-w-4 tw-rounded-full tw-border tw-border-[var(--section-grid-color)]"
               ></div>
               <div
-                class="h-4 w-4 rounded-full border border-[var(--section-grid-color)] bg-[var(--section-grid-color)]"
+                class="tw-h-4 tw-w-4 tw-rounded-full tw-border tw-border-[var(--section-grid-color)] tw-bg-[var(--section-grid-color)]"
               ></div>
             </div>
-            <div class="text-[var(--section-grid-color)]">Knead Pat</div>
+            <div class="tw-text-[var(--section-grid-color)]">Knead Pat</div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="section !flex-col md:!flex-row-reverse">
-      <img src="" alt="" class="!w-2/5" />
-      <div class="section-content !w-full">
+    <div class="section !tw-flex-col md:!tw-flex-row-reverse">
+      <img src="" alt="" class="!tw-w-2/5" />
+      <div class="section-content !tw-w-full">
         <div class="section-header">Adjustable Ottoman Height</div>
         <div class="section-description">
           The ottoman can be easily lift up to <strong>7 inches</strong> by
@@ -701,17 +707,17 @@
       </div>
     </div>
     <div class="section">
-      <img src="" alt="" class="!w-2/5" />
-      <div class="section-content !w-full">
+      <img src="" alt="" class="!tw-w-2/5" />
+      <div class="section-content !tw-w-full">
         <div class="section-header">360° Swivel</div>
         <div class="section-description">
           The Bliss gives a full 360° swivel, allowing for easy rotation.
         </div>
       </div>
     </div>
-    <div class="section !flex-col md:!flex-row-reverse">
+    <div class="section !tw-flex-col md:!tw-flex-row-reverse">
       <img src="" alt="" class="" />
-      <div class="section-content !w-full">
+      <div class="section-content !tw-w-full">
         <div class="section-header">Removable Headrest</div>
         <div class="section-description">
           The Bliss has a removable headrest pillow that can be flipped back to
@@ -719,7 +725,7 @@
         </div>
       </div>
     </div>
-    <div class="section !flex-row-reverse">
+    <div class="section !tw-flex-row-reverse">
       <img src="" alt="" class="" />
       <div class="section-content">
         <div class="section-description">
@@ -728,20 +734,24 @@
         </div>
       </div>
     </div>
-    <div class="grid grid-cols-2 gap-[22px] md:gap-[35px] lg:gap-[50px]">
-      <div class="flex flex-col-reverse bg-[var(--section-bg-color)]">
+    <div
+      class="tw-grid tw-grid-cols-2 tw-gap-[22px] md:gap-[35px] lg:gap-[50px]"
+    >
+      <div class="tw-flex tw-flex-col-reverse tw-bg-[var(--section-bg-color)]">
         <img src="" alt="" />
-        <div class="flex items-center gap-2 p-4 md:p-6">
-          <img src="" alt="" class="w-6 md:w-10" />
+        <div class="tw-flex tw-items-center tw-gap-2 tw-p-4 md:tw-p-6">
+          <img src="" alt="" class="tw-w-6 md:tw-w-10" />
           <div class="section-description">
             Bluetooth Surround <br />
             Sound Speakers
           </div>
         </div>
       </div>
-      <div class="flex flex-col justify-between bg-[var(--section-bg-color)]">
-        <div class="p-4 md:p-6">
-          <div class="section-description font-semibold">
+      <div
+        class="tw-flex tw-flex-col tw-justify-between tw-bg-[var(--section-bg-color)]"
+      >
+        <div class="tw-p-4 md:tw-p-6">
+          <div class="section-description tw-font-semibold">
             USB Charging Ports
           </div>
           <div class="section-description">for USB Type C and Type A</div>
@@ -751,131 +761,143 @@
     </div>
 
     <div class="section-dimensions">
-      <div class="mt-40 text-center text-3xl lg:text-5xl">Dimensions</div>
-      <div class="flex flex-col justify-center gap-5 md:flex-row md:gap-10">
-        <img src="" alt="" class="min-w-0" />
-        <img src="" alt="" class="min-w-0" />
+      <div class="tw-mt-40 tw-text-center tw-text-3xl lg:tw-text-5xl">
+        Dimensions
+      </div>
+      <div
+        class="tw-flex tw-flex-col tw-justify-center tw-gap-5 md:tw-flex-row md:tw-gap-10"
+      >
+        <img src="" alt="" class="tw-min-w-0" />
+        <img src="" alt="" class="tw-min-w-0" />
       </div>
     </div>
+    <section>
+      <div
+        class="tw-p-10 tw-text-3xl md:tw-text-4xl lg:tw-text-5xl tw-text-center tw-font-bold"
+      >
+        Specification
+      </div>
+      <div class="tw-text-xl tw-font-normal">
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-font-bold">Product Name</div>
+          <div>OS-Bliss GL RELAX MASSAGE CHAIR</div>
+        </div>
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-font-bold">User Manual</div>
+          <a
+            class="!tw-text-red-500 !tw-no-underline"
+            href="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/OS-Bliss_GL_Manual.pdf?v=1699483509"
+            target="_blank"
+            >Download</a
+          >
+        </div>
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-font-bold">Power Supply</div>
+          <div>110-120V~</div>
+        </div>
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-font-bold">Rate Frequency</div>
+          <div>50/60 Hz</div>
+        </div>
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-font-bold">Auto Timer</div>
+          <div>20 minutes</div>
+        </div>
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            <div>Dimensions</div>
+            <div>(W x L x H)</div>
+          </div>
+          <div class="tw-w-full tw-grid-cols-2 tw-grid tw-gap-2">
+            <div>
+              <div class="tw-font-bold">Upright</div>
+              <div>26.0" x 38.5" x 42.0"</div>
+            </div>
+            <div>
+              <div class="tw-font-bold">Reclined</div>
+              <div>26.0" x 47.0" x 36.5"</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            <div>Width</div>
+          </div>
+          <div class="tw-w-full tw-grid-cols-2 tw-grid tw-gap-2">
+            <!-- <div>
+              <div class="tw-font-bold">Shoulder</div>
+              <div>19.5"</div>
+            </div> -->
+            <div>
+              <div class="tw-font-bold">Seat</div>
+              <div>13.0"</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            <div>Minimum Doorway Size</div>
+          </div>
+          <div>26"</div>
+        </div>
+
+        <!-- <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            <div>Weight</div>
+          </div>
+          <div class="tw-w-full tw-grid-cols-2 tw-grid tw-gap-2">
+            <div>
+              <div class="tw-font-bold">Net</div>
+              <div>165 lbs</div>
+            </div>
+            <div>
+              <div class="tw-font-bold">Gross</div>
+              <div>198 lbs</div>
+            </div>
+          </div>
+        </div> -->
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-font-bold">
+            <div>Maximum User Weight</div>
+          </div>
+          <div>250 lbs</div>
+        </div>
+      </div>
+    </section>
   </div>
-  <section class="section-specs section-pad-bottom">
-    <div class="table-tap">
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Product Name</div>
-          <div class="specs-column">OS-Bliss GL RELAX MASSAGE CHAIR</div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">User Manual</div>
-          <div class="specs-column">
-            <a
-              href="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/OS-Bliss_GL_Manual.pdf?v=1699483509"
-              style="color: #ff4800"
-              target="_blank"
-            >
-              Download
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Power Supply</div>
-          <div class="specs-column">AC 110 - 120V</div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Rate Frequency</div>
-          <div class="specs-column">60 Hz</div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Rate Power Consumption</div>
-          <div class="specs-column">280W</div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Rate Time</div>
-          <div class="specs-column">20 minutes</div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">
-            Dimensions
-            <br />
-            (W x L x H)
-          </div>
-          <div class="specs-column">
-            <b> Upright </b>
-            <br />
-            26.0" x 38.5" x 42.0"
-          </div>
-          <div class="specs-column">
-            <b> Reclined </b>
-            <br />
-            26.0" x 47.0" x 36.5"
-          </div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Width</div>
-          <div class="specs-column">
-            <b> Seat </b>
-            <br />
-            13.0"
-          </div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Minimum Doorway Size</div>
-          <div class="specs-column">26"</div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Maximum User Weight</div>
-          <div class="specs-column">250 lbs</div>
-        </div>
-      </div>
-    </div>
-  </section>
 </body>
 <script>
-  $(function () {
-    $.each($(".sections img"), (i, img) => {
-      $(img).attr("src", imgs[i].img_src)
-      $(img).attr("alt", imgs[i].img_name)
-    })
-
-    if (youtube_link != "") {
-      var youtube_id = youtube_link.split("watch?v=")[1].split("&")[0]
-      var src =
-        "https://www.youtube.com/embed/" + youtube_id + "?autoplay=1&mute=1"
-      var embed_html =
-        '<iframe class="w-full aspect-video mb-20" src=' +
-        src +
-        ' title="YouTube video player" frameborder="0" allowfullscreen></iframe>'
-      $("#youtube-link").append(embed_html)
-    }
-    $("#tab-button1").on("click", () => {
-      $("#tab-button1").addClass("active-tab")
-      $("#tab-button2").removeClass("active-tab")
-      $(".sections").fadeIn("slow")
-      $(".section-specs").fadeIn("slow")
-    })
-    $("#tab-button2").on("click", () => {
-      $("#tab-button1").removeClass("active-tab")
-      $("#tab-button2").addClass("active-tab")
-      $(".sections").fadeOut("slow")
-      $(".section-specs").fadeOut("slow")
-    })
+  document.querySelectorAll(".sections img").forEach((img, i) => {
+    img.src = imgs[i].img_src
   })
+
+  const getYoutubeSrc = (src) => {
+    const regex =
+      /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/gi
+    const id = src.match(regex)[0]
+    const embed = id.replace("watch?v=", "embed/")
+    const dst = "https://www." + embed + "?mute=1&autoplay=1"
+    return dst
+  }
+  document.getElementById("youtube-link").src = getYoutubeSrc(youtube_link)
 </script>

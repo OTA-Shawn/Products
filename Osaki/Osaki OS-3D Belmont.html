@@ -48,1068 +48,742 @@
   </li>
  </ul>
  -->
-<!-- more -->
-<style>
-  .theme-color--highlight {
-    color: #2d59f1 !important;
-    font-weight: 600 !important;
-  }
-  .theme-color--background {
-    background-color: #161616 !important;
-  }
-  .theme-font--color {
-    color: #a1a1a1 !important;
-  }
-  .main {
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-    color: #1d1d1f;
-  }
-  .typography-headline-standalone {
-    font-size: 90px !important;
-    line-height: 1.04;
-    font-weight: 600;
-    letter-spacing: -0.035em;
-    margin-bottom: 0.4em;
-  }
-  .section-content {
-    margin-left: auto;
-    margin-right: auto;
-    width: 980px;
-  }
-  .intro-copy {
-    font-size: 32px !important;
-    line-height: 1.2 !important;
-    font-weight: 600 !important;
-    letter-spacing: 0.004em !important;
-    margin-top: 0 !important;
-    margin-bottom: 2em !important;
-  }
-  .list-nobullet {
-    margin-left: 0;
-    list-style-type: none !important;
-    padding-left: 0;
-  }
-  .icon-copy {
-    font-size: 32px;
-    font-weight: 600;
-    letter-spacing: 0.011em;
-    padding-left: 0.3em;
-    vertical-align: text-bottom;
-  }
-  .icon-color-taupe {
-    height: 35px;
-    width: 35px;
-    background-color: #bfb7a9;
-    border-radius: 50%;
-    display: inline-block;
-  }
-  .icon-color-brown {
-    height: 35px;
-    width: 35px;
-    background-color: #3a2521;
-    border-radius: 50%;
-    display: inline-block;
-  }
-  .icon-color-black {
-    height: 35px;
-    width: 35px;
-    background-color: #1d1d1f;
-    border-radius: 50%;
-    display: inline-block;
-  }
-  .main-video {
-    max-width: 700px;
-  }
-  .typography-section-headline {
-    font-size: 56px !important;
-    font-weight: 600;
-    line-height: 1.07;
-    letter-spacing: -0.005em;
-  }
-  .typography-section-copy {
-    font-size: 24px !important;
-    font-weight: 600;
-    line-height: 1.3;
-    letter-spacing: 0.002em;
-    color: #5c5c5c;
-  }
-  .grid-module,
-  .grid-item {
-    background-color: #f2f4f5;
-  }
-  .theme-color--background .grid-item {
-    background-color: #1e1e1e;
-    height: 100%;
-  }
-  .typography-grid-headline {
-    font-size: 48px !important;
-    line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: -0.005em;
-  }
-  .typography-grid-copy {
-    font-size: 24px !important;
-    font-weight: 600;
-    line-height: 1.3;
-    letter-spacing: 0.009em;
-    color: #4e4e4e;
-  }
-  .aircell-list li {
-    position: absolute;
-    text-align: right;
-    width: 100%;
-    left: -2px;
-  }
-  .aircell-list li:first-child {
-    top: 97px;
-  }
-  .aircell-list li:nth-child(2) {
-    top: 214px;
-  }
-  .aircell-list li:nth-child(3) {
-    top: 379px;
-  }
-  .aircell-list li:nth-child(4) {
-    top: 521px;
-  }
-  .remote-controller-list {
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 2rem;
-    font-size: 18px !important;
-  }
-  .remote-controller-list div {
-    font-size: 30px !important;
-    margin-right: 1.5rem;
-  }
-  .remote-controller-list p {
-    font-size: 16px !important;
-    line-height: 2rem;
-  }
-  .shortcut-list {
-    font-size: 22px !important;
-    letter-spacing: 0.009em;
-    margin-top: 0.75rem;
-    padding: 0 !important;
-  }
-  .shortcut-list li {
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 1rem;
-    font-size: 18px !important;
-  }
-  .grid-module {
-    display: flex;
-    padding: 40px;
-  }
-  .typography-module-title {
-    font-size: 20px;
-    margin: 1rem 0 0 0;
-  }
-  @media only screen and (max-width: 1024px) {
-    .main-video {
-      max-width: 580px;
-    }
-    .section-content {
-      width: 692px;
-    }
-    .typography-headline-standalone {
-      font-size: 80px !important;
-    }
-    .intro-copy {
-      font-size: 28px !important;
-    }
-    .icon-copy {
-      font-size: 26px !important;
-    }
-    .icon-color-black,
-    .icon-color-brown,
-    .icon-color-taupe {
-      width: 28px;
-      height: 28px;
-    }
-    .typography-section-headline {
-      font-size: 52px !important;
-    }
-    .typography-section-copy {
-      font-size: 22px !important;
-    }
-    .typography-grid-headline {
-      font-size: 32px !important;
-    }
-    .typography-grid-copy {
-      font-size: 18px !important;
-    }
-    .aircell-list li {
-      font-size: 16px;
-    }
-    .aircell-list li:first-child {
-      top: 77px;
-    }
-    .aircell-list li:nth-child(2) {
-      top: 173px;
-    }
-    .aircell-list li:nth-child(3) {
-      top: 309px;
-    }
-    .aircell-list li:nth-child(4) {
-      top: 425px;
-    }
-    .shortcut-list li {
-      font-size: 14px !important;
-    }
-  }
-  @media only screen and (max-width: 734px) {
-    .main-video {
-      max-width: 311px;
-    }
-    .grid {
-      grid-row-gap: 12px;
-      grid-column-gap: 12px;
-    }
-    .section-content {
-      width: 87.5%;
-      max-width: 400px;
-    }
-    .typography-headline-standalone {
-      font-size: 42px !important;
-    }
-    .intro-copy {
-      font-size: 20px !important;
-    }
-    .icon-copy {
-      font-size: 20px !important;
-      padding: 0;
-    }
-    .icon-color-black,
-    .icon-color-brown,
-    .icon-color-taupe {
-      width: 24px;
-      height: 24px;
-    }
-    .icon-zerogravity {
-      width: 65px !important;
-    }
-    .icon-spacesaving {
-      width: 60px !important;
-      margin-bottom: 12px;
-    }
-    .typography-section-headline {
-      font-size: 38px !important;
-    }
-    .typography-section-copy {
-      font-size: 18px !important;
-    }
-    .typography-grid-headline {
-      font-size: 34px !important;
-    }
-    .typography-grid-copy {
-      font-size: 17px !important;
-    }
-    .aircell-list li {
-      font-size: 14px !important;
-    }
-    .aircell-list li:first-child {
-      top: 64px;
-    }
-    .aircell-list li:nth-child(2) {
-      top: 145px;
-    }
-    .aircell-list li:nth-child(3) {
-      top: 260px;
-    }
-    .aircell-list li:nth-child(4) {
-      top: 358px;
-    }
-    .lighting-section-copy {
-      color: #fff;
-    }
-  }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  href="https://ota-shawn.github.io/Products/globalProductDescription.css"
+  rel="stylesheet"
+/>
+<link href="../globalProductDescription.css" rel="stylesheet" />
+<script>
+  const youtube_link =
+    "https://www.youtube.com/watch?v=y0iev_PTvUE&ab_channel=OfficialTitanOsakiMassageChannel"
+
+  const imgs = [
+    {
+      img_order: 0,
+      img_name: "Osaki Blue 4D Belmont",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/1.belmont-product_2x-100.jpg?v=1668104846",
+    },
+    {
+      img_order: 1,
+      img_name: "3D Massage Mechanism",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/2.Belmont_3D-MassageMechanism_2x-100.jpg?v=1668104846",
+    },
+    {
+      img_order: 2,
+      img_name: "SL-Track",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/3.Belmont_SL-Track_2x-100.jpg?v=1668181963",
+    },
+    {
+      img_order: 3,
+      img_name: "Zero Gravity and Space Saving",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/4.Belmont_Zergravity_2x-100.jpg?v=1668104846",
+    },
+    {
+      img_order: 4,
+      img_name: "Zero Gravity Icon",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/5.Belmont_Icon-Zerogravity_2x-100.jpg?v=1668104846",
+    },
+    {
+      img_order: 5,
+      img_name: "Space Saving Icon",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/6.Belmont_Icon-SpaceSaving_2x-100.jpg?v=1668104845",
+    },
+    {
+      img_order: 6,
+      img_name: "20 Cell Full Body Air Massage",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/Screenshot_2024-01-09_at_12.30.04_PM.png?v=1704825021",
+    },
+    {
+      img_order: 7,
+      img_name: "6 Heating Zones",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/8.Belmont_Heating_2x-100.jpg?v=1668104846",
+    },
+    {
+      img_order: 8,
+      img_name: "Remote Controller",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/9.Belmont_RemoteController_2x-100.jpg?v=1668104846",
+    },
+    {
+      img_order: 9,
+      img_name: "Extension Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/10.Belmont_Icon-Extension_2x-100.jpg?v=1668104845",
+    },
+    {
+      img_order: 10,
+      img_name: "Release Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/11.Belmont_Icon-Release_2x-100.jpg?v=1668104846",
+    },
+    {
+      img_order: 11,
+      img_name: "Yoga Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/12.Belmont_Icon-Yoga_2x-100.jpg?v=1668104846",
+    },
+    {
+      img_order: 12,
+      img_name: "Thai Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/13.Belmont_Icon-Thai_2x-100.jpg?v=1668104845",
+    },
+    {
+      img_order: 13,
+      img_name: "Chinese Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/14.Belmont_Icon-Chinese_2x-100.jpg?v=1668104845",
+    },
+    {
+      img_order: 14,
+      img_name: "Ancient Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/15.Belmont_Icon-Ancient_2x-100.jpg?v=1668104845",
+    },
+    {
+      img_order: 15,
+      img_name: "Boss Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/16.Belmont_Icon-Boss_2x-100.jpg?v=1668104845",
+    },
+    {
+      img_order: 16,
+      img_name: "Lady Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/17.Belmont_Icon-Lady_2x-100.jpg?v=1668104846",
+    },
+    {
+      img_order: 17,
+      img_name: "Senior Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/18.Belmont_Icon-Senior_2x-100.jpg?v=1668104845",
+    },
+    {
+      img_order: 18,
+      img_name: "Neck & Shoulder Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/19.Belmont_Icon-Neck-Shoulder_2x-100.jpg?v=1668104846",
+    },
+    {
+      img_order: 19,
+      img_name: "Waist & Buttock Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/20.Belmont_Icon-Waist-Buttock_2x-100.jpg?v=1668104846",
+    },
+    {
+      img_order: 20,
+      img_name: "Back & Spine Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/21.Belmont_Icon-Back-Spine_2x-100.jpg?v=1668104846",
+    },
+    {
+      img_order: 21,
+      img_name: "Kneading Massage Style",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/22.Belmont_Icon-Kneading_2x-100.jpg?v=1668104846",
+    },
+    {
+      img_order: 22,
+      img_name: "Tapping Massage Style",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/23.Belmont_Icon-Tapping_2x-100.jpg?v=1668104845",
+    },
+    {
+      img_order: 23,
+      img_name: "Knocking Massage Style",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/24.Belmont_Icon-Knocking_2x-100.jpg?v=1668104846",
+    },
+    {
+      img_order: 24,
+      img_name: "Shiatsu Massage Style",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/25.Belmont_Icon-Shiatsu_2x-100.jpg?v=1668104846",
+    },
+    {
+      img_order: 25,
+      img_name: "Sync Style",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/26.Belmont_Icon-Sync_2x-100.jpg?v=1668104845",
+    },
+    {
+      img_order: 26,
+      img_name: "3D Shiatsu Massage Style",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/27.Belmont_Icon-3D-Shiatsu_2x-100.jpg?v=1668104845",
+    },
+    {
+      img_order: 27,
+      img_name: "Roller Foot Massage",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/28.Belmont_FootRoller_2x-100.jpg?v=1668186906",
+    },
+    {
+      img_order: 28,
+      img_name: "Roller Foot Massage",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/29.Belmont_FootExtension_2x-100.jpg?v=1668104846",
+    },
+    {
+      img_order: 29,
+      img_name: "Shortcut Panel",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/30.Belmont_ShortcutPanel_2x-100.jpg?v=1668104846",
+    },
+    {
+      img_order: 30,
+      img_name: "Bluetooth Speaker",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/31.Belmont_BluetoothSpeaker_2x-100.jpg?v=1668104846",
+    },
+    {
+      img_order: 31,
+      img_name: "Remote control pocket",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/32.Belmont_RemoteHolder_2x-100.jpg?v=1668104846",
+    },
+    {
+      img_order: 32,
+      img_name: "Osaki Belmont Dimension Upright",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/33.Belmont_Dimension_Upright_2x-100.jpg?v=1668124875",
+    },
+    {
+      img_order: 33,
+      img_name: "Osaki Belmont Dimension Reclined",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/34.Belmont_Dimension_Reclined_2x-100.jpg?v=1668124875",
+    },
+  ]
+</script>
 <!-- Detail Info -->
-<div id="tab-buttons" class="max-w-6xl mx-auto my-4">
-  <button
-    id="tab-button1"
-    class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center dark:text-gray-400 dark:hover:text-gray-300 active-tab"
-  >
-    Description
-  </button>
-  <button
-    id="tab-button2"
-    class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center t dark:text-gray-400 dark:hover:text-gray-300"
-  >
-    Reviews
-  </button>
-</div>
-<main class="main belmont sections">
-  <iframe
-    style="width: 100%; aspect-ratio: 16/9; border: 0"
-    src="https://www.youtube.com/embed/y0iev_PTvUE?mute=1&amp;autoplay=1"
-  ></iframe>
+<body>
   <div
-    class="large-flex large-justify-content-space-between large-direction-column large-align-items-center large-position-relative"
+    class="sections tw-font-sans md:tw-w-[768px] lg:tw-w-[1024px] tw-flex tw-flex-col min-[480px]:tw-w-[480px] tw-m-auto tw-leading-normal"
   >
-    <div class="intensity-content intensity-wrapper">
-      <p class="intensity-headline">Intensity Level</p>
-      <div class="intensity-bar">
-        <span class="intensity-range typography-intensity range-3"> 7-10 </span>
-      </div>
-    </div>
-  </div>
-  <section
-    class="large-pad-top-7 large-pad-bottom-7 medium-pad-top-5 medium-pad-bottom-5"
-  >
-    <div
-      class="large-flex large-justify-content-space-between large-direction-column large-align-items-center large-text-align-center"
-    >
-      <h1 class="typography-headline-standalone">
-        Osaki 3D
-        <br />
+    <iframe
+      id="youtube-link"
+      src=""
+      frameborder="0"
+      class="tw-aspect-video tw-w-full tw-mb-10"
+    ></iframe>
+
+    <div class="tw-mb-20 tw-flex tw-flex-col tw-items-center">
+      <div class="tw-text-5xl tw-font-bold tw-text-center">
+        Osaki 3D <br />
         Belmont
-      </h1>
-      <div class="large-7 small-10">
-        <img
-          alt="Osaki Blue 4D Belmont"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/1.belmont-product_2x-100.jpg?v=1668104846"
-        />
       </div>
-      <div class="section-content">
-        <p class="intro-copy">
-          The Belmont includes a slew of luxury features, such as a remote
-          controller, 3D massage mechanism, and calming zero gravity reclining.
-        </p>
-        <ul
-          class="large-flex large-justify-content-center list-nobullet"
-          style="padding: 0 !important"
-        >
-          <li>
-            <span class="icon-color-taupe"> </span>
-            <span class="icon-copy"> Taupe </span>
-          </li>
-          <li class="large-pad-left-2 small-pad-left-1">
-            <span class="icon-color-brown"> </span>
-            <span class="icon-copy"> Brown </span>
-          </li>
-          <li class="large-pad-left-2 small-pad-left-1">
-            <span class="icon-color-black"> </span>
-            <span class="icon-copy"> Black </span>
-          </li>
-        </ul>
+      <img src="" alt="" />
+      <div
+        class="tw-text-center md:tw-text-justify tw-mb-8 tw-text-lg tw-font-bold tw-leading-snug"
+      >
+        The Belmont includes a slew of luxury features, such as a remote
+        controller, 3D massage mechanism, and calming zero gravity reclining.
+      </div>
+      <div class="tw-flex tw-justify-center tw-gap-8">
+        <div class="tw-flex tw-gap-4 tw-items-center">
+          <div
+            class="tw-w-8 tw-aspect-square tw-rounded-full tw-bg-[#bfb7a9]"
+          ></div>
+          Taupe
+        </div>
+        <div class="tw-flex tw-gap-4 tw-items-center">
+          <div
+            class="tw-w-8 tw-aspect-square tw-rounded-full tw-bg-[#3a2521]"
+          ></div>
+          Brown
+        </div>
+        <div class="tw-flex tw-gap-4 tw-items-center">
+          <div
+            class="tw-w-8 tw-aspect-square tw-rounded-full tw-bg-[#1d1d1d]"
+          ></div>
+          Black
+        </div>
       </div>
     </div>
-  </section>
-  <section
-    class="theme-color--background theme-font--color large-pad-bottom-7 small-pad-bottom-5"
-  >
-    <div
-      class="section-content large-pad-top-7 large-pad-bottom-7 small-pad-top-5 small-pad-bottom-5"
-    >
+
+    <div class="tw-bg-black tw-text-gray-400 tw-pb-0 md:tw-pb-6 tw-mb-10">
       <div
-        class="large-flex large-justify-content-space-between medium-direction-column"
+        class="tw-flex tw-flex-col-reverse md:tw-flex-row tw-items-center tw-bg-[#161616]"
       >
         <div
-          class="large-flex large-direction-column large-justify-content-center large-5 medium-10 small-12"
+          class="tw-flex-1 tw-basis-1/2 tw-p-4 md:tw-p-10 tw-flex tw-flex-col tw-gap-4"
         >
-          <h2
-            class="typography-section-headline large-offset-top-0 large-margin-bottom--2 small-margin-bottom--1 !text-zinc-500"
-          >
-            <span class="theme-color--highlight"> 3D Massage </span>
-            <br />
+          <div class="tw-text-4xl tw-text-white tw-font-bold">
+            <strong class="tw-text-blue-600 tw-block"> 3D Massage </strong>
             Mechanism
-          </h2>
-          <p
-            class="typography-section-copy medium-margin-bottom--4 small-margin-bottom--2"
-          >
+          </div>
+          <div>
             Experience a new dimension of luxury with Belmont’s
             three-dimensional massage rollers. When used in tandem with the
             chair’s SL-Track your body will finally know true relaxation.
-          </p>
+          </div>
         </div>
-        <div class="large-6 medium-8 small-12">
-          <img
-            alt="3D Massage Mechanism"
-            src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/2.Belmont_3D-MassageMechanism_2x-100.jpg?v=1668104846"
-          />
-        </div>
+        <img class="tw-flex-1 tw-basis-1/2 tw-min-w-0" src="" alt="" />
       </div>
-    </div>
-    <div class="section-content large-pad-bottom-7 small-pad-bottom-5">
-      <div
-        class="large-flex large-position-relative large-justify-content-space-between medium-direction-column"
-      >
+      <div class="tw-bg-[#161616] tw-flex tw-flex-col-reverse md:tw-flex-col">
+        <div class="tw-p-4 md:tw-p-10 !tw-pb-0">
+          Through the use of a
+          <strong class="tw-text-blue-600"
+            >scientifically-engineered SL-Track</strong
+          >, the massage rollers can extend from the base of the skull to the
+          very edge of your hamstrings.
+        </div>
+        <img src="" alt="" />
+      </div>
+      <div class="tw-flex tw-flex-col tw-mb-6">
+        <img src="" alt="" />
         <div
-          class="large-flex large-direction-column large-justify-content-center large-position-absolute medium-position-relative large-7 medium-10 small-12"
+          class="tw-bg-[#1e1e1e] tw-rounded-xl tw-m-4 tw-mx-4 md:tw-mx-10 tw-p-4 md:tw-p-10"
+          class="tw-flex tw-flex-col tw-gap-4 tw-items-center"
         >
-          <p class="typography-section-copy">
-            Through the use of a
-            <span class="theme-color--highlight">
-              scientifically-engineered SL-Track,
-            </span>
-            the massage rollers can extend from the base of the skull to the
-            very edge of your hamstrings.
-          </p>
-        </div>
-        <div class="large-12">
-          <img
-            alt="SL-Track"
-            src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/3.Belmont_SL-Track_2x-100.jpg?v=1668181963"
-          />
-        </div>
-      </div>
-    </div>
-    <div class="section-content">
-      <div
-        class="large-flex large-justify-content-space-between large-direction-column"
-      >
-        <div class="large-12">
-          <img
-            alt="Zero Gravity and Space Saving"
-            src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/4.Belmont_Zergravity_2x-100.jpg?v=1668104846"
-          />
-        </div>
-        <div class="grid">
-          <div class="large-grid-span-6 small-grid-span-12">
-            <div
-              class="grid-item large-flex large-direction-column large-border-radius--2"
-            >
-              <div
-                class="large-pad-top-3 large-pad-right-3 large-pad-bottom-4 large-pad-left-3 medium-pad-top-2 medium-pad-right-2 medium-pad-bottom-2 medium-pad-left-2"
-              >
-                <img
-                  alt="Zero Gravity Icon"
-                  class="icon-zerogravity"
-                  src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/5.Belmont_Icon-Zerogravity_2x-100.jpg?v=1668104846"
-                  style="width: 80px"
-                />
-                <h2
-                  class="typography-grid-headline large-margin-top--1 large-margin-bottom--1 medium-margin-bottom--1 small-margin-top--0 !text-zinc-500"
-                >
-                  <span class="theme-color--highlight"> Zero Gravity </span>
-                  <br />
-                  Reclining
-                </h2>
-                <p class="typography-grid-copy">
-                  Rest in a state of utter weightlessness with Belmont’s Zero
-                  Gravity Reclining. This
-                  <span class="theme-color--highlight"> two-stage </span>
-                  NASA-inspired technology perfectly positions your posture to
-                  literally ‘take that weight off your shoulders.’
-                </p>
-              </div>
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-flex tw-flex-col tw-gap-4">
+            <div class="tw-text-4xl tw-font-bold tw-text-white">
+              <strong class="tw-text-blue-600">Zero Gravity</strong> <br />
+              Reclining
+            </div>
+            <div>
+              Rest in a state of complete relaxation with Belmont’s Zero Gravity
+              Reclining. This
+              <strong class="tw-text-blue-600">two-stage</strong> NASA-inspired
+              technology effortlessly positions your posture to literally ‘take
+              the weight off your shoulders.’
             </div>
           </div>
-          <div class="large-grid-span-6 small-grid-span-12">
-            <div
-              class="grid-item large-flex large-direction-column large-border-radius--3 large-border-radius--2"
-            >
-              <div
-                class="large-pad-top-3 large-pad-right-3 large-pad-bottom-4 large-pad-left-3 medium-pad-top-2 medium-pad-right-2 medium-pad-bottom-2 medium-pad-left-2"
-              >
-                <img
-                  alt="Space Saving Icon"
-                  class="icon-spacesaving"
-                  src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/6.Belmont_Icon-SpaceSaving_2x-100.jpg?v=1668104845"
-                  style="width: 68px"
-                />
-                <h2
-                  class="typography-grid-headline large-margin-top--1 large-margin-bottom--1 medium-margin-bottom--1 small-margin-top--0 !text-zinc-500"
-                >
-                  <span class="theme-color--highlight"> Space Saving </span>
-                  <br />
-                  Technology
-                </h2>
-                <p class="typography-grid-copy">
-                  With Belmont’s Space Saving Technology, you can confidently
-                  place your chair
-                  <span class="theme-color--highlight"> up to 2 inches </span>
-                  and still achieve a fully realized recline.
-                </p>
-              </div>
+        </div>
+        <div
+          class="tw-bg-[#1e1e1e] tw-rounded-xl tw-m-4 tw-mx-4 md:tw-mx-10 tw-p-4 md:tw-p-10"
+          class="tw-flex tw-flex-col tw-gap-4 tw-items-center"
+        >
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-flex tw-flex-col tw-gap-4">
+            <div class="tw-text-4xl tw-font-bold tw-text-white">
+              <strong class="tw-text-blue-600">Space Saving</strong> <br />
+              Technology
+            </div>
+            <div>
+              With Belmont’s Space Saving Technology, you can position your
+              chair
+              <strong class="tw-text-blue-600">up to 3 inches</strong> from the
+              wall and still create a fully realized recline.
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <section class="large-pad-top-7 small-pad-top-5">
-    <div class="section-content">
+    <div class="tw-flex tw-flex-col tw-items-center tw-mb-10 md:tw-flex-row">
+      <img src="" alt="" class="tw-min-w-0 tw-flex-1 tw-basis-1/2" />
       <div
-        class="large-flex large-justify-content-space-between large-align-items-center medium-direction-column medium-align-items-left large-offset-bottom-3 medium-offset-bottom-5"
+        class="tw-basis-1/2 tw-flex tw-flex-col tw-gap-4 tw-p-4 md:tw-p-10 flex-1"
+      >
+        <div class="tw-text-4xl tw-font-bold">
+          <strong class="tw-text-blue-600">20 Cell</strong> <br />
+          Full Body <br />
+          Air Massage
+        </div>
+        <div class="tw-text-gray-400">
+          Belmont incorporates 20 air cells throughout the chair to provide a
+          precise air compression therapy for all your needs. Air massage can
+          also be adjusted in
+          <strong class="tw-text-blue-600">three sections</strong> and
+          <strong class="tw-text-blue-600">five intensity levels</strong>.
+        </div>
+      </div>
+    </div>
+    <div
+      class="tw-flex tw-flex-col md:tw-flex-row-reverse tw-items-center tw-mb-20"
+    >
+      <img src="" alt="" class="tw-min-w-0 tw-flex-1 tw-basis-1/2" />
+      <div
+        class="tw-basis-1/2 tw-flex tw-flex-col tw-gap-4 tw-p-4 md:tw-p-10 flex-1"
+      >
+        <div class="tw-text-4xl tw-font-bold">
+          <strong class="tw-text-red-500 tw-block">4 Area</strong> Heating
+        </div>
+        <div class="tw-text-gray-400">
+          Battle tension and stress across the spectrum with Belmont’s heat
+          therapy. Belmont includes targeted heat along the back and calves,
+          while having the ability to adjust its heat on three levels.
+        </div>
+      </div>
+    </div>
+    <div class="tw-flex tw-flex-col md:tw-flex-row tw-items-center tw-mb-20">
+      <img src="" alt="" class="tw-min-w-0 tw-flex-1 tw-basis-1/2" />
+      <div
+        class="tw-basis-1/2 tw-flex tw-flex-col tw-gap-4 tw-p-4 md:tw-p-10 flex-1"
+      >
+        <div class="tw-text-4xl tw-font-bold">
+          <strong class="tw-text-blue-600">Remote </strong> Controller
+        </div>
+        <div class="tw-text-gray-400">
+          Belmont allows you to adjust the massage to your preferences using the
+          remote controller. The massage chair provides
+          <strong class="tw-text-blue-600">12 auto massage modes</strong>
+          and
+          <strong class="tw-text-blue-600">6 manual massage styles.</strong>
+        </div>
+        <div class="tw-grid tw-grid-cols-2 tw-gap-4">
+          <div class="tw-flex tw-gap-4 tw-border-b tw-pb-4">
+            <div class="tw-text-3xl">12</div>
+            <div class="tw-text-gray-500">Full Body Auto Programs</div>
+          </div>
+          <div class="tw-flex tw-gap-4 tw-border-b tw-pb-4">
+            <div class="tw-text-3xl">03</div>
+            <div class="tw-text-gray-500">Adjustable Degrees of Width</div>
+          </div>
+          <div class="tw-flex tw-gap-4 tw-border-b tw-pb-4">
+            <div class="tw-text-3xl">06</div>
+            <div class="tw-text-gray-500">Manual Massage Techniques</div>
+          </div>
+          <div class="tw-flex tw-gap-4 tw-border-b tw-pb-4">
+            <div class="tw-text-3xl">06</div>
+            <div class="tw-text-gray-500">Speed Intensities</div>
+          </div>
+          <div class="tw-flex tw-gap-4 tw-border-b tw-pb-4">
+            <div class="tw-text-3xl">03</div>
+            <div class="tw-text-gray-500">Area of the Body</div>
+          </div>
+          <div class="tw-flex tw-gap-4 tw-border-b tw-pb-4">
+            <div class="tw-text-3xl">05</div>
+            <div class="tw-text-gray-500">3D Massage Force</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tw-mb-10">
+      <div class="tw-text-4xl tw-font-bold tw-mb-4 tw-pl-4">
+        12 Auto Massage Modes
+      </div>
+      <div
+        class="tw-grid tw-grid-cols-2 md:tw-grid-cols-4 tw-text-center tw-bg-[#f5f6f8] tw-p-4 md:tw-p-10 tw-gap-4 md:tw-gap-10 tw-text-gray-600"
+      >
+        <div class="tw-flex tw-flex-col tw-gap-4 tw-items-center">
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-font-bold tw-text-lg">Extension</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-gap-4 tw-items-center">
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-font-bold tw-text-lg">Release</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-gap-4 tw-items-center">
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-font-bold tw-text-lg">Yoga</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-gap-4 tw-items-center">
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-font-bold tw-text-lg">Thai</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-gap-4 tw-items-center">
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-font-bold tw-text-lg">Chinese</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-gap-4 tw-items-center">
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-font-bold tw-text-lg">Ancient</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-gap-4 tw-items-center">
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-font-bold tw-text-lg">Boss</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-gap-4 tw-items-center">
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-font-bold tw-text-lg">Lady</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-gap-4 tw-items-center">
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-font-bold tw-text-lg">Senior</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-gap-4 tw-items-center">
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-font-bold tw-text-lg">Neck & Shoulder</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-gap-4 tw-items-center">
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-font-bold tw-text-lg">Waist & Buttock</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-gap-4 tw-items-center">
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-font-bold tw-text-lg">Back & Spine</div>
+        </div>
+      </div>
+    </div>
+    <div class="tw-mb-10">
+      <div class="tw-text-4xl tw-font-bold tw-mb-4 tw-pl-4">
+        6 Manual Massage Styles
+      </div>
+      <div
+        class="tw-grid tw-grid-cols-2 md:tw-grid-cols-3 tw-text-center tw-bg-[#f5f6f8] tw-p-4 md:tw-p-10 tw-gap-4 md:tw-gap-10 tw-text-gray-600"
+      >
+        <div class="tw-flex tw-flex-col tw-gap-4 tw-items-center">
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-font-bold tw-text-lg">Kneading</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-gap-4 tw-items-center">
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-font-bold tw-text-lg">Tapping</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-gap-4 tw-items-center">
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-font-bold tw-text-lg">Knocking</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-gap-4 tw-items-center">
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-font-bold tw-text-lg">Shiatsu</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-gap-4 tw-items-center">
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-font-bold tw-text-lg">Sync</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-gap-4 tw-items-center">
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-font-bold tw-text-lg">3D Shiatsu</div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="tw-flex tw-flex-col md:tw-flex-row-reverse tw-items-center tw-bg-[#f2f4f5]"
+    >
+      <img src="" alt="" class="tw-min-w-0 tw-flex-1 tw-basis-1/2" />
+      <div
+        class="tw-basis-1/2 tw-flex tw-flex-col tw-gap-4 tw-p-4 md:tw-p-10 flex-1"
+      >
+        <div class="tw-text-4xl tw-font-bold">
+          Roller <br />
+          Foot Massage
+        </div>
+        <div class="tw-text-gray-400">
+          Belmont includes an all-important foot massage, with one roller
+          massaging the front of the foot.
+        </div>
+      </div>
+    </div>
+    <div
+      class="tw-flex tw-flex-col md:tw-flex-row tw-items-center tw-bg-[#f2f4f5]"
+    >
+      <img src="" alt="" class="tw-min-w-0 tw-flex-1 tw-basis-1/2" />
+      <div
+        class="tw-basis-1/2 tw-flex tw-flex-col tw-gap-4 tw-p-4 md:tw-p-10 flex-1"
+      >
+        <div class="tw-text-4xl tw-font-bold">Extendable Footrest</div>
+        <div class="tw-text-gray-400">
+          To compliment the refined nature of this chair, the legrest will
+          manually extend nearly 5 inches in order to find the optimal position
+          for users of any height.
+        </div>
+      </div>
+    </div>
+    <div
+      class="tw-flex tw-flex-col md:tw-flex-row-reverse md:tw-items-center tw-mb-4 md:tw-mb-10 tw-bg-[#f3f5f7]"
+    >
+      <img src="" alt="" class="tw-min-w-0 md:tw-basis-3/5 tw-flex-1" />
+      <div class="tw-flex-1 md:tw-basis-2/5 tw-p-4 md:tw-p-10">
+        <div class="tw-text-4xl tw-font-bold">
+          <strong class="tw-text-blue-600">Shortcut</strong> Panel
+        </div>
+        <ol class="tw-text-gray-600 tw-list-inside">
+          <li class="tw-border-b tw-mb-1 tw-border-gray-300">Toggle Power</li>
+          <li class="tw-border-b tw-mb-1 tw-border-gray-300">
+            Massage Techniques
+          </li>
+          <li class="tw-border-b tw-mb-1 tw-border-gray-300">Point</li>
+          <li class="tw-border-b tw-mb-1 tw-border-gray-300">Heating</li>
+          <li class="tw-border-b tw-mb-1 tw-border-gray-300">
+            Move Rollers Up
+          </li>
+          <li class="tw-border-b tw-mb-1 tw-border-gray-300">
+            Move Rollers Down
+          </li>
+          <li class="tw-border-b tw-mb-1 tw-border-gray-300">
+            Zero Gravity/Bluetooth
+          </li>
+          <li class="tw-border-b tw-mb-1 tw-border-gray-300">
+            USB Charging Port
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-4 md:tw-gap-10">
+      <div
+        class="tw-flex tw-flex-col tw-justify-end tw-bg-[#f2f4f5] tw-relative"
       >
         <div
-          class="large-flex large-direction-column large-justify-content-center large-5 medium-10 small-12 large-order-2 medium-order-1"
+          class="tw-absolute tw-top-0 tw-left-0 tw-p-4 tw-text-gray-600 tw-w-3/4"
         >
-          <h2 class="typography-section-headline large-margin-bottom--2">
-            <span class="theme-color--highlight"> 20 Cell </span>
-            <br />
-            Full Body
-            <br />
-            Air Massage
-          </h2>
-          <p class="typography-section-copy medium-margin-bottom--3">
-            Belmont incorporates 20 air cells throughout the chair to provide an
-            immaculate compression therapy. Air massage can also be adjusted in
-            <span class="theme-color--highlight"> three sections </span>
-            and
-            <span class="theme-color--highlight"> five intensities. </span>
-          </p>
+          Listen to your favorite music, podcasts, or calming sounds through
+          Belmont’s crisp, high-fidelity, surround sound bluetooth speakers.
         </div>
-        <div
-          class="large-position-relative large-6 medium-7 small-12 large-order-1 medium-order-2"
-        >
-          <img
-            alt="20 Cell Full Body Air Massage"
-            src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/7.Belmont_AirMassage_2x-100.jpg?v=1668104846"
-          />
-          <ul class="aircell-list list-nobullet">
-            <li>Shoulder</li>
-            <li>Armrest</li>
-            <li>Calf</li>
-            <li>Foot</li>
-          </ul>
-        </div>
+        <img src="" alt="" class="" />
       </div>
       <div
-        class="large-flex large-justify-content-space-between large-align-items-center medium-direction-column medium-align-items-left large-offset-bottom-3 medium-offset-bottom-3"
+        class="tw-flex tw-flex-col tw-justify-between tw-bg-[#f2f4f5] tw-relative"
       >
-        <div
-          class="large-flex large-direction-column large-justify-content-center large-5 medium-10 small-12"
-        >
-          <h2 class="typography-section-headline large-margin-bottom--2">
-            <span style="color: #ff3f00"> 4 Area </span>
-            <br />
-            Heating
-          </h2>
-          <p
-            class="typography-section-copy large-margin-bottom--2 medium-margin-bottom--0"
-          >
-            Battle tension and stress across the spectrum with Belmont’s heat
-            therapy. Belmont includes targeted heat along the
-            <span style="color: #ff3f00"> back </span>
-            and
-            <span style="color: #ff3f00"> calves, </span>
-            while having the ability to adjust its heat on three levels.
-          </p>
+        <div class="tw-absolute tw-p-4 tw-top-0 tw-right-0">
+          Remote control pocket
         </div>
-        <div class="large-6 medium-7 small-12 medium-pad-top-2">
-          <img
-            alt="6 Heating Zones"
-            src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/8.Belmont_Heating_2x-100.jpg?v=1668104846"
-          />
-        </div>
+        <img src="" alt="" />
       </div>
     </div>
-  </section>
-  <section class="large-pad-bottom-7 small-pad-bottom-3">
-    <div class="section-content large-margin-bottom--6">
+    <div>
       <div
-        class="large-flex large-justify-content-space-between large-align-items-center medium-direction-column medium-align-items-left large-offset-bottom-5 small-offset-bottom-3"
+        class="tw-p-10 tw-text-3xl md:tw-text-4xl lg:tw-text-5xl tw-text-center tw-font-bold"
       >
-        <div
-          class="large-flex large-direction-column large-justify-content-center large-5 medium-10 small-12 large-order-2 medium-order-1"
-        >
-          <h2 class="typography-section-headline large-margin-bottom--2">
-            <span class="theme-color--highlight"> Remote </span>
-            <br />
-            Controller
-          </h2>
-          <p class="typography-section-copy large-margin-bottom--3">
-            Belmont allows you to adjust the massage to your preferences using
-            the remote controller. The massage chair provides
-            <span class="theme-color--highlight"> 12 auto message modes </span>
-            and
-            <span class="theme-color--highlight">
-              6 manual massage styles.
-            </span>
-          </p>
-          <ul
-            class="large-flex large-direction-column list-nobullet"
-            style="padding-left: 0"
-          >
-            <div class="large-flex large-12">
-              <div
-                class="large-flex large-6 remote-controller-list large-margin-right--3"
-              >
-                <div>12</div>
-                <p class="medium-margin-top--1 small-margin-top--0">
-                  Full Body Auto Programs
-                </p>
-              </div>
-              <div class="large-flex large-6 remote-controller-list">
-                <div>03</div>
-                <p class="medium-margin-top--1 small-margin-top--0">
-                  Adjustable Degrees of Width
-                </p>
-              </div>
-            </div>
-            <div class="large-flex large-12">
-              <div
-                class="large-flex large-6 remote-controller-list large-margin-right--3"
-              >
-                <div>06</div>
-                <p class="medium-margin-top--1 small-margin-top--0">
-                  Manual Massage Techniques
-                </p>
-              </div>
-              <div class="large-flex large-6 remote-controller-list">
-                <div>06</div>
-                <p class="large-margin-top--1 small-margin-top--0">
-                  Speed Intensities
-                </p>
-              </div>
-            </div>
-            <div class="large-flex large-12">
-              <div
-                class="large-flex large-6 remote-controller-list large-margin-right--3"
-              >
-                <div>03</div>
-                <p class="large-margin-top--1 small-margin-top--0">
-                  Areas of the Body
-                </p>
-              </div>
-              <div class="large-flex large-6 remote-controller-list">
-                <div>05</div>
-                <p class="large-margin-top--1 small-margin-top--0">
-                  3D Massage Force
-                </p>
-              </div>
-            </div>
-          </ul>
-        </div>
-        <div
-          class="large-position-relative large-6 medium-7 small-12 large-order-1 medium-order-2"
-        >
-          <img
-            alt="Remote Controller"
-            src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/9.Belmont_RemoteController_2x-100.jpg?v=1668104846"
-          />
-        </div>
+        Dimensions
+      </div>
+      <div class="tw-flex tw-items-center tw-flex-col md:tw-flex-row">
+        <img src="" alt="" class="tw-min-w-0 tw-flex-1" /><img
+          src=""
+          alt=""
+          class="tw-min-w-0 tw-flex-1"
+        />
       </div>
     </div>
-    <div class="section-content large-margin-bottom--6">
-      <h2 class="typography-section-headline large-margin-bottom--3">
-        12 Auto Programs
-      </h2>
+    <section>
       <div
-        class="grid grid-cols-3 lg:grid-cols-4 large-text-align-center justify-items-center"
+        class="tw-p-10 tw-text-3xl md:tw-text-4xl lg:tw-text-5xl tw-text-center tw-font-bold"
       >
-        <div class="bg-[#f2f3f5] flex flex-col w-full items-center py-2">
-          <img
-            alt="Extension Mode"
-            src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/10.Belmont_Icon-Extension_2x-100.jpg?v=1668104845"
-            style="width: 70px"
-          />
-          <div class="typography-module-title">Extension</div>
-        </div>
-        <div class="bg-[#f2f3f5] flex flex-col w-full items-center py-2">
-          <img
-            alt="Release Mode"
-            src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/11.Belmont_Icon-Release_2x-100.jpg?v=1668104846"
-            style="width: 70px"
-          />
-          <div class="typography-module-title">Release</div>
-        </div>
-        <div class="bg-[#f2f3f5] flex flex-col w-full items-center py-2">
-          <img
-            alt="Yoga Mode"
-            src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/12.Belmont_Icon-Yoga_2x-100.jpg?v=1668104846"
-            style="width: 70px"
-          />
-          <div class="typography-module-title">Yoga</div>
-        </div>
-        <div class="bg-[#f2f3f5] flex flex-col w-full items-center py-2">
-          <img
-            alt="Thai Mode"
-            src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/13.Belmont_Icon-Thai_2x-100.jpg?v=1668104845"
-            style="width: 70px"
-          />
-          <div class="typography-module-title">Thai</div>
-        </div>
-        <div class="bg-[#f2f3f5] flex flex-col w-full items-center py-2">
-          <img
-            alt="Chinese Mode"
-            src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/14.Belmont_Icon-Chinese_2x-100.jpg?v=1668104845"
-            style="width: 70px"
-          />
-          <div class="typography-module-title">Chinese</div>
-        </div>
-        <div class="bg-[#f2f3f5] flex flex-col w-full items-center py-2">
-          <img
-            alt="Ancient Mode"
-            src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/15.Belmont_Icon-Ancient_2x-100.jpg?v=1668104845"
-            style="width: 70px"
-          />
-          <div class="typography-module-title">Ancient</div>
-        </div>
-        <div class="bg-[#f2f3f5] flex flex-col w-full items-center py-2">
-          <img
-            alt="Boss Mode"
-            src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/16.Belmont_Icon-Boss_2x-100.jpg?v=1668104845"
-            style="width: 70px"
-          />
-          <div class="typography-module-title">Boss</div>
-        </div>
-        <div class="bg-[#f2f3f5] flex flex-col w-full items-center py-2">
-          <img
-            alt="Lady Mode"
-            src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/17.Belmont_Icon-Lady_2x-100.jpg?v=1668104846"
-            style="width: 70px"
-          />
-          <div class="typography-module-title">Lady</div>
-        </div>
-        <div class="bg-[#f2f3f5] flex flex-col w-full items-center py-2">
-          <img
-            alt="Senior Mode"
-            src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/18.Belmont_Icon-Senior_2x-100.jpg?v=1668104845"
-            style="width: 70px"
-          />
-          <div class="typography-module-title">Senior</div>
-        </div>
-        <div class="bg-[#f2f3f5] flex flex-col w-full items-center py-2">
-          <img
-            alt="Neck &amp; Shoulder Mode"
-            src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/19.Belmont_Icon-Neck-Shoulder_2x-100.jpg?v=1668104846"
-            style="width: 70px"
-          />
-          <div class="typography-module-title">Neck &amp; Shoulder</div>
-        </div>
-        <div class="bg-[#f2f3f5] flex flex-col w-full items-center py-2">
-          <img
-            alt="Waist &amp; Buttock Mode"
-            src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/20.Belmont_Icon-Waist-Buttock_2x-100.jpg?v=1668104846"
-            style="width: 70px"
-          />
-          <div class="typography-module-title">Waist &amp; Buttock</div>
-        </div>
-        <div class="bg-[#f2f3f5] flex flex-col w-full items-center py-2">
-          <img
-            alt="Back &amp; Spine Mode"
-            src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/21.Belmont_Icon-Back-Spine_2x-100.jpg?v=1668104846"
-            style="width: 70px"
-          />
-          <div class="typography-module-title">Back &amp; Spine</div>
-        </div>
+        Specification
       </div>
-    </div>
-    <div class="section-content large-pad-bottom-7">
-      <h2 class="typography-section-headline large-margin-bottom--3">
-        6 Manual Massage Techniques
-      </h2>
-      <div
-        class="grid grid-cols-2 lg:grid-cols-3 large-text-align-center justify-items-center"
-      >
-        <div class="bg-[#f2f3f5] flex flex-col w-full items-center py-2">
-          <img
-            alt="Kneading Massage Style"
-            src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/22.Belmont_Icon-Kneading_2x-100.jpg?v=1668104846"
-            style="width: 70px"
-          />
-          <div class="typography-module-title">Kneading</div>
-        </div>
-        <div class="bg-[#f2f3f5] flex flex-col w-full items-center py-2">
-          <img
-            alt="Tapping Massage Style"
-            src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/23.Belmont_Icon-Tapping_2x-100.jpg?v=1668104845"
-            style="width: 70px"
-          />
-          <div class="typography-module-title">Tapping</div>
-        </div>
-        <div class="bg-[#f2f3f5] flex flex-col w-full items-center py-2">
-          <img
-            alt="Knocking Massage Style"
-            src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/24.Belmont_Icon-Knocking_2x-100.jpg?v=1668104846"
-            style="width: 70px"
-          />
-          <div class="typography-module-title">Knocking</div>
-        </div>
-        <div class="bg-[#f2f3f5] flex flex-col w-full items-center py-2">
-          <img
-            alt="Shiatsu Massage Style"
-            src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/25.Belmont_Icon-Shiatsu_2x-100.jpg?v=1668104846"
-            style="width: 70px"
-          />
-          <div class="typography-module-title">Shiatsu</div>
-        </div>
-        <div class="bg-[#f2f3f5] flex flex-col w-full items-center py-2">
-          <img
-            alt="Sync Style"
-            src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/26.Belmont_Icon-Sync_2x-100.jpg?v=1668104845"
-            style="width: 70px"
-          />
-          <div class="typography-module-title">Sync</div>
-        </div>
-        <div class="bg-[#f2f3f5] flex flex-col w-full items-center py-2">
-          <img
-            alt="3D Shiatsu Massage Style"
-            src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/27.Belmont_Icon-3D-Shiatsu_2x-100.jpg?v=1668104845"
-            style="width: 70px"
-          />
-          <div class="typography-module-title">3D Shiatsu</div>
-        </div>
-      </div>
-    </div>
-    <div class="section-content large-pad-bottom-7 small-pad-bottom-5">
-      <div class="grid">
+      <div class="tw-text-xl tw-font-normal">
         <div
-          class="grid-item large-flex large-grid-span-12 large-justify-content-space-between large-align-items-center small-column-reverse"
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
         >
-          <div
-            class="large-5 medium-5 small-12 large-pad-left-5 medium-pad-left-3 small-pad-right-2 small-pad-bottom-2 small-pad-left-2"
-          >
-            <h2
-              class="typography-grid-headline large-margin-bottom--2 medium-margin-bottom--1"
-            >
-              <span class="theme-color--highlight small-margin-bottom--1">
-                Roller
-              </span>
-              <br />
-              Foot Massage
-            </h2>
-            <p class="typography-grid-copy">
-              Belmont includes an all-important foot massage, with one roller
-              massaging the front of the foot.
-            </p>
-          </div>
-          <div class="large-6 small-12">
-            <img
-              alt="Roller Foot Massage"
-              src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/28.Belmont_FootRoller_2x-100.jpg?v=1668186906"
-            />
-          </div>
+          <div class="tw-w-52 tw-font-bold">Product Name</div>
+          <div>Osaki OP-4D Ultima</div>
         </div>
         <div
-          class="grid-item large-flex large-grid-span-12 large-justify-content-space-between large-align-items-center small-column-reverse"
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
         >
-          <div
-            class="large-5 medium-5 small-12 large-pad-right-5 medium-pad-right-3 small-pad-top-2 small-pad-right-2 small-pad-left-2 large-order-2"
-          >
-            <h2
-              class="typography-grid-headline large-margin-bottom--2 medium-margin-bottom--1"
-            >
-              <span class="theme-color--highlight small-margin-bottom--1">
-                Extendable
-              </span>
-              <br />
-              Footrest
-            </h2>
-            <p class="typography-grid-copy">
-              To compliment the refined nature of this chair, the legrest will
-              manually extend nearly 5 inches in order to find the optimal
-              position for users of any height.
-            </p>
-          </div>
-          <div class="large-6 small-12 large-order-1">
-            <img
-              alt="Roller Foot Massage"
-              src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/29.Belmont_FootExtension_2x-100.jpg?v=1668104846"
-            />
-          </div>
-        </div>
-        <div
-          class="grid-item large-flex large-grid-span-12 large-justify-content-space-between large-align-items-center small-direction-column"
-        >
-          <div
-            class="large-4 small-12 large-pad-left-5 medium-pad-left-4 small-pad-top-2 small-pad-right-2 small-pad-left-2 small-pad-bottom-2"
-          >
-            <h2
-              class="typography-grid-headline large-margin-bottom--2 medium-margin-bottom--1"
-            >
-              <span class="theme-color--highlight small-margin-bottom--1">
-                Shortcut
-              </span>
-              Panel
-            </h2>
-            <ul class="list-nobullet shortcut-list">
-              <li>1. Toggle Power</li>
-              <li>2. Massage Techniques</li>
-              <li>3. Point</li>
-              <li>4. Heating</li>
-              <li>5. Move Rollers Up</li>
-              <li>6. Move Rollers Down</li>
-              <li>7. Zero Gravity/Bluetooth</li>
-              <li>8. USB Charging Port</li>
-            </ul>
-          </div>
-          <div class="large-7 small-12">
-            <img
-              alt="Shortcut Panel"
-              src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/30.Belmont_ShortcutPanel_2x-100.jpg?v=1668104846"
-            />
-          </div>
-        </div>
-        <div
-          class="grid-item large-flex large-direction-column large-justify-content-space-between large-grid-span-6 small-grid-span-12"
-        >
-          <div
-            class="large-pad-top-3 large-pad-right-3 large-pad-left-3 medium-pad-top-2 medium-pad-right-2 medium-pad-left-2"
-          >
-            <p class="typography-grid-copy">
-              Listen to your favorite music, podcasts, or calming sounds through
-              Belmont’s crisp, high-fidelity, surround sound bluetooth speakers.
-            </p>
-          </div>
-          <img
-            alt="Bluetooth Speaker"
-            src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/31.Belmont_BluetoothSpeaker_2x-100.jpg?v=1668104846"
-            style="height: 100%"
-          />
-        </div>
-        <div
-          class="grid-item large-flex large-direction-column large-justify-content-space-between large-grid-span-6 small-grid-span-12"
-        >
-          <div
-            class="large-text-align-right large-pad-top-3 large-pad-right-3 medium-pad-top-2 medium-pad-right-2"
-          >
-            <p class="typography-grid-copy">Remote control pocket</p>
-          </div>
-          <img
-            alt="Remote control pocket"
-            src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/32.Belmont_RemoteHolder_2x-100.jpg?v=1668104846"
-            style="height: 100%"
-          />
-        </div>
-      </div>
-    </div>
-    <div class="section-content">
-      <div
-        class="large-flex large-justify-content-space-between large-direction-column"
-      >
-        <h2 class="large-text-align-center">Dimensions</h2>
-        <div
-          class="large-flex large-justify-content-space-between small-direction-column large-align-items-center"
-        >
-          <div class="large-6 small-12">
-            <img
-              alt="Osaki Belmont Dimension Upright"
-              src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/33.Belmont_Dimension_Upright_2x-100.jpg?v=1668124875"
-            />
-          </div>
-          <div class="large-6 small-12">
-            <img
-              alt="Osaki Belmont Dimension Reclined"
-              src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/34.Belmont_Dimension_Reclined_2x-100.jpg?v=1668124875"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-<section class="section-specs large-pad-bottom-7">
-  <div class="table-tap">
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Product Name</div>
-        <div class="specs-column">OS-3D Belmont</div>
-        <div class="specs-column"></div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">User Manual</div>
-        <div class="specs-column">
+          <div class="tw-w-52 tw-font-bold">User Manual</div>
           <a
-            data-mce-style="color: #ff4800;"
-            href="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/Belmont_manual_web.pdf?v=1669218435"
-            style="color: #ff4800"
+            class="!tw-text-red-500 !tw-no-underline"
+            href="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/Ultima_Rotai_User_Manual_WEB.pdf?v=1671565832"
             target="_blank"
+            >Download</a
           >
-            Download
-          </a>
+        </div>
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-font-bold">Power Supply</div>
+          <div>110-120V~</div>
+        </div>
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-font-bold">Rate Frequency</div>
+          <div>50/60 Hz</div>
+        </div>
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-font-bold">Auto Timer</div>
+          <div>10 / 20 / 30 min</div>
+        </div>
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            <div>Dimensions</div>
+            <div>(W x L x H)</div>
+          </div>
+          <div class="tw-w-full tw-grid-cols-2 tw-grid tw-gap-2">
+            <div>
+              <div class="tw-font-bold">Upright</div>
+              <div>29.5" x 63" x 48.5"</div>
+            </div>
+            <div>
+              <div class="tw-font-bold">Reclined</div>
+              <div>29.5" x 71" x 35"</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            <div>Width</div>
+          </div>
+          <div class="tw-w-full tw-grid-cols-2 tw-grid tw-gap-2">
+            <div>
+              <div class="tw-font-bold">Shoulder</div>
+              <div>21.5"</div>
+            </div>
+            <div>
+              <div class="tw-font-bold">Seat</div>
+              <div>18"</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            <div>Minimum Doorway Size</div>
+          </div>
+          <div>29.5"</div>
+        </div>
+
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            <div>Weight</div>
+          </div>
+          <div class="tw-w-full tw-grid-cols-2 tw-grid tw-gap-2">
+            <div>
+              <div class="tw-font-bold">Net</div>
+              <div>235.9 lbs</div>
+            </div>
+            <div>
+              <div class="tw-font-bold">Gross</div>
+              <div>268.9 lbs</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-font-bold">
+            <div>Maximum User Weight</div>
+          </div>
+          <div>270 lbs</div>
         </div>
       </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Power Supply</div>
-        <div class="specs-column">110V - 120V</div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Rate Current</div>
-        <div class="specs-column">0.7A</div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Rate Frequency</div>
-        <div class="specs-column">60 Hz</div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Rate Timer</div>
-        <div class="specs-column">10 / 20 / 30 min</div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">
-          Dimensions
-          <br />
-          (W x L x H)
-        </div>
-        <div class="specs-column">
-          <strong> Upright </strong>
-          <br />
-          29.5" x 59" x 46"
-        </div>
-        <div class="specs-column">
-          <strong> Reclined </strong>
-          <br />
-          29.5" x 70.5" x 33"
-        </div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Width</div>
-        <div class="specs-column">
-          <strong> Shoulder </strong>
-          <br />
-          20"
-        </div>
-        <div class="specs-column">
-          <strong> Seat </strong>
-          <br />
-          18"
-        </div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Minimum Doorway Size</div>
-        <div class="specs-column">29.5"</div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Maximum User Weight</div>
-        <div class="specs-column">260 lbs</div>
-      </div>
-    </div>
+    </section>
   </div>
-</section>
-<script src="https://cdn.tailwindcss.com"></script>
-<script
-  crossorigin="anonymous"
-  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
-  src="https://code.jquery.com/jquery-3.6.4.min.js"
-></script>
+</body>
 <script>
-  $(function () {
-    $("#tab-button1").on("click", () => {
-      $("#tab-button1").addClass("active-tab");
-      $("#tab-button2").removeClass("active-tab");
-      $(".sections").fadeIn("slow");
-      $(".section-specs").fadeIn("slow");
-    });
-    $("#tab-button2").on("click", () => {
-      $("#tab-button1").removeClass("active-tab");
-      $("#tab-button2").addClass("active-tab");
-      $(".sections").fadeOut("slow");
-      $(".section-specs").fadeOut("slow");
-    });
-  });
+  document.querySelectorAll(".sections img").forEach((img, i) => {
+    try {
+      img.src = imgs[i].img_src
+    } catch (err) {
+      console.log(err)
+    }
+  })
+
+  const getYoutubeSrc = (src) => {
+    const regex =
+      /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/gi
+    const id = src.match(regex)[0]
+    const embed = id.replace("watch?v=", "embed/")
+    const dst = "https://www." + embed + "?mute=1&autoplay=1"
+    return dst
+  }
+  try {
+    document.getElementById("youtube-link").src = getYoutubeSrc(youtube_link)
+  } catch (err) {
+    console.log(err)
+  }
 </script>

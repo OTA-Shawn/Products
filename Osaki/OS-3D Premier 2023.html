@@ -54,11 +54,11 @@
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script
-  crossorigin="anonymous"
-  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
-  src="https://code.jquery.com/jquery-3.6.4.min.js"
-></script>
+<link
+  href="https://ota-shawn.github.io/Products/globalProductDescription.css"
+  rel="stylesheet"
+/>
+<link href="../globalProductDescription.css" rel="stylesheet" />
 
 <script>
   const imgs = [
@@ -236,15 +236,15 @@
       img_src:
         "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/29.premier_dimension_2-100.jpg?v=1683578934",
     },
-  ];
+  ]
   $(function () {
     // jQuery methods go here...
 
     $.each($("sections img"), (i, v) => {
-      $(v).attr("src", imgs[i].img_src);
-      $(v).attr("alt", imgs[i].img_name);
-    });
-  });
+      $(v).attr("src", imgs[i].img_src)
+      $(v).attr("alt", imgs[i].img_name)
+    })
+  })
 </script>
 <style>
   * {
@@ -259,10 +259,17 @@
     align-items: center;
     gap: 40px;
   }
-  sections .circle {
-    border-radius: 50%;
-    height: 40px;
+  .circle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 32px;
+  }
+
+  .circle > :first-child {
     width: 40px;
+    height: 40px;
+    border-radius: 50%;
   }
 
   sections h1 {
@@ -337,11 +344,6 @@
       max-width: 768px;
       gap: 30px;
     }
-    sections .circle {
-      border-radius: 50%;
-      height: 30px;
-      width: 30px;
-    }
 
     sections p {
       font-size: 16px;
@@ -379,6 +381,15 @@
       margin: auto 60px;
       gap: 8px;
     }
+    .circle {
+      gap: 5px;
+      font-size: 24px;
+    }
+
+    .circle > :first-child {
+      width: 30px;
+      height: 30px;
+    }
   }
 
   @media (max-width: 768px) {
@@ -386,12 +397,6 @@
       max-width: 480px;
       gap: 20px;
     }
-    sections .circle {
-      border-radius: 50%;
-      height: 20px;
-      width: 20px;
-    }
-
     sections p {
       font-size: 10px;
     }
@@ -428,367 +433,383 @@
       margin: auto 40px;
       gap: 5px;
     }
+    .circle {
+      gap: 4px;
+      font-size: 16px;
+    }
+
+    .circle > :first-child {
+      width: 20px;
+      height: 20px;
+    }
   }
 </style>
-<div id="tab-buttons" class="max-w-6xl mx-auto my-4">
-  <button
-    id="tab-button1"
-    class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center dark:text-gray-400 dark:hover:text-gray-300 active-tab"
+<body>
+  <sections
+    class="sections tw-font-sans md:tw-w-[768px] lg:tw-w-[1024px] tw-flex tw-flex-col min-[480px]:tw-w-[480px] tw-m-auto tw-leading-normal"
   >
-    Description
-  </button>
-  <button
-    id="tab-button2"
-    class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center t dark:text-gray-400 dark:hover:text-gray-300"
-  >
-    Reviews
-  </button>
-</div>
-
-<sections class="sections">
-  <iframe
-    style="width: 100%; aspect-ratio: 16/9; border: 0"
-    src="https://www.youtube.com/embed/LX77Nf-vw6M?mute=1&amp;autoplay=1"
-  ></iframe>
-  <section class="mb-20 flex-col bg-white md:mb-80">
-    <img src="" alt="" class="w-full" />
-    <p
-      class="mb-12 mt-14 px-12 text-center text-xl font-semibold text-black md:mb-24 md:text-3xl"
-    >
-      Relax and unwind at the touch of a button with the Premier- your personal
-      oasis of calm. The Premier offers a series of features, including 3D
-      Massage Mechanism, extensive footrollers, and heating elements, all
-      utilized with the intelligence voice control.
-    </p>
-    <div
-      class="align:items-center flex gap-5 text-xl font-semibold md:gap-10 md:text-3xl [&amp;&gt;*]:flex [&amp;&gt;*]:gap-3"
-    >
-      <div>
-        <div class="circle bg-[#918980]"></div>
-        <div class="bg-white">Taupe</div>
+    <iframe
+      style="width: 100%; aspect-ratio: 16/9; tw-border: 0"
+      src="https://www.youtube.com/embed/LX77Nf-vw6M?mute=1&amp;autoplay=1"
+    ></iframe>
+    <section class="tw-mb-20 tw-flex-col tw-bg-white md:tw-mb-80">
+      <img src="" alt="" class="tw-w-full" />
+      <p
+        class="tw-mb-12 tw-mt-14 tw-px-12 tw-text-center tw-text-xl tw-font-semibold tw-text-black md:tw-mb-24 md:tw-text-3xl"
+      >
+        Relax and unwind at the touch of a button with the Premier- your
+        personal oasis of calm. The Premier offers a series of features,
+        including 3D Massage Mechanism, extensive footrollers, and heating
+        elements, all utilized with the intelligence voice control.
+      </p>
+      <div class="tw-flex tw-justify-center tw-gap-10">
+        <div class="circle">
+          <div class="tw-bg-[#B7AD9F]"></div>
+          <div>Taupe</div>
+        </div>
+        <div class="circle">
+          <div class="tw-bg-[#352723]"></div>
+          <div>Brown</div>
+        </div>
+        <div class="circle">
+          <div class="tw-bg-[#1d1d1d]"></div>
+          <div>Black</div>
+        </div>
       </div>
-      <div>
-        <div class="circle bg-[#3A2521]"></div>
-        <div class="bg-white">Brown</div>
-      </div>
-      <div>
-        <div class="circle bg-[#1D1D1D]"></div>
-        <div class="bg-white">Black</div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <img src="" alt="" />
-    <div class="section-content">
-      <h1 class="section-title">3D Massage Mechanism</h1>
-      <p>
-        The Premier allows the rollers to move not only up and down, left and
-        right, but also forward and backward, creating a 3D massage effect. This
-        technology enables the chair to simulate the experience of human hands,
-        providing a more lifelike massage experience.
-      </p>
-    </div>
-  </section>
-  <section class="flex-row-reverse">
-    <img src="" alt="" />
-    <div class="section-content flex flex-col">
-      <img src="" alt="" class="!w-4 lg:!w-16 aspect-square" />
-      <h1 class="section-title">
-        Intelligent <br />
-        Voice Control
-      </h1>
-      <p>
-        Easily utilize the chair without having to lift a finger. When you make
-        a command, the chair will react accordingly.
-      </p>
-    </div>
-  </section>
-  <section>
-    <img src="" alt="" />
-    <div class="section-content">
-      <h1 class="section-title">
-        38 Cell <br />
-        Full Body <br />
-        Air Massage
-      </h1>
-      <p>
-        The Premier holds 38 air cells to give a thorough compression therapy
-        for your body.
-      </p>
-    </div>
-  </section>
-  <section class="relative">
-    <img src="" alt="" class="w-full" />
-    <p class="absolute top-0 w-2/3 p-10">
-      The SL-Track is made up of
-      <strong>Laser-Crafted Steel.</strong> The track allows the massage rollers
-      to cover the entirety of your body. The SL-Track reaches all the way from
-      your neck and shoulders to your hamstrings.
-    </p>
-  </section>
-  <section class="flex-col-reverse">
-    <img src="" alt="" class="w-full" />
-    <div class="section-content mx-10 pb-0 text-black md:mx-20">
-      <h1 class="section-title">
-        Zero Gravity Reclining <br />
-        and Space Saving
-      </h1>
-      <p>
-        With the Premier’s two stage zero gravity reclining, you can experience
-        a state of relaxation and weightlessness. This imperative technology was
-        inspired by NASA. With Osaki’s
-        <strong class="color-black"> Space Saving Technology </strong>, you may
-        set the chair <strong class="color-black">4 inches</strong> from the
-        wall and still achieve a complete recline.
-      </p>
-    </div>
-  </section>
-  <section>
-    <img src="" alt="" />
-    <div class="section-content !pl-0">
-      <h1 class="section-title">Lumbar and Calf Heat Therapy</h1>
-      <p>
-        The <strong>carbon coil</strong> in the Premier will effectively warm
-        and help alleviate soreness in your lower back area and calves.
-      </p>
-    </div>
-  </section>
-  <section class="grid-section">
-    <h1 class="section-title col-span-2 mb-10">6 Auto Massage Modes</h1>
-    <div class="">
-      <img src="" alt="" class="" />
-      <p class="">Comfort Massage</p>
-    </div>
-    <div class="">
-      <img src="" alt="" class="" />
-      <p class="">Stretch Massage</p>
-    </div>
-    <div class="">
-      <img src="" alt="" class="" />
-      <p class="">Relax Massage</p>
-    </div>
-    <div class="">
-      <img src="" alt="" class="" />
-      <p class="">Back &amp; Waist Massage</p>
-    </div>
-    <div class="">
-      <img src="" alt="" class="" />
-      <p class="">Neck &amp; Shoulder Massage</p>
-    </div>
-    <div class="">
-      <img src="" alt="" class="" />
-      <p class="">Full Body Massage</p>
-    </div>
-  </section>
-  <section class="grid-section">
-    <h1 class="section-title col-span-2 mb-10">8 Manual Massage Modes</h1>
-    <div class="">
-      <img src="" alt="" />
-      <p class="">Knead</p>
-    </div>
-    <div class="">
-      <img src="" alt="" />
-      <p class="">Grab Massage</p>
-    </div>
-    <div class="">
-      <img src="" alt="" />
-      <p class="">Tapping (I, II)</p>
-    </div>
-    <div class="">
-      <img src="" alt="" />
-      <p class="">3D Massage (I, II, III, IV)</p>
-    </div>
-    <div class="">
-      <img src="" alt="" />
-      <p class="">Knead &amp; Tap</p>
-    </div>
-    <div class="">
-      <img src="" alt="" />
-      <p class="">Shiatsu (I, II)</p>
-    </div>
-  </section>
-  <section class="flex-row-reverse">
-    <img src="" alt="" />
-    <div class="section-content !pr-0">
-      <h1 class="section-title">Specialized Foot Rollers</h1>
-      <p>
-        The Premier’s
-        <strong>Specialized Foot Rollers</strong>
-        includes several
-        <strong> acupuncture points </strong> through the method of
-        scientifically designed reflexology ridges. The foot extenders contain
-        <strong>one roller</strong> for each foot, for they assist in a thorough
-        massage from heel to toe.
-      </p>
-    </div>
-  </section>
-  <section class="">
-    <img src="" alt="" />
-    <div class="section-content">
-      <h1 class="section-title">Spring Extendable Footrest</h1>
-      <p>
-        Created with any user in mind, the Premier’s
-        <strong> Spring Extendable Footrest </strong> stretches up to
-        <strong>5.5 inches</strong> for maximum comfort.
-      </p>
-    </div>
-  </section>
-  <section class="flex-row-reverse">
-    <img src="" alt="" />
-    <div class="section-content !pr-0">
-      <h1 class="section-title">Accessible Shortcut Panel</h1>
-      <p>
-        Conveniently control the Premier at your fingers by using the shortcut
-        panel.
-      </p>
-    </div>
-  </section>
-  <section>
-    <img src="" alt="" />
-    <div class="section-content !pl-0">
-      <h1 class="section-title">Removable Headrest</h1>
-      <p>
-        The Premier includes a removable headrest, which helps you optimize the
-        best massage for all head positions.
-      </p>
-    </div>
-  </section>
-  <section>
-    <img src="" alt="" />
-    <div class="section-content">
-      <p><strong>LED Lighting</strong></p>
-    </div>
-  </section>
-  <section class="grid grid-cols-2 justify-between bg-white">
-    <section class="relative flex-col items-start bg-[#e5e0df]">
-      <p class="ml-5 mt-5 h-10 md:pl-10 md:pt-10">
-        <strong>HD Surround Sound Speakers</strong>
-      </p>
-      <img src="" alt="" class="w-full" />
     </section>
-    <section class="relative flex-col items-start bg-[#e5e0df]">
-      <p class="ml-5 mt-5 h-10 md:pl-10 md:pt-10">
-        <strong>USB Charger</strong>
-      </p>
-      <img src="" alt="" class="w-full" />
-    </section>
-  </section>
-
-  <section class="mt-20 flex flex-col bg-white md:mt-80">
-    <h1 class="section-title">Dimensions</h1>
-    <div class="flex flex-col lg:flex-row">
-      <img src="" alt="" class="w-full" />
-      <img src="" alt="" class="w-full" />
-    </div>
-  </section>
-</sections>
-<section class="section-specs section-pad-bottom">
-  <div class="table-tap">
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Product Name</div>
-        <div class="specs-column">OS-3D Premier</div>
+    <section>
+      <img src="" alt="" />
+      <div class="section-content">
+        <h1 class="section-title">3D Massage Mechanism</h1>
+        <p>
+          The Premier allows the rollers to move not only up and down, left and
+          right, but also forward and backward, creating a 3D massage effect.
+          This technology enables the chair to simulate the experience of human
+          hands, providing a more lifelike massage experience.
+        </p>
       </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">User Manual</div>
-        <div class="specs-column">
+    </section>
+    <section class="tw-flex-row-reverse">
+      <img src="" alt="" />
+      <div class="section-content tw-flex tw-flex-col">
+        <img src="" alt="" class="!tw-w-8 lg:!tw-w-16 aspect-square" />
+        <h1 class="section-title">
+          Intelligent <br />
+          Voice Control
+        </h1>
+        <p>
+          Easily utilize the chair without having to lift a finger. When you
+          make a command, the chair will react accordingly.
+        </p>
+      </div>
+    </section>
+    <section>
+      <img src="" alt="" />
+      <div class="section-content">
+        <h1 class="section-title">
+          38 Cell <br />
+          Full Body <br />
+          Air Massage
+        </h1>
+        <p>
+          The Premier holds 38 air cells to give a thorough compression therapy
+          for your body.
+        </p>
+      </div>
+    </section>
+    <section class="tw-flex-col-reverse md:tw-relative">
+      <img src="" alt="" class="tw-w-full" />
+      <p class="md:tw-absolute tw-top-0 md:tw-w-2/3 !tw-p-10 !tw-pb-0">
+        The SL-Track is made up of
+        <strong>Laser-Crafted Steel.</strong> The track allows the massage
+        rollers to cover the entirety of your body. The SL-Track reaches all the
+        way from your neck and shoulders to your hamstrings.
+      </p>
+    </section>
+    <section class="tw-flex-col-reverse">
+      <img src="" alt="" class="tw-w-full" />
+      <div class="section-content tw-mx-10 tw-pb-0 tw-text-black md:tw-mx-20">
+        <h1 class="section-title">
+          Zero Gravity Reclining <br />
+          and Space Saving
+        </h1>
+        <p>
+          With the Premier’s two stage zero gravity reclining, you can
+          experience a state of relaxation and weightlessness. This imperative
+          technology was inspired by NASA. With Osaki’s
+          <strong class="color-black"> Space Saving Technology </strong>, you
+          may set the chair <strong class="color-black">4 inches</strong> from
+          the wall and still achieve a complete recline.
+        </p>
+      </div>
+    </section>
+    <section>
+      <img src="" alt="" />
+      <div class="section-content !tw-pl-0">
+        <h1 class="section-title">Lumbar and Calf Heat Therapy</h1>
+        <p>
+          The <strong>carbon coil</strong> in the Premier will effectively warm
+          and help alleviate soreness in your lower back area and calves.
+        </p>
+      </div>
+    </section>
+    <section class="grid-section">
+      <h1 class="section-title tw-col-span-2 tw-mb-10">6 Auto Massage Modes</h1>
+      <div class="">
+        <img src="" alt="" class="" />
+        <p class="">Comfort Massage</p>
+      </div>
+      <div class="">
+        <img src="" alt="" class="" />
+        <p class="">Stretch Massage</p>
+      </div>
+      <div class="">
+        <img src="" alt="" class="" />
+        <p class="">Relax Massage</p>
+      </div>
+      <div class="">
+        <img src="" alt="" class="" />
+        <p class="">Back &amp; Waist Massage</p>
+      </div>
+      <div class="">
+        <img src="" alt="" class="" />
+        <p class="">Neck &amp; Shoulder Massage</p>
+      </div>
+      <div class="">
+        <img src="" alt="" class="" />
+        <p class="">Full Body Massage</p>
+      </div>
+    </section>
+    <section class="grid-section">
+      <h1 class="section-title tw-col-span-2 tw-mb-10">
+        8 Manual Massage Modes
+      </h1>
+      <div class="">
+        <img src="" alt="" />
+        <p class="">Knead</p>
+      </div>
+      <div class="">
+        <img src="" alt="" />
+        <p class="">Grab Massage</p>
+      </div>
+      <div class="">
+        <img src="" alt="" />
+        <p class="">Tapping (I, II)</p>
+      </div>
+      <div class="">
+        <img src="" alt="" />
+        <p class="">3D Massage (I, II, III, IV)</p>
+      </div>
+      <div class="">
+        <img src="" alt="" />
+        <p class="">Knead &amp; Tap</p>
+      </div>
+      <div class="">
+        <img src="" alt="" />
+        <p class="">Shiatsu (I, II)</p>
+      </div>
+    </section>
+    <section class="tw-flex-row-reverse">
+      <img src="" alt="" />
+      <div class="section-content !tw-pr-0">
+        <h1 class="section-title">Specialized Foot Rollers</h1>
+        <p>
+          The Premier’s
+          <strong>Specialized Foot Rollers</strong>
+          includes several
+          <strong> acupuncture points </strong> through the method of
+          scientifically designed reflexology ridges. The foot extenders contain
+          <strong>one roller</strong> for each foot, for they assist in a
+          thorough massage from heel to toe.
+        </p>
+      </div>
+    </section>
+    <section class="">
+      <img src="" alt="" />
+      <div class="section-content">
+        <h1 class="section-title">Spring Extendable Footrest</h1>
+        <p>
+          Created with any user in mind, the Premier’s
+          <strong> Spring Extendable Footrest </strong> stretches up to
+          <strong>5.5 inches</strong> for maximum comfort.
+        </p>
+      </div>
+    </section>
+    <section class="tw-flex-row-reverse">
+      <img src="" alt="" />
+      <div class="section-content !tw-pr-0">
+        <h1 class="section-title">Accessible Shortcut Panel</h1>
+        <p>
+          Conveniently control the Premier at your fingers by using the shortcut
+          panel.
+        </p>
+      </div>
+    </section>
+    <section>
+      <img src="" alt="" />
+      <div class="section-content !tw-pl-0">
+        <h1 class="section-title">Removable Headrest</h1>
+        <p>
+          The Premier includes a removable headrest, which helps you optimize
+          the best massage for all head positions.
+        </p>
+      </div>
+    </section>
+    <section>
+      <img src="" alt="" />
+      <div class="section-content">
+        <p><strong>LED Lighting</strong></p>
+      </div>
+    </section>
+    <section class="tw-grid tw-grid-cols-2 tw-justify-between tw-bg-white">
+      <section class="tw-relative tw-flex-col tw-items-start bg-[#e5e0df]">
+        <p class="tw-ml-5 tw-mt-5 tw-h-10 md:tw-pl-10 md:tw-pt-10">
+          <strong>HD Surround Sound Speakers</strong>
+        </p>
+        <img src="" alt="" class="tw-w-full" />
+      </section>
+      <section class="tw-relative tw-flex-col tw-items-start bg-[#e5e0df]">
+        <p class="tw-ml-5 tw-mt-5 tw-h-10 md:tw-pl-10 md:tw-pt-10">
+          <strong>USB Charger</strong>
+        </p>
+        <img src="" alt="" class="tw-w-full" />
+      </section>
+    </section>
+
+    <section class="tw-mt-20 tw-flex tw-flex-col tw-bg-white md:tw-mt-80">
+      <h1 class="section-title">Dimensions</h1>
+      <div class="tw-flex tw-flex-col lg:tw-flex-row">
+        <img src="" alt="" class="tw-w-full" />
+        <img src="" alt="" class="tw-w-full" />
+      </div>
+    </section>
+    <section class="!tw-flex-col !tw-bg-white">
+      <div
+        class="tw-p-10 tw-text-3xl md:tw-text-4xl lg:tw-text-5xl tw-text-center tw-font-bold"
+      >
+        Specification
+      </div>
+      <div class="tw-text-xl tw-font-normal">
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-font-bold">Product Name</div>
+          <div>OS-3D Premier</div>
+        </div>
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-font-bold">User Manual</div>
           <a
-            href="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/OS-3D_Premier_Manual.pdf?v=1683586770"
-            style="color: #ff4800"
+            class="!tw-text-red-500 !tw-tw-no-underline"
+            href="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/Osaki_Kairos_4D_User_Manual.pdf?v=1697216127"
             target="_blank"
+            >Download</a
           >
-            Download
-          </a>
         </div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Power Supply</div>
-        <div class="specs-column">110-120V ~</div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Rate Frequency</div>
-        <div class="specs-column">50/60 Hz</div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Auto Timer</div>
-        <div class="specs-column">20 Minutes</div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">
-          Dimensions
-          <br />
-          (W x L x H)
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-font-bold">Power Supply</div>
+          <div>110-120V~</div>
         </div>
-        <div class="specs-column">
-          <strong> Upright </strong>
-          <br />
-          30” x 61.0“ x 47.2”
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-font-bold">Rate Frequency</div>
+          <div>50/60 Hz</div>
         </div>
-        <div class="specs-column">
-          <strong> Reclined </strong>
-          <br />
-          30” x 68” x 38.5”
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-font-bold">Auto Timer</div>
+          <div>20 minutes</div>
         </div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Width</div>
-        <div class="specs-column">
-          <strong> Shoulder </strong>
-          <br />
-          23.6”
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            <div>Dimensions</div>
+            <div>(W x L x H)</div>
+          </div>
+          <div class="tw-w-full tw-grid-cols-2 tw-grid tw-gap-2">
+            <div>
+              <div class="tw-font-bold">Upright</div>
+              <div>30” x 61.0“ x 47.2”</div>
+            </div>
+            <div>
+              <div class="tw-font-bold">Reclined</div>
+              <div>30” x 68” x 38.5”</div>
+            </div>
+          </div>
         </div>
-        <div class="specs-column">
-          <strong> Seat </strong>
-          <br />
-          19.7”
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            <div>Width</div>
+          </div>
+          <div class="tw-w-full tw-grid-cols-2 tw-grid tw-gap-2">
+            <div>
+              <div class="tw-font-bold">Shoulder</div>
+              <div>23.6”</div>
+            </div>
+            <div>
+              <div class="tw-font-bold">Seat</div>
+              <div>19.7”</div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">
-          Minimum
-          <br />
-          Doorway Size
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            <div>Minimum Doorway Size</div>
+          </div>
+          <div>31.1"</div>
         </div>
-        <div class="specs-column">31.1"</div>
-      </div>
-    </div>
 
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Maximum User Weight</div>
-        <div class="specs-column">260 lbs</div>
+        <!-- <div
+        class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+      >
+        <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+          <div>Weight</div>
+        </div>
+        <div class="tw-w-full tw-grid-cols-2 tw-grid tw-gap-2">
+          <div>
+            <div class="tw-font-bold">Net</div>
+            <div>165 lbs</div>
+          </div>
+          <div>
+            <div class="tw-font-bold">Gross</div>
+            <div>198 lbs</div>
+          </div>
+        </div>
+      </div> -->
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-font-bold">
+            <div>Maximum User Weight</div>
+          </div>
+          <div>260 lbs</div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-<script src="https://cdn.tailwindcss.com"></script>
+    </section>
+  </sections>
+</body>
 <script>
-  $(function () {
-    $("#tab-button1").on("click", () => {
-      $("#tab-button1").addClass("active-tab");
-      $("#tab-button2").removeClass("active-tab");
-      $(".sections").fadeIn("slow");
-      $(".section-specs").fadeIn("slow");
-    });
-    $("#tab-button2").on("click", () => {
-      $("#tab-button1").removeClass("active-tab");
-      $("#tab-button2").addClass("active-tab");
-      $(".sections").fadeOut("slow");
-      $(".section-specs").fadeOut("slow");
-    });
-  });
+  document.querySelectorAll(".sections img").forEach((img, i) => {
+    img.src = imgs[i].img_src
+  })
+
+  const getYoutubeSrc = (src) => {
+    const regex =
+      /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/gi
+    const id = src.match(regex)[0]
+    const embed = id.replace("watch?v=", "embed/")
+    const dst = "https://www." + embed + "?mute=1&autoplay=1"
+    return dst
+  }
+  document.getElementById("youtube-link").src = getYoutubeSrc(youtube_link)
 </script>
