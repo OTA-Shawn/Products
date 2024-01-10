@@ -1,0 +1,26 @@
+.intensity-modal {
+  z-index: 10;
+  display: none;
+  padding: 14px 20px;
+  width: 300px;
+  transform: translate(10%, -50%);
+  font-family: sans-serif;
+}
+.intensity-tooltip:hover ~ .intensity-modal {
+  display: inline;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px solid #888;
+  background-color: #f8f8f8;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.custom-questionmark {
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  text-align: center;
+  cursor: pointer;
+  font-family: sans-serif;
+}
