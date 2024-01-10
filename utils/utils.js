@@ -18,7 +18,7 @@ function createIntensityLevel(minIntensity, maxIntensity) {
   // Create custom question mark div
   const questionMarkDiv = document.createElement("div")
   questionMarkDiv.className = "intensity-tooltip custom-questionmark"
-  questionMarkDiv.textContent = "?"
+  // questionMarkDiv.textContent = "?"
 
   // Create intensity modal
   const intensityModal = document.createElement("div")
