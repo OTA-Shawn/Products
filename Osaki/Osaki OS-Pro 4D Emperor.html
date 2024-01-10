@@ -41,143 +41,224 @@
       USB &amp; Wireless Phone Charger
      </li>
     </ul>-->
-<!-- more -->
-<div id="tab-buttons" class="mx-auto my-4 max-w-6xl">
-  <button
-    id="tab-button1"
-    class="active-tab inline-block px-1 py-2 text-center text-sm font-semibold text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"
-  >
-    Description
-  </button>
-  <button
-    id="tab-button2"
-    class="t inline-block px-1 py-2 text-center text-sm font-semibold text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"
-  >
-    Reviews
-  </button>
-</div>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  href="https://ota-shawn.github.io/Products/globalProductDescription.css"
+  rel="stylesheet"
+/>
+<link href="../globalProductDescription.css" rel="stylesheet" />
+<script>
+  const youtube_link =
+    "https://www.youtube.com/watch?v=Iqzv9C35vA4&ab_channel=OfficialTitanOsakiMassageChannel"
 
-<section class="section-content sections">
-  <iframe
-    style="width: 100%; aspect-ratio: 16/9; border: 0"
-    src="https://www.youtube.com/embed/Iqzv9C35vA4?mute=1&amp;autoplay=1"
-  ></iframe>
+  const imgs = [
+    {
+      img_order: 0,
+      img_name: "Osaki OS-Pro 4D Emperor",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/1.OS-Emperor-features.jpg?v=1647382509",
+    },
+    {
+      img_order: 1,
+      img_name: "color: taupe&grey, brown&black, black&grey",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/2.OS-Emperor-features.jpg?v=1647382509",
+    },
+    {
+      img_order: 2,
+      img_name:
+        "bluetooth speaker, touch screen controller, side panel controller",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/3.OS-Emperor-features.jpg?v=1647382509",
+    },
+    {
+      img_order: 3,
+      img_name: "advanced 4d massage",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/5.OS-Emperor-features.jpg?v=1647382508",
+    },
+    {
+      img_order: 4,
+      img_name: "computer body scan system",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/4.OS-Emperor-features.jpg?v=1647382509",
+    },
+    {
+      img_order: 5,
+      img_name: "8 auto massage programs",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/7.OS-Emperor-features.jpg?v=1647382509",
+    },
+    {
+      img_order: 6,
+      img_name: "Osaki OS-Pro 4D Emperor heated back roller massage",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/8.OS-Emperor-features.jpg?v=1647382508",
+    },
+    {
+      img_order: 7,
+      img_name: "Osaki OS-Pro 4D Emperor 4d sl-track massage",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/9.OS-Emperor-features.jpg?v=1647382509",
+    },
+    {
+      img_order: 8,
+      img_name: "Osaki OS-Pro 4D Emperor 18 airbags air massage",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/10.OS-Emperor-features.jpg?v=1647382508",
+    },
+    {
+      img_order: 9,
+      img_name: "Osaki OS-Pro 4D Emperor adjstable shoulder massager",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/11.OS-Emperor-features.jpg?v=1647382509",
+    },
+    {
+      img_order: 10,
+      img_name: "Osaki OS-Pro 4D Emperor-side panel controller",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12.OS-Emperor-features.jpg?v=1614374724",
+    },
+    {
+      img_order: 11,
+      img_name:
+        "Osaki OS-Pro 4D Emperor touch screen, usb charger, wireless charger",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/13.OS-Emperor-features.jpg?v=1647382509",
+    },
+    {
+      img_order: 12,
+      img_name: "Osaki OS-Pro 4D Emperor 2 stage zero gravity",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/14.OS-Emperor-features.jpg?v=1647382508",
+    },
+    {
+      img_order: 13,
+      img_name: "Osaki OS-Pro 4D Emperor Space Saving",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/15.OS-Emperor-features.jpg?v=1647382508",
+    },
+    {
+      img_order: 14,
+      img_name: "Osaki OS-Pro 4D Emperor Calf Nneading",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/16.OS-Emperor-features.jpg?v=1647382508",
+    },
+    {
+      img_order: 15,
+      img_name: "Osaki OS-Pro 4D Emperor Foot Rollers&Kneading",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/17.OS-Emperor-features.jpg?v=1647382509",
+    },
+    {
+      img_order: 16,
+      img_name: "Osaki OS-Pro 4D Emperor auto extendable footrest",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/18.OS-Emperor-features.jpg?v=1647382509",
+    },
+    {
+      img_order: 17,
+      img_name: "Osaki OS-Pro 4D Emperor bluetooth HD speaker",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/19.OS-Emperor-features.jpg?v=1647382509",
+    },
+    {
+      img_order: 18,
+      img_name: "Osaki OS-Pro 4D Emperor 20 different auto massage",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/20.OS-Emperor-features.jpg?v=1647382509",
+    },
+    {
+      img_order: 19,
+      img_name: "Osaki OS-Pro 4D Emperor Dimension Upright",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/Emperor_Dimension_Upright.jpg?v=1649460407",
+    },
+    {
+      img_order: 20,
+      img_name: "Osaki OS-Pro 4D Emperor Dimension Reclined",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/Emperor_Dimension_Reclined.jpg?v=1649460407",
+    },
+  ]
+</script>
+<body>
   <div
-    class="section-wrapper large-direction-column large-align-items-center large-offset-bottom-3 large-position-relative"
+    class="sections tw-font-sans md:tw-w-[768px] lg:tw-w-[1024px] tw-flex tw-flex-col min-[480px]:tw-w-[480px] tw-m-auto tw-leading-normal"
   >
-    <div class="intensity-content intensity-wrapper">
-      <p class="intensity-headline">Intensity Level</p>
-      <div class="intensity-bar">
-        <span class="intensity-range typography-intensity range-3"> 5-10 </span>
-      </div>
-    </div>
-    <img
-      alt="Osaki OS-Pro 4D Emperor"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/1.OS-Emperor-features.jpg?v=1647382509"
-    />
-    <p
-      class="large-text-align-center large-10 large-offset-top-1 large-pad-bottom-1"
-    >
+    <div
+      id="youtube-link"
+    ></di>
+
+    <img src="" alt="" class="" />
+    <div class="tw-m-4 tw-mb-8">
       Introducing the ALL NEW luxurious Osaki OS-Pro 4D Emperor massage chair,
       designed with all the newest technology, luxury, and stylish elegance.
       Even the smallest of details have been carefully inspected and crafted
       with the highest quality.
-    </p>
-  </div>
-  <div class="large-offset-top-1 large-offset-bottom-3">
-    <img
-      alt="color: taupe&amp;grey, brown&amp;black, black&amp;grey"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/2.OS-Emperor-features.jpg?v=1647382509"
-    />
-  </div>
-  <div class="large-offset-top-1 large-offset-bottom-3">
-    <img
-      alt="bluetooth speaker, touch screen controller, side panel controller"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/3.OS-Emperor-features.jpg?v=1647382509"
-    />
-  </div>
-  <div class="section-wrapper large-direction-column large-align-items-center">
-    <img
-      alt="advanced 4d massage"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/5.OS-Emperor-features.jpg?v=1647382508"
-    />
-    <p
-      class="large-text-align-center large-10 large-offset-top-1 large-pad-bottom-3"
-    >
+    </div>
+    <img src="" alt="" />
+    <img src="" alt="" />
+    <img src="" alt="" />
+    <div class="tw-m-4 tw-mb-8">
       The newly enhanced 4D L-track massage is designed to massage wider,
       deeper, and more precisely than the conventional massage rollers. The 4D
       massage technology will mimic the hands of a professional masseur. The
       Osaki OS-Pro 4D Emperor offers 8 different levels of 4D intensity. With
       the variety of adjustment levels, such as 5 levels of air massage
       intensity and speed of the rollers.
-    </p>
-  </div>
-  <div class="section-wrapper large-direction-column large-align-items-center">
-    <img
-      alt="computer body scan system"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/4.OS-Emperor-features.jpg?v=1647382509"
-    />
-    <p
-      class="large-text-align-center large-10 large-offset-top-1 large-pad-bottom-3"
-    >
+    </div>
+    <img src="" alt="" />
+    <div class="tw-m-4 tw-mb-8">
       The 4D Emperor will perform a body scan to map the key areas of the neck
       and back to ensure the optimal amount of pressure applied during the
       massage. The scanning technology will detect your shoulders height, which
       can be re-calibrated once the scan is complete.
-    </p>
-  </div>
-  <div class="section-wrapper large-direction-column large-align-items-center">
-    <img
-      alt="8 auto massage programs"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/7.OS-Emperor-features.jpg?v=1647382509"
-    />
-    <p
-      class="large-text-align-center large-10 large-offset-top-1 large-pad-bottom-3"
-    >
-      <br />
-      <strong> Demo </strong>
-      : This program will cycle through briefly all its different massages it
-      has to offer.
-      <br />
-      <strong> Relax </strong>
-      : This program utilizes a softer massage to help bring the user into a
-      more relax state where the massage is less aggressive.
-      <br />
-      <strong> Swing </strong>
-      : This program will massage the user while rocking in a back and forth
-      movement to create a more calming state of mind and experience.
-      <br />
-      <strong> Stretch </strong>
-      : This program will inflate certain regions pinning you to the chair and
-      then proceed to stretch out the body from your legs to your shoulder while
-      getting massaged
-      <br />
-      <strong> Scraping </strong>
-      : This program perform a scraping style massage pressing in and releasing
-      in a down and upward motion. This is great to stretch out muscles in
-      isolated areas.
-      <br />
-      <strong> Shiatsu </strong>
-      : This program helps to perform a more pinpointed massage along the back.
-      This massage style helps to focus on certain pressure points in the back
-      targeting tense muscles.
-      <br />
-      <strong> Gentle Relief </strong>
-      : This program helps to performs a tapping action with tapping.
-      <br />
-      <strong> Rejuvenate </strong>
-      : This program utilizes the strong massage styles and aggressively
-      massages the back.
-    </p>
-  </div>
-  <div class="section-wrapper large-direction-column large-align-items-center">
-    <img
-      alt="Osaki OS-Pro 4D Emperor heated back roller massage"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/8.OS-Emperor-features.jpg?v=1647382508"
-    />
-    <p
-      class="large-text-align-center large-10 large-offset-top-1 large-pad-bottom-3"
-    >
+    </div>
+    <img src="" alt="" />
+    <div class="tw-m-4 tw-mb-8">
+      <ul>
+        <li>
+          <strong>Demo:</strong> This program will cycle through briefly all its
+          different massages it has to offer.
+        </li>
+        <li>
+          <strong>Relax:</strong> This program utilizes a softer massage to help
+          bring the user into a more relaxed state where the massage is less
+          aggressive.
+        </li>
+        <li>
+          <strong>Swing:</strong> This program will massage the user while
+          rocking in a back and forth movement to create a more calming state of
+          mind and experience.
+        </li>
+        <li>
+          <strong>Stretch:</strong> This program will inflate certain regions,
+          pinning you to the chair, and then proceed to stretch out the body
+          from your legs to your shoulder while getting massaged.
+        </li>
+        <li>
+          <strong>Scraping:</strong> This program performs a scraping-style
+          massage, pressing in and releasing in a down and upward motion. This
+          is great to stretch out muscles in isolated areas.
+        </li>
+        <li>
+          <strong>Shiatsu:</strong> This program helps to perform a more
+          pinpointed massage along the back. This massage style helps to focus
+          on certain pressure points in the back targeting tense muscles.
+        </li>
+        <li>
+          <strong>Gentle Relief:</strong> This program helps to perform a
+          tapping action with tapping.
+        </li>
+        <li>
+          <strong>Rejuvenate:</strong> This program utilizes strong massage
+          styles and aggressively massages the back.
+        </li>
+      </ul>
+    </div>
+    <img src="" alt="" />
+    <div class="tw-m-4 tw-mb-8">
       The Osaki OS-Pro 4D Emperor has the most advanced back heating system with
       mild infrared heat. The roller itself will heat up at the same time. The
       heated back roller allows for a far greater surface heating area, From the
@@ -185,428 +266,260 @@
       penetrating compared to traditional thermal heat with the high
       temperatures. The warm heat will compliment the massage in loosening the
       muscles.
-    </p>
-  </div>
-  <div class="section-wrapper large-direction-column large-align-items-center">
-    <img
-      alt="Osaki OS-Pro 4D Emperor 4d sl-track massage"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/9.OS-Emperor-features.jpg?v=1647382509"
-    />
-    <p
-      class="large-text-align-center large-10 large-offset-top-1 large-pad-bottom-3"
-    >
+    </div>
+    <img src="" alt="" />
+    <div class="tw-m-4 tw-mb-8">
       The Emperor combines both the S and L track technology for an exceptional
       massage experience. The S-Track rollers will contour the natural curvature
       of your spine. The L-Track extends from your neck, all the way down past
       your lower back, and finally massaging underneath the back of your upper
       thighs. The L-Track offers about 50% more massage area than your average
       S-Track chairs.
-    </p>
-  </div>
-  <div class="section-wrapper large-direction-column large-align-items-center">
-    <img
-      alt="Osaki OS-Pro 4D Emperor 18 airbags air massage"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/10.OS-Emperor-features.jpg?v=1647382508"
-    />
-    <p
-      class="large-text-align-center large-10 large-offset-top-1 large-pad-bottom-3"
-    >
+    </div>
+    <img src="" alt="" />
+    <div class="tw-m-4 tw-mb-8">
       There are multiple airbags located throughout the massage chair to offer a
       full body massage experience. The Emperor offers a total of 18 highly
       advanced airbags in the massage chair. Airbags are located at the
       shoulders, arms, waist and pelvis, and the calf areas. The total air bags
       have been reduced but covers more surface area than previous technology
       with far greater efficiency and reliability.
-    </p>
-  </div>
-  <div class="section-wrapper large-direction-column large-align-items-center">
-    <img
-      alt="Osaki OS-Pro 4D Emperor adjstable shoulder massager"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/11.OS-Emperor-features.jpg?v=1647382509"
-    />
-    <p
-      class="large-text-align-center large-10 large-offset-top-1 large-pad-bottom-3"
-    >
+    </div>
+    <img src="" alt="" />
+    <div class="tw-m-4 tw-mb-8">
       Regardless of body type the adjustable shoulder massager can be easily
       tightened by pushing the massagers inwards. There are 3 adjustable sizes
       on each side. To reset to the default width simply push in all the way on
       both sides and it will release.
-    </p>
-  </div>
-  <div class="section-wrapper large-direction-column large-align-items-center">
-    <img
-      alt="Osaki OS-Pro 4D Emperor-side panel controller"
-      src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12.OS-Emperor-features.jpg?v=1614374724"
-    />
-    <p
-      class="large-text-align-center large-10 large-offset-top-1 large-pad-bottom-3"
-    >
+    </div>
+    <img src="" alt="" />
+    <div class="tw-m-4 tw-mb-8">
       Side panel controller is designed that the user can easily control the
       chair without using a remote tablet. The user can adjusting 4D intensity,
       reclining positions, Zero Gravity, Auto massage program and Heating
       function.
-    </p>
-  </div>
-  <div class="section-wrapper large-direction-column large-align-items-center">
-    <img
-      alt="Osaki OS-Pro 4D Emperor touch screen, usb charger, wireless charger"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/13.OS-Emperor-features.jpg?v=1647382509"
-    />
-    <p
-      class="large-text-align-center large-10 large-offset-top-1 large-pad-bottom-3"
-    >
-      <strong> USB Charger &amp; Wireless Charger: </strong>
-      Osaki OS-Pro 4D Emperor thoughtfully designed with a wireless charger for
-      the modern times of digital devices. The user can charge their smartphone
-      on the wireless charging pad located at the top of the armrest. Please not
-      the wireless charger is only available with wireless charging capability.
-      <br />
-      <strong> Touch Screen Controller: </strong>
-      The Osaki OS-Pro 4D Emperor’s remote is upgraded to Touch Screen Remote
-      Tablet. It has an easy view screen displaying the function of the chair.
-      It also has magnetic holder that holds the remote into place. The
-      interface is very easy to navigate and adjust settings.
-    </p>
-  </div>
-  <div class="section-wrapper large-direction-column large-align-items-center">
-    <img
-      alt="Osaki OS-Pro 4D Emperor 2 stage zero gravity"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/14.OS-Emperor-features.jpg?v=1647382508"
-    />
-    <p
-      class="large-text-align-center large-10 large-offset-top-1 large-pad-bottom-3"
-    >
+    </div>
+    <img src="" alt="" />
+    <div class="tw-m-4 tw-mb-8">
+      <ul>
+        <li>
+          <strong>USB Charger & Wireless Charger:</strong> Osaki OS-Pro 4D
+          Emperor thoughtfully designed with a wireless charger for the modern
+          times of digital devices. The user can charge their smartphone on the
+          wireless charging pad located at the top of the armrest. Please note
+          the wireless charger is only available with wireless charging
+          capability.
+        </li>
+        <li>
+          <strong>Touch Screen Controller:</strong> The Osaki OS-Pro 4D
+          Emperor’s remote is upgraded to Touch Screen Remote Tablet. It has an
+          easy view screen displaying the function of the chair. It also has a
+          magnetic holder that holds the remote in place. The interface is very
+          easy to navigate and adjust settings.
+        </li>
+      </ul>
+    </div>
+    <img src="" alt="" />
+    <div class="tw-m-4 tw-mb-8">
       Emperor is equipped with 2 stages of zero gravity, giving the user a
       weightless feeling during the massage. This gives the user an option on
       how far back they want their chair to recline automatically, or you can
       adjust the chair manually with the remote. Inspired by NASA the Zero
       Gravity is to help reduce the stress on the back, evenly distributing the
       weight and pressure.
-    </p>
-  </div>
-  <div class="section-wrapper large-direction-column large-align-items-center">
-    <img
-      alt="Osaki OS-Pro 4D Emperor Space Saving"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/15.OS-Emperor-features.jpg?v=1647382508"
-    />
-    <p
-      class="large-text-align-center large-10 large-offset-top-1 large-pad-bottom-3"
-    >
+    </div>
+    <img src="" alt="" />
+    <div class="tw-m-4 tw-mb-8">
       The Emperor 4D only needs 4.7” from the backrest to the wall, which
       reduces the amount of space the chair takes up. Space saving design allows
       you to maximize your valuable living space.
-    </p>
-  </div>
-  <div class="section-wrapper large-direction-column large-align-items-center">
-    <img
-      alt="Osaki OS-Pro 4D Emperor Calf Nneading"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/16.OS-Emperor-features.jpg?v=1647382508"
-    />
-    <p
-      class="large-text-align-center large-10 large-offset-top-1 large-pad-bottom-3"
-    >
+    </div>
+    <img src="" alt="" />
+    <div class="tw-m-4 tw-mb-8">
       On the upper section of the leg rest, the air massagers will rotate in a
       circular motion to add a new dimension to the calf massage. For the foot
       portion addition components have been added to stretch and massage the
       bridge and heel of the foot. The experience is like no other.
-    </p>
-  </div>
-  <div class="section-wrapper large-direction-column large-align-items-center">
-    <img
-      alt="Osaki OS-Pro 4D Emperor Foot Rollers&amp;Kneading"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/17.OS-Emperor-features.jpg?v=1647382509"
-    />
-    <p
-      class="large-text-align-center large-10 large-offset-top-1 large-pad-bottom-3"
-    >
+    </div>
+    <img src="" alt="" />
+    <div class="tw-m-4 tw-mb-8">
       Underneath the feet there are spinning reflexology rollers to provide an
       outstanding foot massage. The rollers under the feet will travel along the
       sides and arches of your feet to provide a more dimensional kneading
       experience.
-    </p>
-  </div>
-  <div class="section-wrapper large-direction-column large-align-items-center">
-    <img
-      alt="Osaki OS-Pro 4D Emperor auto extendable footrest"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/18.OS-Emperor-features.jpg?v=1647382509"
-    />
-    <p
-      class="large-text-align-center large-10 large-offset-top-1 large-pad-bottom-3"
-    >
+    </div>
+    <img src="" alt="" />
+    <div class="tw-m-4 tw-mb-8">
       The foot component will extend outwards and then retract inwards when
       scanning the length of the user’s legs. Simply apply pressure with your
       feet to indicated to the leg scanner that length is at the desired
       position. remote also allows for the user to auto adjust the legrest to
       either extend or retract.
-    </p>
-  </div>
-  <div class="section-wrapper large-direction-column large-align-items-center">
-    <img
-      alt="Osaki OS-Pro 4D Emperor bluetooth HD speaker"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/19.OS-Emperor-features.jpg?v=1647382509"
-    />
-    <p
-      class="large-text-align-center large-10 large-offset-top-1 large-pad-bottom-3"
-    >
-      Osaki OS-Pro 4D Emperor is equipped with Bluetooth technology with
-      an Amphitheater sound system that reduces the surrounding noise, enhancing
+    </div>
+    <img src="" alt="" />
+    <div class="tw-m-4 tw-mb-8">
+      Osaki OS-Pro 4D Emperor is equipped with Bluetooth technology with an
+      Amphitheater sound system that reduces the surrounding noise, enhancing
       your listening experience. This allows you to listen to your favorite
       tunes or podcast on Osaki’s highest grade of audio speakers located in the
       headrest. It is advised to activate the Bluetooth speakers at the lowest
       volume before playing music, and then gradually increasing to a desired
       level.
-    </p>
-  </div>
-  <div class="section-wrapper large-direction-column large-align-items-center">
-    <img
-      alt="Osaki OS-Pro 4D Emperor 20 different auto massage"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/20.OS-Emperor-features.jpg?v=1647382509"
-    />
-    <p
-      class="large-text-align-center large-10 large-offset-top-1 large-pad-bottom-3"
-    >
+    </div>
+    <img src="" alt="" />
+    <div class="tw-m-4 tw-mb-8">
       The Osaki OS-Pro 4D Emperor has 20 different auto massage programs divided
-      into 4 different massage area categories. There is Neck &amp; Shoulder,
-      Lower Back, Manual and Advanced categories.
-    </p>
-  </div>
-  <div class="section-wrapper large-direction-column large-offset-top-2">
-    <h2 class="text-align-center">Dimensions</h2>
-    <div
-      class="section-wrapper small-direction-column large-align-items-center"
-    >
-      <div class="large-6 small-12">
-        <img
-          alt="Osaki OS-Pro 4D Emperor Dimension Upright"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/Emperor_Dimension_Upright.jpg?v=1649460407"
-        />
+      into 4 different massage area categories. There is Neck & Shoulder, Lower
+      Back, Manual and Advanced categories.
+    </div>
+
+    <div class="section-dimensions tw-mb-20">
+      <div
+        class="tw-p-10 tw-text-3xl md:tw-text-4xl lg:tw-text-5xl tw-text-center tw-font-bold"
+      >
+        Dimensions
       </div>
-      <div class="large-6 small-12">
-        <img
-          alt="Osaki OS-Pro 4D Emperor Dimension Reclined"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/Emperor_Dimension_Reclined.jpg?v=1649460407"
-        />
+      <div
+        class="tw-flex tw-flex-col tw-items-center tw-justify-between tw-gap-5 md:tw-flex-row md:tw-gap-10"
+      >
+        <img src="" alt="" class="tw-min-w-0" />
+        <img src="" alt="" class="tw-min-w-0" />
       </div>
     </div>
-  </div>
-</section>
-<section class="section-specs section-pad-bottom">
-  <div class="table-tap">
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Product Name</div>
-        <div class="specs-column">Osaki OS-Pro 4D Emperor</div>
+
+    <section>
+      <div
+        class="tw-p-10 tw-text-3xl md:tw-text-4xl lg:tw-text-5xl tw-text-center tw-font-bold"
+      >
+        Specification
       </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">User Manual</div>
-        <div class="specs-column">
+      <div class="tw-text-xl tw-font-normal">
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-font-bold">Product Name</div>
+          <div>Osaki OS-Pro 4D Emperor</div>
+        </div>
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-font-bold">User Manual</div>
           <a
+            class="!tw-text-red-500 !tw-no-underline"
             href="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/Osaki_OS-Pro_4D_Emperor_manual_Small_Size.pdf?v=1654540940"
-            style="color: #ff4800"
             target="_blank"
+            >Download</a
           >
-            Download
-          </a>
+        </div>
+        <!-- <div
+                            class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+                          >
+                            <div class="tw-w-52 tw-font-bold">Battery</div>
+                            <div>3.7V 1300MAH</div>
+                          </div> -->
+        <!-- <div
+                            class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+                          >
+                            <div class="tw-w-52 tw-font-bold">Rate Frequency</div>
+                            <div>50/60 Hz</div>
+                          </div> -->
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-font-bold">Auto Timer</div>
+          <div>15 Minutes</div>
+        </div>
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            <div>Dimensions</div>
+            <div>(W x L x H)</div>
+          </div>
+          <div class="tw-w-full tw-grid-cols-2 tw-grid tw-gap-2">
+            <div>
+              <div class="tw-font-bold">Upright</div>
+              <div>31.5” x 62“ x 46.5”</div>
+            </div>
+            <div>
+              <div class="tw-font-bold">Reclined</div>
+              <div>31.5” x 67.7” x 34”</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            <div>Width</div>
+          </div>
+          <div class="tw-w-full tw-grid-cols-2 tw-grid tw-gap-2">
+            <div>
+              <div class="tw-font-bold">Shoulder</div>
+              <div>20.5"/17"</div>
+            </div>
+            <div>
+              <div class="tw-font-bold">Seat</div>
+              <div>17"</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            <div>Minimum Doorway Size</div>
+          </div>
+          <div>32”</div>
+        </div>
+
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-font-bold">
+            <div>Maximum User Weight</div>
+          </div>
+          <div>260 lbs</div>
         </div>
       </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Power Supply</div>
-        <div class="specs-column">AC 110 - 120V</div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Rate Frequency</div>
-        <div class="specs-column">60 Hz</div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Rate Power Consumption</div>
-        <div class="specs-column">250W</div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Rate Timer</div>
-        <div class="specs-column">15 Minutes</div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Track Guide</div>
-        <div class="specs-column">8 Level Approx 3.9"</div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Angle Adjustment</div>
-        <div class="specs-column">
-          <strong> Backrest </strong>
-          <br />
-          Approx 128 - 155
-          <br />
-          (Ground Angle)
-        </div>
-        <div class="specs-column">
-          <strong> Footrest </strong>
-          <br />
-          Approx 9 - 75
-          <br />
-          (Wall Angle)
-        </div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">
-          Dimensions
-          <br />
-          (W x L x H)
-        </div>
-        <div class="specs-column">
-          <strong> Upright </strong>
-          <br />
-          31.5” x 62“ x 46.5”
-        </div>
-        <div class="specs-column">
-          <strong> Reclined </strong>
-          <br />
-          31.5” x 67.7” x 34”
-        </div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">
-          Package Dimensions
-          <br />
-          (W x L x H)
-        </div>
-        <div class="specs-column">
-          <strong> Box 1 </strong>
-          <br />
-          52.4" x 33.5" x 49.5"
-        </div>
-        <div class="specs-column">
-          <strong> Box 2 </strong>
-          <br />
-          23.2" x 20.1" x 21.7"
-        </div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Width</div>
-        <div class="specs-column">
-          <strong> Shoulder </strong>
-          <br />
-          20.5"/17"
-        </div>
-        <div class="specs-column">
-          <strong> Seat </strong>
-          <br />
-          17"
-        </div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Minimum Doorway Size</div>
-        <div class="specs-column">32”</div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Weight</div>
-        <div class="specs-column">244.6 lbs</div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">
-          Package Weight (N.W. / G.W.)
-          <br />
-        </div>
-        <div class="specs-column">
-          <strong> Box 1 </strong>
-          <br />
-          210.5 / 246.9 lbs
-        </div>
-        <div class="specs-column">
-          <strong> Box 2 </strong>
-          <br />
-          48.5 / 55.1 lbs
-        </div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Maximum User Weight</div>
-        <div class="specs-column">270 lbs</div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">
-          Usage Condition
-          <br />
-        </div>
-        <div class="specs-column">
-          <strong> Environment Temperature </strong>
-          <br />
-          32°F ~ 95°F
-        </div>
-        <div class="specs-column">
-          <strong> Contrasting humidity </strong>
-          <br />
-          20 ~ 80RH
-        </div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">
-          Storage Condition
-          <br />
-        </div>
-        <div class="specs-column">
-          <strong> Storage Temperature </strong>
-          <br />
-          23°F ~ 95°F
-        </div>
-        <div class="specs-column">
-          <strong> Contrasting humidity </strong>
-          <br />
-          20 ~ 80RH
-        </div>
-      </div>
-    </div>
+    </section>
   </div>
-</section>
-<script src="https://cdn.tailwindcss.com"></script>
-<script
-  crossorigin="anonymous"
-  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
-  src="https://code.jquery.com/jquery-3.6.4.min.js"
-></script>
+</body>
 <script>
-  $(function () {
-    $("#tab-button1").on("click", () => {
-      $("#tab-button1").addClass("active-tab")
-      $("#tab-button2").removeClass("active-tab")
-      $(".sections").fadeIn("slow")
-      $(".section-specs").fadeIn("slow")
+  const getImages = () => {
+    document.querySelectorAll(".sections img").forEach((img, i) => {
+      img.src = imgs[i].img_src
     })
-    $("#tab-button2").on("click", () => {
-      $("#tab-button1").removeClass("active-tab")
-      $("#tab-button2").addClass("active-tab")
-      $(".sections").fadeOut("slow")
-      $(".section-specs").fadeOut("slow")
-    })
-  })
+  }
+  const createVideoDOM = () => {
+    const getYoutubeSrc = (src) => {
+      const regex =
+        /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/gi
+      const id = src.match(regex)[0]
+      const embed = id.replace("watch?v=", "embed/")
+      const dst = "https://www." + embed + "?mute=1&autoplay=1"
+      return dst
+    }
+    const iframe = document.createElement("iframe")
+    iframe.classList = "tw-aspect-video tw-w-full tw-mb-10"
+    try {
+      iframe.src = getYoutubeSrc(youtube_link)
+      document.getElementById("youtube-link").appendChild(iframe)
+    } catch (err) {
+      console.log(err)
+    }
+  }
+  const initializeProductDescription = () => {
+    try {
+      getImages()
+    } catch (error) {
+      console.log(error)
+    }
+    try {
+      createVideoDOM()
+    } catch (error) {
+      console.log(error)
+    }
+  }
+  initializeProductDescription()
 </script>

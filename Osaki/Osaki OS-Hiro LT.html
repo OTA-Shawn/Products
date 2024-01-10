@@ -11,40 +11,129 @@
 <li>USB Charger</li>
 <li>Chromotherapy</li>
 </ul>-->
-<!-- more -->
-<div id="tab-buttons" class="max-w-6xl mx-auto my-4">
-  <button
-    id="tab-button1"
-    class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center dark:text-gray-400 dark:hover:text-gray-300 active-tab"
-  >
-    Description
-  </button>
-  <button
-    id="tab-button2"
-    class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center t dark:text-gray-400 dark:hover:text-gray-300"
-  >
-    Reviews
-  </button>
-</div>
-<section class="section-content sections">
-  <iframe
-    style="width: 100%; aspect-ratio: 16/9; border: 0"
-    src="https://www.youtube.com/embed/FklCfDuPuBA?mute=1&amp;autoplay=1"
-  ></iframe>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  href="https://ota-shawn.github.io/Products/globalProductDescription.css"
+  rel="stylesheet"
+/>
+<link href="../globalProductDescription.css" rel="stylesheet" />
+<script>
+  const youtube_link =
+    "https://www.youtube.com/watch?v=FklCfDuPuBA&ab_channel=OfficialTitanOsakiMassageChannel"
+
+  const imgs = [
+    {
+      img_order: 0,
+      img_name: "OS-Hiro LT Banner",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/Hiro_Taupe_Lifestyle.jpg?v=1670435213",
+    },
+    {
+      img_order: 1,
+      img_name: "Japanese Brushless motors",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/2.OS-Hiro-LT-Product-Feature.jpg?v=1647552025",
+    },
+    {
+      img_order: 2,
+      img_name: "advanced 3d massage",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/3.OS-Hiro-LT-Product-Feature.jpg?v=1647552024",
+    },
+    {
+      img_order: 3,
+      img_name: "computer body scan system",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/4_OS-Hiro-LT-Product-Feature_jpg.jpg?v=1647552025",
+    },
+    {
+      img_order: 4,
+      img_name: "ergonomic sl-track massage",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/5.OS-Hiro-LT-Product-Feature.jpg?v=1647552025",
+    },
+    {
+      img_order: 5,
+      img_name: "full body airbag massage",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/6.OS-Hiro-LT-Product-Feature.jpg?v=1647552025",
+    },
+    {
+      img_order: 6,
+      img_name: "8 auto massage programs and 6 manual massage programs",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/7.OS-Hiro-LT-Product-Feature.jpg?v=1647552025",
+    },
+    {
+      img_order: 7,
+      img_name: "zero gravity",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/8.OS-Hiro-LT-Product-Feature.jpg?v=1647552025",
+    },
+    {
+      img_order: 8,
+      img_name: "space saving technology",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/9.OS-Hiro-LT-Product-Feature.jpg?v=1647552025",
+    },
+    {
+      img_order: 9,
+      img_name: "dual foot roller massage",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/10.OS-Hiro-LT-Product-Feature.jpg?v=1647552025",
+    },
+    {
+      img_order: 10,
+      img_name: "bluetooth speaker",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/11.OS-Hiro-LT-Product-Feature.jpg?v=1647552024",
+    },
+    {
+      img_order: 11,
+      img_name: "heat therapy on the back",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/12.OS-Hiro-LT-Product-Feature.jpg?v=1647552025",
+    },
+    {
+      img_order: 12,
+      img_name: "extendable footrest",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/13.OS-Hiro-LT-Product-Feature.jpg?v=1647552024",
+    },
+    {
+      img_order: 13,
+      img_name: "chromo therapy lighting",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/14.OS-Hiro-LT-Product-Feature.jpg?v=1647552025",
+    },
+    {
+      img_order: 14,
+      img_name: "USB Charger LCD Remote",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/15.OS-Hiro-LT-Product-Feature.jpg?v=1647552025",
+    },
+    {
+      img_order: 15,
+      img_name: "Osaki OS-Hiro LT Dimension Upright",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/Hiro_Dimension_Upright.jpg?v=1649954641",
+    },
+    {
+      img_order: 16,
+      img_name: "Osaki OS-Hiro LT Dimension Reclined",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/Hiro_Dimension_Reclined.jpg?v=1649954641",
+    },
+  ]
+</script>
+<body>
   <div
-    class="section-wrapper large-direction-column large-align-items-center large-offset-bottom-3 large-position-relative"
+    class="sections tw-font-sans md:tw-w-[768px] lg:tw-w-[1024px] tw-flex tw-flex-col min-[480px]:tw-w-[480px] tw-m-auto tw-leading-normal"
   >
-    <div class="intensity-content intensity-wrapper">
-      <p class="intensity-headline">Intensity Level</p>
-      <div class="intensity-bar">
-        <span class="intensity-range typography-intensity range-3"> 6-9 </span>
-      </div>
-    </div>
-    <img
-      alt="OS-Hiro LT Banner"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/Hiro_Taupe_Lifestyle.jpg?v=1670435213"
-    />
-    <p class="large-offset-top-1 large-text-align-center large-10">
+    <div id="youtube-link"></div>
+
+    <img src="" alt="" class="" />
+    <div class="tw-m-4 tw-mb-8">
       Osaki OS-Hiro LT is 3D massage chair with SL-track rolling massage which
       is shown an overall upgraded mechanism. Hiro is designed with unlock new
       technologies and tri-core processors for faster response, transition and
@@ -53,31 +142,17 @@
       quieter and longer lifetime. RMP sensor is more accurate, and position
       sensor offers softer 3D massage technique by airbags. The user can
       experience smooth massage therapy as like human hands do on OS-Hiro LT.
-    </p>
-  </div>
-  <div
-    class="section-wrapper large-direction-column large-align-items-center large-offset-bottom-3"
-  >
-    <img
-      alt="Japanese Brushless motors"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/2.OS-Hiro-LT-Product-Feature.jpg?v=1647552025"
-    />
-    <p class="large-text-align-center large-10 large-offset-top-1">
+    </div>
+    <img src="" alt="" />
+    <div class="tw-m-4 tw-mb-8">
       Osaki OS- Hiro LT is installed by Japanese engineering with Brushless
       motors which are more reliable, quieter, stronger and longer lifetime than
       the normal motors are used in other massage chairs. Therefore, OS-Hiro is
       more powerfully structured, so the user can use it more comfortably
       without worrying about mechanics.
-    </p>
-  </div>
-  <div
-    class="section-wrapper large-direction-column large-align-items-center large-offset-bottom-3"
-  >
-    <img
-      alt="advanced 3d massage"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/3.OS-Hiro-LT-Product-Feature.jpg?v=1647552024"
-    />
-    <p class="large-text-align-center large-10 large-offset-top-1">
+    </div>
+    <img src="" alt="" />
+    <div class="tw-m-4 tw-mb-8">
       Unlike most 3D Massage chairs on the market, the chair lets you adjust the
       3D Roller depth at any point in the massage, whether you’re in an auto
       mode, or a manual mode. 3 Core processor for faster response, transition
@@ -85,356 +160,236 @@
       transit to other manual programs faster than other massage chairs. It
       spend less time, effect and waiting time while the user controls the
       massage chair.
-    </p>
-  </div>
-  <div
-    class="section-wrapper large-direction-column large-align-items-center large-offset-bottom-3"
-  >
-    <img
-      alt="computer body scan system"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/4_OS-Hiro-LT-Product-Feature_jpg.jpg?v=1647552025"
-    />
-    <p class="large-text-align-center large-10 large-offset-top-1">
+    </div>
+    <img src="" alt="" />
+    <div class="tw-m-4 tw-mb-8">
       OS-Hiro LT will perform a body scan to map the key areas of the neck and
       back to ensure the optimal amount of pressure applied during the massage.
       The scanning technology will detect your shoulders height, which can be
       re-calibrated once the scan is complete.
-    </p>
-  </div>
-  <div
-    class="section-wrapper large-direction-column large-align-items-center large-offset-bottom-3"
-  >
-    <img
-      alt="ergonomic sl-track massage"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/5.OS-Hiro-LT-Product-Feature.jpg?v=1647552025"
-    />
-    <p class="large-text-align-center large-10 large-offset-top-1">
+    </div>
+    <img src="" alt="" />
+    <div class="tw-m-4 tw-mb-8">
       The L-Track has length of 52” starting from the neck to down through the
       glutes to the hamstrings.
-    </p>
-  </div>
-  <div
-    class="section-wrapper large-direction-column large-align-items-center large-offset-bottom-3"
-  >
-    <img
-      alt="full body airbag massage"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/6.OS-Hiro-LT-Product-Feature.jpg?v=1647552025"
-    />
-    <p class="large-text-align-center large-10 large-offset-top-1">
+    </div>
+    <img src="" alt="" />
+    <div class="tw-m-4 tw-mb-8">
       There are multiple airbags located throughout the massage chair to offer a
       full body massage experience. The Hiro LT offers a total of 14 airbags in
       the massage chair, which are located at the shoulders, arms, feet and calf
       areas. The compression of airbag massage helps to continue increasing
       blood circulation throughout the body to relieve pain and tension.
-    </p>
-  </div>
-  <div
-    class="section-wrapper large-direction-column large-align-items-center large-offset-bottom-3"
-  >
-    <img
-      alt="8 auto massage programs and 6 manual massage programs"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/7.OS-Hiro-LT-Product-Feature.jpg?v=1647552025"
-    />
-    <p class="large-text-align-center large-10 large-offset-top-1">
-      This Chair comes equipped with 8 different preset programs including:
-      Gentle, Relax, Therapy, Vigorous, Demo, Swedish, Thai and Chinese. These
-      auto programs combine the 6 different massage techniques available in the
-      chair. These 6 massage styles are: Kneading, Swedish, Tapping, Shiatsu,
-      Clapping and Rolling.
-    </p>
-  </div>
-  <div
-    class="section-wrapper large-direction-column large-align-items-center large-offset-bottom-3"
-  >
-    <img
-      alt="zero gravity"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/8.OS-Hiro-LT-Product-Feature.jpg?v=1647552025"
-    />
-    <p class="large-text-align-center large-10 large-offset-top-1">
-      When reclined into the zero-gravity position, the complete weight of your
-      back is virtually supported by the backrest which maximizes the intensity
-      of the massage. In this position when the knees are brought above the
-      chest will optimize your blood flow, in order to relax the body more.
-    </p>
-  </div>
-  <div
-    class="section-wrapper large-direction-column large-align-items-center large-offset-bottom-3"
-  >
-    <img
-      alt="space saving technology"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/9.OS-Hiro-LT-Product-Feature.jpg?v=1647552025"
-    />
-    <p class="large-text-align-center large-10 large-offset-top-1">
+    </div>
+    <img src="" alt="" />
+    <div class="tw-m-4 tw-mb-8">
+      There are multiple airbags located throughout the massage chair to offer a
+      full body massage experience. The Hiro LT offers a total of 14 airbags in
+      the massage chair, which are located at the shoulders, arms, feet and calf
+      areas. The compression of airbag massage helps to continue increasing
+      blood circulation throughout the body to relieve pain and tension.
+    </div>
+    <img src="" alt="" />
+    <div class="tw-m-4 tw-mb-8">
+      There are multiple airbags located throughout the massage chair to offer a
+      full body massage experience. The Hiro LT offers a total of 14 airbags in
+      the massage chair, which are located at the shoulders, arms, feet and calf
+      areas. The compression of airbag massage helps to continue increasing
+      blood circulation throughout the body to relieve pain and tension.
+    </div>
+    <img src="" alt="" />
+    <div class="tw-m-4 tw-mb-8">
       Osaki's innovative design team has engineered a space saving technology
       that slides the chair forward as the chair reclines.
-    </p>
-  </div>
-  <div
-    class="section-wrapper large-direction-column large-align-items-center large-offset-bottom-3"
-  >
-    <img
-      alt="dual foot roller massage"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/10.OS-Hiro-LT-Product-Feature.jpg?v=1647552025"
-    />
-    <p class="large-text-align-center large-10 large-offset-top-1">
+    </div>
+    <img src="" alt="" />
+    <div class="tw-m-4 tw-mb-8">
       OS-Hiro LT has a spinning reflexology massage roller located on the bottom
       of the feet that provide a soothing kneading style application. As the
       roller spins, it will stimulate acupuncture points and as the air bags
       inflate it will generate a much deeper massage along the bottoms of your
       feet. During the rolling massage, 4 airbags will offer you compresses the
       feet and calf areas at the same time.
-    </p>
-  </div>
-  <div
-    class="section-wrapper large-direction-column large-align-items-center large-offset-bottom-3"
-  >
-    <img
-      alt="bluetooth speaker"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/11.OS-Hiro-LT-Product-Feature.jpg?v=1647552024"
-    />
-    <p class="large-text-align-center large-10 large-offset-top-1">
+    </div>
+    <img src="" alt="" />
+    <div class="tw-m-4 tw-mb-8">
       Hiro LT is equipped with Bluetooth technology that allows the user to
       listen to their favorite music and phone calls on high quality speakers in
       the headrest.
-    </p>
-  </div>
-  <div
-    class="section-wrapper large-direction-column large-align-items-center large-offset-bottom-3"
-  >
-    <img
-      alt="heat therapy on the back"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/12.OS-Hiro-LT-Product-Feature.jpg?v=1647552025"
-    />
-    <p class="large-text-align-center large-10 large-offset-top-1">
+    </div>
+    <img src="" alt="" />
+    <div class="tw-m-4 tw-mb-8">
       The Hiro LT has heating pads located on the Lumbar area. It offers the
       heat therapy which is a great compliment to the roller and airbag massage.
       Heating the body’s temperature is known to increase blood circulation and
       loosen tense muscles.
-    </p>
-  </div>
-  <div
-    class="section-wrapper large-direction-column large-align-items-center large-offset-bottom-3"
-  >
-    <img
-      alt="extendable footrest"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/13.OS-Hiro-LT-Product-Feature.jpg?v=1647552024"
-    />
-    <p class="large-text-align-center large-10 large-offset-top-1">
+    </div>
+    <img src="" alt="" />
+    <div class="tw-m-4 tw-mb-8">
       Hiro LT will scan your legs to ensure the optimal leg length for your
       height. The foot component will extend outwards and the retract inwards.
       Simply apply pressure with your feet to indicated to the leg scanner that
       length is at the desired position. The remote controller also allows for
       one to auto adjust the leg component to either extend or retract to the
       user’s personal needs.
-    </p>
-  </div>
-  <div
-    class="section-wrapper large-direction-column large-align-items-center large-offset-bottom-3"
-  >
-    <img
-      alt="chromo therapy lighting"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/14.OS-Hiro-LT-Product-Feature.jpg?v=1647552025"
-    />
-    <p class="large-text-align-center large-10 large-offset-top-1">
+    </div>
+    <img src="" alt="" />
+    <div class="tw-m-4 tw-mb-8">
       Hiro LT is designed with chromo light therapy which helps to restore
       balance to the body by applying the warm and relaxed lights at the side of
       the chair. It helps the user to feel more comfortable and relaxed by using
       the visible spectrum.
-    </p>
-  </div>
-  <div
-    class="section-wrapper large-direction-column large-align-items-center large-offset-bottom-3"
-  >
-    <img
-      alt="USB Charger LCD Remote"
-      src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/15.OS-Hiro-LT-Product-Feature.jpg?v=1647552025"
-    />
-    <p class="large-text-align-center large-10 large-offset-top-1">
+    </div>
+    <img src="" alt="" />
+    <div class="tw-m-4 tw-mb-8">
       Hiro LT is equipped with Bluetooth technology that allows the user to
       listen to their favorite music and phone calls on high quality speakers in
       the headrest.
-    </p>
-  </div>
-  <div class="section-wrapper large-direction-column">
-    <h2 class="large-text-align-center">Dimensions</h2>
-    <div
-      class="section-wrapper small-direction-column large-align-items-center"
-    >
-      <div class="large-6 small-12">
-        <img
-          alt="Osaki OS-Hiro LT Dimension Upright"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/Hiro_Dimension_Upright.jpg?v=1649954641"
-        />
+    </div>
+    <div>
+      <div
+        class="tw-p-10 tw-text-3xl md:tw-text-4xl lg:tw-text-5xl tw-text-center tw-font-bold"
+      >
+        Dimensions
       </div>
-      <div class="large-6 small-12">
-        <img
-          alt="Osaki OS-Hiro LT Dimension Reclined"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/Hiro_Dimension_Reclined.jpg?v=1649954641"
-        />
+      <div class="tw-flex tw-flex-col md:tw-flex-row tw-items-center">
+        <img src="" alt="" class="tw-flex-1 tw-min-w-0" />
+        <img src="" alt="" class="tw-flex-1 tw-min-w-0" />
       </div>
     </div>
-  </div>
-</section>
-<section class="section-specs section-pad-bottom">
-  <div class="table-tap">
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Product Name</div>
-        <div class="specs-column">Osaki OS-Hiro LT</div>
+    <section>
+      <div
+        class="tw-p-10 tw-text-3xl md:tw-text-4xl lg:tw-text-5xl tw-text-center tw-font-bold"
+      >
+        Specification
       </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">User Manual</div>
-        <div class="specs-column">
+      <div class="tw-text-xl tw-font-normal">
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-font-bold">Product Name</div>
+          <div>Osaki OS-Hiro LT</div>
+        </div>
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-font-bold">User Manual</div>
           <a
+            class="!tw-text-red-500 !tw-no-underline"
             href="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/OS-HiroLT_EI-8602A_Instruction_Manual.pdf?v=1654534523"
-            style="color: #ff4800"
             target="_blank"
+            >Download</a
           >
-            Download
-          </a>
+        </div>
+        <!-- <div
+                    class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+                  >
+                    <div class="tw-w-52 tw-font-bold">Battery</div>
+                    <div>3.7V 1300MAH</div>
+                  </div> -->
+        <!-- <div
+                    class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+                  >
+                    <div class="tw-w-52 tw-font-bold">Rate Frequency</div>
+                    <div>50/60 Hz</div>
+                  </div> -->
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-font-bold">Auto Timer</div>
+          <div>15 Minutes</div>
+        </div>
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            <div>Dimensions</div>
+            <div>(W x L x H)</div>
+          </div>
+          <div class="tw-w-full tw-grid-cols-2 tw-grid tw-gap-2">
+            <div>
+              <div class="tw-font-bold">Upright</div>
+              <div>29" x 61" x 49"</div>
+            </div>
+            <div>
+              <div class="tw-font-bold">Reclined</div>
+              <div>29" x 79.5" x 43"</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            <div>Width</div>
+          </div>
+          <div class="tw-w-full tw-grid-cols-2 tw-grid tw-gap-2">
+            <div>
+              <div class="tw-font-bold">Shoulder</div>
+              <div>17.5"</div>
+            </div>
+            <div>
+              <div class="tw-font-bold">Seat</div>
+              <div>16.5"</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            <div>Minimum Doorway Size</div>
+          </div>
+          <div>29"</div>
+        </div>
+
+        <div
+          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        >
+          <div class="tw-w-52 tw-font-bold">
+            <div>Maximum User Weight</div>
+          </div>
+          <div>260 lbs</div>
         </div>
       </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Power Supply</div>
-        <div class="specs-column">AC 110 - 120V</div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Rate Frequency</div>
-        <div class="specs-column">60 Hz</div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Rated Power Consumption</div>
-        <div class="specs-column">150W</div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Rate Timer</div>
-        <div class="specs-column">15 Minutes</div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">
-          Dimensions <br />
-          (W x L x H)
-        </div>
-        <div class="specs-column">
-          <strong> Upright </strong> <br />
-          29" x 61" x 49"
-        </div>
-        <div class="specs-column">
-          <strong> Reclined </strong> <br />
-          29" x 79.5" x 43"
-        </div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Width</div>
-        <div class="specs-column">
-          <strong> Shoulder </strong> <br />
-          17.5"
-        </div>
-        <div class="specs-column">
-          <strong> Seat </strong> <br />
-          16.5"
-        </div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Minimum Doorway Size</div>
-        <div class="specs-column">29"</div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Weight <br /></div>
-        <div class="specs-column">
-          <strong> Net </strong> <br />
-          185.19 lbs
-        </div>
-        <div class="specs-column">
-          <strong> Gross </strong> <br />
-          224.87 lbs
-        </div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Maximum User Weight</div>
-        <div class="specs-column">260 lbs</div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Length of Wire <br /></div>
-        <div class="specs-column">
-          <strong> Controller Wire </strong> <br />
-          59.0"
-        </div>
-        <div class="specs-column">
-          <strong> Power Supply Wire </strong> <br />
-          70.9"
-        </div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Usage Condition <br /></div>
-        <div class="specs-column">
-          <strong> Environment Temperature </strong> <br />
-          32°F~95°F
-        </div>
-        <div class="specs-column">
-          <strong> Contrasting Humidity </strong> <br />
-          20-80RH
-        </div>
-      </div>
-    </div>
-    <div class="specs-section">
-      <div class="specs-row">
-        <div class="specs-rowheader">Storage Condition <br /></div>
-        <div class="specs-column">
-          <strong> Storage Temperature </strong> <br />
-          32°F~95°F
-        </div>
-        <div class="specs-column">
-          <strong> Storage Humidity </strong> <br />
-          20-80RH
-        </div>
-      </div>
-    </div>
+    </section>
   </div>
-</section>
-<script src="https://cdn.tailwindcss.com"></script>
-<script
-  crossorigin="anonymous"
-  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
-  src="https://code.jquery.com/jquery-3.6.4.min.js"
-></script>
+</body>
 <script>
-  $(function () {
-    $("#tab-button1").on("click", () => {
-      $("#tab-button1").addClass("active-tab");
-      $("#tab-button2").removeClass("active-tab");
-      $(".sections").fadeIn("slow");
-      $(".section-specs").fadeIn("slow");
-    });
-    $("#tab-button2").on("click", () => {
-      $("#tab-button1").removeClass("active-tab");
-      $("#tab-button2").addClass("active-tab");
-      $(".sections").fadeOut("slow");
-      $(".section-specs").fadeOut("slow");
-    });
-  });
+  const getImages = () => {
+    document.querySelectorAll(".sections img").forEach((img, i) => {
+      img.src = imgs[i].img_src
+    })
+  }
+  const createVideoDOM = () => {
+    const getYoutubeSrc = (src) => {
+      const regex =
+        /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/gi
+      const id = src.match(regex)[0]
+      const embed = id.replace("watch?v=", "embed/")
+      const dst = "https://www." + embed + "?mute=1&autoplay=1"
+      return dst
+    }
+    const iframe = document.createElement("iframe")
+    iframe.classList = "tw-aspect-video tw-w-full tw-mb-10"
+    try {
+      iframe.src = getYoutubeSrc(youtube_link)
+      document.getElementById("youtube-link").appendChild(iframe)
+    } catch (err) {
+      console.log(err)
+    }
+  }
+  const initializeProductDescription = () => {
+    try {
+      getImages()
+    } catch (error) {
+      console.log(error)
+    }
+    try {
+      createVideoDOM()
+    } catch (error) {
+      console.log(error)
+    }
+  }
+  initializeProductDescription()
 </script>

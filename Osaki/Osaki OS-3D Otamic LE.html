@@ -428,12 +428,7 @@
 
 <body>
   <div class="sections">
-    <iframe
-      id="youtube-link"
-      src=""
-      frameborder="0"
-      class="tw-aspect-video tw-w-full tw-mb-10"
-    ></iframe>
+    <div id="youtube-link"></div>
 
     <div class="section !tw-mb-40 !tw-flex-col !tw-bg-white md:!tw-mb-80">
       <img src="" alt="" class="!tw-w-full" />
@@ -810,27 +805,41 @@
     </section>
   </div>
 </body>
-
 <script>
-  document.querySelectorAll(".sections img").forEach((img, i) => {
-    try {
+  const getImages = () => {
+    document.querySelectorAll(".sections img").forEach((img, i) => {
       img.src = imgs[i].img_src
+    })
+  }
+  const createVideoDOM = () => {
+    const getYoutubeSrc = (src) => {
+      const regex =
+        /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/gi
+      const id = src.match(regex)[0]
+      const embed = id.replace("watch?v=", "embed/")
+      const dst = "https://www." + embed + "?mute=1&autoplay=1"
+      return dst
+    }
+    const iframe = document.createElement("iframe")
+    iframe.classList = "tw-aspect-video tw-w-full tw-mb-10"
+    try {
+      iframe.src = getYoutubeSrc(youtube_link)
+      document.getElementById("youtube-link").appendChild(iframe)
     } catch (err) {
       console.log(err)
     }
-  })
-
-  const getYoutubeSrc = (src) => {
-    const regex =
-      /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/gi
-    const id = src.match(regex)[0]
-    const embed = id.replace("watch?v=", "embed/")
-    const dst = "https://www." + embed + "?mute=1&autoplay=1"
-    return dst
   }
-  try {
-    document.getElementById("youtube-link").src = getYoutubeSrc(youtube_link)
-  } catch (err) {
-    console.log(err)
+  const initializeProductDescription = () => {
+    try {
+      getImages()
+    } catch (error) {
+      console.log(error)
+    }
+    try {
+      createVideoDOM()
+    } catch (error) {
+      console.log(error)
+    }
   }
+  initializeProductDescription()
 </script>

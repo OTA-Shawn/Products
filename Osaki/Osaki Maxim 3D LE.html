@@ -224,12 +224,7 @@
   <div
     class="sections tw-font-sans md:tw-w-[768px] lg:tw-w-[1024px] tw-flex tw-flex-col min-[480px]:tw-w-[480px] tw-m-auto tw-leading-normal"
   >
-    <iframe
-      id="youtube-link"
-      src=""
-      frameborder="0"
-      class="tw-aspect-video tw-w-full tw-mb-10"
-    ></iframe>
+    <div id="youtube-link"></div>
 
     <div class="tw-mb-20 tw-flex tw-flex-col tw-items-center">
       <div class="tw-text-5xl tw-font-bold tw-text-center">
@@ -669,22 +664,40 @@
 </body>
 
 <script>
-  document.querySelectorAll(".sections img").forEach((img, i) => {
-    // console.log(i)
-    try {
+  const getImages = () => {
+    document.querySelectorAll(".sections img").forEach((img, i) => {
       img.src = imgs[i].img_src
+    })
+  }
+  const createVideoDOM = () => {
+    const getYoutubeSrc = (src) => {
+      const regex =
+        /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/gi
+      const id = src.match(regex)[0]
+      const embed = id.replace("watch?v=", "embed/")
+      const dst = "https://www." + embed + "?mute=1&autoplay=1"
+      return dst
+    }
+    const iframe = document.createElement("iframe")
+    iframe.classList = "tw-aspect-video tw-w-full tw-mb-10"
+    try {
+      iframe.src = getYoutubeSrc(youtube_link)
+      document.getElementById("youtube-link").appendChild(iframe)
     } catch (err) {
       console.log(err)
     }
-  })
-
-  const getYoutubeSrc = (src) => {
-    const regex =
-      /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/gi
-    const id = src.match(regex)[0]
-    const embed = id.replace("watch?v=", "embed/")
-    const dst = "https://www." + embed + "?mute=1&autoplay=1"
-    return dst
   }
-  document.getElementById("youtube-link").src = getYoutubeSrc(youtube_link)
+  const initializeProductDescription = () => {
+    try {
+      getImages()
+    } catch (error) {
+      console.log(error)
+    }
+    try {
+      createVideoDOM()
+    } catch (error) {
+      console.log(error)
+    }
+  }
+  initializeProductDescription()
 </script>
