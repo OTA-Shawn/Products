@@ -14,11 +14,11 @@ function createIntensityLevel(minIntensity, maxIntensity) {
   // Create tooltip container
   const tooltipContainer = document.createElement("div")
   tooltipContainer.style.position = "relative"
+  tooltipContainer.style.fontFamily = "sans-serif"
 
   // Create custom question mark div
   const questionMarkDiv = document.createElement("div")
   questionMarkDiv.className = "intensity-tooltip custom-questionmark"
-  // questionMarkDiv.textContent = "?"
 
   // Create intensity modal
   const intensityModal = document.createElement("div")
@@ -26,7 +26,7 @@ function createIntensityLevel(minIntensity, maxIntensity) {
 
   // Create image element in the modal
   const modalImage = document.createElement("img")
-  modalImage.style.width = "300px"
+  modalImage.style.width = "100%" // Updated width style
   modalImage.src =
     "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/Screenshot_2024-01-10_at_12.19.56.png?v=1704919961"
   modalImage.alt = ""
@@ -34,10 +34,10 @@ function createIntensityLevel(minIntensity, maxIntensity) {
   // Create text content in the modal
   const modalText = document.createElement("div")
   modalText.innerHTML = `
-      The Intensity Level represents both Minimum Intensity and Maximum Intensity.
-      <br />
-      <b>Note:</b> Intensity level is a relative indicator that can be perceived differently by each user.
-    `
+    The Intensity Level represents both Minimum Intensity and Maximum Intensity.
+    <br />
+    <b>Note:</b> Intensity level is a relative indicator that can be perceived differently by each user.
+  `
 
   // Append elements to the modal
   intensityModal.appendChild(modalImage)
