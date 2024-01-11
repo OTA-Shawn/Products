@@ -1159,7 +1159,9 @@
       </div>
     </div>
     <div class="section-dimensions">
-      <div class="tw-mt-40 tw-text-center tw-text-3xl lg:tw-text-5xl">
+      <div
+        class="tw-p-10 tw-text-3xl md:tw-text-4xl lg:tw-text-5xl tw-text-center tw-font-bold"
+      >
         Dimensions
       </div>
       <div
@@ -1292,11 +1294,10 @@
   }
   const createVideoDOM = () => {
     const getYoutubeSrc = (src) => {
-      const regex =
-        /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/gi
+      const regex = /[a-z0-9_-]{11}/gi
+
       const id = src.match(regex)[0]
-      const embed = id.replace("watch?v=", "embed/")
-      const dst = "https://www." + embed + "?mute=1&autoplay=1"
+      const dst = "https://www.youtube.com/embed/" + id + "?mute=1&autoplay=1"
       return dst
     }
     const iframe = document.createElement("iframe")
