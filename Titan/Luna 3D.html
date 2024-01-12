@@ -46,1122 +46,652 @@
    3D Surround Sound Bluetooth Speakers
   </li>
  </ul>-->
-<!-- more -->
-<style>
-  .theme-color--highlight {
-    color: #2d59f1 !important;
-    font-weight: 600 !important;
-  }
-  .theme-color--highlight-heating {
-    color: #ff3f00 !important;
-    font-weight: 600 !important;
-  }
-  .theme-color--background {
-    background-color: #161616 !important;
-  }
-  .theme-font--color {
-    color: #a1a1a1 !important;
-  }
-  .main {
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-    color: #1d1d1f;
-  }
-  .typography-headline-standalone {
-    font-size: 103px !important;
-    line-height: 1.04;
-    font-weight: 600;
-    letter-spacing: -0.01em;
-    margin-bottom: 0em;
-  }
-  .typography-headline-standalone-subtitle {
-    font-size: 40px !important;
-    line-height: 1.04;
-    font-weight: 600;
-    letter-spacing: -0.01em;
-    margin-bottom: 0.4em;
-  }
-  .section-content {
-    margin-left: auto;
-    margin-right: auto;
-    width: 980px;
-  }
-  .intro-copy {
-    font-size: 32px !important;
-    line-height: 1.2 !important;
-    font-weight: 600 !important;
-    letter-spacing: 0.004em !important;
-    margin: 0 auto 2em !important;
-    max-width: 800px;
-  }
-  .list-nobullet {
-    margin-left: 0;
-    list-style-type: none !important;
-    padding-left: 0; /*padding-bottom: 0;*/
-  }
-  .icon-copy {
-    font-size: 32px;
-    font-weight: 600;
-    letter-spacing: 0.011em;
-    padding-left: 0.3em;
-    vertical-align: text-bottom;
-  }
-  .icon-color-cream {
-    height: 35px;
-    width: 35px;
-    background-color: #e4e2df;
-    border-radius: 50%;
-    display: inline-block;
-  }
-  .icon-color-charcoal {
-    height: 35px;
-    width: 35px;
-    background-color: #c3c4c7;
-    border-radius: 50%;
-    display: inline-block;
-  }
-  .main-video {
-    max-width: 700px;
-  }
-  .typography-section-headline {
-    font-size: 62px !important;
-    font-weight: 600;
-    line-height: 1.07;
-    letter-spacing: -0.005em;
-  }
-  .typography-section-headline-control-panel {
-    font-size: 58px !important;
-    font-weight: 600;
-    line-height: 1.07;
-    letter-spacing: -0.005em;
-  }
-  .typography-section-copy {
-    font-size: 24px !important;
-    font-weight: 300;
-    line-height: 1.3;
-    letter-spacing: 0.002em;
-    text-align: left; /* width: 400px; */
-    padding-left: 1px;
-  }
-  .grid-module,
-  .grid-item {
-    background-color: #e0e1e2;
-  }
-  .theme-color--background .grid-item {
-    background-color: #1e1e1e;
-    height: 100%;
-  }
-  .titan-logo {
-    width: 200px;
-    height: auto;
-  }
-  .typography-grid-headline {
-    font-size: 62px !important;
-    line-height: 1.07;
-    font-weight: 600;
-    letter-spacing: -0.005em;
-  }
-  .typography-grid-copy {
-    font-size: 24px !important;
-    font-weight: 300;
-    line-height: 1.3;
-    letter-spacing: 0.009em;
-    color: #4e4e4e;
-  }
-  .typography-grid-copy-speaker {
-    font-size: 24px !important;
-    font-weight: 300;
-    line-height: 1.3;
-    letter-spacing: 0.009em;
-    color: #161616;
-  }
-  .typography-grid-copy-pillow {
-    font-size: 24px !important;
-    font-weight: 600;
-    line-height: 1.3;
-    letter-spacing: 0.009em;
-    color: #161616;
-  }
-  .aircell-list li {
-    position: absolute;
-    text-align: right;
-    width: 100%;
-    left: -2px;
-  }
-  .aircell-list li:first-child {
-    top: 270px;
-  }
-  .aircell-list li:nth-child(2) {
-    top: 511px;
-  }
-  .remote-controller-list {
-    position: relative;
-    border-bottom: 1px solid #58595b;
-    margin-bottom: 0.5rem;
-    font-size: 22px !important;
-  }
-  .remote-controller-list div {
-    font-size: 30px !important;
-    margin-right: 1.5rem;
-  }
-  .remote-controller-list p {
-    font-size: 22px !important;
-    line-height: 2rem;
-    font-weight: 600;
-    top: 40%;
-    bottom: 0;
-    position: relative;
-  }
-  .grid-module {
-    display: flex;
-    padding: 40px;
-  }
-  .typography-module-title {
-    font-size: 20px;
-    margin: 1rem 0 0 0;
-  }
-  @media only screen and (max-width: 1024px) {
-    .main-video {
-      max-width: 580px;
-    }
-    .section-content {
-      width: 692px;
-    }
-    .section-content-dimensions {
-      text-align: center !important;
-    }
-    .titan-logo {
-      width: 170px;
-    }
-    .typography-headline-standalone {
-      font-size: 80px !important;
-    }
-    .typography-headline-standalone-subtitle {
-      font-size: 31px !important;
-      font-weight: 600;
-    }
-    .intro-copy {
-      font-size: 28px !important;
-    }
-    .icon-copy {
-      font-size: 26px !important;
-    }
-    .icon-color-cream,
-    .icon-color-charcoal {
-      width: 28px;
-      height: 28px;
-    }
-    .typography-section-headline {
-      font-size: 58px !important;
-    }
-    .typography-section-copy {
-      font-size: 22px !important; /* width: 430px; */
-      flex-direction: row !important;
-    }
-    .typography-grid-headline {
-      font-size: 32px !important;
-    }
-    .typography-grid-copy {
-      font-size: 22px !important;
-    }
-    .aircell-list li {
-      font-size: 16px;
-    }
-    .aircell-list li:first-child {
-      top: 222px;
-    }
-    .aircell-list li:nth-child(2) {
-      top: 420px;
-    }
-    .aircell-list li:nth-child(3) {
-      top: 274px;
-    }
-    .aircell-list li:nth-child(4) {
-      top: 415px;
-    }
-    .remote-controller-list {
-      margin-bottom: 1rem;
-    }
-  }
-  @media only screen and (max-width: 734px) {
-    .main-video {
-      max-width: 311px;
-    }
-    .grid {
-      grid-row-gap: 12px;
-      grid-column-gap: 12px;
-    }
-    .section-content {
-      width: 87.5%;
-      max-width: 400px;
-    }
-    .section-content-sl {
-      width: 87.5%;
-      max-width: 400px;
-    }
-    .titan-logo {
-      width: 120px;
-    }
-    .typography-headline-standalone {
-      font-size: 50px !important;
-    }
-    .typography-headline-standalone-subtitle {
-      font-size: 19px !important;
-    }
-    .intro-copy {
-      font-size: 20px !important;
-    }
-    .icon-copy {
-      font-size: 20px !important;
-      padding: 0;
-    }
-    .icon-color-cream,
-    .icon-color-charcoal {
-      width: 24px;
-      height: 24px;
-    }
-    .icon-zerogravity {
-      width: 65px !important;
-    }
-    .icon-spacesaving {
-      width: 60px !important;
-      margin-bottom: 12px;
-    }
-    .typography-section-headline {
-      font-size: 58px !important;
-    }
-    .typography-section-copy {
-      font-size: 18px !important;
-    }
-    .typography-grid-headline {
-      font-size: 34px !important;
-    }
-    .typography-grid-copy {
-      font-size: 17px !important;
-    }
-    .aircell-list li {
-      font-size: 14px !important;
-    }
-    .aircell-list li:first-child {
-      top: 186px;
-    }
-    .aircell-list li:nth-child(2) {
-      top: 353px;
-    }
-    .remote-controller-list {
-      margin-bottom: 1rem;
-      font-size: 18px !important;
-    }
-    .remote-controller-list p {
-      font-size: 17px !important;
-    }
-  }
-</style>
-<body>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <div id="tab-buttons" class="max-w-6xl mx-auto my-4">
-    <button
-      id="tab-button1"
-      class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center dark:text-gray-400 dark:hover:text-gray-300 active-tab"
-    >
-      Description
-    </button>
-    <button
-      id="tab-button2"
-      class="inline-block text-gray-500 hover:text-gray-600 py-2 px-1 text-sm font-semibold text-center t dark:text-gray-400 dark:hover:text-gray-300"
-    >
-      Reviews
-    </button>
-  </div>
-  <main class="main belmont sections">
-    <iframe
-      style="width: 100%; aspect-ratio: 16/9; border: 0"
-      src="https://www.youtube.com/embed/yc_RTvq-OB0?mute=1&amp;autoplay=1"
-    ></iframe>
-    <div
-      class="large-flex large-justify-content-space-between large-direction-column large-align-items-center large-position-relative"
-    >
-      <div class="intensity-content intensity-wrapper">
-        <p class="intensity-headline">Intensity Level</p>
-        <div class="intensity-bar">
-          <span class="intensity-range typography-intensity range-1">
-            4-6
-          </span>
-        </div>
-      </div>
-    </div>
-    <section class="large-pad-top-5 large-pad-bottom-5 medium-pad-bottom-5">
-      <div
-        class="large-flex large-justify-content-space-between large-direction-column large-align-items-center large-text-align-center"
-      >
-        <img
-          alt="Titan Logo"
-          class="titan-logo large-margin-bottom--1"
-          src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/Titan_Logo_2x-100.jpg?v=1674064058"
-        />
-        <h1 class="typography-headline-standalone">TI-3D Luna</h1>
-        <h2 class="typography-headline-standalone-subtitle">
-          3D Compact Massage Chair
-        </h2>
-        <div class="large-6 medium-8 small-10">
-          <img
-            alt="Titan Charcoal TI-3D Luna"
-            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/1.Luna-Main_2x-100.jpg?v=1673993786"
-          />
-        </div>
-        <div class="section-content">
-          <p class="intro-copy">
-            Revitalize with your new massage chair as it aligns to areas of body
-            tension, hone in on stress through air compression, and use calf
-            turning to reach the ideal spot in your tired calf muscles. Meet the
-            new Luna and see for yourself the true restorative power of this
-            small but mighty chair.
-          </p>
-          <ul
-            class="large-flex large-justify-content-center list-nobullet small-pad-left-0"
-            style="padding: 3 !important"
-          >
-            <li>
-              <span class="icon-color-cream"> </span>
-              <span class="icon-copy"> Cream </span>
-            </li>
-            <li class="large-pad-left-2 small-pad-left-1">
-              <span class="icon-color-charcoal"> </span>
-              <span class="icon-copy"> Charcoal </span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section
-      class="theme-color--background theme-font--color large-pad-bottom-7 small-pad-bottom-5"
-    >
-      <div
-        class="section-content large-pad-top-7 large-pad-bottom-7 medium-pad-bottom-5 small-pad-top-5 small-pad-bottom-1"
-      >
-        <div
-          class="large-flex large-justify-content-space-between medium-direction-row small-direction-column"
-        >
-          <div class="large-5 small-12">
-            <img
-              alt="Control Panel with Voice Control"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/2.Luna-Voice-Control_2x-100.jpg?v=1674153532"
-            />
-          </div>
-          <div
-            class="large-flex large-direction-column large-justify-content-center large-6 small-12 medium-pad-lef-2 small-pad-left-0"
-          >
-            <h2
-              class="typography-section-headline large-offset-top-1 large-margin-bottom--2 small-margin-bottom--1"
-              style="color: #a1a1a1"
-            >
-              <span class="theme-color--highlight"> Brilliant </span>
-              <br />
-              Voice Control
-            </h2>
-            <p
-              class="typography-section-copy medium-margin-bottom--4 small-margin-bottom--2"
-            >
-              The Titan TI-3D Luna has voice control talents. There are many
-              commands that can be used during the operation of the chair. Use
-              the phrase
-              <span class="theme-color--highlight">
-                “Hey Alice” or “Hi Alice"
-              </span>
-              followed by the preset commands in the manual. The voice control
-              is located on the control panel. Hold down the button for 3
-              seconds to use the voice control feature.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div
-        class="section-content large-pad-top-5 large-pad-bottom-7 medium-pad-top-3 small-pad-top-1 small-pad-bottom-1"
-      >
-        <div
-          class="large-flex large-justify-content-space-between medium-direction-column"
-        >
-          <div
-            class="large-flex large-justify-content-space-between medium-direction-column small-direction-column small-pad-bottom-5"
-          >
-            <div
-              class="large-flex large-direction-column large-justify-content-center small-pad-top-2 large-5 medium-10 small-12"
-            >
-              <h2
-                class="typography-section-headline large-offset-top-0 large-margin-bottom--2 small-margin-bottom--1"
-                style="color: #a1a1a1"
-              >
-                <span class="theme-color--highlight"> 3D Massage </span>
-                <br />
-                Mechanism
-              </h2>
-              <p
-                class="typography-section-copy medium-margin-bottom--4 small-margin-bottom--2"
-              >
-                The Titan TI-3D is a
-                <span class="theme-color--highlight">
-                  three-dimensional massage
-                </span>
-                chair with adjustable speed and width. In addition, the Luna is
-                furnished with AI intelligent manipulators with prominent
-                designs that travel vertically and stretch from front to back
-                along the track.
-              </p>
-            </div>
-            <div class="large-6 medium-10 small-10">
-              <img
-                alt="3D Massage Mechanism"
-                src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.Luna-3D-Mechanism_2x-100.jpg?v=1674167847"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section-content large-pad-bottom-7 small-pad-bottom-5">
-        <div
-          class="large-flex large-position-relative large-justify-content-space-between medium-direction-column"
-        >
-          <div
-            class="large-flex large-direction-column large-justify-content-center large-position-absolute medium-position-relative large-7 medium-10 small-12"
-          >
-            <p class="typography-section-copy">
-              The
-              <span class="theme-color--highlight"> SL-Track </span>
-              makes great use of the curved guide rail technology. The SL-Track
-              reaches all the way from
-              <span class="theme-color--highlight">
-                your head to the end of your spine.
-              </span>
-              This technology grants the ability to completely conform to the
-              back of the body.
-            </p>
-          </div>
-          <div class="large-12">
-            <img
-              alt="SL-Track"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4.Luna-SL-Track_2x-100.jpg?v=1674235538"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="section-content">
-        <div
-          class="large-flex large-justify-content-space-between large-direction-column"
-        >
-          <div class="large-12">
-            <img
-              alt="Zero Gravity and Space Saving"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/5.Luna-Zero-Gravity_2x-100.jpg?v=1674236096"
-            />
-          </div>
-          <div class="grid">
-            <div class="large-grid-span-6 small-grid-span-12">
-              <div
-                class="grid-item large-flex large-direction-column large-border-radius--2"
-              >
-                <div
-                  class="large-pad-top-3 large-pad-right-3 large-pad-bottom-4 large-pad-left-3 medium-pad-top-2 medium-pad-right-2 medium-pad-bottom-2 medium-pad-left-2"
-                >
-                  <img
-                    alt="Zero Gravity Icon"
-                    class="icon-zerogravity"
-                    src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/5.Atai_Icon-Zerogravity_2x-100.jpg?v=1669410989"
-                    style="width: 80px"
-                  />
-                  <h2
-                    class="typography-grid-headline large-margin-top--1 large-margin-bottom--1 medium-margin-bottom--1 small-margin-top--0"
-                    style="color: #a1a1a1"
-                  >
-                    <span class="theme-color--highlight"> Zero Gravity </span>
-                    <br />
-                    Reclining
-                  </h2>
-                  <p class="typography-grid-copy">
-                    Seize relief in a
-                    <span class="theme-color--highlight">
-                      state of weightlessness
-                    </span>
-                    with the TI-3D Luna’s Zero Gravity reclining. These
-                    indispensable mechanics were originally developed by
-                    NASA.Luna’s Zero Gravity reclining technology is enhanced by
-                    the wide range of leg rest and backrest adjustment.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="large-grid-span-6 small-grid-span-12">
-              <div
-                class="grid-item large-flex large-direction-column large-border-radius--3 large-border-radius--2"
-              >
-                <div
-                  class="large-pad-top-3 large-pad-right-3 large-pad-bottom-4 large-pad-left-3 medium-pad-top-2 medium-pad-right-2 medium-pad-bottom-2 medium-pad-left-2"
-                >
-                  <img
-                    alt="Space Saving Icon"
-                    class="icon-spacesaving"
-                    src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/6.Atai_Icon-SpaceSaving_2x-100.jpg?v=1669410989"
-                    style="width: 68px"
-                  />
-                  <h2
-                    class="typography-grid-headline large-margin-top--1 large-margin-bottom--1 medium-margin-bottom--1 small-margin-top--0"
-                    style="color: #a1a1a1"
-                  >
-                    <span class="theme-color--highlight"> Space Saving </span>
-                    <br />
-                    Technology
-                  </h2>
-                  <p class="typography-grid-copy">
-                    Find relaxation even in the smallest of spaces. With Titan’s
-                    Space Saving Technology, you may place your TI-3D Luna
-                    <span class="theme-color--highlight">
-                      3 inches from the wall
-                    </span>
-                    and still easily achieve a full recline.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="large-pad-top-7 small-pad-top-5">
-      <div class="section-content">
-        <div
-          class="large-flex large-justify-content-space-between large-align-items-center medium-direction-column medium-align-items-left large-offset-bottom-10 medium-offset-bottom-5"
-        >
-          <div
-            class="large-flex large-direction-column large-justify-content-center large-5 medium-10 small-12 large-order-2 medium-order-1"
-          >
-            <h2 class="typography-section-headline large-margin-bottom--2">
-              <span class="theme-color--highlight"> 12 Cell </span>
-              <br />
-              Full Body
-              <br />
-              Air Massage
-            </h2>
-            <p class="typography-section-copy medium-margin-bottom--3">
-              Fall into repose with Luna’s arm and calf air massage. The airbags
-              located in the arm and calf. The bags can be adjusted by
-              <span class="theme-color--highlight">
-                two levels of intensity
-              </span>
-              to perfect and boost your massage.
-            </p>
-          </div>
-          <div
-            class="large-position-relative large-6 medium-7 small-12 large-order-1 medium-order-2"
-          >
-            <img
-              alt="12 Cell Full Body Air Massage"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/8.Luna-Airbag_2x-100.jpg?v=1674236853"
-            />
-            <ul class="aircell-list list-nobullet">
-              <li>Armrest</li>
-              <li>Calf</li>
-            </ul>
-          </div>
-        </div>
-        <div
-          class="large-flex large-justify-content-space-between large-align-items-center medium-direction-column medium-align-items-left large-offset-bottom-7 medium-offset-bottom-3"
-        >
-          <div
-            class="large-flex large-direction-column large-justify-content-center large-5 medium-10 small-12"
-          >
-            <h2 class="typography-section-headline large-margin-bottom--2">
-              Calf
-              <span style="color: #ff3f00">
-                <br />
-                Heating
-              </span>
-            </h2>
-            <p
-              class="typography-section-copy large-margin-bottom--2 medium-margin-bottom--0"
-            >
-              Abandon undesired stress with the TI-3D calf heating system. The
-              carbon fiber is used as
-              <span class="theme-color--highlight-heating">
-                far-infrared heat source
-              </span>
-              . The fiber helps loosen tension in muscles and joints. Press down
-              on the heating button on the control panel to use and it will
-              activate after 3 minutes.
-            </p>
-          </div>
-          <div class="large-6 medium-7 small-12 medium-pad-top-2">
-            <img
-              alt="Calf Heating"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/9.Luna-Heating_2x-100.jpg?v=1674236972"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section-content large-pad-bottom-3 small-pad-bottom-0">
-      <div class="large-margin-bottom--6 mb-10">
-        <h2 class="typography-section-headline large-margin-bottom--3">
-          8 Auto Programs
-        </h2>
-        <div
-          class="grid grid-cols-4 py-10 p-4 bg-[#e0e1e3] justify-items-center gap-x-6 gap-y-3 text-center"
-        >
-          <div class="flex flex-col items-center">
-            <img
-              alt="Fast Mode"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.Luna-Icon-Fast_2x-100.jpg?v=1674237281"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">Fast</div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              alt="Comfort Mode"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/11.Luna-Icon-Comfort_2x-100.jpg?v=1674238720"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">Comfort</div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              alt="Relax Mode"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12.Luna-Icon-Relax_2x-100.jpg?v=1674238767"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">Relax</div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              alt="Full Mode"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/13.Luna-Icon-Full_2x-100.jpg?v=1674238800"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">Full</div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              alt="Neck &amp; Shoulder Mode"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/14.Luna-Icon-Neck-Shoulder_2x-100.jpg?v=1674238828"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">Neck &amp; Shoulder</div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              alt="Back &amp; Waist Mode"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/15.Luna-Icon-Back-Shoulder_2x-100.jpg?v=1674238863"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">Back &amp; Waist</div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              alt="Stretch Mode"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/16.Luna-Icon-Stretch_2x-100.jpg?v=1674238898"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">Stretch</div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              alt="Sport Recovery Mode"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/17.Luna-Icon-Sport-Recovery_2x-100.jpg?v=1674238927"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">Sport Recovery</div>
-          </div>
-        </div>
-      </div>
-      <div class="large-pad-bottom-4 mb-10">
-        <h2 class="typography-section-headline large-margin-bottom--3">
-          6 Manual Massage Styles
-        </h2>
-        <div
-          class="grid grid-cols-3 py-10 p-4 bg-[#e0e1e3] justify-items-center gap-x-6 gap-y-3 text-center"
-        >
-          <div class="flex flex-col items-center">
-            <img
-              alt="Kneading Massage Style"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/18.Luna-Icon-Kneading_2x-100.jpg?v=1674239018"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">Kneading</div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              alt="Tapping Massage Style"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19.Luna-Icon-Tapping_2x-100.jpg?v=1674239055"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">Tapping</div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              alt="Kneading &amp; Tapping Massage Style"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/20.Luna-Icon-Kneading-Tapping_2x-100.jpg?v=1674239082"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">Kneading &amp; Tapping</div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              alt="Shiatsu Massage Style"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/21.Luna-Icon-Shiatsu_2x-100.jpg?v=16742391482"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">Shiatsu</div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              alt="Knocking Massage Style"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/22.Luna-Icon-Knocking_2x-100.jpg?v=1674239174"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">Knocking</div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              alt="3D Massage Style"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/23.Luna-Icon-3D_2x-100.jpg?v=1674239220"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">3D</div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section
-      class="section-content small-pad-top-3 !flex flex-col-reverse md:flex-row mb-10"
-      style="align-items: center"
-      ;
-    >
-      <div class="section-content">
-        <div class="">
-          <h2
-            class="typography-section-headline large-margin-bottom--3 medium-margin-top--5 medium-margin-bottom--3 medium-margin-left--4 small-margin-top--2"
-          >
-            Calf
-            <span class="theme-color--highlight">
-              <br />
-              Turning
-            </span>
-          </h2>
-          <p
-            class="typography-section-copy medium-11 medium-pad-bottom-3 medium-pad-left-2 small-pad-bottom-3"
-          >
-            Find the perfect calf position with a manual calf turn and different
-            levels of air compression. The manual turn can go
-            <span class="theme-color--highlight"> up to 180º </span>
-            . If you want to not use the calf feature, flip the leg rest so that
-            you can focus on the rest of your body while still elevating your
-            feet.
-          </p>
-        </div>
-      </div>
-      <img
-        alt="Calf Turning"
-        src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/Luna_Charcoal_Calf_Turning.gif?v=1677882525"
-        class="!w-full md:!w-1/2"
-      />
-    </section>
-    <section class="large-pad-top-1 small-pad-top-3">
-      <div class="section-content">
-        <div
-          class="grid-item large-flex large-pad-top-1 large-pad-right-3 large-pad-bottom-0 large-pad-left-0 medium-direction-column medium-pad-top-2 medium-pad-right-0 medium-pad-bottom-3 medium-pad-left-0 small-pad-left-0"
-        >
-          <div class="medium-12 small-12">
-            <img
-              alt="Adjustable Armrest"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/25.Luna-Adjustable-Armrest_2x-100.jpg?v=1674256999"
-              style="width: 700px"
-            />
-          </div>
-          <div
-            class="large-6 large-pad-left-2 large-pad-top-5 medium-9 medium-pad-top-3 medium-pad-left-10 small-pad-left-2"
-          >
-            <h2
-              class="typography-section-headline large-margin-top--1 large-margin-bottom--1 medium-margin-bottom--1 small-margin-top--0"
-            >
-              <span class="theme-color--highlight"> Adjustable </span>
-              <br />
-              Armrest
-            </h2>
-            <p class="typography-section-copy">
-              The armrests can be
-              <span class="theme-color--highlight">
-                manually moved upward
-              </span>
-              so the appropriate hand massage is found. This function allows
-              your hand and shoulders to align perfectly to the massage for
-              maximum potential.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section
-      class="flex flex-col-reverse bg-[#e0e1e2] w-[400px] md:w-[690px] lg:w-[980px] mx-auto lg:flex-row-reverse lg:justify-end lg:items-center my-5"
-    >
-      <div class="flex flex-col lg:pl-12">
-        <div class="font-semibold text-4xl text-center lg:p-10 lg:ml-36">
-          Control Panel
-        </div>
-        <div
-          class="flex flex-col md:h-80 flex-wrap gap-x-10 gap-y-3 lg:text-2xl"
-        >
-          <div class="md:h-8 border-black border-b-2">1. Toggle Power</div>
-          <div class="md:h-8 border-black border-b-2">2. LED Display</div>
-          <div class="md:h-8 border-black border-b-2">3. Time Adjustment</div>
-          <div class="md:h-8 border-black border-b-2">
-            4. Compression Therapy
-          </div>
-          <div class="md:h-8 border-black border-b-2">5. Heat Therapy</div>
-          <div class="md:h-8 border-black border-b-2">6. Massage Location</div>
-          <div class="md:h-8 border-black border-b-2">
-            7. Automatic Massage Mode
-          </div>
-          <div class="md:h-8 border-black border-b-2">
-            8. Manual Massage Mode
-          </div>
-          <div class="md:h-8 border-black border-b-2">9. Width Adjustment</div>
-          <div class="md:h-8 border-black border-b-2">10. Speed Adjustment</div>
-          <div class="md:h-8 border-black border-b-2">
-            11. Linkage Sit-up Position
-          </div>
-          <div class="md:h-8 border-black border-b-2">
-            12. Zero Gravity Mode
-          </div>
-          <div class="md:h-8 border-black border-b-2">
-            13. Leg Rest Adjustment
-          </div>
-          <div class="md:h-8 border-black border-b-2">14. Voice Control</div>
-        </div>
-      </div>
-      <img
-        class="w-1/2 md:w-1/4"
-        src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/26.Luna-Control-Panel_2x-100.jpg?v=1674491374"
-        alt="Control Panel"
-      />
-    </section>
-    <section class="hidden">
-      <div class="section-content large-pad-bottom-5 small-pad-bottom-5">
-        <div class="grid">
-          <div
-            class="grid-item large-flex large-direction-column large-justify-content-space-between large-grid-span-6 small-grid-span-12"
-          >
-            <div
-              class="large-pad-top-3 large-pad-right-3 large-pad-left-3 medium-pad-top-2 medium-pad-right-2 medium-pad-left-2"
-            >
-              <p class="typography-grid-copy-speaker">
-                Listen to your favorite music or podcasts in 3D Bluetooth audio.
-                The speaker is located in the left and right upper shoulder
-                area.
-              </p>
-            </div>
-            <div class="large-12"></div>
-            <div
-              class="grid-item large-flex large-direction-column large-justify-content-space-between large-grid-span-6 small-grid-span-12"
-            >
-              <div
-                class="large-text-align-left large-pad-top-3 large-pad-left-3 medium-pad-top-2 medium-pad-left-2 small-pad-bottom-2"
-              >
-                <p class="typography-grid-copy-pillow">Movable Pillow</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="section-content">
-      <div
-        class="large-flex large-justify-content-space-between large-direction-column large-pad-bottom-7"
-      >
-        <h2 class="typography-section-headline large-text-align-center">
-          Dimensions
-        </h2>
-        <div
-          class="large-flex large-justify-content-space-between small-direction-column large-align-items-center"
-        >
-          <div class="large-6 small-12">
-            <img
-              alt="Titan Luna Dimension Upright"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/29.Luna-Upright_2x-100.jpg?v=1674498765"
-            />
-          </div>
-          <div class="large-6 small-12">
-            <img
-              alt="Titan Luna Dimension Reclined"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/30.Luna-Recline_2x-100.jpg?v=1674498802"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-  <section class="section-specs large-pad-bottom-7">
-    <div class="table-tap">
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Product Name</div>
-          <div class="specs-column">
-            Titan TI-3D Luna 3D Compact Massage Chair
-          </div>
-          <div class="specs-column"></div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">User Manual</div>
-          <div class="specs-column">
-            <a
-              data-mce-style="color: #ff4800;"
-              href="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/TI-3D_Luna_Web_e59df617-0f31-407e-95ef-24ece5aeb991.pdf?v=1674499877"
-              style="color: #ff4800"
-              target="_blank"
-            >
-              Download
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Power Supply</div>
-          <div class="specs-column">110V - 120V</div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Rate Frequency</div>
-          <div class="specs-column">60 Hz</div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Rate Consumption</div>
-          <div class="specs-column">52.2W</div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Auto Timer</div>
-          <div class="specs-column">20 minutes</div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">
-            Dimensions
-            <br />
-            (W x L x H)
-          </div>
-          <div class="specs-column">
-            <strong> Upright </strong>
-            <br />
-            24.25" x 43.5" x 39.5"
-          </div>
-          <div class="specs-column">
-            <strong> Reclined </strong>
-            <br />
-            24.25" x 56.5" x 34.5"
-          </div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Weight</div>
-          <div class="specs-column">
-            <strong> Net </strong>
-            <br />
-            Approx. 110.4 lbs
-          </div>
-          <div class="specs-column">
-            <strong> Gross </strong>
-            <br />
-            Approx. 134.9 lbs
-          </div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Usage Condition</div>
-          <div class="specs-column">
-            <strong> Environment Temperature </strong>
-            <br />
-            50°F~104°F
-          </div>
-          <div class="specs-column">
-            <strong> Contrasting Humidity </strong>
-            <br />
-            30-85RH
-          </div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Storage Condition</div>
-          <div class="specs-column">
-            <strong> Storage Temperature </strong>
-            <br />
-            23°F~95°F
-          </div>
-          <div class="specs-column">
-            <strong> Storage Humidity </strong>
-            <br />
-            20-80RH
-          </div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Width</div>
-          <div class="specs-column">
-            <strong> Shoulder </strong>
-            <br />
-            24.5"
-          </div>
-          <div class="specs-column">
-            <strong> Seat </strong>
-            <br />
-            19.5"
-          </div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Minimum Doorway Size</div>
-          <div class="specs-column">26.75"</div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Maximum User Weight</div>
-          <div class="specs-column">260 lbs</div>
-        </div>
-      </div>
-    </div>
-  </section>
-</body>
-<script src="https://cdn.tailwindcss.com"></script>
-<script
-  crossorigin="anonymous"
-  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
-  src="https://code.jquery.com/jquery-3.6.4.min.js"
-></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  href="https://ota-shawn.github.io/Products/globalProductDescription.css"
+  rel="stylesheet"
+/>
+<link href="../globalProductDescription.css" rel="stylesheet" />
 <script>
-  $(function () {
-    $("#tab-button1").on("click", () => {
-      $("#tab-button1").addClass("active-tab");
-      $("#tab-button2").removeClass("active-tab");
-      $(".sections").fadeIn("slow");
-      $(".section-specs").fadeIn("slow");
-    });
-    $("#tab-button2").on("click", () => {
-      $("#tab-button1").removeClass("active-tab");
-      $("#tab-button2").addClass("active-tab");
-      $(".sections").fadeOut("slow");
-      $(".section-specs").fadeOut("slow");
-    });
-  });
+  const youtube_link =
+    "https://www.youtube.com/watch?v=yc_RTvq-OB0&pp=ygUKdGl0YW4gbHVuYQ%3D%3D"
+
+  const imgs = [
+    {
+      img_order: 1,
+      img_name: "Titan Charcoal TI-3D Luna",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/1.Luna-Main_2x-100.jpg?v=1673993786",
+    },
+    {
+      img_order: 2,
+      img_name: "Control Panel with Voice Control",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/2.Luna-Voice-Control_2x-100.jpg?v=1674153532",
+    },
+    {
+      img_order: 3,
+      img_name: "3D Massage Mechanism",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.Luna-3D-Mechanism_2x-100.jpg?v=1674167847",
+    },
+    {
+      img_order: 4,
+      img_name: "SL-Track",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4.Luna-SL-Track_2x-100.jpg?v=1674235538",
+    },
+    {
+      img_order: 5,
+      img_name: "Zero Gravity and Space Saving",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/5.Luna-Zero-Gravity_2x-100.jpg?v=1674236096",
+    },
+    {
+      img_order: 6,
+      img_name: "Zero Gravity Icon",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/5.Atai_Icon-Zerogravity_2x-100.jpg?v=1669410989",
+    },
+    {
+      img_order: 7,
+      img_name: "Space Saving Icon",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0579/8379/5374/files/6.Atai_Icon-SpaceSaving_2x-100.jpg?v=1669410989",
+    },
+    {
+      img_order: 8,
+      img_name: "12 Cell Full Body Air Massage",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/Screenshot_2024-01-11_at_5.53.28_PM.png?v=1705017231",
+    },
+    {
+      img_order: 9,
+      img_name: "Calf Heating",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/9.Luna-Heating_2x-100.jpg?v=1674236972",
+    },
+    {
+      img_order: 10,
+      img_name: "Fast Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.Luna-Icon-Fast_2x-100.jpg?v=1674237281",
+    },
+    {
+      img_order: 11,
+      img_name: "Comfort Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/11.Luna-Icon-Comfort_2x-100.jpg?v=1674238720",
+    },
+    {
+      img_order: 12,
+      img_name: "Relax Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12.Luna-Icon-Relax_2x-100.jpg?v=1674238767",
+    },
+    {
+      img_order: 13,
+      img_name: "Full Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/13.Luna-Icon-Full_2x-100.jpg?v=1674238800",
+    },
+    {
+      img_order: 14,
+      img_name: "Neck & Shoulder Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/14.Luna-Icon-Neck-Shoulder_2x-100.jpg?v=1674238828",
+    },
+    {
+      img_order: 15,
+      img_name: "Back & Waist Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/15.Luna-Icon-Back-Shoulder_2x-100.jpg?v=1674238863",
+    },
+    {
+      img_order: 16,
+      img_name: "Stretch Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/16.Luna-Icon-Stretch_2x-100.jpg?v=1674238898",
+    },
+    {
+      img_order: 17,
+      img_name: "Sport Recovery Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/17.Luna-Icon-Sport-Recovery_2x-100.jpg?v=1674238927",
+    },
+    {
+      img_order: 18,
+      img_name: "Kneading Massage Style",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/18.Luna-Icon-Kneading_2x-100.jpg?v=1674239018",
+    },
+    {
+      img_order: 19,
+      img_name: "Tapping Massage Style",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19.Luna-Icon-Tapping_2x-100.jpg?v=1674239055",
+    },
+    {
+      img_order: 20,
+      img_name: "Kneading & Tapping Massage Style",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/20.Luna-Icon-Kneading-Tapping_2x-100.jpg?v=1674239082",
+    },
+    {
+      img_order: 21,
+      img_name: "Shiatsu Massage Style",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/21.Luna-Icon-Shiatsu_2x-100.jpg?v=16742391482",
+    },
+    {
+      img_order: 22,
+      img_name: "Knocking Massage Style",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/22.Luna-Icon-Knocking_2x-100.jpg?v=1674239174",
+    },
+    {
+      img_order: 23,
+      img_name: "3D Massage Style",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/23.Luna-Icon-3D_2x-100.jpg?v=1674239220",
+    },
+    {
+      img_order: 24,
+      img_name: "Calf Turning",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/Luna_Charcoal_Calf_Turning.gif?v=1677882525",
+    },
+    {
+      img_order: 25,
+      img_name: "Adjustable Armrest",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/25.Luna-Adjustable-Armrest_2x-100.jpg?v=1674256999",
+    },
+    {
+      img_order: 26,
+      img_name: "Control Panel",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/26.Luna-Control-Panel_2x-100.jpg?v=1674491374",
+    },
+    {
+      img_order: 27,
+      img_name: "Titan Luna Dimension Upright",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/29.Luna-Upright_2x-100.jpg?v=1674498765",
+    },
+    {
+      img_order: 28,
+      img_name: "Titan Luna Dimension Reclined",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/30.Luna-Recline_2x-100.jpg?v=1674498802",
+    },
+  ]
+</script>
+<!-- Detail Info -->
+<body>
+  <div
+    class="sections tw-m-auto tw-flex tw-flex-col tw-font-sans tw-leading-normal min-[480px]:tw-w-[480px] md:tw-w-[768px] lg:tw-w-[1024px]"
+  >
+    <div id="youtube-link"></div>
+
+    <div class="tw-mb-20 tw-flex tw-flex-col tw-items-center">
+      <div class="tw-text-center tw-text-5xl tw-font-bold">3D Luna</div>
+      <div class="tw-text-center tw-text-3xl tw-font-bold">
+        3D Compact Massage Chair
+      </div>
+
+      <img src="" alt="" class="md:tw-w-2/3" />
+      <div
+        class="tw-mb-8 tw-w-5/6 tw-text-center tw-text-lg tw-font-bold tw-leading-snug md:tw-text-justify"
+      >
+        Revitalize with your new massage chair as it aligns to areas of body
+        tension, hone in on stress through air compression, and use calf turning
+        to reach the ideal spot in your tired calf muscles. Meet the new Luna
+        and see for yourself the true restorative power of this small but mighty
+        chair.
+      </div>
+      <div class="tw-flex tw-justify-center tw-gap-8">
+        <div class="tw-flex tw-items-center tw-gap-4">
+          <div
+            class="tw-aspect-square tw-w-8 tw-rounded-full tw-bg-[#e4e2df]"
+          ></div>
+          Cream
+        </div>
+        <div class="tw-flex tw-items-center tw-gap-4">
+          <div
+            class="tw-aspect-square tw-w-8 tw-rounded-full tw-bg-[#c3c4c7]"
+          ></div>
+          Charcoal
+        </div>
+      </div>
+    </div>
+
+    <div class="tw-mb-10 tw-bg-black tw-pb-0 tw-text-gray-400 md:tw-pb-6">
+      <div
+        class="tw-flex tw-flex-col-reverse tw-items-center tw-bg-[#161616] md:tw-flex-row-reverse"
+      >
+        <div
+          class="tw-flex tw-flex-1 tw-basis-1/2 tw-flex-col tw-gap-4 tw-p-4 md:tw-p-10"
+        >
+          <div class="tw-text-4xl tw-font-bold tw-text-white">
+            <strong class="tw-block tw-text-blue-600"> Brilliant </strong>
+            Voice Control
+          </div>
+          <div>
+            The Titan TI-3D Luna has voice control talents. There are many
+            commands that can be used during the operation of the chair. Use the
+            phrase “Hey Alice” or “Hi Alice" followed by the preset commands in
+            the manual. The voice control is located on the control panel. Hold
+            down the button for 3 seconds to use the voice control feature.
+          </div>
+        </div>
+        <img class="tw-min-w-0 tw-flex-1 tw-basis-1/2" src="" alt="" />
+      </div>
+      <div
+        class="tw-flex tw-flex-col-reverse tw-items-center tw-bg-[#161616] md:tw-flex-row"
+      >
+        <div
+          class="tw-flex tw-flex-1 tw-basis-1/2 tw-flex-col tw-gap-4 tw-p-4 md:tw-p-10"
+        >
+          <div class="tw-text-4xl tw-font-bold tw-text-white">
+            <strong class="tw-block tw-text-blue-600"> 3D Massage </strong>
+            Mechanism
+          </div>
+          <div>
+            The Titan TI-3D is a three-dimensional massage chair with adjustable
+            speed and width. In addition, the Luna is furnished with AI
+            intelligent manipulators with prominent designs that travel
+            vertically and stretch from front to back along the track.
+          </div>
+        </div>
+        <img class="tw-min-w-0 tw-flex-1 tw-basis-1/2" src="" alt="" />
+      </div>
+      <div class="tw-flex tw-flex-col-reverse tw-bg-[#161616] md:tw-flex-col">
+        <div class="tw-p-4 !tw-pb-0 md:tw-p-10">
+          The SL-Track makes great use of the curved guide rail technology. The
+          SL-Track reaches all the way from your head to the end of your spine.
+          This technology grants the ability to completely conform to the back
+          of the body.
+        </div>
+        <img src="" alt="" />
+      </div>
+      <div class="tw-mb-6 tw-flex tw-flex-col">
+        <img src="" alt="" />
+        <div
+          class="tw-m-4 tw-mx-4 tw-rounded-xl tw-bg-[#1e1e1e] tw-p-4 md:tw-mx-10 md:tw-p-10"
+          class="tw-flex tw-flex-col tw-items-center tw-gap-4"
+        >
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-flex tw-flex-col tw-gap-4">
+            <div class="tw-text-4xl tw-font-bold tw-text-white">
+              <strong class="tw-text-blue-600">Zero Gravity</strong> <br />
+              Reclining
+            </div>
+            <div>
+              Seize relief in a state of weightlessness with the TI-3D Luna’s
+              Zero Gravity reclining. These indispensable mechanics were
+              originally developed by NASA.Luna’s Zero Gravity reclining
+              technology is enhanced by the wide range of leg rest and backrest
+              adjustment.
+            </div>
+          </div>
+        </div>
+        <div
+          class="tw-m-4 tw-mx-4 tw-rounded-xl tw-bg-[#1e1e1e] tw-p-4 md:tw-mx-10 md:tw-p-10"
+          class="tw-flex tw-flex-col tw-items-center tw-gap-4"
+        >
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-flex tw-flex-col tw-gap-4">
+            <div class="tw-text-4xl tw-font-bold tw-text-white">
+              <strong class="tw-text-blue-600">Space Saving</strong> <br />
+              Technology
+            </div>
+            <div>
+              Find relaxation even in the smallest of spaces. With Titan’s Space
+              Saving Technology, you may place your TI-3D Luna 3 inches from the
+              wall and still easily achieve a full recline.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tw-mb-10 tw-flex tw-flex-col tw-items-center md:tw-flex-row">
+      <img src="" alt="" class="tw-min-w-0 tw-flex-1 tw-basis-1/2" />
+      <div
+        class="flex-1 tw-flex tw-basis-1/2 tw-flex-col tw-gap-4 tw-p-4 md:tw-p-10"
+      >
+        <div class="tw-text-4xl tw-font-bold">
+          <strong class="tw-text-blue-600">12 Cell</strong> <br />
+          Full Body <br />
+          Air Massage
+        </div>
+        <div class="tw-text-gray-400">
+          Fall into repose with Luna’s arm and calf air massage. The airbags
+          located in the arm and calf. The bags can be adjusted by two levels of
+          intensity to perfect and boost your massage.
+        </div>
+      </div>
+    </div>
+    <div
+      class="tw-mb-20 tw-flex tw-flex-col tw-items-center md:tw-flex-row-reverse"
+    >
+      <img src="" alt="" class="tw-min-w-0 tw-flex-1 tw-basis-1/2" />
+      <div
+        class="flex-1 tw-flex tw-basis-1/2 tw-flex-col tw-gap-4 tw-p-4 md:tw-p-10"
+      >
+        <div class="tw-text-4xl tw-font-bold">
+          Calf
+
+          <strong class="tw-block tw-text-red-500">Heating</strong>
+        </div>
+        <div class="tw-text-gray-400">
+          Abandon undesired stress with the TI-3D calf heating system. The
+          carbon fiber is used as far-infrared heat source . The fiber helps
+          loosen tension in muscles and joints. Press down on the heating button
+          on the control panel to use and it will activate after 3 minutes.
+        </div>
+      </div>
+    </div>
+    <div class="tw-mb-10">
+      <div class="tw-mb-4 tw-pl-4 tw-text-4xl tw-font-bold">
+        8 Auto Massage Modes
+      </div>
+      <div
+        class="tw-grid tw-grid-cols-2 tw-gap-4 tw-bg-[#e0e1e3] tw-p-4 tw-text-center tw-text-gray-600 md:tw-grid-cols-4 md:tw-gap-10 md:tw-p-10"
+      >
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-4">
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-text-lg tw-font-bold">Fast</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-4">
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-text-lg tw-font-bold">Comfort</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-4">
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-text-lg tw-font-bold">Relax</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-4">
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-text-lg tw-font-bold">Full</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-4">
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-text-lg tw-font-bold">Neck & Shoulder</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-4">
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-text-lg tw-font-bold">Back & Waist</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-4">
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-text-lg tw-font-bold">Stretch</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-4">
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-text-lg tw-font-bold">Sport Recovery</div>
+        </div>
+      </div>
+    </div>
+    <div class="tw-mb-10">
+      <div class="tw-mb-4 tw-pl-4 tw-text-4xl tw-font-bold">
+        6 Manual Massage Styles
+      </div>
+      <div
+        class="tw-grid tw-grid-cols-2 tw-gap-4 tw-bg-[#e0e1e3] tw-p-4 tw-text-center tw-text-gray-600 md:tw-grid-cols-3 md:tw-gap-10 md:tw-p-10"
+      >
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-4">
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-text-lg tw-font-bold">Kneading</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-4">
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-text-lg tw-font-bold">Tapping</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-4">
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-text-lg tw-font-bold">Kneading & Tapping</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-4">
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-text-lg tw-font-bold">Shiatsu</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-4">
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-text-lg tw-font-bold">Knocking</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-4">
+          <img src="" alt="" class="tw-w-12" />
+          <div class="tw-text-lg tw-font-bold">3D</div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="tw-mb-10 tw-flex tw-flex-col tw-items-center md:tw-flex-row-reverse"
+    >
+      <img src="" alt="" class="tw-min-w-0 tw-flex-1 tw-basis-1/2" />
+      <div
+        class="flex-1 tw-flex tw-basis-1/2 tw-flex-col tw-gap-4 tw-p-4 md:tw-p-10"
+      >
+        <div class="tw-text-4xl tw-font-bold">Calf Turning</div>
+        <div class="tw-text-gray-400">
+          Find the perfect calf position with a manual calf turn and different
+          levels of air compression. The manual turn can go up to 180º . If you
+          want to not use the calf feature, flip the leg rest so that you can
+          focus on the rest of your body while still elevating your feet.
+        </div>
+      </div>
+    </div>
+    <div
+      class="tw-mb-10 tw-flex tw-flex-col tw-items-center tw-bg-[#e0e2e4] md:tw-flex-row-reverse"
+    >
+      <img src="" alt="" class="tw-min-w-0 tw-flex-1 tw-basis-1/2" />
+      <div
+        class="flex-1 tw-flex tw-basis-1/2 tw-flex-col tw-gap-4 tw-p-4 md:tw-p-10"
+      >
+        <div class="tw-text-4xl tw-font-bold">
+          <strong class="tw-text-blue-600">Adjustable Armrest</strong>
+          Footrest
+        </div>
+        <div class="tw-text-gray-400">
+          The armrests can be manually moved upward so the appropriate hand
+          massage is found. This function allows your hand and shoulders to
+          align perfectly to the massage for maximum potential.
+        </div>
+      </div>
+    </div>
+    <div
+      class="tw-mb-4 tw-flex tw-flex-row tw-items-center tw-bg-[#e0e2e4] md:tw-mb-10"
+    >
+      <img src="" alt="" class="tw-w-1/4 tw-min-w-0" />
+      <div class="tw-flex-1 tw-p-4 md:tw-p-10">
+        <div class="tw-text-center tw-text-4xl tw-font-bold">Control Panel</div>
+        <ol
+          class="tw-grid tw-list-inside tw-gap-x-4 tw-gap-y-2 tw-p-0 tw-text-gray-600 md:tw-grid-cols-2"
+        >
+          <li class="tw-border-b tw-border-black">Toggle Power</li>
+          <li class="tw-border-b tw-border-black">LED Display</li>
+          <li class="tw-border-b tw-border-black">Time Adjustment</li>
+          <li class="tw-border-b tw-border-black">Compression Therapy</li>
+          <li class="tw-border-b tw-border-black">Heat Therapy</li>
+          <li class="tw-border-b tw-border-black">Massage Location</li>
+          <li class="tw-border-b tw-border-black">Automatic Massage Mode</li>
+          <li class="tw-border-b tw-border-black">Manual Massage Mode</li>
+          <li class="tw-border-b tw-border-black">Width Adjustment</li>
+          <li class="tw-border-b tw-border-black">Speed Adjustment</li>
+          <li class="tw-border-b tw-border-black">Linkage Sit-up Position</li>
+          <li class="tw-border-b tw-border-black">Zero Gravity Mode</li>
+          <li class="tw-border-b tw-border-black">Leg Rest Adjustment</li>
+          <li class="tw-border-b tw-border-black">Voice Control</li>
+        </ol>
+      </div>
+    </div>
+
+    <div>
+      <div
+        class="tw-p-10 tw-text-center tw-text-3xl tw-font-bold md:tw-text-4xl lg:tw-text-5xl"
+      >
+        Dimensions
+      </div>
+      <div class="tw-flex tw-flex-col tw-items-center md:tw-flex-row">
+        <img src="" alt="" class="tw-min-w-0 tw-flex-1" /><img
+          src=""
+          alt=""
+          class="tw-min-w-0 tw-flex-1"
+        />
+      </div>
+    </div>
+    <section>
+      <div
+        class="tw-p-10 tw-text-center tw-text-3xl tw-font-bold md:tw-text-4xl lg:tw-text-5xl"
+      >
+        Specification
+      </div>
+      <div class="tw-text-xl tw-font-normal">
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-font-bold">Product Name</div>
+          <div>Titan TI-3D Luna 3D Compact Massage Chair</div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-font-bold">User Manual</div>
+          <a
+            class="!tw-text-red-500 !tw-no-underline"
+            href="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/TI-3D_Luna_Web_e59df617-0f31-407e-95ef-24ece5aeb991.pdf?v=1674499877"
+            target="_blank"
+            >Download</a
+          >
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-font-bold">Power Supply</div>
+          <div>110-120V~</div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-font-bold">Rate Frequency</div>
+          <div>50/60 Hz</div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-font-bold">Auto Timer</div>
+          <div>20 min</div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            <div>Dimensions</div>
+            <div>(W x L x H)</div>
+          </div>
+          <div class="tw-grid tw-w-full tw-grid-cols-2 tw-gap-2">
+            <div>
+              <div class="tw-font-bold">Upright</div>
+              <div>24.25" x 43.5" x 39.5"</div>
+            </div>
+            <div>
+              <div class="tw-font-bold">Reclined</div>
+              <div>24.25" x 56.5" x 34.5"</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            <div>Width</div>
+          </div>
+          <div class="tw-grid tw-w-full tw-grid-cols-2 tw-gap-2">
+            <div>
+              <div class="tw-font-bold">Shoulder</div>
+              <div>24.5"</div>
+            </div>
+            <div>
+              <div class="tw-font-bold">Seat</div>
+              <div>19.5"</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            <div>Minimum Doorway Size</div>
+          </div>
+          <div>26.75"</div>
+        </div>
+
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            <div>Weight</div>
+          </div>
+          <div class="tw-grid tw-w-full tw-grid-cols-2 tw-gap-2">
+            <div>
+              <div class="tw-font-bold">Net</div>
+              <div>110.4 lbs</div>
+            </div>
+            <div>
+              <div class="tw-font-bold">Gross</div>
+              <div>134.9 lbs</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-font-bold">
+            <div>Maximum User Weight</div>
+          </div>
+          <div>260 lbs</div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+<script>
+  const getImages = () => {
+    document.querySelectorAll(".sections img").forEach((img, i) => {
+      img.src = imgs[i].img_src
+      img.alt = imgs[i].img_name
+    })
+  }
+  const createVideoDOM = () => {
+    const getYoutubeSrc = (src) => {
+      const regex =
+        /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/gi
+      const id = src.match(regex)[0]
+      const embed = id.replace("watch?v=", "embed/")
+      const dst = "https://www." + embed + "?mute=1&autoplay=1"
+      return dst
+    }
+    const iframe = document.createElement("iframe")
+    iframe.classList = "tw-aspect-video tw-w-full tw-mb-10"
+    try {
+      iframe.src = getYoutubeSrc(youtube_link)
+      document.getElementById("youtube-link").appendChild(iframe)
+    } catch (err) {
+      console.log(err)
+    }
+  }
+  const initializeProductDescription = () => {
+    try {
+      getImages()
+    } catch (error) {
+      console.log(error)
+    }
+    try {
+      createVideoDOM()
+    } catch (error) {
+      console.log(error)
+    }
+  }
+  initializeProductDescription()
 </script>

@@ -54,770 +54,950 @@
      </li>
     </ul> -->
 <!-- more -->
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  href="https://ota-shawn.github.io/Products/globalProductDescription.css"
+  rel="stylesheet"
+/>
+<link href="../globalProductDescription.css" rel="stylesheet" />
+<script>
+  const youtube_link = "https://youtu.be/tJ12R-t3bVc"
+
+  const imgs = [
+    {
+      img_order: 0,
+      img_name: "Titan Taupe Luxe 3D",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/1.luxe_main_2x-100.jpg?v=1672956814",
+    },
+    {
+      img_order: 1,
+      img_name: "Intelligent Voice Control",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/2.luxe_voice_control_2x-100.jpg?v=1673285657",
+    },
+    {
+      img_order: 2,
+      img_name: "Kneading Wheels",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.luxe_kneading_spheres_2x-100.jpg?v=1672954012",
+    },
+    {
+      img_order: 3,
+      img_name: "3D Massage Mechanism",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4.luxe_3D_massage_2x-100.jpg?v=1672954012",
+    },
+    {
+      img_order: 4,
+      img_name: "SL-Track",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/5.luxe_sl_track_2x-100.jpg?v=1672963614",
+    },
+    {
+      img_order: 5,
+      img_name: "24 Cell Full Body Air Massage",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/Screenshot_2024-01-12_at_11.27.41_AM.png?v=1705080549",
+    },
+    {
+      img_order: 6,
+      img_name: "Zero Gravity Reclining and Space Saving",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/7.luxe_ZG_2x-100.jpg?v=1673022812",
+    },
+    {
+      img_order: 7,
+      img_name: "Lumbar and calf Heating",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/8.luxe_heating_2x-100.jpg?v=1672954012",
+    },
+    {
+      img_order: 8,
+      img_name: "Comfort Massage Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/9.luxe_icon_comfort_2x-100.jpg?v=1673026659",
+    },
+    {
+      img_order: 9,
+      img_name: "Relax Massage Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.luxe_icon_relax_massage_2x-100.jpg?v=1673026659",
+    },
+    {
+      img_order: 10,
+      img_name: "Stretch Massage Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/11.luxe_icon_stretch_massage_2x-100.jpg?v=1673026659",
+    },
+    {
+      img_order: 11,
+      img_name: "Neck & Shoulder Massage Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12.luxe_icon_neck_shoulder_2x-100.jpg?v=1673026659",
+    },
+    {
+      img_order: 12,
+      img_name: "Back & Waist Massage Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/13.luxe_icon_back_waist_2x-100.jpg?v=1673026659",
+    },
+    {
+      img_order: 13,
+      img_name: "Full Body Massage Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/14.luxe_icon_full_body_2x-100.jpg?v=1673026659",
+    },
+    {
+      img_order: 14,
+      img_name: "Ancient Beauty Care Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/15.luxe_icon_ancient_beauty_care_2x-100.jpg?v=1673026659",
+    },
+    {
+      img_order: 15,
+      img_name: "Leg & Hip Care Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/16.luxe_icon_leg_hip_2x-100.jpg?v=1673026659",
+    },
+    {
+      img_order: 16,
+      img_name: "Release Sedentary Stress Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/17.luxe_icon_release_sedentary_stress_2x-100.jpg?v=1673026659",
+    },
+    {
+      img_order: 17,
+      img_name: "Spine Care Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/18.luxe_icon_spine_care_2x-100.jpg?v=1673026659",
+    },
+    {
+      img_order: 18,
+      img_name: "President Cosy Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19.luxe_icon_president_cosy_2x-100.jpg?v=1673026658",
+    },
+    {
+      img_order: 19,
+      img_name: "Relieve Soreness Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/20.luxe_icon_relieve_soreness_2x-100.jpg?v=1673026659",
+    },
+    {
+      img_order: 20,
+      img_name: "Good-night Sleep Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/21.luxe_icon_goodnight_sleep_2x-100.jpg?v=1673026658",
+    },
+    {
+      img_order: 21,
+      img_name: "Sport Recovery Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/22.luxe_icon_sport_recovery_2x-100.jpg?v=1673026659",
+    },
+    {
+      img_order: 22,
+      img_name: "Meridian Treatment Mode",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/23.luxe_icon_meridian_2x-100.jpg?v=1673026659",
+    },
+    {
+      img_order: 23,
+      img_name: "Knead Massage Style",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/24.luxe_icon_knead_2x-100.jpg?v=1673026659",
+    },
+    {
+      img_order: 24,
+      img_name: "Tap Massage Style",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/25.luxe_icon_tap_2x-100.jpg?v=1673026659",
+    },
+    {
+      img_order: 25,
+      img_name: "Knead & Tap Style",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/26.luxe_icon_knead_tap_2x-100.jpg?v=1673026659",
+    },
+    {
+      img_order: 26,
+      img_name: "Shiatsu Massage Style",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/27.luxe_icon_shiatsu_2x-100.jpg?v=1673026659",
+    },
+    {
+      img_order: 27,
+      img_name: "Knock Massage Style",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/28.luxe_icon_knock_2x-100.jpg?v=1673026659",
+    },
+    {
+      img_order: 28,
+      img_name: "3D I Massage Style",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/29.luxe_icon_3D_I_2x-100.jpg?v=1673026659",
+    },
+    {
+      img_order: 29,
+      img_name: "3D II Massage Style",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/30.luxe_icon_3D_II_2x-100.jpg?v=1673026658",
+    },
+    {
+      img_order: 30,
+      img_name: "Foot Rollers",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/31.luxe_rollers_2x-100.jpg?v=1672954012",
+    },
+    {
+      img_order: 31,
+      img_name: "Footrest Extension",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/32.luxe_foot_extender_2x-100.jpg?v=1672954013",
+    },
+    {
+      img_order: 32,
+      img_name: "Side Control Panel",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/33.luxe_side_panel_2x-100.jpg?v=1672954012",
+    },
+    {
+      img_order: 33,
+      img_name: "USB charging",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/34.luxe_USB.jpg?v=1673037191",
+    },
+    {
+      img_order: 34,
+      img_name: "Bluetooth Speaker",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/35.luxe_speakers_2x-100.jpg?v=1672954012",
+    },
+    {
+      img_order: 35,
+      img_name: "Remote Controller",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/36.luxe_remote_2x-100.jpg?v=1672954012",
+    },
+    {
+      img_order: 36,
+      img_name: "LED Lighting Detail",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/37.luxe_LED_lighting_2x-100.jpg?v=1672954012",
+    },
+    {
+      img_order: 37,
+      img_name: "Remote Pocket",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/38.luxe_pocket_2x-100.jpg?v=1672954012",
+    },
+    {
+      img_order: 38,
+      img_name: "Titan Luxe Dimension Upright",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/39.luxe_dimension_upright_2x-100.jpg?v=1672954012",
+    },
+    {
+      img_order: 39,
+      img_name: "Titan Luxe Dimension Reclined",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/40.luxe_dimension_recline_2x-100.jpg?v=1672954012",
+    },
+  ]
+</script>
 
 <style>
-  <!--     .theme-color--highlight {         color: #161616 !important;         font-weight: 600 !important;     }      .theme-color--background {         background-color: #161616 !important;     }      .theme-font--color {         color: #a1a1a1 !important;     }      .main {         max-width: 1280px;         margin-left: auto;         margin-right: auto;         color: #1d1d1f;     }      .typography-headline-standalone {         font-size: 90px !important;         line-height: 1.04;         font-weight: 600;         letter-spacing: -0.035em;         margin-bottom: 0.4em;     }      .section-content {         margin-left: auto;         margin-right: auto;         width: 980px;     }      .intro-copy {         font-size: 32px !important;         line-height: 1.2 !important;         font-weight: 600 !important;         letter-spacing: .004em !important;         margin-top: 0 !important;         margin-bottom: 2em !important;     }      .list-nobullet {         margin-left: 0;         list-style-type: none !important;         padding-left: 0;     }      .icon-copy {         font-size: 32px;         font-weight: 600;         letter-spacing: .011em;         padding-left: 0.3em;         vertical-align: text-bottom;     }      .icon-color-taupe {         height: 35px;         width: 35px;         background-color: #bfb7a9;         border-radius: 50%;         display: inline-block;     }      .icon-color-brown {         height: 35px;         width: 35px;         background-color: #3a2521;         border-radius: 50%;         display: inline-block;     }      .icon-color-black {         height: 35px;         width: 35px;         background-color: #1d1d1f;         border-radius: 50%;         display: inline-block;     }      .main-video {         max-width: 700px;     }      .typography-section-headline {         font-size: 56px !important;         font-weight: 600;         line-height: 1.07;         letter-spacing: -0.005em;     }      .typography-section-copy {         font-size: 24px !important;         font-weight: 600;         line-height: 1.3;         letter-spacing: .002em;         color: #86868B;     }      .grid-module,     .grid-item {         background-color: #f2f4f5;     }      .theme-color--background .grid-item {         background-color: #1e1e1e;         height: 100%;     }      .typography-grid-headline {         font-size: 48px !important;         line-height: 1.2;         font-weight: 600;         letter-spacing: -0.005em;     }      .typography-grid-copy {         font-size: 24px !important;         font-weight: 600;         line-height: 1.3;         letter-spacing: .009em;         color: #86868B;     }      .aircell-list li {         position: absolute;         text-align: left;         width: 100%;         left: 515px;         font-size: 18px !important;         font-weight: normal;         z-index: 999;     }      .aircell-list li:first-child {         top: 120px     }      .aircell-list li:nth-child(2) {         top: 218px     }      .aircell-list li:nth-child(3) {         top: 395px     }      .aircell-list li:nth-child(4) {         top: 475px     }      .remote-controller-list {         border-bottom: 1px solid #ccc;         margin-bottom: 2rem;         font-size: 18px !important;     }      .remote-controller-list h3 {         font-size: 30px !important;         margin-right: 1.5rem;     }      .remote-controller-list p {         font-size: 16px !important;         line-height: 2rem;     }      .grid-module {         display: flex;         padding: 40px;     }      .typography-module-title {         font-size: 20px;         margin: 1rem 0 0 0;     }      @media only screen and (max-width: 1024px) {         .main-video {             max-width: 580px         }          .section-content {             width: 692px         }          .typography-headline-standalone {             font-size: 68px !important         }          .intro-copy {             font-size: 28px !important         }          .icon-copy {             font-size: 26px !important         }          .icon-color-black,         .icon-color-brown,         .icon-color-taupe {             width: 28px;             height: 28px         }          .typography-section-headline {             font-size: 52px !important         }          .typography-section-copy {             font-size: 22px !important         }          .typography-grid-headline {             font-size: 32px !important         }          .typography-grid-copy {             font-size: 18px !important         }          .aircell-list li {             font-size: 16px !important;             left: 370px         }          .aircell-list li:first-child {             top: 90px         }          .aircell-list li:nth-child(2) {             top: 160px         }          .aircell-list li:nth-child(3) {             top: 280px         }          .aircell-list li:nth-child(4) {             top: 340px         }     }      @media only screen and (max-width:734px) {         .main-video {             max-width: 311px         }          .grid {             grid-row-gap: 12px;             grid-column-gap: 12px         }          .section-content {             width: 87.5%;             max-width: 400px         }          .typography-headline-standalone {             font-size: 38px !important         }          .intro-copy {             font-size: 20px !important         }          .icon-copy {             font-size: 20px !important;             padding: 0         }          .icon-color-black,         .icon-color-brown,         .icon-color-taupe {             width: 24px;             height: 24px         }          .icon-zerogravity {             width: 65px !important         }          .icon-spacesaving {             width: 60px !important;             margin-bottom: 12px         }          .typography-section-headline {             font-size: 38px !important         }          .typography-section-copy {             font-size: 18px !important         }          .typography-grid-headline {             font-size: 34px !important         }          .typography-grid-copy {             font-size: 17px !important         }          .aircell-list li {             font-size: 14px !important;             left: 30px;         }          .aircell-list li:first-child {             top: 465px         }          .aircell-list li:nth-child(2) {             top: 545px         }          .aircell-list li:nth-child(3) {             top: 690px         }          .aircell-list li:nth-child(4) {             top: 760px         }          .grid-module {             padding: 20px 40px         }     }
-  -->
+  :root {
+    --section-bg-color: #d3d2d5;
+    --section-strong-color: #1d1d1d;
+    --section-header-color: #1d1d1d;
+    --section-content-color: #919191;
+    --section-grid-color: #919191;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .sections {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sections strong {
+    color: var(--section-strong-color);
+  }
+
+  .sections .section {
+    background-color: var(--section-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .section > img,
+  .section-content {
+    flex: 1 1 0%;
+    width: 50%;
+  }
+
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+  }
+
+  .section-header {
+    font-size: 52px;
+    line-height: 65px;
+    color: var(--section-header-color);
+  }
+  .section-header2 {
+    font-size: 36px;
+    line-height: 45px;
+    color: var(--section-header-color);
+  }
+
+  .section-description {
+    color: var(--section-content-color);
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  .circle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 32px;
+  }
+
+  .circle > :first-child {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .grid-section {
+    background-color: var(--section-bg-color);
+    color: var(--section-grid-color);
+    display: grid;
+    grid-column: span 2 / span 2;
+    padding: 50px 100px 50px;
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+
+  .grid-section img {
+    margin: 0 0 0px 50px;
+  }
+
+  .grid-section .grid-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .app-icon {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .app-icon img {
+    flex: 0 0 0;
+    width: 40%;
+  }
+
+  .grid-align {
+    text-align: left;
+  }
+
+  @media (max-width: 1024px) {
+    .sections {
+      max-width: 768px;
+    }
+
+    .sections .section {
+      margin-bottom: 35px;
+    }
+
+    .section > img {
+      width: 50%;
+    }
+
+    .section .section-content {
+      gap: 22px;
+      padding: 35px;
+    }
+
+    .section-header {
+      font-size: 39px;
+      line-height: 58px;
+    }
+
+    .section-header2 {
+      font-size: 27px;
+      line-height: 40px;
+    }
+
+    .section-description {
+      font-size: 15px;
+      line-height: 24px;
+    }
+
+    .circle {
+      gap: 5px;
+      font-size: 24px;
+    }
+
+    .circle > :first-child {
+      width: 30px;
+      height: 30px;
+    }
+
+    .grid-section {
+      padding: 35px 75px 35px;
+      gap: 35px;
+      margin-bottom: 35px;
+    }
+
+    .grid-section img {
+      margin: 0 0 0px 35px;
+    }
+
+    .grid-section .grid-item {
+      gap: 15px;
+    }
+
+    .grid-align {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .sections {
+      max-width: 480px;
+    }
+
+    .sections .section {
+      margin-bottom: 22px;
+    }
+
+    .section .section-content {
+      gap: 14px;
+      padding: 22px;
+    }
+
+    .section-header {
+      font-size: 26px;
+      line-height: 38px;
+    }
+    .section-header2 {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    .section-description {
+      font-size: 10px;
+      line-height: 16px;
+    }
+
+    .circle {
+      gap: 4px;
+      font-size: 16px;
+    }
+
+    .circle > :first-child {
+      width: 20px;
+      height: 20px;
+    }
+
+    .grid-section {
+      padding: 20px 50px 20px;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .grid-section img {
+      margin: 0 0 0px 20px;
+      width: 20%;
+    }
+
+    .grid-section .grid-item {
+      gap: 10px;
+    }
+  }
+
+  .active-tab {
+    color: #191919;
+    border-bottom: 0.25em solid gray;
+  }
 </style>
+
 <body>
-  <div id="tab-buttons" class="mx-auto my-4 max-w-6xl">
-    <button
-      id="tab-button1"
-      class="active-tab inline-block px-1 py-2 text-center text-sm font-semibold text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"
-    >
-      Description
-    </button>
-    <button
-      id="tab-button2"
-      class="t inline-block px-1 py-2 text-center text-sm font-semibold text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"
-    >
-      Reviews
-    </button>
-  </div>
-  <main class="main luxe sections">
-    <iframe
-      style="width: 100%; aspect-ratio: 16/9; border: 0"
-      src="https://www.youtube.com/embed/tJ12R-t3bVc?mute=1&amp;autoplay=1"
-    ></iframe>
-    <section
-      class="section-content large-pad-bottom-7 medium-pad-bottom-6 small-pad-bottom-5"
-    >
+  <div
+    class="sections tw-m-auto tw-flex tw-flex-col tw-font-sans tw-leading-normal min-[480px]:tw-w-[480px] md:tw-w-[768px] lg:tw-w-[1024px]"
+  >
+    <div id="youtube-link"></div>
+    <div class="section !tw-mb-40 !tw-flex-col !tw-bg-white md:!tw-mb-80">
+      <div class="tw-text-center tw-text-5xl tw-font-bold">Luxe 3D</div>
+      <img src="" alt="" class="!tw-w-full" />
+      <div class="tw-text-center tw-text-5xl">An State Of Luxury.</div>
       <div
-        class="large-position-relative large-pad-bottom-5 small-pad-bottom-3"
+        class="tw-px-10 tw-pb-5 tw-pt-10 tw-text-center tw-text-xl md:tw-text-2xl lg:tw-text-3xl"
       >
-        <div class="intensity-content intensity-wrapper">
-          <p class="intensity-headline">Intensity Level</p>
-          <div class="intensity-bar">
-            <span class="intensity-range typography-intensity range-3">
-              6-9
-            </span>
-          </div>
-        </div>
-        <div
-          class="large-flex large-justify-content-space-between large-direction-column large-align-items-center large-text-align-center large-pad-top-7 small-pad-top-4"
-        >
-          <h1 class="typography-headline-standalone">Luxe 3D</h1>
-          <div class="large-7 small-12">
-            <img
-              alt="Titan Taupe Luxe 3D"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/1.luxe_main_2x-100.jpg?v=1672956814"
-            />
-          </div>
-          <div
-            class="large-pad-right-5 large-pad-left-5 medium-pad-right-3 medium-pad-left-3 small-pad-right-0 small-pad-left-0"
-          >
-            <h1 class="typography-headline-standalone">An State of Luxury.</h1>
-            <p class="intro-copy">
-              Experience a state of luxury with your massage chair as it
-              accommodates to your body tension, releases stress with air
-              compression massage, reclines to three stages of zero gravity
-              positions, and help battle stiffness using 15 automatic massage
-              programs.
-            </p>
-            <ul
-              class="large-flex large-justify-content-center list-nobullet"
-              style="padding: 0 !important"
-            >
-              <li>
-                <span class="icon-color-taupe"> </span>
-                <span class="icon-copy"> Taupe </span>
-              </li>
-              <li class="large-pad-left-2 small-pad-left-1">
-                <span class="icon-color-brown"> </span>
-                <span class="icon-copy"> Brown </span>
-              </li>
-              <li class="large-pad-left-2 small-pad-left-1">
-                <span class="icon-color-black"> </span>
-                <span class="icon-copy"> Black </span>
-              </li>
-            </ul>
-          </div>
-        </div>
+        The Otamic Signature is a 3D adjustable massage chair with an advanced
+        SL-track rolling system. It has a computer body scan, full body airbag
+        massage, Zero Gravity with 21 auto massage programs, and 6 massage
+        styles.
       </div>
-      <div class="large-pad-bottom-7 small-pad-bottom-4 grid">
-        <div
-          class="grid-item large-flex large-grid-span-12 large-direction-column large-justify-content-space-between large-align-items-center small-column-reverse"
-        >
-          <div
-            class="large-10 large-flex large-justify-content-space-between large-pad-top-4 large-pad-bottom-2 medium-pad-top-3 small-pad-top-2 small-direction-column"
-          >
-            <h2
-              class="large-5 small-12 typography-grid-headline large-margin-bottom--2 medium-margin-bottom--1"
-            >
-              Intelligent Voice Control
-            </h2>
-            <p class="large-6 small-12 typography-grid-copy">
-              With the Luxe’s Voice Control capabilities, you can conveniently
-              use the chair without lifting a finger. Use the phrase
-              <span class="theme-color--highlight">
-                “Hey Alice” or “Hi Alice”
-              </span>
-              followed by the preset commands in the manual.
-            </p>
-          </div>
-          <div class="large-12 small-pad-top-2">
-            <img
-              alt="Intelligent Voice Control"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/2.luxe_voice_control_2x-100.jpg?v=1673285657"
-            />
-          </div>
+      <div class="tw-flex tw-w-full tw-justify-evenly tw-gap-10">
+        <div class="circle">
+          <div class="tw-bg-[#B7AD9F]"></div>
+          <div>Taupe</div>
         </div>
-        <div
-          class="grid-item large-flex large-grid-span-12 large-justify-content-space-between large-align-items-center small-direction-column small-column-revers"
-        >
-          <div
-            class="large-5 medium-6 small-12 large-pad-right-5 medium-pad-right-3 medium-pad-left-3 small-pad-top-2 small-pad-right-2 small-pad-bottom-2 small-pad-left-2 large-order-2"
-          >
-            <h2
-              class="typography-grid-headline large-margin-bottom--2 medium-margin-bottom--1"
-            >
-              Achillea’s Heel Massage
-            </h2>
-            <p class="typography-grid-copy">
-              The Luxe includes
-              <span class="theme-color--highlight"> Kneading Wheels </span>
-              at the back of the footrest to give a thorough massage to the
-              heels of the feet.
-            </p>
-          </div>
-          <div class="large-6 small-12 large-order-1">
-            <img
-              alt="Kneading Wheels"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.luxe_kneading_spheres_2x-100.jpg?v=1672954012"
-            />
-          </div>
+        <div class="circle">
+          <div class="tw-bg-[#352723]"></div>
+          <div>Brown</div>
         </div>
-        <div
-          class="grid-item large-flex large-grid-span-12 large-justify-content-space-between large-align-items-center small-direction-column small-column-revers"
-        >
-          <div
-            class="large-6 small-12 large-pad-left-5 medium-pad-left-3 medium-pad-right-2 small-pad-top-1 small-pad-left-2 small-pad-bottom-2 small-order-2"
-          >
-            <h2
-              class="typography-grid-headline large-margin-bottom--2 medium-margin-bottom--1"
-            >
-              3D Massage Mechanism
-            </h2>
-            <p class="typography-grid-copy">
-              The Luxe includes The Luxe is a three-dimensional massage chair
-              with adjustable speed, intensity, and width. Additionally, the
-              Luxe is equipped with
-              <span class="theme-color--highlight">
-                intelligent manipulators
-              </span>
-              that move vertically and extend from front to back of the track.
-            </p>
-          </div>
-          <div class="large-6 small-12 small-order-1">
-            <img
-              alt="3D Massage Mechanism"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4.luxe_3D_massage_2x-100.jpg?v=1672954012"
-            />
-          </div>
-        </div>
-        <div
-          class="grid-item large-flex large-grid-span-12 large-position-relative small-direction-column"
-        >
-          <div
-            class="large-7 small-12 large-flex large-direction-column large-pad-top-4 large-pad-left-5 medium-pad-top-3 medium-pad-left-3 small-pad-top-2 small-pad-right-2 small-pad-bottom-1 small-pad-left-2 large-position-absolute small-position-relative"
-          >
-            <h2 class="typography-grid-headline large-margin-bottom--2">
-              SL-Track Massage
-            </h2>
-            <p class="typography-grid-copy">
-              The Luxe’s
-              <span class="theme-color--highlight">
-                scientifically-engineered SL-Track
-              </span>
-              allows the massage rollers to effortlessly reach your entire body.
-              The massage rollers extend all the way from your neck and
-              shoulders to your hamstrings.
-            </p>
-          </div>
-          <img
-            alt="SL-Track"
-            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/5.luxe_sl_track_2x-100.jpg?v=1672963614"
-          />
-        </div>
-        <div
-          class="grid-item large-flex large-position-relative large-grid-span-12 large-justify-content-space-between large-align-items-center small-direction-column small-column-revers"
-        >
-          <div
-            class="large-6 small-12 large-pad-left-5 medium-pad-left-3 medium-pad-right-1 small-pad-top-2 small-pad-right-2 small-pad-bottom-1 small-pad-left-2"
-          >
-            <h2 class="typography-grid-headline large-margin-bottom--2">
-              24 Cell
-              <br />
-              Full Body
-              <br />
-              Air Massage
-            </h2>
-            <p class="typography-grid-copy">
-              The Luxe includes a thorough Full Body Air massage using 24
-              individual air cells. The newly engineered air massage has reduced
-              the airbag count with increased coverage. The new form-fitting
-              airbags system is more efficient and reliable, while allowing the
-              air pressure to be adjusted in three degrees of intensities.
-            </p>
-          </div>
-          <ul class="aircell-list list-nobullet">
-            <li class="typography-grid-copy">Shoulder</li>
-            <li class="typography-grid-copy">Armrest</li>
-            <li class="typography-grid-copy">Calf</li>
-            <li class="typography-grid-copy">Foot</li>
-          </ul>
-          <img
-            style="width: 50%"
-            alt="24 Cell Full Body Air Massage"
-            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/6.luxe_air_massage_2x-100.jpg?v=1672954012"
-          />
-        </div>
-        <div
-          class="grid-item large-flex large-grid-span-12 large-direction-column large-justify-content-space-between large-align-items-center"
-        >
-          <div
-            class="large-10 small-12 large-flex large-direction-column large-pad-top-4 medium-pad-top-3 small-pad-top-2 small-pad-right-2 small-pad-bottom-1 small-pad-left-2"
-          >
-            <h2
-              class="large-8 small-12 typography-grid-headline large-margin-bottom--2"
-            >
-              Zero Gravity Reclining and Space Saving
-            </h2>
-            <p class="large-11 typography-grid-copy">
-              Rest in a state of weightlessness with the Luxe’s
-              <span class="theme-color--highlight">
-                three stage zero gravity reclining
-              </span>
-              . TThis NASA-inspired technology angles your posture to let your
-              body have a lightweight experience. With Luxe’s
-              <span class="theme-color--highlight">
-                Space Saving Technology
-              </span>
-              , you may place your chair up to
-              <span class="theme-color--highlight"> 1 inch </span>
-              from the wall and still have a full recline.
-            </p>
-          </div>
-          <div class="large-11">
-            <img
-              alt="Zero Gravity Reclining and Space Saving"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/7.luxe_ZG_2x-100.jpg?v=1673022812"
-            />
-          </div>
-        </div>
-        <div
-          class="grid-item large-flex large-align-items-center large-grid-span-12 small-direction-column"
-        >
-          <div
-            class="large-6 small-12 large-pad-left-5 medium-pad-left-3 small-pad-top-2 small-pad-right-2 small-pad-bottom-2 small-pad-left-2"
-          >
-            <h2 class="typography-grid-headline large-margin-bottom--2">
-              Heat Therapy
-            </h2>
-            <p class="typography-grid-copy">
-              Release tension and stress across the body using the Luxe’s
-              heating system. The Luxe’s heating therapy targets the back and
-              calves by soothing any aches and pains in those areas.
-            </p>
-          </div>
-          <div class="large-6 small-12">
-            <img
-              alt="Lumbar and calf Heating"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/8.luxe_heating_2x-100.jpg?v=1672954012"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="section-content large-margin-bottom--6">
-        <h2 class="typography-section-headline large-margin-bottom--3">
-          15 Auto Massage Modes
-        </h2>
-        <div
-          class="grid grid-cols-3 justify-items-center bg-[#f2f4f3] p-4 py-10 !text-center md:grid-cols-4 md:text-left"
-        >
-          <div class="flex flex-col items-center">
-            <img
-              alt="Comfort Massage Mode"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/9.luxe_icon_comfort_2x-100.jpg?v=1673026659"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">Comfort Massage</div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              alt="Relax Massage Mode"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.luxe_icon_relax_massage_2x-100.jpg?v=1673026659"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">Relax Massage</div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              alt="Stretch Massage Mode"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/11.luxe_icon_stretch_massage_2x-100.jpg?v=1673026659"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">Stretch Massage</div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              alt="Neck &amp; Shoulder Massage Mode"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12.luxe_icon_neck_shoulder_2x-100.jpg?v=1673026659"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">
-              Neck &amp; Shoulder Massage
-            </div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              alt="Back &amp; Waist Massage Mode"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/13.luxe_icon_back_waist_2x-100.jpg?v=1673026659"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">Back &amp; Waist Massage</div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              alt="Full Body Massage Mode"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/14.luxe_icon_full_body_2x-100.jpg?v=1673026659"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">Full Body Massage</div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              alt="Ancient Beauty Care Mode"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/15.luxe_icon_ancient_beauty_care_2x-100.jpg?v=1673026659"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">Ancient Beauty Care</div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              alt="Leg &amp; Hip Care Mode"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/16.luxe_icon_leg_hip_2x-100.jpg?v=1673026659"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">Leg &amp; Hip Care</div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              alt="Release Sedentary Stress Mode"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/17.luxe_icon_release_sedentary_stress_2x-100.jpg?v=1673026659"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">Release Sedentary Stress</div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              alt="Spine Care Mode"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/18.luxe_icon_spine_care_2x-100.jpg?v=1673026659"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">Spine Care</div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              alt="President Cosy Mode"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19.luxe_icon_president_cosy_2x-100.jpg?v=1673026658"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">President Cosy</div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              alt="Relieve Soreness Mode"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/20.luxe_icon_relieve_soreness_2x-100.jpg?v=1673026659"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">Relieve Soreness</div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              alt="Good-night Sleep Mode"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/21.luxe_icon_goodnight_sleep_2x-100.jpg?v=1673026658"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">Good-night Sleep</div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              alt="Sport Recovery Mode"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/22.luxe_icon_sport_recovery_2x-100.jpg?v=1673026659"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">Sport Recovery</div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              alt="Meridian Treatment Mode"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/23.luxe_icon_meridian_2x-100.jpg?v=1673026659"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">Meridian Treatment</div>
-          </div>
-        </div>
-      </div>
-      <div class="section-content large-pad-bottom-7 small-pad-bottom-4">
-        <h2 class="typography-section-headline large-margin-bottom--3">
-          7 Manual Massage Modes
-        </h2>
-        <div
-          class="grid grid-cols-3 justify-items-center bg-[#f2f4f3] p-4 py-10 !text-center md:grid-cols-4 md:text-left"
-        >
-          <div class="flex flex-col items-center">
-            <img
-              alt="Knead Massage Style"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/24.luxe_icon_knead_2x-100.jpg?v=1673026659"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">Knead</div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              alt="Tap Massage Style"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/25.luxe_icon_tap_2x-100.jpg?v=1673026659"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">Tap</div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              alt="Knead &amp; Tap Style"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/26.luxe_icon_knead_tap_2x-100.jpg?v=1673026659"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">Knead &amp; Tap</div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              alt="Shiatsu Massage Style"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/27.luxe_icon_shiatsu_2x-100.jpg?v=1673026659"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">Shiatsu</div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              alt="Knock Massage Style"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/28.luxe_icon_knock_2x-100.jpg?v=1673026659"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">Knock</div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              alt="3D I Massage Style"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/29.luxe_icon_3D_I_2x-100.jpg?v=1673026659"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">3D I</div>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              alt="3D II Massage Style"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/30.luxe_icon_3D_II_2x-100.jpg?v=1673026658"
-              style="width: 70px"
-            />
-            <div class="typography-module-title">3D II</div>
-          </div>
-        </div>
-      </div>
-      <div class="grid">
-        <div
-          class="grid-item large-flex large-grid-span-12 large-justify-content-space-between large-align-items-center small-direction-column small-column-reverse"
-        >
-          <div
-            class="large-5 small-12 large-pad-left-5 medium-pad-left-3 small-pad-top-1 small-pad-bottom-2 small-pad-left-2 small-pad-right-2"
-          >
-            <p class="typography-grid-copy">
-              The Luxe’s
-              <span class="theme-color--highlight"> Foot Rollers </span>
-              activates various acupuncture points through the use of
-              reflexology ridges. The Luxe holds
-              <span class="theme-color--highlight">
-                three rollers for each foot
-              </span>
-              , covering the entire surface area of the foot.
-            </p>
-          </div>
-          <div class="large-6 small-12">
-            <img
-              alt="Foot Rollers"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/31.luxe_rollers_2x-100.jpg?v=1672954012"
-            />
-          </div>
-        </div>
-        <div
-          class="grid-item large-flex large-grid-span-12 large-justify-content-space-between large-align-items-center small-direction-column small-column-reverse"
-        >
-          <div
-            class="large-5 small-12 large-pad-left-5 medium-pad-left-3 medium-pad-top-2 medium-pad-bottom-2 small-pad-top-2 small-pad-bottom-2 small-pad-left-2 small-pad-right-2"
-          >
-            <p class="typography-grid-copy">
-              Luxe was created for users of different heights and body types.
-              The extendable footrest uses a
-              <span class="theme-color--highlight">
-                manual spring-loaded function
-              </span>
-              that extends up to
-              <span class="theme-color--highlight"> 7 inches </span>
-              .
-            </p>
-          </div>
-          <div class="large-6 small-12">
-            <img
-              alt="Footrest Extension"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/32.luxe_foot_extender_2x-100.jpg?v=1672954013"
-            />
-          </div>
-        </div>
-        <div
-          class="grid-item large-flex large-grid-span-12 large-justify-content-space-between large-align-items-center small-direction-column"
-        >
-          <div
-            class="large-6 small-12 large-pad-right-5 medium-pad-right-3 small-pad-top-2 small-pad-bottom-2 small-pad-left-2 small-pad-right-2 large-order-2"
-          >
-            <p class="typography-grid-copy">
-              The Luxe’s
-              <span class="theme-color--highlight"> Side Control Panel </span>
-              includes quick settings such as heating, airbags changes,
-              variation in 3D massage, backrest and legrest adjustments.
-            </p>
-          </div>
-          <div class="large-6 small-12 large-order-1">
-            <img
-              alt="Side Control Panel"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/33.luxe_side_panel_2x-100.jpg?v=1672954012"
-            />
-          </div>
-        </div>
-        <div
-          class="grid-item large-flex large-grid-span-12 large-justify-content-space-between large-position-relative small-direction-column small-column-reverse"
-        >
-          <div
-            class="large-6 small-12 large-position-absolute large-pad-top-4 large-pad-left-5 medium-pad-top-3 medium-pad-left-3 small-position-relative small-pad-top-2 small-pad-left-2 small-pad-bottom-2 small-pad-right-2"
-          >
-            <p class="typography-grid-copy">
-              The Luxe’s
-              <span class="theme-color--highlight"> USB Charging </span>
-              is placed on the side of the control panels. Enjoy a relaxing time
-              for self-care as your device charges.
-            </p>
-          </div>
-          <div class="large-12">
-            <img
-              alt="USB charging"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/34.luxe_USB.jpg?v=1673037191"
-            />
-          </div>
-        </div>
-        <div
-          class="grid-item large-grid-span-6 small-grid-span-12 large-position-relative"
-        >
-          <div
-            class="large-pad-top-3 large-pad-bottom-2 large-pad-left-3 medium-pad-bottom-1 small-pad-top-2 small-pad-right-2 small-pad-left-2 small-pad-bottom-0"
-          >
-            <p class="typography-grid-copy">
-              <span class="theme-color--highlight"> Bluetooth Speaker </span>
-            </p>
-          </div>
-          <img
-            alt="Bluetooth Speaker"
-            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/35.luxe_speakers_2x-100.jpg?v=1672954012"
-          />
-        </div>
-        <div
-          class="grid-item large-grid-span-6 small-grid-span-12 large-position-relative"
-        >
-          <div
-            class="large-pad-top-3 large-pad-bottom-2 large-pad-left-3 medium-pad-bottom-1 small-pad-top-2 small-pad-left-2 small-pad-right-2"
-          >
-            <p class="typography-grid-copy">
-              <span class="theme-color--highlight"> Remote Controller </span>
-            </p>
-          </div>
-          <img
-            alt="Remote Controller"
-            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/36.luxe_remote_2x-100.jpg?v=1672954012"
-          />
-        </div>
-        <div
-          class="grid-item large-grid-span-6 small-grid-span-12 large-position-relative"
-        >
-          <div
-            class="large-position-absolute large-pad-right-3 large-pad-bottom-3 small-pad-right-2 small-pad-bottom-2"
-            style="bottom: 0; right: 0"
-          >
-            <p class="typography-grid-copy">
-              <span class="theme-color--highlight">
-                LED Lighting
-                <br />
-                Detail
-              </span>
-            </p>
-          </div>
-          <img
-            alt="LED Lighting Detail"
-            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/37.luxe_LED_lighting_2x-100.jpg?v=1672954012"
-          />
-        </div>
-        <div
-          class="grid-item large-grid-span-6 small-grid-span-12 large-position-relative"
-        >
-          <div
-            class="large-position-absolute small-position-relative large-flex large-justify-content-center large-pad-top-4 medium-pad-top-3 small-pad-top-3 small-pad-left-2 small-pad-right-2"
-            style="width: 100%"
-          >
-            <p class="typography-grid-copy">
-              <span class="theme-color--highlight"> Remote Pocket </span>
-            </p>
-          </div>
-          <img
-            alt="Remote Pocket"
-            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/38.luxe_pocket_2x-100.jpg?v=1672954012"
-          />
-        </div>
-      </div>
-    </section>
-    <section class="section-content small-margin-top--3">
-      <div
-        class="large-flex large-justify-content-space-between large-direction-column"
-      >
-        <h2 class="large-text-align-center">
-          <strong> Dimensions </strong>
-        </h2>
-        <div
-          class="large-flex large-justify-content-space-between small-direction-column large-align-items-center"
-        >
-          <div class="large-6 small-12">
-            <img
-              alt="Titan Luxe Dimension Upright"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/39.luxe_dimension_upright_2x-100.jpg?v=1672954012"
-            />
-          </div>
-          <div class="large-6 small-12">
-            <img
-              alt="Titan Luxe Dimension Reclined"
-              src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/40.luxe_dimension_recline_2x-100.jpg?v=1672954012"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <section class="section-specs large-pad-bottom-7">
-    <div class="table-tap">
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Product Name</div>
-          <div class="specs-column">Titan Luxe 3D</div>
-          <div class="specs-column"></div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">User Manual</div>
-          <div class="specs-column">
-            <a
-              data-mce-style="color: #ff4800;"
-              href="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/Luxe_3D_web.pdf?v=1672241870"
-              style="color: #ff4800"
-              target="_blank"
-            >
-              Download
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Power Supply</div>
-          <div class="specs-column">110V - 120V</div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Rate Power</div>
-          <div class="specs-column">120W</div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Rate Timer</div>
-          <div class="specs-column">20 min</div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">
-            Dimensions
-            <br />
-            (W x L x H)
-          </div>
-          <div class="specs-column">
-            <strong> Upright </strong>
-            <br />
-            29.5" x 61" x 46"
-          </div>
-          <div class="specs-column">
-            <strong> Reclined </strong>
-            <br />
-            29.5" x 70.5" x 34.5"
-          </div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Width</div>
-          <div class="specs-column">
-            <strong> Shoulder </strong>
-            <br />
-            19.5"
-          </div>
-          <div class="specs-column">
-            <strong> Seat </strong>
-            <br />
-            21"
-          </div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Minimum Doorway Size</div>
-          <div class="specs-column">29.5"</div>
-        </div>
-      </div>
-      <div class="specs-section">
-        <div class="specs-row">
-          <div class="specs-rowheader">Maximum User Weight</div>
-          <div class="specs-column">260 lbs</div>
+        <div class="circle">
+          <div class="tw-bg-[#1d1d1d]"></div>
+          <div>Black</div>
         </div>
       </div>
     </div>
-  </section>
+
+    <div class="tw-mb-10 tw-flex tw-flex-col tw-bg-[#f2f4f3]">
+      <div
+        class="tw-flex tw-flex-col tw-gap-4 tw-p-4 md:tw-flex-row md:tw-items-center md:tw-gap-10 md:tw-p-10"
+      >
+        <div class="tw-flex-1 tw-basis-1/2 tw-text-3xl tw-font-bold">
+          Intelligent <br />
+          Voice Control
+        </div>
+        <div class="tw-flex-1 tw-basis-1/2">
+          With the Luxe’s Voice Control capabilities, you can conveniently use
+          the chair without lifting a finger. Use the phrase “Hey Alice” or “Hi
+          Alice” followed by the preset commands in the manual.
+        </div>
+      </div>
+      <img src="" alt="" />
+    </div>
+    <div
+      class="tw-mb-10 tw-flex tw-flex-col tw-bg-[#f2f4f3] md:tw-flex-row-reverse"
+    >
+      <div
+        class="tw-flex tw-basis-1/2 tw-flex-col tw-items-center tw-justify-center tw-gap-4 tw-p-4 md:tw-p-10"
+      >
+        <div class="tw-text-3xl tw-font-bold">Achillea’s Heel Massage</div>
+        <div class="">
+          The Luxe includes Kneading Wheels at the back of the footrest to give
+          a thorough massage to the heels of the feet.
+        </div>
+      </div>
+      <img src="" alt="" class="tw-min-w-0 tw-flex-1 tw-basis-1/2" />
+    </div>
+    <div class="tw-mb-10 tw-flex tw-flex-col tw-bg-[#f2f4f3] md:tw-flex-row">
+      <div
+        class="tw-flex tw-basis-1/2 tw-flex-col tw-items-center tw-justify-center tw-gap-4 tw-p-4 !tw-pb-0 md:tw-p-10"
+      >
+        <div class="tw-text-3xl tw-font-bold">3D Massage Mechanism</div>
+        <div class="">
+          The Luxe is a three-dimensional massage chair with adjustable speed,
+          intensity, and width. Additionally, the Luxe is equipped with
+          intelligent manipulators that move vertically and extend from front to
+          back of the track.
+        </div>
+      </div>
+      <img src="" alt="" class="tw-min-w-0 tw-flex-1 tw-basis-1/2" />
+    </div>
+    <div
+      class="tw-mb-10 tw-flex tw-basis-1/2 tw-flex-col tw-items-center tw-justify-center tw-gap-4 tw-bg-[#f2f4f3] tw-p-4 md:tw-p-10"
+    >
+      <div class="tw-text-3xl tw-font-bold">SL-Track Massage</div>
+      <div class="">
+        The Luxe’s scientifically-engineered SL-Track allows the massage rollers
+        to effortlessly reach your entire body. The massage rollers extend all
+        the way from your neck and shoulders to your hamstrings.
+      </div>
+
+      <img src="" alt="" />
+    </div>
+    <div class="tw-mb-10 tw-flex tw-flex-col tw-bg-[#f2f4f3] md:tw-flex-row">
+      <div
+        class="tw-flex tw-basis-1/2 tw-flex-col tw-items-center tw-justify-center tw-gap-4 tw-p-4 md:tw-p-10"
+      >
+        <div class="tw-text-3xl tw-font-bold">
+          24 Cell Full Body Air Massage
+        </div>
+        <div class="">
+          The Luxe includes a thorough Full Body Air massage using 24 individual
+          air cells. The newly engineered air massage has reduced the airbag
+          count with increased coverage. The new form-fitting airbags system is
+          more efficient and reliable, while allowing the air pressure to be
+          adjusted in three degrees of intensities.
+        </div>
+      </div>
+      <img src="" alt="" class="tw-min-w-0 tw-flex-1 tw-basis-1/2" />
+    </div>
+    <div class="tw-mb-10 tw-flex tw-flex-col tw-bg-[#f2f4f3]">
+      <div class="tw-flex tw-flex-col tw-gap-4 tw-p-4 md:tw-gap-10 md:tw-p-10">
+        <div class="tw-flex-1 tw-basis-1/2 tw-text-3xl tw-font-bold">
+          Zero Gravity Reclining <br />
+          and Space Saving
+        </div>
+        <div class="tw-flex-1 tw-basis-1/2">
+          Rest in a state of weightlessness with the Luxe’s three stage zero
+          gravity reclining . TThis NASA-inspired technology angles your posture
+          to let your body have a lightweight experience. With Luxe’s Space
+          Saving Technology , you may place your chair up to 1 inch from the
+          wall and still have a full recline.
+        </div>
+      </div>
+      <img src="" alt="" />
+    </div>
+    <div class="tw-mb-20 tw-flex tw-flex-col tw-bg-[#f2f4f3] md:tw-flex-row">
+      <div
+        class="tw-flex tw-basis-1/2 tw-flex-col tw-justify-center tw-gap-4 tw-p-4 md:tw-p-10"
+      >
+        <div class="tw-text-3xl tw-font-bold">Heat Therapy</div>
+        <div class="">
+          Release tension and stress across the body using the Luxe’s heating
+          system. The Luxe’s heating therapy targets the back and calves by
+          soothing any aches and pains in those areas.
+        </div>
+      </div>
+      <img src="" alt="" class="tw-min-w-0 tw-flex-1 tw-basis-1/2" />
+    </div>
+
+    <div class="tw-mb-10">
+      <div class="tw-mb-4 tw-bg-white tw-text-4xl">15 Auto Massage Modes</div>
+      <div
+        class="tw-grid tw-grid-cols-3 tw-gap-4 tw-bg-[#f2f4f3] tw-p-10 md:tw-grid-cols-4"
+      >
+        <div class="tw-flex tw-flex-col tw-items-center tw-text-center">
+          <img src="" alt="" class="tw-w-20" />
+          <div>Comfort Massage</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-text-center">
+          <img src="" alt="" class="tw-w-20" />
+          <div>Relax Massage</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-text-center">
+          <img src="" alt="" class="tw-w-20" />
+          <div>Stretch Massage</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-text-center">
+          <img src="" alt="" class="tw-w-20" />
+          <div>Neck & Shoulder Massage</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-text-center">
+          <img src="" alt="" class="tw-w-20" />
+          <div>Back & Waist Massage</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-text-center">
+          <img src="" alt="" class="tw-w-20" />
+          <div>Full Body Massage</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-text-center">
+          <img src="" alt="" class="tw-w-20" />
+          <div>Ancient Beauty Care</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-text-center">
+          <img src="" alt="" class="tw-w-20" />
+          <div>Leg & Hip Care</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-text-center">
+          <img src="" alt="" class="tw-w-20" />
+          <div>Release Sedentary Stress</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-text-center">
+          <img src="" alt="" class="tw-w-20" />
+          <div>Spine Care</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-text-center">
+          <img src="" alt="" class="tw-w-20" />
+          <div>President Cosy</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-text-center">
+          <img src="" alt="" class="tw-w-20" />
+          <div>Relieve Soreness</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-text-center">
+          <img src="" alt="" class="tw-w-20" />
+          <div>Good-night Sleep</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-text-center">
+          <img src="" alt="" class="tw-w-20" />
+          <div>Sport Recovery</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-text-center">
+          <img src="" alt="" class="tw-w-20" />
+          <div>Meridian Treatment</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tw-mb-10">
+      <div class="tw-mb-4 tw-bg-white tw-text-4xl">7 Manual Massage Modes</div>
+      <div
+        class="tw-grid tw-grid-cols-3 tw-gap-4 tw-bg-[#f2f4f3] tw-p-10 md:tw-grid-cols-4"
+      >
+        <div class="tw-flex tw-flex-col tw-items-center tw-text-center">
+          <img src="" alt="" class="tw-w-20" />
+          <div>Knead</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-text-center">
+          <img src="" alt="" class="tw-w-20" />
+          <div>Tap</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-text-center">
+          <img src="" alt="" class="tw-w-20" />
+          <div>Knead & Tap</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-text-center">
+          <img src="" alt="" class="tw-w-20" />
+          <div>Shiatsu</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-text-center">
+          <img src="" alt="" class="tw-w-20" />
+          <div>Knock</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-text-center">
+          <img src="" alt="" class="tw-w-20" />
+          <div>3D I</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-text-center">
+          <img src="" alt="" class="tw-w-20" />
+          <div>3D II</div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="tw-mb-10 tw-flex tw-flex-col tw-bg-[#f2f4f3] md:tw-flex-row-reverse"
+    >
+      <div
+        class="tw-flex tw-basis-1/2 tw-flex-col tw-justify-center tw-gap-4 tw-p-4 md:tw-p-10"
+      >
+        <div class="">
+          The Luxe’s Foot Rollers activates various acupuncture points through
+          the use of reflexology ridges. The Luxe holds three rollers for each
+          foot , covering the entire surface area of the foot.
+        </div>
+      </div>
+      <img src="" alt="" class="tw-min-w-0 tw-flex-1 tw-basis-1/2" />
+    </div>
+    <div class="tw-mb-10 tw-flex tw-flex-col tw-bg-[#f2f4f3] md:tw-flex-row">
+      <div
+        class="tw-flex tw-basis-1/2 tw-flex-col tw-justify-center tw-gap-4 tw-p-4 md:tw-p-10"
+      >
+        <div class="">
+          Luxe was created for users of different heights and body types. The
+          extendable footrest uses a manual spring-loaded function that extends
+          up to 7 inches.
+        </div>
+      </div>
+      <img src="" alt="" class="tw-min-w-0 tw-flex-1 tw-basis-1/2" />
+    </div>
+    <div
+      class="tw-mb-10 tw-flex tw-flex-col tw-bg-[#f2f4f3] md:tw-flex-row-reverse"
+    >
+      <div
+        class="tw-flex tw-basis-1/2 tw-flex-col tw-justify-center tw-gap-4 tw-p-4 md:tw-p-10"
+      >
+        <div class="">
+          The Luxe’s Side Control Panel includes quick settings such as heating,
+          airbags changes, variation in 3D massage, backrest and legrest
+          adjustments.
+        </div>
+      </div>
+      <img src="" alt="" class="tw-min-w-0 tw-flex-1 tw-basis-1/2" />
+    </div>
+    <div
+      class="tw-relative tw-mb-10 tw-flex tw-flex-col tw-bg-[#f2f4f3] md:tw-flex-row"
+    >
+      <div
+        class="tw-left-0 tw-top-0 tw-flex tw-flex-col tw-justify-center tw-gap-4 tw-p-4 md:tw-absolute md:tw-w-1/2 md:tw-p-10"
+      >
+        <div class="">
+          The Luxe’s USB Charging is placed on the side of the control panels.
+          Enjoy a relaxing time for self-care as your device charges.
+        </div>
+      </div>
+      <img src="" alt="" class="tw-min-w-0 tw-flex-1 tw-basis-1/2" />
+    </div>
+    <div class="tw-grid tw-bg-[#f2f4f3] md:tw-grid-cols-2">
+      <div>
+        <div class="tw-p-4 !tw-pb-0 md:tw-p-10">Bluetooth Speaker</div>
+        <img src="" alt="" />
+      </div>
+      <div>
+        <div class="tw-p-4 !tw-pb-0 md:tw-p-10">Remote Controller</div>
+        <img src="" alt="" />
+      </div>
+      <div class="tw-relative">
+        <div class="tw-absolute tw-bottom-0 tw-right-0 tw-p-4 md:tw-p-10">
+          LED Lighting Detail
+        </div>
+        <img src="" alt="" />
+      </div>
+      <div>
+        <div class="tw-p-4 md:tw-p-10">Remote Pocket</div>
+        <img src="" alt="" />
+      </div>
+    </div>
+    <div class="section-dimensions">
+      <div
+        class="tw-p-10 tw-text-center tw-text-3xl tw-font-bold md:tw-text-4xl lg:tw-text-5xl"
+      >
+        Dimensions
+      </div>
+      <div
+        class="tw-flex tw-flex-col tw-justify-center tw-gap-5 md:tw-flex-row md:tw-gap-10"
+      >
+        <img src="" alt="" class="tw-min-w-0" />
+        <img src="" alt="" class="tw-min-w-0" />
+      </div>
+    </div>
+    <section>
+      <div
+        class="tw-p-10 tw-text-center tw-text-3xl tw-font-bold md:tw-text-4xl lg:tw-text-5xl"
+      >
+        Specification
+      </div>
+      <div class="tw-text-xl tw-font-normal">
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-font-bold">Product Name</div>
+          <div>Titan Luxe 3D</div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-font-bold">User Manual</div>
+          <a
+            class="!tw-text-red-500 !tw-no-underline"
+            href="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/Luxe_3D_web.pdf?v=1672241870"
+            target="_blank"
+            >Download</a
+          >
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-font-bold">Power Supply</div>
+          <div>110V - 120V</div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-font-bold">Rate Power</div>
+          <div>120W</div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-font-bold">Rate Timer</div>
+          <div>20 min</div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            <div>Dimensions</div>
+            <div>(W x L x H)</div>
+          </div>
+          <div class="tw-grid tw-w-full tw-grid-cols-2 tw-gap-2">
+            <div>
+              <div class="tw-font-bold">Upright</div>
+              <div>29.5" x 61" x 46"</div>
+            </div>
+            <div>
+              <div class="tw-font-bold">Reclined</div>
+              <div>29.5" x 70.5" x 34.5"</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            <div>Width</div>
+          </div>
+          <div class="tw-grid tw-w-full tw-grid-cols-2 tw-gap-2">
+            <div>
+              <div class="tw-font-bold">Shoulder</div>
+              <div>19.5"</div>
+            </div>
+            <div>
+              <div class="tw-font-bold">Seat</div>
+              <div>21"</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            <div>Minimum Doorway Size</div>
+          </div>
+          <div>29.5"</div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-font-bold">
+            <div>Maximum User Weight</div>
+          </div>
+          <div>260 lbs</div>
+        </div>
+      </div>
+    </section>
+  </div>
 </body>
-<script src="https://cdn.tailwindcss.com"></script>
-<script
-  crossorigin="anonymous"
-  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
-  src="https://code.jquery.com/jquery-3.6.4.min.js"
-></script>
 <script>
-  $(function () {
-    $("#tab-button1").on("click", () => {
-      $("#tab-button1").addClass("active-tab")
-      $("#tab-button2").removeClass("active-tab")
-      $(".sections").fadeIn("slow")
-      $(".section-specs").fadeIn("slow")
+  const getImages = () => {
+    document.querySelectorAll(".sections img").forEach((img, i) => {
+      img.src = imgs[i].img_src
+      img.alt = imgs[i].img_name
     })
-    $("#tab-button2").on("click", () => {
-      $("#tab-button1").removeClass("active-tab")
-      $("#tab-button2").addClass("active-tab")
-      $(".sections").fadeOut("slow")
-      $(".section-specs").fadeOut("slow")
-    })
-  })
+  }
+  const createVideoDOM = () => {
+    const getYoutubeSrc = (src) => {
+      const regex = /[a-z0-9_-]{11}/gi
+
+      const id = src.match(regex)[0]
+      const dst = "https://www.youtube.com/embed/" + id + "?mute=1&autoplay=1"
+      return dst
+    }
+    const iframe = document.createElement("iframe")
+    iframe.classList = "tw-aspect-video tw-w-full tw-mb-10"
+    try {
+      iframe.src = getYoutubeSrc(youtube_link)
+      document.getElementById("youtube-link").appendChild(iframe)
+    } catch (err) {
+      console.log(err)
+    }
+  }
+  const initializeProductDescription = () => {
+    try {
+      getImages()
+    } catch (error) {
+      console.log(error)
+    }
+    try {
+      createVideoDOM()
+    } catch (error) {
+      console.log(error)
+    }
+  }
+  initializeProductDescription()
 </script>
