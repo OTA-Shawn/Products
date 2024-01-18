@@ -748,6 +748,10 @@
   flex-basis: 50%;
 }
 
+.\!tw-basis-1\/2 {
+  flex-basis: 50% !important;
+}
+
 .tw-list-inside {
   list-style-position: inside;
 }
@@ -1976,26 +1980,6 @@
 .tw-text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.\!tw-text-4xl {
-  font-size: 2.25rem !important;
-  line-height: 2.5rem !important;
-}
-
-.\!tw-text-3xl {
-  font-size: 1.875rem !important;
-  line-height: 2.25rem !important;
-}
-
-.\!tw-text-5xl {
-  font-size: 3rem !important;
-  line-height: 1 !important;
-}
-
-.\!tw-text-6xl {
-  font-size: 3.75rem !important;
-  line-height: 1 !important;
 }
 
 .\!tw-font-light {
