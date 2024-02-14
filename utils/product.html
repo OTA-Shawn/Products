@@ -27,8 +27,7 @@
   src="https://code.jquery.com/jquery-3.7.0.min.js"
 ></script>
 <script>
-  const $j = jQuery.noConflict(true)
-  $j("#externalURL").load(externalURL, () => {
-    $j("#externalURL").contents().unwrap()
+  $("#externalURL").load(externalURL, () => {
+    $("#externalURL").contents().unwrap()
   })
 </script>
