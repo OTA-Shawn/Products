@@ -63,7 +63,7 @@ function createIntensityLevel2(minIntensity, maxIntensity) {
   const help = document.createElement("span")
   help.classList.add("material-symbols-outlined")
   help.classList.add("show-intensity-modal")
-  help.textContent = " help "
+  help.textContent = "help"
   root.appendChild(help)
 
   const modal = document.createElement("div")
