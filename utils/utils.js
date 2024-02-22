@@ -87,6 +87,4 @@ function createIntensityLevel2(minIntensity, maxIntensity) {
   note.innerHTML =
     "<b>Note</b>: Intensity level is a relative indicator that can be perceived differently by each user."
   modal.appendChild(note)
-
-  return root
 }
