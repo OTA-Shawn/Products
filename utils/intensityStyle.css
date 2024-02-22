@@ -6,6 +6,7 @@
 }
 .show-intensity-modal:hover + .intensity-modal {
   display: block;
+  z-index: 999;
 }
 .intensity-modal {
   display: none;
