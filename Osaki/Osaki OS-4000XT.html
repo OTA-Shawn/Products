@@ -45,8 +45,7 @@
 />
 <link href="../globalProductDescription.css" rel="stylesheet" />
 <script>
-  const youtube_link =
-    "https://www.youtube.com/watch?v=yuzMgX50y8I&ab_channel=OfficialTitanOsakiMassageChannel"
+  const youtube_link = "https://youtu.be/2imMDAIbEDc"
 
   const imgs = [
     {
@@ -603,11 +602,10 @@
   }
   const createVideoDOM = () => {
     const getYoutubeSrc = (src) => {
-      const regex =
-        /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/gi
+      const regex = /[a-z0-9_-]{11}/gi
+
       const id = src.match(regex)[0]
-      const embed = id.replace("watch?v=", "embed/")
-      const dst = "https://www." + embed + "?mute=1&autoplay=1"
+      const dst = "https://www.youtube.com/embed/" + id + "?mute=1&autoplay=1"
       return dst
     }
     const iframe = document.createElement("iframe")
