@@ -2426,6 +2426,16 @@
   color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
+.tw-text-neutral-800 {
+  --tw-text-opacity: 1;
+  color: rgb(38 38 38 / var(--tw-text-opacity));
+}
+
+.tw-text-neutral-700 {
+  --tw-text-opacity: 1;
+  color: rgb(64 64 64 / var(--tw-text-opacity));
+}
+
 .\!tw-no-underline {
   text-decoration-line: none !important;
 }
@@ -2454,18 +2464,6 @@ video {
 
 * {
   box-sizing: border-box;
-}
-
-.hover\:tw-opacity-20:hover {
-  opacity: 0.2;
-}
-
-.hover\:tw-opacity-80:hover {
-  opacity: 0.8;
-}
-
-.hover\:tw-opacity-50:hover {
-  opacity: 0.5;
 }
 
 .hover\:tw-opacity-75:hover {
@@ -3278,6 +3276,10 @@ video {
 
   .lg\:tw-mt-36 {
     margin-top: 9rem;
+  }
+
+  .lg\:tw-mb-24 {
+    margin-bottom: 6rem;
   }
 
   .lg\:tw-block {
