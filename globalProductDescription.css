@@ -3473,6 +3473,10 @@ video {
     width: 15rem;
   }
 
+  .lg\:tw-w-full {
+    width: 100%;
+  }
+
   .lg\:tw-columns-2 {
     -moz-columns: 2;
          columns: 2;
@@ -3498,8 +3502,16 @@ video {
     flex-direction: row;
   }
 
+  .lg\:\!tw-flex-row {
+    flex-direction: row !important;
+  }
+
   .lg\:tw-flex-row-reverse {
     flex-direction: row-reverse;
+  }
+
+  .lg\:\!tw-flex-row-reverse {
+    flex-direction: row-reverse !important;
   }
 
   .lg\:tw-justify-between {
@@ -3543,6 +3555,11 @@ video {
   .lg\:tw-px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .lg\:tw-px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .lg\:\!tw-pb-0 {
