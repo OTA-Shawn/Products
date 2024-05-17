@@ -252,8 +252,6 @@
     margin-right: auto;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    /* display: flex;
-    flex-direction: column; */
   }
 
   .sections strong {
@@ -459,11 +457,6 @@
       gap: 10px;
     }
   }
-
-  .active-tab {
-    color: #191919;
-    border-bottom: 0.25em solid gray;
-  }
 </style>
 
 <body>
@@ -472,7 +465,7 @@
     <div class="section !tw-mb-10 !tw-flex-col !tw-bg-white md:!tw-mb-40">
       <img src="" alt="" class="!tw-w-full" />
       <div
-        class="tw-px-10 tw-pb-5 tw-pt-10 tw-text-center tw-text-xl md:tw-text-2xl lg:tw-text-3xl"
+        class="tw-mb-10 tw-px-10 tw-pb-5 tw-pt-10 tw-text-center tw-text-xl lg:tw-text-3xl"
       >
         The Osaki Admiral massage chair with LED light controls features an
         L-Track system with zero gravity, 15 auto massage programs, and a Full
@@ -482,7 +475,9 @@
         on Lumbar, Multi Language Support and many other features.
       </div>
 
-      <div class="tw-grid tw-grid-cols-2 tw-gap-3 lg:tw-grid-cols-4">
+      <div
+        class="tw-grid tw-grid-cols-2 tw-justify-items-center tw-gap-3 tw-text-center lg:tw-grid-cols-4"
+      >
         <div class="circle">
           <div class="tw-bg-[#e2dcd4]"></div>
           <div>Taupe</div>
@@ -491,7 +486,7 @@
           <div class="tw-bg-[#6f3801]"></div>
           <div>Brown</div>
         </div>
-        <div class="circle">
+        <div class="circle tw-flex tw-justify-center">
           <div
             class=""
             style="
@@ -518,7 +513,7 @@
     <div class="section !tw-flex-row-reverse">
       <div class="section-content">
         <div class="section-header">3D Massage Mechanism</div>
-        <div class="section-description !tw-text-[#989898]">
+        <div class="section-description tw-text-neutral-500">
           The next generation of 3D massage rollers are designed for outstanding
           range and flexibility. The 3D technology allows the user to control
           the length of rollers that extend out from the backrest. OS-Pro
@@ -534,7 +529,7 @@
           Automatic <br />
           Body Scanning
         </div>
-        <div class="section-description !tw-text-[#989898]">
+        <div class="section-description tw-text-neutral-500">
           The OS-Pro Admiral will perform a body scan to map the key areas of
           the neck and back to ensure the optimal amount of pressure applied
           during the massage. The scanning technology will detect your shoulders
@@ -549,8 +544,8 @@
     >
       <div class="!tw-h-full !tw-bg-[var(--section-bg-color)]">
         <div class="section-content !tw-w-full">
-          <div class="section-description !tw-text-black">SL-track System</div>
-          <div class="section-description !tw-text-[#989898]">
+          <div class="section-header2 !tw-text-black">SL-track System</div>
+          <div class="section-description tw-text-neutral-500">
             As the roller system massages the neck area, it continues through to
             the lower back and then proceeds to massage the glutes and upper
             hamstrings.
@@ -571,7 +566,7 @@
           Zero Gravity and <br />
           Space Saving Technology
         </div>
-        <div class="section-description !tw-text-[#989898]">
+        <div class="section-description tw-text-neutral-500">
           Inspired by NASA technology, the Zero Gravity position is the perfect
           position to enjoy a massage, aligning your back relative to your thigh
           at an optimal level of comfort. When reclined into the zero-gravity
@@ -584,7 +579,7 @@
     <div class="section">
       <div class="section-content">
         <div class="section-header">Lumbar Heat Therapy</div>
-        <div class="section-description !tw-text-[#989898]">
+        <div class="section-description tw-text-neutral-500">
           The Admiral has heating pads located on along the Lumbar area which
           enhances the effect of the massage.
         </div>
@@ -593,99 +588,99 @@
     </div>
 
     <div
-      class="tw-col-span-2 tw-flex tw-items-center tw-justify-center tw-gap-5 tw-bg-[var(--section-bg-color)] tw-p-10 tw-text-center tw-text-2xl md:tw-text-4xl"
+      class="tw-col-span-full tw-flex tw-items-center tw-justify-center tw-gap-5 tw-bg-[var(--section-bg-color)] tw-p-10 tw-text-center tw-text-2xl md:tw-text-4xl"
     >
       <strong class="">15 Auto Massage Modes</strong>
     </div>
     <div
-      class="pl-[15%] tw-mb-10 tw-grid tw-grid-cols-2 tw-bg-[var(--section-bg-color)] tw-p-10"
+      class="pl-[15%] tw-mb-10 tw-grid tw-grid-cols-3 tw-gap-10 tw-bg-[var(--section-bg-color)] tw-p-10 tw-text-neutral-500"
     >
       <div
-        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+        class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
         <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
         <div class="md:tw-text-xl">Office Pro</div>
       </div>
       <div
-        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+        class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
         <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
         <div class="md:tw-text-xl">Elderly Health</div>
       </div>
       <div
-        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+        class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
         <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
         <div class="md:tw-text-xl">Text-Neck</div>
       </div>
       <div
-        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+        class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
         <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
         <div class="md:tw-text-xl">Relax</div>
       </div>
       <div
-        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+        class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
         <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
         <div class="md:tw-text-xl">Lady</div>
       </div>
       <div
-        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+        class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
         <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
         <div class="md:tw-text-xl">Rejuvenate</div>
       </div>
       <div
-        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+        class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
         <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
         <div class="md:tw-text-xl">AM Routine</div>
       </div>
       <div
-        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+        class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
         <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
         <div class="md:tw-text-xl">Gentle Relief</div>
       </div>
       <div
-        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+        class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
         <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
         <div class="md:tw-text-xl">Midday Nap</div>
       </div>
       <div
-        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+        class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
         <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
         <div class="md:tw-text-xl">Stretch</div>
       </div>
       <div
-        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+        class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
         <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
         <div class="md:tw-text-xl">Re-energize</div>
       </div>
       <div
-        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+        class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
         <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
         <div class="md:tw-text-xl">Recover</div>
       </div>
       <div
-        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+        class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
         <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
         <div class="md:tw-text-xl">Shape n tone</div>
       </div>
       <div
-        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+        class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
         <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
         <div class="md:tw-text-xl">Thai</div>
       </div>
       <div
-        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+        class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
         <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
         <div class="md:tw-text-xl">Men’s Fitness</div>
@@ -697,34 +692,34 @@
       <strong class="">5 Manual Massage Modes</strong>
     </div>
     <div
-      class="pl-[15%] tw-mb-10 tw-grid tw-grid-cols-2 tw-bg-[var(--section-bg-color)] tw-p-10"
+      class="pl-[15%] tw-mb-10 tw-flex tw-flex-wrap tw-justify-center tw-gap-10 tw-bg-[var(--section-bg-color)] tw-p-10 tw-text-neutral-500"
     >
       <div
-        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+        class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-w-60 lg:tw-text-2xl"
       >
         <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
         <div class="md:tw-text-xl">Kneading</div>
       </div>
       <div
-        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+        class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-w-60 lg:tw-text-2xl"
       >
         <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
         <div class="md:tw-text-xl">Rolling</div>
       </div>
       <div
-        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+        class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-w-60 lg:tw-text-2xl"
       >
         <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
         <div class="md:tw-text-xl">Tapping</div>
       </div>
       <div
-        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+        class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-w-60 lg:tw-text-2xl"
       >
         <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
         <div class="md:tw-text-xl">Shiatsu</div>
       </div>
       <div
-        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+        class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-w-60 lg:tw-text-2xl"
       >
         <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
         <div class="md:tw-text-xl">K&T</div>
