@@ -494,6 +494,10 @@
   margin-left: -1rem;
 }
 
+.tw-mb-60 {
+  margin-bottom: 15rem;
+}
+
 .tw-box-border {
   box-sizing: border-box;
 }
@@ -1402,6 +1406,16 @@
   border-color: rgb(69 63 58 / var(--tw-border-opacity));
 }
 
+.tw-border-stone-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(120 113 108 / var(--tw-border-opacity));
+}
+
+.tw-border-yellow-950 {
+  --tw-border-opacity: 1;
+  border-color: rgb(66 32 6 / var(--tw-border-opacity));
+}
+
 .tw-border-x-transparent {
   border-left-color: transparent;
   border-right-color: transparent;
@@ -1965,6 +1979,21 @@
 .tw-bg-\[\#453f3a\] {
   --tw-bg-opacity: 1;
   background-color: rgb(69 63 58 / var(--tw-bg-opacity));
+}
+
+.tw-bg-stone-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(120 113 108 / var(--tw-bg-opacity));
+}
+
+.tw-bg-yellow-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(66 32 6 / var(--tw-bg-opacity));
+}
+
+.tw-bg-yellow-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(161 98 7 / var(--tw-bg-opacity));
 }
 
 .tw-bg-\[url\(\'https\:\/\/cdn\.shopify\.com\/s\/files\/1\/0086\/1297\/0558\/files\/10\.Massage_Chair_Cover_Information_Background\.webp\?v\=1692717789\'\)\] {
@@ -2813,6 +2842,11 @@
 .tw-text-gray-50 {
   --tw-text-opacity: 1;
   color: rgb(249 250 251 / var(--tw-text-opacity));
+}
+
+.tw-text-stone-500 {
+  --tw-text-opacity: 1;
+  color: rgb(120 113 108 / var(--tw-text-opacity));
 }
 
 .\!tw-no-underline {
@@ -3667,6 +3701,10 @@ video {
 
   .lg\:tw-mt-36 {
     margin-top: 9rem;
+  }
+
+  .lg\:tw-mb-60 {
+    margin-bottom: 15rem;
   }
 
   .lg\:tw-block {
