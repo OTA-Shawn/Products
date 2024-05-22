@@ -325,6 +325,11 @@
   margin-bottom: 1.25rem;
 }
 
+.tw-my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
 .\!tw-mb-0 {
   margin-bottom: 0px !important;
 }
@@ -2230,6 +2235,10 @@
   padding-top: 1.25rem;
 }
 
+.tw-pr-10 {
+  padding-right: 2.5rem;
+}
+
 .tw-text-left {
   text-align: left;
 }
@@ -3814,6 +3823,11 @@ video {
   .lg\:tw-px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .lg\:tw-px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .lg\:\!tw-pb-0 {
