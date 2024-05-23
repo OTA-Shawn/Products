@@ -3830,6 +3830,14 @@ video {
     padding-top: 5rem;
   }
 
+  .lg\:\!tw-pr-0 {
+    padding-right: 0px !important;
+  }
+
+  .lg\:\!tw-pl-10 {
+    padding-left: 2.5rem !important;
+  }
+
   .lg\:tw-text-justify {
     text-align: justify;
   }
