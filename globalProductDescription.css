@@ -2288,10 +2288,6 @@
   padding-top: 1.25rem;
 }
 
-.tw-pl-\[15\%\] {
-  padding-left: 15%;
-}
-
 .tw-text-left {
   text-align: left;
 }
@@ -2996,10 +2992,6 @@ video {
 
   .md\:tw-mt-80 {
     margin-top: 20rem;
-  }
-
-  .md\:tw-ml-\[15\%\] {
-    margin-left: 15%;
   }
 
   .md\:tw-block {
@@ -3987,6 +3979,10 @@ video {
 
   .lg\:tw-pt-20 {
     padding-top: 5rem;
+  }
+
+  .lg\:tw-text-center {
+    text-align: center;
   }
 
   .lg\:tw-text-justify {
