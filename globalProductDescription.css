@@ -1138,6 +1138,10 @@
   row-gap: 14px;
 }
 
+.tw-gap-y-20 {
+  row-gap: 5rem;
+}
+
 .tw-space-y-10 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1643,6 +1647,11 @@
   background-color: rgb(222 222 222 / var(--tw-bg-opacity));
 }
 
+.tw-bg-\[\#E0DCD5\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 220 213 / var(--tw-bg-opacity));
+}
+
 .tw-bg-\[\#E4E4E4\] {
   --tw-bg-opacity: 1;
   background-color: rgb(228 228 228 / var(--tw-bg-opacity));
@@ -1895,6 +1904,11 @@
   background-color: rgb(66 32 6 / var(--tw-bg-opacity));
 }
 
+.tw-bg-\[\#e0dcd4\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 220 212 / var(--tw-bg-opacity));
+}
+
 .tw-bg-\[url\(\'https\:\/\/cdn\.shopify\.com\/s\/files\/1\/0086\/1297\/0558\/files\/10\.Massage_Chair_Cover_Information_Background\.webp\?v\=1692717789\'\)\] {
   background-image: url('https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.Massage_Chair_Cover_Information_Background.webp?v=1692717789');
 }
@@ -2144,6 +2158,11 @@
   padding-bottom: 1.5rem;
 }
 
+.tw-py-40 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
 .\!tw-pb-0 {
   padding-bottom: 0px !important;
 }
@@ -2286,6 +2305,10 @@
 
 .tw-pt-5 {
   padding-top: 1.25rem;
+}
+
+.tw-pb-6 {
+  padding-bottom: 1.5rem;
 }
 
 .tw-text-left {
@@ -2738,6 +2761,11 @@
 .tw-text-yellow-400 {
   --tw-text-opacity: 1;
   color: rgb(250 204 21 / var(--tw-text-opacity));
+}
+
+.tw-text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 .\!tw-no-underline {
@@ -3979,10 +4007,6 @@ video {
 
   .lg\:tw-pt-20 {
     padding-top: 5rem;
-  }
-
-  .lg\:tw-text-center {
-    text-align: center;
   }
 
   .lg\:tw-text-justify {
