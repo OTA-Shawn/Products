@@ -606,6 +606,10 @@
   height: 100%;
 }
 
+.tw-h-24 {
+  height: 6rem;
+}
+
 .tw-min-h-0 {
   min-height: 0px;
 }
@@ -1914,6 +1918,57 @@
   background-color: rgb(215 213 211 / var(--tw-bg-opacity));
 }
 
+.tw-bg-\[\#bca58e\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(188 165 142 / var(--tw-bg-opacity));
+}
+
+.tw-bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.tw-bg-blue-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
+}
+
+.tw-bg-blue-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
+.tw-bg-blue-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
+.tw-bg-blue-700\/50 {
+  background-color: rgb(29 78 216 / 0.5);
+}
+
+.tw-bg-blue-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 58 138 / var(--tw-bg-opacity));
+}
+
+.tw-bg-blue-900\/50 {
+  background-color: rgb(30 58 138 / 0.5);
+}
+
+.tw-bg-blue-900\/90 {
+  background-color: rgb(30 58 138 / 0.9);
+}
+
+.tw-bg-blue-900\/80 {
+  background-color: rgb(30 58 138 / 0.8);
+}
+
+.tw-bg-\[\#181818\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 24 24 / var(--tw-bg-opacity));
+}
+
 .tw-bg-\[url\(\'https\:\/\/cdn\.shopify\.com\/s\/files\/1\/0086\/1297\/0558\/files\/10\.Massage_Chair_Cover_Information_Background\.webp\?v\=1692717789\'\)\] {
   background-image: url('https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.Massage_Chair_Cover_Information_Background.webp?v=1692717789');
 }
@@ -2773,8 +2828,26 @@
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
+.tw-text-gray-100 {
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+
 .\!tw-no-underline {
   text-decoration-line: none !important;
+}
+
+.tw-opacity-80 {
+  opacity: 0.8;
+}
+
+.tw-opacity-90 {
+  opacity: 0.9;
+}
+
+.tw-invert {
+  --tw-invert: invert(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 *,
@@ -3841,6 +3914,10 @@ video {
 
   .lg\:tw-grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .lg\:tw-grid-cols-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
   }
 
   .lg\:\!tw-flex-row {
