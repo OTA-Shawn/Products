@@ -314,6 +314,11 @@
   margin-bottom: 0.5rem;
 }
 
+.tw-my-20 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
 .tw-my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
@@ -1184,6 +1189,12 @@
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
+.tw-space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
 .\!tw-self-start {
   align-self: flex-start !important;
 }
@@ -1719,6 +1730,11 @@
   background-color: rgb(191 183 169 / var(--tw-bg-opacity));
 }
 
+.tw-bg-\[\#c2c1bd\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(194 193 189 / var(--tw-bg-opacity));
+}
+
 .tw-bg-\[\#c3c4c7\] {
   --tw-bg-opacity: 1;
   background-color: rgb(195 196 199 / var(--tw-bg-opacity));
@@ -1946,9 +1962,14 @@
   background-color: rgb(66 32 6 / var(--tw-bg-opacity));
 }
 
-.tw-bg-\[\#c2c1bd\] {
+.tw-bg-neutral-400 {
   --tw-bg-opacity: 1;
-  background-color: rgb(194 193 189 / var(--tw-bg-opacity));
+  background-color: rgb(163 163 163 / var(--tw-bg-opacity));
+}
+
+.tw-bg-\[\#eaeaea\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 234 234 / var(--tw-bg-opacity));
 }
 
 .tw-bg-\[url\(\'https\:\/\/cdn\.shopify\.com\/s\/files\/1\/0086\/1297\/0558\/files\/10\.Massage_Chair_Cover_Information_Background\.webp\?v\=1692717789\'\)\] {
@@ -2342,6 +2363,10 @@
 
 .tw-pt-5 {
   padding-top: 1.25rem;
+}
+
+.\!tw-pr-10 {
+  padding-right: 2.5rem !important;
 }
 
 .tw-text-left {
@@ -3706,6 +3731,10 @@ video {
     display: block;
   }
 
+  .lg\:tw-inline {
+    display: inline;
+  }
+
   .lg\:tw-flex {
     display: flex;
   }
@@ -3878,6 +3907,14 @@ video {
     width: 100%;
   }
 
+  .lg\:tw-w-\[45\%\] {
+    width: 45%;
+  }
+
+  .lg\:tw-w-\[55\%\] {
+    width: 55%;
+  }
+
   .lg\:tw-basis-1\/2 {
     flex-basis: 50%;
   }
@@ -4034,6 +4071,14 @@ video {
     padding: 5rem;
   }
 
+  .lg\:\!tw-p-10 {
+    padding: 2.5rem !important;
+  }
+
+  .lg\:\!tw-p-0 {
+    padding: 0px !important;
+  }
+
   .lg\:\!tw-px-56 {
     padding-left: 14rem !important;
     padding-right: 14rem !important;
@@ -4052,6 +4097,11 @@ video {
   .lg\:tw-px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .lg\:tw-py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   .lg\:\!tw-pb-0 {
@@ -4108,6 +4158,10 @@ video {
 
   .lg\:tw-pt-20 {
     padding-top: 5rem;
+  }
+
+  .lg\:\!tw-pl-0 {
+    padding-left: 0px !important;
   }
 
   .lg\:tw-text-left {
