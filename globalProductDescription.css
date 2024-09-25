@@ -816,6 +816,10 @@
   width: 100%;
 }
 
+.tw-w-3\/5 {
+  width: 60%;
+}
+
 .tw-min-w-0 {
   min-width: 0px;
 }
@@ -894,6 +898,11 @@
 
 .tw-list-none {
   list-style-type: none;
+}
+
+.tw-columns-2 {
+  -moz-columns: 2;
+       columns: 2;
 }
 
 .tw-grid-flow-col {
@@ -1159,6 +1168,22 @@
   row-gap: 14px;
 }
 
+.tw-gap-x-20 {
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+
+.tw-gap-x-10 {
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+}
+
+.tw-space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
 .tw-space-y-10 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1189,10 +1214,10 @@
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
-.tw-space-y-1 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+.tw-space-x-10 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .\!tw-self-start {
@@ -1820,6 +1845,11 @@
   background-color: rgb(234 228 223 / var(--tw-bg-opacity));
 }
 
+.tw-bg-\[\#eaeaea\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 234 234 / var(--tw-bg-opacity));
+}
+
 .tw-bg-\[\#ece7e3\] {
   --tw-bg-opacity: 1;
   background-color: rgb(236 231 227 / var(--tw-bg-opacity));
@@ -1960,16 +1990,6 @@
 .tw-bg-yellow-950 {
   --tw-bg-opacity: 1;
   background-color: rgb(66 32 6 / var(--tw-bg-opacity));
-}
-
-.tw-bg-neutral-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(163 163 163 / var(--tw-bg-opacity));
-}
-
-.tw-bg-\[\#eaeaea\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(234 234 234 / var(--tw-bg-opacity));
 }
 
 .tw-bg-\[url\(\'https\:\/\/cdn\.shopify\.com\/s\/files\/1\/0086\/1297\/0558\/files\/10\.Massage_Chair_Cover_Information_Background\.webp\?v\=1692717789\'\)\] {
@@ -2249,6 +2269,10 @@
   padding-right: 0px !important;
 }
 
+.\!tw-pr-10 {
+  padding-right: 2.5rem !important;
+}
+
 .\!tw-pt-0 {
   padding-top: 0px !important;
 }
@@ -2363,10 +2387,6 @@
 
 .tw-pt-5 {
   padding-top: 1.25rem;
-}
-
-.\!tw-pr-10 {
-  padding-right: 2.5rem !important;
 }
 
 .tw-text-left {
@@ -2824,6 +2844,11 @@
 .tw-text-yellow-400 {
   --tw-text-opacity: 1;
   color: rgb(250 204 21 / var(--tw-text-opacity));
+}
+
+.tw-text-red-400 {
+  --tw-text-opacity: 1;
+  color: rgb(248 113 113 / var(--tw-text-opacity));
 }
 
 .\!tw-no-underline {
@@ -3643,6 +3668,11 @@ video {
     margin-bottom: 5rem;
   }
 
+  .lg\:tw-mx-10 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
   .lg\:\!tw-mb-0 {
     margin-bottom: 0px !important;
   }
@@ -3725,6 +3755,10 @@ video {
 
   .lg\:tw-mt-36 {
     margin-top: 9rem;
+  }
+
+  .lg\:tw-mb-80 {
+    margin-bottom: 20rem;
   }
 
   .lg\:tw-block {
@@ -3895,6 +3929,14 @@ video {
     width: 1024px;
   }
 
+  .lg\:tw-w-\[45\%\] {
+    width: 45%;
+  }
+
+  .lg\:tw-w-\[55\%\] {
+    width: 55%;
+  }
+
   .lg\:tw-w-\[768px\] {
     width: 768px;
   }
@@ -3905,14 +3947,6 @@ video {
 
   .lg\:tw-w-full {
     width: 100%;
-  }
-
-  .lg\:tw-w-\[45\%\] {
-    width: 45%;
-  }
-
-  .lg\:tw-w-\[55\%\] {
-    width: 55%;
   }
 
   .lg\:tw-basis-1\/2 {
@@ -4055,6 +4089,10 @@ video {
     border-bottom-width: 16px;
   }
 
+  .lg\:\!tw-p-10 {
+    padding: 2.5rem !important;
+  }
+
   .lg\:\!tw-p-20 {
     padding: 5rem !important;
   }
@@ -4069,14 +4107,6 @@ video {
 
   .lg\:tw-p-20 {
     padding: 5rem;
-  }
-
-  .lg\:\!tw-p-10 {
-    padding: 2.5rem !important;
-  }
-
-  .lg\:\!tw-p-0 {
-    padding: 0px !important;
   }
 
   .lg\:\!tw-px-56 {
@@ -4099,13 +4129,12 @@ video {
     padding-right: 5rem;
   }
 
-  .lg\:tw-py-10 {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
-
   .lg\:\!tw-pb-0 {
     padding-bottom: 0px !important;
+  }
+
+  .lg\:\!tw-pl-0 {
+    padding-left: 0px !important;
   }
 
   .lg\:\!tw-pl-10 {
@@ -4158,10 +4187,6 @@ video {
 
   .lg\:tw-pt-20 {
     padding-top: 5rem;
-  }
-
-  .lg\:\!tw-pl-0 {
-    padding-left: 0px !important;
   }
 
   .lg\:tw-text-left {
