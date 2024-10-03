@@ -10,7 +10,7 @@
 <!-- more -->
 
 <script>
-  const youtube_link = "";
+  const youtube_link = ""
 
   const imgs = [
     {
@@ -134,7 +134,7 @@
       img_src:
         "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/16.Silo_Demension_2.jpg?v=1692137553",
     },
-  ];
+  ]
 </script>
 <meta charset="UTF-8" />
 <meta content="IE=edge" http-equiv="X-UA-Compatible" />
@@ -369,27 +369,13 @@
         the Silo offers an extraordinary massage experience for a moment of
         personal indulgence.
       </div>
-      <!-- <div class="flex gap-10 justify-center">
-          <div class="circle">
-            <div class="bg-[#3A2521]"></div>
-            <div>Brown</div>
-          </div>
-          <div class="circle">
-            <div class="bg-[#97AEC4]"></div>
-            <div>Blue</div>
-          </div>
-          <div class="circle">
-            <div class="bg-[#1D1D1D]"></div>
-            <div>Black</div>
-          </div>
-        </div> -->
     </div>
 
     <div class="section flex-col md:!flex-row-reverse !bg-black !mb-0">
       <img alt="" class="!w-full md:!w-1/2" />
       <div class="section-content">
-        <div class="section-header !text-[#808080]">
-          <strong class="!text-[#2D59EE]">SL- Track</strong> System
+        <div class="section-header" style="color: #808080">
+          <strong class="" style="color: #2d59ee">SL- Track</strong> System
         </div>
         <div class="section-description">
           Through the use of a scientifically- engineered SL-Track, the massage
@@ -400,11 +386,15 @@
     </div>
     <div class="section flex-col !bg-black">
       <img alt="" class="!w-2/3" />
-      <div class="section-content rounded-3xl !bg-[#1E1E1E] m-4">
+      <div
+        class="section-content rounded-3xl m-4"
+        style="background-color: #1e1e1e"
+      >
         <div class="gap-4 md:gap-8 flex items-center">
           <img src="" alt="" class="min-w-0 w-10 md:w-12" />
-          <div class="section-header !text-[#808080]">
-            <strong class="!text-[#2D59EE]">Zero Gravity</strong> Reclining
+          <div class="section-header" style="color: #808080">
+            <strong class="" style="color: #2d59ee">Zero Gravity</strong>
+            Reclining
           </div>
         </div>
         <div class="section-description">
@@ -490,7 +480,10 @@
       </div>
     </div>
 
-    <div class="section flex-col md:flex-row-reverse !bg-[#ececee]">
+    <div
+      class="section flex-col md:flex-row-reverse"
+      style="background-color: #ececee"
+    >
       <img alt="" class="!w-full md:!w-1/2" />
       <div class="section-content">
         <div class="section-header">Foot Rollers</div>
@@ -502,7 +495,7 @@
         </div>
       </div>
     </div>
-    <div class="section flex-col md:flex-row !bg-[#ececee]">
+    <div class="section flex-col md:flex-row" style="background-color: #ececee">
       <img alt="" class="!w-full md:!w-1/2" />
       <div class="section-content">
         <div class="section-header">Extendable Footrest</div>
@@ -523,7 +516,7 @@
         </div>
       </div>
     </div>
-    <div class="section flex-col md:flex-row !bg-[#ececee]">
+    <div class="section flex-col md:flex-row" style="background-color: #ececee">
       <img alt="" class="!w-2/3 md:!w-1/4 !flex-initial self-start" />
       <div class="section-content">
         <div class="section-header">
@@ -685,37 +678,37 @@
     crossorigin="anonymous"
   ></script>
   <script>
-    const $j = jQuery.noConflict(true);
+    const $j = jQuery.noConflict(true)
   </script>
   <script>
     $j(function () {
       $j.each($j(".sections img"), (i, img) => {
-        $j(img).attr("src", imgs[i].img_src);
-        $j(img).attr("alt", imgs[i].img_name);
-      });
+        $j(img).attr("src", imgs[i].img_src)
+        $j(img).attr("alt", imgs[i].img_name)
+      })
 
       if (youtube_link != "") {
-        var youtube_id = youtube_link.split("watch?v=")[1].split("&")[0];
+        var youtube_id = youtube_link.split("watch?v=")[1].split("&")[0]
         var src =
-          "https://www.youtube.com/embed/" + youtube_id + "?autoplay=1&mute=1";
+          "https://www.youtube.com/embed/" + youtube_id + "?autoplay=1&mute=1"
         var embed_html =
           '<iframe class="w-full aspect-video mb-20" src=' +
           src +
-          ' title="YouTube video player" frameborder="0" allowfullscreen></iframe>';
-        $j("#youtube-link").append(embed_html);
+          ' title="YouTube video player" frameborder="0" allowfullscreen></iframe>'
+        $j("#youtube-link").append(embed_html)
       }
       $j("#tab-button1").on("click", () => {
-        $j("#tab-button1").addClass("active-tab");
-        $j("#tab-button2").removeClass("active-tab");
-        $j(".sections").fadeIn("slow");
-        $j(".section-specs").fadeIn("slow");
-      });
+        $j("#tab-button1").addClass("active-tab")
+        $j("#tab-button2").removeClass("active-tab")
+        $j(".sections").fadeIn("slow")
+        $j(".section-specs").fadeIn("slow")
+      })
       $j("#tab-button2").on("click", () => {
-        $j("#tab-button1").removeClass("active-tab");
-        $j("#tab-button2").addClass("active-tab");
-        $j(".sections").fadeOut("slow");
-        $j(".section-specs").fadeOut("slow");
-      });
-    });
+        $j("#tab-button1").removeClass("active-tab")
+        $j("#tab-button2").addClass("active-tab")
+        $j(".sections").fadeOut("slow")
+        $j(".section-specs").fadeOut("slow")
+      })
+    })
   </script>
 </body>
