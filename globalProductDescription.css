@@ -182,14 +182,6 @@
   top: 5%;
 }
 
-.tw-z-20 {
-  z-index: 20;
-}
-
-.tw-z-10 {
-  z-index: 10;
-}
-
 .tw-order-1 {
   order: 1;
 }
@@ -379,6 +371,14 @@
   margin-left: 2em !important;
 }
 
+.-tw-mb-16 {
+  margin-bottom: -4rem;
+}
+
+.-tw-mb-20 {
+  margin-bottom: -5rem;
+}
+
 .-tw-ml-4 {
   margin-left: -1rem;
 }
@@ -523,18 +523,6 @@
   margin-top: auto;
 }
 
-.tw-mb-96 {
-  margin-bottom: 24rem;
-}
-
-.-tw-mb-20 {
-  margin-bottom: -5rem;
-}
-
-.-tw-mb-16 {
-  margin-bottom: -4rem;
-}
-
 .tw-box-border {
   box-sizing: border-box;
 }
@@ -653,22 +641,6 @@
 
 .tw-h-full {
   height: 100%;
-}
-
-.tw-h-48 {
-  height: 12rem;
-}
-
-.tw-h-40 {
-  height: 10rem;
-}
-
-.tw-h-2\/3 {
-  height: 66.666667%;
-}
-
-.tw-h-96 {
-  height: 24rem;
 }
 
 .tw-min-h-0 {
@@ -864,18 +836,6 @@
   width: 100%;
 }
 
-.tw-w-96 {
-  width: 24rem;
-}
-
-.tw-w-3\/5 {
-  width: 60%;
-}
-
-.tw-w-2\/5 {
-  width: 40%;
-}
-
 .tw-min-w-0 {
   min-width: 0px;
 }
@@ -998,10 +958,6 @@
 
 .tw-grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
-.tw-grid-cols-8 {
-  grid-template-columns: repeat(8, minmax(0, 1fr));
 }
 
 .tw-grid-rows-3 {
@@ -1516,16 +1472,6 @@
   background-color: rgb(66 32 6 / var(--tw-bg-opacity));
 }
 
-.tw-bg-gray-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-}
-
-.tw-bg-gray-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
-}
-
 .tw-bg-\[url\(\'https\:\/\/cdn\.shopify\.com\/s\/files\/1\/0086\/1297\/0558\/files\/10\.Massage_Chair_Cover_Information_Background\.webp\?v\=1692717789\'\)\] {
   background-image: url('https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.Massage_Chair_Cover_Information_Background.webp?v=1692717789');
 }
@@ -1919,22 +1865,6 @@
   padding-top: 1.25rem;
 }
 
-.tw-pl-20 {
-  padding-left: 5rem;
-}
-
-.tw-pb-80 {
-  padding-bottom: 20rem;
-}
-
-.tw-pt-40 {
-  padding-top: 10rem;
-}
-
-.tw-pt-20 {
-  padding-top: 5rem;
-}
-
 .tw-text-left {
   text-align: left;
 }
@@ -2126,11 +2056,6 @@
   color: rgb(239 68 68 / var(--tw-text-opacity)) !important;
 }
 
-.\!tw-text-red-600 {
-  --tw-text-opacity: 1 !important;
-  color: rgb(220 38 38 / var(--tw-text-opacity)) !important;
-}
-
 .\!tw-text-red-700 {
   --tw-text-opacity: 1 !important;
   color: rgb(185 28 28 / var(--tw-text-opacity)) !important;
@@ -2257,6 +2182,11 @@
   color: rgb(185 28 28 / var(--tw-text-opacity));
 }
 
+.tw-text-stone-300 {
+  --tw-text-opacity: 1;
+  color: rgb(214 211 209 / var(--tw-text-opacity));
+}
+
 .tw-text-stone-500 {
   --tw-text-opacity: 1;
   color: rgb(120 113 108 / var(--tw-text-opacity));
@@ -2281,33 +2211,39 @@
   color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
-.tw-text-blue-50 {
+.tw-text-gray-100 {
   --tw-text-opacity: 1;
-  color: rgb(239 246 255 / var(--tw-text-opacity));
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+
+.tw-text-neutral-50 {
+  --tw-text-opacity: 1;
+  color: rgb(250 250 250 / var(--tw-text-opacity));
+}
+
+.tw-text-stone-100 {
+  --tw-text-opacity: 1;
+  color: rgb(245 245 244 / var(--tw-text-opacity));
 }
 
 .\!tw-no-underline {
   text-decoration-line: none !important;
 }
 
-.tw-opacity-90 {
-  opacity: 0.9;
-}
-
-.tw-opacity-50 {
-  opacity: 0.5;
-}
-
 .tw-opacity-100 {
   opacity: 1;
+}
+
+.tw-opacity-25 {
+  opacity: 0.25;
 }
 
 .tw-opacity-75 {
   opacity: 0.75;
 }
 
-.tw-opacity-25 {
-  opacity: 0.25;
+.tw-opacity-90 {
+  opacity: 0.9;
 }
 
 .tw-shadow-md {
