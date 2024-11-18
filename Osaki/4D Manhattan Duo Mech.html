@@ -297,19 +297,18 @@
       img_src:
         "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/49.Manhattan_Duo_led.webp",
     },
-
-    {
-      img_order: 48,
-      img_name: "Artboard-479",
-      img_src:
-        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/50.Manhattan_Duo_doorway_door.png?v=1727974335",
-    },
-    {
-      img_order: 47,
-      img_name: "Manhattan_Duo_doorway_door",
-      img_src:
-        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/49.Manhattan_Duo_doorway_door.webp",
-    },
+    // {
+    //   img_order: 48,
+    //   img_name: "Artboard-479",
+    //   img_src:
+    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/50.Manhattan_Duo_doorway_door.png?v=1727974335",
+    // },
+    // {
+    //   img_order: 47,
+    //   img_name: "Manhattan_Duo_doorway_door",
+    //   img_src:
+    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/49.Manhattan_Duo_doorway_door.webp",
+    // },
     {
       img_order: 49,
       img_name: "Manhattan_Duo_dimension1",
@@ -343,37 +342,7 @@
       font-optical-sizing: auto;
       font-weight: 400;
       font-style: normal;
-    }
-    .minimum-doorway {
-      grid-template: 50% 50% / 40% 1fr;
-    }
-    .minimum-doorway-left {
-      grid-row: 1 / 3;
-      grid-column: 1 / 2;
-    }
-    .minimum-doorway-right-top {
-      grid-column: 2 / 3;
-    }
-    .minimum-doorway-right-bottom {
-      grid-column: 2 / 3;
-    }
-    @media (max-width: 1024px) {
-      .minimum-doorway {
-        grid-template: 50% 50% / 40% 1fr;
-        gap: 10px;
-      }
-      .minimum-doorway-left {
-        grid-row: 1 / 2;
-        grid-column: 1 / 2;
-      }
-      .minimum-doorway-right-top {
-        grid-row: 1 / 2;
-        grid-column: 2 / 3;
-      }
-      .minimum-doorway-right-bottom {
-        grid-column: 1 / -1;
-      }
-    }
+    } 
   </style>
 </head>
 <body>
@@ -990,13 +959,11 @@
       <div
         class="minimum-doorway tw-grid tw-items-center tw-justify-center tw-gap-10"
       >
-        <img src="" alt="" class="minimum-doorway-left" />
         <div
           class="minimum-doorway-right-top tw-flex tw-items-center tw-justify-center"
         >
-          <img src="" alt="" class="lg:tw-w-3/4" />
-        </div>
-        <div class="minimum-doorway-right-bottom">
+          </div>
+        <div class="minimum-doorway-right-bottom lg:tw-w-2/3 tw-mx-auto">
           <div class="tw-text-2xl tw-font-semibold tw-text-neutral-500">
             Measuring Guide
           </div>
@@ -1035,140 +1002,88 @@
       </div>
     </div>
 
-    <section class="">
-      <div
-        class="tw-p-10 tw-text-center tw-text-3xl tw-font-bold md:tw-text-4xl lg:tw-text-5xl"
-      >
-        Specification
+    
+<section class="">
+  <div class="tw-p-10 tw-text-center tw-text-3xl tw-font-bold md:tw-text-4xl lg:tw-text-5xl">
+    Specification
+  </div>
+  <div class="tw-text-2xl tw-font-normal">
+    <div class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 lg:tw-flex-row">
+      <div class="tw-w-52 tw-font-bold">Product Name</div>
+      <div>Manhattan Duo</div>
+    </div>
+    <div class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 lg:tw-flex-row">
+      <div class="tw-w-52 tw-shrink-0 tw-font-bold">User Manual</div>
+      <div class="tw-grid tw-w-full tw-grid-cols-2 tw-gap-2">
+        <a class="!tw-text-red-500 !tw-no-underline" href="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4D_Manhattan_Manual.pdf?v=1727903005" target="_blank">Download</a>
       </div>
-      <div class="tw-text-2xl tw-font-normal">
-        <div
-          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 lg:tw-flex-row"
-        >
-          <div class="tw-w-52 tw-font-bold">Product Name</div>
-          <div>4D Manhattan Duo Mech</div>
+    </div>
+    <div class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row">
+      <div class="tw-w-52 tw-shrink-0 tw-font-bold">Power Supply</div>
+      <div>110 - 120V</div>
+    </div>
+    <div class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row">
+      <div class="tw-w-52 tw-shrink-0 tw-font-bold">Rate Frequency</div>
+      <div>50 / 60Hz</div>
+    </div>
+    <div class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row">
+      <div class="tw-w-52 tw-shrink-0 tw-font-bold">Chair <br class="tw-hidden lg:tw-block" /> Dimensions <br /> (W x L x H)</div>
+      <div class="tw-grid tw-w-full tw-gap-2 lg:tw-grid-cols-2">
+        <div>
+          <div class="tw-text-xl tw-font-bold">Upright</div>
+          <div>30.5" x 58.5" x 47.0"</div>
         </div>
-        <div
-          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 lg:tw-flex-row"
-        >
-          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
-            <div>User Manual</div>
-          </div>
-          <div class="tw-grid tw-w-full tw-grid-cols-2 tw-gap-2">
-            <a
-              class="!tw-text-red-500 !tw-no-underline"
-              href="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4D_Manhattan_Manual.pdf?v=1727903005"
-              target="_blank"
-              >Download</a
-            >
-          </div>
-        </div>
-        <div
-          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
-        >
-          <div class="tw-w-52 tw-shrink-0 tw-font-bold">Power Supply</div>
-          <div>110 - 120V</div>
-        </div>
-        <div
-          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
-        >
-          <div class="tw-w-52 tw-shrink-0 tw-font-bold">Rate Frequency</div>
-          <div>50 / 60Hz</div>
-        </div>
-        <div
-          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
-        >
-          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
-            <div>
-              Chair <br class="tw-hidden lg:tw-block" />
-              Dimensions <br />
-              (W x L x H)
-            </div>
-          </div>
-          <div class="tw-grid tw-w-full tw-gap-2 lg:tw-grid-cols-2">
-            <div>
-              <div class="tw-text-xl tw-font-bold">Upright</div>
-              <div>30.5" x 58.5" x 47.0"</div>
-            </div>
-            <div>
-              <div class="tw-text-xl tw-font-bold">Reclined</div>
-              <div>30.5" x 79.0" x 37.0"</div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
-        >
-          <div class="tw-w-52 tw-shrink-0 tw-font-bold">Chair Weight</div>
-          <div>273.2 lb</div>
-        </div>
-        <div
-          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
-        >
-          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
-            <div>Width</div>
-          </div>
-          <div class="tw-grid tw-w-full tw-grid-cols-2 tw-gap-2">
-            <div>
-              <div class="tw-text-xl tw-font-bold">Shoulder</div>
-              <div>22"</div>
-            </div>
-            <div>
-              <div class="tw-text-xl tw-font-bold">Seat</div>
-              <div>20"</div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
-        >
-          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
-            Minimum <br />
-            Door Width
-          </div>
-          <div>35.5"</div>
-        </div>
-        <div
-          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
-        >
-          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
-            User Maximum Weight
-          </div>
-          <div>260 lb</div>
-        </div>
-        <div
-          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
-        >
-          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
-            <div>
-              Package <br class="tw-hidden lg:tw-block" />
-              Dimensions <br />
-              (W x L x H)
-            </div>
-          </div>
-          <div class="tw-grid tw-w-full tw-gap-2 lg:tw-grid-cols-2">
-            <div>
-              <div class="tw-text-xl tw-font-bold">Box 1</div>
-              <div>30.5" x 58.5" x 47.0"</div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
-        >
-          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
-            <div>Package</div>
-            <div>Weight</div>
-          </div>
-          <div class="tw-grid tw-w-full tw-grid-cols-2 tw-gap-2">
-            <div>
-              <div class="tw-text-xl tw-font-bold">Box 1</div>
-              <div>329.6 lb</div>
-            </div>
-          </div>
+        <div>
+          <div class="tw-text-xl tw-font-bold">Reclined</div>
+          <div>30.5" x 79" x 37"</div>
         </div>
       </div>
-    </section>
+    </div>
+    <div class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row">
+      <div class="tw-w-52 tw-shrink-0 tw-font-bold">Chair Weight</div>
+      <div>273.2 lb</div>
+    </div>
+    <div class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row">
+      <div class="tw-w-52 tw-shrink-0 tw-font-bold">Width</div>
+      <div class="tw-grid tw-w-full tw-grid-cols-2 tw-gap-2">
+        <div>
+          <div class="tw-text-xl tw-font-bold">Shoulder</div>
+          <div>22"</div>
+        </div>
+        <div>
+          <div class="tw-text-xl tw-font-bold">Seat</div>
+          <div>20"</div>
+        </div>
+      </div>
+    </div>
+    <div class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row">
+      <div class="tw-w-52 tw-shrink-0 tw-font-bold">Minimum Door Width</div>
+      <div class="tw-grid tw-w-full tw-grid-cols-2 tw-gap-2">
+        <div>
+          <div class="tw-text-xl tw-font-bold">Assembled</div>
+          <div>30.5"</div>
+        </div>
+        <div>
+          <div class="tw-text-xl tw-font-bold">Disassembled</div>
+          <div>30.5"</div>
+        </div>
+      </div>
+    </div>
+    <div class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row">
+      <div class="tw-w-52 tw-shrink-0 tw-font-bold">User Maximum Weight</div>
+      <div>273.2 lb</div>
+    </div>
+    <div class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row">
+      <div class="tw-w-52 tw-shrink-0 tw-font-bold">Package <br class="tw-hidden lg:tw-block" /> Dimensions <br /> (W x L x H)</div>
+      <div class="tw-grid tw-w-full tw-gap-2 lg:tw-grid-cols-1"><div><div class="tw-text-xl tw-font-bold">Box 1</div><div>33.5" x 50.8" x 57.9"</div></div></div>
+    </div>
+    <div class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row">
+      <div class="tw-w-52 tw-shrink-0 tw-font-bold">Package Weight</div>
+      <div class="tw-grid tw-w-full tw-gap-2 lg:tw-grid-cols-1"><div><div class="tw-text-xl tw-font-bold">Box 1</div><div>329.6 lb</div></div></div>
+    </div>
+  </div>
+</section>
+
   </div>
 </body>
 <script>
