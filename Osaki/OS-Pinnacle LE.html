@@ -238,19 +238,19 @@
       img_src:
         "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/35.pinnacle_LE_wireless_charge.webp",
     },
-    {
-      img_order: 37,
-      img_name: "pinnacle_LE_doorway_door",
-      img_src:
-        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/37.pinnacle_LE_doorway_door.webp",
-    },
+    // {
+    //   img_order: 37,
+    //   img_name: "pinnacle_LE_doorway_door",
+    //   img_src:
+    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/37.pinnacle_LE_doorway_door.webp",
+    // },
 
-    {
-      img_order: 36,
-      img_name: "pinnacle_LE_doorway_box",
-      img_src:
-        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/36.pinnacle_LE_doorway_box.webp",
-    },
+    // {
+    //   img_order: 36,
+    //   img_name: "pinnacle_LE_doorway_box",
+    //   img_src:
+    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/36.pinnacle_LE_doorway_box.webp",
+    // },
     {
       img_order: 38,
       img_name: "pinnacle_LE_dimension_front",
@@ -284,74 +284,44 @@
       font-optical-sizing: auto;
       font-weight: 400;
       font-style: normal;
-    }
-    .minimum-doorway {
-      grid-template: 50% 50% / 40% 1fr;
-    }
-    .minimum-doorway-left {
-      grid-row: 1 / 3;
-      grid-column: 1 / 2;
-    }
-    .minimum-doorway-right-top {
-      grid-column: 2 / 3;
-    }
-    .minimum-doorway-right-bottom {
-      grid-column: 2 / 3;
-    }
-    @media (max-width: 1024px) {
-      .minimum-doorway {
-        grid-template: 50% 50% / 40% 1fr;
-        gap: 10px;
-      }
-      .minimum-doorway-left {
-        grid-row: 1 / 2;
-        grid-column: 1 / 2;
-      }
-      .minimum-doorway-right-top {
-        grid-row: 1 / 2;
-        grid-column: 2 / 3;
-      }
-      .minimum-doorway-right-bottom {
-        grid-column: 1 / -1;
-      }
-    }
+    } 
   </style>
 </head>
 <body>
   <div
-    class="sections tw-m-auto tw-flex tw-flex-col tw-leading-normal min-[480px]:tw-w-[480px] md:tw-w-[768px] lg:tw-w-[1024px]"
+    class="tw-flex tw-flex-col tw-m-auto md:tw-w-[768px] lg:tw-w-[1024px] min-[480px]:tw-w-[480px] tw-leading-normal sections"
   >
     <div id="youtube-link"></div>
     <div class="tw-mb-40 lg:tw-mb-80">
-      <img src="" alt="" class="tw-mb-10 !tw-w-full lg:tw-mb-20" />
-      <div class="tw-mx-auto tw-space-y-2 lg:tw-w-3/4">
+      <img src="" alt="" class="tw-mb-10 lg:tw-mb-20 !tw-w-full" />
+      <div class="tw-space-y-2 tw-mx-auto lg:tw-w-3/4">
         <img src="" alt="" class="tw-w-20" />
         <div
-          class="tw-flex tw-flex-col tw-gap-10 lg:tw-flex-row lg:tw-items-center"
+          class="tw-flex lg:tw-flex-row tw-flex-col lg:tw-items-center tw-gap-10"
         >
-          <div class="tw-text-3xl tw-font-semibold lg:tw-text-5xl">
+          <div class="tw-font-semibold tw-text-3xl lg:tw-text-5xl">
             Pinnacle LE
           </div>
           <div
-            class="tw-mx-auto tw-flex tw-flex-wrap tw-justify-center tw-gap-10 lg:tw-flex-row lg:tw-gap-20"
+            class="tw-flex lg:tw-flex-row tw-flex-wrap tw-justify-center tw-gap-10 lg:tw-gap-20 tw-mx-auto"
           >
             <div class="tw-flex tw-items-center tw-gap-2">
               <div
-                class="tw-aspect-square tw-w-8 tw-rounded-full"
+                class="tw-rounded-full tw-aspect-square tw-w-8"
                 style="background-color: #b4b2b2"
               ></div>
               <div>Taupe</div>
             </div>
             <div class="tw-flex tw-items-center tw-gap-2">
               <div
-                class="tw-aspect-square tw-w-8 tw-rounded-full"
+                class="tw-rounded-full tw-aspect-square tw-w-8"
                 style="background-color: #422a25"
               ></div>
               <div>Brown</div>
             </div>
             <div class="tw-flex tw-items-center tw-gap-2">
               <div
-                class="tw-aspect-square tw-w-8 tw-rounded-full"
+                class="tw-rounded-full tw-aspect-square tw-w-8"
                 style="background-color: #202020"
               ></div>
               <div>Black</div>
@@ -369,13 +339,13 @@
     </div>
     <!-- 
     <div
-      class="section tw-mb-40 tw-grid tw-items-center tw-space-y-4 lg:tw-grid-cols-2"
+      class="tw-items-center tw-space-y-4 tw-grid lg:tw-grid-cols-2 tw-mb-40 section"
     >
-      <img src="" alt="" class="tw-min-w-0 lg:tw-order-2" />
+      <img src="" alt="" class="lg:tw-order-2 tw-min-w-0" />
       <div
-        class="tw-flex tw-flex-col tw-space-y-4 tw-self-end lg:tw-pb-10 lg:tw-pr-10"
+        class="tw-flex tw-flex-col tw-space-y-4 lg:tw-pr-10 lg:tw-pb-10 tw-self-end"
       >
-        <div class="tw-text-4xl tw-font-semibold tw-text-gray-700">
+        <div class="tw-font-semibold tw-text-4xl tw-text-gray-700">
           <strong class="tw-block tw-text-blue-500"> 8 FIXED </strong>
           MASSAGE <br />ROLLERS
         </div>
@@ -387,12 +357,12 @@
     </div>
 
     <div
-      class="section tw-mb-40 tw-grid tw-items-center tw-space-y-4 lg:tw-grid-cols-2"
+      class="tw-items-center tw-space-y-4 tw-grid lg:tw-grid-cols-2 tw-mb-40 section"
     >
       <img src="" alt="" class="tw-min-w-0" />
 
       <div class="tw-flex tw-flex-col tw-space-y-4 lg:tw-pb-10 lg:tw-pl-10">
-        <div class="tw-text-4xl tw-font-semibold tw-text-gray-700">
+        <div class="tw-font-semibold tw-text-4xl tw-text-gray-700">
           <strong class="tw-block tw-text-red-500">MILDLY HEATED </strong>
           MASSAGE ROLLERS
         </div>
@@ -406,9 +376,9 @@
 
     <div class="tw-mb-40" style="background-color: #fafafc">
       <div
-        class="section tw-mx-auto tw-mb-40 tw-grid tw-flex-col tw-space-y-10 tw-p-10 tw-px-4 lg:tw-px-20"
+        class="tw-flex-col tw-space-y-10 tw-grid tw-mx-auto tw-mb-40 tw-px-4 lg:tw-px-20 tw-p-10 section"
       >
-        <div class="tw-text-3xl tw-font-semibold tw-text-gray-700">
+        <div class="tw-font-semibold tw-text-3xl tw-text-gray-700">
           <strong class="tw-text-blue-500">Zero Gravity </strong>
           Reclining &
           <strong class="tw-text-blue-500"> Space Saving </strong>
@@ -424,14 +394,14 @@
       </div>
 
       <div
-        class="section tw-mb-40 tw-grid tw-items-center tw-space-y-4 lg:tw-grid-cols-2 lg:tw-pr-20"
+        class="tw-items-center tw-space-y-4 tw-grid lg:tw-grid-cols-2 tw-mb-40 lg:tw-pr-20 section"
       >
         <img src="" alt="" class="tw-min-w-0" />
 
         <div
-          class="tw-flex tw-flex-col tw-space-y-4 tw-self-end lg:tw-pb-10 lg:tw-pl-10"
+          class="tw-flex tw-flex-col tw-space-y-4 lg:tw-pb-10 lg:tw-pl-10 tw-self-end"
         >
-          <div class="tw-text-3xl tw-font-semibold tw-text-gray-700">
+          <div class="tw-font-semibold tw-text-3xl tw-text-gray-700">
             <strong class="tw-text-blue-500">2D </strong>
             Massage Mechanism
           </div>
@@ -444,13 +414,13 @@
       </div>
 
       <div
-        class="section tw-mb-40 tw-grid tw-items-center tw-space-y-4 lg:tw-grid-cols-2 lg:tw-pl-20"
+        class="tw-items-center tw-space-y-4 tw-grid lg:tw-grid-cols-2 tw-mb-40 lg:tw-pl-20 section"
       >
-        <img src="" alt="" class="tw-min-w-0 lg:tw-order-2" />
+        <img src="" alt="" class="lg:tw-order-2 tw-min-w-0" />
         <div
-          class="tw-flex tw-flex-col tw-space-y-4 tw-self-end lg:tw-pb-10 lg:tw-pr-10"
+          class="tw-flex tw-flex-col tw-space-y-4 lg:tw-pr-10 lg:tw-pb-10 tw-self-end"
         >
-          <div class="tw-text-3xl tw-font-semibold tw-text-gray-700">
+          <div class="tw-font-semibold tw-text-3xl tw-text-gray-700">
             <strong class="tw-text-blue-500"> SL </strong>
             Track
           </div>
@@ -463,14 +433,14 @@
       </div>
 
       <div
-        class="section tw-mb-40 tw-grid tw-items-center tw-space-y-4 lg:tw-grid-cols-2 lg:tw-pr-20"
+        class="tw-items-center tw-space-y-4 tw-grid lg:tw-grid-cols-2 tw-mb-40 lg:tw-pr-20 section"
       >
         <img src="" alt="" class="tw-min-w-0" />
 
         <div
-          class="tw-flex tw-flex-col tw-space-y-4 tw-self-end lg:tw-pb-10 lg:tw-pl-10"
+          class="tw-flex tw-flex-col tw-space-y-4 lg:tw-pb-10 lg:tw-pl-10 tw-self-end"
         >
-          <div class="tw-text-3xl tw-font-semibold tw-text-gray-700">
+          <div class="tw-font-semibold tw-text-3xl tw-text-gray-700">
             Body
             <strong class="tw-text-blue-500">Scanning </strong>
           </div>
@@ -484,12 +454,12 @@
 
       <div class="tw-p-10 lg:tw-p-20">
         <div
-          class="tw-mb-20 tw-text-center tw-text-2xl tw-font-semibold tw-text-neutral-700"
+          class="tw-mb-20 tw-font-semibold tw-text-2xl tw-text-center tw-text-neutral-700"
         >
           12 Auto Massage Programs
         </div>
         <div
-          class="tw-grid tw-grid-cols-3 tw-gap-10 tw-text-center lg:tw-grid-cols-6"
+          class="tw-gap-10 tw-grid tw-grid-cols-3 lg:tw-grid-cols-6 tw-text-center"
         >
           <div class="tw-flex tw-flex-col tw-items-center tw-space-y-4">
             <img src="" alt="" class="tw-w-20" />
@@ -545,12 +515,12 @@
       </div>
       <div class="tw-p-10 lg:tw-p-20">
         <div
-          class="tw-mb-20 tw-text-center tw-text-2xl tw-font-semibold tw-text-neutral-700"
+          class="tw-mb-20 tw-font-semibold tw-text-2xl tw-text-center tw-text-neutral-700"
         >
           6 Manual Massage Programs
         </div>
         <div
-          class="tw-grid tw-grid-cols-3 tw-gap-10 tw-text-center lg:tw-grid-cols-6"
+          class="tw-gap-10 tw-grid tw-grid-cols-3 lg:tw-grid-cols-6 tw-text-center"
         >
           <div class="tw-flex tw-flex-col tw-items-center tw-space-y-4">
             <img src="" alt="" class="tw-w-20" />
@@ -581,14 +551,14 @@
     </div>
 
     <div
-      class="section tw-mb-40 tw-grid tw-items-center tw-space-y-4 lg:tw-grid-cols-2"
+      class="tw-items-center tw-space-y-4 tw-grid lg:tw-grid-cols-2 tw-mb-40 section"
     >
       <img src="" alt="" class="tw-min-w-0" />
 
       <div
-        class="tw-mx-auto tw-flex tw-flex-col tw-space-y-4 lg:tw-w-2/3 lg:tw-pb-10 lg:tw-pl-10"
+        class="tw-flex tw-flex-col tw-space-y-4 tw-mx-auto lg:tw-pb-10 lg:tw-pl-10 lg:tw-w-2/3"
       >
-        <div class="tw-text-2xl tw-font-semibold tw-text-gray-700">
+        <div class="tw-font-semibold tw-text-2xl tw-text-gray-700">
           Full Body Air Massage
         </div>
         <div class="tw-text-lg tw-text-neutral-500">
@@ -600,13 +570,13 @@
     </div>
 
     <div
-      class="section tw-mb-40 tw-grid tw-items-center tw-space-y-4 lg:tw-grid-cols-2"
+      class="tw-items-center tw-space-y-4 tw-grid lg:tw-grid-cols-2 tw-mb-40 section"
     >
-      <img src="" alt="" class="tw-min-w-0 lg:tw-order-2" />
+      <img src="" alt="" class="lg:tw-order-2 tw-min-w-0" />
       <div
-        class="tw-mx-auto tw-flex tw-flex-col tw-space-y-4 lg:tw-w-2/3 lg:tw-pb-10 lg:tw-pr-10"
+        class="tw-flex tw-flex-col tw-space-y-4 tw-mx-auto lg:tw-pr-10 lg:tw-pb-10 lg:tw-w-2/3"
       >
-        <div class="tw-text-2xl tw-font-semibold tw-text-gray-700">
+        <div class="tw-font-semibold tw-text-2xl tw-text-gray-700">
           Heating Therapy
         </div>
         <div class="tw-text-lg tw-text-neutral-500">
@@ -618,13 +588,13 @@
     </div>
 
     <div
-      class="section tw-mb-40 tw-grid tw-items-center tw-space-y-4 lg:tw-grid-cols-2"
+      class="tw-items-center tw-space-y-4 tw-grid lg:tw-grid-cols-2 tw-mb-40 section"
     >
-      <img src="" alt="" class="tw-min-w-0 lg:tw-order-2" />
+      <img src="" alt="" class="lg:tw-order-2 tw-min-w-0" />
       <div
-        class="tw-mx-auto tw-flex tw-flex-col tw-space-y-4 lg:tw-w-2/3 lg:tw-pb-10 lg:tw-pr-10"
+        class="tw-flex tw-flex-col tw-space-y-4 tw-mx-auto lg:tw-pr-10 lg:tw-pb-10 lg:tw-w-2/3"
       >
-        <div class="tw-text-2xl tw-font-semibold tw-text-gray-700">
+        <div class="tw-font-semibold tw-text-2xl tw-text-gray-700">
           Dual Foot Rollers
         </div>
         <div class="tw-text-lg tw-text-neutral-500">
@@ -636,13 +606,13 @@
     </div>
 
     <div
-      class="section tw-mb-40 tw-grid tw-items-center tw-space-y-4 lg:tw-grid-cols-2"
+      class="tw-items-center tw-space-y-4 tw-grid lg:tw-grid-cols-2 tw-mb-40 section"
     >
-      <img src="" alt="" class="tw-min-w-0 lg:tw-order-2" />
+      <img src="" alt="" class="lg:tw-order-2 tw-min-w-0" />
       <div
-        class="tw-mx-auto tw-flex tw-flex-col tw-space-y-4 lg:tw-w-2/3 lg:tw-pb-10 lg:tw-pr-10"
+        class="tw-flex tw-flex-col tw-space-y-4 tw-mx-auto lg:tw-pr-10 lg:tw-pb-10 lg:tw-w-2/3"
       >
-        <div class="tw-text-2xl tw-font-semibold tw-text-gray-700">
+        <div class="tw-font-semibold tw-text-2xl tw-text-gray-700">
           Auto Extension Footrest
         </div>
         <div class="tw-text-lg tw-text-neutral-500">
@@ -654,14 +624,14 @@
     </div>
 
     <div
-      class="section tw-mb-40 tw-grid tw-items-center tw-space-y-4 lg:tw-grid-cols-2"
+      class="tw-items-center tw-space-y-4 tw-grid lg:tw-grid-cols-2 tw-mb-40 section"
     >
       <img src="" alt="" class="tw-min-w-0" />
 
       <div
-        class="tw-mx-auto tw-flex tw-flex-col tw-space-y-4 tw-self-end lg:tw-pb-10 lg:tw-pl-10"
+        class="tw-flex tw-flex-col tw-space-y-4 tw-mx-auto lg:tw-pb-10 lg:tw-pl-10 tw-self-end"
       >
-        <div class="tw-text-2xl tw-font-semibold tw-text-gray-700">
+        <div class="tw-font-semibold tw-text-2xl tw-text-gray-700">
           Tablet Controler
         </div>
         <div class="tw-text-lg tw-text-neutral-500">
@@ -673,11 +643,11 @@
     </div>
 
     <div
-      class="section tw-mb-40 tw-grid tw-items-center tw-space-y-4 lg:tw-grid-cols-2"
+      class="tw-items-center tw-space-y-4 tw-grid lg:tw-grid-cols-2 tw-mb-40 section"
     >
-      <img src="" alt="" class="tw-min-w-0 lg:tw-order-2" />
-      <div class="tw-flex tw-flex-col tw-space-y-4 lg:tw-pb-10 lg:tw-pr-10">
-        <div class="tw-text-2xl tw-font-semibold tw-text-gray-700">
+      <img src="" alt="" class="lg:tw-order-2 tw-min-w-0" />
+      <div class="tw-flex tw-flex-col tw-space-y-4 lg:tw-pr-10 lg:tw-pb-10">
+        <div class="tw-font-semibold tw-text-2xl tw-text-gray-700">
           Quick Access Control Panel
         </div>
         <div class="tw-text-lg tw-text-neutral-500">
@@ -687,7 +657,7 @@
           start your session.
         </div>
         <ul
-          class="tw-list-none tw-space-y-2 tw-p-4 tw-py-10 tw-text-neutral-500 lg:tw-p-10"
+          class="tw-space-y-2 tw-py-10 tw-p-4 lg:tw-p-10 tw-text-neutral-500 tw-list-none"
           style="background-color: #fafafc"
         >
           <li class="tw-flex tw-space-x-4">
@@ -723,15 +693,15 @@
     </div>
 
     <div
-      class="section tw-mb-40 tw-grid tw-items-center tw-space-y-4 lg:tw-grid-cols-2"
+      class="tw-items-center tw-space-y-4 tw-grid lg:tw-grid-cols-2 tw-mb-40 section"
     >
       <img src="" alt="" class="tw-min-w-0" />
 
       <div
-        class="tw-mx-auto tw-flex tw-flex-col tw-space-y-4 tw-self-end lg:tw-pb-10 lg:tw-pl-10"
+        class="tw-flex tw-flex-col tw-space-y-4 tw-mx-auto lg:tw-pb-10 lg:tw-pl-10 tw-self-end"
       >
         <img src="" alt="" class="tw-w-12" />
-        <div class="tw-text-2xl tw-font-semibold tw-text-gray-700">
+        <div class="tw-font-semibold tw-text-2xl tw-text-gray-700">
           Bluetooth Speakers
         </div>
         <div class="tw-text-lg tw-text-neutral-500">
@@ -742,13 +712,13 @@
     </div>
 
     <div
-      class="section tw-mb-40 tw-grid tw-items-center tw-space-y-4 lg:tw-grid-cols-2"
+      class="tw-items-center tw-space-y-4 tw-grid lg:tw-grid-cols-2 tw-mb-40 section"
     >
-      <img src="" alt="" class="tw-min-w-0 lg:tw-order-2" />
+      <img src="" alt="" class="lg:tw-order-2 tw-min-w-0" />
       <div
-        class="tw-mx-auto tw-flex tw-flex-col tw-space-y-4 lg:tw-w-2/3 lg:tw-pb-10 lg:tw-pr-10"
+        class="tw-flex tw-flex-col tw-space-y-4 tw-mx-auto lg:tw-pr-10 lg:tw-pb-10 lg:tw-w-2/3"
       >
-        <div class="tw-text-2xl tw-font-semibold tw-text-gray-700">
+        <div class="tw-font-semibold tw-text-2xl tw-text-gray-700">
           Hand Reflexology Massage
         </div>
         <div class="tw-text-lg tw-text-neutral-500">
@@ -761,14 +731,14 @@
     </div>
 
     <div
-      class="section tw-mb-40 tw-grid tw-items-center tw-space-y-4 lg:tw-grid-cols-2"
+      class="tw-items-center tw-space-y-4 tw-grid lg:tw-grid-cols-2 tw-mb-40 section"
     >
       <img src="" alt="" class="tw-min-w-0" />
 
       <div
-        class="tw-mx-auto tw-flex tw-flex-col tw-space-y-4 lg:tw-pb-10 lg:tw-pl-10"
+        class="tw-flex tw-flex-col tw-space-y-4 tw-mx-auto lg:tw-pb-10 lg:tw-pl-10"
       >
-        <div class="tw-text-2xl tw-font-semibold tw-text-gray-700">
+        <div class="tw-font-semibold tw-text-2xl tw-text-gray-700">
           Removable Pillow
         </div>
         <div class="tw-text-lg tw-text-neutral-500">
@@ -780,13 +750,13 @@
     </div>
 
     <div
-      class="section tw-mb-40 tw-grid tw-items-center tw-space-y-4 lg:tw-grid-cols-2"
+      class="tw-items-center tw-space-y-4 tw-grid lg:tw-grid-cols-2 tw-mb-40 section"
     >
-      <img src="" alt="" class="tw-min-w-0 lg:tw-order-2" />
+      <img src="" alt="" class="lg:tw-order-2 tw-min-w-0" />
       <div
-        class="tw-mx-auto tw-flex tw-flex-col tw-space-y-4 lg:tw-w-2/3 lg:tw-pb-10 lg:tw-pr-10"
+        class="tw-flex tw-flex-col tw-space-y-4 tw-mx-auto lg:tw-pr-10 lg:tw-pb-10 lg:tw-w-2/3"
       >
-        <div class="tw-text-2xl tw-font-semibold tw-text-gray-700">
+        <div class="tw-font-semibold tw-text-2xl tw-text-gray-700">
           LED Lighting Detail
         </div>
         <div class="tw-text-lg tw-text-neutral-500">
@@ -797,14 +767,14 @@
     </div>
 
     <div
-      class="section tw-mb-40 tw-grid tw-items-center tw-space-y-4 lg:tw-grid-cols-2"
+      class="tw-items-center tw-space-y-4 tw-grid lg:tw-grid-cols-2 tw-mb-40 section"
     >
       <img src="" alt="" class="tw-min-w-0" />
 
       <div
-        class="tw-mx-auto tw-flex tw-flex-col tw-space-y-4 lg:tw-pb-10 lg:tw-pl-10"
+        class="tw-flex tw-flex-col tw-space-y-4 tw-mx-auto lg:tw-pb-10 lg:tw-pl-10"
       >
-        <div class="tw-text-2xl tw-font-semibold tw-text-gray-700">
+        <div class="tw-font-semibold tw-text-2xl tw-text-gray-700">
           Wireless Charger
         </div>
         <div class="tw-text-lg tw-text-neutral-500">
@@ -815,24 +785,18 @@
       </div>
     </div>
 
-    <div class="tw-mb-40">
+    <div class="tw-mx-auto tw-mb-40 lg:tw-w-2/3">
+ 
       <div
-        class="tw-mb-4 tw-text-center tw-text-3xl tw-font-bold tw-text-black"
+        class="tw-justify-center tw-items-center tw-gap-10 tw-grid minimum-doorway"
       >
-        <span class="tw-text-blue-500">MINIMUM</span>
-        DOORWAY
-      </div>
-      <div
-        class="minimum-doorway tw-grid tw-items-center tw-justify-center tw-gap-10"
-      >
-        <img src="" alt="" class="minimum-doorway-left" />
-        <div
-          class="minimum-doorway-right-top tw-flex tw-items-center tw-justify-center"
+         <div
+          class="minimum-doorway-right-top tw-flex tw-justify-center tw-items-center"
         >
-          <img src="" alt="" class="lg:tw-w-3/4" />
-        </div>
+         </div>
         <div class="minimum-doorway-right-bottom">
-          <div class="tw-text-2xl tw-font-semibold tw-text-neutral-500">
+          <div class="tw-font-semibold tw-text-2xl tw-text-center tw-text-neutral-500">
+            <span class="tw-text-blue-500">MINIMUM</span> DOORWAY <br>
             Measuring Guide
           </div>
           <ul class="tw-space-y-4 tw-text-neutral-500">
@@ -859,117 +823,96 @@
     <div class="tw-mb-40">
       <div>
         <div
-          class="tw-p-10 tw-text-center tw-text-3xl tw-font-bold tw-text-black md:tw-text-4xl lg:tw-text-5xl"
+          class="tw-p-10 tw-font-bold tw-text-3xl tw-text-black tw-text-center md:tw-text-4xl lg:tw-text-5xl"
         >
           Dimensions
         </div>
-        <div class="tw-flex tw-flex-col tw-items-center lg:tw-flex-row">
+        <div class="tw-flex lg:tw-flex-row tw-flex-col tw-items-center">
           <img src="" alt="" class="tw-min-w-0" />
           <img src="" alt="" class="tw-min-w-0" />
         </div>
       </div>
     </div>
 
-    <section class="">
-      <div
-        class="tw-p-10 tw-text-center tw-text-3xl tw-font-bold md:tw-text-4xl lg:tw-text-5xl"
-      >
-        Specification
+   
+<section>
+  <div class="tw-p-10 tw-font-bold tw-text-3xl tw-text-center md:tw-text-4xl lg:tw-text-5xl">
+    Specification
+  </div>
+  <div class="tw-font-normal tw-text-xl">
+    <div class="tw-flex lg:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+      <div class="tw-w-52 tw-font-bold">Product Name</div>
+      <div>Pinnacle LE</div>
+    </div>
+    <div class="tw-flex lg:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+      <div class="tw-shrink-0 tw-w-52 tw-font-bold">User Manual</div>
+      <div class="tw-gap-2 tw-grid tw-grid-cols-2 tw-w-full">
+        <a class="!tw-text-red-500 !tw-no-underline" href="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/Pinnacle_LE_User_Manual_WEB_b6fec1c1-80c2-4217-9d2a-6d80c6388143.pdf?v=1727296895" target="_blank">Download</a>
       </div>
-      <div class="tw-text-xl tw-font-normal">
-        <div
-          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 lg:tw-flex-row"
-        >
-          <div class="tw-w-52 tw-font-bold">Product Name</div>
-          <div>OS-Pinnacle LE</div>
+    </div>
+    <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+      <div class="tw-shrink-0 tw-w-52 tw-font-bold">Power Supply</div>
+      <div>110 - 120V</div>
+    </div>
+    <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+      <div class="tw-shrink-0 tw-w-52 tw-font-bold">Rate Frequency</div>
+      <div>50 / 60Hz</div>
+    </div>
+    <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+      <div class="tw-shrink-0 tw-w-52 tw-font-bold">Chair <br class="lg:tw-block tw-hidden" /> Dimensions <br /> (W x L x H)</div>
+      <div class="tw-gap-2 tw-grid lg:tw-grid-cols-2 tw-w-full">
+        <div>
+          <div class="tw-font-bold tw-text-xl">Upright</div>
+          <div>29.0" x 60.0" x 48.0"</div>
         </div>
-        <div
-          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 lg:tw-flex-row"
-        >
-          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
-            <div>User Manual</div>
-          </div>
-          <div class="tw-grid tw-w-full tw-grid-cols-2 tw-gap-2">
-            <a
-              class="!tw-text-red-500 !tw-no-underline"
-              href="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/Pinnacle_LE_User_Manual_WEB_b6fec1c1-80c2-4217-9d2a-6d80c6388143.pdf?v=1727296895"
-              target="_blank"
-              >Download</a
-            >
-          </div>
+        <div>
+          <div class="tw-font-bold tw-text-xl">Reclined</div>
+          <div>29.0" x 60.3" x 47.0"</div>
         </div>
-        <!-- <div
-          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 lg:tw-flex-row"
-        >
-          <div class="tw-w-52 tw-font-bold">Power Supply</div>
-          <div>3.6V</div>
-        </div> -->
-        <!-- <div
-        class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 lg:tw-flex-row"
-      >
-        <div class="tw-w-52 tw-font-bold">Rate Frequency</div>
-        <div>60 Hz</div>
-      </div> -->
-        <!-- <div
-          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 lg:tw-flex-row"
-        >
-          <div class="tw-w-52 tw-font-bold">Rate Power Consumption</div>
-          <div>10W</div>
-        </div> -->
-        <!-- <div
-          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 lg:tw-flex-row"
-        >
-          <div class="tw-w-52 tw-font-bold">
-            <div>Operating Time</div>
-          </div>
-          <div>10 minutes</div>
-        </div> -->
+      </div>
+    </div>
+    <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+      <div class="tw-shrink-0 tw-w-52 tw-font-bold">Chair Weight</div>
+      <div>180.8 lb</div>
+    </div>
+    <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+      <div class="tw-shrink-0 tw-w-52 tw-font-bold">Width</div>
+      <div class="tw-gap-2 tw-grid tw-grid-cols-2 tw-w-full">
+        <div>
+          <div class="tw-font-bold tw-text-xl">Shoulder</div>
+          <div>21.0"</div>
+        </div>
+        <div>
+          <div class="tw-font-bold tw-text-xl">Seat</div>
+          <div>20.0"</div>
+        </div>
+      </div>
+    </div>
 
-        <div
-          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
-        >
-          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
-            <div>Dimensions</div>
-            <div>(W x L x H)</div>
-          </div>
-          <div class="tw-grid tw-w-full tw-grid-cols-2 tw-gap-2">
-            <div>
-              <div class="tw-font-bold">Upright</div>
-              <div>29.0" x 60.0" x 48.0"</div>
-            </div>
-            <div>
-              <div class="tw-font-bold">Reclined</div>
-              <div>29.0" x 63.5" x 47.0"</div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
-        >
-          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
-            <div>Width</div>
-          </div>
-          <div class="tw-grid tw-w-full tw-grid-cols-2 tw-gap-2">
-            <div>
-              <div class="tw-font-bold">Shoulder</div>
-              <div>21"</div>
-            </div>
-            <div>
-              <div class="tw-font-bold">Seat</div>
-              <div>19"</div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
-        >
-          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
-            <div>Minimum Doorway Size</div>
-          </div>
-          <div>32.3"</div>
-        </div>
-      </div>
-    </section>
+<div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+  <div class="tw-shrink-0 tw-w-52 tw-font-bold">Minimum Door Width</div>
+  <div class="tw-gap-2 tw-grid tw-grid-cols-2 tw-w-full">
+    <div>
+      29.0"
+    </div>
+  </div>
+</div>
+
+    <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+      <div class="tw-shrink-0 tw-w-52 tw-font-bold">User Maximum Weight</div>
+      <div>264.5 lb</div>
+    </div>
+    <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+      <div class="tw-shrink-0 tw-w-52 tw-font-bold">Package <br class="lg:tw-block tw-hidden" /> Dimensions <br /> (W x L x H)</div>
+      <div class="tw-gap-2 tw-grid lg:tw-grid-cols-1 tw-w-full"><div><div class="tw-font-bold tw-text-xl">Box 1</div><div>51.2" x 30.3" x 48.1"</div></div></div>
+    </div>
+    <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+      <div class="tw-shrink-0 tw-w-52 tw-font-bold">Package Weight</div>
+      <div class="tw-gap-2 tw-grid lg:tw-grid-cols-1 tw-w-full"><div><div class="tw-font-bold tw-text-xl">Box 1</div><div>211.0 lb</div></div></div>
+    </div>
+  </div>
+</section>
+
   </div>
 </body>
 <script>
