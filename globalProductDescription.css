@@ -659,6 +659,10 @@
   height: 12rem;
 }
 
+.tw-h-56 {
+  height: 14rem;
+}
+
 .tw-min-h-0 {
   min-height: 0px;
 }
