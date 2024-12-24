@@ -1,0 +1,555 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  href="https://ota-shawn.github.io/Products/globalProductDescription.css"
+  rel="stylesheet"
+/>
+<link href="../globalProductDescription.css" rel="stylesheet" />
+<script>
+  const youtube_link = "https://www.youtube.com/watch?v=vKUyMQhNpBs"
+
+  const imgs = [
+    {
+      img_order: 0,
+      img_name:
+        "Automotive design, Sky, Personal protective equipment, Electric blue, Auto part, Font, Bumper, Cleanliness, Carmine, Rolling",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0531/8773/9846/files/Theramedic-Flex_Main-Banner.jpg?v=1633043890",
+    },
+    {
+      img_order: 1,
+      img_name: "",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0531/8773/9846/files/Theramedic_Flex_Flex_Track_01.gif?v=1632784190",
+    },
+    {
+      img_order: 2,
+      img_name:
+        "Purple, Font, Electronic instrument, Magenta, Electric blue, Diagram, Rectangle, Urban design, Automotive design, Engineering",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0531/8773/9846/files/1.Theramedic-4D-Feature-100.jpg?v=1633117395",
+    },
+    {
+      img_order: 3,
+      img_name:
+        "Leg, Automotive design, Flash photography, Elbow, Human leg, Electric blue, Space, Personal protective equipment, Darkness, Carmine",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0531/8773/9846/files/Theramedic_Flex_Flex_Track_02.gif?v=1632784189",
+    },
+    {
+      img_order: 4,
+      img_name:
+        "Outerwear, Automotive design, Bag, Luggage and bags, Sleeve, Toy, Font, Fictional character, Electric blue, Darkness",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0531/8773/9846/files/2.Theramedic-4D-Feature-100.jpg?v=1633119514",
+    },
+    {
+      img_order: 5,
+      img_name: "",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0531/8773/9846/files/500-300_2.gif?v=1633044366",
+    },
+    {
+      img_order: 6,
+      img_name:
+        "Arm, Neck, Human body, Sleeve, T-shirt, Entertainment, Visual effect lighting, Elbow, Font, Performing arts",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0531/8773/9846/files/Theramedic-4D-Smart-Decting-System.jpg?v=1631052185",
+    },
+    {
+      img_order: 7,
+      img_name:
+        "Outerwear, Automotive lighting, Wheel, Automotive design, Sleeve, Purple, Automotive tire, T-shirt, Violet, Tire",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0531/8773/9846/files/3.Theramedic-4D-Feature-100.jpg?v=1633117850",
+    },
+    {
+      img_order: 8,
+      img_name:
+        "Head, Smile, Font, Emoticon, Happy, Mobile phone, Communication Device, Audio equipment, Portable communications device, Circle",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0531/8773/9846/files/9.Theramedic-4D-Feature-100.jpg?v=1633117899",
+    },
+    {
+      img_order: 9,
+      img_name:
+        "Joint, Leg, Flash photography, Knee, Waist, Thigh, Sportswear, Exercise, Calf, Elbow",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0531/8773/9846/files/Auto_Stretching.jpg?v=1631057818",
+    },
+    {
+      img_order: 10,
+      img_name:
+        "Cartoon, Gesture, Happy, Art, Font, Circle, Smile, Drawing, Symbol, Illustration",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0531/8773/9846/files/Auto-Stretch.jpg?v=1631143098",
+    },
+    {
+      img_order: 11,
+      img_name:
+        "Plant, People in nature, Dress, Botany, Organism, Grass, Vegetation, Hat, Terrestrial plant, Feather",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0531/8773/9846/files/Auto_Good_Sleep.jpg?v=1631057818",
+    },
+    {
+      img_order: 12,
+      img_name:
+        "Smile, Emoticon, Happy, Art, Font, Ball, Circle, Drawing, Pattern, Smiley",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0531/8773/9846/files/Auto-Sleep.jpg?v=1631143098",
+    },
+    {
+      img_order: 13,
+      img_name:
+        "Sharing, Gesture, Comfort, Interaction, Happy, Smile, White-collar worker, Font, Formal wear, Friendship",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0531/8773/9846/files/Auto_User.jpg?v=1631057818",
+    },
+    {
+      img_order: 14,
+      img_name:
+        "Font, Circle, Symbol, Art, Fashion accessory, Logo, Graphics, Oval, Number, Line art",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0531/8773/9846/files/Auto-User.jpg?v=1631143098",
+    },
+    {
+      img_order: 15,
+      img_name:
+        "Joint, Hand, Shoulder, Human body, Jaw, Neck, Sleeve, Waist, Eyelash, Gesture",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0531/8773/9846/files/Auto_Body_Customized.jpg?v=1631138980",
+    },
+    {
+      img_order: 16,
+      img_name:
+        "Eye, Font, Symbol, Circle, Logo, Drawing, Number, Oval, Graphics, Illustration",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0531/8773/9846/files/Auto-Body.jpg?v=1631143098",
+    },
+    {
+      img_order: 17,
+      img_name:
+        "Face, Nose, Head, Chin, Eye, Jaw, Rectangle, Gesture, Ear, Happy",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0531/8773/9846/files/10.Theramedic-4D-Feature-100.jpg?v=1633119306",
+    },
+    {
+      img_order: 18,
+      img_name: "",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0531/8773/9846/files/Theramedic_Flex_Zero_Gravity.gif?v=1632784190",
+    },
+    {
+      img_order: 19,
+      img_name: "",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0531/8773/9846/files/Theramedic_Flex_Space_Saving.gif?v=1632784190",
+    },
+    {
+      img_order: 20,
+      img_name:
+        "Tableware, Drinkware, Stemware, Skyscraper, Automotive design, Automotive lighting, Glass, Transparent material, Cutlery, Barware",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0531/8773/9846/files/5.Theramedic-4D-Feature-100.jpg?v=1633117986",
+    },
+    {
+      img_order: 21,
+      img_name:
+        "Automotive tire, Flash photography, Automotive design, Synthetic rubber, Gas, Audio equipment, Automotive lighting, Rim, Tread, Auto part",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0531/8773/9846/files/Theramedic_Flex_Extandable_Footrest.gif?v=1632784189",
+    },
+    {
+      img_order: 22,
+      img_name:
+        "Automotive design, Automotive lighting, Gesture, Automotive tire, Font, Personal luxury car, Automotive wheel system, Input device, Auto part, Darkness",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0531/8773/9846/files/4.Theramedic-4D-Feature-100.jpg?v=1633117976",
+    },
+    {
+      img_order: 23,
+      img_name: "",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0531/8773/9846/files/Theramedic_Flex_Wheel_Dial.gif?v=1632784189",
+    },
+    {
+      img_order: 24,
+      img_name:
+        "Automotive design, Personal luxury car, Automotive lighting, Electric blue, Font, Fictional character, Luxury vehicle, Fashion accessory, Auto part, Metal",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0531/8773/9846/files/Theramedic_Flex_Bluetooth.gif?v=1633104073",
+    },
+    {
+      img_order: 25,
+      img_name:
+        "Purple, Violet, Font, Rectangle, Electric blue, Midnight, Magenta, Display device, Event, Automotive lighting",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0531/8773/9846/files/Theramedic_Flex_Lighting.gif?v=1632784188",
+    },
+    {
+      img_order: 26,
+      img_name:
+        "Product, Font, Camera accessory, Automotive design, Comfort, Auto part, Personal protective equipment, Fashion accessory, Armrest, Home appliance",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0531/8773/9846/files/7.Theramedic-4D-Feature-100.jpg?v=1633118254",
+    },
+    // {
+    //   img_order: 27,
+    //   img_name:
+    //     "Product, Camera accessory, Font, Digital camera, Personal protective equipment, Cameras & optics, Bag, Luggage and bags, Gadget, Rectangle",
+    //   img_src:
+    //     "https://cdn.shopify.com/s/files/1/0531/8773/9846/files/8.Theramedic-4D-Feature-100.jpg?v=1633118972",
+    // },
+  ]
+</script>
+
+<body>
+  <div
+    class="tw-flex tw-flex-col tw-m-auto md:tw-w-[768px] lg:tw-w-[1024px] min-[480px]:tw-w-[480px] tw-font-sans tw-leading-normal sections"
+  >
+    <div id="youtube-link"></div>
+
+    <div class="tw-bg-black tw-text-center tw-text-neutral-400">
+      <img src="" alt="" />
+      <div class="tw-mb-10 tw-p-4 md:tw-p-10">
+        Introducing the most innovated technology in the Massage Chair industry:
+        The Flex SL Track. Fully furnished with computer body scanning, airbag
+        massage, 2 steps zero gravity, and 12 auto massage programs. Say goodbye
+        to discomfort! Get your Theramedic Flex today, and see why massage is
+        recommended by doctors nationwide!
+      </div>
+      <img src="" alt="" />
+      <div class="tw-gap-4 md:tw-gap-10 tw-grid tw-grid-cols-2">
+        <img src="" alt="" /><img src="" alt="" />
+      </div>
+
+      <div class="tw-p-4 md:tw-p-10">
+        <h1 class="tw-font-normal !tw-text-neutral-400">
+          All New Flex SL-Track
+        </h1>
+        While all other massage chairs have a fixed roller track--- the
+        Theramedic Flex is designed with a newly innovated track that pivots its
+        angle to conform to your back. We've worked with our engineers to come
+        up with this brand new design to target your tensed muscles and provide
+        you more ease.
+      </div>
+
+      <img src="" alt="" />
+      <div class="tw-p-4 md:tw-p-10">
+        <h1 class="tw-font-normal !tw-text-neutral-400">
+          Ultra Quiet Massage Chair
+        </h1>
+        Equipped with the latest and most advanced air massage technology, the
+        Theramedic Flex massage chair has been approved and tested to have a
+        noise level under 50dB. We made sure to ask our engineers to lower the
+        noise to improve the overall experience so that you can focus on
+        relaxing.
+      </div>
+
+      <img src="" alt="" />
+      <div class="tw-p-4 md:tw-p-10">
+        <h1 class="tw-font-normal !tw-text-neutral-400">
+          Smooth and Sensitive Massage Rollers
+        </h1>
+        This massage chair was engineered for one simple purpose, to make you
+        feel relaxed and at ease. The Theramedic rollers are soft and gentle on
+        the back, but yet strong enough toresrestaltof speed adjustment, 3
+        levels of width adjustment so that you can control the rollers and the
+        intensity to your preference.
+      </div>
+      <img src="" alt="" />
+      <div class="tw-p-4 md:tw-p-10">
+        <h1 class="tw-font-normal !tw-text-neutral-400">
+          Smart Body Scan System
+        </h1>
+        Before every massage, the Theramedic Flex will perform a smart body
+        scan. During this stage the Smart Vertebrae Pressure Point Detecting
+        System will locate the neck, shoulders, upper, and lower back to ensure
+        the recommended amount of pressure is applied during the massage. All
+        this can be re-calibrated and customized if needed.
+      </div>
+      <img src="" alt="" />
+      <div class="tw-p-4 md:tw-p-10">
+        <h1 class="tw-font-normal !tw-text-neutral-400">
+          5 Adjustment Air Compression
+        </h1>
+        Massage According to research, compression massage is recommended for
+        releasing tightness in the muscle, promoting blood circulation. The air
+        cells located in the shoulders rotate your shoulders back and down,
+        opening up your chest to promote better posture. Additional airbags are
+        located in the back, waist, hip, calf and feet area for a full body
+        compression massage.
+      </div>
+    </div>
+    <h1 class="tw-font-normal tw-text-center">12 Auto Wellness Program</h1>
+    <img src="" alt="" class="tw-mb-10" />
+    <div
+      class="tw-items-center tw-gap-4 md:tw-gap-10 tw-grid md:tw-grid-cols-2"
+    >
+      <div>
+        <img src="" alt="" />
+        <img src="" alt="" />
+      </div>
+      <div class="tw-p-4 md:tw-p-10 md:!tw-pl-0">
+        <h1 class="tw-font-normal !tw-text-neutral-400">
+          Stretching & Muscle Tension Release
+        </h1>
+        - Extension : Inspired by techniques seen in Thai massage, great for
+        stretching upper body. This program uses strong kneading and stretching
+        techniques to relax tired muscles and keep them flexible.
+        <br />
+        - Release : Inspired by techniques seen in Thai massage, great for
+        stretching upper body. This program uses strong kneading and stretching
+        techniques to relax tired muscles and keep them flexible.
+        <br />
+        - Yoga: Designed to help stretch out tight knots located in the lower
+        body, especially the back. Hip and Lumbar compression massage added to
+        help muscle soreness.
+      </div>
+      <div><img src="" alt="" /><img src="" alt="" /></div>
+      <div class="tw-p-4 md:tw-p-10 md:!tw-pl-0">
+        <h1 class="tw-font-normal !tw-text-neutral-400">Sleep & Recovery</h1>
+        - Sweet Dreams: Gentle and Calm massage; using techniques that encourage
+        relaxation for a restful sleep. Helpful for those who suffer from
+        insomnia. <br />- Refreshing Nap: Various techniques; Soothes tension
+        and refreshes the body. <br />- Morning Buzz: Stimulating all-over
+        massage techniques; energizes and supports positive energy.
+      </div>
+      <div><img src="" alt="" /><img src="" alt="" /></div>
+      <div class="tw-p-4 md:tw-p-10 md:!tw-pl-0">
+        <h1 class="tw-font-normal !tw-text-neutral-400">User Customized</h1>
+        - Boss : High Intensity Massage designed for anyone who is looking to
+        rejuvenate both physically and emotionally. <br />- Lady : Medium
+        Intensity Massage designed to help ease pain and stiffness in the neck
+        and shoulders. <br />- Seniors : Low Intensity Massage designed to focus
+        on the lumbar vertebra, this program helps to soothe the tension and
+        help with muscle recovery.
+      </div>
+      <div><img src="" alt="" /><img src="" alt="" /></div>
+      <div class="tw-p-4 md:tw-p-10 md:!tw-pl-0">
+        <h1 class="tw-font-normal !tw-text-neutral-400">Body Customized</h1>
+        - Neck & Shoulder : Combination of deep tissue massage techniques;
+        focuses on muscle in the neck, shoulders, and upper back. <br />- Back &
+        Spine : Combination of deep tissue massage techniques; focuses on
+        muscles along the spine, upper and lower back and lumbar. <br />- Waist
+        & Hip : Combination of deep tissue massage techniques; focuses on the
+        muscles in the lumbar, waist, thighs, and around the hip joints.
+      </div>
+    </div>
+    <h1 class="tw-font-normal tw-text-center">
+      5 Professional Massage Technique
+    </h1>
+    <div class="tw-mb-4">
+      Select one of the 5 major professional massage techniques: Kneading,
+      Tapping, Knocking, Shiatsu, and Sync for maximum relief.
+    </div>
+
+    <img src="" alt="" class="tw-mb-20" />
+    <div class="tw-bg-black tw-text-neutral-400">
+      <img src="" alt="" />
+      <div class="tw-p-4 md:tw-p-10 tw-text-center">
+        <h1 class="tw-font-normal !tw-text-neutral-400">Zero Gravity</h1>
+        Zero Gravity is the position where your legs are raised above your
+        heart, evenly distributing the weight along your body. This reduces
+        pressure along your spine, lower back, and pelvic area. A 2 Stage Zero
+        Gravity position enters the beyond, not only reducing pressure along
+        your spine but also allows for a deeper tissue massage.
+      </div>
+      <img src="" alt="" />
+      <div class="tw-p-4 md:tw-p-10 tw-text-center">
+        <h1 class="tw-font-normal !tw-text-neutral-400">
+          Space Saving Technology
+        </h1>
+        Designed to fit, only 4 inches of additional space is needed when
+        reclined! Our chairs have a special space-saving technology that glides
+        the chair forward before reclining back, so you don't have to sacrifice
+        living space.
+      </div>
+
+      <div
+        class="tw-items-center tw-gap-4 md:tw-gap-10 tw-grid md:tw-grid-cols-2"
+      >
+        <img src="" alt="" />
+        <div class="tw-p-4 md:tw-p-10 md:!tw-pl-0">
+          <h1 class="tw-font-normal !tw-text-neutral-400">Foot Rollers</h1>
+          The rollers in the Theramedic Flex are focused to release tensed
+          pressure points in the feet to help relax the rest of your body. The
+          theory is that each area of the foot is connected to an organ and
+          systems in the body. These rotated rollers are designed to feel
+          similar to human knuckle points.
+        </div>
+        <img src="" alt="" />
+        <div class="tw-p-4 md:tw-p-10 md:!tw-pl-0">
+          <h1 class="tw-font-normal !tw-text-neutral-400">
+            Longer Foot to Knee Extension
+          </h1>
+          In order to support knee aches, we've extended the footrest height
+          even longer added heat to the pads as well. The footrest can be
+          extended up to 7 inches for the optimal length for your height. Simply
+          apply pressure with your feet to position the footrest at your desired
+          position.
+        </div>
+        <img src="" alt="" />
+        <div class="tw-p-4 md:tw-p-10 md:!tw-pl-0">
+          <h1 class="tw-font-normal !tw-text-neutral-400">Heating</h1>
+          Heating pads are located on the Lumbar and Knee areas. The heat is a
+          great compliment to the roller and airbag massage as heating the
+          body's temperature is known to increase blood circulation and loosen
+          tense muscles.
+        </div>
+        <img src="" alt="" />
+
+        <div class="tw-p-4 md:tw-p-10 md:!tw-pl-0">
+          <h1 class="tw-font-normal !tw-text-neutral-400">
+            Armrest Quick Button & USB Charger
+          </h1>
+          It's the tiny details that matter. We've added an Armrest quick button
+          so that you can power on, adjust recline levels, and between the
+          professional massage techniques. A fast-charging USB port has been
+          included for convenience so that you can charge your phone or other
+          compatible devices.
+        </div>
+
+        <img src="" alt="" />
+        <div class="tw-p-4 md:tw-p-10 md:!tw-pl-0">
+          <h1 class="tw-font-normal !tw-text-neutral-400">Bluetooth Audio</h1>
+          Research shows that music is important for your emotional well-being,
+          physical health, communication abilities, and cognitive skills. Tune
+          in to your favorite music and immerse yourself in a relaxing massage
+          with a compatible Bluetooth device.
+        </div>
+        <img src="" alt="" />
+        <div class="tw-p-4 md:tw-p-10 md:!tw-pl-0">
+          <h1 class="tw-font-normal !tw-text-neutral-400">
+            Chromotherapy Lighting
+          </h1>
+          Mini knodes have been added to the arms for accupuncture hand
+          reflexolgy to help restore arm fatigue and circulate blood pressure.
+        </div>
+      </div>
+    </div>
+
+    <img src="" alt="" /> 
+
+
+    <section>
+      <div class="tw-p-10 tw-font-bold tw-text-3xl tw-text-center md:tw-text-4xl lg:tw-text-5xl">
+        Specification
+      </div>
+      <div class="tw-font-normal tw-text-xl">
+        <div class="tw-flex lg:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+          <div class="tw-w-52 tw-font-bold">Product Name</div>
+          <div>Flex</div>
+        </div>
+        <div class="tw-flex lg:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+          <div class="tw-shrink-0 tw-w-52 tw-font-bold">User Manual</div>
+          <div class="tw-gap-2 tw-grid tw-grid-cols-2 tw-w-full">
+            <a class="!tw-text-red-500 !tw-no-underline" href="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/Theramedic_Flex_manual_Web.pdf" target="_blank">Download</a>
+          </div>
+        </div>
+        <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+          <div class="tw-shrink-0 tw-w-52 tw-font-bold">Power Supply</div>
+          <div>110 - 120V</div>
+        </div>
+        <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+          <div class="tw-shrink-0 tw-w-52 tw-font-bold">Rate Frequency</div>
+          <div>50 / 60Hz</div>
+        </div>
+        <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+          <div class="tw-shrink-0 tw-w-52 tw-font-bold">Chair <br class="lg:tw-block tw-hidden" /> Dimensions <br /> (W x L x H)</div>
+          <div class="tw-gap-2 tw-grid lg:tw-grid-cols-2 tw-w-full">
+            <div>
+              <div class="tw-font-bold tw-text-xl">Upright</div>
+              <div>29.0" x 62.0" x 46.0"</div>
+            </div>
+            <div>
+              <div class="tw-font-bold tw-text-xl">Reclined</div>
+              <div>29.0" x 73.0" x 33.5"</div>
+            </div>
+          </div>
+        </div>
+        <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+          <div class="tw-shrink-0 tw-w-52 tw-font-bold">Chair Weight</div>
+          <div>249.2 lb</div>
+        </div>
+        <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+          <div class="tw-shrink-0 tw-w-52 tw-font-bold">Width</div>
+          <div class="tw-gap-2 tw-grid tw-grid-cols-2 tw-w-full">
+            <div>
+              <div class="tw-font-bold tw-text-xl">Shoulder</div>
+              <div>22.0"</div>
+            </div>
+            <div>
+              <div class="tw-font-bold tw-text-xl">Seat</div>
+              <div>17.0"</div>
+            </div>
+          </div>
+        </div>
+        
+                <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+                  <div class="tw-shrink-0 tw-w-52 tw-font-bold">Minimum Door Width</div>
+                  <div class="tw-gap-2 tw-grid tw-grid-cols-2 tw-w-full">
+                    <div>
+                      <div class="tw-font-bold tw-text-xl">Assembled</div>
+                      <div>29.0"</div>
+                    </div>
+                    <div>
+                      <div class="tw-font-bold tw-text-xl">Disassembled</div>
+                      <div>27.5"</div>
+                    </div>
+                  </div>
+                </div>
+                
+        <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+          <div class="tw-shrink-0 tw-w-52 tw-font-bold">User Maximum Weight</div>
+          <div>260 lb</div>
+        </div>
+        <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+          <div class="tw-shrink-0 tw-w-52 tw-font-bold">Package <br class="lg:tw-block tw-hidden" /> Dimensions <br /> (W x L x H)</div>
+          <div class="tw-gap-2 tw-grid lg:tw-grid-cols-2 tw-w-full"><div><div class="tw-font-bold tw-text-xl">Box 1</div><div>26.0" x 32.7" x 34.4"</div></div><div><div class="tw-font-bold tw-text-xl">Box 2</div><div>23.2" x 18.5" x 25.6"</div></div></div>
+        </div>
+        <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+          <div class="tw-shrink-0 tw-w-52 tw-font-bold">Package Weight</div>
+          <div class="tw-gap-2 tw-grid lg:tw-grid-cols-2 tw-w-full"><div><div class="tw-font-bold tw-text-xl">Box 1</div><div>246.9 lb</div></div><div><div class="tw-font-bold tw-text-xl">Box 2</div><div>50.7 lb</div></div></div>
+        </div>
+      </div>
+    </section>
+    
+  </div>
+</body>
+<script>
+  const getImages = () => {
+    document.querySelectorAll(".sections img").forEach((img, i) => {
+      img.src = imgs[i].img_src
+    })
+  }
+  const createVideoDOM = () => {
+    const getYoutubeSrc = (src) => {
+      const regex = /[a-z0-9_-]{11}/gi
+
+      const id = src.match(regex)[0]
+      const dst = "https://www.youtube.com/embed/" + id + "?mute=1&autoplay=1"
+      return dst
+    }
+    const iframe = document.createElement("iframe")
+    iframe.classList = "tw-aspect-video tw-w-full tw-mb-10"
+    try {
+      iframe.src = getYoutubeSrc(youtube_link)
+      document.getElementById("youtube-link").appendChild(iframe)
+    } catch (err) {
+      console.log(err)
+    }
+  }
+  const initializeProductDescription = () => {
+    try {
+      getImages()
+    } catch (error) {
+      console.log(error)
+    }
+    try {
+      createVideoDOM()
+    } catch (error) {
+      console.log(error)
+    }
+  }
+  initializeProductDescription()
+</script>

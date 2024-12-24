@@ -1,0 +1,982 @@
+<!-- <ul class="feature-section"><li>
+      <strong>
+       Intelligent Voice Control
+      </strong>
+     </li>
+     <li>
+      <strong>
+       4D Massage Mechanism
+      </strong>
+     </li>
+     <li>
+      <strong>
+       Heated Back Roller
+      </strong>
+     </li>
+     <li>
+      Computerized Body Scanning
+     </li>
+     <li>
+      L-Track
+     </li>
+     <li>
+      Space Saving Technology
+     </li>
+     <li>
+      Zero Gravity Reclining
+     </li>
+     <li>
+      Automatic Extendable Footrest
+     </li>
+     <li>
+      <strong>
+       Heating on the Foot Rollers
+      </strong>
+     </li>
+     <li>
+      Surround Sound Bluetooth Speakers
+     </li>
+     <li>
+      Intuitive Remote Control
+     </li>
+    </ul>
+ -->
+
+<!-- more -->
+<script>
+  const youtube_link =
+    "https://www.youtube.com/watch?v=5xgaCXiujE8&ab_channel=OfficialTitanOsakiMassageChannel"
+
+  const imgs = [
+    {
+      img_order: "1",
+      img_name: "paragon_main",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/1.paragon_main.jpg?v=1691599034",
+    },
+    {
+      img_order: "2",
+      img_name: "paragon_4D_massage",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/2.paragon_4D_massage.jpg?v=1691599034",
+    },
+    {
+      img_order: "3",
+      img_name: "paragon_heated_backrollers",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.paragon_heated_backrollers.jpg?v=1691599034",
+    },
+    {
+      img_order: "4",
+      img_name: "paragon_heated_footrollers",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4.paragon_heated_footrollers.jpg?v=1691599034",
+    },
+    {
+      img_order: "5",
+      img_name: "paragon_calf_rollers",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/5.paragon_calf_rollers.jpg?v=1691599034",
+    },
+    {
+      img_order: "6",
+      img_name: "paragon_voice_recognition",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/6.paragon_voice_recognition.jpg?v=1691599034",
+    },
+    {
+      img_order: "7",
+      img_name: "paragon_body_scan",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/7.paragon_body_scan.jpg?v=1691599034",
+    },
+    {
+      img_order: "8",
+      img_name: "paragon_L-track",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/8.paragon_L-track.jpg?v=1691599034",
+    },
+    {
+      img_order: "9",
+      img_name: "paragon_air-cells",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/9.paragon_air-cells.jpg?v=1691599034",
+    },
+    {
+      img_order: "10",
+      img_name: "paragon_ZG",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.paragon_ZG.jpg?v=1691599034",
+    },
+    {
+      img_order: "11",
+      img_name: "paragon_icon_recover",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/11.paragon_icon_recover.jpg?v=1691599034",
+    },
+    {
+      img_order: "12",
+      img_name: "paragon_icon_refresh",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12.paragon_icon_refresh.jpg?v=1691599034",
+    },
+    {
+      img_order: "13",
+      img_name: "paragon_icon_relief",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/13.paragon_icon_relief.jpg?v=1691599035",
+    },
+    {
+      img_order: "14",
+      img_name: "paragon_icon_energy",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/14.paragon_icon_energy.jpg?v=1691599034",
+    },
+    {
+      img_order: "15",
+      img_name: "paragon_icon_stretch",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/15.paragon_icon_stretch.jpg?v=1691599034",
+    },
+    {
+      img_order: "16",
+      img_name: "paragon_icon_revive",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/16.paragon_icon_revive.jpg?v=1691599034",
+    },
+    {
+      img_order: "17",
+      img_name: "paragon_icon_soft",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/17.paragon_icon_soft.jpg?v=1691599034",
+    },
+    {
+      img_order: "18",
+      img_name: "paragon_icon_active",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/18.paragon_icon_active.jpg?v=1691599034",
+    },
+    {
+      img_order: "19",
+      img_name: "paragon_icon_renew",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19.paragon_icon_renew.jpg?v=1691599034",
+    },
+    {
+      img_order: "20",
+      img_name: "paragon_icon_relaxing",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/20.paragon_icon_relaxing.jpg?v=1691599034",
+    },
+    {
+      img_order: "21",
+      img_name: "paragon_icon_calming",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/21.paragon_icon_calming.jpg?v=1691599034",
+    },
+    {
+      img_order: "22",
+      img_name: "paragon_icon_healing",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/22.paragon_icon_healing.jpg?v=1691599034",
+    },
+    {
+      img_order: "23",
+      img_name: "paragon_icon_special",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/23.paragon_icon_special.jpg?v=1691599034",
+    },
+    {
+      img_order: "24",
+      img_name: "paragon_icon_kneading",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/24.paragon_icon_kneading.jpg?v=1691599034",
+    },
+    {
+      img_order: "25",
+      img_name: "paragon_icon_kneadtap",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/25.paragon_icon_kneadtap.jpg?v=1691599034",
+    },
+    {
+      img_order: "26",
+      img_name: "paragon_icon_tapping",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/26.paragon_icon_tapping.jpg?v=1691599034",
+    },
+    {
+      img_order: "27",
+      img_name: "paragon_icon_shiatsu",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/27.paragon_icon_shiatsu.jpg?v=1691599034",
+    },
+    {
+      img_order: "28",
+      img_name: "paragon_icon_knocking",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/28.paragon_icon_knocking.jpg?v=1691599034",
+    },
+    {
+      img_order: "29",
+      img_name: "paragon_footrest",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/29.paragon_footrest.jpg?v=1691599034",
+    },
+    {
+      img_order: "30",
+      img_name: "paragon_remote",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/30.paragon_remote.jpg?v=1691599034",
+    },
+    {
+      img_order: "31",
+      img_name: "paragon_app",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/31.paragon_app.jpg?v=1691599034",
+    },
+    {
+      img_order: "32",
+      img_name: "paragon_speakers",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/32.paragon_speakers.jpg?v=1691599034",
+    },
+    {
+      img_order: "33",
+      img_name: "paragon_remote_pocket",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/33.paragon_remote_pocket.jpg?v=1691599035",
+    },
+    {
+      img_order: "34",
+      img_name: "paragon_dimensions1",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/34.paragon_dimensions1.webp?v=1732573312",
+    },
+    {
+      img_order: "35",
+      img_name: "paragon_dimensions2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/35.paragon_dimensions2.webp?v=1732573311",
+    },
+  ]
+</script>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  href="https://ota-shawn.github.io/Products/globalProductDescription.css"
+  rel="stylesheet"
+/>
+<link href="../globalProductDescription.css" rel="stylesheet" />
+
+<style>
+  :root {
+    --section-bg-color: #1d1d1d;
+    --section-strong-color: #ffffff;
+    --section-header-color: #ffffff;
+    --section-content-color: #808080;
+    --section-grid-color: #808080;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .sections {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    /* display: flex;
+    flex-direction: column; */
+  }
+
+  .sections strong {
+    color: var(--section-strong-color);
+  }
+
+  .sections .section {
+    background-color: var(--section-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .section > img,
+  .section-content {
+    flex: 1 1 0%;
+    width: 50%;
+  }
+
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+  }
+
+  .section-header {
+    font-size: 52px;
+    line-height: 65px;
+    color: var(--section-header-color);
+  }
+  .section-header2 {
+    font-size: 36px;
+    line-height: 45px;
+    color: var(--section-header-color);
+  }
+
+  .section-description {
+    color: var(--section-content-color);
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  .circle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 32px;
+  }
+
+  .circle > :first-child {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .grid-section {
+    background-color: var(--section-bg-color);
+    color: var(--section-grid-color);
+    display: grid;
+    grid-column: span 2 / span 2;
+    padding: 50px 100px 50px;
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+
+  .grid-section img {
+    margin: 0 0 0px 50px;
+  }
+
+  .grid-section .grid-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .app-icon {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .app-icon img {
+    flex: 0 0 0;
+    width: 40%;
+  }
+
+  .grid-align {
+    text-align: left;
+  }
+
+  @media (max-width: 1024px) {
+    .sections {
+      max-width: 768px;
+    }
+
+    .sections .section {
+      margin-bottom: 35px;
+    }
+
+    .section > img {
+      width: 50%;
+    }
+
+    .section .section-content {
+      gap: 22px;
+      padding: 35px;
+    }
+
+    .section-header {
+      font-size: 39px;
+      line-height: 58px;
+    }
+
+    .section-header2 {
+      font-size: 27px;
+      line-height: 40px;
+    }
+
+    .section-description {
+      font-size: 15px;
+      line-height: 24px;
+    }
+
+    .circle {
+      gap: 5px;
+      font-size: 24px;
+    }
+
+    .circle > :first-child {
+      width: 30px;
+      height: 30px;
+    }
+
+    .grid-section {
+      padding: 35px 75px 35px;
+      gap: 35px;
+      margin-bottom: 35px;
+    }
+
+    .grid-section img {
+      margin: 0 0 0px 35px;
+    }
+
+    .grid-section .grid-item {
+      gap: 15px;
+    }
+
+    .grid-align {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .sections {
+      max-width: 480px;
+    }
+
+    .sections .section {
+      margin-bottom: 22px;
+    }
+
+    .section .section-content {
+      gap: 14px;
+      padding: 22px;
+    }
+
+    .section-header {
+      font-size: 26px;
+      line-height: 38px;
+    }
+    .section-header {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    .section-description {
+      font-size: 10px;
+      line-height: 16px;
+    }
+
+    .circle {
+      gap: 4px;
+      font-size: 16px;
+    }
+
+    .circle > :first-child {
+      width: 20px;
+      height: 20px;
+    }
+
+    .grid-section {
+      padding: 20px 50px 20px;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .grid-section img {
+      margin: 0 0 0px 20px;
+      width: 20%;
+    }
+
+    .grid-section .grid-item {
+      gap: 10px;
+    }
+  }
+
+  .active-tab {
+    color: #191919;
+    border-bottom: 0.25em solid gray;
+  }
+</style>
+
+<body>
+  <div class="sections">
+    <div id="youtube-link"></div>
+    <div class="!tw-flex-col !tw-bg-white !tw-mb-40 md:!tw-mb-80 section">
+      <img src="" alt="" class="!tw-w-full" />
+      <div
+        class="tw-px-10 tw-pt-10 tw-pb-5 tw-text-center tw-text-xl md:tw-text-2xl lg:tw-text-3xl"
+      >
+        Osaki OS-4D Pro Paragon is newly upgraded 4D massage chair with L-track
+        and heating roller mechanism. Paragon is designed with high and
+        luxurious technology systems, which are voice recording, less space
+        enlargement and heating rollers on the footrest. Additionally, the
+        Paragon is designed to feature to customize the heating temperatures by
+        the user. By using the voice control and ease remote control, the user
+        can approach and manage the massage chair easily without any
+        difficulties.
+      </div>
+
+      <div class="tw-flex tw-justify-evenly tw-gap-10 tw-w-full">
+        <div class="circle">
+          <div style="background-color: #352723"></div>
+          <div>Dark Brown</div>
+        </div>
+        <div class="circle">
+          <div style="background-color: #1d1d1d"></div>
+          <div>Black</div>
+        </div>
+        <div class="circle">
+          <div style="background-color: #b7ad9f"></div>
+          <div>Beige</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="!tw-flex-row-reverse !tw-bg-black section">
+      <div class="section-content">
+        <div class="!tw-text-white section-header">4D Massage Mechanism</div>
+        <div class="section-description" style="color: #989898">
+          4D massage are wider, deeper and more rhythmically than the
+          conventional massage rollers. The 4D massage mechanism allows another
+          experience with account for the speed and rhythm of the massage. The
+          user can control of massaging experience with
+          <strong>4 4D adjustments</strong> and
+          <strong> 5 levels of speed adjustments</strong>.
+        </div>
+      </div>
+      <img src="" alt="" class="" />
+    </div>
+
+    <div class="!tw-bg-black section">
+      <div class="section-content">
+        <div class="!tw-text-white section-header">
+          Heated <br />
+          Back Rollers
+        </div>
+        <div class="section-description" style="color: #989898">
+          The OS-4D Pro Paragon has the most upgraded back heating system with a
+          mild infrared heat. The heated back roller allows for a far greater
+          surface heating area. Experience the luxury of hot stones warming the
+          muscles from your neck to the hamstrings. In addition, Paragon
+          includes a variable heating feature (TEMP + / TEMP-) which allows you
+          to alter the heat intensity of your massage.
+        </div>
+      </div>
+      <img src="" alt="" class="" />
+    </div>
+    <div class="!tw-flex-row-reverse !tw-bg-black section">
+      <div class="section-content">
+        <div class="!tw-text-white section-header">
+          Heated <br />
+          Foot Rollers
+        </div>
+        <div class="section-description" style="color: #989898">
+          There are spinning reflexology rollers located at the bottom of the
+          footrest providing a soothing kneading massage. When the rollers spin,
+          it stimulates
+          <strong>heating therapy around the foot areas</strong> and offers mild
+          to strong pressures and warm condition for more relaxed and reduce
+          tiredness.
+        </div>
+      </div>
+      <img src="" alt="" class="" />
+    </div>
+    <div class="!tw-bg-black section">
+      <div class="section-content">
+        <div class="!tw-text-white section-header">Calf Rollers</div>
+        <div class="section-description" style="color: #989898">
+          The rollers in the calf area will inflate to the appropriate amount of
+          pressure and then initiate a calf kneading massage. Allowing the calf
+          portion to provide a calf kneading motion will increase the blood flow
+          of the legs, helping them to reach a higher level of relaxation.
+        </div>
+      </div>
+      <img src="" alt="" class="" />
+    </div>
+    <div class="!tw-flex-row-reverse !tw-bg-black section">
+      <div class="section-content">
+        <div class="!tw-text-white section-header">Voice Recognition</div>
+        <div class="section-description" style="color: #989898">
+          Voice or speech recognition is the ability of devices to record spoken
+          words or commands by the user. The Osaki OS-4D Pro Paragon has a tiny
+          microphone around the speaker which recognizes
+          <strong>9 different phrases</strong>
+          that the user can manage the massage modes by speaking.
+        </div>
+      </div>
+      <img src="" alt="" class="" />
+    </div>
+    <div class="!tw-bg-black section">
+      <div class="section-content">
+        <div class="!tw-text-white section-header">
+          Intelligent <br />
+          Body Scanning
+        </div>
+        <div class="section-description" style="color: #989898">
+          The Body Scan maps the key areas of the neck and back to ensure the
+          optimal amount of pressure applied during the massage. The scanning
+          technology will detect the shoulders height, which can be
+          re-calibrated once the scan is complete.
+        </div>
+      </div>
+      <img src="" alt="" class="" />
+    </div>
+    <div
+      class="tw-gap-5 md:tw-gap-9 lg:tw-gap-12 !tw-grid tw-grid-cols-2 !tw-bg-white section"
+    >
+      <div class="tw-flex tw-flex-col tw-justify-between tw-bg-black tw-h-full">
+        <div class="!tw-pb-0 !tw-w-full section-content section-description">
+          <strong>L-track System</strong>
+          L-track massage system offers wider coverage and more reach points
+          which extends massage techniques from the neck, all the way down the
+          lower back, and finally wrapping underneath the back of your thighs.
+        </div>
+
+        <img src="" alt="" class="" />
+      </div>
+      <div class="tw-flex tw-flex-col tw-justify-between tw-bg-black tw-h-full">
+        <img src="" alt="" class="" />
+      </div>
+    </div>
+
+    <div class="tw-flex-col-reverse !tw-bg-black section">
+      <img src="" alt="" class="!tw-w-full" />
+      <div class="!tw-pb-0 !tw-w-full section-content">
+        <div class="!tw-text-white section-header">
+          2-Stage Zero Gravity and <br />
+          Space-Saving Technology
+        </div>
+        <div class="section-description">
+          When reclined into the zero-gravity position, the complete weight of
+          your back is virtually supported by the backrest which maximizes the
+          intensity of the massage. With the Space-Saving technology, OS-4D Pro
+          Paragon saves up to <strong>4 inches</strong> of the space from the
+          wall.
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="tw-flex tw-justify-center tw-items-center tw-gap-5 tw-col-span-2 tw-bg-black tw-p-4 md:tw-p-10 tw-text-2xl tw-text-center tw-text-white md:tw-text-4xl"
+    >
+      <strong class="!tw-text-white">13 Auto Massage Modes</strong>
+    </div>
+    <div
+      class="tw-justify-items-center tw-gap-4 tw-grid tw-grid-cols-2 tw-bg-black tw-mb-10 tw-p-4 md:tw-p-10 tw-text-white"
+    >
+      <div
+        class="tw-flex tw-items-center tw-gap-1 tw-w-2/3 md:tw-w-1/2 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="!tw-w-10 md:!tw-w-16" />
+        <div class="md:tw-text-xl">Recover</div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-gap-1 tw-w-2/3 md:tw-w-1/2 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="!tw-w-10 md:!tw-w-16" />
+        <div class="md:tw-text-xl">Refresh</div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-gap-1 tw-w-2/3 md:tw-w-1/2 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="!tw-w-10 md:!tw-w-16" />
+        <div class="md:tw-text-xl">Relief</div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-gap-1 tw-w-2/3 md:tw-w-1/2 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="!tw-w-10 md:!tw-w-16" />
+        <div class="md:tw-text-xl">Energy</div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-gap-1 tw-w-2/3 md:tw-w-1/2 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="!tw-w-10 md:!tw-w-16" />
+        <div class="md:tw-text-xl">Stretch</div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-gap-1 tw-w-2/3 md:tw-w-1/2 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="!tw-w-10 md:!tw-w-16" />
+        <div class="md:tw-text-xl">Revive</div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-gap-1 tw-w-2/3 md:tw-w-1/2 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="!tw-w-10 md:!tw-w-16" />
+        <div class="md:tw-text-xl">Soft</div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-gap-1 tw-w-2/3 md:tw-w-1/2 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="!tw-w-10 md:!tw-w-16" />
+        <div class="md:tw-text-xl">Active</div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-gap-1 tw-w-2/3 md:tw-w-1/2 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="!tw-w-10 md:!tw-w-16" />
+        <div class="md:tw-text-xl">Renew</div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-gap-1 tw-w-2/3 md:tw-w-1/2 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="!tw-w-10 md:!tw-w-16" />
+        <div class="md:tw-text-xl">Relaxing</div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-gap-1 tw-w-2/3 md:tw-w-1/2 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="!tw-w-10 md:!tw-w-16" />
+        <div class="md:tw-text-xl">Calming</div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-gap-1 tw-w-2/3 md:tw-w-1/2 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="!tw-w-10 md:!tw-w-16" />
+        <div class="md:tw-text-xl">Healing</div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-gap-1 tw-w-2/3 md:tw-w-1/2 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="!tw-w-10 md:!tw-w-16" />
+        <div class="md:tw-text-xl">Special</div>
+      </div>
+    </div>
+    <div
+      class="tw-flex tw-justify-center tw-items-center tw-gap-5 tw-col-span-2 tw-bg-black tw-p-4 md:tw-p-10 tw-text-2xl tw-text-center tw-text-white md:tw-text-4xl"
+    >
+      <strong class="!tw-text-white">5 Manual Massage Modes</strong>
+    </div>
+    <div
+      class="tw-justify-items-center tw-gap-4 tw-grid tw-grid-cols-2 tw-bg-black tw-mb-10 tw-p-4 md:tw-p-10 tw-text-white"
+    >
+      <div
+        class="tw-flex tw-items-center tw-gap-1 tw-w-2/3 md:tw-w-1/2 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="!tw-w-10 md:!tw-w-16" />
+        <div class="md:tw-text-xl">Kneading</div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-gap-1 tw-w-2/3 md:tw-w-1/2 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="!tw-w-10 md:!tw-w-16" />
+        <div class="md:tw-text-xl">Knead & Tap</div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-gap-1 tw-w-2/3 md:tw-w-1/2 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="!tw-w-10 md:!tw-w-16" />
+        <div class="md:tw-text-xl">Tapping</div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-gap-1 tw-w-2/3 md:tw-w-1/2 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="!tw-w-10 md:!tw-w-16" />
+        <div class="md:tw-text-xl">Shiatsu</div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-gap-1 tw-w-2/3 md:tw-w-1/2 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="!tw-w-10 md:!tw-w-16" />
+        <div class="md:tw-text-xl">Knocking</div>
+      </div>
+    </div>
+
+    <div class="!tw-bg-black section">
+      <img src="" alt="" class="tw-self-start" />
+      <div class="section-content">
+        <div class="!tw-text-white section-header">
+          Automatic Extendable Footrest
+        </div>
+        <div class="section-description">
+          The ottoman will scan the legs to ensure the optimal leg length for
+          the user’s height. The foot component extends and retracts within
+          <strong>8.7”</strong>
+          automatically.
+        </div>
+      </div>
+    </div>
+    <div class="tw-flex-row-reverse !tw-bg-black section">
+      <img src="" alt="" class="!tw-flex-initial !tw-w-1/4" />
+      <div class="section-content">
+        <div class="!tw-text-white section-header">
+          Convenient <br />
+          Remote Control
+        </div>
+        <div class="section-description">
+          The Osaki OS-4D Pro Paragon has detailed LED displaying remote
+          controller with ease control buttons that the easily approach to the
+          diverse functions of the massage chair.
+        </div>
+      </div>
+    </div>
+    <div class="!tw-bg-black section">
+      <img src="" alt="" class="tw-self-start" />
+      <div class="section-content">
+        <div class="!tw-text-white section-header">
+          Easy <br />
+          App Control
+        </div>
+        <div class="section-description">
+          Smartphone users can download the Paragon App for the convenience and
+          ease to operate chair with all the features of the remote.
+        </div>
+      </div>
+    </div>
+    <div
+      class="tw-gap-5 md:tw-gap-9 lg:tw-gap-12 !tw-grid tw-grid-cols-2 !tw-bg-white section"
+    >
+      <div class="tw-flex tw-flex-col tw-justify-between tw-bg-black tw-h-full">
+        <div
+          class="!tw-pb-0 !tw-w-full !tw-text-white section-content section-description"
+        >
+          Bluetooth Surround Quality Speakers
+        </div>
+        <img src="" alt="" class="" />
+      </div>
+      <div class="tw-flex tw-flex-col tw-justify-between tw-bg-black tw-h-full">
+        <div
+          class="!tw-pb-0 !tw-w-full !tw-text-white section-content section-description"
+        >
+          Convenient Remote Pocket
+        </div>
+        <img src="" alt="" class="" />
+      </div>
+    </div>
+
+    <div class="section-dimensions">
+      <div class="tw-mt-40 tw-text-3xl tw-text-center lg:tw-text-5xl">
+        Dimensions
+      </div>
+      <div
+        class="tw-flex md:tw-flex-row tw-flex-col tw-justify-between tw-items-center tw-gap-5 md:tw-gap-10"
+      >
+        <img src="" alt="" class="md:!tw-w-1/2" />
+        <img src="" alt="" class="md:!tw-w-1/2" />
+      </div>
+    </div>
+  
+
+    <section>
+      <div class="tw-p-10 tw-font-bold tw-text-3xl tw-text-center md:tw-text-4xl lg:tw-text-5xl">
+        Specification
+      </div>
+      <div class="tw-font-normal tw-text-xl">
+        <div class="tw-flex lg:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+          <div class="tw-w-52 tw-font-bold">Product Name</div>
+          <div>4D Paragon</div>
+        </div>
+        <div class="tw-flex lg:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+          <div class="tw-shrink-0 tw-w-52 tw-font-bold">User Manual</div>
+          <div class="tw-gap-2 tw-grid tw-grid-cols-2 tw-w-full">
+            <a class="!tw-text-red-500 !tw-no-underline" href="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/Osaki_OS-4D_Pro_Paragon_manual.pdf?v=1654551396" target="_blank">Download</a>
+          </div>
+        </div>
+        <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+          <div class="tw-shrink-0 tw-w-52 tw-font-bold">Power Supply</div>
+          <div>110 - 120V</div>
+        </div>
+        <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+          <div class="tw-shrink-0 tw-w-52 tw-font-bold">Rate Frequency</div>
+          <div>50 / 60Hz</div>
+        </div>
+        <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+          <div class="tw-shrink-0 tw-w-52 tw-font-bold">Chair <br class="lg:tw-block tw-hidden" /> Dimensions <br /> (W x L x H)</div>
+          <div class="tw-gap-2 tw-grid lg:tw-grid-cols-2 tw-w-full">
+            <div>
+              <div class="tw-font-bold tw-text-xl">Upright</div>
+              <div>33.0" x 63.0" x 50.0"</div>
+            </div>
+            <div>
+              <div class="tw-font-bold tw-text-xl">Reclined</div>
+              <div>33.0" x 74.5" x 37.0"</div>
+            </div>
+          </div>
+        </div>
+        <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+          <div class="tw-shrink-0 tw-w-52 tw-font-bold">Chair Weight</div>
+          <div>289.9 lb</div>
+        </div>
+        <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+          <div class="tw-shrink-0 tw-w-52 tw-font-bold">Width</div>
+          <div class="tw-gap-2 tw-grid tw-grid-cols-2 tw-w-full">
+            <div>
+              <div class="tw-font-bold tw-text-xl">Shoulder</div>
+              <div>20.0"</div>
+            </div>
+            <div>
+              <div class="tw-font-bold tw-text-xl">Seat</div>
+              <div>15.5"</div>
+            </div>
+          </div>
+        </div>
+    
+    <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+      <div class="tw-shrink-0 tw-w-52 tw-font-bold">Minimum Door Width</div>
+      <div class="tw-gap-2 tw-grid tw-grid-cols-2 tw-w-full">
+        <div>
+          33.0"
+        </div>
+      </div>
+    </div>
+    
+        <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+          <div class="tw-shrink-0 tw-w-52 tw-font-bold">User Maximum Weight</div>
+          <div>260 lb</div>
+        </div>
+        <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+          <div class="tw-shrink-0 tw-w-52 tw-font-bold">Package <br class="lg:tw-block tw-hidden" /> Dimensions <br /> (W x L x H)</div>
+          <div class="tw-gap-2 tw-grid lg:tw-grid-cols-3 tw-w-full"><div><div class="tw-font-bold tw-text-xl">Box 1</div><div>59.8" x 31.3" x 37.6"</div></div><div><div class="tw-font-bold tw-text-xl">Box 2</div><div>37.4" x 15.7" x 28.3"</div></div><div><div class="tw-font-bold tw-text-xl">Box 3</div><div>23.0" x 22.4" x 24.2"</div></div></div>
+        </div>
+        <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+          <div class="tw-shrink-0 tw-w-52 tw-font-bold">Package Weight</div>
+          <div class="tw-gap-2 tw-grid lg:tw-grid-cols-3 tw-w-full"><div><div class="tw-font-bold tw-text-xl">Box 1</div><div>266.8 lb</div></div><div><div class="tw-font-bold tw-text-xl">Box 2</div><div>46.3 lb</div></div><div><div class="tw-font-bold tw-text-xl">Box 3</div><div>78.3 lb</div></div></div>
+        </div>
+      </div>
+    </section>
+    
+
+  </div>
+</body>
+<script>
+  const getImages = () => {
+    document.querySelectorAll(".sections img").forEach((img, i) => {
+      img.src = imgs[i].img_src
+    })
+  }
+  const createVideoDOM = () => {
+    const getYoutubeSrc = (src) => {
+      const regex = /[a-z0-9_-]{11}/gi
+
+      const id = src.match(regex)[0]
+      const dst = "https://www.youtube.com/embed/" + id + "?mute=1&autoplay=1"
+      return dst
+    }
+    const iframe = document.createElement("iframe")
+    iframe.classList = "tw-aspect-video tw-w-full tw-mb-10"
+    try {
+      iframe.src = getYoutubeSrc(youtube_link)
+      document.getElementById("youtube-link").appendChild(iframe)
+    } catch (err) {
+      console.log(err)
+    }
+  }
+  const initializeProductDescription = () => {
+    try {
+      getImages()
+    } catch (error) {
+      console.log(error)
+    }
+    try {
+      createVideoDOM()
+    } catch (error) {
+      console.log(error)
+    }
+  }
+  initializeProductDescription()
+</script>

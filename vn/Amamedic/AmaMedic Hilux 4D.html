@@ -1,0 +1,971 @@
+<!--
+  <ul class="feature-section">
+  <li>
+    <strong> 4D Massage Mechanism </strong>
+  </li>
+  <li>
+    <strong> 8 Auto Programs </strong>
+  </li>
+  <li>
+    <strong> Heated Back Roller </strong>
+  </li>
+  <li>SL-Track</li>
+  <li>Full Body Compression Massage</li>
+  <li>
+    <strong> Adjustable Shoulder Width </strong>
+  </li>
+  <li>Convenient Shortcut Panel</li>
+  <li>Touchscreen Control</li>
+  <li>2 Stage Zero Gravity</li>
+  <li>Deep Calf &amp; Foot Kneading</li>
+  <li>
+    <strong> Automatic Extendable Footrest </strong>
+  </li>
+  <li>Surround Sound Bluetooth Speakers</li>
+  <li>USB Charger &amp; Wireless Charger</li>
+</ul> -->
+
+<!--- more -->
+<script>
+  const youtube_link =
+    "https://www.youtube.com/watch?v=7iG1LJc1X5w&ab_channel=OfficialTitanOsakiMassageChannel"
+
+  const imgs = [
+    {
+      img_order: "1",
+      img_name: "Amamedic-Hilux_f3a0a794…6-46af-abd0-5a2daffd94b4",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/1.Amamedic-Hilux_f3a0a794-0a26-46af-abd0-5a2daffd94b4.jpg?v=1690482598",
+    },
+    {
+      img_order: "2",
+      img_name: "Amamedic-Hilux_1bf53d06…a-491a-954d-e4b1c2c4d28b",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/2.Amamedic-Hilux_1bf53d06-808a-491a-954d-e4b1c2c4d28b.jpg?v=1690482598",
+    },
+    {
+      img_order: "3",
+      img_name: "Amamedic-Hilux_7f0ab3cc…e-450d-9847-4ca7fae25138",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.Amamedic-Hilux_7f0ab3cc-6a8e-450d-9847-4ca7fae25138.jpg?v=1690482598",
+    },
+    {
+      img_order: "4",
+      img_name: "Amamedic-Hilux_7b00fc8b…4-4f59-969b-b7765a6bb498",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4.Amamedic-Hilux_7b00fc8b-f654-4f59-969b-b7765a6bb498.jpg?v=1690482598",
+    },
+    {
+      img_order: "5",
+      img_name: "Amamedic-Hilux_8c3d1745…f-4f4e-be30-0ad5c92b2d34",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/5.Amamedic-Hilux_8c3d1745-06df-4f4e-be30-0ad5c92b2d34.jpg?v=1690482598",
+    },
+    {
+      img_order: "6",
+      img_name: "Amamedic-Hilux_1be5a7b7…b-44d1-97fd-6336b54daca7",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/6.Amamedic-Hilux_1be5a7b7-2c8b-44d1-97fd-6336b54daca7.jpg?v=1690482598",
+    },
+    {
+      img_order: "7",
+      img_name: "Amamedic-Hilux_137ea600…3-43f1-94cd-a871a8144d5b",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/7.Amamedic-Hilux_137ea600-d093-43f1-94cd-a871a8144d5b.jpg?v=1690482598",
+    },
+    {
+      img_order: "8",
+      img_name: "Amamedic-Hilux_940814f5…8-47a3-ad79-899d188035e8",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/8.Amamedic-Hilux_940814f5-de58-47a3-ad79-899d188035e8.jpg?v=1690482598",
+    },
+    {
+      img_order: "10",
+      img_name: "Amamedic-Hilux_3e539ed…2-4025-8b39-cb304ba443f4",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.Amamedic-Hilux_3e539eda-7992-4025-8b39-cb304ba443f4.jpg?v=1690482598",
+    },
+    {
+      img_order: "11",
+      img_name: "Amamedic-Hilux-Scraping",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/11.Amamedic-Hilux-Scraping.jpg?v=1690482598",
+    },
+    {
+      img_order: "12",
+      img_name: "Amamedic-Hilux-Relax",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12.Amamedic-Hilux-Relax.jpg?v=1690482598",
+    },
+    {
+      img_order: "13",
+      img_name: "Amamedic-Hilux-Shiatsu",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/13.Amamedic-Hilux-Shiatsu.jpg?v=1690482598",
+    },
+    {
+      img_order: "14",
+      img_name: "Amamedic-Hilux-Swing",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/14.Amamedic-Hilux-Swing.jpg?v=1690482598",
+    },
+    {
+      img_order: "15",
+      img_name: "Amamedic-Hilux_6f525df…d-4588-8c07-09e5d669e670",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/15.Amamedic-Hilux_6f525dfc-d03d-4588-8c07-09e5d669e670.jpg?v=1690482598",
+    },
+    {
+      img_order: "16",
+      img_name: "Amamedic-Hilux-Stretch",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/16.Amamedic-Hilux-Stretch.jpg?v=1690482598",
+    },
+    {
+      img_order: "17",
+      img_name: "Amamedic-Hilux-Rejuvenate",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/17.Amamedic-Hilux-Rejuvenate.jpg?v=1690482598",
+    },
+    {
+      img_order: "18",
+      img_name: "Amamedic-Hilux_d44f498…2-4166-a507-d5c0f0b1ad85",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/18.Amamedic-Hilux_d44f4987-fd42-4166-a507-d5c0f0b1ad85.jpg?v=1690482598",
+    },
+    {
+      img_order: "19",
+      img_name: "Amamedic-Hilux_2833763…0-40e9-ae7d-06c13baebe2b",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19.Amamedic-Hilux_2833763a-0d20-40e9-ae7d-06c13baebe2b.jpg?v=1690482598",
+    },
+    {
+      img_order: "20",
+      img_name: "Amamedic-Hilux_a9d54a5…8-4f81-a4a7-45c07d5aecec",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/20.Amamedic-Hilux_a9d54a52-2f88-4f81-a4a7-45c07d5aecec.jpg?v=1690482598",
+    },
+    {
+      img_order: "21",
+      img_name: "Amamedic-Hilux",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/21.Amamedic-Hilux.jpg?v=1690482598",
+    },
+    {
+      img_order: "22",
+      img_name: "Amamedic-Hilux",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/22.Amamedic-Hilux.jpg?v=1690482598",
+    },
+    {
+      img_order: "23",
+      img_name: "Amamedic-Hilux",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/23.Amamedic-Hilux.jpg?v=1690482598",
+    },
+    {
+      img_order: "24",
+      img_name: "Amamedic-Hilux",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/24.Amamedic-Hilux.jpg?v=1690482598",
+    },
+    {
+      img_order: "25",
+      img_name: "Amamedic-Hilux",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/25.Amamedic-Hilux.jpg?v=1690482598",
+    },
+    {
+      img_order: "26",
+      img_name: "Amamedic-Hilux",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/26.Amamedic-Hilux.jpg?v=1690482598",
+    },
+    {
+      img_order: "27",
+      img_name: "Amamedic-Hilux",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/27.Amamedic-Hilux.jpg?v=1690482598",
+    },
+    {
+      img_order: "28",
+      img_name: "Amamedic-Hilux",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/28.Amamedic-Hilux.jpg?v=1690482598",
+    },
+    {
+      img_order: "29",
+      img_name: "Amamedic-Hilux",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/29.Amamedic-Hilux.jpg?v=1690482598",
+    },
+    {
+      img_order: "30",
+      img_name: "Amamedic-Hilux",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/30.Amamedic-Hilux.jpg?v=1690482598",
+    },
+    {
+      img_order: "31",
+      img_name: "Amamedic-Hilux",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/31.Amamedic-Hilux.jpg?v=1690482598",
+    },
+    {
+      img_order: "32",
+      img_name: "Amamedic-Hilux",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/32.Amamedic-Hilux.jpg?v=1690482598",
+    },
+    {
+      img_order: "33",
+      img_name: "Amamedic-Hilux",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/33.Amamedic-Hilux.jpg?v=1690482599",
+    },
+    {
+      img_order: "34",
+      img_name: "Amamedic-Hilux",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/9.Amamedic-Hilux.webp?v=1732573311",
+    },
+  ]
+</script>
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  href="https://ota-shawn.github.io/Products/globalProductDescription.css"
+  rel="stylesheet"
+/>
+<link href="../globalProductDescription.css" rel="stylesheet" />
+
+<style>
+  :root {
+    --section-bg-color: #eae4df;
+    --section-strong-color: #1d1d1d;
+    --section-header-color: #353538;
+    --section-content-color: #464647;
+    --section-grid-color: #86868b;
+  }
+
+  * {
+    box-sizing: tw-border-box;
+  }
+
+  .sections {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sections strong {
+    color: var(--section-strong-color);
+  }
+
+  .sections .section {
+    background-color: var(--section-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .section > img,
+  .section-content {
+    flex: 1 1 0%;
+    width: 50%;
+  }
+
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+  }
+
+  .section-header {
+    font-size: 52px;
+    line-height: 65px;
+    color: var(--section-header-color);
+  }
+  .section-header2 {
+    font-size: 36px;
+    line-height: 45px;
+    color: var(--section-header-color);
+  }
+
+  .section-description {
+    color: var(--section-content-color);
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  .circle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 32px;
+  }
+
+  .circle > :first-child {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .grid-section {
+    background-color: var(--section-bg-color);
+    color: var(--section-grid-color);
+    display: grid;
+    grid-column: span 2 / span 2;
+    padding: 50px 100px 50px;
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+
+  .grid-section img {
+    margin: 0 0 0px 50px;
+  }
+
+  .grid-section .grid-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .app-icon {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .app-icon img {
+    flex: 1 1 0;
+    width: 40%;
+  }
+
+  .grid-align {
+    text-align: left;
+  }
+
+  @media (max-width: 1024px) {
+    .sections {
+      max-width: 768px;
+    }
+
+    .sections .section {
+      margin-bottom: 35px;
+    }
+
+    .section > img {
+      width: 50%;
+    }
+
+    .section .section-content {
+      gap: 22px;
+      padding: 35px;
+    }
+
+    .section-header {
+      font-size: 39px;
+      line-height: 58px;
+    }
+
+    .section-header2 {
+      font-size: 27px;
+      line-height: 40px;
+    }
+
+    .section-description {
+      font-size: 15px;
+      line-height: 24px;
+    }
+
+    .circle {
+      gap: 5px;
+      font-size: 24px;
+    }
+
+    .circle > :first-child {
+      width: 30px;
+      height: 30px;
+    }
+
+    .grid-section {
+      padding: 35px 75px 35px;
+      gap: 35px;
+      margin-bottom: 35px;
+    }
+
+    .grid-section img {
+      margin: 0 0 0px 35px;
+    }
+
+    .grid-section .grid-item {
+      gap: 15px;
+    }
+
+    .grid-align {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .sections {
+      max-width: 480px;
+    }
+
+    .sections .section {
+      margin-bottom: 22px;
+    }
+
+    .section .section-content {
+      gap: 14px;
+      padding: 22px;
+    }
+
+    .section-header {
+      font-size: 26px;
+      line-height: 38px;
+    }
+    .section-header2 {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    .section-description {
+      font-size: 10px;
+      line-height: 16px;
+    }
+
+    .circle {
+      gap: 4px;
+      font-size: 16px;
+    }
+
+    .circle > :first-child {
+      width: 20px;
+      height: 20px;
+    }
+
+    .grid-section {
+      padding: 20px 50px 20px;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .grid-section img {
+      margin: 0 0 0px 20px;
+      width: 20%;
+    }
+
+    .grid-section .grid-item {
+      gap: 10px;
+    }
+  }
+
+  .active-tab {
+    color: #191919;
+    border-bottom: 0.25em solid gray;
+  }
+</style>
+
+<body>
+  <div class="sections">
+    <div id="youtube-link"></div>
+    <div class="!tw-flex-col !tw-bg-white !tw-mb-40 md:!tw-mb-80 section">
+      <img src="" alt="" class="!tw-w-full" />
+      <div
+        class="tw-px-10 tw-pt-10 tw-pb-5 tw-text-center tw-text-xl md:tw-text-2xl lg:tw-text-3xl"
+      >
+        Introducing the ALL NEW luxurious AmaMedic Hilux 4D massage chair,
+        designed with all the newest technology, luxury, and stylish elegance.
+        Even the smallest of details have been carefully inspected and crafted
+        with the highest quality.
+      </div>
+      <div class="tw-flex tw-justify-evenly tw-gap-10 tw-w-full">
+        <div class="circle">
+          <div class="" style="background-color: #b7ad9f"></div>
+          <div>Taupe</div>
+        </div>
+        <div class="circle">
+          <div class="" style="background-color: #352723"></div>
+          <div>Brown</div>
+        </div>
+        <div class="circle">
+          <div class="" style="background-color: #1d1d1d"></div>
+          <div>Black</div>
+        </div>
+      </div>
+      <img src="" alt="" class="tw-my-4 md:tw-my-7 lg:tw-my-10 !tw-w-full" />
+    </div>
+
+    <div class="!tw-bg-black section">
+      <div class="section-content">
+        <div class="!tw-text-white section-header">
+          4D Massage <br />
+          Mechanism
+        </div>
+        <div class="!tw-text-white section-description">
+          Enhanced 4D L-track massage with professional hands mimicry. AmaMedic
+          Hilux 4D offers 8 intensity levels, 5 air massage levels, and
+          adjustable roller speed.
+        </div>
+      </div>
+      <img src="" alt="" class="" />
+    </div>
+    <div class="tw-flex-row-reverse !tw-bg-black section">
+      <div class="section-content">
+        <div class="!tw-text-white section-header">4D SL-Track Massage</div>
+        <div class="!tw-text-white section-description">
+          Hilux combines S and L track tech for exceptional massage. S-Track
+          contours spine, L-Track covers neck to thighs, 50% more area than
+          average S-Track chairs.
+        </div>
+      </div>
+      <img src="" alt="" class="" />
+    </div>
+    <div class="tw-flex-col !tw-bg-black section">
+      <div class="!tw-w-full section-content">
+        <div class="!tw-text-white section-header">2 Stage Zero Gravity</div>
+        <div class="!tw-text-white section-description">
+          Hilux offers 2 stages of zero gravity for weightless massage. Auto or
+          manual adjustment. NASA-inspired design reduces back stress.
+        </div>
+      </div>
+      <img src="" alt="" class="!tw-w-2/3 tw-self-center" />
+    </div>
+
+    <div class="tw-flex-col-reverse !tw-bg-black section">
+      <div class="!tw-w-full section-content">
+        <div class="!tw-text-white section-header">Technology Space Saving</div>
+        <div class="!tw-text-white section-description">
+          Hilux 4D requires only 4.7" from backrest to wall, saving space and
+          maximizing living area.
+        </div>
+        <img src="" alt="" class="!tw-w-4/5 tw-self-center" />
+      </div>
+    </div>
+
+    <div class="!tw-bg-white section">
+      <img src="" alt="" class="!tw-w-1/3" />
+      <div class="section-content">
+        <div class="section-header">
+          <strong class="!tw-text-blue-700">18 Cell</strong> <br />
+          Air Massage
+        </div>
+        <div class="section-description">
+          Hilux offers full body massage with 18 advanced airbags located at
+          shoulders, arms, waist, pelvis, and calves. More surface area
+          coverage, increased efficiency, and reliability.
+        </div>
+      </div>
+    </div>
+    <div class="tw-flex-row-reverse !tw-bg-white section">
+      <img src="" alt="" />
+      <div class="section-content">
+        <div class="section-header">
+          <strong class="!tw-text-red-700">Heated</strong>
+          Back Roller Massage
+        </div>
+        <div class="section-description">
+          AmaMedic Hilux 4D features advanced infrared back heating. Roller
+          heats up too, covering neck to hamstrings. Deep-penetrating heat
+          complements massage, loosens muscles.
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="tw-flex tw-justify-center tw-items-center tw-gap-5 tw-p-10 tw-text-2xl tw-text-center md:tw-text-4xl"
+    >
+      <strong class="">8 Auto Massage Modes</strong>
+    </div>
+    <div
+      class="tw-gap-2 tw-grid md:tw-grid-cols-2 tw-mb-10 tw-p-10"
+      style="background-color: #ece7e3"
+    >
+      <div
+        class="tw-flex tw-items-center tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="tw-w-1/4" />
+        <div class="">
+          <div>Demo</div>
+          <div
+            class="text-[var(--section-grid-color)] tw-font-normal tw-text-base"
+          >
+            Program cycles messages briefly.
+          </div>
+        </div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="tw-w-1/4" />
+        <div class="">
+          <div>Scraping</div>
+          <div
+            class="text-[var(--section-grid-color)] tw-font-normal tw-text-base"
+          >
+            Program scrapes and stretches muscles with up-down motion.
+          </div>
+        </div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="tw-w-1/4" />
+        <div class="">
+          <div>Relax</div>
+          <div
+            class="text-[var(--section-grid-color)] tw-font-normal tw-text-base"
+          >
+            This program offers a gentle massage to relax the user.
+          </div>
+        </div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="tw-w-1/4" />
+        <div class="">
+          <div>Shiatsu</div>
+          <div
+            class="text-[var(--section-grid-color)] tw-font-normal tw-text-base"
+          >
+            Back massage, targeting tense muscles.
+          </div>
+        </div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="tw-w-1/4" />
+        <div class="">
+          <div>Swing</div>
+          <div
+            class="text-[var(--section-grid-color)] tw-font-normal tw-text-base"
+          >
+            Program rocks and massages user for calm experience.
+          </div>
+        </div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="tw-w-1/4" />
+        <div class="">
+          <div>Gentle Relief</div>
+          <div
+            class="text-[var(--section-grid-color)] tw-font-normal tw-text-base"
+          >
+            This program helps to performs a tapping action with tapping.
+          </div>
+        </div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="tw-w-1/4" />
+        <div class="">
+          <div>Stretch</div>
+          <div
+            class="text-[var(--section-grid-color)] tw-font-normal tw-text-base"
+          >
+            Program inflates, pins, and massages from legs to shoulders.
+          </div>
+        </div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="tw-w-1/4" />
+        <div class="">
+          <div>Rejuvenate</div>
+          <div
+            class="text-[var(--section-grid-color)] tw-font-normal tw-text-base"
+          >
+            Strong and aggressive back massage program.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="tw-flex tw-justify-center tw-items-center tw-gap-5 tw-col-span-2 tw-bg-white tw-p-4 md:tw-p-10 tw-text-2xl tw-text-center md:tw-text-4xl"
+    >
+      <strong class="">9 Manual Massage Modes</strong>
+    </div>
+    <div
+      class="tw-flex-wrap-reverse tw-justify-center tw-gap-3 tw-grid tw-grid-cols-3 tw-mb-10 tw-p-10"
+      style="background-color: #ece7e3"
+    >
+      <div
+        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-p-4 text-md tw-text-center md:tw-text-lg lg:tw-text-xl aspect-square"
+      >
+        <img src="" alt="" class="tw-w-12 md:tw-w-16" />
+        <div>Neck/Shoulder</div>
+      </div>
+      <div
+        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-p-4 text-md tw-text-center md:tw-text-lg lg:tw-text-xl aspect-square"
+      >
+        <img src="" alt="" class="tw-w-12 md:tw-w-16" />
+        <div>Upper Back</div>
+      </div>
+      <div
+        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-p-4 text-md tw-text-center md:tw-text-lg lg:tw-text-xl aspect-square"
+      >
+        <img src="" alt="" class="tw-w-12 md:tw-w-16" />
+        <div>Lower Back</div>
+      </div>
+      <div
+        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-p-4 text-md tw-text-center md:tw-text-lg lg:tw-text-xl aspect-square"
+      >
+        <img src="" alt="" class="tw-w-12 md:tw-w-16" />
+        <div>Full Back</div>
+      </div>
+      <div
+        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-p-4 text-md tw-text-center md:tw-text-lg lg:tw-text-xl aspect-square"
+      >
+        <img src="" alt="" class="tw-w-12 md:tw-w-16" />
+        <div>Kneading</div>
+      </div>
+      <div
+        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-p-4 text-md tw-text-center md:tw-text-lg lg:tw-text-xl aspect-square"
+      >
+        <img src="" alt="" class="tw-w-12 md:tw-w-16" />
+        <div>Tapping</div>
+      </div>
+      <div
+        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-p-4 text-md tw-text-center md:tw-text-lg lg:tw-text-xl aspect-square"
+      >
+        <img src="" alt="" class="tw-w-12 md:tw-w-16" />
+        <div>Rolling</div>
+      </div>
+      <div
+        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-p-4 text-md tw-text-center md:tw-text-lg lg:tw-text-xl aspect-square"
+      >
+        <img src="" alt="" class="tw-w-12 md:tw-w-16" />
+        <div>Shiatsu</div>
+      </div>
+      <div
+        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-p-4 text-md tw-text-center md:tw-text-lg lg:tw-text-xl aspect-square"
+      >
+        <img src="" alt="" class="tw-w-12 md:tw-w-16" />
+        <div>Clapping</div>
+      </div>
+    </div>
+
+    <div class="tw-flex-row-reverse section">
+      <img src="" alt="" class="" />
+      <div class="section-content">
+        <div class="section-header">Shoulder Massager</div>
+        <div class="!tw-text-[var(--section-grid-color)] section-description">
+          Adjustable shoulder massager fits all body types. Easily tighten by
+          pushing inward. 3 adjustable sizes on each side. Reset to default
+          width by pushing in on both sides.
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <img src="" alt="" class="tw-self-start" />
+      <div class="section-content">
+        <div class="section-header">Calf Kneading Massage</div>
+        <div class="!tw-text-[var(--section-grid-color)] section-description">
+          Upper leg rest has air massagers for circular calf massage. Added
+          components for foot stretch and massage at bridge and heel. Unique
+          experience.
+        </div>
+      </div>
+    </div>
+    <div class="tw-flex-row-reverse section">
+      <img src="" alt="" class="tw-self-start" />
+      <div class="section-content">
+        <div class="section-header">Foot Kneading</div>
+        <div class="!tw-text-[var(--section-grid-color)] section-description">
+          Underneath the feet, spinning reflexology rollers offer an outstanding
+          foot massage. Rollers travel along sides and arches for a dimensional
+          kneading experience.
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <img src="" alt="" class="tw-self-start" />
+      <div class="section-content">
+        <div class="section-header">Auto Extendable Footrest</div>
+        <div class="!tw-text-[var(--section-grid-color)] section-description">
+          The foot component extends and retracts while scanning the user's
+          legs. Apply pressure to indicate desired position. Remote enables auto
+          legrest adjustment.
+        </div>
+      </div>
+    </div>
+    <div class="tw-flex-row-reverse section">
+      <img src="" alt="" class="tw-self-end" />
+      <div class="section-content">
+        <div class="section-header">Bluetooth HD Speaker</div>
+        <div class="!tw-text-[var(--section-grid-color)] section-description">
+          Bluetooth, Amphitheater sound, reduces noise, high-grade headrest
+          speakers. Start at low volume, increase gradually.
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <img src="" alt="" />
+    </div>
+    <div class="section">
+      <img src="" alt="" class="tw-self-start" />
+    </div>
+    <div class="section">
+      <div class="section-content">
+        <div class="section-header2">USB Charger & Wireless Charger</div>
+        <div class="!tw-text-[var(--section-grid-color)] section-description">
+          AmaMedic Hilux 4D has wireless charger on armrest for smartphones.
+          Requires wireless charging capability.
+        </div>
+      </div>
+      <div class="section-content">
+        <div class="section-header2">Touch Screen Controller</div>
+        <div class="!tw-text-[var(--section-grid-color)] section-description">
+          AmaMedic Hilux 4D has Touch Screen Remote Tablet with easy view and
+          magnetic holder. User-friendly interface for adjusting settings.
+        </div>
+      </div>
+    </div>
+
+    <div class="section-dimensions">
+      <div class="tw-mt-40 tw-text-3xl tw-text-center lg:tw-text-5xl">
+        Dimensions
+      </div>
+      <div
+        class="tw-flex md:tw-flex-row tw-flex-col tw-justify-between tw-items-end tw-gap-5 md:tw-gap-10"
+      >
+        <img src="" alt="" class="" />
+        <!-- <img src="" alt="" class="md:tw-w-2/3" /> -->
+      </div>
+    </div>
+    
+
+    <section>
+      <div class="tw-p-10 tw-font-bold tw-text-3xl tw-text-center md:tw-text-4xl lg:tw-text-5xl">
+        Specification
+      </div>
+      <div class="tw-font-normal tw-text-xl">
+        <div class="tw-flex lg:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+          <div class="tw-w-52 tw-font-bold">Product Name</div>
+          <div>Hilux 4D</div>
+        </div>
+        <div class="tw-flex lg:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+          <div class="tw-shrink-0 tw-w-52 tw-font-bold">User Manual</div>
+          <div class="tw-gap-2 tw-grid tw-grid-cols-2 tw-w-full">
+            <a class="!tw-text-red-500 !tw-no-underline" href="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/Hilux_Manual.pdf" target="_blank">Download</a>
+          </div>
+        </div>
+        <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+          <div class="tw-shrink-0 tw-w-52 tw-font-bold">Power Supply</div>
+          <div>110 - 120V</div>
+        </div>
+        <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+          <div class="tw-shrink-0 tw-w-52 tw-font-bold">Rate Frequency</div>
+          <div>50 / 60Hz</div>
+        </div>
+        <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+          <div class="tw-shrink-0 tw-w-52 tw-font-bold">Chair <br class="lg:tw-block tw-hidden" /> Dimensions <br /> (W x L x H)</div>
+          <div class="tw-gap-2 tw-grid lg:tw-grid-cols-2 tw-w-full">
+            <div>
+              <div class="tw-font-bold tw-text-xl">Upright</div>
+              <div>30.0" x 62.0" x 47.0"</div>
+            </div>
+            <div>
+              <div class="tw-font-bold tw-text-xl">Reclined</div>
+              <div>30.0" x 70.5" x 41.0"</div>
+            </div>
+          </div>
+        </div>
+        <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+          <div class="tw-shrink-0 tw-w-52 tw-font-bold">Chair Weight</div>
+          <div>260.0 lb</div>
+        </div>
+        <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+          <div class="tw-shrink-0 tw-w-52 tw-font-bold">Width</div>
+          <div class="tw-gap-2 tw-grid tw-grid-cols-2 tw-w-full">
+            <div>
+              <div class="tw-font-bold tw-text-xl">Shoulder</div>
+              <div>22.8"</div>
+            </div>
+            <div>
+              <div class="tw-font-bold tw-text-xl">Seat</div>
+              <div>21.1"</div>
+            </div>
+          </div>
+        </div>
+    
+    <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+      <div class="tw-shrink-0 tw-w-52 tw-font-bold">Minimum Door Width</div>
+      <div class="tw-gap-2 tw-grid tw-grid-cols-2 tw-w-full">
+        <div>
+          30.0"
+        </div>
+      </div>
+    </div>
+    
+        <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+          <div class="tw-shrink-0 tw-w-52 tw-font-bold">User Maximum Weight</div>
+          <div>270 lb</div>
+        </div>
+        <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+          <div class="tw-shrink-0 tw-w-52 tw-font-bold">Package <br class="lg:tw-block tw-hidden" /> Dimensions <br /> (W x L x H)</div>
+          <div class="tw-gap-2 tw-grid lg:tw-grid-cols-2 tw-w-full"><div><div class="tw-font-bold tw-text-xl">Box 1</div><div>52.4" x 33.5" x 49.6"</div></div><div><div class="tw-font-bold tw-text-xl">Box 2</div><div>23.2" x 20.1" x 21.7"</div></div></div>
+        </div>
+        <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+          <div class="tw-shrink-0 tw-w-52 tw-font-bold">Package Weight</div>
+          <div class="tw-gap-2 tw-grid lg:tw-grid-cols-2 tw-w-full"><div><div class="tw-font-bold tw-text-xl">Box 1</div><div>246.9 lb</div></div><div><div class="tw-font-bold tw-text-xl">Box 2</div><div>55.1 lb</div></div></div>
+        </div>
+      </div>
+    </section>
+    
+
+  </div>
+</body>
+<script>
+  const getImages = () => {
+    document.querySelectorAll(".sections img").forEach((img, i) => {
+      img.src = imgs[i].img_src
+    })
+  }
+  const createVideoDOM = () => {
+    const getYoutubeSrc = (src) => {
+      const regex =
+        /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/gi
+      const id = src.match(regex)[0]
+      const embed = id.replace("watch?v=", "embed/")
+      const dst = "https://www." + embed + "?mute=1&autoplay=1"
+      return dst
+    }
+    const iframe = document.createElement("iframe")
+    iframe.classList = "tw-aspect-video tw-w-full tw-mb-10"
+    try {
+      iframe.src = getYoutubeSrc(youtube_link)
+      document.getElementById("youtube-link").appendChild(iframe)
+    } catch (err) {
+      console.log(err)
+    }
+  }
+  const initializeProductDescription = () => {
+    try {
+      getImages()
+    } catch (error) {
+      console.log(error)
+    }
+    try {
+      createVideoDOM()
+    } catch (error) {
+      console.log(error)
+    }
+  }
+  initializeProductDescription()
+</script>

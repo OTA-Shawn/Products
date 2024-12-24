@@ -1,0 +1,1049 @@
+<!-- <ul class="feature-section">
+  <li><strong>Customizable Advanced 4D Massage</strong></li>
+  <li>Smart Body Scan System</li>
+  <li><strong>Ergonomic SL-Track Massage</strong></li>
+  <li>5 Adjustment Air Compression Massage</li>
+  <li><strong>Back Heating</strong></li>
+  <li>12 Auto Programs</li>
+  <li>6 Massage Styles</li>
+  <li>Extendable Footrest</li>
+  <li><strong>Bluetooth Audio</strong></li>
+  <li>4D Child Safety Sensor</li>
+  <li>Wireless &amp; USB Charger</li>
+</ul> -->
+
+<script>
+  const youtube_link =
+    "https://www.youtube.com/watch?v=f8N3CKkSnI8&ab_channel=TheramedicMassageChair"
+
+  const imgs = [
+    {
+      img_order: "-1",
+      img_name: "Theramedic-4D-LT_Header",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/Theramedic_Header.png?v=1689354358",
+    },
+    {
+      img_order: "0",
+      img_name: "Theramedic-4D-LT_Black_Main",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/0.Teramedic-4D-LT_Black_Main.jpg?v=1689350356",
+    },
+    {
+      img_order: "1",
+      img_name: "Theramedic-4D-LT_Black_4D",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/1.Teramedic-4D-LT_Black_4D.jpg?v=1689350356",
+    },
+    {
+      img_order: "2",
+      img_name: "Theramedic-4D-LT_Black_SL-Track",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/2.Teramedic-4D-LT_Black_SL-Track.jpg?v=1689350356",
+    },
+    {
+      img_order: "3",
+      img_name: "Theramedic-4D-LT_Black_Smart_Body_Scan",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.Teramedic-4D-LT_Black_Smart_Body_Scan.jpg?v=1689350356",
+    },
+    {
+      img_order: "4",
+      img_name: "Space_Saving_W3",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4.Space_Saving_W3.gif?v=1689350382",
+    },
+    {
+      img_order: "5",
+      img_name: "Zero_Gravity_1280x600_W",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/5.Zero_Gravity_1280x600_W.gif?v=1689350383",
+    },
+    {
+      img_order: "6",
+      img_name: "Theramedic-4D-LT_Black_Air-massage",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/6.Teramedic-4D-LT_Black_Air-massage.jpg?v=1689350356",
+    },
+    {
+      img_order: "7",
+      img_name: "Theramedic-4D-LT_Black_Heating",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/7.Teramedic-4D-LT_Black_Heating.jpg?v=1689350356",
+    },
+    {
+      img_order: "8",
+      img_name: "Theramedic-4D_Icon1",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/8.Teramendic-4D_Icon1.jpg?v=1689350371",
+    },
+    {
+      img_order: "9",
+      img_name: "Theramedic-4D_Icon12",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/9.Teramendic-4D_Icon12.jpg?v=1689350371",
+    },
+    {
+      img_order: "10",
+      img_name: "Theramedic-4D_Icon2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.Teramendic-4D_Icon2.jpg?v=1689350371",
+    },
+    {
+      img_order: "11",
+      img_name: "Theramedic-4D_Icon11",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/11.Teramendic-4D_Icon11.jpg?v=1689350371",
+    },
+    {
+      img_order: "12",
+      img_name: "Theramedic-4D_Icon3",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12.Teramendic-4D_Icon3.jpg?v=1689350371",
+    },
+    {
+      img_order: "13",
+      img_name: "Theramedic-4D_Icon10",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/13.Teramendic-4D_Icon10.jpg?v=1689350371",
+    },
+    {
+      img_order: "14",
+      img_name: "Theramedic-4D_Icon4",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/14.Teramendic-4D_Icon4.jpg?v=1689350371",
+    },
+    {
+      img_order: "15",
+      img_name: "Theramedic-4D_Icon9",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/15.Teramendic-4D_Icon9.jpg?v=1689350371",
+    },
+    {
+      img_order: "16",
+      img_name: "Theramedic-4D_Icon5",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/16.Teramendic-4D_Icon5.jpg?v=1689350371",
+    },
+    {
+      img_order: "17",
+      img_name: "Theramedic-4D_Icon8",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/17.Teramendic-4D_Icon8.jpg?v=1689350371",
+    },
+    {
+      img_order: "18",
+      img_name: "Theramedic-4D_Icon6",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/18.Teramendic-4D_Icon6.jpg?v=1689350371",
+    },
+    {
+      img_order: "19",
+      img_name: "Theramedic-4D_Icon7",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19.Teramendic-4D_Icon7.jpg?v=1689350371",
+    },
+    {
+      img_order: "20",
+      img_name: "Theramedic-4D_Icon13",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/20.Teramendic-4D_Icon13.jpg?v=1689350371",
+    },
+    {
+      img_order: "21",
+      img_name: "Theramedic-4D_Icon14",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/21.Teramendic-4D_Icon14.jpg?v=1689350371",
+    },
+    {
+      img_order: "22",
+      img_name: "Theramedic-4D_Icon15",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/22.Teramendic-4D_Icon15.jpg?v=1689350371",
+    },
+    {
+      img_order: "23",
+      img_name: "Theramedic-4D_Icon16",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/23.Teramendic-4D_Icon16.jpg?v=1689350371",
+    },
+    {
+      img_order: "24",
+      img_name: "Theramedic-4D_Icon17",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/24.Teramendic-4D_Icon17.jpg?v=1689350371",
+    },
+    {
+      img_order: "25",
+      img_name: "Theramedic-4D_Icon18",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/25.Teramendic-4D_Icon18.jpg?v=1689350371",
+    },
+    {
+      img_order: "26",
+      img_name: "Auto_Footrest_Extension",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/26.Auto_Footrest_Extension.gif?v=1689350381",
+    },
+    {
+      img_order: "27",
+      img_name: "Calf_Kneading_W",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/27.Calf_Kneading_W.gif?v=1689350381",
+    },
+    {
+      img_order: "28",
+      img_name: "Bluetooth_Speakers",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/28.Bluetooth_Speakers.gif?v=1689350381",
+    },
+    {
+      img_order: "29",
+      img_name: "Quick_Dial_Controller_W",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/29.Quick_Dial_Controller_W.gif?v=1689350382",
+    },
+    {
+      img_order: "30",
+      img_name: "Theramedic-4D_control",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/30.Teramendic-4D_control.jpg?v=1689350356",
+    },
+    {
+      img_order: "31",
+      img_name: "Theramedic-4D_Foot_rollers",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/31.Teramendic-4D_Foot_rollers.jpg?v=1689350356",
+    },
+    {
+      img_order: "32",
+      img_name: "Theramedic-4D_Child_safety_Sensor",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/32.Teramendic-4D_Child_safety_Sensor.jpg?v=1689350356",
+    },
+    {
+      img_order: "33",
+      img_name: "Theramedic-4D_Wireless_USB_Charger",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/33.Teramendic-4D_Wireless_USB_Charger.jpg?v=1689350356",
+    },
+    {
+      img_order: "34",
+      img_name: "Phone_Holder_W",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/34.Phone_Holder_W.gif?v=1689350381",
+    },
+    {
+      img_order: "35",
+      img_name: "Theramedic-4D_Remote",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/35.Teramendic-4D_Remote.jpg?v=1689350356",
+    },
+    {
+      img_order: "36",
+      img_name: "Theramedic-4D_Demension_1",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/36.Teramendic-4D_Demension_1.jpg?v=1689350356",
+    },
+    {
+      img_order: "37",
+      img_name: "Theramedic-4D_Demension-2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/37.Teramendic-4D_Demension-2.jpg?v=1689350356",
+    },
+  ]
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  href="https://ota-shawn.github.io/Products/globalProductDescription.css"
+  rel="stylesheet"
+/>
+<link href="../globalProductDescription.css" rel="stylesheet" />
+
+<style>
+  :root {
+    --section-bg-color: #000000;
+    --section-strong-color: #ffffff;
+    --section-header-color: #ffffff;
+    --section-content-color: #888888;
+    --section-grid-color: #888888;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .sections {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sections strong {
+    color: var(--section-strong-color);
+  }
+
+  .sections .section {
+    background-color: var(--section-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .section > img,
+  .section-content {
+    flex: 1 1 0%;
+  }
+
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+  }
+
+  .section-header {
+    font-size: 52px;
+    line-height: 65px;
+    color: var(--section-header-color);
+  }
+
+  .section-description {
+    color: var(--section-content-color);
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  .circle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 32px;
+  }
+
+  .circle > :first-child {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .grid-section {
+    background-color: var(--section-bg-color);
+    color: var(--section-grid-color);
+    display: grid;
+    grid-column: span 2 / span 2;
+    padding: 50px 100px 50px;
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+
+  .grid-section img {
+    margin: 0 0 0px 50px;
+  }
+
+  .grid-section .grid-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .app-icon {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .app-icon img {
+    flex: 0 0 0;
+    width: 40%;
+  }
+
+  .grid-align {
+    text-align: left;
+  }
+
+  @media (max-width: 1024px) {
+    .sections {
+      max-width: 768px;
+    }
+
+    .sections .section {
+      margin-bottom: 35px;
+    }
+
+    .section > img {
+      width: 50%;
+    }
+
+    .section .section-content {
+      gap: 22px;
+      padding: 35px;
+    }
+
+    .section-header {
+      font-size: 39px;
+      line-height: 58px;
+    }
+
+    .section-description {
+      font-size: 15px;
+      line-height: 24px;
+    }
+
+    .circle {
+      gap: 5px;
+      font-size: 24px;
+    }
+
+    .circle > :first-child {
+      width: 30px;
+      height: 30px;
+    }
+
+    .grid-section {
+      padding: 35px 75px 35px;
+      gap: 35px;
+      margin-bottom: 35px;
+    }
+
+    .grid-section img {
+      margin: 0 0 0px 35px;
+    }
+
+    .grid-section .grid-item {
+      gap: 15px;
+    }
+
+    .grid-align {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .sections {
+      max-width: 480px;
+    }
+
+    .sections .section {
+      margin-bottom: 22px;
+    }
+
+    .section .section-content {
+      gap: 14px;
+      padding: 22px;
+    }
+
+    .section-header {
+      font-size: 26px;
+      line-height: 38px;
+    }
+
+    .section-description {
+      font-size: 10px;
+      line-height: 16px;
+    }
+
+    .circle {
+      gap: 4px;
+      font-size: 16px;
+    }
+
+    .circle > :first-child {
+      width: 20px;
+      height: 20px;
+    }
+
+    .grid-section {
+      padding: 20px 50px 20px;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .grid-section img {
+      margin: 0 0 0px 20px;
+      width: 20%;
+    }
+
+    .grid-section .grid-item {
+      gap: 10px;
+    }
+  }
+</style>
+
+<body>
+  <div class="sections">
+    <div id="youtube-link"></div>
+    <div class="!tw-flex-col !tw-bg-white !tw-mb-40 md:!tw-mb-80 section">
+      <img src="" alt="" class="tw-mb-10 tw-w-1/2" />
+      <img src="" alt="" class="!tw-w-full" />
+      <div
+        class="tw-px-10 tw-pt-10 tw-pb-5 tw-text-center tw-text-xl md:tw-text-2xl lg:tw-text-3xl"
+      >
+        This is the all new, never before seen, advanced 4D massage chair with
+        all the features you asked for and more. The Theramedic 4D LT Massage
+        Chair, approved and recommended by doctors is now equipped with Quad
+        Human Hand Massage Rollers on an even longer SL track to provide a more
+        human-like massage. We've also added a REAL Calf Massage and a
+        Centralized Heating System for Blood Circulation, so that discomfort is
+        at the least of your worries.
+      </div>
+      <div class="tw-flex tw-justify-center tw-gap-10">
+        <div class="circle">
+          <div style="background-color: #8e8680"></div>
+          <div>Taupe</div>
+        </div>
+        <div class="circle">
+          <div style="background-color: #3a2521"></div>
+          <div>Brown</div>
+        </div>
+        <div class="circle">
+          <div style="background-color: #1d1d1d"></div>
+          <div>Black</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tw-flex tw-flex-row-reverse tw-pb-0 section">
+      <div class="tw-flex tw-flex-col !tw-items-start !tw-mb-0 section">
+        <div class="!tw-pb-0 section-content section-header">
+          Customizable <br />
+          Advanced 4D Massage
+        </div>
+        <div class="tw-flex !tw-flex-row !tw-pb-0 section-content">
+          <div class="section-description">
+            The Theramedic <strong>4D Mechanism</strong> is equipped with 5
+            different levels of TRUE 4D, <strong>6 speed levels</strong>, and
+            <strong>3 width ranges</strong>; all customizable so that you can
+            experience comfort like no other.
+          </div>
+          <img src="" alt="" class="!tw-w-1/2" />
+        </div>
+      </div>
+    </div>
+    <div class="tw-flex-row-reverse section">
+      <img src="" alt="" />
+      <div class="!tw-pr-0 section-content">
+        <div class="section-header">Ergonomic <br />SL-Track Massage</div>
+        <div class="tw-w-4/5 section-description">
+          The longer SL track is a combination of <strong>two tracks</strong> S
+          and L, which allows the rollers to reach more parts of your body for
+          faster recovery. While the S Track contours the natural curvature of
+          your spine, the L track extends from your neck, all the way past your
+          lower back, and wraps underneath your glutes.
+        </div>
+      </div>
+    </div>
+    <div class="tw-flex section">
+      <div class="!tw-pr-0 section-content">
+        <div class="section-header">
+          Smart <br />
+          Body Scan System
+        </div>
+        <div class="section-description">
+          Before every massage, the Theramedic 4D LT will perform a
+          <strong> smart body scan </strong>. During this stage, the Smart
+          Vertebrae Pressure Point Detecting System will locate the neck,
+          shoulders, upper and lower back to ensure the recommended amount of
+          pressure is applied during the massage. All this can be re-calibrated
+          and customized if needed.
+        </div>
+      </div>
+      <img src="" alt="" />
+    </div>
+    <div class="tw-flex-col-reverse section">
+      <img src="" alt="" />
+      <div class="section-content">
+        <div class="tw-text-center section-header">Technology Space Saving</div>
+        <div class="section-description">
+          Designed to fit. Our chairs have a special
+          <strong>space-saving technology</strong>
+          that glides the chair forward before reclining back, so you don't have
+          to sacrifice living space.
+        </div>
+      </div>
+    </div>
+    <div class="tw-flex tw-flex-col section">
+      <div class="!tw-pb-0 section-content">
+        <div class="tw-text-center section-header">Zero Gravity</div>
+        <div class="section-description">
+          Zero Gravity is the position where your legs are raised above your
+          heart, evenly distributing the weight along your body. This reduces
+          pressure along your spine, lower back, and pelvic area. A<strong>
+            2 Stage Zero</strong
+          >
+          Gravity position enters the beyond, not only reducing pressure along
+          your spine but also allows for a deeper tissue massage.
+        </div>
+      </div>
+      <img src="" alt="" class="!tw-w-full" />
+    </div>
+    <div class="tw-flex tw-flex-col section">
+      <div class="!tw-pb-0 section-content">
+        <div class="section-header">
+          5 Adjustment <br />
+          Air Compression Massage
+        </div>
+        <div class="section-description">
+          According to research, compression massage is recommended for
+          releasing tightness in the muscle and for promoting blood circulation.
+          The air cells located in the shoulders rotate your shoulders back and
+          down to open up your chest to promote better posture. Additional
+          airbags are located in the back, waist, hip, calf and feet area for a
+          full body compression massage. A
+          <strong>5 level air</strong> compression adjuster allows you to adjust
+          the strength of the compression massage to your needs.
+        </div>
+      </div>
+      <img src="" alt="" class="!tw-w-1/3" />
+    </div>
+    <div class="tw-flex section">
+      <div class="section-content">
+        <div class="!tw-text-red-500 section-header">Back Heating</div>
+        <div class="section-description">
+          The Theramedic 4D LT has an adjustable
+          <strong class="!tw-text-red-500">3 level heating pad</strong> located
+          on the Lumbar area. Heating the body's temperature is known to
+          increase blood circulation and loosen tense muscles.
+        </div>
+      </div>
+      <img src="" alt="" />
+    </div>
+    <div class="!tw-grid-cols-1 md:!tw-grid-cols-2 grid-section tw-text-black">
+      <div
+        class="tw-flex tw-justify-center tw-items-center tw-gap-5 tw-col-span-1 md:tw-col-span-2 tw-text-2xl tw-text-center md:tw-text-4xl"
+      >
+        <strong>12 Auto Massage Modes</strong>
+      </div>
+      <div class="tw-flex tw-items-center tw-gap-3 tw-gap-y-6 tw-text-white">
+        <div class="tw-flex tw-justify-center tw-items-center tw-h-12 tw-w-12">
+          <img src="" alt="" class="!tw-ml-0 !tw-h-full !tw-w-fit" />
+        </div>
+        <div class="tw-flex tw-flex-col tw-font-bold">
+          <div><strong>Chair Yoga</strong></div>
+          <div class="!tw-font-light">
+            Relax muscles, boost circulation, sporty.
+          </div>
+        </div>
+      </div>
+      <div class="tw-flex tw-items-center tw-gap-3 tw-text-white">
+        <div class="tw-flex tw-justify-center tw-items-center tw-h-12 tw-w-12">
+          <img src="" alt="" class="!tw-ml-0 !tw-h-full !tw-w-fit" />
+        </div>
+        <div class="tw-flex tw-flex-col tw-font-bold">
+          <div><strong>Neck &amp; Shoulder</strong></div>
+          <div class="!tw-font-light">Deep tissue, neck/shoulder/back.</div>
+        </div>
+      </div>
+      <div class="tw-flex tw-items-center tw-gap-3 tw-text-white">
+        <div class="tw-flex tw-justify-center tw-items-center tw-h-12 tw-w-12">
+          <img src="" alt="" class="!tw-ml-0 !tw-h-full !tw-w-fit" />
+        </div>
+        <div class="tw-flex tw-flex-col tw-font-bold">
+          <div><strong>Gentle Yoga</strong></div>
+          <div class="!tw-font-light">
+            Thai stretch, kneading and flexibility.
+          </div>
+        </div>
+      </div>
+      <div class="tw-flex tw-items-center tw-gap-3 tw-text-white">
+        <div class="tw-flex tw-justify-center tw-items-center tw-h-12 tw-w-12">
+          <img src="" alt="" class="!tw-ml-0 !tw-h-full !tw-w-fit" />
+        </div>
+        <div class="tw-flex tw-flex-col tw-font-bold">
+          <div><strong>Back &amp; Spine</strong></div>
+          <div class="!tw-font-light">Deep tissue, back/lower back focus.</div>
+        </div>
+      </div>
+      <div class="tw-flex tw-items-center tw-gap-3 tw-text-white">
+        <div class="tw-flex tw-justify-center tw-items-center tw-h-12 tw-w-12">
+          <img src="" alt="" class="!tw-ml-0 !tw-h-full !tw-w-fit" />
+        </div>
+        <div class="tw-flex tw-flex-col tw-font-bold">
+          <div><strong>Power Yoga</strong></div>
+          <div class="!tw-font-light">
+            Lower body knot stretch, hip/lumbar compression.
+          </div>
+        </div>
+      </div>
+      <div class="tw-flex tw-items-center tw-gap-3 tw-text-white">
+        <div class="tw-flex tw-justify-center tw-items-center tw-h-12 tw-w-12">
+          <img src="" alt="" class="!tw-ml-0 !tw-h-full !tw-w-fit" />
+        </div>
+        <div class="tw-flex tw-flex-col tw-font-bold">
+          <div><strong>Waist &amp; Hip</strong></div>
+          <div class="!tw-font-light">Deep tissue, hip/lower body focus.</div>
+        </div>
+      </div>
+      <div class="tw-flex tw-items-center tw-gap-3 tw-text-white">
+        <div class="tw-flex tw-justify-center tw-items-center tw-h-12 tw-w-12">
+          <img src="" alt="" class="!tw-ml-0 !tw-h-full !tw-w-fit" />
+        </div>
+        <div class="tw-flex tw-flex-col tw-font-bold">
+          <div><strong>Royal Treatment</strong></div>
+          <div class="!tw-font-light">Powerful massage, revitalizes.</div>
+        </div>
+      </div>
+      <div class="tw-flex tw-items-center tw-gap-3 tw-text-white">
+        <div class="tw-flex tw-justify-center tw-items-center tw-h-12 tw-w-12">
+          <img src="" alt="" class="!tw-ml-0 !tw-h-full !tw-w-fit" />
+        </div>
+        <div class="tw-flex tw-flex-col tw-font-bold">
+          <div><strong>Morning Buzz</strong></div>
+          <div class="!tw-font-light">Positivity-boosting massage.</div>
+        </div>
+      </div>
+      <div class="tw-flex tw-items-center tw-gap-3 tw-text-white">
+        <div class="tw-flex tw-justify-center tw-items-center tw-h-12 tw-w-12">
+          <img src="" alt="" class="!tw-ml-0 !tw-h-full !tw-w-fit" />
+        </div>
+        <div class="tw-flex tw-flex-col tw-font-bold">
+          <div><strong>Stress Relief</strong></div>
+          <div class="!tw-font-light">
+            Neck/shoulder pain relief, medium intensity.
+          </div>
+        </div>
+      </div>
+      <div class="tw-flex tw-items-center tw-gap-3 tw-text-white">
+        <div class="tw-flex tw-justify-center tw-items-center tw-h-12 tw-w-12">
+          <img src="" alt="" class="!tw-ml-0 !tw-h-full !tw-w-fit" />
+        </div>
+        <div class="tw-flex tw-flex-col tw-font-bold">
+          <div><strong>Refreshing Nap</strong></div>
+          <div class="!tw-font-light">
+            Diverse methods, refresh, soothe tension.
+          </div>
+        </div>
+      </div>
+      <div class="tw-flex tw-items-center tw-gap-3 tw-text-white">
+        <div class="tw-flex tw-justify-center tw-items-center tw-h-12 tw-w-12">
+          <img src="" alt="" class="!tw-ml-0 !tw-h-full !tw-w-fit" />
+        </div>
+        <div class="tw-flex tw-flex-col tw-font-bold">
+          <div><strong>Gentle Care</strong></div>
+          <div class="!tw-font-light">Lumbar relief, low intensity</div>
+        </div>
+      </div>
+      <div class="tw-flex tw-items-center tw-gap-3 tw-text-white">
+        <div class="tw-flex tw-justify-center tw-items-center tw-h-12 tw-w-12">
+          <img src="" alt="" class="!tw-ml-0 !tw-h-full !tw-w-fit" />
+        </div>
+        <div class="tw-flex tw-flex-col tw-font-bold">
+          <div><strong>Sweet Dreams</strong></div>
+          <div class="!tw-font-light">
+            Calm massage, aids sleep, insomnia help.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lg:tw-grid-cols-3 grid-section tw-text-black">
+      <div
+        class="tw-flex tw-justify-center tw-items-center tw-gap-5 tw-col-span-2 lg:tw-col-span-3 tw-text-2xl tw-text-center md:tw-text-4xl"
+      >
+        <strong>6 Manual Massage Modes</strong>
+      </div>
+      <div class="tw-flex-col grid-item tw-text-center">
+        <img src="" alt="" class="!tw-ml-0" />
+        <div><strong>Kneading</strong></div>
+      </div>
+      <div class="tw-flex-col grid-item tw-text-center">
+        <img src="" alt="" class="!tw-ml-0" />
+        <div><strong>Tapping</strong></div>
+      </div>
+      <div class="tw-flex-col grid-item tw-text-center">
+        <img src="" alt="" class="!tw-ml-0" />
+        <div><strong>Knocking</strong></div>
+      </div>
+      <div class="tw-flex-col grid-item tw-text-center">
+        <img src="" alt="" class="!tw-ml-0" />
+        <div><strong>Shiatsu</strong></div>
+      </div>
+      <div class="tw-flex-col grid-item tw-text-center">
+        <img src="" alt="" class="!tw-ml-0" />
+        <div><strong>Sync</strong></div>
+      </div>
+      <div class="tw-flex-col grid-item tw-text-center">
+        <img src="" alt="" class="!tw-ml-0" />
+        <div><strong>4D Shiatsu</strong></div>
+      </div>
+    </div>
+
+    <div class="tw-flex-row-reverse section">
+      <img src="" alt="" class="" />
+      <div class="section-content">
+        <div class="section-header">Extendable Footrest</div>
+        <div class="section-description">
+          The footrest automatically extends to the user's leg length, you may
+          use the quick controller rotary switch to readjust the footrest
+          according to your preference. The footrest can extend by
+          <strong>17cm</strong>
+          automatically for various users of different height ranges.
+        </div>
+      </div>
+    </div>
+    <div class="tw-flex tw-flex-col section">
+      <div class="tw-p-4 md:p-[50px] !tw-pb-0 section-header">
+        True Calf Kneading Design
+      </div>
+      <div class="tw-flex !tw-flex-row !tw-pb-0 !tw-pl-0 section-content">
+        <img src="" alt="" class="!tw-w-1/2" />
+        <div class="section-description">
+          Rotating in a circular motion, the Theramedic 4D massage chair mimics
+          a real human-like calf massage. By adding another dimension to the
+          airbags, our <strong>calf massage</strong> provide real deep tissue
+          massage while also focusing on the key pressure points of foot
+          reflexology.
+        </div>
+      </div>
+    </div>
+    <div class="tw-flex-row-reverse section">
+      <img src="" alt="" class="tw-self-end" />
+      <div class="section-content">
+        <div class="section-header">Bluetooth Audio</div>
+        <div class="section-description">
+          Research shows that music is important for your emotional well-being,
+          physical health and cognitive skills. Tune in to your favorite music
+          and immerse yourself in a relaxing massage with a compatible
+          <strong> bluetooth device. </strong>
+        </div>
+      </div>
+    </div>
+    <div class="tw-flex-col section">
+      <div class="tw-p-4 md:p-[50px] tw-pb-0 section-header">
+        Quick Side Panel Controller
+      </div>
+      <div class="!tw-flex-row section-content">
+        <img src="" alt="" class="!tw-w-1/2" />
+        <div class="section-description">
+          <strong>Easily control</strong> the chair with a quick button and
+          dial. Located on the top left portion of the arm rest, the controller
+          is designed so you can easily adjust the 4D intensity, reclining
+          positions, Zero Gravity, Auto Programs, and Heat without using a
+          remote device.
+        </div>
+      </div>
+    </div>
+    <div class="tw-flex-row-reverse section">
+      <img src="" alt="" class="!tw-self-end" />
+      <div class="section-content">
+        <div class="section-header">Armrest Control Panel</div>
+        <div class="section-description">
+          <div>- Power/auto massage</div>
+          <div>- Pause/resume</div>
+          <div>- Zero gravity position</div>
+          <div>- Prompt voice</div>
+          <div>- Lsg extends/retracts</div>
+          <div>- Rotary switch</div>
+          <div>- 4D massage</div>
+          <div>- Back heat</div>
+          <div>- Air pressure massage</div>
+          <div>- Back up/down</div>
+          <div>- Feet up/down</div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <img src="" alt="" class="" />
+      <div class="section-content">
+        <div class="section-header">Foot <br />&amp; Calf Roller</div>
+        <div class="section-description">
+          More rollers have been included in the foot portion of the Theramedic
+          4D than any other chair in the market. Because we're on our feet
+          majority of our day, we wanted to put more focus on the to help with
+          fatigue. This chair is compact with
+          <strong>3 all-directional spinning</strong>
+          reflexology rollers located at the bottom of the feet with 2 located
+          on the calf.
+        </div>
+      </div>
+    </div>
+    <div class="tw-flex-col section">
+      <div class="tw-p-4 md:p-[50px] tw-pb-0 section-header">
+        4D Child Safety Sensor
+      </div>
+      <div class="tw-items-center section-content">
+        <img src="" alt="" class="!tw-w-full md:!tw-w-2/3" />
+        <div class="section-description">
+          We really care about your safety and those around you, so we've added
+          an
+          <strong>additional safety feature</strong> that no other massage chair
+          has. The Theramedic 4D LT has a built in child safety to lower the
+          chances of accident with young children and pets.
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <img src="" alt="" class="tw-self-end" />
+      <div class="section-content">
+        <div class="section-header">Wireless &amp; USB Charger</div>
+        <div class="section-description">
+          <strong>Wireless charging</strong> for convenience to charge any
+          compatible device when needed. <strong>USB port</strong> also
+          available next to the mobile phone/controller holder for additional
+          charging.
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="tw-flex tw-justify-between tw-gap-5 md:tw-gap-10 tw-mb-5 md:tw-mb-10"
+    >
+      <div
+        class="tw-flex !tw-flex-col-reverse tw-flex-1 tw-justify-between !tw-p-0 md:tw-text-xl lg:tw-text-2xl section-content"
+        style="background-color: var(--section-bg-color)"
+      >
+        <img src="" alt="" class="" />
+        <div
+          class="tw-text-right md:tw-mb-2 tw-p-10 tw-font-semibold tw-text-sm tw-text-white md:tw-text-xl lg:tw-text-2xl"
+        >
+          Mobile Phone Holder
+        </div>
+      </div>
+      <div
+        class="tw-relative tw-flex !tw-flex-col tw-flex-1 tw-justify-between !tw-gap-0 !tw-p-0 md:tw-text-xl lg:tw-text-2xl section-content"
+        style="background-color: var(--section-bg-color)"
+      >
+        <div
+          class="md:tw-mb-2 tw-p-10 tw-font-semibold tw-text-left tw-text-sm tw-text-white md:tw-text-xl lg:tw-text-2xl"
+        >
+          Remote
+        </div>
+        <img src="" alt="" class="tw-self-end tw-w-1/2" />
+      </div>
+    </div>
+
+    <div class="section-dimensions">
+      <div
+        class="tw-p-10 tw-font-bold tw-text-3xl tw-text-center md:tw-text-4xl lg:tw-text-5xl"
+      >
+        Dimensions
+      </div>
+      <div
+        class="tw-flex md:tw-flex-row tw-flex-col tw-justify-center tw-gap-5 md:tw-gap-10"
+      >
+        <img src="" alt="" class="tw-min-w-0" />
+        <img src="" alt="" class="tw-min-w-0" />
+      </div>
+    </div>
+    
+<section>
+  <div class="tw-p-10 tw-font-bold tw-text-3xl tw-text-center md:tw-text-4xl lg:tw-text-5xl">
+    Specification
+  </div>
+  <div class="tw-font-normal tw-text-xl">
+    <div class="tw-flex lg:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+      <div class="tw-w-52 tw-font-bold">Product Name</div>
+      <div>4D LT</div>
+    </div>
+    <div class="tw-flex lg:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+      <div class="tw-shrink-0 tw-w-52 tw-font-bold">User Manual</div>
+      <div class="tw-gap-2 tw-grid tw-grid-cols-2 tw-w-full">
+        <a class="!tw-text-red-500 !tw-no-underline" href="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/Theramedic_4D_LT_manual_Web.pdf" target="_blank">Download</a>
+      </div>
+    </div>
+    <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+      <div class="tw-shrink-0 tw-w-52 tw-font-bold">Power Supply</div>
+      <div>110 - 120V</div>
+    </div>
+    <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+      <div class="tw-shrink-0 tw-w-52 tw-font-bold">Rate Frequency</div>
+      <div>50 / 60Hz</div>
+    </div>
+    <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+      <div class="tw-shrink-0 tw-w-52 tw-font-bold">Chair <br class="lg:tw-block tw-hidden" /> Dimensions <br /> (W x L x H)</div>
+      <div class="tw-gap-2 tw-grid lg:tw-grid-cols-2 tw-w-full">
+        <div>
+          <div class="tw-font-bold tw-text-xl">Upright</div>
+          <div>34.0" x 64.0" x 48.0"</div>
+        </div>
+        <div>
+          <div class="tw-font-bold tw-text-xl">Reclined</div>
+          <div>34.0" x 72.0" x 45.0"</div>
+        </div>
+      </div>
+    </div>
+    <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+      <div class="tw-shrink-0 tw-w-52 tw-font-bold">Chair Weight</div>
+      <div>342.8 lb</div>
+    </div>
+    <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+      <div class="tw-shrink-0 tw-w-52 tw-font-bold">Width</div>
+      <div class="tw-gap-2 tw-grid tw-grid-cols-2 tw-w-full">
+        <div>
+          <div class="tw-font-bold tw-text-xl">Shoulder</div>
+          <div>22.0"</div>
+        </div>
+        <div>
+          <div class="tw-font-bold tw-text-xl">Seat</div>
+          <div>19.0"</div>
+        </div>
+      </div>
+    </div>
+
+<div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+  <div class="tw-shrink-0 tw-w-52 tw-font-bold">Minimum Door Width</div>
+  <div class="tw-gap-2 tw-grid tw-grid-cols-2 tw-w-full">
+    <div>
+      34.0"
+    </div>
+  </div>
+</div>
+
+    <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+      <div class="tw-shrink-0 tw-w-52 tw-font-bold">User Maximum Weight</div>
+      <div>260 lb</div>
+    </div>
+    <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+      <div class="tw-shrink-0 tw-w-52 tw-font-bold">Package <br class="lg:tw-block tw-hidden" /> Dimensions <br /> (W x L x H)</div>
+      <div class="tw-gap-2 tw-grid lg:tw-grid-cols-3 tw-w-full"><div><div class="tw-font-bold tw-text-xl">Box 1</div><div>64.6" x 32.9" x 34.3"</div></div><div><div class="tw-font-bold tw-text-xl">Box 2</div><div>49.2" x 15.4" x 27.6"</div></div><div><div class="tw-font-bold tw-text-xl">Box 3</div><div>24.8" x 23.6" x 25.2"</div></div></div>
+    </div>
+    <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
+      <div class="tw-shrink-0 tw-w-52 tw-font-bold">Package Weight</div>
+      <div class="tw-gap-2 tw-grid lg:tw-grid-cols-3 tw-w-full"><div><div class="tw-font-bold tw-text-xl">Box 1</div><div>260.1 lb</div></div><div><div class="tw-font-bold tw-text-xl">Box 2</div><div>63.9 lb</div></div><div><div class="tw-font-bold tw-text-xl">Box 3</div><div>74.9 lb</div></div></div>
+    </div>
+  </div>
+</section>
+
+  </div>
+</body>
+
+<script>
+  const getImages = () => {
+    document.querySelectorAll(".sections img").forEach((img, i) => {
+      img.src = imgs[i].img_src
+    })
+  }
+  const createVideoDOM = () => {
+    const getYoutubeSrc = (src) => {
+      const regex = /[a-z0-9_-]{11}/gi
+
+      const id = src.match(regex)[0]
+      const dst = "https://www.youtube.com/embed/" + id + "?mute=1&autoplay=1"
+      return dst
+    }
+    const iframe = document.createElement("iframe")
+    iframe.classList = "tw-aspect-video tw-w-full tw-mb-10"
+    try {
+      iframe.src = getYoutubeSrc(youtube_link)
+      document.getElementById("youtube-link").appendChild(iframe)
+    } catch (err) {
+      console.log(err)
+    }
+  }
+  const initializeProductDescription = () => {
+    try {
+      getImages()
+    } catch (error) {
+      console.log(error)
+    }
+    try {
+      createVideoDOM()
+    } catch (error) {
+      console.log(error)
+    }
+  }
+  initializeProductDescription()
+</script>
