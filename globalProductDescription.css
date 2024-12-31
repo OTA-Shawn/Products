@@ -347,9 +347,19 @@
   margin-bottom: 1.25rem;
 }
 
+.tw-mx-40 {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
 .tw-mx-20 {
   margin-left: 5rem;
   margin-right: 5rem;
+}
+
+.tw-mx-28 {
+  margin-left: 7rem;
+  margin-right: 7rem;
 }
 
 .\!tw-mb-0 {
@@ -644,32 +654,16 @@
   height: 2rem;
 }
 
+.tw-h-96 {
+  height: 24rem;
+}
+
 .tw-h-auto {
   height: auto;
 }
 
 .tw-h-full {
   height: 100%;
-}
-
-.tw-h-96 {
-  height: 24rem;
-}
-
-.tw-h-80 {
-  height: 20rem;
-}
-
-.tw-h-40 {
-  height: 10rem;
-}
-
-.tw-h-20 {
-  height: 5rem;
-}
-
-.tw-h-52 {
-  height: 13rem;
 }
 
 .tw-min-h-0 {
@@ -1061,10 +1055,6 @@
   justify-content: flex-start !important;
 }
 
-.tw-justify-start {
-  justify-content: flex-start;
-}
-
 .\!tw-justify-end {
   justify-content: flex-end !important;
 }
@@ -1095,10 +1085,6 @@
 
 .\!tw-justify-stretch {
   justify-content: stretch !important;
-}
-
-.tw-justify-stretch {
-  justify-content: stretch;
 }
 
 .\!tw-justify-items-center {
@@ -1153,6 +1139,10 @@
   gap: 1rem;
 }
 
+.tw-gap-40 {
+  gap: 10rem;
+}
+
 .tw-gap-5 {
   gap: 1.25rem;
 }
@@ -1171,10 +1161,6 @@
 
 .tw-gap-\[6px\] {
   gap: 6px;
-}
-
-.tw-gap-40 {
-  gap: 10rem;
 }
 
 .tw-gap-x-10 {
@@ -1474,6 +1460,11 @@
   background-color: rgb(156 163 175 / var(--tw-bg-opacity));
 }
 
+.tw-bg-gray-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+
 .tw-bg-neutral-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(245 245 245 / var(--tw-bg-opacity));
@@ -1507,6 +1498,11 @@
 .tw-bg-yellow-950 {
   --tw-bg-opacity: 1;
   background-color: rgb(66 32 6 / var(--tw-bg-opacity));
+}
+
+.tw-bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
 .tw-bg-\[url\(\'https\:\/\/cdn\.shopify\.com\/s\/files\/1\/0086\/1297\/0558\/files\/10\.Massage_Chair_Cover_Information_Background\.webp\?v\=1692717789\'\)\] {
@@ -1759,11 +1755,6 @@
   padding-bottom: 1.5rem;
 }
 
-.tw-px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
 .\!tw-pb-0 {
   padding-bottom: 0px !important;
 }
@@ -1946,6 +1937,10 @@
 
 .tw-font-serif {
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.tw-font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .\!tw-text-lg {
@@ -2265,6 +2260,21 @@
 .tw-text-yellow-400 {
   --tw-text-opacity: 1;
   color: rgb(250 204 21 / var(--tw-text-opacity));
+}
+
+.tw-text-stone-600 {
+  --tw-text-opacity: 1;
+  color: rgb(87 83 78 / var(--tw-text-opacity));
+}
+
+.tw-text-zinc-600 {
+  --tw-text-opacity: 1;
+  color: rgb(82 82 91 / var(--tw-text-opacity));
+}
+
+.tw-text-zinc-500 {
+  --tw-text-opacity: 1;
+  color: rgb(113 113 122 / var(--tw-text-opacity));
 }
 
 .\!tw-no-underline {
@@ -3122,6 +3132,11 @@ video {
     margin-bottom: 5rem;
   }
 
+  .lg\:tw-mx-40 {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
   .lg\:\!tw-mb-0 {
     margin-bottom: 0px !important;
   }
@@ -3422,6 +3437,14 @@ video {
     width: 100%;
   }
 
+  .lg\:tw-w-\[768px\] {
+    width: 768px;
+  }
+
+  .lg\:tw-w-8 {
+    width: 2rem;
+  }
+
   .lg\:tw-basis-1\/2 {
     flex-basis: 50%;
   }
@@ -3547,13 +3570,13 @@ video {
     gap: 2.25rem;
   }
 
-  .lg\:tw-gap-1 {
-    gap: 0.25rem;
-  }
-
   .lg\:tw-gap-x-40 {
     -moz-column-gap: 10rem;
          column-gap: 10rem;
+  }
+
+  .lg\:tw-gap-y-0 {
+    row-gap: 0px;
   }
 
   .lg\:tw-gap-y-10 {
@@ -3562,10 +3585,6 @@ video {
 
   .lg\:tw-gap-y-20 {
     row-gap: 5rem;
-  }
-
-  .lg\:tw-gap-y-0 {
-    row-gap: 0px;
   }
 
   .lg\:tw-space-y-1 > :not([hidden]) ~ :not([hidden]) {
@@ -3672,16 +3691,6 @@ video {
   .lg\:tw-py-40 {
     padding-top: 10rem;
     padding-bottom: 10rem;
-  }
-
-  .lg\:tw-py-10 {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
-
-  .lg\:tw-py-4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
   }
 
   .lg\:\!tw-pb-0 {
