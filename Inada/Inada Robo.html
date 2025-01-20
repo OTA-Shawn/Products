@@ -1108,7 +1108,7 @@
           </div>
         </div>
         <!-- <div
-          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+          class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b"
         >
           <div class="tw-w-52 tw-font-bold">
             <div>Maximum User Weight</div>
@@ -1120,40 +1120,27 @@
   </div>
 </body>
 <script>
-  const getImages = () => {
+  ;(function getImages() {
     document.querySelectorAll(".sections img").forEach((img, i) => {
       img.src = imgs[i].img_src
+      img.alt = imgs[i].img_name
     })
-  }
-  const createVideoDOM = () => {
+  })()
+  ;(function createVideoDOM() {
     const getYoutubeSrc = (src) => {
-      const regex =
-        /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/gi
+      const regex = /[a-z0-9_-]{11}/gi
+
       const id = src.match(regex)[0]
-      const embed = id.replace("watch?v=", "embed/")
-      const dst = "https://www." + embed + "?mute=1&autoplay=1"
+      const dst = "https://www.youtube.com/embed/" + id + "?mute=1&autoplay=1"
       return dst
     }
     const iframe = document.createElement("iframe")
-    iframe.classList = "tw-aspect-video tw-w-full tw-mb-10"
+    iframe.classList = "tw-aspect-video tw-w-full tw-mb-40"
     try {
       iframe.src = getYoutubeSrc(youtube_link)
       document.getElementById("youtube-link").appendChild(iframe)
     } catch (err) {
       console.log(err)
     }
-  }
-  const initializeProductDescription = () => {
-    try {
-      getImages()
-    } catch (error) {
-      console.log(error)
-    }
-    try {
-      createVideoDOM()
-    } catch (error) {
-      console.log(error)
-    }
-  }
-  initializeProductDescription()
+  })()
 </script>

@@ -50,17 +50,17 @@
 
 <body>
   <div
-    class="sections tw-font-sans md:tw-w-[768px] lg:tw-w-[1024px] tw-flex tw-flex-col min-[480px]:tw-w-[480px] tw-m-auto tw-leading-normal"
+    class="sections tw-m-auto tw-flex tw-flex-col tw-font-sans tw-leading-normal min-[480px]:tw-w-[480px] md:tw-w-[768px] lg:tw-w-[1024px]"
   >
     <div id="youtube-link"></div>
     <img src="" alt="" />
-    <div class="tw-text-center tw-p-10 tw-pt-4">
+    <div class="tw-p-10 tw-pt-4 tw-text-center">
       Now available in a bigger size. Share your J5 Mat with someone you love.
     </div>
 
     <img src="" alt="" />
     <img src="" alt="" />
-    <div class="tw-text-center tw-p-10 tw-pt-0">
+    <div class="tw-p-10 tw-pt-0 tw-text-center">
       <h3>What is Tourmaline?</h3>
       Tourmaline is a kind of multi-element natural ore. It emits high-efficient
       infrared ray. In the process of outside temperature change, the heat of
@@ -80,7 +80,7 @@
     </div>
 
     <img src="" alt="" />
-    <div class="tw-text-center tw-p-10 tw-pt-4">
+    <div class="tw-p-10 tw-pt-4 tw-text-center">
       Customizable temperature settings and location.
     </div>
 
@@ -88,19 +88,19 @@
 
     <section>
       <div
-        class="tw-p-10 tw-text-3xl md:tw-text-4xl lg:tw-text-5xl tw-text-center tw-font-bold"
+        class="tw-p-10 tw-text-center tw-text-3xl tw-font-bold md:tw-text-4xl lg:tw-text-5xl"
       >
         Specification
       </div>
       <div class="tw-text-xl tw-font-normal">
         <div
-          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
         >
           <div class="tw-w-52 tw-font-bold">Product Name</div>
           <div>J5 Jade Mat</div>
         </div>
         <div
-          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
         >
           <div class="tw-w-52 tw-font-bold">User Manual</div>
           <a
@@ -111,36 +111,36 @@
           >
         </div>
         <div
-          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
         >
           <div class="tw-w-52 tw-font-bold">Rated Voltage</div>
           <div>AC 110 - 120V</div>
         </div>
         <div
-          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
         >
           <div class="tw-w-52 tw-font-bold">Rated Power</div>
           <div>440W</div>
         </div>
         <div
-          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
         >
           <div class="tw-w-52 tw-shrink-0 tw-font-bold">
             <div>Dimensions</div>
             <div>(W x L)</div>
           </div>
-          <div class="tw-w-full tw-grid-cols-2 tw-grid tw-gap-2">
+          <div class="tw-grid tw-w-full tw-grid-cols-2 tw-gap-2">
             <div>59" x 78"</div>
           </div>
         </div>
 
         <div
-          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
         >
           <div class="tw-w-52 tw-shrink-0 tw-font-bold">
             <div>Weight</div>
           </div>
-          <div class="tw-w-full tw-grid-cols-2 tw-grid tw-gap-2">
+          <div class="tw-grid tw-w-full tw-grid-cols-2 tw-gap-2">
             <div>
               <div class="tw-font-bold">Net</div>
               <div>64.2 lbs</div>
@@ -156,12 +156,13 @@
   </div>
 </body>
 <script>
-  const getImages = () => {
+  ;(function getImages() {
     document.querySelectorAll(".sections img").forEach((img, i) => {
       img.src = imgs[i].img_src
+      img.alt = imgs[i].img_name
     })
-  }
-  const createVideoDOM = () => {
+  })()
+  ;(function createVideoDOM() {
     const getYoutubeSrc = (src) => {
       const regex = /[a-z0-9_-]{11}/gi
 
@@ -170,25 +171,12 @@
       return dst
     }
     const iframe = document.createElement("iframe")
-    iframe.classList = "tw-aspect-video tw-w-full tw-mb-10"
+    iframe.classList = "tw-aspect-video tw-w-full tw-mb-40"
     try {
       iframe.src = getYoutubeSrc(youtube_link)
       document.getElementById("youtube-link").appendChild(iframe)
     } catch (err) {
       console.log(err)
     }
-  }
-  const initializeProductDescription = () => {
-    try {
-      getImages()
-    } catch (error) {
-      console.log(error)
-    }
-    try {
-      createVideoDOM()
-    } catch (error) {
-      console.log(error)
-    }
-  }
-  initializeProductDescription()
+  })()
 </script>

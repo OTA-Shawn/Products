@@ -731,9 +731,9 @@
       </div>
     </div>
 
-    <!--<div class="section tw-flex tw-flex-col">
+    <!--<div class="tw-flex tw-flex-col section">
       <div class="tw-flex">
-        <div class="section-content !tw-gap-0 !tw-pb-0">
+        <div class="!tw-gap-0 !tw-pb-0 section-content">
           <div class="section-header">Heated Back Roller</div>
           <div class="section-header2">Comforting Massage</div>
           <div class="section-description">
@@ -743,9 +743,9 @@
         </div>
         <img src="" alt="" class="!tw-flex-initial" />
       </div>
-      <div class="tw-w-full tw-h-4 lg:tw-h-0 tw-bg-white"></div>
+      <div class="tw-bg-white tw-h-4 tw-w-full lg:tw-h-0"></div>
       <div class="tw-flex tw-flex-row-reverse lg:!tw-mt-[-10em]">
-        <div class="section-content !tw-gap-0 tw-justify-center !tw-pb-0">
+        <div class="tw-justify-center !tw-gap-0 !tw-pb-0 section-content">
           <div class="section-header">Calf Heating</div>
           <div class="section-description">
             the Soho II both rolls and scrapes your foot with extra care and
@@ -756,7 +756,7 @@
       </div>
     </div> -->
 
-    <!--<div class="section tw-flex tw-flex-row-reverse">
+    <!--<div class="tw-flex tw-flex-row-reverse section">
       <div class="section-content">
         <div class="section-header">Lumbar Heat Therapy</div>
         <div class="section-description">
@@ -1254,7 +1254,7 @@
           <strong class="" style="color: #2d59f2">Side</strong> Controller
         </div>
         <div
-          class="section-description max-[400px]:mb-[-1em] min-[450px]:tw-mb-6 md:tw-mb-24 lg:tw-mb-20"
+          class="max-[400px]:mb-[-1em] section-description min-[450px]:tw-mb-6 md:tw-mb-24 lg:tw-mb-20"
         >
           A side controller gives the user a more convenient access. You can
           control the power, angle of chair, different auto massage modes, leg
@@ -1336,7 +1336,7 @@
           <div>50/60 Hz</div>
         </div>
         <!-- <div
-          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+          class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b"
         >
           <div class="tw-w-52 tw-font-bold">Auto Timer</div>
           <div>20 minutes</div>
@@ -1386,12 +1386,12 @@
         </div>
 
         <!-- <div
-          class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+          class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b"
         >
-          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+          <div class="tw-shrink-0 tw-w-52 tw-font-bold">
             <div>Weight</div>
           </div>
-          <div class="tw-w-full tw-grid-cols-2 tw-grid tw-gap-2">
+          <div class="tw-gap-2 tw-grid tw-grid-cols-2 tw-w-full">
             <div>
               <div class="tw-font-bold">Net</div>
               <div>165 lbs</div>
@@ -1415,40 +1415,27 @@
   </div>
 </body>
 <script>
-  const getImages = () => {
+  ;(function getImages() {
     document.querySelectorAll(".sections img").forEach((img, i) => {
       img.src = imgs[i].img_src
+      img.alt = imgs[i].img_name
     })
-  }
-  const createVideoDOM = () => {
+  })()
+  ;(function createVideoDOM() {
     const getYoutubeSrc = (src) => {
-      const regex =
-        /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/gi
+      const regex = /[a-z0-9_-]{11}/gi
+
       const id = src.match(regex)[0]
-      const embed = id.replace("watch?v=", "embed/")
-      const dst = "https://www." + embed + "?mute=1&autoplay=1"
+      const dst = "https://www.youtube.com/embed/" + id + "?mute=1&autoplay=1"
       return dst
     }
     const iframe = document.createElement("iframe")
-    iframe.classList = "tw-aspect-video tw-w-full tw-mb-10"
+    iframe.classList = "tw-aspect-video tw-w-full tw-mb-40"
     try {
       iframe.src = getYoutubeSrc(youtube_link)
       document.getElementById("youtube-link").appendChild(iframe)
     } catch (err) {
       console.log(err)
     }
-  }
-  const initializeProductDescription = () => {
-    try {
-      getImages()
-    } catch (error) {
-      console.log(error)
-    }
-    try {
-      createVideoDOM()
-    } catch (error) {
-      console.log(error)
-    }
-  }
-  initializeProductDescription()
+  })()
 </script>

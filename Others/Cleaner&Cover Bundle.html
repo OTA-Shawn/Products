@@ -302,7 +302,7 @@
       </div>
 
       <div
-        class="mb-[24px] gap-[6px] px-[10px] lg:mb-[58px] tw-flex tw-flex-col tw-items-center tw-text-center"
+        class="gap-[6px] mb-[24px] lg:mb-[58px] px-[10px] tw-flex tw-flex-col tw-items-center tw-text-center"
       >
         <img src="" alt="" class="" />
         <div class="tw-flex tw-w-full tw-justify-evenly">
@@ -414,12 +414,13 @@
   </div>
 </body>
 <script>
-  const getImages = () => {
+  ;(function getImages() {
     document.querySelectorAll(".sections img").forEach((img, i) => {
       img.src = imgs[i].img_src
+      img.alt = imgs[i].img_name
     })
-  }
-  const createVideoDOM = () => {
+  })()
+  ;(function createVideoDOM() {
     const getYoutubeSrc = (src) => {
       const regex = /[a-z0-9_-]{11}/gi
 
@@ -428,25 +429,12 @@
       return dst
     }
     const iframe = document.createElement("iframe")
-    iframe.classList = "tw-aspect-video tw-w-full tw-mb-10"
+    iframe.classList = "tw-aspect-video tw-w-full tw-mb-40"
     try {
       iframe.src = getYoutubeSrc(youtube_link)
       document.getElementById("youtube-link").appendChild(iframe)
     } catch (err) {
       console.log(err)
     }
-  }
-  const initializeProductDescription = () => {
-    try {
-      getImages()
-    } catch (error) {
-      console.log(error)
-    }
-    try {
-      createVideoDOM()
-    } catch (error) {
-      console.log(error)
-    }
-  }
-  initializeProductDescription()
+  })()
 </script>

@@ -1183,13 +1183,13 @@
   </div>
 </body>
 <script>
-  const getImages = () => {
+  ;(function getImages() {
     document.querySelectorAll(".sections img").forEach((img, i) => {
       img.src = imgs[i].img_src
       img.alt = imgs[i].img_name
     })
-  }
-  const createVideoDOM = () => {
+  })()
+  ;(function createVideoDOM() {
     const getYoutubeSrc = (src) => {
       const regex = /[a-z0-9_-]{11}/gi
 
@@ -1205,18 +1205,5 @@
     } catch (err) {
       console.log(err)
     }
-  }
-  const initializeProductDescription = () => {
-    try {
-      getImages()
-    } catch (error) {
-      console.log(error)
-    }
-    try {
-      createVideoDOM()
-    } catch (error) {
-      console.log(error)
-    }
-  }
-  initializeProductDescription()
+  })()
 </script>

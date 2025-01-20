@@ -1033,12 +1033,13 @@ Heating Therapy</li>
 </body>
 
 <script>
-  const getImages = () => {
+  ;(function getImages() {
     document.querySelectorAll(".sections img").forEach((img, i) => {
       img.src = imgs[i].img_src
+      img.alt = imgs[i].img_name
     })
-  }
-  const createVideoDOM = () => {
+  })()
+  ;(function createVideoDOM() {
     const getYoutubeSrc = (src) => {
       const regex = /[a-z0-9_-]{11}/gi
 
@@ -1047,25 +1048,12 @@ Heating Therapy</li>
       return dst
     }
     const iframe = document.createElement("iframe")
-    iframe.classList = "tw-aspect-video tw-w-full tw-mb-10"
+    iframe.classList = "tw-aspect-video tw-w-full tw-mb-40"
     try {
       iframe.src = getYoutubeSrc(youtube_link)
       document.getElementById("youtube-link").appendChild(iframe)
     } catch (err) {
       console.log(err)
     }
-  }
-  const initializeProductDescription = () => {
-    try {
-      getImages()
-    } catch (error) {
-      console.log(error)
-    }
-    try {
-      createVideoDOM()
-    } catch (error) {
-      console.log(error)
-    }
-  }
-  initializeProductDescription()
+  })()
 </script>

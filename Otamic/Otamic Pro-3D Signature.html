@@ -1076,7 +1076,7 @@
       <div class="tw-flex tw-flex-col" style="background-color: #d3d2d5">
         <img src="" alt="" class="" />
         <div
-          class="section-content section-description p-[10%] !tw-block !tw-w-full tw-gap-0 tw-pt-0"
+          class="p-[10%] section-content section-description !tw-block !tw-w-full tw-gap-0 tw-pt-0"
         >
           Users can adjust 3D track and power the chair with the
           <strong> Wireless Charging Pad </strong> in the Otamic Signature.
@@ -1090,7 +1090,7 @@
 
     <div class="section tw-relative">
       <img src="" alt="" class="!tw-w-full" />
-      <div class="section-content bottom-[10%] tw-absolute tw-right-0 !tw-pb-0">
+      <div class="bottom-[10%] section-content tw-absolute tw-right-0 !tw-pb-0">
         <div class="section-header2" style="color: #dbd6d4">
           CHROMOTHERAPY LIGHTING
         </div>
@@ -1201,12 +1201,12 @@
         </div>
 
         <!-- <div
-        class="tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row tw-flex tw-flex-col"
+        class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b"
       >
-        <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+        <div class="tw-shrink-0 tw-w-52 tw-font-bold">
           <div>Weight</div>
         </div>
-        <div class="tw-w-full tw-grid-cols-2 tw-grid tw-gap-2">
+        <div class="tw-gap-2 tw-grid tw-grid-cols-2 tw-w-full">
           <div>
             <div class="tw-font-bold">Net</div>
             <div>165 lbs</div>
@@ -1230,13 +1230,13 @@
   </div>
 </body>
 <script>
-  const getImages = () => {
+  ;(function getImages() {
     document.querySelectorAll(".sections img").forEach((img, i) => {
       img.src = imgs[i].img_src
       img.alt = imgs[i].img_name
     })
-  }
-  const createVideoDOM = () => {
+  })()
+  ;(function createVideoDOM() {
     const getYoutubeSrc = (src) => {
       const regex = /[a-z0-9_-]{11}/gi
 
@@ -1245,25 +1245,12 @@
       return dst
     }
     const iframe = document.createElement("iframe")
-    iframe.classList = "tw-aspect-video tw-w-full tw-mb-10"
+    iframe.classList = "tw-aspect-video tw-w-full tw-mb-40"
     try {
       iframe.src = getYoutubeSrc(youtube_link)
       document.getElementById("youtube-link").appendChild(iframe)
     } catch (err) {
       console.log(err)
     }
-  }
-  const initializeProductDescription = () => {
-    try {
-      getImages()
-    } catch (error) {
-      console.log(error)
-    }
-    try {
-      createVideoDOM()
-    } catch (error) {
-      console.log(error)
-    }
-  }
-  initializeProductDescription()
+  })()
 </script>
