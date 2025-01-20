@@ -1219,46 +1219,4 @@
     }
   }
   initializeProductDescription()
-  ;(function cycleColors() {
-    const colors = ["blue", "orange", "purple", "pink"]
-    const circles = colors.map((color, index) =>
-      document.getElementById(`circle-${index + 1}`)
-    )
-    const leds = colors.map((color, index) =>
-      document.getElementById(`led-${index + 1}`)
-    )
-    let currentIndex = 0 // 초기 인덱스 설정
-
-    // 디스플레이를 업데이트하는 함수
-    function updateDisplay() {
-      colors.forEach((color, index) => {
-        if (index === currentIndex) {
-          // 활성화된 원: opacity-100
-          circles[index].classList.remove("tw-opacity-25")
-          circles[index].classList.add("tw-opacity-100")
-
-          // 활성화된 LED: block
-          leds[index].classList.remove("tw-hidden")
-          leds[index].classList.add("tw-block")
-        } else {
-          // 비활성화된 원: tw-opacity-25
-          circles[index].classList.remove("tw-opacity-100")
-          circles[index].classList.add("tw-opacity-25")
-
-          // 비활성화된 LED: hidden
-          leds[index].classList.remove("tw-block")
-          leds[index].classList.add("tw-hidden")
-        }
-      })
-
-      // 다음 인덱스로 업데이트 (순환)
-      currentIndex = (currentIndex + 1) % colors.length
-    }
-
-    // 초기 상태 설정
-    updateDisplay()
-
-    // 1초마다 updateDisplay 함수 호출
-    setInterval(updateDisplay, 2000)
-  })()
 </script>
