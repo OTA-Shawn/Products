@@ -462,7 +462,8 @@
 </style>
 <body>
   <div class="sections">
-    <div id="youtube-link"></div>
+    <div id="youtube-link"
+      class="[&>*]:tw-mb-40 [&>*]:tw-aspect-video [&>*]:tw-w-full"></div>
     <div class="!tw-flex-col !tw-bg-white !tw-mb-40 md:!tw-mb-80 section">
       <img src="" alt="" class="!tw-w-full" />
       <div
@@ -887,7 +888,7 @@
       return dst
     }
     const iframe = document.createElement("iframe")
-    iframe.classList = "tw-aspect-video tw-w-full tw-mb-40"
+    // iframe.classList = "tw-aspect-video tw-w-full tw-mb-40"
     try {
       iframe.src = getYoutubeSrc(youtube_link)
       document.getElementById("youtube-link").appendChild(iframe)

@@ -547,7 +547,10 @@
 
 <body>
   <div class="sections tw-font-bold">
-    <div id="youtube-link"></div>
+    <div
+      id="youtube-link"
+      class="[&>*]:tw-mb-40 [&>*]:tw-aspect-video [&>*]:tw-w-full"
+    ></div>
     <div class="tw-text-center tw-text-4xl md:tw-text-5xl lg:tw-text-6xl">
       ALLURE
     </div>
@@ -1269,7 +1272,7 @@
       return dst
     }
     const iframe = document.createElement("iframe")
-    iframe.classList = "tw-aspect-video tw-w-full tw-mb-40"
+    // iframe.classList = "tw-aspect-video tw-w-full tw-mb-40"
     try {
       iframe.src = getYoutubeSrc(youtube_link)
       document.getElementById("youtube-link").appendChild(iframe)

@@ -417,22 +417,23 @@ DISCOUNTINUED
   <div id="tab-buttons" class="mx-auto my-4 max-w-6xl">
     <button
       id="tab-button1"
-      class="active-tab inline-block px-1 py-2 text-center text-sm font-semibold text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"
+      class="inline-block px-1 py-2 font-semibold text-center text-gray-500 text-sm hover:text-gray-600 dark:hover:text-gray-300 dark:text-gray-400 active-tab"
     >
       Description
     </button>
     <button
       id="tab-button2"
-      class="t inline-block px-1 py-2 text-center text-sm font-semibold text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"
+      class="inline-block px-1 py-2 font-semibold text-center text-gray-500 text-sm hover:text-gray-600 dark:hover:text-gray-300 dark:text-gray-400 t"
     >
       Reviews
     </button>
   </div>
   <div class="sections">
-    <div id="youtube-link"></div>
-    <div class="section !mb-10 !flex-col !bg-white md:!mb-40">
+    <div id="youtube-link"
+      class="[&>*]:tw-mb-40 [&>*]:tw-aspect-video [&>*]:tw-w-full"></div>
+    <div class="!flex-col !bg-white !mb-10 md:!mb-40 section">
       <img src="" alt="" class="!w-full" />
-      <div class="px-10 pb-5 pt-10 text-center text-xl md:text-2xl lg:text-3xl">
+      <div class="px-10 pt-10 pb-5 text-center text-xl md:text-2xl lg:text-3xl">
         The Osaki OS-Aster has a modern design with slick line, a comfortable
         feel, and wide range of settings and capabilities. The OS-Aster can
         massage you from neck area to glutes and upper hamstrings with S,
@@ -443,13 +444,13 @@ DISCOUNTINUED
       </div>
     </div>
 
-    <div class="section !flex-col-reverse !bg-black md:!flex-row-reverse">
-      <div class="section-content !w-full">
-        <div class="section-header !text-white">
+    <div class="md:!flex-row-reverse !flex-col-reverse !bg-black section">
+      <div class="!w-full section-content">
+        <div class="!text-white section-header">
           <strong class="block !text-[#0510EB]">Intelligent</strong> Body
           Scanning
         </div>
-        <div class="section-description !text-[#808080]">
+        <div class="!text-[#808080] section-description">
           Sensor in the back massage module scans the curvature of user’s body
           for the accurate massager movement.
         </div>
@@ -457,10 +458,10 @@ DISCOUNTINUED
       <img src="" alt="" class="" />
     </div>
 
-    <div class="section !flex-col md:!flex-row">
-      <div class="section-content !w-full">
+    <div class="md:!flex-row !flex-col section">
+      <div class="!w-full section-content">
         <div class="section-header">SL-Track Massage</div>
-        <div class="section-description !text-[#808080]">
+        <div class="!text-[#808080] section-description">
           S, L-type backrest track fits the human body curve. As the roller
           system massages the neck area, it continues through to the lower back
           and then proceeds to massage the glutes and upper hamstrings.
@@ -468,10 +469,10 @@ DISCOUNTINUED
       </div>
       <img src="" alt="" class="" />
     </div>
-    <div class="section !flex-col">
-      <div class="section-content !w-full">
-        <div class="section-header text-center">Zero Gravity</div>
-        <div class="section-description !text-[#808080]">
+    <div class="!flex-col section">
+      <div class="!w-full section-content">
+        <div class="text-center section-header">Zero Gravity</div>
+        <div class="!text-[#808080] section-description">
           Inspired by NASA technology, the Zero gravity position is the perfect
           position to enjoy a massage, aligning your back relative to your thigh
           at an optimal level of comfort. When reclined into the zero-gravity
@@ -481,12 +482,12 @@ DISCOUNTINUED
       </div>
       <img src="" alt="" class="!w-2/3" />
     </div>
-    <div class="section !flex-col-reverse md:flex-row">
-      <div class="section-content !w-full">
+    <div class="md:flex-row !flex-col-reverse section">
+      <div class="!w-full section-content">
         <div class="section-header">
           <strong class="!text-[#0013FF]">Air</strong> Massage
         </div>
-        <div class="section-description !text-[#808080]">
+        <div class="!text-[#808080] section-description">
           There are multiple airbags located throughout the massage chair to
           offer a full body massage experience. The OS-Aster offers a total of
           18 airbags in the massage chair. Airbags are located at the shoulders,
@@ -497,12 +498,12 @@ DISCOUNTINUED
       </div>
       <img src="" alt="" class="" />
     </div>
-    <div class="section !flex-col-reverse md:!flex-row-reverse">
-      <div class="section-content !w-full">
+    <div class="md:!flex-row-reverse !flex-col-reverse section">
+      <div class="!w-full section-content">
         <div class="section-header">
           <strong class="block !text-[#E92D2D]">Lumbar</strong> Heat Therapy
         </div>
-        <div class="section-description !text-[#808080]">
+        <div class="!text-[#808080] section-description">
           With Aster’s heat shawl lumbar therapy, the incorporated graphene
           effectively warm and help ease soreness in the lower back area.
         </div>
@@ -511,12 +512,12 @@ DISCOUNTINUED
     </div>
 
     <div
-      class="col-span-2 flex items-center justify-center gap-5 bg-[var(--section-bg-color)] p-10 text-center text-2xl md:text-4xl"
+      class="flex justify-center items-center gap-5 col-span-2 bg-[var(--section-bg-color)] p-10 text-2xl text-center md:text-4xl"
     >
       <strong class="">6 Auto Massage Modes</strong>
     </div>
     <div
-      class="mb-10 grid grid-cols-2 bg-[var(--section-bg-color)] p-10 text-[var(--section-grid-color)] md:pl-[15%]"
+      class="grid grid-cols-2 text-[var(--section-grid-color)] bg-[var(--section-bg-color)] mb-10 p-10 md:pl-[15%]"
     >
       <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
         <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
@@ -544,12 +545,12 @@ DISCOUNTINUED
       </div>
     </div>
     <div
-      class="col-span-2 flex items-center justify-center gap-5 bg-[var(--section-bg-color)] p-10 text-center text-2xl md:text-4xl"
+      class="flex justify-center items-center gap-5 col-span-2 bg-[var(--section-bg-color)] p-10 text-2xl text-center md:text-4xl"
     >
       <strong class="">5 Manual Massage Modes</strong>
     </div>
     <div
-      class="mb-10 grid grid-cols-2 bg-[var(--section-bg-color)] p-10 text-[var(--section-grid-color)] md:pl-[15%]"
+      class="grid grid-cols-2 text-[var(--section-grid-color)] bg-[var(--section-bg-color)] mb-10 p-10 md:pl-[15%]"
     >
       <div class="flex items-center gap-1 pb-5 text-lg md:text-xl lg:text-2xl">
         <img src="" alt="" class="!w-12 md:!w-16 lg:!w-24" />
@@ -573,9 +574,9 @@ DISCOUNTINUED
       </div>
     </div>
 
-    <div class="section !flex-col md:flex-row">
+    <div class="md:flex-row !flex-col section">
       <img src="" alt="" class="md:!self-start" />
-      <div class="section-content !w-full">
+      <div class="!w-full section-content">
         <div class="section-header">Foot Roller Massage</div>
         <div class="section-description">
           OS-Aster has Two Rollers located on the bottom of the feet are
@@ -586,18 +587,18 @@ DISCOUNTINUED
         </div>
       </div>
     </div>
-    <div class="section !flex-col-reverse md:!flex-row-reverse">
+    <div class="md:!flex-row-reverse !flex-col-reverse section">
       <img src="" alt="" class="self-end" />
-      <div class="section-content !w-full">
+      <div class="!w-full section-content">
         <div class="section-header">Extendable Footrest</div>
         <div class="section-description">
           OS-Aster has Extendable Footrest which can be extended up to 7 inches.
         </div>
       </div>
     </div>
-    <div class="section !flex-col md:!flex-row">
+    <div class="md:!flex-row !flex-col section">
       <img src="" alt="" class="!w-full" />
-      <div class="section-content !w-full">
+      <div class="!w-full section-content">
         <div class="section-header">
           Easy to use <br />
           LCD Remote
@@ -611,16 +612,16 @@ DISCOUNTINUED
       </div>
     </div>
 
-    <div class="section-dimensions mb-20">
-      <div class="mt-40 text-center text-3xl lg:text-5xl">Dimensions</div>
+    <div class="mb-20 section-dimensions">
+      <div class="mt-40 text-3xl text-center lg:text-5xl">Dimensions</div>
       <div
-        class="flex flex-col items-center justify-between gap-5 md:flex-row md:gap-10"
+        class="flex md:flex-row flex-col justify-between items-center gap-5 md:gap-10"
       >
         <img src="" alt="" class="min-w-0" />
         <img src="" alt="" class="min-w-0" />
       </div>
     </div>
-    <div class="mb-20 grid grid-cols-3 justify-items-center gap-3">
+    <div class="justify-items-center gap-3 grid grid-cols-3 mb-20">
       <div class="circle">
         <div class="bg-[#B7AE9F]"></div>
         <div>Taupe</div>
@@ -640,7 +641,7 @@ DISCOUNTINUED
     </div>
   </div>
 
-  <section class="section-specs section-pad-bottom">
+  <section class="section-pad-bottom section-specs">
     <div class="table-tap">
       <div class="specs-section">
         <div class="specs-row">
@@ -727,7 +728,7 @@ DISCOUNTINUED
     if (youtube_link !== "") {
       var youtube_id = youtube_link.split("watch?v=")[1].split("&")[0]
       var src = `https://www.youtube.com/embed/${youtube_id}?autoplay=1&mute=1`
-      var embed_html = `<iframe class="w-full aspect-video mb-20" src="${src}"></iframe>`
+      var embed_html = `<iframe class="mb-20 w-full aspect-video" src="${src}"></iframe>`
       $("#youtube-link").append(embed_html)
     }
     $("#tab-button1").on("click", () => {

@@ -125,7 +125,10 @@
   <div
     class="sections tw-m-auto tw-flex tw-flex-col tw-font-sans tw-leading-normal min-[480px]:tw-w-[480px] md:tw-w-[768px] lg:tw-w-[1024px]"
   >
-    <div id="youtube-link"></div>
+    <div
+      id="youtube-link"
+      class="[&>*]:tw-mb-40 [&>*]:tw-aspect-video [&>*]:tw-w-full"
+    ></div>
 
     <img src="" alt="" class="" />
     <div class="tw-m-4 tw-mb-8">
@@ -387,7 +390,7 @@
       return dst
     }
     const iframe = document.createElement("iframe")
-    iframe.classList = "tw-aspect-video tw-w-full tw-mb-40"
+    // iframe.classList = "tw-aspect-video tw-w-full tw-mb-40"
     try {
       iframe.src = getYoutubeSrc(youtube_link)
       document.getElementById("youtube-link").appendChild(iframe)
