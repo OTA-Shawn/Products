@@ -5,32 +5,263 @@
   rel="stylesheet"
 />
 <link href="../globalProductDescription.css" rel="stylesheet" />
-
+<script>
+  const youtube_link =
+    "https://www.youtube.com/embed/vzFWBkuA_iA?autoplay=1&amp;mute=1"
+  const imgs = [
+    {
+      img_order: 1,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/1.maestroLE_2.0_main.webp",
+    },
+    {
+      img_order: 2,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/2.maestroLE_2.0_AI_series.webp",
+    },
+    {
+      img_order: 3,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.maestroLE_2.0_voice_control.webp",
+    },
+    {
+      img_order: 4,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4.maestroLE_2.0_4D.webp",
+    },
+    {
+      img_order: 5,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/5.maestroLE_2.0_SL-track.webp",
+    },
+    {
+      img_order: 6,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/6.maestroLE_2.0_mobile_ZG.webp",
+    },
+    {
+      img_order: 7,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/7.maestroLE_2.0_icon_ZG.webp",
+    },
+    {
+      img_order: 8,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/8.maestroLE_2.0_icon_space-saving.webp",
+    },
+    {
+      img_order: 9,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/9.maestroLE_2.0_air-cells.webp",
+    },
+    {
+      img_order: 10,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.maestroLE_2.0_icon_demo.webp",
+    },
+    {
+      img_order: 11,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/11.maestroLE_2.0_icon_relax.webp",
+    },
+    {
+      img_order: 12,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12.maestroLE_2.0_icon_swing.webp",
+    },
+    {
+      img_order: 13,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/13.maestroLE_2.0_icon_stretch.webp",
+    },
+    {
+      img_order: 14,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/14.maestroLE_2.0_icon_scraping.webp",
+    },
+    {
+      img_order: 15,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/15.maestroLE_2.0_icon_shiatsu.webp",
+    },
+    {
+      img_order: 16,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/16.maestroLE_2.0_icon_gentle_relief.webp",
+    },
+    {
+      img_order: 17,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/17.maestroLE_2.0_icon_rejuvenate.webp",
+    },
+    {
+      img_order: 18,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/18.maestroLE_2.0_icon_recover.webp",
+    },
+    {
+      img_order: 19,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19.maestroLE_2.0_icon_rolling.webp",
+    },
+    {
+      img_order: 20,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/20.maestroLE_2.0_icon_deep_tissue.webp",
+    },
+    {
+      img_order: 21,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/21.maestroLE_2.0_icon_kidney_care.webp",
+    },
+    {
+      img_order: 22,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/22.maestroLE_2.0_icon_heating.webp",
+    },
+    {
+      img_order: 23,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/23.maestroLE_2.0_icon_calf_kneading.webp",
+    },
+    {
+      img_order: 24,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/24.maestroLE_2.0_icon_foot_kneading.webp",
+    },
+    {
+      img_order: 25,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/25.maestroLE_2.0_icon_rolling.webp",
+    },
+    {
+      img_order: 26,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/26.maestroLE_2.0_icon_kneading.webp",
+    },
+    {
+      img_order: 27,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/27.maestroLE_2.0_icon_shiatsu.webp",
+    },
+    {
+      img_order: 28,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/28.maestroLE_2.0_icon_tapping.webp",
+    },
+    {
+      img_order: 29,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/29.maestroLE_2.0_icon_clapping.webp",
+    },
+    {
+      img_order: 30,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/30.maestroLE_2.0_foot-rollers.webp",
+    },
+    {
+      img_order: 31,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/31.maestroLE_2.0_footrest.webp",
+    },
+    {
+      img_order: 34,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/34.maestroLE_2.0_touchscreen.webp",
+    },
+    {
+      img_order: 35,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/35.maestroLE_2.0_shortcut.webp",
+    },
+    {
+      img_order: 36,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/36.maestroLE_2.0_bluetooth.webp",
+    },
+    {
+      img_order: 37,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/37.maestroLE_2.0_phone_charging.webp",
+    },
+    {
+      img_order: 40,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/40.maestroLE_2.0_assembled.webp",
+    },
+    {
+      img_order: 41,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/41.maestroLE_2.0_disassembled.webp",
+    },
+    {
+      img_order: 38,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/38.maestroLE_2.0_dimension1.webp",
+    },
+    {
+      img_order: 39,
+      img_name: "maestroLE_2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/39.maestroLE_2.0_dimension2.webp",
+    },
+  ]
+</script>
 <body>
   <main
-    class="tw-flex tw-flex-col tw-m-auto md:tw-w-[768px] lg:tw-w-[1024px] min-[480px]:tw-w-[480px] tw-font-sans tw-leading-normal sections"
+    class="tw-flex tw-flex-col tw-m-auto min-[480px]:tw-w-[480px] md:tw-w-[768px] lg:tw-w-[1024px] tw-font-sans tw-leading-normal sections"
   >
-    <iframe
-      style="aspect-ratio: 16/9; width: 100%; padding-bottom: 3em"
-      src="https://www.youtube.com/embed/vzFWBkuA_iA?autoplay=1&amp;mute=1"
-    ></iframe>
+    <div
+      id="youtube-link"
+      class="[&>*]:tw-mb-40 [&>*]:tw-w-full [&>*]:tw-aspect-video"
+    ></div>
 
-    <div class="tw-font-semibold tw-text-3xl tw-text-center lg:tw-text-7xl">
-      Osaki 4D <br />
-      Maestro LE 2.0
-    </div>
     <section
       class="lg:tw-relative tw-flex tw-flex-col tw-justify-center tw-items-center"
     >
       <div class="">
-        <img
-          class=""
-          alt="Osaki 4D Maestro LE 2.0"
-          src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/1.maestro2_main-100_dc0ea897-0918-4faf-ab70-e1a7362502af.jpg?v=1679517996"
-        />
+        <img class="" alt="Osaki 4D Maestro LE 2.0" />
       </div>
       <div
-        class="tw-px-4 lg:tw-px-10 tw-py-5 tw-font-semibold tw-text-black tw-text-center tw-text-lg lg:tw-text-xl"
+        class="tw-px-4 lg:tw-px-10 tw-py-5 tw-font-semibold tw-text-neutral-500 tw-text-lg lg:tw-text-xl"
       >
         The perfect massage chair is even better than ever. The Maestro is now
         upgraded with a slew of luxury features, such as body pain detector,
@@ -38,14 +269,14 @@
         to further compound the Maestro’s perfection.
       </div>
       <div
-        class="tw-flex tw-justify-center tw-gap-3 lg:tw-gap-10 tw-my-5 tw-mb-32 tw-font-semibold tw-text-lg lg:tw-text-4xl"
+        class="tw-flex tw-justify-center tw-gap-3 lg:tw-gap-10 tw-my-5 tw-mb-32 tw-font-semibold tw-text-black tw-text-2xl tw-uppercase"
       >
         <div class="tw-flex tw-items-center tw-gap-2">
           <div
             class="tw-p-3 tw-rounded-full"
             style="background-color: #bfb7a9"
           ></div>
-          <div>Beige</div>
+          <div>Taupe</div>
         </div>
         <div class="tw-flex tw-items-center tw-gap-2">
           <div
@@ -64,163 +295,125 @@
       </div>
     </section>
     <section
-      class="tw-flex lg:tw-flex-row-reverse tw-flex-col-reverse tw-items-center tw-gap-4 tw-mb-40"
+      class="tw-flex tw-flex-col tw-items-center tw-mb-40"
+      style="background-color: #efe9e4"
     >
-      <div
-        class="tw-flex tw-flex-col lg:tw-flex-col tw-flex-1 tw-gap-4 tw-px-0 tw-p-10 lg:tw-p-10 tw-pt-0 lg:tw-pr-0"
-      >
-        <img
-          class="tw-w-32"
-          src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/AI_Series_LOGO_black.png?v=1678383527"
-        />
-        <div class="tw-flex-1 tw-font-semibold tw-text-3xl lg:tw-text-5xl">
-          <div class="tw-text-blue-600">Muscle Tension</div>
+      <img alt="Body Pain Scan" class="lg:tw-order-2" />
+      <div class="tw-flex tw-flex-col tw-flex-1 tw-gap-4 tw-p-4 lg:tw-p-10">
+        <div class="tw-font-semibold tw-text-3xl lg:tw-text-4xl tw-uppercase">
+          <span class="tw-text-blue-600">Muscle Tension</span>
           Detection
         </div>
-        <div class="tw-flex-1 tw-text-lg lg:tw-text-xl">
+        <div class="tw-text-neutral-500 tw-text-xl">
           Everyone has a unique physique with different needs, so the Maestro
           takes advantage of its intelligent body scan to detect any pain in
           your torso area.
         </div>
       </div>
-      <img
-        alt="Body Pain Scan"
-        class="lg:tw-w-1/2"
-        src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/2.maestro2_body_scan-100.jpg?v=1679429085"
-      />
     </section>
     <section
       class="tw-flex lg:tw-flex-row tw-flex-col-reverse tw-items-center tw-gap-4 tw-mb-40"
     >
       <div
-        class="tw-flex tw-flex-col lg:tw-flex-col tw-flex-1 tw-gap-4 tw-px-0 tw-p-10 lg:tw-p-10 tw-pt-0 lg:tw-pl-0"
+        class="tw-flex tw-flex-col lg:tw-flex-col tw-flex-1 tw-gap-4 tw-p-10 lg:tw-p-10 tw-px-0 tw-pt-0 lg:tw-pl-0"
       >
-        <div class="tw-flex-1 tw-font-semibold tw-text-3xl lg:tw-text-5xl">
+        <div
+          class="tw-flex-1 tw-font-semibold tw-text-black tw-text-3xl lg:tw-text-4xl tw-uppercase"
+        >
           Intelligent
           <div class="tw-text-blue-600">Voice Control</div>
         </div>
-        <div class="tw-flex-1 tw-text-lg lg:tw-text-xl">
+        <div class="tw-text-neutral-500 tw-text-lg lg:tw-text-xl">
           With Maestro’s voice control feature, you can easily utilize the chair
           without having to lift a finger. When you make a command, the chair
           will react accordingly.
         </div>
       </div>
-      <img
-        alt="Intelligent Voice Control"
-        class="lg:tw-w-1/2"
-        src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.maestro2_voice_ctrl-100.jpg?v=1679429085"
-      />
+      <img alt="Intelligent Voice Control" class="lg:tw-w-1/2" />
     </section>
     <section
-      class="tw-mb-40 lg:tw-px-10 tw-text-neutral-500"
-      style="color: #161616"
+      class="tw-flex lg:tw-flex-row tw-flex-col tw-items-center tw-gap-4 tw-mb-40 tw-text-neutral-500"
     >
-      <div
-        class="tw-flex lg:tw-flex-row tw-flex-col-reverse tw-items-center tw-gap-4"
-      >
+      <img alt="4D Massage Mechanism" class="lg:tw-w-1/2" />
+      <div class="tw-flex tw-flex-col lg:tw-flex-col tw-gap-4 lg:tw-pl-10">
         <div
-          class="tw-flex tw-flex-col lg:tw-flex-col tw-flex-1 tw-gap-4 tw-px-4 tw-p-10 lg:tw-p-10 tw-pt-0 lg:tw-pl-0"
+          class="tw-flex-1 tw-font-semibold tw-text-black tw-text-3xl lg:tw-text-4xl tw-uppercase"
         >
-          <div class="tw-flex-1 tw-font-semibold tw-text-3xl lg:tw-text-5xl">
-            <div class="tw-text-blue-600">4D Massage</div>
-            Mechanism
-          </div>
-          <div class="tw-flex-1 tw-text-lg lg:tw-text-xl">
-            Experience a new dimension of luxury with Maestro’s four-dimensional
-            massage rollers, which include two heated rollers. When used in
-            tandem with the chair’s SL-Track your body will finally know true
-            relaxation.
-          </div>
+          <div class="tw-text-blue-600">4D Massage</div>
+          Mechanism
         </div>
-        <img
-          alt="4D Massage Mechanism"
-          class="lg:tw-w-1/2"
-          src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4.maestro2_heated_rollers-100.jpg?v=1679429085"
-        />
+        <div class="tw-text-neutral-500 tw-text-lg lg:tw-text-xl">
+          Experience a new dimension of luxury with Maestro’s four-dimensional
+          massage rollers, which include <b>two heated rollers</b>. When used in
+          tandem with the chair’s SL-Track your body will finally know true
+          relaxation.
+        </div>
       </div>
     </section>
 
     <section
-      class="tw-px-4 lg:tw-px-10 tw-pb-5"
-      style="background-color: #161616"
+      class="tw-flex lg:tw-flex-row tw-flex-col-reverse tw-items-center tw-gap-4 tw-mb-40"
     >
       <div
-        class="tw-relative tw-flex lg:tw-flex-row tw-flex-col tw-justify-end tw-w-full tw-font-semibold tw-text-lg tw-text-neutral-500 lg:tw-text-xl"
+        class="tw-flex tw-flex-col lg:tw-flex-col tw-flex-1 tw-gap-4 tw-p-10 lg:tw-p-10 tw-px-0 tw-pt-0 lg:tw-pl-0"
       >
-        <div class="tw-top-0 tw-left-0 lg:tw-absolute tw-pt-10 lg:tw-w-2/3">
-          Through the use of a
-          <span class="tw-text-blue-600"
-            >scientifically-engineered SL-Track</span
-          >, <br class="lg:tw-block tw-hidden web-text" />
-          the massage rollers can extend from the base of
-          <br class="lg:tw-block tw-hidden web-text" />
-          the skull to the very edge of
-          <br class="lg:tw-block tw-hidden web-text" />
-          your hamstrings.
+        <div class="tw-flex-1 tw-font-semibold tw-text-3xl lg:tw-text-4xl">
+          <div class="tw-text-blue-600">SL-TRACK</div>
+          SYSTEM
         </div>
-
-        <img
-          src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/5.maestro2_SL_Track-100.jpg?v=1679429085"
-          alt=""
-          class="lg:tw-w-3/4"
-        />
+        <div class="tw-text-neutral-500 tw-text-lg lg:tw-text-xl">
+          Through the use of a scientifically-engineered SL-Track, the massage
+          rollers can extend from the base of the skull to the very edge of your
+          hamstrings.
+        </div>
       </div>
+      <img alt="Intelligent Voice Control" class="lg:tw-w-1/2" />
     </section>
-
     <section
       class="tw-mb-40 tw-px-4 lg:tw-px-10"
-      style="background-color: #161616"
+      style="background-color: #efe9e4"
     >
-      <div class="tw-flex tw-flex-col tw-flex-1">
+      <div class="">
         <img
-          src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/6.maestro2_Zerogravity.jpg?v=1716415073"
           alt=""
-          class="tw-mb-4 lg:tw-mb-0"
+          class="tw-flex tw-mx-auto lg:tw-w-2/3 lg:tw-h-96 tw-object-cover"
         />
         <div
           class="tw-flex lg:tw-flex-row tw-flex-col lg:tw-gap-10 lg:-tw-mt-4"
         >
           <div
-            class="tw-flex-1 tw-mb-4 lg:tw-mb-10 tw-pt-5 tw-rounded-3xl tw-text-neutral-500"
-            style="background-color: #1e1e1e"
+            class="tw-flex-1 tw-mb-4 lg:tw-mb-10 tw-pt-5 tw-text-neutral-500"
           >
             <div class="tw-pl-5">
-              <img
-                src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/7.maestro2_Zerogravity_Icon-100.jpg?v=1679429092"
-                alt=""
-                class="tw-w-12 lg:tw-w-16"
-              />
+              <img alt="" class="tw-w-12 lg:tw-w-16" />
             </div>
-            <div class="tw-p-5 tw-text-4xl">
+            <div
+              class="tw-p-5 tw-font-semibold tw-text-black tw-text-4xl tw-uppercase"
+            >
               <div class="tw-text-blue-600">Zero Gravity</div>
               Reclining
             </div>
-            <div class="tw-p-5">
+            <div class="tw-p-5 tw-text-lg">
               Rest in a state of utter weightlessness with the Maestro’s Zero
               Gravity Reclining. This two-stage NASA-inspired technology
               perfectly positions your posture to literally ‘take that weight
               off your shoulders’.
             </div>
           </div>
-          <div
-            class="tw-flex-1 tw-mb-10 tw-pt-5 tw-rounded-3xl tw-text-neutral-500"
-            style="background-color: #1e1e1e"
-          >
+          <div class="tw-flex-1 tw-mb-10 tw-pt-5 tw-text-neutral-500">
             <div class="tw-pl-5">
-              <img
-                src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/8.maestro2_SpaceSaving_Icon-100.jpg?v=1679429092"
-                alt=""
-                class="tw-w-12 lg:tw-w-16"
-              />
+              <img alt="" class="tw-w-12 lg:tw-w-16" />
             </div>
-            <div class="tw-p-5 tw-text-4xl">
+            <div
+              class="tw-p-5 tw-font-semibold tw-text-black tw-text-4xl tw-uppercase"
+            >
               <div class="tw-text-blue-600">Space Saving</div>
               Technology
             </div>
-            <div class="tw-p-5">
+            <div class="tw-p-5 tw-text-lg">
               With the Maestro’s Space Saving Technology, you can confidently
-              place your chair up to 5 inches and still achieve a fully realized
-              recline.
+              place your chair up to <b>5 inches</b> and still achieve a fully
+              realized recline.
             </div>
           </div>
         </div>
@@ -228,377 +421,275 @@
     </section>
 
     <section
-      class="tw-flex lg:tw-flex-row-reverse tw-flex-col-reverse tw-items-center tw-gap-4 tw-mb-40 tw-pt-10"
+      class="tw-flex tw-flex-col tw-items-center tw-gap-4 tw-mx-auto tw-mb-40 lg:tw-w-2/3 lg:tw-text-center"
     >
-      <div
-        class="tw-flex tw-flex-col lg:tw-flex-col tw-flex-1 tw-gap-4 tw-px-0 tw-p-10 lg:tw-p-10 tw-pt-0 lg:tw-pr-0"
-      >
-        <div class="tw-flex-1 tw-font-semibold tw-text-3xl lg:tw-text-5xl">
-          <div class="tw-text-blue-600">30 Cell</div>
-          Full Body <br />
-          Air Massage
+      <img alt="Body Pain Scan" class="lg:tw-order-2" />
+      <div class="tw-flex tw-flex-col tw-flex-1 tw-gap-4 lg:tw-p-10">
+        <div
+          class="tw-flex-1 tw-font-semibold tw-text-black tw-text-3xl lg:tw-text-4xl tw-uppercase"
+        >
+          <div class="tw-text-blue-600">30 Cell Full Body</div>
+          Airbag Massage
         </div>
-        <div class="tw-flex-1 tw-text-lg lg:tw-text-xl">
+        <div class="tw-text-neutral-500 tw-text-lg lg:tw-text-xl">
           The Maestro incorporates air cells to provide an immaculate
-          compression therapy. With 30 air cells located throughout the chair,
-          you’ll be hard-pressed to find somewhere that isn’t pressed hard.
+          compression therapy. With <b>30 air cells</b> located throughout the
+          chair, you’ll be hard-pressed to find somewhere that isn’t pressed
+          hard.
         </div>
       </div>
-      <img
-        alt="30 Cell Full Body Air Massage"
-        class="lg:tw-w-1/2"
-        src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/maestro2_Airbag_add.jpg?v=1688060603"
-      />
     </section>
+
     <div
-      class="tw-mb-10 lg:tw-p-10 tw-font-semibold tw-text-4xl tw-text-center lg:tw-text-6xl"
+      class="tw-mb-10 lg:tw-p-10 tw-font-semibold tw-text-black tw-text-4xl tw-text-center tw-uppercase"
     >
-      15 Auto <br />
+      <span class="tw-text-blue-600"> 15 Auto </span>
       Massage Modes
     </div>
     <section
-      class="tw-gap-3 tw-grid tw-grid-cols-2 lg:tw-grid-cols-4 tw-mx-auto tw-mb-40 tw-text-center"
+      class="tw-flex tw-flex-wrap tw-justify-center tw-gap-10 tw-gap-y-20 tw-mx-auto tw-mb-40 tw-text-neutral-500 tw-text-center tw-uppercase"
     >
       <div
-        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-p-3 tw-h-32 tw-w-32 lg:tw-h-52 lg:tw-w-52"
-        style="background-color: #e1e3e5"
+        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-w-1/4 lg:tw-w-1/6"
       >
-        <img
-          alt="Demo"
-          class="tw-w-1/3"
-          src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.maestro2_Icon_Demo-100.jpg?v=1679429092"
-        />
+        <img alt="Demo" class="tw-w-16" />
         <div class="tw-font-bold">Demo</div>
       </div>
       <div
-        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-p-3 tw-h-32 tw-w-32 lg:tw-h-52 lg:tw-w-52"
-        style="background-color: #e1e3e5"
+        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-w-1/4 lg:tw-w-1/6"
       >
-        <img
-          alt="Relax"
-          class="tw-w-1/3"
-          src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/11.maestro2_Icon_Relax-100.jpg?v=1679429092"
-        />
+        <img alt="Relax" class="tw-w-16" />
         <div class="tw-font-bold">Relax</div>
       </div>
       <div
-        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-p-3 tw-h-32 tw-w-32 lg:tw-h-52 lg:tw-w-52"
-        style="background-color: #e1e3e5"
+        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-w-1/4 lg:tw-w-1/6"
       >
-        <img
-          alt="Swing"
-          class="tw-w-1/3"
-          src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12.maestro2_Icon_Swing-100.jpg?v=1679429092"
-        />
+        <img alt="Swing" class="tw-w-16" />
         <div class="tw-font-bold">Swing</div>
       </div>
       <div
-        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-p-3 tw-h-32 tw-w-32 lg:tw-h-52 lg:tw-w-52"
-        style="background-color: #e1e3e5"
+        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-w-1/4 lg:tw-w-1/6"
       >
-        <img
-          alt="Stretch"
-          class="tw-w-1/3"
-          src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/13.maestro2_Icon_Stretch-100.jpg?v=1679429092"
-        />
+        <img alt="Stretch" class="tw-w-16" />
         <div class="tw-font-bold">Stretch</div>
       </div>
       <div
-        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-p-3 tw-h-32 tw-w-32 lg:tw-h-52 lg:tw-w-52"
-        style="background-color: #e1e3e5"
+        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-w-1/4 lg:tw-w-1/6"
       >
-        <img
-          alt="Scraping"
-          class="tw-w-1/3"
-          src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/15.maestro2_Icon_Shiatsu-100.jpg?v=1679429092"
-        />
+        <img alt="Scraping" class="tw-w-16" />
         <div class="tw-font-bold">Scraping</div>
       </div>
       <div
-        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-p-3 tw-h-32 tw-w-32 lg:tw-h-52 lg:tw-w-52"
-        style="background-color: #e1e3e5"
+        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-w-1/4 lg:tw-w-1/6"
       >
-        <img
-          alt="Shiatsu"
-          class="tw-w-1/3"
-          src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/15.maestro2_Icon_Shiatsu-100.jpg?v=1679429092"
-        />
+        <img alt="Shiatsu" class="tw-w-16" />
         <div class="tw-font-bold">Shiatsu</div>
       </div>
       <div
-        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-p-3 tw-h-32 tw-w-32 lg:tw-h-52 lg:tw-w-52"
-        style="background-color: #e1e3e5"
+        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-w-1/4 lg:tw-w-1/6"
       >
-        <img
-          alt="Gentle Relief"
-          class="tw-w-1/3"
-          src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/16.maestro2_Icon_Gentle_Relief-100.jpg?v=1679429092"
-        />
+        <img alt="Gentle Relief" class="tw-w-16" />
         <div class="tw-font-bold">Gentle Relief</div>
       </div>
       <div
-        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-p-3 tw-h-32 tw-w-32 lg:tw-h-52 lg:tw-w-52"
-        style="background-color: #e1e3e5"
+        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-w-1/4 lg:tw-w-1/6"
       >
-        <img
-          alt="Rejuvenate"
-          class="tw-w-1/3"
-          src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/17.maestro2_Icon_Rejuvenate-100.jpg?v=1679429092"
-        />
+        <img alt="Rejuvenate" class="tw-w-16" />
         <div class="tw-font-bold">Rejuvenate</div>
       </div>
       <div
-        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-p-3 tw-h-32 tw-w-32 lg:tw-h-52 lg:tw-w-52"
-        style="background-color: #e1e3e5"
+        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-w-1/4 lg:tw-w-1/6"
       >
-        <img
-          alt="Recover"
-          class="tw-w-1/3"
-          src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/18.maestro2_Icon_Recover-100.jpg?v=1679429092"
-        />
+        <img alt="Recover" class="tw-w-16" />
         <div class="tw-font-bold">Recover</div>
       </div>
       <div
-        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-p-3 tw-h-32 tw-w-32 lg:tw-h-52 lg:tw-w-52"
-        style="background-color: #e1e3e5"
+        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-w-1/4 lg:tw-w-1/6"
       >
-        <img
-          alt="Rolling"
-          class="tw-w-1/3"
-          src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19.maestro2_Icon_Rolling-100.jpg?v=1679429092"
-        />
+        <img alt="Rolling" class="tw-w-16" />
         <div class="tw-font-bold">Rolling</div>
       </div>
       <div
-        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-p-3 tw-h-32 tw-w-32 lg:tw-h-52 lg:tw-w-52"
-        style="background-color: #e1e3e5"
+        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-w-1/4 lg:tw-w-1/6"
       >
-        <img
-          alt="Deep Tissue"
-          class="tw-w-1/3"
-          src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/20.maestro2_Icon_DeepTissue-100.jpg?v=1679429092"
-        />
+        <img alt="Deep Tissue" class="tw-w-16" />
         <div class="tw-font-bold">Deep Tissue</div>
       </div>
       <div
-        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-p-3 tw-h-32 tw-w-32 lg:tw-h-52 lg:tw-w-52"
-        style="background-color: #e1e3e5"
+        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-w-1/4 lg:tw-w-1/6"
       >
-        <img
-          alt="Kidney Care"
-          class="tw-w-1/3"
-          src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/21.maestro2_Icon_KidneyCare-100.jpg?v=1679429092"
-        />
+        <img alt="Kidney Care" class="tw-w-16" />
         <div class="tw-font-bold">Kidney Care</div>
       </div>
       <div
-        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-p-3 tw-h-32 tw-w-32 lg:tw-h-52 lg:tw-w-52"
-        style="background-color: #e1e3e5"
+        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-w-1/4 lg:tw-w-1/6"
       >
-        <img
-          alt="Heating"
-          class="tw-w-1/3"
-          src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/22.maestro2_Icon_Heating-100.jpg?v=1679429092"
-        />
+        <img alt="Heating" class="tw-w-16" />
         <div class="tw-font-bold">Heating</div>
       </div>
       <div
-        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-p-3 tw-h-32 tw-w-32 lg:tw-h-52 lg:tw-w-52"
-        style="background-color: #e1e3e5"
+        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-w-1/4 lg:tw-w-1/6"
       >
-        <img
-          alt="Calf Kneading"
-          class="tw-w-1/3"
-          src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/23.maestro2_Icon_CalfKneading-100.jpg?v=1679429092"
-        />
+        <img alt="Calf Kneading" class="tw-w-16" />
         <div class="tw-font-bold">Calf Kneading</div>
       </div>
       <div
-        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-p-3 tw-h-32 tw-w-32 lg:tw-h-52 lg:tw-w-52"
-        style="background-color: #e1e3e5"
+        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-w-1/4 lg:tw-w-1/6"
       >
-        <img
-          alt="Foot Kneading"
-          class="tw-w-1/3"
-          src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/24.maestro2_Icon_FootKneading-100.jpg?v=1679429092"
-        />
+        <img alt="Foot Kneading" class="tw-w-16" />
         <div class="tw-font-bold">Foot Kneading</div>
       </div>
     </section>
     <div
-      class="tw-p-10 tw-font-semibold tw-text-4xl tw-text-center lg:tw-text-6xl"
+      class="tw-p-10 tw-font-semibold tw-text-black tw-text-4xl tw-text-center tw-uppercase"
     >
-      5 Manual Massage Modes
+      <span class="tw-text-blue-600"> 5 Manual </span>
+      Massage Modes
     </div>
     <section
-      class="tw-gap-3 tw-grid tw-grid-cols-2 lg:tw-grid-cols-4 tw-mx-auto tw-mb-60 tw-text-center"
+      class="tw-flex tw-flex-wrap tw-justify-center tw-gap-10 tw-gap-y-20 tw-mx-auto tw-mb-40 tw-w-full tw-text-neutral-500 tw-text-center tw-uppercase"
     >
       <div
-        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-p-3 tw-h-32 tw-w-32 lg:tw-h-52 lg:tw-w-52"
-        style="background-color: #e1e3e5"
+        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-w-1/4 lg:tw-w-1/6"
       >
-        <img
-          alt="Rolling"
-          class="tw-w-1/3"
-          src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/25.maestro2_Icon_Rolling-100.jpg?v=1679429092"
-        />
+        <img alt="Rolling" class="tw-w-16" />
         <div class="tw-font-bold">Rolling</div>
       </div>
       <div
-        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-p-3 tw-h-32 tw-w-32 lg:tw-h-52 lg:tw-w-52"
-        style="background-color: #e1e3e5"
+        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-w-1/4 lg:tw-w-1/6"
       >
-        <img
-          alt="Kneading"
-          class="tw-w-1/3"
-          src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/26.maestro2_Icon_Kneading-100.jpg?v=1679429092"
-        />
+        <img alt="Kneading" class="tw-w-16" />
         <div class="tw-font-bold">Kneading</div>
       </div>
       <div
-        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-p-3 tw-h-32 tw-w-32 lg:tw-h-52 lg:tw-w-52"
-        style="background-color: #e1e3e5"
+        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-w-1/4 lg:tw-w-1/6"
       >
-        <img
-          alt="Shiatsu"
-          class="tw-w-1/3"
-          src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/27.maestro2_Icon_Shiatsu-100.jpg?v=1679429092"
-        />
+        <img alt="Shiatsu" class="tw-w-16" />
         <div class="tw-font-bold">Shiatsu</div>
       </div>
       <div
-        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-p-3 tw-h-32 tw-w-32 lg:tw-h-52 lg:tw-w-52"
-        style="background-color: #e1e3e5"
+        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-w-1/4 lg:tw-w-1/6"
       >
-        <img
-          alt="Tapping"
-          class="tw-w-1/3"
-          src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/28.maestro2_Tapping-100.jpg?v=1679429092"
-        />
+        <img alt="Tapping" class="tw-w-16" />
         <div class="tw-font-bold">Tapping</div>
       </div>
       <div
-        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-p-3 tw-h-32 tw-w-32 lg:tw-h-52 lg:tw-w-52"
-        style="background-color: #e1e3e5"
+        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-w-1/4 lg:tw-w-1/6"
       >
-        <img
-          alt="Clapping"
-          class="tw-w-1/3"
-          src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/37.maestro2_icon_clapping-100.jpg?v=1679430308"
-        />
+        <img alt="Clapping" class="tw-w-16" />
         <div class="tw-font-bold">Clapping</div>
       </div>
     </section>
 
     <section
-      class="tw-flex lg:tw-flex-row tw-flex-col-reverse tw-items-center tw-gap-4 tw-mb-40"
+      class="tw-flex tw-flex-col tw-items-center tw-gap-4 tw-mx-auto tw-mb-40 lg:tw-w-2/3 lg:tw-text-center"
     >
-      <div
-        class="tw-flex tw-flex-col lg:tw-flex-col tw-flex-1 tw-gap-4 tw-px-0 tw-p-10 lg:tw-p-10 tw-pt-4 lg:tw-pl-0"
-      >
-        <div class="tw-flex-1 tw-text-lg lg:tw-text-xl">
+      <img alt="Body Pain Scan" class="lg:tw-order-2" />
+      <div class="tw-flex tw-flex-col tw-flex-1 tw-gap-4 lg:tw-p-10">
+        <div
+          class="tw-flex-1 tw-font-semibold tw-text-black tw-text-3xl lg:tw-text-4xl tw-uppercase"
+        >
+          <div class="tw-text-blue-600">FOOT ROLLER</div>
+          MASSAGE
+        </div>
+        <div class="tw-text-neutral-500 tw-text-lg lg:tw-text-xl">
           The Maestro includes an all-important foot massage, with one roller
           focusing all its energy on massaging the front of the foot.
         </div>
       </div>
-      <img
-        alt=""
-        class="lg:tw-w-1/2"
-        src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/29.maestro2_FootRoller-100.jpg?v=1679429085"
-      />
     </section>
-    <section
-      class="tw-flex lg:tw-flex-row-reverse tw-flex-col-reverse tw-items-center tw-mb-40"
-    >
+
+    <section class="tw-items-center tw-grid lg:tw-grid-cols-2 tw-mb-40">
+      <img src="" alt="" class="lg:tw-order-2" />
       <div
-        class="tw-flex tw-flex-col lg:tw-flex-col tw-flex-1 tw-gap-4 tw-px-0 tw-p-10 lg:tw-p-10 tw-pt-4 lg:tw-pr-0"
+        class="tw-flex tw-flex-col lg:tw-flex-col tw-flex-1 tw-gap-4 tw-p-10 lg:tw-p-10 tw-px-0 tw-pt-4 lg:tw-pl-0"
       >
-        <div class="tw-flex-1 tw-text-lg lg:tw-text-xl">
+        <div
+          class="tw-flex-1 tw-font-semibold tw-text-black tw-text-3xl lg:tw-text-4xl tw-uppercase"
+        >
+          <div class="tw-text-blue-600">AUTOMATIC</div>
+          EXTENDABLE <br />
+          FOOTREST
+        </div>
+        <div class="tw-text-neutral-500 tw-text-lg lg:tw-text-xl">
           To compliment the refined nature of this chair, the legrest will
-          automatically extend nearly 7 inches in order to find the optimal
-          position for users of any height.
+          automatically extend nearly <b>7 inches</b> in order to find the
+          optimal position for users of any height.
         </div>
       </div>
-      <img
-        alt=""
-        class="lg:tw-w-1/2"
-        src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/30.maestro2_FootExtension-100.jpg?v=1679429085"
-      />
     </section>
     <section
-      class="tw-flex lg:tw-flex-row tw-flex-col-reverse tw-items-center tw-mb-40 lg:tw-mb-0"
+      class="tw-grid lg:tw-grid-cols-2 tw-mb-40 lg:tw-mb-0"
+      style="background-color: #efe9e4"
     >
+      <video
+        src="https://cdn.shopify.com/videos/c/o/v/c87c22b823c4421dbb0c8f3d557d5624.mp4"
+        autoplay
+        muted
+        loop
+        class="lg:tw-order-2"
+      ></video>
       <div
-        class="tw-flex tw-flex-col lg:tw-flex-col tw-flex-1 tw-gap-4 tw-px-0 tw-p-4 lg:tw-p-10 lg:tw-pl-0"
+        class="tw-flex tw-flex-col tw-justify-center tw-gap-4 tw-p-4 lg:tw-p-10"
       >
-        <div class="tw-flex-1 tw-font-semibold tw-text-xl lg:tw-text-4xl">
+        <div class="tw-font-semibold tw-text-black tw-text-3xl tw-uppercase">
           Kneading Foot Massage
         </div>
-        <div class="tw-flex-1 tw-text-lg lg:tw-text-xl">
+        <div class="tw-text-neutral-500 tw-text-lg lg:tw-text-xl">
           The Maestro uses memory foam to intelligently apply force along the
           sides and tops of your feet for maximum relief.
         </div>
       </div>
-      <img
-        alt="Kneading Foot Massage"
-        class="lg:tw-w-1/2"
-        src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/Maestro_LE_2.0_Footmassage.gif?v=1679429728"
-      />
     </section>
     <section
-      class="tw-flex lg:tw-flex-row-reverse tw-flex-col-reverse tw-items-center tw-mb-40"
+      class="tw-grid lg:tw-grid-cols-2 tw-mb-40"
+      style="background-color: #efe9e4"
     >
+      <video
+        src="https://cdn.shopify.com/videos/c/o/v/bfac1feee0a342ce98c83aeb5b604107.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
       <div
-        class="tw-flex tw-flex-col lg:tw-flex-col tw-flex-1 tw-gap-4 lg:tw-p-10 tw-pt-4 tw-pr-0 lg:tw-pr-0"
+        class="tw-flex tw-flex-col tw-justify-center tw-gap-4 tw-p-4 lg:tw-p-10"
       >
-        <div class="tw-flex-1 tw-font-semibold tw-text-xl lg:tw-text-4xl">
+        <div class="tw-font-semibold tw-text-black tw-text-3xl tw-uppercase">
           Deep Calf Kneading
         </div>
-        <div class="tw-flex-1 tw-text-lg lg:tw-text-xl">
+        <div class="tw-text-neutral-500 tw-text-lg lg:tw-text-xl">
           The Maestro pays close attention to your calves with its proven Calf
           Kneading Functions.
         </div>
       </div>
-      <img
-        alt="Deep Calf Kneading"
-        class="lg:tw-w-1/2"
-        src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/Maestro_LE_2.0_CalfKneading_downsized.gif?v=1679430035"
-      />
     </section>
+
     <section
-      class="tw-relative tw-flex tw-flex-col-reverse tw-mb-40"
-      style="background-color: #e1e3e5"
+      class="tw-flex lg:tw-flex-row tw-flex-col tw-items-center tw-gap-4 tw-mb-40 tw-text-neutral-500"
     >
-      <div
-        class="tw-top-0 tw-left-0 lg:tw-absolute tw-p-4 lg:tw-p-10 lg:tw-w-1/2"
-      >
+      <img alt="4D Massage Mechanism" class="lg:tw-w-1/2" />
+      <div class="tw-flex tw-flex-col lg:tw-flex-col tw-gap-4 lg:tw-pl-10">
         <div
-          class="tw-flex-1 tw-pb-5 tw-font-semibold tw-text-3xl lg:tw-text-5xl"
+          class="tw-flex-1 tw-font-semibold tw-text-black tw-text-3xl lg:tw-text-4xl"
         >
-          <div class="tw-text-blue-600">Touchscreen</div>
-          Controller
+          <div class="tw-text-blue-600">TOUCHSCREEN</div>
+          CONTROLLER
         </div>
-        <div class="tw-flex-1 tw-text-lg lg:tw-text-xl">
+        <div class="tw-text-neutral-500 tw-text-lg lg:tw-text-xl">
           The Maestro’s remote is upgraded to a touchscreen controller for easy
           navigation and adjustment settings. Its easy-pivot mount allows for
           easy positioning at any angle.
         </div>
       </div>
-      <img
-        alt="Touchscreen Controller"
-        class=""
-        src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/33.maestro2_Touchscreen-100.jpg?v=1679429085"
-      />
     </section>
     <section
       class="tw-flex lg:tw-flex-row tw-flex-col-reverse lg:tw-items-center tw-gap-4 tw-mb-40"
-      style="background-color: #e1e3e5"
     >
       <div class="tw-flex tw-flex-col lg:tw-flex-col tw-flex-1 tw-gap-4">
         <div
-          class="tw-flex tw-flex-col tw-flex-1 tw-p-4 lg:tw-p-10 tw-pt-0 lg:tw-pt-10 tw-pr-0 tw-w-3/4 lg:tw-w-full tw-font-semibold tw-text-3xl lg:tw-text-5xl"
+          class="tw-flex tw-flex-col tw-flex-1 tw-p-4 lg:tw-p-10 tw-pt-0 lg:tw-pt-10 tw-pr-0 tw-w-3/4 lg:tw-w-full tw-font-semibold tw-text-3xl lg:tw-text-4xl"
         >
-          <div class="tw-pb-5">
+          <div class="tw-pb-5 tw-text-black tw-uppercase">
             <div class="tw-text-blue-600">Shortcut</div>
             Panel
           </div>
@@ -615,172 +706,242 @@
           </div>
         </div>
       </div>
-      <img
-        alt="Shortcut Panel"
-        class="lg:tw-w-2/3"
-        src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/34.maestro2_Shortcut-100.jpg?v=1679429085"
-      />
+      <img alt="Shortcut Panel" class="lg:tw-w-2/3" />
     </section>
-    <section class="tw-flex lg:tw-flex-row tw-flex-col tw-gap-4 tw-mb-60">
-      <div
-        class="tw-flex tw-flex-col tw-flex-1 tw-justify-between tw-gap-4"
-        style="background-color: #e1e3e5"
-      >
-        <div
-          class="tw-flex tw-flex-col lg:tw-flex-col tw-flex-1 tw-gap-4 tw-p-4 lg:tw-p-10 tw-pb-0"
-        >
-          <div class="tw-flex-1 tw-text-lg lg:tw-text-xl">
+    <section class="tw-gap-4 tw-grid lg:tw-grid-cols-2 tw-mb-40">
+      <div class="tw-space-y-4 tw-mb-40">
+        <img src="" alt="" />
+        <div class="tw-space-y-4">
+          <div class="tw-font-semibold tw-text-black tw-text-3xl">
+            <span class="tw-block tw-text-blue-600"> BLUETOOTH </span>
+            QUALITY SPEAKERS
+          </div>
+          <div class="tw-text-neutral-500 tw-text-xl">
             Listen to your favorite music, podcasts, or calming sounds through
             the Maestro’s crisp, high-fidelity, surround sound bluetooth
             speakers.
           </div>
         </div>
-        <img
-          alt=""
-          class=""
-          src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/35.maestro2_Speaker-100.jpg?v=1679429085"
-        />
       </div>
-      <div
-        class="tw-relative tw-flex tw-flex-1 tw-justify-between tw-gap-4"
-        style="background-color: #e1e3e5"
-      >
-        <div class="tw-top-0 tw-right-0 tw-absolute tw-p-4 lg:tw-p-10">
-          <div class="tw-flex-1 tw-text-lg lg:tw-text-xl">
-            Phone Charging Surface
+      <div class="tw-space-y-4">
+        <img src="" alt="" />
+        <div class="tw-space-y-4">
+          <div class="tw-font-semibold tw-text-black tw-text-3xl">
+            <span class="tw-block tw-text-blue-600"> EASY PHONE </span>
+            CHARGING SURFACE
+          </div>
+          <div class="tw-text-neutral-500 tw-text-xl">
+            Keep your phone powered and within reach with the built-in wireless
+            charging pad—no cords, no hassle, just effortless charging while you
+            relax.
           </div>
         </div>
-        <img
-          alt=""
-          class=""
-          src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/36.maestro2_PhoneCharging-100.jpg?v=1679429085"
-        />
       </div>
     </section>
-    <section class="tw-mx-auto lg:tw-w-2/3">
-        <div class="tw-font-semibold tw-text-2xl tw-text-center">
-              <strong class="tw-text-blue-600">MINIMUM</strong> DOORWAY <br>
-    
-        Measuring Guide</div>
-            <ul class="tw-space-y-4 tw-text-gray-500">
-              <li>
-                Calculate the doorway width by subtracting 2 inches from the
-                smallest inner width of the door frame. (1 inch from each
-                side)
-              </li>
-              <li>
-                Please use a standard measuring tape to measure the doorway.
-              </li>
-              <li>
-                If the door cannot be fully opened, open it as much as
-                possible and measure the width from the edge of the door
-                hinge.
-              </li>
-              <li>
-                If there is a rounded curve on the wall, calculate the inner
-                width based on the most protruding point of the wall.
-              </li>
-            </ul>
-  
+    <section class="tw-mx-auto tw-mb-40 lg:tw-w-2/3">
+      <div class="tw-font-semibold tw-text-4xl tw-text-center">
+        <b> MINIMUM DOORWAY </b>
+        <br />
+        Measuring Guide
+      </div>
+      <ul class="tw-space-y-4 tw-text-gray-500">
+        <li>
+          Calculate the doorway width by subtracting 2 inches from the smallest
+          inner width of the door frame. (1 inch from each side)
+        </li>
+        <li>Please use a standard measuring tape to measure the doorway.</li>
+        <li>
+          If the door cannot be fully opened, open it as much as possible and
+          measure the width from the edge of the door hinge.
+        </li>
+        <li>
+          If there is a rounded curve on the wall, calculate the inner width
+          based on the most protruding point of the wall.
+        </li>
+      </ul>
+      <div class="tw-flex">
+        <img src="" alt="" class="tw-min-w-0" />
+        <img src="" alt="" class="tw-min-w-0" />
+      </div>
     </section>
     <section class="tw-mb-60">
-      <div
-        class="tw-p-10 tw-font-bold tw-text-3xl tw-text-center lg:tw-text-5xl"
-      >
+      <div class="tw-p-10 tw-font-bold tw-text-5xl tw-text-center">
         Dimension
       </div>
       <div class="tw-flex lg:tw-flex-row tw-flex-col tw-gap-4">
         <img
           alt="Osaki 4D Maestro LE 2.0 Dimension Upright"
-          class="tw-object-contain lg:tw-w-1/2"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/MaestroLE_Dimension_Upright.jpg?v=1649448934"
+          class="lg:tw-w-1/2 tw-object-contain"
         />
         <img
           alt="Osaki 4D Maestro LE 2.0 Dimension Reclined"
-          class="tw-object-contain lg:tw-w-1/2"
-          src="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/MaestroLE_Dimension_Reclined.jpg?v=1649448934"
+          class="lg:tw-w-1/2 tw-object-contain"
         />
       </div>
     </section>
-    
 
-<section>
-  <div class="tw-p-10 tw-font-bold tw-text-3xl tw-text-center md:tw-text-4xl lg:tw-text-5xl">
-    Specification
-  </div>
-  <div class="tw-font-normal tw-text-xl">
-    <div class="tw-flex lg:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
-      <div class="tw-w-52 tw-font-bold">Product Name</div>
-      <div>Maestro LE 2.0</div>
-    </div>
-    <div class="tw-flex lg:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
-      <div class="tw-shrink-0 tw-w-52 tw-font-bold">User Manual</div>
-      <div class="tw-gap-2 tw-grid tw-grid-cols-2 tw-w-full">
-        <a class="!tw-text-red-500 !tw-no-underline" href="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/Maestro_LE_Manual.pdf" target="_blank">Download</a>
+    <section>
+      <div class="tw-p-10 tw-font-bold tw-text-5xl tw-text-center">
+        Specification
       </div>
-    </div>
-    <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
-      <div class="tw-shrink-0 tw-w-52 tw-font-bold">Power Supply</div>
-      <div>110 - 120V</div>
-    </div>
-    <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
-      <div class="tw-shrink-0 tw-w-52 tw-font-bold">Rate Frequency</div>
-      <div>50 / 60Hz</div>
-    </div>
-    <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
-      <div class="tw-shrink-0 tw-w-52 tw-font-bold">Chair <br class="lg:tw-block tw-hidden" /> Dimensions <br /> (W x L x H)</div>
-      <div class="tw-gap-2 tw-grid lg:tw-grid-cols-2 tw-w-full">
-        <div>
-          <div class="tw-font-bold tw-text-xl">Upright</div>
-          <div>31.9" x 61.1" x 48.1"</div>
+      <div class="tw-font-normal tw-text-xl">
+        <div
+          class="tw-flex lg:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b"
+        >
+          <div class="tw-w-52 tw-font-bold">Product Name</div>
+          <div>Maestro LE 2.0</div>
         </div>
-        <div>
-          <div class="tw-font-bold tw-text-xl">Reclined</div>
-          <div>31.9" x 79.5" x 46.9"</div>
+        <div
+          class="tw-flex lg:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b"
+        >
+          <div class="tw-w-52 tw-font-bold tw-shrink-0">User Manual</div>
+          <div class="tw-gap-2 tw-grid tw-grid-cols-2 tw-w-full">
+            <a
+              class="!tw-text-red-500 !tw-no-underline"
+              href="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/Maestro_LE_Manual.pdf"
+              target="_blank"
+              >Download</a
+            >
+          </div>
+        </div>
+        <div
+          class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b"
+        >
+          <div class="tw-w-52 tw-font-bold tw-shrink-0">Power Supply</div>
+          <div>110 - 120V</div>
+        </div>
+        <div
+          class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b"
+        >
+          <div class="tw-w-52 tw-font-bold tw-shrink-0">Rate Frequency</div>
+          <div>50 / 60Hz</div>
+        </div>
+        <div
+          class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b"
+        >
+          <div class="tw-w-52 tw-font-bold tw-shrink-0">
+            Chair <br class="tw-hidden lg:tw-block" />
+            Dimensions <br />
+            (W x L x H)
+          </div>
+          <div class="tw-gap-2 tw-grid lg:tw-grid-cols-2 tw-w-full">
+            <div>
+              <div class="tw-font-bold tw-text-xl">Upright</div>
+              <div>31.9" x 61.1" x 48.1"</div>
+            </div>
+            <div>
+              <div class="tw-font-bold tw-text-xl">Reclined</div>
+              <div>31.9" x 79.5" x 46.9"</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b"
+        >
+          <div class="tw-w-52 tw-font-bold tw-shrink-0">Chair Weight</div>
+          <div>244.8 lb</div>
+        </div>
+        <div
+          class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b"
+        >
+          <div class="tw-w-52 tw-font-bold tw-shrink-0">Width</div>
+          <div class="tw-gap-2 tw-grid tw-grid-cols-2 tw-w-full">
+            <div>
+              <div class="tw-font-bold tw-text-xl">Shoulder</div>
+              <div>21.5"</div>
+            </div>
+            <div>
+              <div class="tw-font-bold tw-text-xl">Seat</div>
+              <div>20.0"</div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b"
+        >
+          <div class="tw-w-52 tw-font-bold tw-shrink-0">Minimum Door Width</div>
+          <div class="tw-gap-2 tw-grid tw-grid-cols-2 tw-w-full">
+            <div>31.9"</div>
+          </div>
+        </div>
+
+        <div
+          class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b"
+        >
+          <div class="tw-w-52 tw-font-bold tw-shrink-0">
+            User Maximum Weight
+          </div>
+          <div>260 lb</div>
+        </div>
+        <div
+          class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b"
+        >
+          <div class="tw-w-52 tw-font-bold tw-shrink-0">
+            Package <br class="tw-hidden lg:tw-block" />
+            Dimensions <br />
+            (W x L x H)
+          </div>
+          <div class="tw-gap-2 tw-grid lg:tw-grid-cols-3 tw-w-full">
+            <div>
+              <div class="tw-font-bold tw-text-xl">Box 1</div>
+              <div>58.5" x 30.7" x 41.7"</div>
+            </div>
+            <div>
+              <div class="tw-font-bold tw-text-xl">Box 2</div>
+              <div>43.5" x 14.2" x 30.7"</div>
+            </div>
+            <div>
+              <div class="tw-font-bold tw-text-xl">Box 3</div>
+              <div>23.2" x 20.1" x 21.7"</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b"
+        >
+          <div class="tw-w-52 tw-font-bold tw-shrink-0">Package Weight</div>
+          <div class="tw-gap-2 tw-grid lg:tw-grid-cols-3 tw-w-full">
+            <div>
+              <div class="tw-font-bold tw-text-xl">Box 1</div>
+              <div>204.1 lb</div>
+            </div>
+            <div>
+              <div class="tw-font-bold tw-text-xl">Box 2</div>
+              <div>46.3 lb</div>
+            </div>
+            <div>
+              <div class="tw-font-bold tw-text-xl">Box 3</div>
+              <div>52.9 lb</div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
-      <div class="tw-shrink-0 tw-w-52 tw-font-bold">Chair Weight</div>
-      <div>244.8 lb</div>
-    </div>
-    <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
-      <div class="tw-shrink-0 tw-w-52 tw-font-bold">Width</div>
-      <div class="tw-gap-2 tw-grid tw-grid-cols-2 tw-w-full">
-        <div>
-          <div class="tw-font-bold tw-text-xl">Shoulder</div>
-          <div>20.5"</div>
-        </div>
-        <div>
-          <div class="tw-font-bold tw-text-xl">Seat</div>
-          <div>17.0"</div>
-        </div>
-      </div>
-    </div>
-
-<div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
-  <div class="tw-shrink-0 tw-w-52 tw-font-bold">Minimum Door Width</div>
-  <div class="tw-gap-2 tw-grid tw-grid-cols-2 tw-w-full">
-    <div>
-      31.9"
-    </div>
-  </div>
-</div>
-
-    <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
-      <div class="tw-shrink-0 tw-w-52 tw-font-bold">User Maximum Weight</div>
-      <div>260 lb</div>
-    </div>
-    <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
-      <div class="tw-shrink-0 tw-w-52 tw-font-bold">Package <br class="lg:tw-block tw-hidden" /> Dimensions <br /> (W x L x H)</div>
-      <div class="tw-gap-2 tw-grid lg:tw-grid-cols-3 tw-w-full"><div><div class="tw-font-bold tw-text-xl">Box 1</div><div>58.5" x 30.7" x 41.7"</div></div><div><div class="tw-font-bold tw-text-xl">Box 2</div><div>43.5" x 14.2" x 30.7"</div></div><div><div class="tw-font-bold tw-text-xl">Box 3</div><div>23.2" x 20.1" x 21.7"</div></div></div>
-    </div>
-    <div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
-      <div class="tw-shrink-0 tw-w-52 tw-font-bold">Package Weight</div>
-      <div class="tw-gap-2 tw-grid lg:tw-grid-cols-3 tw-w-full"><div><div class="tw-font-bold tw-text-xl">Box 1</div><div>204.1 lb</div></div><div><div class="tw-font-bold tw-text-xl">Box 2</div><div>46.3 lb</div></div><div><div class="tw-font-bold tw-text-xl">Box 3</div><div>52.9 lb</div></div></div>
-    </div>
-  </div>
-</section>
-
+    </section>
   </main>
 </body>
+<script>
+  ;(function getImages() {
+    document.querySelectorAll(".sections img").forEach((img, i) => {
+      img.src = imgs[i].img_src
+      img.alt = imgs[i].img_name
+    })
+  })()
+  ;(function createVideoDOM() {
+    const getYoutubeSrc = (src) => {
+      const regex = /[a-z0-9_-]{11}/gi
+
+      const id = src.match(regex)[0]
+      const dst = "https://www.youtube.com/embed/" + id + "?mute=1&autoplay=1"
+      return dst
+    }
+    const iframe = document.createElement("iframe")
+    // iframe.classList = "tw-aspect-video tw-w-full tw-mb-40"
+    try {
+      iframe.src = getYoutubeSrc(youtube_link)
+      document.getElementById("youtube-link").appendChild(iframe)
+    } catch (err) {
+      console.log(err)
+    }
+  })()
+</script>
