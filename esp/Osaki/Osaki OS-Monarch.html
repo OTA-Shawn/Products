@@ -1,0 +1,946 @@
+<!-- <ul class="feature-section"><li>
+      <strong>
+       3D Massage Mechanism
+      </strong>
+     </li>
+     <li>
+      <strong>
+       L-track
+      </strong>
+     </li>
+     <li>
+      Intelligent Body Scanning
+     </li>
+     <li>
+      Lumbar Heat Therapy
+     </li>
+     <li>
+      Zero Gravity Reclining
+     </li>
+     <li>
+      Full Body Compression Massage
+     </li>
+     <li>
+      <strong>
+       Specialized Foot Massage
+      </strong>
+     </li>
+     <li>
+      Intuitive Remote Control
+     </li>
+     <li>
+      <strong>
+       Multi-lingual Support
+      </strong>
+     </li>
+    </ul>-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  href="https://ota-shawn.github.io/Products/globalProductDescription.css"
+  rel="stylesheet"
+/>
+<link href="../globalProductDescription.css" rel="stylesheet" />
+<script>
+  const youtube_link =
+    "https://www.youtube.com/watch?v=CLzsH2NIksw&t=3s&ab_channel=OfficialTitanOsakiMassageChannel"
+
+  const imgs = [
+    {
+      img_order: "1",
+      img_name: "Monarch_Banner",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/1.Monarch_Banner.webp?v=1694811497",
+    },
+    {
+      img_order: "2",
+      img_name: "Monarch_Body_Scan",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/2.Monarch_Body_Scan.webp?v=1694811498",
+    },
+    {
+      img_order: "3",
+      img_name: "Monarch_3D",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.Monarch_3D.webp?v=1694811497",
+    },
+    {
+      img_order: "4",
+      img_name: "Monarch_Track",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4.Monarch_Track.webp?v=1694811497",
+    },
+    {
+      img_order: "5",
+      img_name: "Monarch_Space_Saving",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/5.Monarch_Space_Saving.webp?v=1694811498",
+    },
+    {
+      img_order: "6",
+      img_name: "Monarch_Gravity",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/6.Monarch_Gravity.webp?v=1694811497",
+    },
+    {
+      img_order: "7",
+      img_name: "Monarch_Air",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/7.Monarch_Air.webp?v=1694811497",
+    },
+    {
+      img_order: "8",
+      img_name: "Monarch_Heating",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/8.Monarch_Heating.webp?v=1694811497",
+    },
+    {
+      img_order: "9",
+      img_name: "Monarch_Icon2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/9.Monarch_Icon2.webp?v=1694811497",
+    },
+    {
+      img_order: "10",
+      img_name: "Monarch_Icon7",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.Monarch_Icon7.webp?v=1694811497",
+    },
+    {
+      img_order: "11",
+      img_name: "Monarch_Icon3",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/11.Monarch_Icon3.webp?v=1694811498",
+    },
+    {
+      img_order: "12",
+      img_name: "Monarch_Icon8",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12.Monarch_Icon8.webp?v=1694811498",
+    },
+    {
+      img_order: "13",
+      img_name: "Monarch_Icon4",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/13.Monarch_Icon4.webp?v=1694811497",
+    },
+    {
+      img_order: "14",
+      img_name: "Monarch_Icon9",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/14.Monarch_Icon9.webp?v=1694811497",
+    },
+    {
+      img_order: "15",
+      img_name: "Monarch_Icon5",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/15.Monarch_Icon5.webp?v=1694811498",
+    },
+    {
+      img_order: "16",
+      img_name: "Monarch_Icon1",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/16.Monarch_Icon1.webp?v=1694811498",
+    },
+    {
+      img_order: "17",
+      img_name: "Monarch_Icon6",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/17.Monarch_Icon6.webp?v=1694811497",
+    },
+    {
+      img_order: "18",
+      img_name: "Monarch_Icon11",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/18.Monarch_Icon11.webp?v=1694811497",
+    },
+    {
+      img_order: "19",
+      img_name: "Monarch_Icon12",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19.Monarch_Icon12.webp?v=1694811497",
+    },
+    {
+      img_order: "20",
+      img_name: "Monarch_Icon13",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/20.Monarch_Icon13.webp?v=1694811498",
+    },
+    {
+      img_order: "21",
+      img_name: "Monarch_Icon10",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/21.Monarch_Icon10.webp?v=1694811497",
+    },
+    {
+      img_order: "22",
+      img_name: "Monarch_Footrest",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/22.Monarch_Footrest.webp?v=1694811497",
+    },
+    {
+      img_order: "23",
+      img_name: "Monarch_Foot_Rollers",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/23.Monarch_Foot_Rollers.webp?v=1694811497",
+    },
+    {
+      img_order: "24",
+      img_name: "Monarch_Speaker",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/24.Monarch_Speaker.webp?v=1694811497",
+    },
+    {
+      img_order: "25",
+      img_name: "Monarch_Remote",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/25.Monarch_Remote.webp?v=1694811497",
+    },
+    {
+      img_order: "26",
+      img_name: "Monarch_USB",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/26.Monarch_USB.webp?v=1694811497",
+    },
+    {
+      img_order: "27",
+      img_name: "Monarch_Language",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/27.Monarch_Language.webp?v=1694811498",
+    },
+    {
+      img_order: "28Monarch_Dimension",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/28Monarch_Dimension.webp?v=1694811497",
+    },
+    {
+      img_order: "29",
+      img_name: "Monarch_Dimension_1",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/29.Monarch_Dimension_1.webp?v=1694811497",
+    },
+  ]
+</script>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<style>
+  :root {
+    --section-bg-color: #ebebeb;
+    --section-strong-color: #121212;
+    --section-header-color: #121212;
+    --section-content-color: #808080;
+    --section-grid-color: #808080;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .sections {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    /* display: flex;
+    flex-direction: column; */
+  }
+
+  .sections strong {
+    color: var(--section-strong-color);
+  }
+
+  .sections .section {
+    background-color: var(--section-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .section > img,
+  .section-content {
+    flex: 1 1 0%;
+    width: 50%;
+  }
+
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+  }
+
+  .section-header {
+    font-size: 52px;
+    line-height: 65px;
+    color: var(--section-header-color);
+  }
+  .section-header2 {
+    font-size: 36px;
+    line-height: 45px;
+    color: var(--section-header-color);
+  }
+
+  .section-description {
+    color: var(--section-content-color);
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  .circle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 32px;
+  }
+
+  .circle > :first-child {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .grid-section {
+    background-color: var(--section-bg-color);
+    color: var(--section-grid-color);
+    display: grid;
+    grid-column: span 2 / span 2;
+    padding: 50px 100px 50px;
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+
+  .grid-section img {
+    margin: 0 0 0px 50px;
+  }
+
+  .grid-section .grid-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .app-icon {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .app-icon img {
+    flex: 0 0 0;
+    width: 40%;
+  }
+
+  .grid-align {
+    text-align: left;
+  }
+
+  @media (max-width: 1024px) {
+    .sections {
+      max-width: 768px;
+    }
+
+    .sections .section {
+      margin-bottom: 35px;
+    }
+
+    .section > img {
+      width: 50%;
+    }
+
+    .section .section-content {
+      gap: 22px;
+      padding: 35px;
+    }
+
+    .section-header {
+      font-size: 39px;
+      line-height: 58px;
+    }
+
+    .section-header2 {
+      font-size: 27px;
+      line-height: 40px;
+    }
+
+    .section-description {
+      font-size: 15px;
+      line-height: 24px;
+    }
+
+    .circle {
+      gap: 5px;
+      font-size: 24px;
+    }
+
+    .circle > :first-child {
+      width: 30px;
+      height: 30px;
+    }
+
+    .grid-section {
+      padding: 35px 75px 35px;
+      gap: 35px;
+      margin-bottom: 35px;
+    }
+
+    .grid-section img {
+      margin: 0 0 0px 35px;
+    }
+
+    .grid-section .grid-item {
+      gap: 15px;
+    }
+
+    .grid-align {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .sections {
+      max-width: 480px;
+    }
+
+    .sections .section {
+      margin-bottom: 22px;
+    }
+
+    .section .section-content {
+      gap: 14px;
+      padding: 22px;
+    }
+
+    .section-header {
+      font-size: 26px;
+      line-height: 38px;
+    }
+    .section-header {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    .section-description {
+      font-size: 10px;
+      line-height: 16px;
+    }
+
+    .circle {
+      gap: 4px;
+      font-size: 16px;
+    }
+
+    .circle > :first-child {
+      width: 20px;
+      height: 20px;
+    }
+
+    .grid-section {
+      padding: 20px 50px 20px;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .grid-section img {
+      margin: 0 0 0px 20px;
+      width: 20%;
+    }
+
+    .grid-section .grid-item {
+      gap: 10px;
+    }
+  }
+</style>
+
+<body>
+  <div
+    class="sections tw-m-auto tw-flex tw-flex-col tw-font-sans tw-leading-normal min-[480px]:tw-w-[480px] md:tw-w-[768px] lg:tw-w-[1024px]"
+  >
+    <div
+      id="youtube-link"
+      class="[&>*]:tw-mb-40 [&>*]:tw-aspect-video [&>*]:tw-w-full"
+    ></div>
+
+    <div class="section !tw-mb-10 !tw-flex-col !tw-bg-white md:!tw-mb-40">
+      <img src="" alt="" class="!tw-w-full" />
+      <div
+        class="tw-px-10 tw-pb-5 tw-pt-10 tw-text-center tw-text-xl md:tw-text-2xl lg:tw-text-3xl"
+      >
+        Featuring a 3D massage mechanism, L-track design, intelligent body
+        scanning, lumbar heat therapy, zero gravity reclining, full body
+        compression massage, specialized foot massage, intuitive remote control,
+        and multi-lingual support.
+      </div>
+    </div>
+
+    <div class="section !tw-flex-row" style="background-color: #05030a">
+      <div class="section-content">
+        <div class="section-header !tw-text-white">Body Scan System</div>
+        <div class="section-description" style="color: #808080">
+          The Monarch will perform a body scan to map the key areas of the neck
+          and back to ensure the optimal amount of pressure applied during the
+          massage. The scanning technology will detect your shoulders height,
+          which can be re-calibrated once the scan is complete.
+        </div>
+      </div>
+      <img src="" alt="" class="" />
+    </div>
+
+    <div class="section !tw-flex-row-reverse" style="background-color: #05030a">
+      <div class="section-content">
+        <div class="section-header !tw-text-white">3D Massage</div>
+        <div class="section-description" style="color: #808080">
+          The next generation of 3D massage rollers are designed for outstanding
+          range and flexibility. The 3D technology allows the user to control
+          the length of rollers that extend out from the backrest. OS-Monarch
+          has 4 levels of 3D intensity control.
+        </div>
+      </div>
+      <img src="" alt="" class="" />
+    </div>
+    <div class="section" style="background-color: #05030a">
+      <div class="section-content">
+        <div class="section-header !tw-text-white">L-Track Massage</div>
+        <div class="section-description" style="color: #808080">
+          As the roller system massages the neck area, it continues through to
+          the lower back and then proceeds to massage the glutes and upper
+          hamstrings.
+        </div>
+      </div>
+      <img src="" alt="" class="" />
+    </div>
+    <div class="section !tw-flex-row-reverse" style="background-color: #05030a">
+      <div class="section-content">
+        <div class="section-header !tw-text-white">Space Saving Technology</div>
+        <div class="section-description" style="color: #808080">
+          Osaki's innovative design team has engineered a space saving
+          technology that slides the chair forward as the chair reclines. As a
+          result, OS-Monarch takes only one inch to get to the fully reclined
+          position.
+        </div>
+      </div>
+      <img src="" alt="" class="" />
+    </div>
+    <div class="section !tw-flex-col" style="background-color: #05030a">
+      <div class="section-content !tw-w-full">
+        <div class="section-header tw-text-center !tw-text-white">
+          <strong
+            style="
+              background: linear-gradient(90deg, #064396, #0214fa);
+              background-clip: text;
+              color: transparent;
+            "
+            >Intelligent</strong
+          >
+          Body Scanning
+        </div>
+        <div class="section-description" style="color: #808080">
+          Inspired by NASA technology, the Zero gravity position is the perfect
+          position to enjoy a massage, aligning your back relative to your thigh
+          at an optimal level of comfort. When reclined into the zero-gravity
+          position, the complete weight of your back is virtually supported by
+          the backrest which maximizes the intensity of the massage.
+        </div>
+      </div>
+      <img src="" alt="" class="" />
+    </div>
+    <div class="section !tw-bg-white">
+      <div class="section-content">
+        <div class="section-header !tw-text-black">
+          <strong
+            style="
+              background: linear-gradient(90deg, #064396, #0214fa);
+              background-clip: text;
+              color: transparent;
+            "
+            >Air</strong
+          >
+          Massage
+        </div>
+        <div class="section-description" style="color: #808080">
+          There are multiple airbags located throughout the massage chair to
+          offer a full body massage experience. Airbags are located at the
+          shoulders, the arms, the feet, and the calf areas. This compression
+          massage helps to continue increasing blood circulation throughout the
+          body to relieve pain and tension.
+        </div>
+      </div>
+      <img src="" alt="" class="" />
+    </div>
+    <div class="section !tw-flex-row-reverse !tw-bg-white">
+      <div class="section-content">
+        <div class="section-header !tw-text-black">
+          <strong class="" style="color: #e02d2d">Lumbar</strong> Heat Therapy
+        </div>
+        <div class="section-description" style="color: #808080">
+          With Monarch’s heat shawl lumbar therapy, the incorporated graphene
+          effectively warm and help ease soreness in the lower back area.
+        </div>
+      </div>
+      <img src="" alt="" class="" />
+    </div>
+
+    <div
+      class="tw-col-span-2 tw-flex tw-items-center tw-justify-center tw-gap-5 tw-p-10 tw-text-center tw-text-2xl md:tw-text-4xl"
+    >
+      <strong class="">9 Auto Massage Modes</strong>
+    </div>
+    <div
+      class="tw-mb-10 tw-grid tw-grid-cols-2 tw-gap-4 tw-bg-[var(--section-bg-color)] tw-p-10 md:tw-pl-[15%]"
+    >
+      <div
+        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
+        <div class="md:tw-text-xl">Recovery</div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
+        <div class="md:tw-text-xl">Pain Relief</div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
+        <div class="md:tw-text-xl">Stretch</div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
+        <div class="md:tw-text-xl">Shopaholic</div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
+        <div class="md:tw-text-xl">Sleeping</div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
+        <div class="md:tw-text-xl">Neck & Shoulder</div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
+        <div class="md:tw-text-xl">Experience</div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
+        <div class="md:tw-text-xl">Back & Waist</div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
+        <div class="md:tw-text-xl">Athlete Mode</div>
+      </div>
+    </div>
+    <div
+      class="tw-col-span-2 tw-flex tw-items-center tw-justify-center tw-gap-5 tw-p-10 tw-text-center tw-text-2xl md:tw-text-4xl"
+    >
+      <strong class="">4 Manual Massage Modes</strong>
+    </div>
+    <div
+      class="tw-mb-10 tw-grid tw-grid-cols-2 tw-gap-4 tw-bg-[var(--section-bg-color)] tw-p-10 md:tw-pl-[15%]"
+    >
+      <div
+        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
+        <div class="md:tw-text-xl">Kneading</div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
+        <div class="md:tw-text-xl">Knocking</div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
+        <div class="md:tw-text-xl">Tapping</div>
+      </div>
+      <div
+        class="tw-flex tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+      >
+        <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
+        <div class="md:tw-text-xl">Shiatsu</div>
+      </div>
+    </div>
+
+    <div class="section !tw-flex-row-reverse">
+      <img src="" alt="" class="tw-self-start" />
+      <div class="section-content">
+        <div class="section-header">Spring Loaded Extendable Footrest</div>
+        <div class="section-description">
+          OS-Monarch has Spring Loaded Extendable Footrest which can be extended
+          up to 13.5 Inches.
+        </div>
+      </div>
+    </div>
+    <div class="section tw-flex-col md:tw-flex-row">
+      <img src="" alt="" class="!tw-w-full !tw-self-start" />
+      <div class="section-content !tw-w-full">
+        <div class="section-header">Unique Foot Roller Massage</div>
+        <div class="section-description">
+          OS-Monarch has Three Rollers located on the bottom of the feet are
+          spinning reflexology massagers which provide a soothing kneading style
+          application. As the rollers spin it will stimulate acupuncture points
+          and as the air bags inflate it will generate a much deeper massage
+          along the bottoms of your feet.
+        </div>
+      </div>
+    </div>
+    <div class="section !tw-flex-row-reverse">
+      <img src="" alt="" class="tw-self-end" />
+      <div class="section-content">
+        <div class="section-header">Built in Bluetooth Speakers</div>
+        <div class="section-description">
+          The Osaki OS-Monarch is equipped with Bluetooth technology that allows
+          the user to listen to their favorite music and phone calls on high
+          quality speakers in the headrest.
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <img src="" alt="" class="" />
+      <div class="section-content">
+        <div class="section-header">Easy to Use LCD Remote</div>
+        <div class="section-description">
+          The Osaki OS-Monarch remote is an easy view screen displaying the
+          functions the chair has activated. On the remote it allows you to
+          select the massage type, intensity, speed and location. You can also
+          operate the functions independently in manual mode.
+        </div>
+      </div>
+    </div>
+    <div
+      class="section !tw-grid tw-grid-cols-2 tw-gap-5 !tw-bg-white md:tw-gap-9 lg:tw-gap-9"
+    >
+      <div
+        class="!tw-tw-bg-[var(--section-bg-color)] tw-relative tw-flex tw-h-full tw-flex-col tw-justify-between"
+      >
+        <div
+          class="section-content section-description tw-absolute tw-right-0 tw-top-0 !tw-text-black"
+        >
+          USB Connector
+        </div>
+        <img src="" alt="" class="" />
+      </div>
+      <div
+        class="tw-flex tw-h-full tw-flex-col tw-justify-between"
+        style="background-color: #e6e8ea"
+      >
+        <div
+          class="section-content section-description !tw-w-full !tw-pb-0 tw-text-center !tw-text-black"
+        >
+          Multi Language Support
+        </div>
+        <img src="" alt="" class="!tw-w-1/2 tw-self-center md:!tw-w-2/3" />
+      </div>
+    </div>
+
+    <div class="section-dimensions tw-mb-20">
+      <div class="tw-mt-40 tw-text-center tw-text-3xl lg:tw-text-5xl">
+        Dimensions
+      </div>
+      <div
+        class="tw-flex tw-flex-col tw-items-center tw-justify-between tw-gap-5 md:tw-flex-row md:tw-gap-10"
+      >
+        <img src="" alt="" class="tw-min-w-0" />
+        <img src="" alt="" class="tw-min-w-0" />
+      </div>
+    </div>
+    <div
+      class="tw-mb-20 tw-grid tw-grid-cols-3 tw-justify-items-center tw-gap-3"
+    >
+      <div class="circle">
+        <div style="background-color: #e2dcd4"></div>
+        <div>Taupe</div>
+      </div>
+      <div class="circle">
+        <div style="background-color: #6f3801"></div>
+        <div>Brown</div>
+      </div>
+      <div class="circle">
+        <div style="background-color: #1d1d1d"></div>
+        <div>Black</div>
+      </div>
+    </div>
+
+    <section>
+      <div
+        class="tw-p-10 tw-text-center tw-text-3xl tw-font-bold md:tw-text-4xl lg:tw-text-5xl"
+      >
+        Specification
+      </div>
+      <div class="tw-text-xl tw-font-normal">
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 lg:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-font-bold">Product Name</div>
+          <div>Monarch</div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 lg:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">User Manual</div>
+          <div class="tw-grid tw-w-full tw-grid-cols-2 tw-gap-2">
+            <a
+              class="!tw-text-red-500 !tw-no-underline"
+              href="https://cdn.shopify.com/s/files/1/0579/8379/5374/files/Osaki_OS-Monarch_Manual.pdf?v=1654534665"
+              target="_blank"
+              >Download</a
+            >
+          </div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">Power Supply</div>
+          <div>110 - 120V</div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">Rate Frequency</div>
+          <div>50 / 60Hz</div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            Chair <br class="tw-hidden lg:tw-block" />
+            Dimensions <br />
+            (W x L x H)
+          </div>
+          <div class="tw-grid tw-w-full tw-gap-2 lg:tw-grid-cols-2">
+            <div>
+              <div class="tw-text-xl tw-font-bold">Upright</div>
+              <div>32.0" x 58.0" x 51.5"</div>
+            </div>
+            <div>
+              <div class="tw-text-xl tw-font-bold">Reclined</div>
+              <div>32.0" x 64.0" x 45.5"</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">Chair Weight</div>
+          <div>248.7 lb</div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">Width</div>
+          <div class="tw-grid tw-w-full tw-grid-cols-2 tw-gap-2">
+            <div>
+              <div class="tw-text-xl tw-font-bold">Shoulder</div>
+              <div>19.0"</div>
+            </div>
+            <div>
+              <div class="tw-text-xl tw-font-bold">Seat</div>
+              <div>20.5"</div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">Minimum Door Width</div>
+          <div class="tw-grid tw-w-full tw-grid-cols-2 tw-gap-2">
+            <div>32.0"</div>
+          </div>
+        </div>
+
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            User Maximum Weight
+          </div>
+          <div>260 lb</div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            Package <br class="tw-hidden lg:tw-block" />
+            Dimensions <br />
+            (W x L x H)
+          </div>
+          <div class="tw-grid tw-w-full tw-gap-2 lg:tw-grid-cols-3">
+            <div>
+              <div class="tw-text-xl tw-font-bold">Box 1</div>
+              <div>59.0" x 32.0" x 33.0"</div>
+            </div>
+            <div>
+              <div class="tw-text-xl tw-font-bold">Box 2</div>
+              <div>22.0" x 21.0" x 22.0"</div>
+            </div>
+            <div>
+              <div class="tw-text-xl tw-font-bold">Box 3</div>
+              <div>39.0" x 16.0" x 29.0"</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">Package Weight</div>
+          <div class="tw-grid tw-w-full tw-gap-2 lg:tw-grid-cols-3">
+            <div>
+              <div class="tw-text-xl tw-font-bold">Box 1</div>
+              <div>198.0 lb</div>
+            </div>
+            <div>
+              <div class="tw-text-xl tw-font-bold">Box 2</div>
+              <div>56.0 lb</div>
+            </div>
+            <div>
+              <div class="tw-text-xl tw-font-bold">Box 3</div>
+              <div>45.0 lb</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+<script>
+  ;(function getImages() {
+    document.querySelectorAll(".sections img").forEach((img, i) => {
+      img.src = imgs[i].img_src
+      img.alt = imgs[i].img_name
+    })
+  })()
+  ;(function createVideoDOM() {
+    const getYoutubeSrc = (src) => {
+      const regex = /[a-z0-9_-]{11}/gi
+
+      const id = src.match(regex)[0]
+      const dst = "https://www.youtube.com/embed/" + id + "?mute=1&autoplay=1"
+      return dst
+    }
+    const iframe = document.createElement("iframe")
+    // iframe.classList = "tw-aspect-video tw-w-full tw-mb-40"
+    try {
+      iframe.src = getYoutubeSrc(youtube_link)
+      document.getElementById("youtube-link").appendChild(iframe)
+    } catch (err) {
+      console.log(err)
+    }
+  })()
+</script>
