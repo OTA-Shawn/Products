@@ -18,8 +18,7 @@
 <link href="../globalProductDescription.css" rel="stylesheet" />
 
 <script>
-  const youtube_link =
-    "https://www.youtube.com/watch?v=87YGOhHnZOY&ab_channel=OfficialTitanOsakiMassageChannel"
+  const youtube_link = "https://youtu.be/87YGOhHnZOY"
 
   const imgs = [
     {
@@ -357,6 +356,11 @@
       img_name: "horizon_dimension2",
       img_src:
         "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/56.horizon_dimension2.webp",
+    },
+    {
+      img_order: 57,
+      img_name: "icon",
+      img_src: "https://img.icons8.com/color/48/youtube-play.png",
     },
   ]
 </script>
@@ -1275,6 +1279,7 @@
   </div>
 </body>
 <script>
+  console.log(document.querySelectorAll(".sections img").length)
   ;(function getImages() {
     document.querySelectorAll(".sections img").forEach((img, i) => {
       img.src = imgs[i].img_src
