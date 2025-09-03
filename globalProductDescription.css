@@ -198,6 +198,18 @@
   top: 5%;
 }
 
+.tw-top-16 {
+  top: 4rem;
+}
+
+.tw-top-20 {
+  top: 5rem;
+}
+
+.tw-top-32 {
+  top: 8rem;
+}
+
 .tw-order-1 {
   order: 1;
 }
@@ -3438,24 +3450,12 @@ video {
     height: 24rem;
   }
 
-  .lg\:tw-h-auto {
-    height: auto;
-  }
-
-  .lg\:tw-h-\[120rem\] {
-    height: 120rem;
-  }
-
-  .lg\:tw-h-\[12rem\] {
-    height: 12rem;
-  }
-
-  .lg\:tw-h-\[36rem\] {
-    height: 36rem;
-  }
-
   .lg\:tw-h-\[30rem\] {
     height: 30rem;
+  }
+
+  .lg\:tw-h-auto {
+    height: auto;
   }
 
   .lg\:\!tw-w-1\/12 {

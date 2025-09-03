@@ -120,6 +120,23 @@
   ]
 </script>
 
+<style>
+  .banner-title {
+    top: 8rem;
+  }
+  @media (max-width: 1024px) {
+    .banner-title {
+      top: 6rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .banner-title {
+      top: 4rem;
+    }
+  }
+</style>
+
 <body>
   <div
     class="sections tw-m-auto tw-flex tw-flex-col tw-font-sans tw-leading-normal min-[480px]:tw-w-[480px] md:tw-w-[768px] lg:tw-w-[1024px]"
@@ -129,7 +146,14 @@
       class="[&>*]:tw-mb-40 [&>*]:tw-aspect-video [&>*]:tw-w-full"
     ></div>
     <div class="section !tw-mb-20 !tw-flex-col !tw-bg-white md:!tw-mb-40">
-      <img src="" alt="" class="!tw-w-full" />
+      <div class="tw-relative">
+        <img src="" alt="" class="!tw-w-full" />
+        <div
+          class="banner-title tw-absolute tw-left-0 tw-w-full tw-text-center tw-text-3xl tw-font-semibold md:tw-text-5xl"
+        >
+          AURORA
+        </div>
+      </div>
 
       <div class="tw-my-10 tw-flex tw-w-full tw-justify-center tw-gap-10">
         <div class="circle tw-flex tw-items-center tw-gap-4">
@@ -162,7 +186,9 @@
         <div
           class="tw-mb-10 tw-flex tw-flex-1 tw-basis-1/2 tw-flex-col tw-p-4 md:tw-mb-0 md:tw-p-10"
         >
-          <h2 class="tw-mt-0 tw-text-gray-300">Intelligent Body Scan</h2>
+          <div class="tw-mt-0 tw-text-2xl tw-text-gray-300">
+            Intelligent Body Scan
+          </div>
           <div>
             Personalize your relaxation with the Aurora’s Body Scanning system.
             The intelligent AI maps key points along your spine to provide a
@@ -175,7 +201,7 @@
         <div
           class="tw-mb-10 tw-flex tw-flex-1 tw-basis-1/2 tw-flex-col tw-p-4 md:tw-mb-0 md:tw-p-10"
         >
-          <h2 class="tw-mt-0 tw-text-gray-300">L-Track Design</h2>
+          <div class="tw-mt-0 tw-text-2xl tw-text-gray-300">L-Track Design</div>
           <div>
             The Aurora was built around its scientifically-engineered steel
             L-Track, this track ensures your massage rollers will make contact
@@ -188,7 +214,9 @@
         <div
           class="tw-mb-10 tw-flex tw-flex-1 tw-basis-1/2 tw-flex-col tw-p-4 md:tw-mb-0 md:tw-p-10"
         >
-          <h2 class="tw-mt-0 tw-text-gray-300">2D Massage Mechanism</h2>
+          <div class="tw-mt-0 tw-text-2xl tw-text-gray-300">
+            2D Massage Mechanism
+          </div>
           <div>
             With the Aurora’s advanced two-dimensional massage, you’ll
             experience relaxation on an entirely new axis.
@@ -202,10 +230,10 @@
         class="tw-grid tw-gap-4 tw-p-4 md:tw-grid-cols-2 md:tw-gap-10 md:tw-p-10"
       >
         <div>
-          <h2 class="tw-mt-0">
+          <div class="tw-mt-0 tw-text-2xl">
             Two-Stage <br />
             Zero Gravity Reclining
-          </h2>
+          </div>
           <div>
             Enter a state of weightlessness with the Aurora’s 2-Stage Zero
             Gravity Reclining. While your traditional recliner typically stops
@@ -214,10 +242,10 @@
           </div>
         </div>
         <div>
-          <h2 class="tw-mt-0">
+          <div class="tw-mt-0 tw-text-2xl">
             Space Saving <br />
             Technology
-          </h2>
+          </div>
           <div>
             Using cutting-edge technology, the Aurora will slide forward as you
             recline it, meaning you can place it up to 2 Inches away from the
@@ -235,7 +263,7 @@
       <div
         class="tw-flex tw-flex-1 tw-basis-1/2 tw-flex-col tw-gap-4 tw-p-4 md:tw-p-10"
       >
-        <h2 class="tw-mt-0">Compression Therapy</h2>
+        <div class="tw-mt-0 tw-text-2xl">Compression Therapy</div>
         <div>
           The Aurora’s 36 Cell Pressure System provides robust compression
           therapy from top to bottom; with airbags located along the shoulders,
@@ -247,7 +275,7 @@
     <div class="tw-flex tw-flex-col tw-items-center md:tw-flex-row">
       <img src="" alt="" class="tw-min-w-0 tw-flex-1 tw-basis-1/2" />
       <div class="tw-flex tw-flex-1 tw-basis-1/2 tw-flex-col tw-p-4 md:tw-p-10">
-        <h2 class="tw-mt-0">Intuitive Remote</h2>
+        <div class="tw-mt-0 tw-text-2xl">Intuitive Remote</div>
         <div>
           Maintain complete control over your Aurora at all times through the
           use of its handy remote. This incredibly intuitive controller gives
@@ -255,13 +283,13 @@
           finished using it, easily place your remote into the convenient remote
           pocket located along the Aurora’s side panel.
         </div>
-        <h2>7 Auto Massage Modes</h2>
+        <div class="tw-text-2xl">7 Auto Massage Modes</div>
         <div>
           Straight out of the box your Aurora comes pre-loaded with 7 unique
           automatic massage programs, including Office, Recovery, Revitalize,
           Energy, Shoulder & Neck, Calm, and Swing.
         </div>
-        <h2>6 Manual Massage Styles</h2>
+        <div class="tw-text-2xl">6 Manual Massage Styles</div>
         <div>
           Personalize each massage with your favorite techniques using any
           combination of the Aurora’s Manual Massage Styles: such as Kneading,
@@ -273,7 +301,7 @@
       <div class="tw-flex tw-flex-col tw-items-center md:tw-flex-row">
         <img src="" alt="" class="tw-min-w-0 tw-flex-1 tw-basis-1/2" />
         <div class="tw-basis-1/2 tw-p-4 md:tw-px-10">
-          <h2 class="tw-mt-0">Heat Therapy</h2>
+          <div class="tw-mt-0 tw-text-2xl">Heat Therapy</div>
           <div>
             Integrated into its padded backrest, the Aurora applies a liberal
             amount of heat in order to reduce tension along the spine.
@@ -283,7 +311,7 @@
       <div class="tw-flex tw-flex-col tw-items-center md:tw-flex-row-reverse">
         <img src="" alt="" class="tw-min-w-0 tw-flex-1 tw-basis-1/2" />
         <div class="tw-basis-1/2 tw-p-4 md:tw-px-10">
-          <h2 class="tw-mt-0">Extendable Footrest</h2>
+          <div class="tw-mt-0 tw-text-2xl">Extendable Footrest</div>
 
           <div>
             In order to accommodate people of all heights, the Aurora’s footrest
@@ -295,7 +323,7 @@
       <div class="tw-flex tw-flex-col tw-items-center md:tw-flex-row">
         <img src="" alt="" class="tw-min-w-0 tw-flex-1 tw-basis-1/2" />
         <div class="tw-basis-1/2 tw-p-4 md:tw-px-10">
-          <h2 class="tw-mt-0">Specialized Foot Massage</h2>
+          <div class="tw-mt-0 tw-text-2xl">Specialized Foot Massage</div>
           <div>
             Integrated into its padded backrest, the Aurora applies a liberal
             amount of heat in order to reduce tension along the spine.
@@ -406,7 +434,7 @@
         <!-- <div
             class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b"
           >
-            <div class="tw-shrink-0 tw-w-52 tw-font-bold">
+            <div class="tw-w-52 tw-font-bold tw-shrink-0">
               <div>Weight</div>
             </div>
             <div class="tw-gap-2 tw-grid tw-grid-cols-2 tw-w-full">
