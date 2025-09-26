@@ -368,9 +368,6 @@
   />
 
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
     body {
       font-family: "Nunito", sans-serif;
     }
@@ -384,11 +381,6 @@
 
     .desktop-blue {
       background-color: #eff0fa;
-    }
-
-    .gradient-section {
-      /* Added a transition for smooth color changes */
-      transition: background-color 0.2s ease-out;
     }
 
     @media (max-width: 1024px) {
@@ -840,9 +832,9 @@
       <div class="tw-space-y-8 tw-uppercase tw-text-gray-800">
         <!-- Section 1: FULL BODY -->
         <div
-          class="gradient-section tw-flex tw-flex-col tw-items-center tw-space-y-6 tw-rounded-3xl tw-p-8 md:tw-p-10 md:tw-px-20 lg:tw-rounded-full"
+          class="tw-flex tw-flex-col tw-items-center tw-space-y-6 tw-rounded-3xl tw-bg-stone-100 tw-p-8 md:tw-p-10 md:tw-px-20 lg:tw-rounded-full"
         >
-          <div class="tw-text-2xl tw-font-bold tw-tracking-wider tw-text-white">
+          <div class="tw-text-2xl tw-font-bold tw-tracking-wider">
             FULL BODY
           </div>
           <div
@@ -888,11 +880,9 @@
 
         <!-- Section 2: FOCUSED -->
         <div
-          class="gradient-section tw-flex tw-flex-col tw-items-center tw-space-y-6 tw-rounded-3xl tw-p-8 md:tw-p-10 md:tw-px-20 lg:tw-rounded-full"
+          class="tw-flex tw-flex-col tw-items-center tw-space-y-6 tw-rounded-3xl tw-bg-stone-100 tw-p-8 md:tw-p-10 md:tw-px-20 lg:tw-rounded-full"
         >
-          <div class="tw-text-2xl tw-font-bold tw-tracking-wider tw-text-white">
-            FOCUSED
-          </div>
+          <div class="tw-text-2xl tw-font-bold tw-tracking-wider">FOCUSED</div>
           <div
             class="tw-flex tw-w-full tw-flex-wrap tw-items-center tw-justify-center tw-gap-4"
           >
@@ -941,9 +931,9 @@
 
         <!-- Section 3: CALMING MASSAGES -->
         <div
-          class="gradient-section tw-flex tw-flex-col tw-items-center tw-space-y-6 tw-rounded-3xl tw-p-8 md:tw-p-10 md:tw-px-20 lg:tw-rounded-full"
+          class="tw-flex tw-flex-col tw-items-center tw-space-y-6 tw-rounded-3xl tw-bg-stone-100 tw-p-8 md:tw-p-10 md:tw-px-20 lg:tw-rounded-full"
         >
-          <div class="tw-text-2xl tw-font-bold tw-tracking-wider tw-text-white">
+          <div class="tw-text-2xl tw-font-bold tw-tracking-wider">
             CALMING MASSAGES
           </div>
           <div
@@ -1009,9 +999,9 @@
 
         <!-- Section 4: INTERNATIONAL -->
         <div
-          class="gradient-section tw-flex tw-flex-col tw-items-center tw-space-y-6 tw-rounded-3xl tw-p-8 md:tw-p-10 md:tw-px-20 lg:tw-rounded-full"
+          class="tw-flex tw-flex-col tw-items-center tw-space-y-6 tw-rounded-3xl tw-bg-stone-100 tw-p-8 md:tw-p-10 md:tw-px-20 lg:tw-rounded-full"
         >
-          <div class="tw-text-2xl tw-font-bold tw-tracking-wider tw-text-white">
+          <div class="tw-text-2xl tw-font-bold tw-tracking-wider">
             INTERNATIONAL
           </div>
           <div
@@ -1047,11 +1037,9 @@
 
         <!-- Section 5: HEALING -->
         <div
-          class="gradient-section tw-flex tw-flex-col tw-items-center tw-space-y-6 tw-rounded-3xl tw-p-8 md:tw-p-10 md:tw-px-20 lg:tw-rounded-full"
+          class="tw-flex tw-flex-col tw-items-center tw-space-y-6 tw-rounded-3xl tw-bg-stone-100 tw-p-8 md:tw-p-10 md:tw-px-20 lg:tw-rounded-full"
         >
-          <div class="tw-text-2xl tw-font-bold tw-tracking-wider tw-text-white">
-            HEALING
-          </div>
+          <div class="tw-text-2xl tw-font-bold tw-tracking-wider">HEALING</div>
           <div
             class="tw-flex tw-w-full tw-flex-wrap tw-items-center tw-justify-center tw-gap-4"
           >
@@ -1088,7 +1076,7 @@
     <div class="tw-mb-40 tw-text-center tw-font-semibold">
       <div class="tw-p-10 tw-text-4xl tw-uppercase">5 Manual Massage Modes</div>
       <div
-        class="gradient-section tw-flex tw-flex-wrap tw-justify-center tw-gap-10 tw-rounded-3xl tw-bg-stone-100 tw-p-10 tw-text-white lg:tw-rounded-full lg:tw-px-20"
+        class="tw-flex tw-flex-wrap tw-justify-center tw-gap-10 tw-rounded-3xl tw-bg-stone-100 tw-p-10 lg:tw-rounded-full lg:tw-px-20"
       >
         <div class="tw-flex tw-flex-col tw-items-center tw-space-y-4">
           <img src="" alt="" class="tw-w-20" />
@@ -1565,104 +1553,4 @@
 
     showSlide(0) // Initialize with the first slide visible
   })()
-</script>
-
-<script>
-  // Wait until the DOM is fully loaded before running the script
-  document.addEventListener("DOMContentLoaded", () => {
-    // Select all the sections that will change color
-    const sections = document.querySelectorAll(".gradient-section")
-    if (sections.length === 0) return
-
-    // Define the array of colors for the gradient transition.
-    // Adding the first color at the end creates a seamless, looping gradient.
-    const colors = [
-      { r: 131, g: 96, b: 195 }, // #8360c3 -> Purple
-      { r: 46, g: 191, b: 145 }, // #2ebf91 -> Green
-      { r: 250, g: 112, b: 154 }, // #fa709a -> Pink
-      { r: 246, g: 211, b: 101 }, // #f6d365 -> Yellow
-      { r: 8, g: 159, b: 255 }, // #089fff -> Blue
-      { r: 131, g: 96, b: 195 }, // #8360c3 -> Purple (to loop back)
-    ]
-
-    // This function calculates and applies new background colors based on scroll position
-    function updateSectionColors() {
-      // Total scrollable height of the document
-      const scrollHeight =
-        document.documentElement.scrollHeight - window.innerHeight
-      // Current vertical scroll position
-      const scrollTop = window.scrollY
-
-      // Handle non-scrollable pages by applying a static gradient
-      if (scrollHeight <= 0) {
-        const colorStops = colors.length - 1
-        sections.forEach((section, index) => {
-          // Distribute colors evenly across sections
-          const progress =
-            index / (sections.length > 1 ? sections.length - 1 : 1)
-          const colorIndex = Math.min(
-            Math.floor(progress * colorStops),
-            colorStops - 1
-          )
-          const nextColorIndex = colorIndex + 1
-          const localProgress = progress * colorStops - colorIndex
-          const c1 = colors[colorIndex]
-          const c2 = colors[nextColorIndex]
-          const r = Math.round(c1.r + (c2.r - c1.r) * localProgress)
-          const g = Math.round(c1.g + (c2.g - c1.g) * localProgress)
-          const b = Math.round(c1.b + (c2.b - c1.b) * localProgress)
-          section.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
-        })
-        return
-      }
-
-      // Calculate the overall scroll progress as a fraction from 0 to 1
-      const scrollFraction = scrollTop / scrollHeight
-
-      // A speed factor to make the gradient change faster.
-      // Increase this value for a faster change, decrease for slower.
-      const speedFactor = 2
-
-      // Iterate over each section to give it a unique color
-      sections.forEach((section, index) => {
-        // Each section gets an offset, distributing them along the color gradient.
-        // The 0.7 factor can be adjusted to change the color difference between sections.
-        const sectionOffset = (index / sections.length) * 0.7
-
-        // Combine the global scroll progress (multiplied by speed) with the section's unique offset.
-        // The modulo operator (%) ensures the value wraps around, creating an endless loop.
-        const combinedProgress =
-          (scrollFraction * speedFactor + sectionOffset) % 1
-
-        // Determine which two colors to blend
-        const colorStops = colors.length - 1
-        const colorIndex = Math.min(
-          Math.floor(combinedProgress * colorStops),
-          colorStops - 1
-        )
-        const nextColorIndex = colorIndex + 1
-
-        // Calculate the progress *between* the current and next color stops
-        const localProgress = combinedProgress * colorStops - colorIndex
-
-        // Get the start and end colors for the interpolation
-        const c1 = colors[colorIndex]
-        const c2 = colors[nextColorIndex]
-
-        // Interpolate the R, G, and B values to find the exact color
-        const r = Math.round(c1.r + (c2.r - c1.r) * localProgress)
-        const g = Math.round(c1.g + (c2.g - c1.g) * localProgress)
-        const b = Math.round(c1.b + (c2.b - c1.b) * localProgress)
-
-        // Apply the new, unique background color to this section
-        section.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
-      })
-    }
-
-    // Listen for scroll events on the window
-    window.addEventListener("scroll", updateSectionColors)
-
-    // Call the function once on load to set the initial colors
-    updateSectionColors()
-  })
 </script>

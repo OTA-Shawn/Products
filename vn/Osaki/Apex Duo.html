@@ -368,9 +368,6 @@
   />
 
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
     body {
       font-family: "Nunito", sans-serif;
     }
@@ -386,11 +383,6 @@
       background-color: #eff0fa;
     }
 
-    .gradient-section {
-      /* Added a transition for smooth color changes */
-      transition: background-color 0.2s ease-out;
-    }
-
     @media (max-width: 1024px) {
       .desktop-blue {
         background-color: initial;
@@ -399,732 +391,1090 @@
   </style>
 </head>
 <body>
-<div class="tw-flex tw-flex-col tw-m-auto min-[480px]:tw-w-[480px] md:tw-w-[768px] lg:tw-w-[1024px] tw-leading-normal sections">
-<div class="[&amp;&gt;*]:tw-mb-20 [&amp;&gt;*]:tw-w-full [&amp;&gt;*]:tw-aspect-video" id="youtube-link"></div>
-<div class="">
-<img alt="" class="!tw-w-full" src=""/>
-<div class="lg:tw-mx-10 tw-mb-4 tw-py-10 tw-pt-4 tw-text-xl 2xl" style="color: #777">
-        Đắm mình trong sự tĩnh tại với hệ thống con lăn mát-xa lưng kép được thiết kế tinh tế của Osaki. Chỉ với một lần bấm, các cửa bên trượt mở, mời bạn bước vào không gian thư giãn. Được AI dẫn dắt, ghế quét cơ thể của bạn và lựa chọn từ 41 chương trình được chế tác chuyên nghiệp để mang lại liệu trình hiệu quả nhất. Tận hưởng một trải nghiệm thực sự chuyển hóa—ngay tại nhà hoặc văn phòng của bạn.
+  <div
+    class="sections tw-m-auto tw-flex tw-flex-col tw-leading-normal min-[480px]:tw-w-[480px] md:tw-w-[768px] lg:tw-w-[1024px]"
+  >
+    <div
+      class="[&amp;&gt;*]:tw-mb-20 [&amp;&gt;*]:tw-w-full [&amp;&gt;*]:tw-aspect-video"
+      id="youtube-link"
+    ></div>
+    <div class="">
+      <img alt="" class="!tw-w-full" src="" />
+      <div
+        class="2xl tw-mb-4 tw-py-10 tw-pt-4 tw-text-xl lg:tw-mx-10"
+        style="color: #777"
+      >
+        Đắm mình trong sự tĩnh tại với hệ thống con lăn mát-xa lưng kép được
+        thiết kế tinh tế của Osaki. Chỉ với một lần bấm, các cửa bên trượt mở,
+        mời bạn bước vào không gian thư giãn. Được AI dẫn dắt, ghế quét cơ thể
+        của bạn và lựa chọn từ 41 chương trình được chế tác chuyên nghiệp để
+        mang lại liệu trình hiệu quả nhất. Tận hưởng một trải nghiệm thực sự
+        chuyển hóa—ngay tại nhà hoặc văn phòng của bạn.
       </div>
-</div>
-<!-- Swatch Static Container -->
-<div class="tw-relative tw-mx-auto tw-mb-20 tw-w-full tw-max-w-xl" id="swatch-static-container">
-<div class="tw-relative tw-h-96">
-<img alt="Taupe chair" class="tw-top-0 tw-left-0 tw-absolute tw-opacity-100 tw-w-full tw-h-full tw-object-contain tw-transition-opacity tw-duration-300 slide-image" src=""/>
-<img alt="Black chair" class="tw-top-0 tw-left-0 tw-absolute tw-opacity-0 tw-w-full tw-h-full tw-object-contain tw-transition-opacity tw-duration-300 slide-image" src=""/>
-<img alt="Brown chair" class="tw-top-0 tw-left-0 tw-absolute tw-opacity-0 tw-w-full tw-h-full tw-object-contain tw-transition-opacity tw-duration-300 slide-image" src=""/>
-</div>
-<button class="tw-top-1/2 tw-left-2 tw-absolute tw-bg-black tw-bg-opacity-50 hover:tw-bg-opacity-100 tw-p-2 tw-rounded-full focus:tw-outline-none tw-text-white tw--translate-y-1/2 hover:tw-cursor-pointer" id="static-prev">
+    </div>
+    <!-- Swatch Static Container -->
+    <div
+      class="tw-relative tw-mx-auto tw-mb-20 tw-w-full tw-max-w-xl"
+      id="swatch-static-container"
+    >
+      <div class="tw-relative tw-h-96">
+        <img
+          alt="Taupe chair"
+          class="slide-image tw-absolute tw-left-0 tw-top-0 tw-h-full tw-w-full tw-object-contain tw-opacity-100 tw-transition-opacity tw-duration-300"
+          src=""
+        />
+        <img
+          alt="Black chair"
+          class="slide-image tw-absolute tw-left-0 tw-top-0 tw-h-full tw-w-full tw-object-contain tw-opacity-0 tw-transition-opacity tw-duration-300"
+          src=""
+        />
+        <img
+          alt="Brown chair"
+          class="slide-image tw-absolute tw-left-0 tw-top-0 tw-h-full tw-w-full tw-object-contain tw-opacity-0 tw-transition-opacity tw-duration-300"
+          src=""
+        />
+      </div>
+      <button
+        class="tw-absolute tw-left-2 tw-top-1/2 tw--translate-y-1/2 tw-rounded-full tw-bg-black tw-bg-opacity-50 tw-p-2 tw-text-white hover:tw-cursor-pointer hover:tw-bg-opacity-100 focus:tw-outline-none"
+        id="static-prev"
+      >
         ❮
       </button>
-<button class="tw-top-1/2 tw-right-2 tw-absolute tw-bg-black tw-bg-opacity-50 hover:tw-bg-opacity-100 tw-p-2 tw-rounded-full focus:tw-outline-none tw-text-white tw--translate-y-1/2 hover:tw-cursor-pointer" id="static-next">
+      <button
+        class="tw-absolute tw-right-2 tw-top-1/2 tw--translate-y-1/2 tw-rounded-full tw-bg-black tw-bg-opacity-50 tw-p-2 tw-text-white hover:tw-cursor-pointer hover:tw-bg-opacity-100 focus:tw-outline-none"
+        id="static-next"
+      >
         ❯
       </button>
-<div class="tw-flex tw-justify-center tw-mt-4 tw-w-full">
-<div class="tw-flex tw-space-x-2 tw-bg-gray-100 tw-p-4 tw-px-6 tw-border-2 tw-border-gray-200 tw-rounded-full">
-<button class="tw-rounded-full focus:tw-outline-none tw-w-8 tw-h-8 hover:tw-cursor-pointer swatch-button" data-index="0" style="background-color: #e4dcd1"></button>
-<button class="tw-rounded-full focus:tw-outline-none tw-w-8 tw-h-8 hover:tw-cursor-pointer swatch-button" data-index="1" style="background-color: #2d2d2d"></button>
-<button class="tw-rounded-full focus:tw-outline-none tw-w-8 tw-h-8 hover:tw-cursor-pointer swatch-button" data-index="2" style="background-color: #645d5d"></button>
-</div>
-</div>
-</div>
-<div class="tw-flex tw-flex-col tw-items-center tw-gap-y-4 tw-bg-stone-100 lg:tw-mb-10 lg:tw-rounded-3xl section">
-<img alt="" class="lg:tw-order-2 tw-h-96 tw-object-cover" src="" style="object-position: 0% 50%"/>
-<div class="tw-flex tw-flex-col tw-space-y-4 tw-mb-10 tw-p-4 lg:tw-p-10 lg:tw-pb-0">
-<div class="tw-font-semibold tw-text-gray-700 tw-text-4xl tw-uppercase">
-<img alt="" class="tw-block lg:tw-inline-block tw-mr-2 tw-mb-2 lg:tw-mb-0 tw-w-36" src=""/>
-<strong class="" style="color: #6ca4fe">Thông minh </strong>
+      <div class="tw-mt-4 tw-flex tw-w-full tw-justify-center">
+        <div
+          class="tw-flex tw-space-x-2 tw-rounded-full tw-border-2 tw-border-gray-200 tw-bg-gray-100 tw-p-4 tw-px-6"
+        >
+          <button
+            class="swatch-button tw-h-8 tw-w-8 tw-rounded-full hover:tw-cursor-pointer focus:tw-outline-none"
+            data-index="0"
+            style="background-color: #e4dcd1"
+          ></button>
+          <button
+            class="swatch-button tw-h-8 tw-w-8 tw-rounded-full hover:tw-cursor-pointer focus:tw-outline-none"
+            data-index="1"
+            style="background-color: #2d2d2d"
+          ></button>
+          <button
+            class="swatch-button tw-h-8 tw-w-8 tw-rounded-full hover:tw-cursor-pointer focus:tw-outline-none"
+            data-index="2"
+            style="background-color: #645d5d"
+          ></button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="section tw-flex tw-flex-col tw-items-center tw-gap-y-4 tw-bg-stone-100 lg:tw-mb-10 lg:tw-rounded-3xl"
+    >
+      <img
+        alt=""
+        class="tw-h-96 tw-object-cover lg:tw-order-2"
+        src=""
+        style="object-position: 0% 50%"
+      />
+      <div
+        class="tw-mb-10 tw-flex tw-flex-col tw-space-y-4 tw-p-4 lg:tw-p-10 lg:tw-pb-0"
+      >
+        <div class="tw-text-4xl tw-font-semibold tw-uppercase tw-text-gray-700">
+          <img
+            alt=""
+            class="tw-mb-2 tw-mr-2 tw-block tw-w-36 lg:tw-mb-0 lg:tw-inline-block"
+            src=""
+          />
+          <strong class="" style="color: #6ca4fe">Thông minh </strong>
           PHÁT HIỆN SỨC KHỎE
         </div>
-<div class="lg:tw-columns-2 tw-text-gray-500 tw-text-lg">
+        <div class="tw-text-lg tw-text-gray-500 lg:tw-columns-2">
           Bộ cảm biến sức khỏe AI tiên tiến theo dõi nhẹ nhàng
-          <b>
-            nhịp tim, nồng độ oxy trong máu, vi tuần hoàn và mức độ mệt mỏi</b>, trực giác nhận biết nơi cơ thể bạn căng nhất và cần được chăm sóc sâu nhất. Ở chế độ AI, máy khéo léo thiết kế trải nghiệm mát-xa, điều chỉnh theo nhu cầu riêng của bạn và mang đến những chuyển động mà nó cho là sẽ xua tan căng thẳng với độ chính xác và sự chăm chút.
-          <b> Mọi chuyển động đều được cá nhân hóa</b>, mọi khoảnh khắc đều được thiết kế để đưa bạn vào trạng thái thư giãn sâu.
+          <b> nhịp tim, nồng độ oxy trong máu, vi tuần hoàn và mức độ mệt mỏi</b
+          >, trực giác nhận biết nơi cơ thể bạn căng nhất và cần được chăm sóc
+          sâu nhất. Ở chế độ AI, máy khéo léo thiết kế trải nghiệm mát-xa, điều
+          chỉnh theo nhu cầu riêng của bạn và mang đến những chuyển động mà nó
+          cho là sẽ xua tan căng thẳng với độ chính xác và sự chăm chút.
+          <b> Mọi chuyển động đều được cá nhân hóa</b>, mọi khoảnh khắc đều được
+          thiết kế để đưa bạn vào trạng thái thư giãn sâu.
         </div>
-</div>
-</div>
-<div class="tw-flex tw-flex-col tw-items-center tw-gap-y-4 tw-bg-stone-100 lg:tw-mb-10 lg:tw-rounded-3xl section">
-<img alt="" class="lg:tw-order-2 tw-h-96 tw-object-cover" src="" style="object-position: 0% 50%"/>
-<div class="tw-flex tw-flex-col tw-space-y-4 tw-mb-10 lg:tw-mb-0 tw-p-4 lg:tw-p-10 lg:tw-pb-0">
-<div class="tw-font-semibold tw-text-gray-700 tw-text-4xl tw-uppercase">
-<strong class="" style="color: #6ca4fe">Áp lực Thông minh </strong>
+      </div>
+    </div>
+    <div
+      class="section tw-flex tw-flex-col tw-items-center tw-gap-y-4 tw-bg-stone-100 lg:tw-mb-10 lg:tw-rounded-3xl"
+    >
+      <img
+        alt=""
+        class="tw-h-96 tw-object-cover lg:tw-order-2"
+        src=""
+        style="object-position: 0% 50%"
+      />
+      <div
+        class="tw-mb-10 tw-flex tw-flex-col tw-space-y-4 tw-p-4 lg:tw-mb-0 lg:tw-p-10 lg:tw-pb-0"
+      >
+        <div class="tw-text-4xl tw-font-semibold tw-uppercase tw-text-gray-700">
+          <strong class="" style="color: #6ca4fe">Áp lực Thông minh </strong>
           CẢM BIẾN
         </div>
-<div class="lg:tw-columns-2 tw-text-gray-500 tw-text-lg">
-          The Osaki Apex Duo 5D+4D is equipped with Áp lực Thông minh Sensors that
+        <div class="tw-text-lg tw-text-gray-500 lg:tw-columns-2">
+          The Osaki Apex Duo 5D+4D is equipped with Áp lực Thông minh Sensors
+          that
           <b>
-            thích ứng với từng chuyển động của bạn, mang lại sự thư giãn chính xác tại các điểm áp lực</b>. Đầu mát-xa có sưởi giúp tăng cường thư giãn, trong khi cơ chế phía dưới đồng bộ mang lại sự thoải mái cho toàn thân.
+            thích ứng với từng chuyển động của bạn, mang lại sự thư giãn chính
+            xác tại các điểm áp lực</b
+          >. Đầu mát-xa có sưởi giúp tăng cường thư giãn, trong khi cơ chế phía
+          dưới đồng bộ mang lại sự thoải mái cho toàn thân.
         </div>
-</div>
-</div>
-<div class="tw-flex tw-flex-col tw-items-center tw-gap-y-4 tw-bg-stone-100 lg:tw-mb-10 lg:tw-rounded-3xl tw-overflow-hidden section">
-<div class="lg:tw-relative lg:tw-order-2 tw-bg-stone-100">
-<div class="tw-top-0 lg:tw-absolute tw-grid lg:tw-grid-cols-2 lg:tw-bg-white lg:tw-rounded-r-3xl lg:tw-w-3/4" style="color: #5d99ff">
-<img alt="" class="tw-w-3/4 lg:tw-w-full" src=""/>
-<div class="tw-p-4 lg:tw-p-10 tw-text-center">
-<div class="tw-py-4">
-<div class="tw-flex tw-justify-end tw-items-end tw-font-semibold tw-uppercase">
-<div class="tw-text-sm">
+      </div>
+    </div>
+    <div
+      class="section tw-flex tw-flex-col tw-items-center tw-gap-y-4 tw-overflow-hidden tw-bg-stone-100 lg:tw-mb-10 lg:tw-rounded-3xl"
+    >
+      <div class="tw-bg-stone-100 lg:tw-relative lg:tw-order-2">
+        <div
+          class="tw-top-0 tw-grid lg:tw-absolute lg:tw-w-3/4 lg:tw-grid-cols-2 lg:tw-rounded-r-3xl lg:tw-bg-white"
+          style="color: #5d99ff"
+        >
+          <img alt="" class="tw-w-3/4 lg:tw-w-full" src="" />
+          <div class="tw-p-4 tw-text-center lg:tw-p-10">
+            <div class="tw-py-4">
+              <div
+                class="tw-flex tw-items-end tw-justify-end tw-font-semibold tw-uppercase"
+              >
+                <div class="tw-text-sm">
                   Cơ chế trên
                   <div class="tw-text-5xl">5D</div>
-</div>
-<div class="tw-text-5xl">+</div>
-<div class="tw-text-sm">
+                </div>
+                <div class="tw-text-5xl">+</div>
+                <div class="tw-text-sm">
                   Cơ chế dưới
                   <div class="tw-text-5xl">4D</div>
-</div>
-</div>
-<div class="tw-text-3xl tw-text-right">Con lăn mát-xa</div>
-</div>
-<div class="tw-gap-4 tw-grid tw-grid-cols-3 tw-font-semibold tw-text-sm">
-<div>
-<img alt="" class="tw-w-16" src=""/>
-<div>
-                  Ergonomic <br/>
+                </div>
+              </div>
+              <div class="tw-text-right tw-text-3xl">Con lăn mát-xa</div>
+            </div>
+            <div
+              class="tw-grid tw-grid-cols-3 tw-gap-4 tw-text-sm tw-font-semibold"
+            >
+              <div>
+                <img alt="" class="tw-w-16" src="" />
+                <div>
+                  Ergonomic <br />
                   SL-Track
                 </div>
-</div>
-<div>
-<img alt="" class="tw-w-16" src=""/>
-<div>
-                  Customizable <br/>
+              </div>
+              <div>
+                <img alt="" class="tw-w-16" src="" />
+                <div>
+                  Customizable <br />
                   Massage
                 </div>
-</div>
-<div>
-<img alt="" class="tw-w-16" src=""/>
-<div>
-                  Customizable <br/>
+              </div>
+              <div>
+                <img alt="" class="tw-w-16" src="" />
+                <div>
+                  Customizable <br />
                   Timer
                 </div>
-</div>
-<div>
-<img alt="" class="tw-w-16" src=""/>
-<div>
-                  5 Levels of <br/>
+              </div>
+              <div>
+                <img alt="" class="tw-w-16" src="" />
+                <div>
+                  5 Levels of <br />
                   Massage Intensity
                 </div>
-</div>
-<div>
-<img alt="" class="tw-w-16" src=""/>
-<div>
-                  5 Levels of <br/>
+              </div>
+              <div>
+                <img alt="" class="tw-w-16" src="" />
+                <div>
+                  5 Levels of <br />
                   Speed Intensity
                 </div>
-</div>
-<div>
-<img alt="" class="tw-w-16" src=""/>
-<div>
-                  5 Levels of <br/>
+              </div>
+              <div>
+                <img alt="" class="tw-w-16" src="" />
+                <div>
+                  5 Levels of <br />
                   Pressure Intensity
                 </div>
-</div>
-</div>
-</div>
-</div>
-<img alt="" class="" src=""/>
-</div>
-<div class="tw-flex tw-flex-col tw-space-y-4 tw-mb-10 lg:tw-mb-0 tw-p-4 lg:tw-p-10">
-<div class="tw-font-semibold tw-text-gray-700 tw-text-4xl tw-uppercase">
-<strong class="" style="color: #6ca4fe">Cơ chế 5D+4D Kép </strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img alt="" class="" src="" />
+      </div>
+      <div
+        class="tw-mb-10 tw-flex tw-flex-col tw-space-y-4 tw-p-4 lg:tw-mb-0 lg:tw-p-10"
+      >
+        <div class="tw-text-4xl tw-font-semibold tw-uppercase tw-text-gray-700">
+          <strong class="" style="color: #6ca4fe">Cơ chế 5D+4D Kép </strong>
           CƠ CHẾ MÁT-XA
         </div>
-<div class="lg:tw-columns-2 tw-text-gray-500 tw-text-lg">
-          Osaki Apex Duo mang đến hệ thống mát-xa 5D + 4D tiên tiến hàng đầu, được thiết kế để cung cấp độ chính xác và cảm giác chân thực vượt trội.
-          Công nghệ 5D thực hiện quét cơ thể theo thời gian thực, lập bản đồ chính xác các điểm áp lực chính dọc theo lưng bạn. Khi bạn thư giãn trên ghế, các đầu mát-xa thích ứng với sự dịch chuyển tự nhiên của cơ thể, đảm bảo trải nghiệm mát-xa chân thực và cá nhân hóa như đôi tay con người.
+        <div class="tw-text-lg tw-text-gray-500 lg:tw-columns-2">
+          Osaki Apex Duo mang đến hệ thống mát-xa 5D + 4D tiên tiến hàng đầu,
+          được thiết kế để cung cấp độ chính xác và cảm giác chân thực vượt
+          trội. Công nghệ 5D thực hiện quét cơ thể theo thời gian thực, lập bản
+          đồ chính xác các điểm áp lực chính dọc theo lưng bạn. Khi bạn thư giãn
+          trên ghế, các đầu mát-xa thích ứng với sự dịch chuyển tự nhiên của cơ
+          thể, đảm bảo trải nghiệm mát-xa chân thực và cá nhân hóa như đôi tay
+          con người.
         </div>
-</div>
-</div>
-<div class="tw-items-center tw-gap-y-4 tw-grid lg:tw-grid-cols-2 tw-bg-stone-100 lg:tw-mb-10 lg:tw-rounded-3xl section">
-<img alt="" class="" src=""/>
-<div class="tw-flex tw-flex-col tw-space-y-4 tw-mb-10 lg:tw-mb-0 tw-p-4 lg:tw-p-10 lg:tw-pb-0">
-<div class="tw-font-semibold tw-text-gray-700 tw-text-4xl tw-uppercase">
-<strong class="tw-block" style="color: #6ca4fe">TẤM BÊN TRƯỢT </strong>
+      </div>
+    </div>
+    <div
+      class="section tw-grid tw-items-center tw-gap-y-4 tw-bg-stone-100 lg:tw-mb-10 lg:tw-grid-cols-2 lg:tw-rounded-3xl"
+    >
+      <img alt="" class="" src="" />
+      <div
+        class="tw-mb-10 tw-flex tw-flex-col tw-space-y-4 tw-p-4 lg:tw-mb-0 lg:tw-p-10 lg:tw-pb-0"
+      >
+        <div class="tw-text-4xl tw-font-semibold tw-uppercase tw-text-gray-700">
+          <strong class="tw-block" style="color: #6ca4fe"
+            >TẤM BÊN TRƯỢT
+          </strong>
           TỰ ĐỘNG
         </div>
-<div class="tw-text-gray-500 tw-text-lg">
+        <div class="tw-text-lg tw-text-gray-500">
           Hệ thống cửa trượt Osaki mang đến
-          <b> việc ra vào dễ dàng chỉ với một nút bấm</b>. Hai bên trượt mở mượt mà mà không cần thêm không gian, cho phép bạn đặt ghế sát tường linh hoạt. Thiết kế sáng tạo này đặc biệt
-          <b>hữu ích cho người có khả năng di chuyển hạn chế</b> hoặc những ai gặp khó khăn khi lên/xuống ghế.
+          <b> việc ra vào dễ dàng chỉ với một nút bấm</b>. Hai bên trượt mở mượt
+          mà mà không cần thêm không gian, cho phép bạn đặt ghế sát tường linh
+          hoạt. Thiết kế sáng tạo này đặc biệt
+          <b>hữu ích cho người có khả năng di chuyển hạn chế</b> hoặc những ai
+          gặp khó khăn khi lên/xuống ghế.
         </div>
-</div>
-</div>
-<div class="tw-items-center tw-gap-y-4 tw-grid lg:tw-grid-cols-2 tw-bg-stone-100 lg:tw-mb-10 lg:tw-rounded-3xl section">
-<img alt="" class="lg:tw-order-2" src=""/>
-<div class="tw-flex tw-flex-col tw-space-y-4 tw-mb-10 lg:tw-mb-0 tw-p-4 lg:tw-p-10 lg:tw-pb-0">
-<img alt="" class="tw-w-16" src=""/>
-<div class="tw-font-semibold tw-text-gray-700 tw-text-4xl tw-uppercase">
-<strong class="tw-block" style="color: #6ca4fe">ĐIỀU KHIỂN </strong>
+      </div>
+    </div>
+    <div
+      class="section tw-grid tw-items-center tw-gap-y-4 tw-bg-stone-100 lg:tw-mb-10 lg:tw-grid-cols-2 lg:tw-rounded-3xl"
+    >
+      <img alt="" class="lg:tw-order-2" src="" />
+      <div
+        class="tw-mb-10 tw-flex tw-flex-col tw-space-y-4 tw-p-4 lg:tw-mb-0 lg:tw-p-10 lg:tw-pb-0"
+      >
+        <img alt="" class="tw-w-16" src="" />
+        <div class="tw-text-4xl tw-font-semibold tw-uppercase tw-text-gray-700">
+          <strong class="tw-block" style="color: #6ca4fe">ĐIỀU KHIỂN </strong>
           GIỌNG NÓI
         </div>
-<div class="tw-text-gray-500 tw-text-lg">
+        <div class="tw-text-lg tw-text-gray-500">
           Osaki Apex Duo 5D + 4D mang lại
-          <b>sự tiện lợi rảnh tay</b> với điều khiển giọng nói tích hợp. Chỉ cần nói một trong các lệnh có sẵn, ghế sẽ tự động bắt đầu chức năng đã chọn.
+          <b>sự tiện lợi rảnh tay</b> với điều khiển giọng nói tích hợp. Chỉ cần
+          nói một trong các lệnh có sẵn, ghế sẽ tự động bắt đầu chức năng đã
+          chọn.
         </div>
-</div>
-</div>
-<div class="lg:tw-gap-10 tw-grid lg:tw-grid-cols-2 lg:tw-mx-10 lg:tw-mb-10">
-<div class="tw-bg-white tw-ml-auto lg:tw-rounded-3xl tw-overflow-hidden" style="background-color: #222">
-<img alt="" src=""/>
-<div class="tw-space-y-4 tw-mx-auto tw-p-4 lg:tw-p-10 tw-pb-10 lg:tw-text-center">
-<div class="tw-font-semibold tw-text-white tw-text-4xl tw-uppercase">
-<strong class="tw-block" style="color: #6ca4fe"> CÔNG NGHỆ SL-TRACK </strong>
+      </div>
+    </div>
+    <div class="tw-grid lg:tw-mx-10 lg:tw-mb-10 lg:tw-grid-cols-2 lg:tw-gap-10">
+      <div
+        class="tw-ml-auto tw-overflow-hidden tw-bg-white lg:tw-rounded-3xl"
+        style="background-color: #222"
+      >
+        <img alt="" src="" />
+        <div
+          class="tw-mx-auto tw-space-y-4 tw-p-4 tw-pb-10 lg:tw-p-10 lg:tw-text-center"
+        >
+          <div class="tw-text-4xl tw-font-semibold tw-uppercase tw-text-white">
+            <strong class="tw-block" style="color: #6ca4fe">
+              CÔNG NGHỆ SL-TRACK
+            </strong>
             HIỆN ĐẠI
           </div>
-<div class="tw-text-gray-300 tw-text-lg">
+          <div class="tw-text-lg tw-text-gray-300">
             Osaki Apex Duo sở hữu SL-Track kéo dài từ
-            <b class="tw-text-blue-400">
-              cổ xuống đến mông và gân kheo </b>. Điều này mang lại
-            <b class="tw-text-blue-400"> phạm vi bao phủ toàn bộ cơ thể</b>, đồng thời mang đến liệu trình mát-xa mượt mà và ổn định.
+            <b class="tw-text-blue-400"> cổ xuống đến mông và gân kheo </b>.
+            Điều này mang lại
+            <b class="tw-text-blue-400"> phạm vi bao phủ toàn bộ cơ thể</b>,
+            đồng thời mang đến liệu trình mát-xa mượt mà và ổn định.
           </div>
-</div>
-</div>
-<div class="tw-bg-white tw-mr-auto lg:tw-rounded-3xl tw-overflow-hidden" style="background-color: #222">
-<img alt="" class="tw-bg-black" src=""/>
-<div class="tw-space-y-4 tw-mx-auto tw-p-4 lg:tw-p-10 tw-pb-10 lg:tw-text-center">
-<div class="tw-font-semibold tw-text-white tw-text-4xl tw-uppercase">
-<strong class="tw-block" style="color: #6ca4fe"> Quét cơ thể </strong>
+        </div>
+      </div>
+      <div
+        class="tw-mr-auto tw-overflow-hidden tw-bg-white lg:tw-rounded-3xl"
+        style="background-color: #222"
+      >
+        <img alt="" class="tw-bg-black" src="" />
+        <div
+          class="tw-mx-auto tw-space-y-4 tw-p-4 tw-pb-10 lg:tw-p-10 lg:tw-text-center"
+        >
+          <div class="tw-text-4xl tw-font-semibold tw-uppercase tw-text-white">
+            <strong class="tw-block" style="color: #6ca4fe">
+              Quét cơ thể
+            </strong>
             THEO THỜI GIAN THỰC
           </div>
-<div class="tw-mx-auto tw-text-gray-300 tw-text-lg">
+          <div class="tw-mx-auto tw-text-lg tw-text-gray-300">
             Công nghệ
-            <b class="tw-text-blue-400">quét cơ thể theo thời gian thực</b> đảm bảo liệu trình luôn chính xác trong suốt phiên. Khi bạn dịch chuyển trên ghế, các đầu mát-xa sẽ
-            <b class="tw-text-blue-400">thích ứng và di chuyển theo cơ thể bạn</b>, nhắm chính xác vào các điểm áp lực quan trọng dọc theo lưng.
+            <b class="tw-text-blue-400">quét cơ thể theo thời gian thực</b> đảm
+            bảo liệu trình luôn chính xác trong suốt phiên. Khi bạn dịch chuyển
+            trên ghế, các đầu mát-xa sẽ
+            <b class="tw-text-blue-400"
+              >thích ứng và di chuyển theo cơ thể bạn</b
+            >, nhắm chính xác vào các điểm áp lực quan trọng dọc theo lưng.
           </div>
-</div>
-</div>
-</div>
-<div class="tw-bg-black tw-mb-40 tw-py-10 lg:tw-rounded-3xl tw-overflow-hidden">
-<div class="tw-flex tw-flex-col tw-items-center tw-gap-y-4 tw-mx-auto tw-mb-10 lg:tw-w-3/4 lg:tw-text-center section">
-<img alt="" class="lg:tw-order-2" src=""/>
-<div class="tw-flex tw-flex-col tw-items-center tw-space-y-4 tw-p-4 lg:tw-p-10">
-<img alt="" class="lg:tw-mx-auto tw-mr-auto tw-w-20" src=""/>
-<div class="tw-font-semibold tw-text-white tw-text-4xl tw-uppercase">
-<strong class="tw-block" style="color: #6ca4fe"> 3 giai đoạn </strong>
+        </div>
+      </div>
+    </div>
+    <div
+      class="tw-mb-40 tw-overflow-hidden tw-bg-black tw-py-10 lg:tw-rounded-3xl"
+    >
+      <div
+        class="section tw-mx-auto tw-mb-10 tw-flex tw-flex-col tw-items-center tw-gap-y-4 lg:tw-w-3/4 lg:tw-text-center"
+      >
+        <img alt="" class="lg:tw-order-2" src="" />
+        <div
+          class="tw-flex tw-flex-col tw-items-center tw-space-y-4 tw-p-4 lg:tw-p-10"
+        >
+          <img alt="" class="tw-mr-auto tw-w-20 lg:tw-mx-auto" src="" />
+          <div class="tw-text-4xl tw-font-semibold tw-uppercase tw-text-white">
+            <strong class="tw-block" style="color: #6ca4fe">
+              3 giai đoạn
+            </strong>
             nghiêng không trọng lực
           </div>
-<div class="tw-mx-auto tw-text-gray-300 tw-text-lg">
-            Trải nghiệm thư giãn như không trọng lực với chế độ nghiêng zero gravity của Osaki Apex Duo, công nghệ đột phá được NASA phát triển.
+          <div class="tw-mx-auto tw-text-lg tw-text-gray-300">
+            Trải nghiệm thư giãn như không trọng lực với chế độ nghiêng zero
+            gravity của Osaki Apex Duo, công nghệ đột phá được NASA phát triển.
           </div>
-</div>
-</div>
-<div class="tw-items-center tw-gap-y-4 tw-grid lg:tw-grid-cols-2 tw-mx-auto tw-mb-20 lg:tw-mb-10 section">
-<img alt="" class="lg:tw-order-2" src=""/>
-<div class="tw-flex tw-flex-col tw-space-y-4 tw-p-4 lg:tw-p-10 lg:tw-pr-0 lg:tw-pl-20">
-<img alt="" class="tw-w-16" src=""/>
-<div class="tw-font-semibold tw-text-white tw-text-4xl tw-uppercase">
-<strong class="" style="color: #6ca4fe"> Công nghệ tiết kiệm </strong>
+        </div>
+      </div>
+      <div
+        class="section tw-mx-auto tw-mb-20 tw-grid tw-items-center tw-gap-y-4 lg:tw-mb-10 lg:tw-grid-cols-2"
+      >
+        <img alt="" class="lg:tw-order-2" src="" />
+        <div
+          class="tw-flex tw-flex-col tw-space-y-4 tw-p-4 lg:tw-p-10 lg:tw-pl-20 lg:tw-pr-0"
+        >
+          <img alt="" class="tw-w-16" src="" />
+          <div class="tw-text-4xl tw-font-semibold tw-uppercase tw-text-white">
+            <strong class="" style="color: #6ca4fe">
+              Công nghệ tiết kiệm
+            </strong>
             không gian
           </div>
-<div class="tw-mx-auto tw-text-gray-300 tw-text-lg">
-            Thanks to the Osaki’s Space-không gian, the Osaki Apex Duo
-            only needs just
-            <b class="tw-text-blue-400">khoảng trống 1 inch so với tường để ngả hoàn toàn</b>.
+          <div class="tw-mx-auto tw-text-lg tw-text-gray-300">
+            Thanks to the Osaki’s Space-không gian, the Osaki Apex Duo only
+            needs just
+            <b class="tw-text-blue-400"
+              >khoảng trống 1 inch so với tường để ngả hoàn toàn</b
+            >.
           </div>
-</div>
-</div>
-<div class="tw-flex tw-flex-col tw-items-center tw-gap-y-4 tw-mx-auto tw-mb-20 lg:tw-mb-10 lg:tw-w-3/4 lg:tw-text-center section">
-<div class="tw-items-center lg:tw-gap-20 lg:tw-order-2 tw-grid lg:tw-grid-cols-2">
-<img alt="" class="tw-px-10" src=""/>
-<div class="tw-space-y-4">
-<div class="tw-p-4 tw-font-semibold tw-text-3xl tw-uppercase" style="color: #6ca4fe">
+        </div>
+      </div>
+      <div
+        class="section tw-mx-auto tw-mb-20 tw-flex tw-flex-col tw-items-center tw-gap-y-4 lg:tw-mb-10 lg:tw-w-3/4 lg:tw-text-center"
+      >
+        <div
+          class="tw-grid tw-items-center lg:tw-order-2 lg:tw-grid-cols-2 lg:tw-gap-20"
+        >
+          <img alt="" class="tw-px-10" src="" />
+          <div class="tw-space-y-4">
+            <div
+              class="tw-p-4 tw-text-3xl tw-font-semibold tw-uppercase"
+              style="color: #6ca4fe"
+            >
               Với túi khí tay vịn 3 phân đoạn
             </div>
-<img alt="" src=""/>
-</div>
-</div>
-<div class="tw-flex tw-flex-col lg:tw-items-center tw-space-y-4 tw-p-4 lg:tw-p-10">
-<img alt="" class="lg:tw-mx-auto tw-mr-auto tw-w-16" src=""/>
-<div class="tw-font-semibold tw-text-white tw-text-4xl tw-uppercase">
-<strong class="tw-block" style="color: #6ca4fe">
+            <img alt="" src="" />
+          </div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-space-y-4 tw-p-4 lg:tw-items-center lg:tw-p-10"
+        >
+          <img alt="" class="tw-mr-auto tw-w-16 lg:tw-mx-auto" src="" />
+          <div class="tw-text-4xl tw-font-semibold tw-uppercase tw-text-white">
+            <strong class="tw-block" style="color: #6ca4fe">
               62 túi khí toàn thân
             </strong>
             Nén khí
           </div>
-<div class="tw-mx-auto tw-text-gray-300 tw-text-lg">
+          <div class="tw-mx-auto tw-text-lg tw-text-gray-300">
             62 túi khí được bố trí chiến lược với
-            <b class="tw-text-blue-400">cấu trúc nhiều lớp</b> mang đến lực nén khí tăng dần. Túi khí ở tay và lòng bàn tay được chia thành ba phần, mang đến chuyển động
-            <b class="tw-text-blue-400">nhào bóp dạng gợn sóng</b> và ấn nhịp nhàng.
+            <b class="tw-text-blue-400">cấu trúc nhiều lớp</b> mang đến lực nén
+            khí tăng dần. Túi khí ở tay và lòng bàn tay được chia thành ba phần,
+            mang đến chuyển động
+            <b class="tw-text-blue-400">nhào bóp dạng gợn sóng</b> và ấn nhịp
+            nhàng.
           </div>
-</div>
-</div>
-<div class="tw-flex tw-flex-col tw-items-center tw-gap-y-4 tw-mx-auto tw-mb-10 lg:tw-w-3/4 lg:tw-text-center section">
-<img alt="" class="lg:tw-order-2 tw-mx-auto tw-w-3/4 lg:tw-w-1/2" src=""/>
-<div class="tw-flex tw-flex-col lg:tw-items-center tw-space-y-4 tw-p-4 lg:tw-p-10">
-<img alt="" class="lg:tw-mx-auto tw-mr-auto tw-w-12" src=""/>
-<div class="tw-font-semibold tw-text-white tw-text-4xl tw-uppercase">
-<strong class="" style="color: #d81c1c"> NHIỆT </strong>
+        </div>
+      </div>
+      <div
+        class="section tw-mx-auto tw-mb-10 tw-flex tw-flex-col tw-items-center tw-gap-y-4 lg:tw-w-3/4 lg:tw-text-center"
+      >
+        <img
+          alt=""
+          class="tw-mx-auto tw-w-3/4 lg:tw-order-2 lg:tw-w-1/2"
+          src=""
+        />
+        <div
+          class="tw-flex tw-flex-col tw-space-y-4 tw-p-4 lg:tw-items-center lg:tw-p-10"
+        >
+          <img alt="" class="tw-mr-auto tw-w-12 lg:tw-mx-auto" src="" />
+          <div class="tw-text-4xl tw-font-semibold tw-uppercase tw-text-white">
+            <strong class="" style="color: #d81c1c"> NHIỆT </strong>
             LIỆU PHÁP
           </div>
-<div class="tw-mx-auto tw-text-gray-300 tw-text-lg">
+          <div class="tw-mx-auto tw-text-lg tw-text-gray-300">
             Osaki Apex Duo tăng cường liệu trình mát-xa với
-            <b class="tw-text-red-500"> nhiệt ấm dễ chịu có chủ đích </b>, giúp tan biến căng thẳng và tăng cường thư giãn. Liệu pháp nhiệt ở
+            <b class="tw-text-red-500"> nhiệt ấm dễ chịu có chủ đích </b>, giúp
+            tan biến căng thẳng và tăng cường thư giãn. Liệu pháp nhiệt ở
             <b class="tw-text-red-500">vùng thắt lưng, bắp chân và bàn chân</b>
-            kết hợp hơi ấm dịu nhẹ với áp lực chính xác để mang lại sự thư thái trọn vẹn.
+            kết hợp hơi ấm dịu nhẹ với áp lực chính xác để mang lại sự thư thái
+            trọn vẹn.
           </div>
-</div>
-</div>
-</div>
-<div class="tw-mb-40 tw-font-semibold tw-text-center">
-<div class="tw-p-10 tw-text-4xl tw-uppercase">46 Chương trình Tự động</div>
-<!-- Main container for all the content sections -->
-<div class="tw-space-y-8 tw-text-gray-800 tw-uppercase">
- Section 1: TOÀN THÂN 
-<div class="tw-flex tw-flex-col tw-items-center tw-space-y-6 tw-p-8 md:tw-p-10 md:tw-px-20 tw-rounded-3xl lg:tw-rounded-full gradient-section">
-<div class="tw-font-bold tw-text-white tw-text-2xl tw-tracking-wider">
+        </div>
+      </div>
+    </div>
+    <div class="tw-mb-40 tw-text-center tw-font-semibold">
+      <div class="tw-p-10 tw-text-4xl tw-uppercase">
+        46 Chương trình Tự động
+      </div>
+      <!-- Main container for all the content sections -->
+      <div class="tw-space-y-8 tw-uppercase tw-text-gray-800">
+        <div
+          class="tw-flex tw-flex-col tw-items-center tw-space-y-6 tw-rounded-3xl tw-bg-stone-100 tw-p-8 md:tw-p-10 md:tw-px-20 lg:tw-rounded-full"
+        >
+          <div class="tw-text-2xl tw-font-bold tw-tracking-wider">
             TOÀN THÂN
           </div>
-<div class="tw-flex tw-flex-wrap tw-justify-center tw-items-center tw-gap-4 tw-w-full">
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+          <div
+            class="tw-flex tw-w-full tw-flex-wrap tw-items-center tw-justify-center tw-gap-4"
+          >
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               TRÌNH DIỄN NHANH
             </div>
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               THƯ GIÃN
             </div>
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               PHỤC HỒI
             </div>
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               KÉO GIÃN
             </div>
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               NHẸ NHÀNG
             </div>
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               THIỀN
             </div>
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               ĐỒNG BỘ
             </div>
-</div>
-</div>
- Section 2: TẬP TRUNG 
-<div class="tw-flex tw-flex-col tw-items-center tw-space-y-6 tw-p-8 md:tw-p-10 md:tw-px-20 tw-rounded-3xl lg:tw-rounded-full gradient-section">
-<div class="tw-font-bold tw-text-white tw-text-2xl tw-tracking-wider">
+          </div>
+        </div>
+
+        <div
+          class="tw-flex tw-flex-col tw-items-center tw-space-y-6 tw-rounded-3xl tw-bg-stone-100 tw-p-8 md:tw-p-10 md:tw-px-20 lg:tw-rounded-full"
+        >
+          <div class="tw-text-2xl tw-font-bold tw-tracking-wider">
             TẬP TRUNG
           </div>
-<div class="tw-flex tw-flex-wrap tw-justify-center tw-items-center tw-gap-4 tw-w-full">
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+          <div
+            class="tw-flex tw-w-full tw-flex-wrap tw-items-center tw-justify-center tw-gap-4"
+          >
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               NECK &amp; SHOULDER
             </div>
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               GIẢM CĂNG THẲNG VĂN PHÒNG
             </div>
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               TÁI TẠO NĂNG LƯỢNG
             </div>
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               THÂN DƯỚI
             </div>
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               SPORT PHỤC HỒI
             </div>
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               GIẢI TỎA MỆT MỎI
             </div>
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               THÂN TRÊN
             </div>
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               THÂN DƯỚI THƯ THÁI
             </div>
-</div>
-</div>
- Section 3: MÁT-XA XOA DỊU 
-<div class="tw-flex tw-flex-col tw-items-center tw-space-y-6 tw-p-8 md:tw-p-10 md:tw-px-20 tw-rounded-3xl lg:tw-rounded-full gradient-section">
-<div class="tw-font-bold tw-text-white tw-text-2xl tw-tracking-wider">
+          </div>
+        </div>
+
+        <div
+          class="tw-flex tw-flex-col tw-items-center tw-space-y-6 tw-rounded-3xl tw-bg-stone-100 tw-p-8 md:tw-p-10 md:tw-px-20 lg:tw-rounded-full"
+        >
+          <div class="tw-text-2xl tw-font-bold tw-tracking-wider">
             MÁT-XA XOA DỊU
           </div>
-<div class="tw-flex tw-flex-wrap tw-justify-center tw-items-center tw-gap-4 tw-w-full">
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+          <div
+            class="tw-flex tw-w-full tw-flex-wrap tw-items-center tw-justify-center tw-gap-4"
+          >
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               THƯ THÁI
             </div>
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               MÁT-XA ĐIỂM
             </div>
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               SỨC SỐNG
             </div>
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               CHĂM SÓC BUỔI SÁNG
             </div>
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               CHĂM SÓC GIỮA NGÀY
             </div>
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               LƯNG
             </div>
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               NECK KÉO GIÃN
             </div>
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               CHĂM SÓC CỘT SỐNG
             </div>
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               CHĂM SÓC BAN ĐÊM
             </div>
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               WAIST &amp; GLUTES
             </div>
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               LEG &amp; FOOT
             </div>
-</div>
-</div>
- Section 4: PHONG CÁCH QUỐC TẾ 
-<div class="tw-flex tw-flex-col tw-items-center tw-space-y-6 tw-p-8 md:tw-p-10 md:tw-px-20 tw-rounded-3xl lg:tw-rounded-full gradient-section">
-<div class="tw-font-bold tw-text-white tw-text-2xl tw-tracking-wider">
+          </div>
+        </div>
+
+        <div
+          class="tw-flex tw-flex-col tw-items-center tw-space-y-6 tw-rounded-3xl tw-bg-stone-100 tw-p-8 md:tw-p-10 md:tw-px-20 lg:tw-rounded-full"
+        >
+          <div class="tw-text-2xl tw-font-bold tw-tracking-wider">
             PHONG CÁCH QUỐC TẾ
           </div>
-<div class="tw-flex tw-flex-wrap tw-justify-center tw-items-center tw-gap-4 tw-w-full">
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+          <div
+            class="tw-flex tw-w-full tw-flex-wrap tw-items-center tw-justify-center tw-gap-4"
+          >
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               PHONG CÁCH HONG KONG
             </div>
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               THAI KÉO GIÃN
             </div>
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               PHONG CÁCH HÀN QUỐC
             </div>
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               SHIATSU NHẬT BẢN
             </div>
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               THỤY ĐIỂN
             </div>
-</div>
-</div>
- Section 5: PHỤC HỒI 
-<div class="tw-flex tw-flex-col tw-items-center tw-space-y-6 tw-p-8 md:tw-p-10 md:tw-px-20 tw-rounded-3xl lg:tw-rounded-full gradient-section">
-<div class="tw-font-bold tw-text-white tw-text-2xl tw-tracking-wider">
-            PHỤC HỒI
           </div>
-<div class="tw-flex tw-flex-wrap tw-justify-center tw-items-center tw-gap-4 tw-w-full">
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+        </div>
+
+        <div
+          class="tw-flex tw-flex-col tw-items-center tw-space-y-6 tw-rounded-3xl tw-bg-stone-100 tw-p-8 md:tw-p-10 md:tw-px-20 lg:tw-rounded-full"
+        >
+          <div class="tw-text-2xl tw-font-bold tw-tracking-wider">PHỤC HỒI</div>
+          <div
+            class="tw-flex tw-w-full tw-flex-wrap tw-items-center tw-justify-center tw-gap-4"
+          >
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               UPPER LƯNG
             </div>
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               TUẦN HOÀN
             </div>
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               TÁI TẠO
             </div>
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               HỒI SINH
             </div>
-<div class="tw-bg-white tw-shadow-lg tw-backdrop-blur-sm tw-px-4 tw-py-2 tw-rounded-full tw-font-semibold tw-text-sm">
+            <div
+              class="tw-rounded-full tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-shadow-lg tw-backdrop-blur-sm"
+            >
               VẬN ĐỘNG
             </div>
-</div>
-</div>
-</div>
-</div>
-<div class="tw-mb-40 tw-font-semibold tw-text-center">
-<div class="tw-p-10 tw-text-4xl tw-uppercase">5 Chế độ Mát-xa Thủ công</div>
-<div class="tw-flex tw-flex-wrap tw-justify-center tw-gap-10 tw-bg-stone-100 tw-p-10 lg:tw-px-20 tw-rounded-3xl lg:tw-rounded-full tw-text-white gradient-section">
-<div class="tw-flex tw-flex-col tw-items-center tw-space-y-4">
-<img alt="" class="tw-w-20" src=""/>
-<div class="">Nhào bóp</div>
-</div>
-<div class="tw-flex tw-flex-col tw-items-center tw-space-y-4">
-<img alt="" class="tw-w-20" src=""/>
-<div class="">Vỗ</div>
-</div>
-<div class="tw-flex tw-flex-col tw-items-center tw-space-y-4">
-<img alt="" class="tw-w-20" src=""/>
-<div class="">Gõ</div>
-</div>
-<div class="tw-flex tw-flex-col tw-items-center tw-space-y-4">
-<img alt="" class="tw-w-20" src=""/>
-<div class="">Shiatsu</div>
-</div>
-<div class="tw-flex tw-flex-col tw-items-center tw-space-y-4">
-<img alt="" class="tw-w-20" src=""/>
-<div class="">Nhào bóp <br/>&amp;Vỗ</div>
-</div>
-</div>
-</div>
-<div class="tw-items-center tw-gap-y-4 tw-grid lg:tw-grid-cols-2 tw-mb-10 lg:tw-rounded-3xl section">
-<img alt="" class="lg:tw-order-2" src=""/>
-<div class="tw-flex tw-flex-col tw-space-y-4 tw-mb-10 lg:tw-mb-0 tw-p-4 lg:tw-p-10 tw-px-0 lg:tw-pb-0">
-<div class="tw-font-semibold tw-text-gray-700 tw-text-4xl tw-uppercase">
-<strong class="tw-block" style="color: #6ca4fe"> Bắp chân sâu </strong>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tw-mb-40 tw-text-center tw-font-semibold">
+      <div class="tw-p-10 tw-text-4xl tw-uppercase">
+        5 Chế độ Mát-xa Thủ công
+      </div>
+      <div
+        class="tw-flex tw-flex-wrap tw-justify-center tw-gap-10 tw-rounded-3xl tw-bg-stone-100 tw-p-10 lg:tw-rounded-full lg:tw-px-20"
+      >
+        <div class="tw-flex tw-flex-col tw-items-center tw-space-y-4">
+          <img alt="" class="tw-w-20" src="" />
+          <div class="">Nhào bóp</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-space-y-4">
+          <img alt="" class="tw-w-20" src="" />
+          <div class="">Vỗ</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-space-y-4">
+          <img alt="" class="tw-w-20" src="" />
+          <div class="">Gõ</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-space-y-4">
+          <img alt="" class="tw-w-20" src="" />
+          <div class="">Shiatsu</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-space-y-4">
+          <img alt="" class="tw-w-20" src="" />
+          <div class="">Nhào bóp <br />&amp;Vỗ</div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="section tw-mb-10 tw-grid tw-items-center tw-gap-y-4 lg:tw-grid-cols-2 lg:tw-rounded-3xl"
+    >
+      <img alt="" class="lg:tw-order-2" src="" />
+      <div
+        class="tw-mb-10 tw-flex tw-flex-col tw-space-y-4 tw-p-4 tw-px-0 lg:tw-mb-0 lg:tw-p-10 lg:tw-pb-0"
+      >
+        <div class="tw-text-4xl tw-font-semibold tw-uppercase tw-text-gray-700">
+          <strong class="tw-block" style="color: #6ca4fe">
+            Bắp chân sâu
+          </strong>
           nhào bóp
         </div>
-<div class="tw-text-gray-500 tw-text-lg">
+        <div class="tw-text-lg tw-text-gray-500">
           The Osaki Apex Duo features outer calf rotation nhào bóp, enhanced by
           <b>8 airbags</b> and <b>2 rollers</b> in the calf rest, to deliver a
           thorough calf massage and provide a uniquely soothing experience.
         </div>
-</div>
-</div>
-<div class="tw-items-center tw-gap-y-4 tw-grid lg:tw-grid-cols-2 tw-mb-10 lg:tw-rounded-3xl section">
-<img alt="" class="" src=""/>
-<div class="tw-flex tw-flex-col tw-space-y-4 tw-mb-10 lg:tw-mb-0 tw-p-4 lg:tw-p-10 tw-px-0 lg:tw-pb-0">
-<img alt="" class="tw-w-16" src=""/>
-<div class="tw-font-semibold tw-text-gray-700 tw-text-4xl tw-uppercase">
-<strong class="tw-block" style="color: #6ca4fe">4 con lăn bàn chân
+      </div>
+    </div>
+    <div
+      class="section tw-mb-10 tw-grid tw-items-center tw-gap-y-4 lg:tw-grid-cols-2 lg:tw-rounded-3xl"
+    >
+      <img alt="" class="" src="" />
+      <div
+        class="tw-mb-10 tw-flex tw-flex-col tw-space-y-4 tw-p-4 tw-px-0 lg:tw-mb-0 lg:tw-p-10 lg:tw-pb-0"
+      >
+        <img alt="" class="tw-w-16" src="" />
+        <div class="tw-text-4xl tw-font-semibold tw-uppercase tw-text-gray-700">
+          <strong class="tw-block" style="color: #6ca4fe"
+            >4 con lăn bàn chân
           </strong>
           &amp; 16 túi khí
         </div>
-<div class="tw-text-gray-500 tw-text-lg">
+        <div class="tw-text-lg tw-text-gray-500">
           The Osaki Apex Duo uses <b>16 airbags</b> and <b>4 rollers</b> to
           massage the sides, soles, and backs of your feet, along with the
           <b>Achilles tendon</b>, providing soothing relief exactly where it’s
           needed most.
         </div>
-</div>
-</div>
-<div class="tw-items-center tw-gap-y-4 tw-grid lg:tw-grid-cols-2 tw-mb-10 lg:tw-rounded-3xl section">
-<img alt="" class="lg:tw-order-2" src=""/>
-<div class="tw-flex tw-flex-col tw-space-y-4 tw-mb-10 lg:tw-mb-0 tw-p-4 lg:tw-p-10 tw-px-0 lg:tw-pb-0">
-<div class="tw-font-semibold tw-text-gray-700 tw-text-4xl tw-uppercase">
-<strong class="tw-block" style="color: #6ca4fe"> tự động </strong>
+      </div>
+    </div>
+    <div
+      class="section tw-mb-10 tw-grid tw-items-center tw-gap-y-4 lg:tw-grid-cols-2 lg:tw-rounded-3xl"
+    >
+      <img alt="" class="lg:tw-order-2" src="" />
+      <div
+        class="tw-mb-10 tw-flex tw-flex-col tw-space-y-4 tw-p-4 tw-px-0 lg:tw-mb-0 lg:tw-p-10 lg:tw-pb-0"
+      >
+        <div class="tw-text-4xl tw-font-semibold tw-uppercase tw-text-gray-700">
+          <strong class="tw-block" style="color: #6ca4fe"> tự động </strong>
 
           kéo dài chân
         </div>
-<div class="tw-text-gray-500 tw-text-lg">
+        <div class="tw-text-lg tw-text-gray-500">
           Phần để chân của Osaki Apex Duo có thể kéo dài tới <b>7 inches</b>,
           thoải mái cho người dùng cao tới 6'3".
         </div>
-</div>
-</div>
-<div class="lg:tw-mb-40 lg:tw-py-20 tw-rounded-3xl desktop-blue">
-<div class="tw-mx-auto tw-mb-20 lg:tw-w-2/3 tw-text-center">
-<div class="tw-p-4 tw-font-semibold tw-text-4xl tw-uppercase" style="color: #6ca4fe">
+      </div>
+    </div>
+    <div class="desktop-blue tw-rounded-3xl lg:tw-mb-40 lg:tw-py-20">
+      <div class="tw-mx-auto tw-mb-20 tw-text-center lg:tw-w-2/3">
+        <div
+          class="tw-p-4 tw-text-4xl tw-font-semibold tw-uppercase"
+          style="color: #6ca4fe"
+        >
           Tính năng đắm chìm
         </div>
-<div class="tw-text-gray-500">
-          Osaki Apex Duo chăm chút từng chi tiết, mang lại trải nghiệm mát-xa đa giác quan giúp bạn thư giãn sâu và phục hồi hoàn toàn.
+        <div class="tw-text-gray-500">
+          Osaki Apex Duo chăm chút từng chi tiết, mang lại trải nghiệm mát-xa đa
+          giác quan giúp bạn thư giãn sâu và phục hồi hoàn toàn.
         </div>
-</div>
-<div class="tw-gap-y-4 tw-grid lg:tw-grid-cols-2 tw-p-4 lg:tw-p-10 tw-px-0 lg:tw-rounded-3xl section">
-<img alt="" class="" src=""/>
-<div class="tw-flex tw-flex-col tw-space-y-4 tw-mb-10 lg:tw-mb-0 lg:tw-p-10 lg:tw-pb-0">
-<img alt="" class="tw-w-16" src=""/>
-<div class="tw-font-semibold tw-text-gray-700 tw-text-4xl tw-uppercase">
+      </div>
+      <div
+        class="section tw-grid tw-gap-y-4 tw-p-4 tw-px-0 lg:tw-grid-cols-2 lg:tw-rounded-3xl lg:tw-p-10"
+      >
+        <img alt="" class="" src="" />
+        <div
+          class="tw-mb-10 tw-flex tw-flex-col tw-space-y-4 lg:tw-mb-0 lg:tw-p-10 lg:tw-pb-0"
+        >
+          <img alt="" class="tw-w-16" src="" />
+          <div
+            class="tw-text-4xl tw-font-semibold tw-uppercase tw-text-gray-700"
+          >
             Liệu pháp hương thơm
           </div>
-<div class="tw-text-gray-500 tw-text-lg">
+          <div class="tw-text-lg tw-text-gray-500">
             Elevate your relaxation with Liệu pháp hương thơm, as
             <b>mùi hương dịu nhẹ</b>
-            lan tỏa trong không khí, đánh thức các giác quan và đưa bạn vào sự tĩnh tại sâu hơn.
+            lan tỏa trong không khí, đánh thức các giác quan và đưa bạn vào sự
+            tĩnh tại sâu hơn.
           </div>
-</div>
-</div>
-<div class="tw-items-center tw-gap-y-4 tw-grid lg:tw-grid-cols-3 tw-mb-10 lg:tw-p-10 tw-pr-0 lg:tw-pr-0 lg:tw-rounded-3xl section">
-<img alt="" class="lg:tw-order-2 lg:tw-col-span-2" src=""/>
-<div class="tw-flex tw-flex-col tw-space-y-4 tw-mb-10 lg:tw-mb-0 tw-p-4 lg:tw-p-10 tw-px-0 lg:tw-pr-0 lg:tw-pb-0">
-<img alt="" class="tw-w-16" src=""/>
-<div class="tw-font-semibold tw-text-gray-700 tw-text-4xl tw-uppercase">
+        </div>
+      </div>
+      <div
+        class="section tw-mb-10 tw-grid tw-items-center tw-gap-y-4 tw-pr-0 lg:tw-grid-cols-3 lg:tw-rounded-3xl lg:tw-p-10 lg:tw-pr-0"
+      >
+        <img alt="" class="lg:tw-order-2 lg:tw-col-span-2" src="" />
+        <div
+          class="tw-mb-10 tw-flex tw-flex-col tw-space-y-4 tw-p-4 tw-px-0 lg:tw-mb-0 lg:tw-p-10 lg:tw-pb-0 lg:tw-pr-0"
+        >
+          <img alt="" class="tw-w-16" src="" />
+          <div
+            class="tw-text-4xl tw-font-semibold tw-uppercase tw-text-gray-700"
+          >
             Bộ tạo ion âm
           </div>
-<div class="tw-text-gray-500 tw-text-lg">
-            The Bộ tạo ion âm <b>lặng lẽ làm sạch không khí</b> bằng cách giảm bụi, phấn hoa và lông thú, giúp giảm dị ứng và tạo môi trường trong lành, dễ chịu hơn.
+          <div class="tw-text-lg tw-text-gray-500">
+            The Bộ tạo ion âm <b>lặng lẽ làm sạch không khí</b> bằng cách giảm
+            bụi, phấn hoa và lông thú, giúp giảm dị ứng và tạo môi trường trong
+            lành, dễ chịu hơn.
           </div>
-</div>
-</div>
-<div class="tw-gap-y-4 tw-grid lg:tw-grid-cols-2 tw-mb-10 lg:tw-p-10 tw-pl-0 lg:tw-pl-0 lg:tw-rounded-3xl section">
-<img alt="" class="" src=""/>
-<div class="tw-flex tw-flex-col tw-space-y-4 tw-mb-10 lg:tw-mb-0 tw-p-4 lg:tw-p-10 tw-px-0 lg:tw-pb-0 lg:tw-pl-20">
-<img alt="" class="tw-w-16" src=""/>
-<div class="tw-font-semibold tw-text-gray-700 tw-text-4xl tw-uppercase">
+        </div>
+      </div>
+      <div
+        class="section tw-mb-10 tw-grid tw-gap-y-4 tw-pl-0 lg:tw-grid-cols-2 lg:tw-rounded-3xl lg:tw-p-10 lg:tw-pl-0"
+      >
+        <img alt="" class="" src="" />
+        <div
+          class="tw-mb-10 tw-flex tw-flex-col tw-space-y-4 tw-p-4 tw-px-0 lg:tw-mb-0 lg:tw-p-10 lg:tw-pb-0 lg:tw-pl-20"
+        >
+          <img alt="" class="tw-w-16" src="" />
+          <div
+            class="tw-text-4xl tw-font-semibold tw-uppercase tw-text-gray-700"
+          >
             Đèn LED sắc liệu (Chromotherapy)
           </div>
-<div class="tw-text-gray-500 tw-text-lg">
-            Đèn LED sắc liệu (Chromotherapy) lighting surrounds you in a soothing glow, with
-            <b>màu sắc tùy chỉnh</b> để thiết lập bầu không khí hoàn hảo cho trải nghiệm mát-xa.
+          <div class="tw-text-lg tw-text-gray-500">
+            Đèn LED sắc liệu (Chromotherapy) lighting surrounds you in a
+            soothing glow, with
+            <b>màu sắc tùy chỉnh</b> để thiết lập bầu không khí hoàn hảo cho
+            trải nghiệm mát-xa.
           </div>
-</div>
-</div>
-</div>
-<div class="tw-gap-y-20 lg:tw-gap-10 lg:tw-gap-y-20 tw-grid lg:tw-grid-cols-2 tw-mb-40">
-<div>
-<img alt="" src=""/>
-<div class="tw-space-y-2 tw-p-4 tw-px-0">
-<img alt="" class="tw-w-16" src=""/>
-<div class="tw-font-semibold tw-text-gray-700 tw-text-4xl tw-uppercase">
+        </div>
+      </div>
+    </div>
+    <div
+      class="tw-mb-40 tw-grid tw-gap-y-20 lg:tw-grid-cols-2 lg:tw-gap-10 lg:tw-gap-y-20"
+    >
+      <div>
+        <img alt="" src="" />
+        <div class="tw-space-y-2 tw-p-4 tw-px-0">
+          <img alt="" class="tw-w-16" src="" />
+          <div
+            class="tw-text-4xl tw-font-semibold tw-uppercase tw-text-gray-700"
+          >
             bảng điều khiển cạnh nhanh
           </div>
-<div class="tw-text-gray-500 tw-text-lg">
-            Bảng điều khiển cạnh nhanh mang lại <b>sự tiện lợi dễ dàng</b> to easily adjust their
-            massage settings with sự tiện lợi dễ dàng.
+          <div class="tw-text-lg tw-text-gray-500">
+            Bảng điều khiển cạnh nhanh mang lại <b>sự tiện lợi dễ dàng</b> to
+            easily adjust their massage settings with sự tiện lợi dễ dàng.
           </div>
-</div>
-</div>
-<div>
-<img alt="" src=""/>
-<div class="tw-space-y-2 tw-p-4 tw-px-0">
-<img alt="" class="tw-w-16" src=""/>
-<div class="tw-font-semibold tw-text-gray-700 tw-text-4xl tw-uppercase">
+        </div>
+      </div>
+      <div>
+        <img alt="" src="" />
+        <div class="tw-space-y-2 tw-p-4 tw-px-0">
+          <img alt="" class="tw-w-16" src="" />
+          <div
+            class="tw-text-4xl tw-font-semibold tw-uppercase tw-text-gray-700"
+          >
             loa Bluetooth
           </div>
-<div class="tw-text-gray-500 tw-text-lg">
+          <div class="tw-text-lg tw-text-gray-500">
             Loa Bluetooth cho phép bạn thư giãn với
-            <b>bất kỳ âm thanh yêu thích nào của bạn</b>, tạo nên sự hài hòa cho cả tâm trí và cơ thể.
+            <b>bất kỳ âm thanh yêu thích nào của bạn</b>, tạo nên sự hài hòa cho
+            cả tâm trí và cơ thể.
           </div>
-</div>
-</div>
-<div>
-<img alt="" src=""/>
-<div class="tw-space-y-2 tw-p-4 tw-px-0">
-<img alt="" class="tw-w-16" src=""/>
-<div class="tw-font-semibold tw-text-gray-700 tw-text-4xl tw-uppercase">
+        </div>
+      </div>
+      <div>
+        <img alt="" src="" />
+        <div class="tw-space-y-2 tw-p-4 tw-px-0">
+          <img alt="" class="tw-w-16" src="" />
+          <div
+            class="tw-text-4xl tw-font-semibold tw-uppercase tw-text-gray-700"
+          >
             Màn hình cảm ứng 8’’
           </div>
-<div class="tw-text-gray-500 tw-text-lg">
-            Máy tính bảng cảm ứng cung cấp dữ liệu sức khỏe như nồng độ oxy trong máu và nhịp tim, đồng thời <b>cập nhật qua Wi‑Fi</b> để giữ cho các chương trình mát-xa luôn cập nhật.
+          <div class="tw-text-lg tw-text-gray-500">
+            Máy tính bảng cảm ứng cung cấp dữ liệu sức khỏe như nồng độ oxy
+            trong máu và nhịp tim, đồng thời <b>cập nhật qua Wi‑Fi</b> để giữ
+            cho các chương trình mát-xa luôn cập nhật.
           </div>
-</div>
-</div>
-<div>
-<img alt="" src=""/>
-<div class="tw-space-y-2 tw-p-4 tw-px-0">
-<img alt="" class="tw-w-16" src=""/>
-<div class="tw-font-semibold tw-text-gray-700 tw-text-4xl tw-uppercase">
+        </div>
+      </div>
+      <div>
+        <img alt="" src="" />
+        <div class="tw-space-y-2 tw-p-4 tw-px-0">
+          <img alt="" class="tw-w-16" src="" />
+          <div
+            class="tw-text-4xl tw-font-semibold tw-uppercase tw-text-gray-700"
+          >
             Sạc không dây &amp; Cổng USB
           </div>
-<div class="tw-text-gray-500 tw-text-lg">
-            Osaki Apex Duo tích hợp bộ sạc không dây và cổng USB, vì vậy bạn có thể <b>sạc thiết bị</b> trong khi thư giãn thoải mái.
+          <div class="tw-text-lg tw-text-gray-500">
+            Osaki Apex Duo tích hợp bộ sạc không dây và cổng USB, vì vậy bạn có
+            thể <b>sạc thiết bị</b> trong khi thư giãn thoải mái.
           </div>
-</div>
-</div>
-</div>
-<div class="tw-items-center tw-grid lg:tw-grid-cols-2 tw-mx-auto tw-mb-40">
-<div class="tw-col-span-full tw-mb-10 tw-font-semibold tw-text-gray-700 tw-text-4xl tw-text-center">
+        </div>
+      </div>
+    </div>
+    <div class="tw-mx-auto tw-mb-40 tw-grid tw-items-center lg:tw-grid-cols-2">
+      <div
+        class="tw-col-span-full tw-mb-10 tw-text-center tw-text-4xl tw-font-semibold tw-text-gray-700"
+      >
         CỬA TỐI THIỂU
       </div>
-<img alt="" class="tw-mx-auto tw-w-3/4" src=""/>
-<div class="tw-p-4 tw-pl-10">
-<div class="tw-font-semibold tw-text-gray-700 tw-text-2xl">
+      <img alt="" class="tw-mx-auto tw-w-3/4" src="" />
+      <div class="tw-p-4 tw-pl-10">
+        <div class="tw-text-2xl tw-font-semibold tw-text-gray-700">
           Hướng dẫn đo
         </div>
-<ul class="tw-space-y-4 tw-pl-4 tw-text-gray-700">
-<li>
-            Tính chiều rộng cửa bằng cách trừ 1 inch so với bề rộng trong nhỏ nhất của khung cửa. (1/2 inch mỗi bên)
+        <ul class="tw-space-y-4 tw-pl-4 tw-text-gray-700">
+          <li>
+            Tính chiều rộng cửa bằng cách trừ 1 inch so với bề rộng trong nhỏ
+            nhất của khung cửa. (1/2 inch mỗi bên)
           </li>
-<li>Vui lòng dùng thước dây tiêu chuẩn để đo cửa.</li>
-<li>
-            Nếu cửa không thể mở hoàn toàn, hãy mở hết mức có thể và đo chiều rộng từ mép bản lề cửa.
+          <li>Vui lòng dùng thước dây tiêu chuẩn để đo cửa.</li>
+          <li>
+            Nếu cửa không thể mở hoàn toàn, hãy mở hết mức có thể và đo chiều
+            rộng từ mép bản lề cửa.
           </li>
-<li>
-            Nếu tường có bo tròn, hãy tính bề rộng trong dựa trên điểm lồi nhất của tường.
+          <li>
+            Nếu tường có bo tròn, hãy tính bề rộng trong dựa trên điểm lồi nhất
+            của tường.
           </li>
-</ul>
-</div>
-</div>
-<div class="tw-mb-40">
-<div class="tw-p-10 tw-font-bold tw-text-black tw-text-4xl lg:tw-text-5xl tw-text-center">
+        </ul>
+      </div>
+    </div>
+    <div class="tw-mb-40">
+      <div
+        class="tw-p-10 tw-text-center tw-text-4xl tw-font-bold tw-text-black lg:tw-text-5xl"
+      >
         Kích thước
       </div>
-<div class="lg:tw-flex-row tw-justify-center tw-items-center tw-gap-10 tw-grid lg:tw-grid-cols-2">
-<img alt="" class="" src=""/>
-<img alt="" class="" src=""/>
-</div>
-</div>
-<section>
-<div class="tw-p-10 tw-font-bold tw-text-3xl md:tw-text-4xl lg:tw-text-5xl tw-text-center">
+      <div
+        class="tw-grid tw-items-center tw-justify-center tw-gap-10 lg:tw-grid-cols-2 lg:tw-flex-row"
+      >
+        <img alt="" class="" src="" />
+        <img alt="" class="" src="" />
+      </div>
+    </div>
+    <section>
+      <div
+        class="tw-p-10 tw-text-center tw-text-3xl tw-font-bold md:tw-text-4xl lg:tw-text-5xl"
+      >
         Thông số kỹ thuật
       </div>
-<div class="tw-font-normal tw-text-xl">
-<div class="tw-flex lg:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
-<div class="tw-w-52 tw-font-bold">Tên sản phẩm</div>
-<div>Apex Duo</div>
-</div>
-<div class="tw-flex lg:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
-<div class="tw-w-52 tw-font-bold tw-shrink-0">Hướng dẫn sử dụng</div>
-<div class="tw-gap-2 tw-grid tw-grid-cols-2 tw-w-full">
-<a class="!tw-text-red-500 !tw-no-underline" href="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/Apex_Duo_5D_4D_manual_WEB.pdf?v=1758745580" target="_blank">Tải xuống</a>
-</div>
-</div>
-<div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
-<div class="tw-w-52 tw-font-bold tw-shrink-0">Nguồn điện</div>
-<div>110 - 120V</div>
-</div>
-<div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
-<div class="tw-w-52 tw-font-bold tw-shrink-0">Tần số định mức</div>
-<div>50 / 60Hz</div>
-</div>
-<div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
-<div class="tw-w-52 tw-font-bold tw-shrink-0">
-            Chair <br class="tw-hidden lg:tw-block"/>
-            Kích thước <br/>
+      <div class="tw-text-xl tw-font-normal">
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 lg:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-font-bold">Tên sản phẩm</div>
+          <div>Apex Duo</div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 lg:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">Hướng dẫn sử dụng</div>
+          <div class="tw-grid tw-w-full tw-grid-cols-2 tw-gap-2">
+            <a
+              class="!tw-text-red-500 !tw-no-underline"
+              href="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/Apex_Duo_5D_4D_manual_WEB.pdf?v=1758745580"
+              target="_blank"
+              >Tải xuống</a
+            >
+          </div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">Nguồn điện</div>
+          <div>110 - 120V</div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">Tần số định mức</div>
+          <div>50 / 60Hz</div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            Chair <br class="tw-hidden lg:tw-block" />
+            Kích thước <br />
             (W x L x H)
           </div>
-<div class="tw-gap-2 tw-grid lg:tw-grid-cols-2 tw-w-full">
-<div>
-<div class="tw-font-bold tw-text-xl">Đứng thẳng</div>
-<div>33.5" x 65.7" x 48.5"</div>
-</div>
-<div>
-<div class="tw-font-bold tw-text-xl">Ngả lưng</div>
-<div>33.5" x 70.9" x 34.6"</div>
-</div>
-</div>
-</div>
-<div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
-<div class="tw-w-52 tw-font-bold tw-shrink-0">Khối lượng ghế</div>
-<div>332.3 lb</div>
-</div>
-<div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
-<div class="tw-w-52 tw-font-bold tw-shrink-0">Chiều rộng</div>
-<div class="tw-gap-2 tw-grid tw-grid-cols-2 tw-w-full">
-<div>
-<div class="tw-font-bold tw-text-xl">Vai</div>
-<div>24.5"</div>
-</div>
-<div>
-<div class="tw-font-bold tw-text-xl">Ghế</div>
-<div>21.0"</div>
-</div>
-</div>
-</div>
-<div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
-<div class="tw-w-52 tw-font-bold tw-shrink-0">Minimum Door Chiều rộng</div>
-<div class="tw-gap-2 tw-grid tw-grid-cols-2 tw-w-full">
-<div>33.5"</div>
-</div>
-</div>
-<div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
-<div class="tw-w-52 tw-font-bold tw-shrink-0">
+          <div class="tw-grid tw-w-full tw-gap-2 lg:tw-grid-cols-2">
+            <div>
+              <div class="tw-text-xl tw-font-bold">Đứng thẳng</div>
+              <div>33.5" x 65.7" x 48.5"</div>
+            </div>
+            <div>
+              <div class="tw-text-xl tw-font-bold">Ngả lưng</div>
+              <div>33.5" x 70.9" x 34.6"</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">Khối lượng ghế</div>
+          <div>332.3 lb</div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">Chiều rộng</div>
+          <div class="tw-grid tw-w-full tw-grid-cols-2 tw-gap-2">
+            <div>
+              <div class="tw-text-xl tw-font-bold">Vai</div>
+              <div>24.5"</div>
+            </div>
+            <div>
+              <div class="tw-text-xl tw-font-bold">Ghế</div>
+              <div>21.0"</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            Minimum Door Chiều rộng
+          </div>
+          <div class="tw-grid tw-w-full tw-grid-cols-2 tw-gap-2">
+            <div>33.5"</div>
+          </div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
             Tải trọng người dùng tối đa
           </div>
-<div>280 lb</div>
-</div>
-<div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
-<div class="tw-w-52 tw-font-bold tw-shrink-0">
-            Package <br class="tw-hidden lg:tw-block"/>
-            Kích thước <br/>
+          <div>280 lb</div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+            Package <br class="tw-hidden lg:tw-block" />
+            Kích thước <br />
             (W x L x H)
           </div>
-<div class="tw-gap-2 tw-grid lg:tw-grid-cols-2 tw-w-full">
-<div>
-<div class="tw-font-bold tw-text-xl">Thùng 1</div>
-<div>33.5" x 51.4" x 50.2"</div>
-</div>
-<div>
-<div class="tw-font-bold tw-text-xl">Thùng 2</div>
-<div>16.9" x 41.8" x 29.6"</div>
-</div>
-</div>
-</div>
-<div class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b">
-<div class="tw-w-52 tw-font-bold tw-shrink-0">Khối lượng thùng</div>
-<div class="tw-gap-2 tw-grid lg:tw-grid-cols-2 tw-w-full">
-<div>
-<div class="tw-font-bold tw-text-xl">Thùng 1</div>
-<div>340.6 lb</div>
-</div>
-<div>
-<div class="tw-font-bold tw-text-xl">Thùng 2</div>
-<div>56 lb</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-</div>
+          <div class="tw-grid tw-w-full tw-gap-2 lg:tw-grid-cols-2">
+            <div>
+              <div class="tw-text-xl tw-font-bold">Thùng 1</div>
+              <div>33.5" x 51.4" x 50.2"</div>
+            </div>
+            <div>
+              <div class="tw-text-xl tw-font-bold">Thùng 2</div>
+              <div>16.9" x 41.8" x 29.6"</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row"
+        >
+          <div class="tw-w-52 tw-shrink-0 tw-font-bold">Khối lượng thùng</div>
+          <div class="tw-grid tw-w-full tw-gap-2 lg:tw-grid-cols-2">
+            <div>
+              <div class="tw-text-xl tw-font-bold">Thùng 1</div>
+              <div>340.6 lb</div>
+            </div>
+            <div>
+              <div class="tw-text-xl tw-font-bold">Thùng 2</div>
+              <div>56 lb</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </body>
 <script>
   ;(function getImages() {
@@ -1197,104 +1547,4 @@
 
     showSlide(0) // Initialize with the first slide visible
   })()
-</script>
-
-<script>
-  // Wait until the DOM is fully loaded before running the script
-  document.addEventListener("DOMContentLoaded", () => {
-    // Select all the sections that will change color
-    const sections = document.querySelectorAll(".gradient-section")
-    if (sections.length === 0) return
-
-    // Define the array of colors for the gradient transition.
-    // Adding the first color at the end creates a seamless, looping gradient.
-    const colors = [
-      { r: 131, g: 96, b: 195 }, // #8360c3 -> Purple
-      { r: 46, g: 191, b: 145 }, // #2ebf91 -> Green
-      { r: 250, g: 112, b: 154 }, // #fa709a -> Pink
-      { r: 246, g: 211, b: 101 }, // #f6d365 -> Yellow
-      { r: 8, g: 159, b: 255 }, // #089fff -> Blue
-      { r: 131, g: 96, b: 195 }, // #8360c3 -> Purple (to loop back)
-    ]
-
-    // This function calculates and applies new background colors based on scroll position
-    function updateSectionColors() {
-      // Total scrollable height of the document
-      const scrollHeight =
-        document.documentElement.scrollHeight - window.innerHeight
-      // Current vertical scroll position
-      const scrollTop = window.scrollY
-
-      // Handle non-scrollable pages by applying a static gradient
-      if (scrollHeight <= 0) {
-        const colorStops = colors.length - 1
-        sections.forEach((section, index) => {
-          // Distribute colors evenly across sections
-          const progress =
-            index / (sections.length > 1 ? sections.length - 1 : 1)
-          const colorIndex = Math.min(
-            Math.floor(progress * colorStops),
-            colorStops - 1
-          )
-          const nextColorIndex = colorIndex + 1
-          const localProgress = progress * colorStops - colorIndex
-          const c1 = colors[colorIndex]
-          const c2 = colors[nextColorIndex]
-          const r = Math.round(c1.r + (c2.r - c1.r) * localProgress)
-          const g = Math.round(c1.g + (c2.g - c1.g) * localProgress)
-          const b = Math.round(c1.b + (c2.b - c1.b) * localProgress)
-          section.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
-        })
-        return
-      }
-
-      // Calculate the overall scroll progress as a fraction from 0 to 1
-      const scrollFraction = scrollTop / scrollHeight
-
-      // A speed factor to make the gradient change faster.
-      // Increase this value for a faster change, decrease for slower.
-      const speedFactor = 2
-
-      // Iterate over each section to give it a unique color
-      sections.forEach((section, index) => {
-        // Each section gets an offset, distributing them along the color gradient.
-        // The 0.7 factor can be adjusted to change the color difference between sections.
-        const sectionOffset = (index / sections.length) * 0.7
-
-        // Combine the global scroll progress (multiplied by speed) with the section's unique offset.
-        // The modulo operator (%) ensures the value wraps around, creating an endless loop.
-        const combinedProgress =
-          (scrollFraction * speedFactor + sectionOffset) % 1
-
-        // Determine which two colors to blend
-        const colorStops = colors.length - 1
-        const colorIndex = Math.min(
-          Math.floor(combinedProgress * colorStops),
-          colorStops - 1
-        )
-        const nextColorIndex = colorIndex + 1
-
-        // Calculate the progress *between* the current and next color stops
-        const localProgress = combinedProgress * colorStops - colorIndex
-
-        // Get the start and end colors for the interpolation
-        const c1 = colors[colorIndex]
-        const c2 = colors[nextColorIndex]
-
-        // Interpolate the R, G, and B values to find the exact color
-        const r = Math.round(c1.r + (c2.r - c1.r) * localProgress)
-        const g = Math.round(c1.g + (c2.g - c1.g) * localProgress)
-        const b = Math.round(c1.b + (c2.b - c1.b) * localProgress)
-
-        // Apply the new, unique background color to this section
-        section.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
-      })
-    }
-
-    // Listen for scroll events on the window
-    window.addEventListener("scroll", updateSectionColors)
-
-    // Call the function once on load to set the initial colors
-    updateSectionColors()
-  })
 </script>
