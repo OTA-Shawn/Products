@@ -28,6 +28,24 @@
         "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/1.yogaflex_main.webp",
     },
     {
+      img_order: 2,
+      img_name: "yogaflex_color_black",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/2.yogaflex_color_black.webp",
+    },
+    {
+      img_order: 3,
+      img_name: "yogaflex_color_brown",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.yogaflex_color_brown.webp",
+    },
+    {
+      img_order: 4,
+      img_name: "yogaflex_color_grey",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4.yogaflex_color_grey.webp",
+    },
+    {
       img_order: 6,
       img_name: "yogaflex_health_detection",
       img_src:
@@ -402,36 +420,62 @@
       </div>
     </div>
 
+    <!-- Swatch Static Container -->
     <div
-      id="swatch-sections"
-      class="tw-relative tw-mx-auto tw-mb-20 tw-w-full tw-max-w-xl tw-overflow-hidden tw-pb-4"
+      id="swatch-static-container"
+      class="tw-relative tw-mx-auto tw-mb-20 tw-w-full tw-max-w-xl"
     >
-      <!-- Slides Container -->
-      <div
-        id="tw-slides"
-        class="tw-flex tw-transition-transform tw-duration-300"
-      ></div>
+      <div class="tw-relative tw-h-96">
+        <img
+          src=""
+          alt="Taupe chair"
+          class="slide-image tw-absolute tw-left-0 tw-top-0 tw-h-full tw-w-full tw-object-contain tw-opacity-100 tw-transition-opacity tw-duration-300"
+        />
+        <img
+          src=""
+          alt="Black chair"
+          class="slide-image tw-absolute tw-left-0 tw-top-0 tw-h-full tw-w-full tw-object-contain tw-opacity-0 tw-transition-opacity tw-duration-300"
+        />
+        <img
+          src=""
+          alt="Brown chair"
+          class="slide-image tw-absolute tw-left-0 tw-top-0 tw-h-full tw-w-full tw-object-contain tw-opacity-0 tw-transition-opacity tw-duration-300"
+        />
+      </div>
 
-      <!-- Navigation Arrows -->
       <button
-        id="tw-prev"
+        id="static-prev"
         class="tw-absolute tw-left-2 tw-top-1/2 tw--translate-y-1/2 tw-rounded-full tw-bg-black tw-bg-opacity-50 tw-p-2 tw-text-white hover:tw-cursor-pointer hover:tw-bg-opacity-100 focus:tw-outline-none"
       >
         &#10094;
       </button>
       <button
-        id="tw-next"
+        id="static-next"
         class="tw-absolute tw-right-2 tw-top-1/2 tw--translate-y-1/2 tw-rounded-full tw-bg-black tw-bg-opacity-50 tw-p-2 tw-text-white hover:tw-cursor-pointer hover:tw-bg-opacity-100 focus:tw-outline-none"
       >
         &#10095;
       </button>
 
-      <!-- Pagination Swatches -->
-      <div class="tw-mt-4 tw-flex tw-w-full">
+      <div class="tw-mt-4 tw-flex tw-w-full tw-justify-center">
         <div
-          id="tw-pagination"
-          class="tw-mx-auto tw-flex tw-min-w-0 tw-justify-center tw-space-x-2 tw-rounded-full tw-border-2 tw-border-gray-200 tw-bg-gray-100 tw-p-4 tw-px-6"
-        ></div>
+          class="tw-flex tw-space-x-2 tw-rounded-full tw-border-2 tw-border-gray-200 tw-bg-gray-100 tw-p-4 tw-px-6"
+        >
+          <button
+            class="swatch-button tw-h-8 tw-w-8 tw-rounded-full hover:tw-cursor-pointer focus:tw-outline-none"
+            style="background-color: #1d1d1d"
+            data-index="0"
+          ></button>
+          <button
+            class="swatch-button tw-h-8 tw-w-8 tw-rounded-full hover:tw-cursor-pointer focus:tw-outline-none"
+            style="background-color: #4b3c2a"
+            data-index="1"
+          ></button>
+          <button
+            class="swatch-button tw-h-8 tw-w-8 tw-rounded-full hover:tw-cursor-pointer focus:tw-outline-none"
+            style="background-color: #e1d9d3"
+            data-index="2"
+          ></button>
+        </div>
       </div>
     </div>
 
@@ -1235,80 +1279,47 @@
 
 <script>
   ;(function () {
-    // Array of slide objects: image URL + swatch color
+    const images = document.querySelectorAll(".slide-image")
+    const swatches = document.querySelectorAll(".swatch-button")
+    const prevBtn = document.getElementById("static-prev")
+    const nextBtn = document.getElementById("static-next")
+    const totalSlides = images.length
+    let currentIndex = 0
 
-    const slidesData = [
-      {
-        image:
-          "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/2.yogaflex_color_black.webp",
-        color: "#1d1d1d",
-      },
-      {
-        image:
-          "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.yogaflex_color_brown.webp",
-        color: "#4B3C2A",
-      },
-      {
-        image:
-          "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4.yogaflex_color_grey.webp",
-        color: "#e1d9d3",
-      },
-    ]
+    const showSlide = (index) => {
+      // Hide all images by setting opacity to 0
+      images.forEach((img) => img.classList.remove("tw-opacity-100"))
+      images.forEach((img) => img.classList.add("tw-opacity-0"))
 
-    const slides = document.getElementById("tw-slides")
-    const pagination = document.getElementById("tw-pagination")
-    const total = slidesData.length
-    let idx = 0
+      // Show the current image by setting opacity to 100
+      images[index].classList.remove("tw-opacity-0")
+      images[index].classList.add("tw-opacity-100")
 
-    // Generate slides
-    slidesData.forEach(({ image }) => {
-      const slide = document.createElement("div")
-      // slide.className = "tw-min-w-full tw-h-96 tw-bg-cover tw-bg-center"
-      slide.className =
-        "tw-min-w-full tw-h-96 tw-bg-contain tw-bg-center tw-bg-no-repeat"
-      slide.style.backgroundImage = `url('${image}')`
-      slides.appendChild(slide)
-    })
-
-    // Generate pagination swatches
-    slidesData.forEach(({ color }, i) => {
-      const dot = document.createElement("button")
-      dot.className =
-        "tw-w-8 tw-h-8 tw-rounded-full focus:tw-outline-none hover:tw-cursor-pointer"
-      dot.style.backgroundColor = color
-      dot.dataset.index = i
-      pagination.appendChild(dot)
-    })
-
-    const prevBtn = document.getElementById("tw-prev")
-    const nextBtn = document.getElementById("tw-next")
-    // Scope selector to direct children only, avoiding accidental global matches
-    const dots = pagination.querySelectorAll("#swatch-sections button")
-
-    function update() {
-      slides.style.transform = `translateX(-${idx * 100}%)`
-      dots.forEach((dot, i) => {
-        dot.style.outline = i === idx ? "2px solid #6ca4ff" : "none"
+      // Update the active style on the swatches
+      swatches.forEach((swatch) => {
+        swatch.style.outline = "none"
       })
+      swatches[index].style.outline = "3px solid #4299e1"
+      swatches[index].style.outlineOffset = "2px"
     }
 
     prevBtn.addEventListener("click", () => {
-      idx = (idx - 1 + total) % total
-      update()
-    })
-    nextBtn.addEventListener("click", () => {
-      idx = (idx + 1) % total
-      update()
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides
+      showSlide(currentIndex)
     })
 
-    dots.forEach((dot) => {
-      dot.addEventListener("click", () => {
-        idx = parseInt(dot.dataset.index, 10)
-        update()
+    nextBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % totalSlides
+      showSlide(currentIndex)
+    })
+
+    swatches.forEach((swatch) => {
+      swatch.addEventListener("click", () => {
+        currentIndex = parseInt(swatch.dataset.index, 10)
+        showSlide(currentIndex)
       })
     })
 
-    // Initialize
-    update()
+    showSlide(0) // Initialize with the first slide visible
   })()
 </script>
