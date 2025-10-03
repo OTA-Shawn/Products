@@ -796,6 +796,10 @@
   width: 100%;
 }
 
+.tw-w-64 {
+  width: 256px;
+}
+
 .tw-min-w-0 {
   min-width: 0px;
 }
