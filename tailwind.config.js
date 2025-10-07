@@ -16,6 +16,7 @@ module.exports = {
   theme: {
     extend: {},
     fontSize: {
+      xs: ['12px', { lineHeight: '16px' }],
       sm: ['14px', { lineHeight: '20px' }],
       base: ['16px', { lineHeight: '24px' }],
       lg: ['18px', { lineHeight: '28px' }],
