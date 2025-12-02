@@ -16,6 +16,10 @@ video {
   height: auto;
 }
 
+img{
+  display:block;
+}
+
 * {
   box-sizing: border-box;
 }
