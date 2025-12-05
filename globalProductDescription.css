@@ -916,6 +916,10 @@
   width: 100%;
 }
 
+.tw-w-56 {
+  width: 224px;
+}
+
 .tw-min-w-0 {
   min-width: 0px;
 }
@@ -4208,6 +4212,10 @@ img{
 
   .lg\:tw-pt-4 {
     padding-top: 16px;
+  }
+
+  .lg\:tw-pl-4 {
+    padding-left: 16px;
   }
 
   .lg\:tw-text-left {
