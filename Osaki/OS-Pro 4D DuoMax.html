@@ -423,235 +423,38 @@
       filter: hue-rotate(360deg);
     }
   }
-  .sections {
-    max-width: 1024px;
-    margin-left: auto;
-    margin-right: auto;
-    /* font-weight: bold; */
-    font-family: Arial, Helvetica, sans-serif;
-    /* display: flex;
-    flex-direction: column; */
+
+  .pp-font {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
   }
 
-  .sections strong {
-    color: var(--section-strong-color);
-  }
-
-  .sections .section {
-    background-color: var(--section-bg-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-  }
-
-  .section > img,
-  .section-content {
-    flex: 1 1 0%;
-    width: 50%;
-  }
-
-  .section-content {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 50px;
-  }
-
-  .section-header {
-    font-size: 52px;
-    line-height: 65px;
-    color: var(--section-header-color);
-  }
-  .section-header2 {
-    font-size: 36px;
-    line-height: 45px;
-    color: var(--section-header-color);
-  }
-
-  .section-description {
-    color: var(--section-content-color);
-    font-size: 26px;
-    line-height: 39px;
-  }
-
-  .circle {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 32px;
-  }
-
-  .circle > :first-child {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  }
-
-  .grid-section {
-    background-color: var(--section-bg-color);
-    color: var(--section-grid-color);
-    display: grid;
-    grid-column: span 2 / span 2;
-    padding: 50px 100px 50px;
-    gap: 50px;
-    margin-bottom: 50px;
-  }
-
-  .grid-section img {
-    margin: 0 0 0px 50px;
-  }
-
-  .grid-section .grid-item {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .app-icon {
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  .app-icon img {
-    flex: 0 0 0;
-    width: 40%;
-  }
-
-  .grid-align {
-    text-align: left;
+  .pp-height {
+    height: 600px;
   }
 
   @media (max-width: 1024px) {
-    .sections {
-      max-width: 768px;
+    .pp-height {
+      height: 500px;
     }
-
-    .sections .section {
-      margin-bottom: 35px;
-    }
-
-    .section > img {
-      width: 50%;
-    }
-
-    .section .section-content {
-      gap: 22px;
-      padding: 35px;
-    }
-
-    .section-header {
-      font-size: 39px;
-      line-height: 58px;
-    }
-
-    .section-header2 {
-      font-size: 27px;
-      line-height: 40px;
-    }
-
-    .section-description {
-      font-size: 15px;
-      line-height: 24px;
-    }
-
-    .circle {
-      gap: 5px;
-      font-size: 24px;
-    }
-
-    .circle > :first-child {
-      width: 30px;
-      height: 30px;
-    }
-
-    .grid-section {
-      padding: 35px 75px 35px;
-      gap: 35px;
-      margin-bottom: 35px;
-    }
-
-    .grid-section img {
-      margin: 0 0 0px 35px;
-    }
-
-    .grid-section .grid-item {
-      gap: 15px;
-    }
-
-    .grid-align {
-      text-align: center;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .sections {
-      max-width: 480px;
-    }
-
-    .sections .section {
-      margin-bottom: 22px;
-    }
-
-    .section .section-content {
-      gap: 14px;
-      padding: 22px;
-    }
-
-    .section-header {
-      font-size: 26px;
-      line-height: 38px;
-    }
-    .section-header {
-      font-size: 18px;
-      line-height: 26px;
-    }
-    .section-description {
-      font-size: 10px;
-      line-height: 16px;
-    }
-
-    .circle {
-      gap: 4px;
-      font-size: 16px;
-    }
-
-    .circle > :first-child {
-      width: 20px;
-      height: 20px;
-    }
-
-    .grid-section {
-      padding: 20px 50px 20px;
-      gap: 20px;
-      margin-bottom: 20px;
-    }
-
-    .grid-section img {
-      margin: 0 0 0px 20px;
-      width: 20%;
-    }
-
-    .grid-section .grid-item {
-      gap: 10px;
-    }
-  }
-
-  .active-tab {
-    color: #191919;
-    border-bottom: 0.25em solid gray;
   }
 </style>
 <body>
-  <div class="sections">
+  <div
+    class="sections pp-font tw-m-auto tw-flex tw-flex-col tw-text-base tw-leading-normal min-[480px]:tw-w-[480px] md:tw-w-[768px] lg:tw-w-[1024px]"
+  >
     <div
       id="youtube-link"
       class="[&>*]:tw-mb-40 [&>*]:tw-aspect-video [&>*]:tw-w-full"
     ></div>
-    <div class="section !tw-mb-10 !tw-flex-col !tw-bg-white md:!tw-mb-40">
-      <img src="" alt="" class="!tw-w-full" />
+    <div
+      class="tw-mb-10 tw-flex tw-flex-col tw-items-center tw-justify-center tw-bg-[var(--section-bg-color)] tw-bg-white md:tw-mb-40"
+    >
+      <img src="" alt="" class="tw-w-full" />
       <div
-        class="tw-px-4 tw-pb-5 tw-pt-10 tw-text-xl !tw-font-normal md:tw-text-center md:tw-text-2xl lg:tw-text-3xl"
+        class="tw-px-4 tw-pb-5 tw-pt-10 tw-text-2xl tw-font-normal md:tw-text-center"
       >
         The DuoMax is a 4D massage chair designed to provide an unparalleled
         relaxation experience. The DuoMax incorporates intelligent sensors that
@@ -660,11 +463,15 @@
       </div>
     </div>
 
-    <div class="section !tw-flex-col-reverse">
-      <img src="" alt="" class="!tw-w-full" />
-      <div class="section-content !tw-w-full">
-        <div class="section-header">Intelligent Health Detection</div>
-        <div class="section-description">
+    <div
+      class="tw-mb-10 tw-items-center tw-justify-center tw-bg-[var(--section-bg-color)]"
+    >
+      <img src="" alt="" class="tw-w-full tw-py-4" />
+      <div class="tw-flex tw-w-full tw-flex-col tw-gap-10 tw-p-10">
+        <div class="tw-text-3xl tw-text-[var(--section-header-color)]">
+          Intelligent Health Detection
+        </div>
+        <div class="tw-text-lg tw-text-[var(--section-content-color)]">
           The DuoMax has advanced capabilities with its built-in health monitor.
           By detecting various metrics such as
           <strong> heart rate, blood oxygen levels, and fatigue index </strong>,
@@ -673,46 +480,74 @@
         </div>
       </div>
     </div>
-    <div class="section !tw-flex-row-reverse">
-      <div class="section-content">
+    <div
+      class="tw-mb-10 tw-grid tw-items-center tw-justify-center tw-bg-[var(--section-bg-color)] lg:tw-grid-cols-2"
+    >
+      <div class="tw-h-80 tw-overflow-hidden lg:tw-order-2 lg:tw-ml-auto">
+        <img src="" alt="" class="tw-object-cover lg:tw-h-auto" />
+      </div>
+      <div class="tw-flex tw-flex-col tw-gap-10 tw-p-10">
         <div
           class="tw--mb-5 tw-flex tw-bg-gradient-to-br tw-from-neutral-300 tw-via-neutral-600 tw-bg-clip-text tw-text-lg tw-font-bold tw-text-transparent md:tw-text-4xl"
         >
           Duo Mech™
         </div>
-        <div class="section-header2 !tw-leading-none">
+        <div class="tw-text-2xl tw-text-[var(--section-header-color)]">
           4D+3D Massage Mechanism
         </div>
-        <div class="section-description" style="color: #989898">
+        <div
+          class="tw-text-lg tw-text-[var(--section-content-color)]"
+          style="color: #989898"
+        >
           With its 4D+3D dual massage mechanism, users can enjoy a wide range of
           massage techniques that simulate human-like movements. Its quad
           precision rollers can adjust their depth and speed, ensuring precise
           and effective relief for muscle tension and stress.
         </div>
       </div>
-      <img src="" alt="" class="" />
     </div>
 
     <div
-      class="section !tw-grid tw-grid-cols-2 !tw-items-start"
+      class="tw-mb-10 tw-grid tw-items-center tw-justify-center tw-bg-[var(--section-bg-color)] lg:tw-grid-cols-2"
       style="background-color: #f3efec"
     >
-      <img src="" alt="" class="!tw-w-full lg:tw-order-2" />
-      <div class="section-content tw-h-full !tw-w-full !tw-pb-0">
-        <div class="section-header">2 Heating Cores</div>
-        <div class="section-description" style="color: #989898">
+      <img src="" alt="" class="tw-w-full lg:tw-order-2" />
+      <div
+        class="tw-flex tw-h-full tw-w-full tw-flex-col tw-gap-10 tw-p-10 lg:tw-pb-0"
+      >
+        <img
+          src=""
+          alt=""
+          class="tw-mt-auto lg:tw-order-2 lg:tw-w-2/3 lg:tw-self-end"
+        />
+        <div class="tw-text-3xl tw-text-[var(--section-header-color)]">
+          2 Heating Cores
+        </div>
+        <div
+          class="tw-text-lg tw-text-[var(--section-content-color)]"
+          style="color: #989898"
+        >
           Integrating heated jade cores that move along the contours of your
           body, this function delivers targeted relief by combining the benefits
           of massage and heat.
         </div>
-        <img src="" alt="" class="tw-mt-auto !tw-w-2/3 tw-self-end" />
       </div>
     </div>
 
-    <div class="section">
-      <div class="section-content">
-        <div class="section-header">SL Flex Track</div>
-        <div class="section-description" style="color: #989898">
+    <div
+      class="tw-mb-10 tw-grid tw-items-center tw-justify-center tw-bg-[var(--section-bg-color)] lg:tw-grid-cols-2"
+    >
+      <div class="tw-h-80 tw-overflow-hidden lg:tw-order-2 lg:tw-ml-auto">
+        <img src="" alt="" class="tw-object-cover lg:tw-h-auto" />
+      </div>
+      <div class="tw-flex tw-flex-col tw-gap-10 tw-p-10">
+        <div class="tw-text-3xl tw-text-[var(--section-header-color)]">
+          SL Flex Track
+        </div>
+        <div
+          class="tw-text-lg tw-text-[var(--section-content-color)]"
+          style="color: #989898"
+        >
           The DuoMax breaks the boundaries of a standard SL-track by
           incorporating a level of flexibility. The SL Flex Track holds the
           ability to be at a fixed angle relative to the backrest. This new
@@ -721,12 +556,22 @@
           hamstrings.
         </div>
       </div>
-      <img src="" alt="" class="" />
     </div>
-    <div class="section !tw-flex-row-reverse" style="background-color: #f3efec">
-      <div class="section-content">
-        <div class="section-header">Piano Key Massage</div>
-        <div class="section-description" style="color: #989898">
+    <div
+      class="tw-mb-10 tw-grid tw-items-center tw-justify-center tw-bg-[var(--section-bg-color)] lg:tw-grid-cols-2"
+      style="background-color: #f3efec"
+    >
+      <div class="tw-h-80 tw-overflow-hidden lg:tw-order-2 lg:tw-ml-auto">
+        <img src="" alt="" class="tw-object-cover lg:tw-h-auto" />
+      </div>
+      <div class="tw-flex tw-flex-col tw-gap-10 tw-p-10">
+        <div class="tw-text-3xl tw-text-[var(--section-header-color)]">
+          Piano Key Massage
+        </div>
+        <div
+          class="tw-text-lg tw-text-[var(--section-content-color)]"
+          style="color: #989898"
+        >
           Crafted with meticulous attention to detail, the piano key massager is
           designed to envelop your arms in a gentle embrace, providing a
           symphony of soothing sensations. This innovative piano key massage
@@ -734,13 +579,16 @@
           feature in typical massage chairs.
         </div>
       </div>
-      <img src="" alt="" class="" />
     </div>
-    <div class="section tw-flex-col-reverse">
-      <img src="" alt="" class="!tw-w-full" />
-      <div class="section-content !tw-w-full !tw-pb-0">
-        <div class="section-header">Calf Rollers</div>
-        <div class="section-description">
+    <div
+      class="tw-mb-10 tw-flex tw-flex-col tw-items-center tw-justify-center tw-bg-[var(--section-bg-color)]"
+    >
+      <img src="" alt="" class="lg:tw-order-2 lg:tw-w-2/3" />
+      <div class="tw-flex tw-w-full tw-flex-col tw-gap-10 tw-p-10">
+        <div class="tw-text-3xl tw-text-[var(--section-header-color)]">
+          Calf Rollers
+        </div>
+        <div class="tw-text-lg tw-text-[var(--section-content-color)]">
           As one of the most overlooked portions of modern massage, DuoMax
           offers targeted relief and circulation to the calf muscles by
           incorporating calf rollers in the footrest. Not only do they roll, but
@@ -749,11 +597,15 @@
       </div>
     </div>
 
-    <div class="section tw-flex-col-reverse">
-      <img src="" alt="" class="!tw-w-full" />
-      <div class="section-content !tw-w-full !tw-pb-0">
-        <div class="section-header">Smart Voice Control</div>
-        <div class="section-description">
+    <div
+      class="tw-mb-10 tw-flex tw-flex-col tw-items-center tw-justify-center tw-bg-[var(--section-bg-color)]"
+    >
+      <img src="" alt="" class="tw-py-10 lg:tw-order-2" />
+      <div class="tw-flex tw-w-full tw-flex-col tw-gap-10 tw-p-10 lg:tw-pb-0">
+        <div class="tw-text-3xl tw-text-[var(--section-header-color)]">
+          Smart Voice Control
+        </div>
+        <div class="tw-text-lg tw-text-[var(--section-content-color)]">
           With Duomax's voice control feature, you can easily utilize the chair
           without having to lift a finger. Just follow the guidelines and
           commands in the manual and the chair will respond with fast
@@ -761,14 +613,20 @@
         </div>
       </div>
     </div>
-    <div class="section !tw-hidden !tw-flex-row">
+    <div
+      class="tw-mb-10 tw-grid tw-items-center tw-justify-center tw-bg-[var(--section-bg-color)] lg:tw-grid-cols-2"
+      style="background-color: #f3efec"
+    >
       <img src="" alt="" class="" />
-      <div class="section-content">
-        <div class="section-header">
+      <div class="tw-flex tw-flex-col tw-gap-10 tw-p-10">
+        <div class="tw-text-3xl tw-text-[var(--section-header-color)]">
           Easy <br />
           App Control
         </div>
-        <div class="section-description" style="color: #989898">
+        <div
+          class="tw-text-lg tw-text-[var(--section-content-color)]"
+          style="color: #989898"
+        >
           If you have an iPhone or Android, go to the App Store or Google Play
           Store to download the Osaki DuoMax App to control the massage chair
           with the full features from the remote on your phone.
@@ -782,7 +640,7 @@
               animation: huerotate 6s infinite linear;
               filter: hue-rotate(360deg);
             "
-            class="border-[1px] md:border-[2px]"
+            class="tw-border"
             href="https://play.google.com/store/apps/details?id=org.robotmassage.com"
           >
             <img src="" alt="" class="" />
@@ -795,32 +653,43 @@
               animation: huerotate 6s infinite linear;
               filter: hue-rotate(90deg);
             "
-            class="border-[1px] md:border-[2px]"
+            class="tw-border"
             href="https://apps.apple.com/us/app/robot-massage/id1637357798"
             ><img src="" alt=""
           /></a>
         </div>
       </div>
     </div>
-    <div class="section" style="background-color: #f3efec">
-      <div class="section-content">
-        <div class="section-header">36 Air Cells Massage</div>
-        <div class="section-description !tw-w-2/3" style="color: #989898">
+    <div
+      class="tw-mb-10 tw-grid tw-items-center tw-justify-center tw-bg-[var(--section-bg-color)] lg:tw-grid-cols-2"
+      style="background-color: #f3efec"
+    >
+      <img src="" alt="" class="tw-ml-auto lg:tw-order-2" />
+      <div class="tw-flex tw-flex-col tw-gap-10 tw-p-10">
+        <div class="tw-text-3xl tw-text-[var(--section-header-color)]">
+          36 Air Cells Massage
+        </div>
+        <div
+          class="tw-text-lg tw-text-[var(--section-content-color)]"
+          style="color: #989898"
+        >
           The DuoMax includes a total of 36 airbags in the massage chair,
           providing coverage to shoulders, arms, hips, calves, and feet.
         </div>
       </div>
-      <img src="" alt="" class="" />
     </div>
 
-    <div class="section tw-flex-col-reverse" style="background-color: #f3efec">
-      <img src="" alt="" class="!tw-w-full" />
-      <div class="section-content !tw-w-full !tw-pb-0">
-        <div class="section-header">
+    <div
+      class="tw-mb-10 tw-flex tw-flex-col tw-items-center tw-justify-center tw-bg-[var(--section-bg-color)]"
+      style="background-color: #f3efec"
+    >
+      <img src="" alt="" class="tw-w-full tw-pt-10 lg:tw-order-2" />
+      <div class="tw-flex tw-w-full tw-flex-col tw-gap-10 tw-p-10">
+        <div class="tw-text-3xl tw-text-[var(--section-header-color)]">
           Zero Gravity Reclining <br />
           and Space Saving Technology
         </div>
-        <div class="section-description">
+        <div class="tw-text-lg tw-text-[var(--section-content-color)]">
           Inspired by NASA, the Zero Gravity position is the best position for
           complete tranquility. By reclining into
           <strong>2-stage zero-gravity position</strong>, users can rest in a
@@ -831,289 +700,269 @@
         </div>
       </div>
     </div>
-    <div class="section" style="background-color: #f3efec">
-      <img src="" alt="" class="" />
-      <div class="section-content">
-        <div class="section-header">Body Heat Therapy</div>
-        <div class="section-description" style="color: #989898">
+    <div
+      class="tw-mb-10 tw-grid tw-items-center tw-justify-center tw-bg-[var(--section-bg-color)] lg:tw-grid-cols-2"
+      style="background-color: #f3efec"
+    >
+      <img src="" alt="" class="tw-pr-16" />
+      <div class="tw-flex tw-flex-col tw-gap-10 tw-p-10">
+        <img src="" alt="" class="lg:tw-order-2 lg:tw-w-2/3" />
+        <div class="tw-text-3xl tw-text-[var(--section-header-color)]">
+          Body Heat Therapy
+        </div>
+        <div
+          class="tw-text-lg tw-text-[var(--section-content-color)]"
+          style="color: #989898"
+        >
           The DuoMax’s heat therapy can help warm and help ease soreness in the
           lower back area. The DuoMax also targets heat along the chest and
           stomach area through the heating shawl.
         </div>
-        <img src="" alt="" class="!tw-w-2/3" />
       </div>
     </div>
-    <!-- <div class="section">
-      <img src="" alt="" class="" />
-      <div class="section-content">
-        <div class="section-header">24 Cell Full Body Air Massage</div>
-        <div class="section-description">
-          The OS-Escape includes 24 air cells throughout the chair to provide an
-          thorough air compression therapy.
-        </div>
-      </div>
-    </div>
-    <div class="tw-flex-row-reverse section">
-      <img src="" alt="" class="" />
-      <div class="section-content">
-        <div class="section-header">
-          Lumbar <br />
-          Heat Therapy
-        </div>
-        <div class="section-description">
-          The OS-Escape has heating pads located on the Lumbar area and Calves
-          which enhances the effect of the massage by loosing the muscles.
-        </div>
-      </div>
-    </div>
-    <div class="section">
-      <img src="" alt="" class="" />
-      <div class="section-content">
-        <div class="section-header">S-track System</div>
-        <div class="section-description">
-          The S-track system allows the roller heads to massage along the back
-          from <strong>the neck down to the lower spine</strong> with a
-          consistent pressure in the massage, whiles providing comfortable
-          support. The typical massage track are linear, creating an
-          inconsistency in pressure but the S-Track contours the curvature of
-          the back allowing for a more even distribution of pressure.
-        </div>
-      </div>
-    </div> -->
     <div
-      class="tw-col-span-2 tw-flex tw-items-center tw-justify-center tw-gap-5 tw-bg-[var(--section-bg-color)] tw-p-10 !tw-pb-0 tw-text-center tw-text-2xl md:tw-text-4xl"
+      class="tw-col-span-2 tw-flex tw-items-center tw-justify-center tw-gap-5 tw-bg-[var(--section-bg-color)] tw-p-10 tw-py-20 tw-text-center tw-text-4xl"
     >
       <strong class="">20 Auto Massage Modes</strong>
     </div>
     <div
-      class="tw-mb-10 tw-grid tw-grid-cols-2 tw-gap-x-6 tw-gap-y-3 tw-bg-[var(--section-bg-color)] tw-p-10 tw-text-center tw-text-[var(--section-header-color)] md:tw-grid-cols-3"
+      class="tw-mb-10 tw-grid tw-grid-cols-2 tw-gap-x-6 tw-gap-y-3 tw-bg-[var(--section-bg-color)] tw-p-10 tw-pb-20 tw-text-center tw-text-[var(--section-header-color)] md:tw-grid-cols-3"
     >
       <div
         class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="!tw-w-1/3 md:!tw-w-1/6" />
+        <img src="" alt="" class="tw-w-1/3 md:tw-w-1/6" />
         <div class="md:tw-text-xl">Total Relax</div>
       </div>
       <div
         class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="!tw-w-1/3 md:!tw-w-1/6" />
+        <img src="" alt="" class="tw-w-1/3 md:tw-w-1/6" />
         <div class="md:tw-text-xl">President Cosy</div>
       </div>
       <div
         class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="!tw-w-1/3 md:!tw-w-1/6" />
+        <img src="" alt="" class="tw-w-1/3 md:tw-w-1/6" />
         <div class="md:tw-text-xl">Stress Release</div>
       </div>
       <div
         class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="!tw-w-1/3 md:!tw-w-1/6" />
+        <img src="" alt="" class="tw-w-1/3 md:tw-w-1/6" />
         <div class="md:tw-text-xl">Keep Fit</div>
       </div>
       <div
         class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="!tw-w-1/3 md:!tw-w-1/6" />
+        <img src="" alt="" class="tw-w-1/3 md:tw-w-1/6" />
         <div class="md:tw-text-xl">Full Airbag</div>
       </div>
       <div
         class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="!tw-w-1/3 md:!tw-w-1/6" />
+        <img src="" alt="" class="tw-w-1/3 md:tw-w-1/6" />
         <div class="md:tw-text-xl">Superior Enjoyable</div>
       </div>
       <div
         class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="!tw-w-1/3 md:!tw-w-1/6" />
+        <img src="" alt="" class="tw-w-1/3 md:tw-w-1/6" />
         <div class="md:tw-text-xl">Chinese Massage</div>
       </div>
       <div
         class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="!tw-w-1/3 md:!tw-w-1/6" />
+        <img src="" alt="" class="tw-w-1/3 md:tw-w-1/6" />
         <div class="md:tw-text-xl">Office Regimen</div>
       </div>
       <div
         class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="!tw-w-1/3 md:!tw-w-1/6" />
+        <img src="" alt="" class="tw-w-1/3 md:tw-w-1/6" />
         <div class="md:tw-text-xl">Thai Massage</div>
       </div>
       <div
         class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="!tw-w-1/3 md:!tw-w-1/6" />
+        <img src="" alt="" class="tw-w-1/3 md:tw-w-1/6" />
         <div class="md:tw-text-xl">Health Recharge</div>
       </div>
       <div
         class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="!tw-w-1/3 md:!tw-w-1/6" />
+        <img src="" alt="" class="tw-w-1/3 md:tw-w-1/6" />
         <div class="md:tw-text-xl">Meridian Treatment</div>
       </div>
       <div
         class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="!tw-w-1/3 md:!tw-w-1/6" />
+        <img src="" alt="" class="tw-w-1/3 md:tw-w-1/6" />
         <div class="md:tw-text-xl">Energy Boost</div>
       </div>
       <div
         class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="!tw-w-1/3 md:!tw-w-1/6" />
+        <img src="" alt="" class="tw-w-1/3 md:tw-w-1/6" />
         <div class="md:tw-text-xl">Neck & Shoulder Care</div>
       </div>
       <div
         class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="!tw-w-1/3 md:!tw-w-1/6" />
+        <img src="" alt="" class="tw-w-1/3 md:tw-w-1/6" />
         <div class="md:tw-text-xl">Lunch Break</div>
       </div>
       <div
         class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="!tw-w-1/3 md:!tw-w-1/6" />
+        <img src="" alt="" class="tw-w-1/3 md:tw-w-1/6" />
         <div class="md:tw-text-xl">Waist Care</div>
       </div>
       <div
         class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="!tw-w-1/3 md:!tw-w-1/6" />
+        <img src="" alt="" class="tw-w-1/3 md:tw-w-1/6" />
         <div class="md:tw-text-xl">Sweet Dream</div>
       </div>
       <div
         class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="!tw-w-1/3 md:!tw-w-1/6" />
+        <img src="" alt="" class="tw-w-1/3 md:tw-w-1/6" />
         <div class="md:tw-text-xl">Waist & Buttock Shape</div>
       </div>
       <div
         class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="!tw-w-1/3 md:!tw-w-1/6" />
+        <img src="" alt="" class="tw-w-1/3 md:tw-w-1/6" />
         <div class="md:tw-text-xl">Brain Refresh</div>
       </div>
       <div
         class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="!tw-w-1/3 md:!tw-w-1/6" />
+        <img src="" alt="" class="tw-w-1/3 md:tw-w-1/6" />
         <div class="md:tw-text-xl">Leg & Foot Relieve</div>
       </div>
       <div
         class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="!tw-w-1/3 md:!tw-w-1/6" />
+        <img src="" alt="" class="tw-w-1/3 md:tw-w-1/6" />
         <div class="md:tw-text-xl">Rejuvenate</div>
       </div>
     </div>
     <div
-      class="tw-col-span-2 tw-flex tw-items-center tw-justify-center tw-gap-5 tw-bg-[var(--section-bg-color)] tw-p-10 !tw-pb-0 tw-text-center tw-text-2xl md:tw-text-4xl"
+      class="tw-col-span-2 tw-flex tw-items-center tw-justify-center tw-gap-5 tw-bg-[var(--section-bg-color)] tw-p-10 tw-py-20 tw-pb-0 tw-text-center tw-text-4xl"
     >
       <strong class="">11 Manual Massage Modes</strong>
     </div>
     <div
-      class="pl-[10%] tw-mb-10 tw-grid tw-grid-cols-2 tw-gap-x-6 tw-gap-y-3 tw-bg-[var(--section-bg-color)] tw-p-10 tw-text-center tw-text-[var(--section-header-color)] md:tw-grid-cols-3"
+      class="pl-[10%] tw-mb-10 tw-grid tw-grid-cols-2 tw-gap-x-6 tw-gap-y-3 tw-bg-[var(--section-bg-color)] tw-p-10 tw-pb-20 tw-text-center tw-text-[var(--section-header-color)] md:tw-grid-cols-3"
     >
       <div
         class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="!tw-w-1/3 md:!tw-w-1/6" />
+        <img src="" alt="" class="tw-w-1/3 md:tw-w-1/6" />
         <div class="md:tw-text-xl">Kneading</div>
       </div>
       <div
         class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="!tw-w-1/3 md:!tw-w-1/6" />
+        <img src="" alt="" class="tw-w-1/3 md:tw-w-1/6" />
         <div class="md:tw-text-xl">Shoulder Grasp</div>
       </div>
       <div
         class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="!tw-w-1/3 md:!tw-w-1/6" />
+        <img src="" alt="" class="tw-w-1/3 md:tw-w-1/6" />
         <div class="md:tw-text-xl">Tap I</div>
       </div>
       <div
         class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="!tw-w-1/3 md:!tw-w-1/6" />
+        <img src="" alt="" class="tw-w-1/3 md:tw-w-1/6" />
         <div class="md:tw-text-xl">4D I</div>
       </div>
       <div
         class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="!tw-w-1/3 md:!tw-w-1/6" />
+        <img src="" alt="" class="tw-w-1/3 md:tw-w-1/6" />
         <div class="md:tw-text-xl">Tap II</div>
       </div>
       <div
         class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="!tw-w-1/3 md:!tw-w-1/6" />
+        <img src="" alt="" class="tw-w-1/3 md:tw-w-1/6" />
         <div class="md:tw-text-xl">4D II</div>
       </div>
       <div
         class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="!tw-w-1/3 md:!tw-w-1/6" />
+        <img src="" alt="" class="tw-w-1/3 md:tw-w-1/6" />
         <div class="md:tw-text-xl">Kneading & Tapping</div>
       </div>
       <div
         class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="!tw-w-1/3 md:!tw-w-1/6" />
+        <img src="" alt="" class="tw-w-1/3 md:tw-w-1/6" />
         <div class="md:tw-text-xl">4D III</div>
       </div>
       <div
         class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="!tw-w-1/3 md:!tw-w-1/6" />
+        <img src="" alt="" class="tw-w-1/3 md:tw-w-1/6" />
         <div class="md:tw-text-xl">Shiatsu I</div>
       </div>
       <div
         class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="!tw-w-1/3 md:!tw-w-1/6" />
+        <img src="" alt="" class="tw-w-1/3 md:tw-w-1/6" />
         <div class="md:tw-text-xl">4D IV</div>
       </div>
       <div
         class="tw-flex tw-flex-col tw-items-center tw-gap-1 tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="!tw-w-1/3 md:!tw-w-1/6" />
+        <img src="" alt="" class="tw-w-1/3 md:tw-w-1/6" />
         <div class="md:tw-text-xl">Shiatsu II</div>
       </div>
     </div>
 
-    <div class="section !tw-flex-row-reverse" style="background-color: #f3efec">
-      <img src="" alt="" class="tw-self-start" />
-      <div class="section-content">
-        <div class="section-header">
+    <div
+      class="tw-mb-10 tw-grid tw-items-center tw-justify-center tw-bg-[var(--section-bg-color)] lg:tw-grid-cols-2"
+      style="background-color: #f3efec"
+    >
+      <img src="" alt="" class="tw-ml-auto lg:tw-order-2" />
+      <div class="tw-flex tw-flex-col tw-gap-10 tw-p-10">
+        <div class="tw-text-3xl tw-text-[var(--section-header-color)]">
           Deep <br />
           Calf Kneading
         </div>
-        <div class="section-description">
+        <div class="tw-text-lg tw-text-[var(--section-content-color)]">
           The DuoMax provides deep calf massages for soreness in the leg
           muscles. The massage includes kneading calf rollers that move
           vertically and airbag massages that compress the calf muscles.
         </div>
       </div>
     </div>
-    <div class="section">
+    <div
+      class="tw-mb-10 tw-grid tw-items-center tw-justify-center tw-bg-[var(--section-bg-color)] lg:tw-grid-cols-2"
+    >
       <img src="" alt="" class="" />
-      <div class="section-content">
-        <div class="section-header">Automatic Extendable Footrest</div>
-        <div class="section-description">
+      <div class="tw-flex tw-flex-col tw-gap-10 tw-p-10">
+        <div class="tw-text-3xl tw-text-[var(--section-header-color)]">
+          Automatic Extendable Footrest
+        </div>
+        <div class="tw-text-lg tw-text-[var(--section-content-color)]">
           Stretching up to <strong>7.8 inches</strong>, the DuoMax’s automatic
           extendable footrest allows users of different heights to enjoy the
           chair.
         </div>
       </div>
     </div>
-    <div class="section !tw-flex-row-reverse">
-      <img src="" alt="" class="tw-self-start" />
-      <div class="section-content">
-        <div class="section-description">
+    <div
+      class="tw-mb-10 tw-grid tw-items-center tw-justify-center tw-bg-[var(--section-bg-color)] lg:tw-grid-cols-2"
+    >
+      <img src="" alt="" class="lg:tw-order-2" />
+      <div class="tw-flex tw-flex-col tw-gap-10 tw-p-10">
+        <div class="tw-text-lg tw-text-[var(--section-content-color)]">
           The <strong>Specialized Foot Rollers</strong> in the DuoMax were
           created to activate a series of
           <strong>acupuncture points</strong> using
@@ -1124,101 +973,106 @@
       </div>
     </div>
     <div
-      class="section tw-relative !tw-justify-end"
+      class="tw-mb-10 tw-flex tw-flex-col tw-items-center tw-justify-end tw-bg-[var(--section-bg-color)] lg:tw-relative"
       style="background-color: #f3efec"
     >
+      <img
+        src=""
+        alt=""
+        class="tw-ml-auto tw-flex-initial lg:tw-order-2 lg:tw-w-2/3"
+      />
       <div
-        class="section-content tw-absolute tw-left-0 !tw-w-2/3 !tw-flex-initial"
+        class="tw-left-0 tw-flex tw-flex-initial tw-flex-col tw-gap-10 tw-p-10 lg:tw-absolute lg:tw-w-2/3"
       >
-        <div class="section-header">
+        <div class="tw-text-3xl tw-text-[var(--section-header-color)]">
           Negative <br />
           Oxygen Ions
         </div>
-        <div class="section-description !tw-w-2/3" style="color: #989898">
+        <div
+          class="tw-text-lg tw-text-[var(--section-content-color)] lg:tw-w-2/3"
+          style="color: #989898"
+        >
           The DuoMax is equipped with built-in
           <strong>negative air ionization therapy</strong>. According to
           research, negative air ionization therapy helps relieve stress and
           improve energy.
         </div>
       </div>
-      <img src="" alt="" class="!tw-w-2/3 !tw-flex-initial" />
     </div>
-    <div class="section">
+    <div
+      class="tw-mb-10 tw-grid tw-items-center tw-justify-center tw-bg-[var(--section-bg-color)] lg:tw-grid-cols-2"
+    >
       <img src="" alt="" class="tw-self-end" />
-      <div class="section-content">
-        <div class="section-header">Removable Headrest</div>
-        <div class="section-description">
+      <div class="tw-flex tw-flex-col tw-gap-10 tw-p-10">
+        <div class="tw-text-3xl tw-text-[var(--section-header-color)]">
+          Removable Headrest
+        </div>
+        <div class="tw-text-lg tw-text-[var(--section-content-color)]">
           The DuoMax holds a removable headrest, which may help customize the
           optimal massage for all head positions.
         </div>
       </div>
     </div>
-    <div>
-      <div class="section">
-        <img src="" alt="" class="!tw-w-3/4 !tw-flex-initial" />
-        <div class="section-content !tw-pl-0">
-          <div
-            class="section-description tw-text-[var(--section-header-color)]"
-          >
-            Side Control Panel
-          </div>
-        </div>
-      </div>
-      <div
-        class="section !tw-grid tw-grid-cols-2 tw-gap-5 !tw-bg-white md:tw-gap-9 lg:tw-gap-12"
-      >
-        <div
-          class="tw-flex !tw-h-full tw-flex-col tw-justify-between tw-bg-[var(--section-bg-color)]"
-          style="background-color: #f3efec"
-        >
-          <div
-            class="!tw-tw-text-[var(--section-header-color)] section-content section-description !tw-w-full !tw-pb-0"
-          >
-            Wireless Charging
-          </div>
-          <img src="" alt="" class="" />
-        </div>
-        <div class="tw-relative tw-flex tw-flex-col">
-          <div
-            class="!tw-tw-text-[var(--section-header-color)] section-content section-description tw-absolute tw-left-0 tw-top-0 !tw-w-full !tw-pb-0"
-          >
-            LED Lighting
-          </div>
-          <img src="" alt="" class="" />
-        </div>
+    <div
+      class="tw-mb-10 tw-flex tw-items-center tw-justify-center tw-bg-[var(--section-bg-color)]"
+    >
+      <img src="" alt="" class="tw-mr-auto tw-w-3/4 tw-flex-initial" />
+      <div class="tw-p-10 tw-text-lg tw-text-[var(--section-header-color)]">
+        Side Control Panel
       </div>
     </div>
 
     <div
-      class="section !tw-mb-40 !tw-grid tw-grid-cols-2 tw-gap-5 !tw-bg-white md:tw-gap-9 lg:tw-gap-12"
+      class="tw-mb-40 tw-grid tw-items-center tw-justify-center tw-gap-10 tw-bg-white lg:tw-grid-cols-2"
     >
       <div
-        class="tw-flex tw-h-full tw-flex-col tw-bg-[var(--section-bg-color)]"
+        class="pp-height tw-flex tw-flex-col tw-justify-between tw-bg-[var(--section-bg-color)]"
+        style="background-color: #f3efec"
       >
         <div
-          class="!tw-tw-text-[var(--section-header-color)] section-content section-description !tw-w-full !tw-pb-0"
+          class="tw-tw-text-[var(--section-header-color)] tw-flex tw-w-full tw-flex-col tw-gap-10 tw-p-10 tw-pb-0 tw-text-lg tw-text-[var(--section-content-color)]"
         >
-          USB Charging
+          Wireless Charging
         </div>
-        <img src="" alt="" class="" />
+        <img src="" alt="" class="tw-h-full" />
+      </div>
+      <div class="pp-height tw-relative tw-flex tw-flex-col">
+        <div
+          class="tw-tw-text-[var(--section-header-color)] tw-absolute tw-left-0 tw-top-0 tw-flex tw-w-full tw-flex-col tw-gap-10 tw-p-10 tw-pb-0 tw-text-lg tw-text-[var(--section-content-color)]"
+        >
+          LED Lighting <br /><br />
+        </div>
+        <img src="" alt="" class="tw-h-full" />
+      </div>
+
+      <div
+        class="pp-height tw-flex tw-flex-col tw-bg-[var(--section-bg-color)] lg:tw-h-auto"
+      >
+        <div
+          class="tw-tw-text-[var(--section-header-color)] tw-flex tw-w-full tw-flex-col tw-gap-10 tw-p-10 tw-pb-0 tw-text-lg tw-text-[var(--section-content-color)]"
+        >
+          USB Charging <br />
+          <br />
+        </div>
+        <img src="" alt="" class="tw-mt-auto" />
       </div>
       <div
-        class="tw-flex tw-h-full tw-flex-col tw-bg-[var(--section-bg-color)]"
+        class="pp-height tw-flex tw-flex-col tw-bg-[var(--section-bg-color)] lg:tw-h-auto"
       >
         <div
-          class="!tw-tw-text-[var(--section-header-color)] section-content section-description !tw-w-full !tw-pb-0"
+          class="tw-tw-text-[var(--section-header-color)] tw-flex tw-w-full tw-flex-col tw-gap-10 tw-p-10 tw-pb-0 tw-text-lg tw-text-[var(--section-content-color)]"
         >
           HD Bluetooth Surround Speakers
         </div>
-        <img src="" alt="" class="" />
+        <img src="" alt="" class="tw-mt-auto" />
       </div>
     </div>
 
     <div
-      class="section tw-mx-auto !tw-mb-40 tw-flex tw-flex-col tw-gap-4 !tw-bg-white lg:tw-w-2/3 lg:tw-gap-4"
+      class="tw-mx-auto tw-mb-40 tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-4 tw-bg-[var(--section-bg-color)] tw-bg-white lg:tw-w-2/3 lg:tw-gap-4"
     >
       <div class="tw-text-center tw-text-3xl tw-font-semibold">
-        MINIMUM DOORWAY
+        Minimum Doorway
         <br />
         Measuring Guide
       </div>
@@ -1255,8 +1109,8 @@
       <div
         class="tw-flex tw-flex-col tw-items-center tw-justify-between tw-gap-5 md:tw-flex-row md:tw-gap-10"
       >
-        <img src="" alt="" class="md:!tw-w-1/3" />
-        <img src="" alt="" class="md:!tw-w-2/3" />
+        <img src="" alt="" class="md:tw-w-1/3" />
+        <img src="" alt="" class="md:tw-w-2/3" />
       </div>
     </div>
 
@@ -1279,7 +1133,7 @@
           <div class="tw-w-64 tw-shrink-0 tw-font-bold">User Manual</div>
           <div class="tw-grid tw-w-full tw-grid-cols-2 tw-gap-2">
             <a
-              class="!tw-text-red-500 !tw-no-underline"
+              class="tw-text-red-500 tw-no-underline"
               href="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/Osaki_OS-Pro_4D_DuoMax_Manual.pdf?v=1691767805"
               target="_blank"
               >Download</a
