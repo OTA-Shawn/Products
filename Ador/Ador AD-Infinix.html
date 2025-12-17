@@ -454,6 +454,15 @@
       gap: 10px;
     }
   }
+
+  .pp-bg-gradient {
+    background: linear-gradient(180deg, oklab(0.89 0 0) 53%, #fff 75%);
+  }
+  @media (max-width: 1024px) {
+    .pp-bg-gradient {
+      background: initial;
+    }
+  }
 </style>
 
 <body>
@@ -463,7 +472,7 @@
       class="[&>*]:tw-mb-40 [&>*]:tw-aspect-video [&>*]:tw-w-full"
     ></div>
     <div class="section !tw-mb-40 !tw-flex-col !tw-bg-white md:!tw-mb-80">
-      <img src="" alt="" class="!tw-w-2/3" />
+      <img src="" alt="" class="!tw-w-full" />
       <div
         class="tw-px-10 tw-pb-5 tw-pt-10 !tw-text-center tw-text-xl md:!tw-text-justify md:tw-text-2xl lg:tw-text-3xl"
       >
@@ -476,8 +485,9 @@
       <img src="" alt="" class="tw-mt-10 !tw-w-full" />
     </div>
 
-    <div class="section !tw-mb-0 !tw-bg-black">
-      <div class="section-content">
+    <div class="tw-grid tw-items-center !tw-bg-black lg:tw-grid-cols-2">
+      <img src="" alt="" class="tw-mx-auto tw-w-3/4 lg:tw-order-2" />
+      <div class="tw-p-4 lg:tw-p-10">
         <div class="section-header !tw-text-white">
           Computer Body <br />Scan System
         </div>
@@ -488,10 +498,9 @@
           which can be re-calibrated once the scan is complete.
         </div>
       </div>
-      <img src="" alt="" class="" />
     </div>
-    <div class="section tw-flex-col !tw-bg-black">
-      <div class="section-content !tw-w-4/5">
+    <div class="tw-mb-20 tw-flex tw-flex-col !tw-bg-black">
+      <div class="tw-p-4 lg:tw-p-10">
         <div class="section-header tw-text-center !tw-text-white">
           Zero Gravity
         </div>
@@ -504,9 +513,18 @@
         </div>
       </div>
     </div>
-    <div class="section tw-relative">
-      <img src="" alt="" class="" />
-      <div class="section-content tw-absolute tw-left-0">
+    <div class="tw-relative tw-mb-20">
+      <div class="tw-overflow-hidden">
+        <img
+          src=""
+          alt=""
+          class="tw-h-80 tw-object-cover lg:tw-h-auto"
+          style="object-position: 90% 50%"
+        />
+      </div>
+      <div
+        class="tw-left-0 tw-top-0 tw-p-4 lg:tw-absolute lg:tw-w-4/5 lg:tw-p-10"
+      >
         <div class="section-header">Technology Space Saving</div>
         <div class="section-description">
           Infinix has Zero-Gravity recline and space-saving tech. Can be placed
@@ -516,18 +534,9 @@
       </div>
     </div>
 
-    <div
-      class="section !tw-bg-white"
-      style="
-        background: linear-gradient(
-          180deg,
-          rgba(217, 217, 217, 1) 50%,
-          rgba(255, 255, 255, 1) 75%
-        );
-      "
-    >
-      <img src="" alt="" />
-      <div class="section-content">
+    <div class="tw-mb-20 tw-grid !tw-bg-white lg:tw-grid-cols-2">
+      <img src="" alt="" class="" />
+      <div class="pp-bg-gradient tw-p-4 lg:tw-p-10">
         <div class="section-header">
           Ergonomic <br />
           SL-Track <br />
@@ -539,9 +548,11 @@
         </div>
       </div>
     </div>
-    <div class="section tw-flex-row-reverse !tw-bg-white">
-      <img src="" alt="" />
-      <div class="section-content">
+    <div
+      class="tw-mb-20 tw-grid tw-flex-row-reverse tw-items-center !tw-bg-white lg:tw-grid-cols-2"
+    >
+      <img src="" alt="" class="tw-mx-auto tw-w-1/2 lg:tw-order-2" />
+      <div class="tw-p-4 lg:tw-p-10">
         <div class="section-header">
           18 Airbags <br />
           Air Massage
@@ -554,9 +565,9 @@
         </div>
       </div>
     </div>
-    <div class="section !tw-bg-white">
+    <div class="tw-mb-20 tw-grid !tw-bg-white lg:tw-grid-cols-2">
       <img src="" alt="" />
-      <div class="section-content">
+      <div class="tw-p-4 lg:tw-p-10">
         <div class="section-header">Heat Therapy On The Back</div>
         <div class="section-description">
           The Ador Infinix comes with a heating function on the lumbar area.
@@ -571,55 +582,55 @@
       <strong class="">8 Auto Massage Modes</strong>
     </div>
     <div
-      class="tw-mb-10 tw-grid tw-grid-cols-2 tw-p-10 !tw-pl-[15%]"
+      class="tw-mb-10 tw-grid tw-grid-cols-3 tw-p-4 tw-py-10 tw-text-center lg:tw-p-10"
       style="background-color: #dedede"
     >
       <div
-        class="tw-flex tw-items-center tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+        class="tw-flex tw-flex-col tw-items-center tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="tw-w-1/3" />
+        <img src="" alt="" class="tw-w-16 lg:tw-w-24" />
         <div class="md:tw-text-xl">Recover</div>
       </div>
       <div
-        class="tw-flex tw-items-center tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+        class="tw-flex tw-flex-col tw-items-center tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="tw-w-1/3" />
+        <img src="" alt="" class="tw-w-16 lg:tw-w-24" />
         <div class="md:tw-text-xl">Renew</div>
       </div>
       <div
-        class="tw-flex tw-items-center tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+        class="tw-flex tw-flex-col tw-items-center tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="tw-w-1/3" />
+        <img src="" alt="" class="tw-w-16 lg:tw-w-24" />
         <div class="md:tw-text-xl">Relief</div>
       </div>
       <div
-        class="tw-flex tw-items-center tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+        class="tw-flex tw-flex-col tw-items-center tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="tw-w-1/3" />
+        <img src="" alt="" class="tw-w-16 lg:tw-w-24" />
         <div class="md:tw-text-xl">Calming</div>
       </div>
       <div
-        class="tw-flex tw-items-center tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+        class="tw-flex tw-flex-col tw-items-center tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="tw-w-1/3" />
+        <img src="" alt="" class="tw-w-16 lg:tw-w-24" />
         <div class="md:tw-text-xl">Stretch</div>
       </div>
       <div
-        class="tw-flex tw-items-center tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+        class="tw-flex tw-flex-col tw-items-center tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="tw-w-1/3" />
+        <img src="" alt="" class="tw-w-16 lg:tw-w-24" />
         <div class="md:tw-text-xl">Refresh</div>
       </div>
       <div
-        class="tw-flex tw-items-center tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+        class="tw-flex tw-flex-col tw-items-center tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="tw-w-1/3" />
+        <img src="" alt="" class="tw-w-16 lg:tw-w-24" />
         <div class="md:tw-text-xl">Music Sync</div>
       </div>
       <div
-        class="tw-flex tw-items-center tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
+        class="tw-flex tw-flex-col tw-items-center tw-pb-5 tw-text-lg md:tw-text-xl lg:tw-text-2xl"
       >
-        <img src="" alt="" class="tw-w-1/3" />
+        <img src="" alt="" class="tw-w-16 lg:tw-w-24" />
         <div class="md:tw-text-xl">Energy</div>
       </div>
     </div>
@@ -689,9 +700,9 @@
       </div>
     </div>
 
-    <div class="section">
-      <img src="" alt="" class="tw-self-start" />
-      <div class="section-content">
+    <div class="tw-mb-20 tw-grid lg:tw-grid-cols-2">
+      <img src="" alt="" class="tw-self-start lg:tw-order-2" />
+      <div class="tw-p-4 lg:tw-p-10">
         <div class="section-header">Extendable Footrest</div>
         <div class="section-description">
           The footrest extends up to 6.5" for optimal leg length based on your
