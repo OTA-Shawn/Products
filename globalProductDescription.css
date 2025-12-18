@@ -568,6 +568,10 @@
   margin-top: auto;
 }
 
+.tw-mb-auto {
+  margin-bottom: auto;
+}
+
 .tw-box-border {
   box-sizing: border-box;
 }
@@ -700,6 +704,10 @@
   height: 32px;
 }
 
+.tw-h-80 {
+  height: 320px;
+}
+
 .tw-h-96 {
   height: 384px;
 }
@@ -710,14 +718,6 @@
 
 .tw-h-full {
   height: 100%;
-}
-
-.tw-h-80 {
-  height: 320px;
-}
-
-.tw-h-56 {
-  height: 224px;
 }
 
 .tw-min-h-0 {
@@ -1236,6 +1236,10 @@
 
 .tw-gap-3 {
   gap: 12px;
+}
+
+.tw-gap-32 {
+  gap: 128px;
 }
 
 .tw-gap-4 {
@@ -1769,10 +1773,6 @@
   --tw-gradient-to: #eab308 var(--tw-gradient-to-position);
 }
 
-.tw-bg-contain {
-  background-size: contain;
-}
-
 .tw-bg-cover {
   background-size: cover;
 }
@@ -1780,14 +1780,6 @@
 .tw-bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
-}
-
-.tw-bg-center {
-  background-position: center;
-}
-
-.tw-bg-no-repeat {
-  background-repeat: no-repeat;
 }
 
 .tw-object-contain {
@@ -1968,10 +1960,6 @@
   padding-left: 10% !important;
 }
 
-.\!tw-pl-\[15\%\] {
-  padding-left: 15% !important;
-}
-
 .\!tw-pr-0 {
   padding-right: 0px !important;
 }
@@ -2060,12 +2048,12 @@
   padding-right: 40px;
 }
 
-.tw-pr-2 {
-  padding-right: 8px;
+.tw-pr-16 {
+  padding-right: 64px;
 }
 
-.tw-pr-20 {
-  padding-right: 80px;
+.tw-pr-2 {
+  padding-right: 8px;
 }
 
 .tw-pr-6 {
@@ -2098,10 +2086,6 @@
 
 .tw-pt-5 {
   padding-top: 20px;
-}
-
-.tw-pr-16 {
-  padding-right: 64px;
 }
 
 .tw-text-left {
@@ -2579,12 +2563,6 @@
   transition-duration: 150ms;
 }
 
-.tw-transition-transform {
-  transition-property: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .tw-duration-300 {
   transition-duration: 300ms;
 }
@@ -2721,6 +2699,10 @@ img{
 
   .md\:tw-order-3 {
     order: 3;
+  }
+
+  .md\:tw-order-2 {
+    order: 2;
   }
 
   .md\:tw-col-span-1 {
@@ -3021,6 +3003,14 @@ img{
     width: 768px;
   }
 
+  .md\:tw-w-full {
+    width: 100%;
+  }
+
+  .md\:tw-w-28 {
+    width: 112px;
+  }
+
   .md\:\!tw-flex-initial {
     flex: 0 1 auto !important;
   }
@@ -3139,6 +3129,11 @@ img{
 
   .md\:tw-self-start {
     align-self: flex-start;
+  }
+
+  .md\:tw-rounded-r-2xl {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
   }
 
   .md\:\!tw-bg-white {
@@ -3434,6 +3429,11 @@ img{
   .lg\:tw-mx-16 {
     margin-left: 64px;
     margin-right: 64px;
+  }
+
+  .lg\:tw-mx-2 {
+    margin-left: 8px;
+    margin-right: 8px;
   }
 
   .lg\:tw-mx-20 {

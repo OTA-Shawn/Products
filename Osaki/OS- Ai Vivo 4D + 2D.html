@@ -466,11 +466,16 @@
 
     .sections .section {
       margin-bottom: 22px;
+      flex-direction: column;
     }
 
     .section .section-content {
       gap: 14px;
       padding: 22px;
+    }
+    .section > img,
+    .section-content {
+      width: 100%;
     }
 
     .section-header {
@@ -479,13 +484,13 @@
     }
 
     .section-header2 {
-      font-size: 13px;
-      line-height: 19px;
+      font-size: 18px;
+      line-height: 24px;
     }
 
     .section-description {
-      font-size: 10px;
-      line-height: 16px;
+      font-size: 14px;
+      line-height: 21px;
     }
 
     .circle {
@@ -574,7 +579,7 @@
     </div>
     <div class="section tw-flex-col-reverse">
       <img src="" alt="" class="!tw-w-full" />
-      <div class="section-content !tw-w-full !tw-pb-0">
+      <div class="section-content !tw-w-full">
         <div class="section-header">
           Intelligent <strong>Health Detection</strong>
         </div>
@@ -672,7 +677,7 @@
     </div>
 
     <div
-      class="tw-mb-10 tw-grid tw-grid-cols-2 tw-gap-5 md:tw-gap-9 lg:tw-gap-12"
+      class="tw-mb-10 tw-grid tw-gap-5 md:tw-gap-9 lg:tw-grid-cols-2 lg:tw-gap-12"
     >
       <div
         class="tw-flex tw-h-full !tw-flex-col tw-bg-[var(--section-bg-color)]"
@@ -892,7 +897,7 @@
     </div>
 
     <div
-      class="tw-mb-5 tw-grid tw-grid-cols-2 tw-gap-5 md:tw-mb-10 md:tw-gap-9 lg:tw-gap-12"
+      class="tw-mb-5 tw-grid tw-gap-5 md:tw-mb-10 md:tw-gap-9 lg:tw-grid-cols-2 lg:tw-gap-12"
     >
       <div
         class="tw-flex tw-h-full !tw-flex-col tw-bg-[var(--section-bg-color)]"
@@ -913,7 +918,7 @@
       </div>
     </div>
     <div
-      class="tw-mb-10 tw-grid tw-grid-cols-2 tw-gap-5 md:tw-gap-9 lg:tw-gap-12"
+      class="tw-mb-10 tw-grid tw-gap-5 md:tw-gap-9 lg:tw-grid-cols-2 lg:tw-gap-12"
     >
       <div
         class="tw-flex tw-h-full !tw-flex-col tw-bg-[var(--section-bg-color)]"
@@ -941,7 +946,7 @@
           Measuring Guide
         </div>
         <div
-          class="tw-mx-auto tw-my-4 tw-grid tw-justify-center lg:tw-grid-cols-2"
+          class="tw-mx-auto tw-my-4 tw-grid tw-grid-cols-2 tw-justify-center"
         >
           <img src="" alt="" class="" />
           <img src="" alt="" class="" />
