@@ -540,11 +540,16 @@
 
     .sections .section {
       margin-bottom: 22px;
+      flex-direction: column;
     }
 
     .section .section-content {
       gap: 14px;
       padding: 22px;
+    }
+    .section > img,
+    .section-content {
+      width: 100%;
     }
 
     .section-header {
@@ -556,8 +561,8 @@
       line-height: 26px;
     }
     .section-description {
-      font-size: 10px;
-      line-height: 16px;
+      font-size: 14px;
+      line-height: 21px;
     }
 
     .circle {
@@ -635,6 +640,7 @@
     </div>
 
     <div class="section !tw-mb-0 tw-flex !tw-bg-black !tw-pb-10">
+      <img src="" alt="" class="tw-p-10 tw-pb-0 lg:tw-order-2 lg:tw-p-0" />
       <div class="section-content">
         <div class="section-header !tw-text-white">
           <strong class="" style="color: #2d59f2">3D Massage</strong> Mechanism
@@ -646,7 +652,6 @@
           Class has 5 levels of 3D intensity control.
         </div>
       </div>
-      <img src="" alt="" />
     </div>
     <div class="section !tw-mb-0 !tw-bg-black !tw-pb-10">
       <img src="" alt="" />
@@ -659,15 +664,16 @@
     </div>
 
     <div class="section !tw-mb-0 tw-flex-col !tw-bg-black !tw-pb-10">
-      <div class="section-content !tw-w-4/5">
+      <img src="" alt="" class="lg:tw-order-2" />
+      <div class="section-content">
         <div class="section-description" style="color: #808084">
           As the roller system massages the neck area, it continues through to
           the lower back and then proceeds to massage the glutes.
         </div>
       </div>
-      <img src="" alt="" class="!tw-w-4/5" />
     </div>
     <div class="section !tw-mb-0 tw-flex-col !tw-bg-black">
+      <img src="" alt="" class="lg:tw-order-2" />
       <div class="section-content !tw-w-full">
         <div class="section-header !tw-text-white">
           <strong class="" style="color: #2d59f2">Space Saving</strong>
@@ -680,7 +686,6 @@
           reclined position.
         </div>
       </div>
-      <img src="" alt="" class="!tw-w-4/5" />
     </div>
     <div class="section tw-flex-col !tw-bg-black tw-pb-16">
       <img src="" alt="" class="!tw-w-4/5" />>
@@ -785,6 +790,7 @@
         <img src="" alt="" class="!tw-m-0 !tw-w-1/2" />
         <div
           class="tw-text-center md:tw-text-left md:tw-text-2xl lg:tw-text-3xl"
+          style="color: hsl(0, 0%, 30%)"
         >
           Knead
         </div>
@@ -796,6 +802,7 @@
         <img src="" alt="" class="!tw-m-0 !tw-w-1/2" />
         <div
           class="tw-text-center md:tw-text-left md:tw-text-2xl lg:tw-text-3xl"
+          style="color: hsl(0, 0%, 30%)"
         >
           Flap
         </div>
@@ -807,6 +814,7 @@
         <img src="" alt="" class="!tw-m-0 !tw-w-1/2" />
         <div
           class="tw-text-center md:tw-text-left md:tw-text-2xl lg:tw-text-3xl"
+          style="color: hsl(0, 0%, 30%)"
         >
           Swedish
         </div>
@@ -818,6 +826,7 @@
         <img src="" alt="" class="!tw-m-0 !tw-w-1/2" />
         <div
           class="tw-text-center md:tw-text-left md:tw-text-2xl lg:tw-text-3xl"
+          style="color: hsl(0, 0%, 30%)"
         >
           Shiatsu
         </div>
@@ -829,6 +838,7 @@
         <img src="" alt="" class="!tw-m-0 !tw-w-1/2" />
         <div
           class="tw-text-center md:tw-text-left md:tw-text-2xl lg:tw-text-3xl"
+          style="color: hsl(0, 0%, 30%)"
         >
           Grasp
         </div>
@@ -1139,7 +1149,7 @@
     </div>
     <div class="section">
       <img src="" alt="" class="!tw-flex-initial tw-p-10" />
-      <div class="section-content !tw-pl-0">
+      <div class="section-content">
         <div class="section-header2">
           <strong class="" style="color: #2d59f2">Manual Massage</strong>
           Setting
@@ -1155,7 +1165,7 @@
     </div>
     <div class="section">
       <img src="" alt="" class="!tw-flex-initial tw-p-10" />
-      <div class="section-content !tw-pl-0">
+      <div class="section-content">
         <div class="section-header2">
           <strong class="" style="color: #2d59f2">Custom</strong> Setting
         </div>
@@ -1168,7 +1178,7 @@
 
     <div class="section">
       <img src="" alt="" class="tw-p-10" />
-      <div class="section-content !tw-pl-0">
+      <div class="section-content">
         <div class="section-header2">
           <strong class="" style="color: #2d59f2">Kneading</strong><br />
           Massage on Foot
@@ -1223,8 +1233,8 @@
       </div>
     </div>
     <div class="section tw-flex-col-reverse">
-      <img src="" alt="" class="!tw-w-full" />
-      <div class="section-content !tw-w-11/12 !tw-pb-0">
+      <img src="" alt="" class="!tw-w-full lg:tw-px-20" />
+      <div class="section-content !tw-w-11/12">
         <div class="section-header2">
           <strong class="" style="color: #2d59f2">Adjustable</strong><br />
           Shoulder Width
@@ -1248,47 +1258,48 @@
         </div>
       </div>
     </div>
-    <div class="section tw-relative !tw-justify-end">
-      <img src="" alt="" class="!tw-flex-initial" />
-      <div
-        class="section-content tw-absolute tw-left-[2%] tw-top-[10%] !tw-w-2/3 !tw-py-0 md:tw-left-[10%] md:tw-top-[16%] lg:tw-left-[10%] lg:tw-top-[17%]"
-      >
-        <div class="section-header2">
-          <strong class="" style="color: #2d59f2">Side</strong> Controller
-        </div>
+    <div class="tw-hidden lg:tw-block">
+      <div class="section tw-relative !tw-justify-end">
+        <img src="" alt="" class="!tw-flex-initial" />
         <div
-          class="max-[400px]:mb-[-1em] section-description min-[450px]:tw-mb-6 md:tw-mb-24 lg:tw-mb-20"
+          class="section-content tw-absolute tw-left-[2%] tw-top-[10%] !tw-w-2/3 !tw-py-0 md:tw-left-[10%] md:tw-top-[16%] lg:tw-left-[10%] lg:tw-top-[17%]"
         >
-          A side controller gives the user a more convenient access. You can
-          control the power, angle of chair, different auto massage modes, leg
-          extension and foot extension.
-        </div>
+          <div class="section-header2">
+            <strong class="" style="color: #2d59f2">Side</strong> Controller
+          </div>
+          <div
+            class="max-[400px]:mb-[-1em] section-description min-[450px]:tw-mb-6 md:tw-mb-24 lg:tw-mb-20"
+          >
+            A side controller gives the user a more convenient access. You can
+            control the power, angle of chair, different auto massage modes, leg
+            extension and foot extension.
+          </div>
 
-        <div class="section-header2">
-          <strong class="" style="color: #2d59f2">USB</strong> Connector
+          <div class="section-header2">
+            <strong class="" style="color: #2d59f2">USB</strong> Connector
+          </div>
+          <div class="section-description">
+            Enjoy your massage with your smart phone, iPad, or any other
+            electronic products. No need to move out your seat when your battery
+            is running low just charge it with the built in USB connector at the
+            armrest of the chair
+          </div>
         </div>
-        <div class="section-description">
-          Enjoy your massage with your smart phone, iPad, or any other
-          electronic products. No need to move out your seat when your battery
-          is running low just charge it with the built in USB connector at the
-          armrest of the chair
+      </div>
+      <div class="section tw-flex-col-reverse">
+        <img src="" alt="" class="tw-self-end" />
+        <div class="section-content !tw-w-full">
+          <div class="section-header2">
+            <strong class="" style="color: #2d59f2">Bluetooth</strong> Speakers
+          </div>
+          <div class="section-description">
+            The Osaki OS- Pro First-Class is equipped with Bluetooth technology
+            that allows the user to listen to their favorite music on high
+            quality speakers in the headrest.
+          </div>
         </div>
       </div>
     </div>
-    <div class="section tw-flex-col-reverse">
-      <img src="" alt="" class="tw-self-end" />
-      <div class="section-content !tw-w-full">
-        <div class="section-header2">
-          <strong class="" style="color: #2d59f2">Bluetooth</strong> Speakers
-        </div>
-        <div class="section-description">
-          The Osaki OS- Pro First-Class is equipped with Bluetooth technology
-          that allows the user to listen to their favorite music on high quality
-          speakers in the headrest.
-        </div>
-      </div>
-    </div>
-
     <div class="section-dimensions">
       <div class="tw-mt-40 tw-text-center tw-text-3xl lg:tw-text-5xl">
         Dimensions
@@ -1391,7 +1402,7 @@
         <!-- <div
           class="tw-flex md:tw-flex-row tw-flex-col tw-gap-2 tw-py-6 tw-border-b"
         >
-          <div class="tw-shrink-0 tw-w-52 tw-font-bold">
+          <div class="tw-w-64 tw-shrink-0 tw-font-bold">
             <div>Weight</div>
           </div>
           <div class="tw-gap-2 tw-grid tw-grid-cols-2 tw-w-full">

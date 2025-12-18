@@ -377,8 +377,13 @@
       max-width: 480px;
     }
 
+    .section > img,
+    .section-content {
+      width: 100%;
+    }
     .sections .section {
       margin-bottom: 22px;
+      flex-direction: column;
     }
 
     .section .section-content {
@@ -390,13 +395,10 @@
       font-size: 26px;
       line-height: 38px;
     }
-    .section-header {
-      font-size: 18px;
-      line-height: 26px;
-    }
+
     .section-description {
-      font-size: 10px;
-      line-height: 16px;
+      font-size: 14px;
+      line-height: 21px;
     }
 
     .circle {
@@ -463,9 +465,8 @@
       </div>
     </div>
 
-    <div
-      class="section !tw-mb-0 tw-flex tw-flex-row-reverse !tw-bg-black !tw-pb-10"
-    >
+    <div class="section !tw-mb-0 tw-flex tw-flex-row !tw-bg-black !tw-pb-10">
+      <img src="" alt="" class="md:tw-order-2" />
       <div class="section-content">
         <div class="section-header !tw-text-white">
           <strong class="" style="color: #2d59f2">Smart Body <br /> </strong>
@@ -476,34 +477,10 @@
           for the accurate massager movement.
         </div>
       </div>
-      <img src="" alt="" />
     </div>
-    <!-- <div class="tw-flex-row-reverse !tw-bg-black !tw-mb-0 !tw-pb-10 section">
-      <img src="" alt="" />
-      <div class="section-content">
-        <div class="!tw-text-white section-header">
-          <strong class="" style="color: #2D59F2;">L-Track </strong><br />
-          Massage
-        </div>
-        <div class="section-description" style="color: #808084;">
-          L-Track system massages from the neck, past the glutes, and down to
-          the back portion of the thighs. The track in which the massage heads
-          move are curved to contour the back and glutes area.
-        </div>
-      </div>
-    </div> -->
-
-    <!-- <div class="tw-flex-col !tw-bg-black !tw-mb-0 !tw-pb-10 section">
-      <div class="!tw-w-4/5 section-content">
-        <div class="section-description" style="color: #808084;">
-          As the roller system massages the neck area, it continues through to
-          the lower back and then proceeds to massage the glutes.
-        </div>
-      </div>
-      <img src="" alt="" class="!tw-w-4/5" />
-    </div> -->
-    <div class="section !tw-mb-0 tw-flex-col !tw-bg-black">
-      <div class="section-content !tw-w-4/5">
+    <div class="section !tw-mb-0 tw-flex-col !tw-bg-black md:tw-flex-row">
+      <img src="" alt="" class="md:tw-w-4/5" />
+      <div class="section-content md:tw-w-4/5">
         <div class="section-header !tw-text-white">
           <strong class="" style="color: #2d59f2">L-Track </strong> Massage
         </div>
@@ -512,10 +489,10 @@
           back, and finally wrapping underneath the back of your thighs.
         </div>
       </div>
-      <img src="" alt="" class="!tw-w-4/5" />
     </div>
-    <div class="section !tw-mb-0 tw-flex-col !tw-bg-black">
-      <div class="section-content !tw-w-4/5">
+    <div class="section !tw-mb-0 tw-flex-col !tw-bg-black md:tw-flex-row">
+      <img src="" alt="" class="md:tw-order-2 md:tw-w-1/2" />
+      <div class="section-content md:tw-w-4/5">
         <div class="section-header !tw-text-white">
           <strong class="" style="color: #2d59f2">Space Saving</strong>
           Technology
@@ -525,15 +502,14 @@
           that slides the chair forward as the chair reclines.
         </div>
       </div>
-      <img src="" alt="" class="!tw-w-1/2" />
     </div>
 
     <div
       class="tw-mb-20 tw-flex tw-flex-col tw-items-center tw-gap-3 !tw-bg-black"
     >
-      <img src="" alt="" class="!tw-w-4/5" />
+      <img src="" alt="" class="md:!tw-w-4/5" />
       <div
-        class="section-content !tw-mb-20 !tw-w-4/5 tw-rounded-3xl"
+        class="section-content !tw-mb-20 tw-rounded-3xl md:tw-w-4/5"
         style="background-color: #1e1e1e"
       >
         <img src="" alt="" class="!tw-w-12 !tw-flex-initial md:!tw-w-20" />
@@ -566,17 +542,6 @@
         </div>
       </div>
     </div>
-    <!-- <div class="tw-flex-row-reverse section">
-      <img src="" alt="" />
-      <div class="section-content">
-        <div class="section-header">Adjustable Shoulder Width</div>
-        <div class="section-description">
-          Osaki introduces adjustable outer shoulders for custom fitting. Users
-          can improve outer shoulder massage strength and fitting with 3 width
-          options.
-        </div>
-      </div>
-    </div> -->
     <div class="section tw-flex-row-reverse !tw-bg-white">
       <img src="" alt="" />
       <div class="section-content">
@@ -591,111 +556,52 @@
       </div>
     </div>
 
-    <!-- <div class="tw-flex tw-flex-col section">
-      <div class="tw-flex">
-        <div class="!tw-gap-0 !tw-pb-0 section-content">
-          <div class="section-header">Heated Back Roller</div>
-          <div class="section-header2">Comforting Massage</div>
-          <div class="section-description">
-            The Soho II's heated massage functions help soothe muscle tension,
-            alleviate back pain, and improve blood flow.
-          </div>
-        </div>
-        <img src="" alt="" class="!tw-flex-initial" />
-      </div>
-      <div class="tw-bg-white tw-h-4 tw-w-full lg:tw-h-0"></div>
-      <div class="tw-flex tw-flex-row-reverse lg:!tw-mt-[-10em]">
-        <div class="tw-justify-center !tw-gap-0 !tw-pb-0 section-content">
-          <div class="section-header">Calf Heating</div>
-          <div class="section-description">
-            the Soho II both rolls and scrapes your foot with extra care and
-            deliberation.
-          </div>
-        </div>
-        <img src="" alt="" class="!tw-flex-initial !tw-ml-[2em]" />
-      </div>
-    </div> -->
-
-    <!-- <div class="tw-flex tw-flex-row-reverse section">
-      <div class="section-content">
-        <div class="section-header">Lumbar Heat Therapy</div>
-        <div class="section-description">
-          The <strong>carbon coil</strong> in the Bliss will effectively warm
-          and help release tension in your lower back area.
-        </div>
-      </div>
-      <img src="" alt="" />
-    </div>  -->
-
-    <div
-      class="grid-section !tw-grid tw-grid-cols-2 tw-flex-wrap tw-justify-center !tw-bg-black !tw-p-10 tw-text-black lg:tw-grid-cols-3 lg:!tw-p-20"
-    >
-      <div
-        class="tw-col-span-full tw-flex tw-w-full tw-items-center tw-justify-center tw-gap-5 tw-text-center tw-text-2xl md:tw-text-4xl"
-      >
-        <strong class="!tw-text-white">6 Manual Massage Styles</strong>
+    <div class="tw-mb-40 tw-p-10">
+      <div class="tw-py-10 tw-text-center tw-text-4xl">
+        6 Manual Massage Styles
       </div>
       <div
-        class="grid-item tw-flex !tw-w-full tw-flex-col tw-items-center tw-justify-center tw-text-left tw-text-white"
+        class="tw-grid tw-grid-cols-2 tw-justify-items-center tw-gap-10 tw-gap-y-10 tw-text-center tw-text-white md:tw-grid-cols-3"
       >
-        <!-- <img src="" alt="" class="!tw-m-0" /> -->
         <div
-          class="tw-text-center tw-text-xl tw-font-light tw-text-gray-300 md:tw-text-left"
+          class="tw-w-32 tw-rounded-3xl tw-p-2 tw-px-4"
+          style="background-color: hsl(0, 0%, 30%)"
         >
           Kneading
         </div>
-      </div>
-      <div
-        class="grid-item tw-flex !tw-w-full tw-flex-col tw-items-center tw-justify-center tw-text-left tw-text-white"
-      >
-        <!-- <img src="" alt="" class="!tw-m-0" /> -->
         <div
-          class="tw-text-center tw-text-xl tw-font-light tw-text-gray-300 md:tw-text-left"
+          class="tw-w-32 tw-rounded-3xl tw-p-2 tw-px-4"
+          style="background-color: hsl(0, 0%, 30%)"
         >
           Tapping
         </div>
-      </div>
-      <div
-        class="grid-item tw-flex !tw-w-full tw-flex-col tw-items-center tw-justify-center tw-text-left tw-text-white"
-      >
-        <!-- <img src="" alt="" class="!tw-m-0 lg:!tw-mb-4 tw-h-10 aspect" /> -->
         <div
-          class="tw-text-center tw-text-xl tw-font-light tw-text-gray-300 md:tw-text-left"
+          class="tw-w-32 tw-rounded-3xl tw-p-2 tw-px-4"
+          style="background-color: hsl(0, 0%, 30%)"
         >
           Swedish
         </div>
-      </div>
-      <div
-        class="grid-item tw-flex !tw-w-full tw-flex-col tw-items-center tw-justify-center tw-text-left tw-text-white"
-      >
-        <!-- <img src="" alt="" class="!tw-m-0" /> -->
         <div
-          class="tw-text-center tw-text-xl tw-font-light tw-text-gray-300 md:tw-text-left"
+          class="tw-w-32 tw-rounded-3xl tw-p-2 tw-px-4"
+          style="background-color: hsl(0, 0%, 30%)"
         >
           Shiatsu
         </div>
-      </div>
-      <div
-        class="grid-item tw-flex !tw-w-full tw-flex-col tw-items-center tw-justify-center tw-text-left tw-text-white"
-      >
-        <!-- <img src="" alt="" class="!tw-m-0" /> -->
         <div
-          class="tw-text-center tw-text-xl tw-font-light tw-text-gray-300 md:tw-text-left"
+          class="tw-w-32 tw-rounded-3xl tw-p-2 tw-px-4"
+          style="background-color: hsl(0, 0%, 30%)"
         >
           Clapping
         </div>
-      </div>
-      <div
-        class="grid-item tw-flex !tw-w-full tw-flex-col tw-items-center tw-justify-center tw-text-left tw-text-white"
-      >
-        <!-- <img src="" alt="" class="!tw-m-0" /> -->
         <div
-          class="tw-text-center tw-text-xl tw-font-light tw-text-gray-300 md:tw-text-left"
+          class="tw-w-32 tw-rounded-3xl tw-p-2 tw-px-4"
+          style="background-color: hsl(0, 0%, 30%)"
         >
           Rolling
         </div>
       </div>
     </div>
+
     <div class="section">
       <img src="" alt="" class="!tw-flex-initial" />
       <div class="section-content">
@@ -747,7 +653,7 @@
       <div
         class="tw-flex tw-flex-col tw-items-center tw-justify-between tw-gap-5 md:tw-flex-row md:tw-gap-10"
       >
-        <img src="" alt="" class="!tw-w-1/2 md:tw-p-20" />
+        <img src="" alt="" class="md:tw-w-1/2 md:tw-p-20" />
         <div class="tw-flex tw-flex-col tw-justify-center">
           <img src="" alt="" class="" /><img src="" alt="" class="" />
         </div>

@@ -393,8 +393,12 @@
       max-width: 480px;
     }
 
+    .section > img {
+      width: 100%;
+    }
     .sections .section {
       margin-bottom: 22px;
+      flex-direction: column;
     }
 
     .section .section-content {
@@ -408,8 +412,8 @@
     }
 
     .section-description {
-      font-size: 10px;
-      line-height: 16px;
+      font-size: 14px;
+      line-height: 21px;
     }
 
     .circle {
@@ -468,6 +472,7 @@
     </div>
 
     <div class="section tw-flex">
+      <img src="" alt="" class="tw-pr-10 md:tw-pr-0 lg:tw-order-2" />
       <div class="section-content">
         <div class="section-header">4D Massage Mechanism</div>
         <div class="section-description">
@@ -477,10 +482,9 @@
           speed adjustments for the massage rollers.
         </div>
       </div>
-      <img src="" alt="" />
     </div>
     <div class="section">
-      <img src="" alt="" class="" />
+      <img src="" alt="" class="tw-pr-20 md:tw-pr-0" />
       <div class="section-content">
         <div class="section-header">
           Kneading <br />
@@ -495,6 +499,7 @@
       </div>
     </div>
     <div class="section tw-flex">
+      <img src="" alt="" class="lg:tw-order-2" />
       <div class="section-content">
         <div class="section-header">Body Scan Technology</div>
         <div class="section-description">
@@ -504,16 +509,22 @@
           height, which can be re-calibrated once the scan is complete.
         </div>
       </div>
-      <img src="" alt="" />
     </div>
 
     <div class="section tw-relative tw-flex-row-reverse">
-      <img src="" alt="" />
+      <div class="tw-overflow-hidden">
+        <img
+          src=""
+          alt=""
+          class="tw-h-96 tw-object-cover lg:tw-h-auto"
+          style="object-position: 0% 50%"
+        />
+      </div>
       <div
-        class="section-content tw-absolute tw-right-0 tw-top-0 tw-items-end tw-text-right"
+        class="section-content tw-right-0 tw-top-0 lg:tw-absolute lg:tw-items-end lg:tw-text-right"
       >
         <div class="section-header">SL-track Technology</div>
-        <div class="section-description tw-w-1/2">
+        <div class="section-description lg:tw-w-1/2">
           The SL-Track is made up of Laser-Crafted Steel. The track allows the
           massage rollers to cover the entirety of your body. The SL-Track
           reaches all the way
@@ -522,6 +533,7 @@
       </div>
     </div>
     <div class="section tw-flex tw-flex-col">
+      <img src="" alt="" class="tw-p-4 tw-pb-0 md:tw-p-0 lg:tw-order-2" />
       <div class="section-content">
         <div class="section-header">
           Zero Gravity Reclining <br />
@@ -535,9 +547,9 @@
           achieve a complete recline.
         </div>
       </div>
-      <img src="" alt="" />
     </div>
     <div class="section tw-flex tw-flex-row-reverse">
+      <img src="" alt="" class="lg:tw-order-2" />
       <div class="section-content">
         <div class="section-header">
           32 Cell <br />
@@ -551,20 +563,7 @@
           body to relieve pain and tension.
         </div>
       </div>
-      <img src="" alt="" />
     </div>
-    <!-- <div class="section">
-      <img src="" alt="" />
-      <div class="section-content">
-        <div class="section-header">Touchscreen Controller</div>
-        <div class="section-description">
-          The remote controller is upgraded to a larger screen for user’s
-          convenience to operate the massage chair. It has an easy view screen
-          displaying the function the chair has activated. It also has magnetic
-          holder that fixes the remote into place.
-        </div>
-      </div>
-    </div> -->
     <div class="grid-section tw-p-10 tw-py-20 tw-text-black">
       <div
         class="tw-col-span-full tw-flex tw-items-center tw-justify-center tw-gap-5 tw-pb-10 tw-text-center tw-text-2xl md:tw-text-4xl"
@@ -668,7 +667,7 @@
       </div>
     </div>
     <div class="section tw-flex-row-reverse">
-      <img src="" alt="" class="" />
+      <img src="" alt="" class="tw-pl-28 md:tw-pl-0" />
       <div class="section-content">
         <div class="section-header">
           Remote <br />
@@ -710,13 +709,13 @@
       </div>
     </div>
 
-    <div class="tw-mb-40 tw-flex tw-justify-between tw-gap-5 md:tw-gap-10">
+    <div class="tw-mb-40 tw-grid tw-gap-5 md:tw-grid-cols-2 md:tw-gap-10">
       <div
         class="section-content tw-flex tw-flex-1 tw-flex-col tw-justify-between !tw-p-0 md:tw-text-xl lg:tw-text-2xl"
         style="background-color: var(--section-bg-color)"
       >
         <div
-          class="tw-p-4 tw-pb-0 tw-text-sm tw-font-semibold md:tw-mb-2 md:tw-p-10 md:tw-text-xl lg:tw-text-2xl"
+          class="tw-p-4 tw-pb-0 tw-text-xl tw-font-semibold md:tw-mb-2 md:tw-p-10 lg:tw-text-2xl"
         >
           HD Surround Sound Speakers
         </div>
@@ -728,7 +727,7 @@
         style="background-color: var(--section-bg-color)"
       >
         <div
-          class="tw-p-4 tw-pb-0 tw-text-sm tw-font-semibold md:tw-mb-2 md:tw-p-10 md:tw-text-xl lg:tw-text-2xl"
+          class="tw-p-4 tw-pb-0 tw-text-xl tw-font-semibold md:tw-mb-2 md:tw-p-10 lg:tw-text-2xl"
         >
           Shortcut Panel
         </div>

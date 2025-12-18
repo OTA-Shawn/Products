@@ -379,6 +379,12 @@
 
     .sections .section {
       margin-bottom: 22px;
+      flex-direction: column;
+    }
+
+    .section > img,
+    .section-content {
+      width: 100%;
     }
 
     .section .section-content {
@@ -436,9 +442,10 @@
     <img src="" alt="" class="!tw-w-full tw-bg-black tw-pb-40" />
 
     <div class="section !tw-mb-0 tw-flex !tw-bg-black !tw-pb-10">
+      <img src="" alt="" class="lg:tw-order-2" />
       <div class="section-content">
         <div class="section-header !tw-text-white">
-          <div class="section-header2" style="color: #d1d1d1">Advanced</div>
+          <div class="section-header2" style="color: white">Advanced</div>
           <strong class="" style="color: #2d59ee">3D MASSAGE</strong>
         </div>
         <div class="tw-flex tw-justify-between tw-text-center tw-text-white">
@@ -493,12 +500,11 @@
           ></div>
         </div>
       </div>
-      <img src="" alt="" />
     </div>
     <div class="section !tw-mb-0 !tw-bg-black !tw-pb-10">
       <img src="" alt="" />
       <div class="section-content tw-flex tw-items-end">
-        <div class="section-header !tw-text-white">
+        <div class="section-header tw-w-full !tw-text-white lg:tw-w-auto">
           <div class="section-header2 !tw-text-white">Ergonomic</div>
           <strong class="" style="color: #2d59ee">SL-TRACK</strong> <br />
           MASSAGE
@@ -507,16 +513,14 @@
     </div>
 
     <div class="section !tw-mb-0 tw-flex-col !tw-bg-black !tw-pb-10">
-      <div class="section-content !tw-w-4/5">
-        <div class="section-header tw-text-center !tw-text-white">
+      <img src="" alt="" class="!tw-w-full lg:tw-order-2" />
+      <div class="section-content lg:tw-w-4/5">
+        <div class="section-header !tw-text-white lg:tw-text-center">
           2 STAGE <strong class="" style="color: #2d59ee">ZERO GRAVITY</strong>
         </div>
       </div>
-      <img src="" alt="" class="!tw-w-full" />
     </div>
-    <div
-      class="section !tw-mb-0 !tw-mb-10 tw-flex-row-reverse !tw-bg-black !tw-pb-10"
-    >
+    <div class="section !tw-mb-0 tw-flex-row-reverse !tw-bg-black !tw-pb-10">
       <img src="" alt="" />
       <div class="section-content">
         <div class="section-header !tw-text-white">
@@ -527,16 +531,16 @@
     </div>
 
     <div class="section">
-      <img src="" alt="" class="!tw-flex-initial tw-px-12" />
+      <img src="" alt="" class="!tw-flex-initial lg:tw-px-12" />
       <div class="section-content tw-pl-0">
-        <div class="section-header tw-text-right">
+        <div class="section-header lg:tw-text-right">
           <div class="section-header2">30 Airbags</div>
           AIR MASSAGE
         </div>
       </div>
     </div>
     <div class="section tw-flex-row-reverse">
-      <img src="" alt="" class="!tw-w-1/2" />
+      <img src="" alt="" class="tw-w-3/4 lg:tw-w-1/2" />
       <div class="section-content">
         <div class="section-header">
           Waist <br />
@@ -627,7 +631,7 @@
 
     <div class="section" style="background-color: #e9e9e9">
       <img src="" alt="" class="" />
-      <div class="section-content tw-items-end">
+      <div class="section-content lg:tw-items-end">
         <div class="section-header">
           <div class="section-header2">Calf</div>
           KNEADING MASSAGE
@@ -645,7 +649,7 @@
     </div>
     <div class="section" style="background-color: #e9e9e9">
       <img src="" alt="" class="" />
-      <div class="section-content tw-text-right">
+      <div class="section-content lg:tw-text-right">
         <div class="section-header">
           <div class="section-header2">Side Panel</div>
           Controller
@@ -659,7 +663,7 @@
     <div class="section tw-flex-row-reverse" style="background-color: #e9e9e9">
       <img src="" alt="" class="" />
       <div class="section-content">
-        <div class="section-header">Bluetooth Speaker</div>
+        <div class="section-header tw-hidden">Bluetooth Speaker</div>
 
         <div class="section-description">
           Otamic LE has Bluetooth for music and calls on headrest speakers.
@@ -688,10 +692,10 @@
         Dimensions
       </div>
       <div
-        class="tw-flex tw-flex-col tw-items-center tw-justify-between tw-gap-5 md:tw-flex-row md:tw-gap-10"
+        class="tw-grid tw-items-center tw-justify-between tw-gap-5 md:tw-flex-row md:tw-gap-10 lg:tw-grid-cols-2"
       >
-        <img src="" alt="" class="!tw-w-1/2" />
-        <img src="" alt="" class="!tw-w-1/2" />
+        <img src="" alt="" class="" />
+        <img src="" alt="" class="" />
       </div>
     </div>
 

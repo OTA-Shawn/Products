@@ -489,13 +489,16 @@
       gap: 14px;
       padding: 22px;
     }
+    .section > img {
+      width: 100%;
+    }
     .section-header {
       font-size: 26px;
       line-height: 38px;
     }
     .section-description {
-      font-size: 10px;
-      line-height: 16px;
+      font-size: 14px;
+      line-height: 21px;
     }
     .circle {
       gap: 4px;
@@ -535,7 +538,7 @@
     <div class="section !tw-mb-40 !tw-flex-col !tw-bg-white md:!tw-mb-80">
       <img alt="" class="!tw-w-full" />
       <div
-        class="tw-px-10 tw-pb-5 tw-pt-10 tw-text-center tw-text-xl md:tw-text-2xl lg:tw-text-3xl"
+        class="tw-px-4 tw-pb-5 tw-pt-10 tw-text-center tw-text-xl md:tw-text-2xl lg:tw-text-3xl"
       >
         Find repose under the robust influence of attuned shoulder massage, 7
         different 4D adjustment levels to reach every ache, and all automatic
@@ -602,17 +605,13 @@
       </div>
       <img alt="" class="!tw-w-full !tw-flex-initial md:!tw-w-2/5" />
     </div>
-    <div class="section tw-flex">
+    <div class="section tw-flex tw-flex-col md:tw-flex-row">
       <img alt="" class="tw-self-end" />
       <div class="section-content">
-        <img
-          src=""
-          alt=""
-          class="mb-[-1em] md:mb-[-1.5em] lg:mb-[-2em] !tw-w-12 md:!tw-w-24 lg:!tw-w-32"
-        />
+        <img src="" alt="" class="tw-w-32" />
         <div class="section-header">
-          Muscle <br />
-          Tension <br />
+          Muscle <br class="tw-hidden md:tw-block" />
+          Tension <br class="tw-hidden md:tw-block" />
           Detection
         </div>
         <div class="section-description">
@@ -635,20 +634,16 @@
         </div>
       </div>
     </div>
-    <div class="section tw-flex-col-reverse">
-      <img alt="" class="!tw-w-full" />
-      <div class="section-content !tw-flex-row">
+    <div class="section tw-flex-col">
+      <img alt="" class="!tw-w-full tw-pt-4 md:tw-pt-0 lg:tw-order-2" />
+      <div class="section-content tw-flex-col lg:tw-flex-row">
         <div class="basis-2/5 section-header">Smart Voice Control</div>
         <div class="basis-3/5 section-description">
           The OP-4D+ XRest has Voice Control capabilities. The commands can be
           used <strong>through Alexa</strong> followed by the predetermined
           commands in the manual.
-          <div class="tw-flex tw-gap-2">
-            <img
-              src=""
-              alt=""
-              class="tw-mt-2 !tw-h-10 !tw-w-10 !tw-flex-initial lg:!tw-h-20 lg:!tw-w-20"
-            />
+          <div class="tw-mt-2 tw-flex tw-items-center tw-gap-2">
+            <img src="" alt="" class="tw-w-12" />
             <strong>
               Voice Control may be only used through Alexa devices or the Alexa
               app on your phone.
@@ -657,9 +652,9 @@
         </div>
       </div>
     </div>
-    <div class="section">
+    <div class="section tw-flex-col md:tw-flex-row">
       <img alt="" />
-      <div class="section-content !tw-pl-0">
+      <div class="section-content lg:tw-pl-0">
         <div class="section-header">App Control</div>
         <div class="section-description">
           If you have an iPhone or Android, go to the App Store or Google Play
@@ -680,7 +675,7 @@
       </div>
     </div>
     <div class="section tw-flex-col md:tw-flex-row-reverse">
-      <img alt="" class="!tw-w-full md:!tw-w-1/2" />
+      <img alt="" class="!tw-w-full tw-pl-4 md:!tw-w-1/2 md:tw-pl-0" />
       <div class="section-content">
         <div class="section-header">Touchscreen Controller</div>
         <div class="section-description">
@@ -690,8 +685,8 @@
         </div>
       </div>
     </div>
-    <div class="section">
-      <img alt="" />
+    <div class="section tw-flex-col md:tw-flex-row">
+      <img alt="" class="" />
       <div class="section-content">
         <div class="section-header">
           46 Cell <br />
@@ -704,8 +699,8 @@
         </div>
       </div>
     </div>
-    <div class="section tw-flex-col md:tw-flex-row-reverse">
-      <img alt="" class="!tw-w-full md:!tw-w-1/2" />
+    <div class="section tw-flex-col md:tw-flex-row">
+      <img alt="" class="!tw-w-full md:!tw-w-1/2 lg:tw-order-2" />
       <div class="section-content">
         <div class="section-header">Attachable Magnetic Pillow</div>
         <div class="section-description">
@@ -719,13 +714,14 @@
       </div>
     </div>
     <div
-      class="tw-mb-5 tw-flex tw-justify-between tw-gap-5 md:tw-mb-10 md:tw-gap-10"
+      class="tw-mb-5 tw-grid tw-gap-5 md:tw-mb-10 md:tw-grid-cols-2 md:tw-gap-10"
     >
       <div
         class="section-content tw-flex tw-flex-1 tw-flex-col tw-justify-between tw-gap-0 !tw-p-0 md:tw-text-xl lg:tw-text-2xl"
         style="background-color: var(--section-bg-color)"
       >
-        <div class="tw-p-4 !tw-pb-0 md:tw-p-8 lg:tw-p-10">
+        <img alt="" class="tw-w-full md:tw-order-2" />
+        <div class="tw-p-4 tw-pt-0 md:tw-p-8 lg:tw-p-10 lg:tw-pb-0">
           <div class="section-description">
             The <strong>SL-Track</strong> is made up of
             <strong>Laser-Crafted Steel</strong>. The track allows the massage
@@ -734,13 +730,13 @@
             hamstrings.
           </div>
         </div>
-        <img alt="" class="tw-w-full" />
       </div>
       <div
         class="section-content tw-flex tw-flex-1 tw-flex-col tw-justify-between !tw-p-0 md:tw-text-xl lg:tw-text-2xl"
         style="background-color: var(--section-bg-color)"
       >
-        <div class="tw-p-4 !tw-pb-0 md:tw-p-8 lg:tw-p-10">
+        <img alt="" class="tw-w-full md:tw-order-2" />
+        <div class="tw-p-4 tw-pt-0 md:tw-p-8 md:tw-pb-0 lg:tw-p-10">
           <div class="section-header2">Negative Oxygen Ions</div>
           <div class="section-description">
             The XRest is furnished with built-in negative air ionization
@@ -748,11 +744,10 @@
             assists in relieving stress and boosting energy.
           </div>
         </div>
-        <img alt="" class="tw-w-full" />
       </div>
     </div>
-    <div class="section tw-flex-col-reverse">
-      <img alt="" class="!tw-w-full" />
+    <div class="section tw-flex-col">
+      <img alt="" class="!tw-w-full tw-pt-4 md:tw-order-2 md:tw-pt-0" />
       <div class="section-content">
         <div class="section-header tw-flex-1">
           Zero Gravity Reclining <br />
@@ -936,7 +931,7 @@
       </div>
     </div>
     <div class="section tw-flex-col md:tw-flex-row-reverse">
-      <img alt="" class="!tw-w-full md:!tw-w-1/2" />
+      <img alt="" class="!tw-w-full tw-px-10 md:!tw-w-1/2 md:tw-px-0" />
       <div class="section-content">
         <div class="section-description">
           The OP-4D XRest <strong>Specialized Foot Rollers</strong> are uniquely

@@ -483,6 +483,11 @@
     }
     .sections .section {
       margin-bottom: 22px;
+      flex-direction: column;
+    }
+
+    .section > img {
+      width: 100%;
     }
 
     .section .section-content {
@@ -494,8 +499,8 @@
       line-height: 38px;
     }
     .section .section-description {
-      font-size: 10px;
-      line-height: 16px;
+      font-size: 14px;
+      line-height: 21px;
     }
     .circle {
       gap: 4px;
@@ -652,7 +657,7 @@
       </div>
     </div>
     <div class="section tw-flex-col-reverse">
-      <img src="" alt="" class="!tw-w-full" />
+      <img src="" alt="" class="!tw-w-full tw-pt-4" />
       <div class="!flex-row section-content">
         <div class="section-header tw-flex-1">
           Intelligent <br />Voice Control
@@ -676,7 +681,7 @@
       </div>
     </div>
     <div class="section">
-      <img src="" alt="" />
+      <img src="" alt="" class="tw-p-10 tw-pb-0 lg:tw-p-0" />
       <div class="section-content">
         <div class="section-header">
           20 Cell<br />
@@ -690,8 +695,10 @@
       </div>
     </div>
     <div class="section tw-relative">
-      <img src="" alt="" />
-      <div class="section-content tw-absolute tw-left-0 tw-top-0 tw-w-1/2">
+      <img src="" alt="" class="tw-pt-10 lg:tw-pt-0" />
+      <div
+        class="section-content tw-left-0 tw-top-0 lg:tw-absolute lg:tw-w-1/2"
+      >
         <div class="section-description">
           The SL-Track is made up of
           <strong>Laser-Crafted Steel.</strong> The track allows the massage
@@ -702,8 +709,8 @@
     </div>
 
     <div class="section tw-flex-col-reverse">
-      <img src="" alt="" class="!tw-w-full" />
-      <div class="section-content tw-mx-10 md:tw-mx-20">
+      <img src="" alt="" class="!tw-w-full tw-p-4 tw-pb-0" />
+      <div class="section-content md:tw-mx-20 lg:tw-mx-10">
         <div class="section-header">
           Zero Gravity Reclining <br />
           and Space Saving
@@ -719,7 +726,7 @@
       </div>
     </div>
     <div class="section">
-      <img src="" alt="" class="" />
+      <img src="" alt="" class="tw-px-10" />
       <div class="section-content">
         <div class="section-header">Heat Shawl Lumbar Therapy</div>
         <div class="section-description">
@@ -845,7 +852,7 @@
       </div>
     </div>
     <div class="section">
-      <img src="" alt="" class="" />
+      <img src="" alt="" class="tw-pr-10 lg:tw-pr-0" />
       <div class="section-content">
         <div class="section-header">Deep Calf Kneading</div>
         <div class="section-description">
@@ -857,7 +864,7 @@
       </div>
     </div>
     <div class="section tw-flex-row-reverse">
-      <img src="" alt="" class="" />
+      <img src="" alt="" class="tw-px-10 lg:tw-px-0" />
       <div class="section-content">
         <div class="section-header">Specialized Foot Rollers</div>
         <div class="section-description">
@@ -871,7 +878,7 @@
       </div>
     </div>
     <div class="section">
-      <img src="" alt="" class="" />
+      <img src="" alt="" class="tw-pr-10 lg:tw-pr-0" />
       <div class="section-content">
         <div class="section-header">Automatic Extendable Footrest</div>
         <div class="section-description">
@@ -896,54 +903,51 @@
     </div>
 
     <div
-      class="tw-mb-5 tw-flex tw-justify-between tw-gap-5 md:tw-mb-10 md:tw-gap-10"
+      class="tw-mb-5 tw-grid tw-justify-between tw-gap-5 md:tw-mb-10 md:tw-gap-10 lg:tw-grid-cols-2"
     >
       <div
-        class="tw-flex tw-flex-1 tw-flex-col-reverse tw-justify-between md:tw-text-xl lg:tw-text-2xl"
-        style="background-color: #efe9e6"
+        class="tw-flex tw-flex-col-reverse tw-justify-between md:tw-text-xl lg:tw-text-2xl"
+        style="background-color: #e9e9e9"
       >
         <img src="" alt="" class="tw-w-full" />
         <div class="tw-p-10 tw-pb-0">Wireless Charging Surface</div>
       </div>
       <div
-        class="tw-flex tw-flex-1 tw-flex-col-reverse tw-justify-between md:tw-text-xl lg:tw-text-2xl"
-        style="background-color: #efe9e6"
+        class="tw-flex tw-flex-col-reverse tw-justify-between md:tw-text-xl lg:tw-text-2xl"
+        style="background-color: #e9e9e9"
       >
         <img src="" alt="" class="" />
         <div class="tw-p-10 tw-pb-0">Memory Function</div>
       </div>
-    </div>
-    <div
-      class="tw-mb-5 tw-flex tw-justify-between tw-gap-5 md:tw-mb-10 md:tw-gap-10"
-    >
       <div
-        class="tw-flex tw-flex-1 tw-flex-col-reverse tw-justify-between md:tw-text-xl lg:tw-text-2xl"
-        style="background-color: #efe9e6"
+        class="tw-col-span-full tw-flex tw-flex-col-reverse tw-justify-between md:tw-text-xl lg:tw-text-2xl"
+        style="background-color: #e9e9e9"
       >
         <img src="" alt="" class="" />
         <div class="tw-p-10 tw-pb-0">Custom LED Setup</div>
       </div>
-    </div>
-    <div
-      class="tw-mb-5 tw-flex tw-justify-between tw-gap-5 md:tw-mb-10 md:tw-gap-10"
-    >
       <div
-        class="tw-flex tw-flex-1 tw-flex-col-reverse tw-justify-between md:tw-text-xl lg:tw-text-2xl"
-        style="background-color: #efe9e6"
+        class="tw-flex tw-flex-col-reverse tw-justify-between md:tw-text-xl lg:tw-text-2xl"
+        style="background-color: #e9e9e9"
       >
         <img src="" alt="" class="tw-w-full" />
         <div class="tw-p-10 tw-pb-0">HD Surround Sound Speakers</div>
       </div>
       <div
-        class="tw-flex tw-flex-1 tw-flex-col-reverse tw-justify-between md:tw-text-xl lg:tw-text-2xl"
-        style="background-color: #efe9e6"
+        class="tw-flex tw-flex-col-reverse tw-justify-between md:tw-text-xl lg:tw-text-2xl"
+        style="background-color: #e9e9e9"
       >
         <img src="" alt="" class="" />
         <div class="tw-p-10 tw-pb-0">USB Charging Port</div>
       </div>
     </div>
+
     <div>
-      <div class="tw-mt-40 tw-text-center tw-text-3xl">Dimensions</div>
+      <div
+        class="tw-p-10 tw-text-center tw-text-3xl tw-font-bold md:tw-text-4xl lg:tw-text-5xl"
+      >
+        Dimensions
+      </div>
       <div class="tw-flex tw-flex-col tw-items-center md:tw-flex-row">
         <img src="" alt="" class="tw-min-w-0 tw-flex-1 tw-basis-1/2" />
         <img src="" alt="" class="tw-min-w-0 tw-flex-1 tw-basis-1/2" />

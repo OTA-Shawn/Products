@@ -352,6 +352,10 @@
 
     .sections .section {
       margin-bottom: 22px;
+      flex-direction: column;
+    }
+    .section > img {
+      width: 100%;
     }
 
     .section .section-content {
@@ -365,8 +369,8 @@
     }
 
     .section-description {
-      font-size: 10px;
-      line-height: 16px;
+      font-size: 14px;
+      line-height: 21px;
     }
 
     .circle {
@@ -433,7 +437,8 @@
       </div>
     </div>
 
-    <div class="section tw-flex tw-flex-row-reverse">
+    <div class="section tw-flex">
+      <img src="" alt="" class="tw-pr-10 lg:tw-pr-0" />
       <div class="section-content">
         <div class="section-header">Shoulder Position Adjustment</div>
         <div class="section-description">
@@ -444,7 +449,6 @@
           <strong>width in three increments</strong>.
         </div>
       </div>
-      <img src="" alt="" />
     </div>
     <div class="section tw-flex-row-reverse">
       <img src="" alt="" />
@@ -456,7 +460,8 @@
         </div>
       </div>
     </div>
-    <div class="section tw-flex tw-flex-row-reverse">
+    <div class="section tw-flex">
+      <img src="" alt="" />
       <div class="section-content">
         <div class="section-header">SL-track System</div>
         <div class="section-description">
@@ -465,10 +470,9 @@
           from the head to the hip areas.
         </div>
       </div>
-      <img src="" alt="" />
     </div>
     <div class="section tw-flex-row-reverse">
-      <img src="" alt="" />
+      <img src="" alt="" class="tw-pl-10 lg:tw-pl-0" />
       <div class="section-content">
         <div class="section-header">Air Compression Hip Massage</div>
         <div class="section-description">
@@ -479,6 +483,7 @@
       </div>
     </div>
     <div class="section tw-flex tw-flex-row-reverse">
+      <img src="" alt="" />
       <div class="section-content">
         <div class="section-header">Easy Reclining Position</div>
         <div class="section-description">
@@ -488,9 +493,9 @@
           to the upright position.
         </div>
       </div>
-      <img src="" alt="" />
     </div>
-    <div class="section tw-flex tw-flex-row-reverse">
+    <div class="section tw-flex tw-flex-col lg:tw-flex-row">
+      <img src="" alt="" class="tw-pr-10 lg:tw-pr-0" />
       <div class="section-content">
         <div class="section-header">Lumbar Heat Therapy</div>
         <div class="section-description">
@@ -498,7 +503,6 @@
           and help release tension in your lower back area.
         </div>
       </div>
-      <img src="" alt="" />
     </div>
 
     <div class="grid-section tw-text-black max-[768px]:!tw-px-4">
@@ -637,7 +641,7 @@
     </div>
 
     <div class="section tw-flex-row-reverse">
-      <img src="" alt="" class="" />
+      <img src="" alt="" class="tw-pl-4" />
       <div class="section-content">
         <div class="section-header">Adjustable Ottoman Height</div>
         <div class="section-description">
@@ -647,7 +651,7 @@
       </div>
     </div>
     <div class="section">
-      <img src="" alt="" class="" />
+      <img src="" alt="" class="tw-pr-4" />
       <div class="section-content">
         <div class="section-header">360° Swivel</div>
         <div class="section-description">
@@ -655,8 +659,8 @@
         </div>
       </div>
     </div>
-    <div class="section tw-flex-row-reverse">
-      <img src="" alt="" class="" />
+    <div class="section">
+      <img src="" alt="" class="tw-pl-4" />
       <div class="section-content">
         <div class="section-header">Removable Headrest</div>
         <div class="section-description">
@@ -666,16 +670,16 @@
       </div>
     </div>
     <div class="section tw-flex tw-flex-row-reverse">
-      <img src="" alt="" class="" />
+      <img src="" alt="" class="tw-pl-10 lg:tw-pl-0" />
       <div class="section-content">
         <div class="section-description">Side Pockets for Phone and Remote</div>
       </div>
     </div>
     <div
-      class="tw-mb-5 tw-grid tw-grid-cols-2 tw-justify-between tw-gap-5 md:tw-mb-10 md:tw-gap-10"
+      class="tw-mb-5 tw-grid tw-justify-between tw-gap-5 md:tw-mb-10 md:tw-gap-10 lg:tw-grid-cols-2"
     >
       <div
-        class="section-content tw-flex tw-flex-1 tw-flex-col tw-justify-between !tw-p-0 md:tw-text-xl lg:tw-text-2xl"
+        class="section-content tw-flex tw-flex-1 tw-flex-col tw-justify-between !tw-p-0 tw-text-xl lg:tw-text-2xl"
         style="background-color: var(--section-bg-color)"
       >
         <div

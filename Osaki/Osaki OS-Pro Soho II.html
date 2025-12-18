@@ -403,8 +403,14 @@
       max-width: 480px;
     }
 
+    .section > img,
+    .section-content {
+      width: 100%;
+    }
+
     .sections .section {
       margin-bottom: 22px;
+      flex-direction: column;
     }
 
     .section .section-content {
@@ -421,8 +427,8 @@
       line-height: 26px;
     }
     .section-description {
-      font-size: 10px;
-      line-height: 16px;
+      font-size: 14px;
+      line-height: 21px;
     }
 
     .circle {
@@ -479,7 +485,8 @@
     </div>
 
     <div class="section !tw-mb-0 tw-flex !tw-bg-black !tw-pb-10">
-      <div class="section-content !tw-pr-0">
+      <img src="" alt="" class="lg:tw-order-2" />
+      <div class="section-content lg:tw-pr-0">
         <div class="section-header !tw-text-white">
           Adjustable <br />
           <strong class="" style="color: #53d39b">4D</strong> Massage
@@ -489,7 +496,9 @@
           width, intensity, and air pressure. Its 4D massage heads provide a
           lifelike experience.
         </div>
-        <div class="tw-flex tw-justify-between tw-text-center tw-text-white">
+        <div
+          class="tw-flex tw-flex-wrap tw-justify-between tw-text-center tw-text-white"
+        >
           <div class="tw-flex tw-flex-col">
             <strong
               class="tw-text-lg md:tw-text-3xl lg:tw-text-4xl"
@@ -536,11 +545,10 @@
           </div>
         </div>
       </div>
-      <img src="" alt="" />
     </div>
     <div class="section !tw-mb-0 !tw-bg-black !tw-pb-10">
       <img src="" alt="" />
-      <div class="section-content !tw-pl-0">
+      <div class="section-content lg:tw-pl-0">
         <div class="section-header !tw-text-white">
           <strong style="color: #53d39b">Smart Computer</strong> <br />
           Body Scanning
@@ -552,7 +560,8 @@
       </div>
     </div>
     <div class="section !tw-mb-0 !tw-bg-black !tw-pb-10">
-      <div class="section-content !tw-pr-0">
+      <img src="" alt="" class="lg:tw-order-2" />
+      <div class="section-content lg:tw-pr-0">
         <div class="section-header !tw-text-white">
           Ergonomic <br />
           <strong style="color: #53d39b">J-Track</strong>
@@ -563,11 +572,11 @@
           human-like massage.
         </div>
       </div>
-      <img src="" alt="" />
     </div>
     <div class="section !tw-mb-0 tw-flex-col !tw-bg-black !tw-pb-10">
-      <div class="section-content !tw-w-4/5 !tw-pb-0">
-        <div class="section-header tw-text-center !tw-text-white">
+      <img src="" alt="" class="!tw-w-full lg:tw-order-2" />
+      <div class="section-content lg:tw-w-4/5 lg:tw-pb-0">
+        <div class="section-header !tw-text-white lg:tw-text-center">
           <strong style="color: #53d39b">Zero Gravity</strong> Full Reclining
         </div>
         <div class="section-description">
@@ -576,11 +585,11 @@
           suspension.
         </div>
       </div>
-      <img src="" alt="" class="!tw-w-full" />
     </div>
     <div class="section tw-flex-col !tw-bg-black">
-      <div class="section-content !tw-w-4/5 !tw-pb-0">
-        <div class="section-header tw-text-center !tw-text-white">
+      <img src="" alt="" class="!tw-w-full lg:tw-order-2" />
+      <div class="section-content lg:tw-w-4/5 lg:tw-pb-0">
+        <div class="section-header !tw-text-white lg:tw-text-center">
           <strong style="color: #53d39b">Space Saving</strong> Design
         </div>
         <div class="section-description">
@@ -589,11 +598,10 @@
           suspension.
         </div>
       </div>
-      <img src="" alt="" class="!tw-w-full" />
     </div>
     <div class="section tw-flex-row-reverse">
       <img src="" alt="" class="!tw-flex-initial tw-px-12" />
-      <div class="section-content !tw-pr-0">
+      <div class="section-content lg:tw-pr-0">
         <div class="section-header">
           34 Air Cells <br />
           Full Body <br />
@@ -607,36 +615,11 @@
     </div>
     <div class="section">
       <img src="" alt="" class="tw-self-end" />
-      <div class="section-content !tw-pl-0">
+      <div class="section-content lg:tw-pl-0">
         <div class="section-header2">Up to 26”</div>
         <div class="section-header">Adjustable Shoulder Width</div>
       </div>
     </div>
-
-    <!-- <div class="tw-flex tw-flex-col section">
-      <div class="tw-flex md:!tw-flex-row !tw-flex-col-reverse tw-items-center">
-        <div class="!tw-gap-0 !tw-pt-0 lg:!tw-pb-0 !tw-w-full md:!tw-w-1/2 section-content">
-          <div class="section-header">Heated Back Roller</div>
-          <div class="section-header2">Comforting Massage</div>
-          <div class="section-description">
-            The Soho II's heated massage functions help soothe muscle tension,
-            alleviate back pain, and improve blood flow.
-          </div>
-        </div>
-        <img src="" alt="" class="!tw-w-1/2" />
-      </div>
-      <div class="tw-bg-white tw-h-6 tw-w-full md:tw-h-9 lg:tw-h-0"></div>
-      <div class="tw-flex tw-flex-row-reverse lg:!tw-mt-[-10em]">
-        <div class="tw-justify-center !tw-gap-0 !tw-pb-0 !tw-pl-0 section-content">
-          <div class="section-header">Calf Heating</div>
-          <div class="section-description">
-            the Soho II both rolls and scrapes your foot with extra care and
-            deliberation.
-          </div>
-        </div>
-        <img src="" alt="" class="!tw-w-1/2" />
-      </div>
-    </div> -->
 
     <!-- Desktop Single Block Section -->
     <!-- Mobile Two Separate Section -->
@@ -655,7 +638,11 @@
         <img src="" alt="" class="tw-col-span-2 !tw-w-2/3 md:!tw-w-full" />
       </div>
       <div class="section tw-grid-cols-5 !tw-flex-col md:!tw-grid">
-        <img src="" alt="" class="tw-col-span-2 !tw-w-2/3 md:!tw-w-full" />
+        <img
+          src=""
+          alt=""
+          class="tw-col-span-2 !tw-w-2/3 tw-pl-10 md:!tw-w-full lg:tw-pl-0"
+        />
         <div class="section-content tw-col-span-3 !tw-w-full">
           <div class="section-header">Calf Heating</div>
           <div class="section-description">
@@ -774,7 +761,7 @@
 
     <div class="section tw-flex-row-reverse">
       <img src="" alt="" class="tw-self-start" />
-      <div class="section-content !tw-pr-0">
+      <div class="section-content lg:tw-pr-0">
         <div class="section-header">Extendable Footrest</div>
         <div class="section-description">
           Regardless of your height, everyone deserves a comfortable massage, as
@@ -785,7 +772,7 @@
     </div>
     <div class="section">
       <img src="" alt="" class="" />
-      <div class="section-content !tw-pl-0">
+      <div class="section-content lg:tw-pl-0">
         <div class="section-header">Foot Rollers</div>
         <div class="section-description">
           Foot Roller Massage The Soho II’s unique foot massage is unlike any
@@ -796,7 +783,7 @@
     </div>
     <div class="section tw-flex-row-reverse">
       <img src="" alt="" class="tw-self-end" />
-      <div class="section-content !tw-pr-0">
+      <div class="section-content lg:tw-pr-0">
         <div class="section-header">Bluetooth Speaker</div>
         <div class="section-description">
           Connect your mobile device via bluetooth to enjoy relaxing sounds,
@@ -807,7 +794,7 @@
     </div>
 
     <div
-      class="tw-mb-5 tw-flex tw-justify-between tw-gap-5 md:tw-mb-10 md:tw-gap-10"
+      class="tw-mb-5 tw-grid tw-gap-5 md:tw-mb-10 md:tw-gap-10 lg:tw-grid-cols-2"
     >
       <div
         class="section-content tw-flex tw-flex-1 tw-flex-col tw-justify-between !tw-p-0 md:tw-text-xl lg:tw-text-2xl"

@@ -449,7 +449,9 @@
     .sections {
       max-width: 480px;
     }
-
+    .section > img {
+      width: 100%;
+    }
     .sections .section {
       margin-bottom: 22px;
     }
@@ -465,8 +467,8 @@
     }
 
     .section-description {
-      font-size: 10px;
-      line-height: 16px;
+      font-size: 14px;
+      line-height: 21px;
     }
 
     .circle {
@@ -509,7 +511,7 @@
     <div class="section !tw-mb-40 !tw-flex-col !tw-bg-white md:!tw-mb-80">
       <img class="!tw-w-full" alt="" />
       <div
-        class="tw-px-10 tw-pb-5 tw-pt-10 tw-text-center tw-text-xl md:tw-text-2xl lg:tw-text-3xl"
+        class="tw-px-4 tw-pb-5 tw-pt-10 tw-text-center tw-text-xl md:tw-text-2xl lg:tw-text-3xl"
       >
         Introducing Vera, the revolutionary 4D massage chair that takes
         relaxation to a whole new dimension. Designed with cutting-edge
@@ -549,6 +551,13 @@
     </div>
 
     <div class="section tw-flex tw-flex-col">
+      <div class="tw-relative tw-flex tw-w-full tw-justify-end md:tw-order-2">
+        <img
+          class="tw-absolute tw-left-10 tw-top-10 !tw-w-32 tw-self-start"
+          alt=""
+        />
+        <img class="" alt="" />
+      </div>
       <div class="section-content">
         <div class="section-header">
           Intelligent
@@ -562,16 +571,9 @@
           intensity, and areas of focus accordingly.
         </div>
       </div>
-      <div class="tw-relative tw-flex tw-w-full tw-justify-end">
-        <img
-          class="tw-absolute tw-left-10 tw-top-10 !tw-w-32 tw-self-start"
-          alt=""
-        />
-        <img class="" alt="" />
-      </div>
     </div>
     <div class="section tw-flex-col md:tw-flex-row">
-      <img alt="" class="" />
+      <img alt="" class="tw-pr-10 md:tw-pr-0" />
       <div class="section-content">
         <div class="section-header"><strong>4D Massage</strong> Mechanism</div>
         <div class="section-description">
@@ -585,8 +587,8 @@
       </div>
     </div>
 
-    <div class="section tw-flex-row-reverse">
-      <img alt="" />
+    <div class="section tw-flex-col md:tw-flex-row-reverse">
+      <img alt="" class="tw-pl-10 md:tw-pl-0" />
       <div class="section-content">
         <div class="section-header">
           <strong>Touchscreen</strong> Remote Controller
@@ -601,7 +603,7 @@
     </div>
 
     <div class="section tw-flex-col md:tw-flex-row-reverse">
-      <img alt="" />
+      <img alt="" class="tw-pt-4 md:tw-pt-0" />
       <div class="section-content">
         <div class="section-header"><strong>SL-track</strong> Technology</div>
 
@@ -630,8 +632,11 @@
       </div>
     </div>
 
-    <div class="section tw-flex-col-reverse">
-      <img alt="" class="!tw-md:tw-w-1/2 !tw-w-full" />
+    <div class="section tw-flex-col">
+      <img
+        alt=""
+        class="!tw-md:tw-w-1/2 !tw-w-full tw-pt-4 md:tw-order-2 md:tw-pt-0"
+      />
       <div class="section-content">
         <div class="section-header tw-flex-1">
           Zero Gravity Reclining <br />
@@ -649,8 +654,8 @@
       </div>
     </div>
 
-    <div class="section">
-      <img alt="" />
+    <div class="section tw-flex-col md:tw-flex-row">
+      <img alt="" class="tw-px-10" />
       <div class="section-content">
         <div class="section-header">
           <strong>Lumbar and Calf</strong> Heat Therapy
@@ -662,9 +667,9 @@
         </div>
       </div>
     </div>
-    <div class="grid-section">
+    <div class="tw-py-20 tw-text-white" style="background-color: #191919">
       <div
-        class="tw-col-span-2 tw-flex tw-items-center tw-justify-center tw-gap-5 tw-text-center tw-text-2xl md:tw-text-4xl"
+        class="tw-flex tw-items-center tw-justify-center tw-gap-5 tw-text-center tw-text-2xl md:tw-text-4xl"
       >
         <div class="tw-text-7xl md:tw-text-8xl">17</div>
         <div class="tw-flex tw-flex-col tw-text-left">
@@ -672,69 +677,76 @@
           <div>Massage Modes</div>
         </div>
       </div>
-      <div class="grid-item">
-        <img alt="" class="tw-h-8 tw-w-8 md:tw-h-16 md:tw-w-16" />
-        <div>Rejuvenate</div>
-      </div>
-      <div class="grid-item">
-        <img alt="" class="tw-h-8 tw-w-8 md:tw-h-16 md:tw-w-16" />
-        <div>Sports</div>
-      </div>
-      <div class="grid-item">
-        <img alt="" class="tw-h-8 tw-w-8 md:tw-h-16 md:tw-w-16" />
-        <div>Shiatsu</div>
-      </div>
-      <div class="grid-item">
-        <img alt="" class="tw-h-8 tw-w-8 md:tw-h-16 md:tw-w-16" />
-        <div>Relax</div>
-      </div>
-      <div class="grid-item">
-        <img alt="" class="tw-h-8 tw-w-8 md:tw-h-16 md:tw-w-16" />
-        <div>Swedish</div>
-      </div>
-      <div class="grid-item">
-        <img alt="" class="tw-h-8 tw-w-8 md:tw-h-16 md:tw-w-16" />
-        <div>Neck &amp; Upper Back</div>
-      </div>
-      <div class="grid-item">
-        <img alt="" class="tw-h-8 tw-w-8 md:tw-h-16 md:tw-w-16" />
-        <div>General Wellness</div>
-      </div>
-      <div class="grid-item">
-        <img alt="" class="tw-h-8 tw-w-8 md:tw-h-16 md:tw-w-16" />
-        <div>Hip Flexor</div>
-      </div>
-      <div class="grid-item">
-        <img alt="" class="tw-h-8 tw-w-8 md:tw-h-16 md:tw-w-16" />
-        <div>Deep Tissue</div>
-      </div>
-      <div class="grid-item">
-        <img alt="" class="tw-h-8 tw-w-8 md:tw-h-16 md:tw-w-16" />
-        <div>Thai</div>
-      </div>
-      <div class="grid-item">
-        <img alt="" class="tw-h-8 tw-w-8 md:tw-h-16 md:tw-w-16" />
-        <div>Gentle Touch</div>
-      </div>
-      <div class="grid-item">
-        <img alt="" class="tw-h-8 tw-w-8 md:tw-h-16 md:tw-w-16" />
-        <div>Sleep</div>
-      </div>
-      <div class="grid-item">
-        <img alt="" class="tw-h-8 tw-w-8 md:tw-h-16 md:tw-w-16" />
-        <div>A.I. Care</div>
-      </div>
-      <div class="grid-item">
-        <img alt="" class="tw-h-8 tw-w-8 md:tw-h-16 md:tw-w-16" />
-        <div>
-          +4 customized <br />
-          programs
+      <div
+        class="tw-grid tw-grid-cols-3 tw-gap-y-20 tw-p-10 tw-text-center md:tw-grid-cols-5"
+      >
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img alt="" class="tw-w-16" />
+          <div>Rejuvenate</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img alt="" class="tw-w-16" />
+          <div>Sports</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img alt="" class="tw-w-16" />
+          <div>Shiatsu</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img alt="" class="tw-w-16" />
+          <div>Relax</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img alt="" class="tw-w-16" />
+          <div>Swedish</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img alt="" class="tw-w-16" />
+          <div>Neck &amp; Upper Back</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img alt="" class="tw-w-16" />
+          <div>General Wellness</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img alt="" class="tw-w-16" />
+          <div>Hip Flexor</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img alt="" class="tw-w-16" />
+          <div>Deep Tissue</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img alt="" class="tw-w-16" />
+          <div>Thai</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img alt="" class="tw-w-16" />
+          <div>Gentle Touch</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img alt="" class="tw-w-16" />
+          <div>Sleep</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img alt="" class="tw-w-16" />
+          <div>A.I. Care</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img alt="" class="tw-w-16" />
+          <div>
+            +4 customized <br />
+            programs
+          </div>
         </div>
       </div>
     </div>
-    <div class="grid-section">
+    <div
+      class="tw-mb-40 tw-py-20 tw-text-white"
+      style="background-color: #191919"
+    >
       <div
-        class="tw-col-span-2 tw-flex tw-items-center tw-justify-center tw-gap-5 tw-text-center tw-text-2xl md:tw-text-4xl"
+        class="tw-flex tw-items-center tw-justify-center tw-gap-5 tw-text-center tw-text-2xl md:tw-text-4xl"
       >
         <div class="tw-text-7xl md:tw-text-8xl">9</div>
         <div class="tw-flex tw-flex-col">
@@ -742,41 +754,43 @@
           <div>Massage Styles</div>
         </div>
       </div>
-      <div class="grid-item">
-        <img alt="" class="tw-h-8 tw-w-8 md:tw-h-16 md:tw-w-16" />
-        <div>Knead (I, II)</div>
-      </div>
-      <div class="grid-item">
-        <img alt="" class="tw-h-8 tw-w-8 md:tw-h-16 md:tw-w-16" />
-        <div>Rolling</div>
-      </div>
-      <div class="grid-item">
-        <img alt="" class="tw-h-8 tw-w-8 md:tw-h-16 md:tw-w-16" />
-        <div>Tapping (I, II)</div>
-      </div>
-      <div class="grid-item">
-        <img alt="" class="tw-h-8 tw-w-8 md:tw-h-16 md:tw-w-16" />
-        <div>Kneading &amp; Tapping (I, II)</div>
-      </div>
-      <div class="grid-item">
-        <img alt="" class="tw-h-8 tw-w-8 md:tw-h-16 md:tw-w-16" />
-        <div>Shiatsu (I, II)</div>
-      </div>
-      <div class="grid-item">
-        <img alt="" class="tw-h-8 tw-w-8 md:tw-h-16 md:tw-w-16" />
-        <div>Kneading &amp; Shiatsu (I, II)</div>
-      </div>
-      <div class="grid-item">
-        <img alt="" class="tw-h-8 tw-w-8 md:tw-h-16 md:tw-w-16" />
-        <div>Swedish (I, II)</div>
-      </div>
-      <div class="grid-item">
-        <img alt="" class="tw-h-8 tw-w-8 md:tw-h-16 md:tw-w-16" />
-        <div>Kneading &amp; Clapping (I, II)</div>
-      </div>
-      <div class="grid-item">
-        <img alt="" class="tw-h-8 tw-w-8 md:tw-h-16 md:tw-w-16" />
-        <div>Clapping (I, II)</div>
+      <div class="tw-grid tw-grid-cols-3 tw-gap-y-20 tw-p-10 tw-text-center">
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img alt="" class="tw-w-16" />
+          <div>Knead (I, II)</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img alt="" class="tw-w-16" />
+          <div>Rolling</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img alt="" class="tw-w-16" />
+          <div>Tapping (I, II)</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img alt="" class="tw-w-16" />
+          <div>Kneading &amp; Tapping (I, II)</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img alt="" class="tw-w-16" />
+          <div>Shiatsu (I, II)</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img alt="" class="tw-w-16" />
+          <div>Kneading &amp; Shiatsu (I, II)</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img alt="" class="tw-w-16" />
+          <div>Swedish (I, II)</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img alt="" class="tw-w-16" />
+          <div>Kneading &amp; Clapping (I, II)</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img alt="" class="tw-w-16" />
+          <div>Clapping (I, II)</div>
+        </div>
       </div>
     </div>
     <div class="section tw-flex tw-flex-col md:tw-flex-row">
@@ -795,7 +809,7 @@
       </div>
     </div>
     <div class="section tw-flex-col md:tw-flex-row-reverse">
-      <img class="!tw-w-2/3 tw-self-end" alt="" />
+      <img class="tw-self-end tw-pl-10 md:tw-pl-0" alt="" />
       <div class="section-content">
         <div class="section-header">
           <strong>Automatic</strong> Extendable Footrest
@@ -809,7 +823,7 @@
       </div>
     </div>
     <div class="section tw-flex-col md:tw-flex-row">
-      <img class="!tw-w-2/3 tw-self-start" alt="" />
+      <img class="tw-self-start" alt="" />
       <div class="section-content">
         <div class="section-header"><strong>Extended</strong> Calf Rest</div>
         <div class="section-description">
@@ -821,7 +835,7 @@
         </div>
       </div>
     </div>
-    <div class="section tw-flex-row-reverse">
+    <div class="section tw-flex-col md:tw-flex-row-reverse">
       <img class="" alt="" />
       <div class="section-content">
         <div class="section-header"><strong>Removable</strong> Headrest</div>
@@ -831,8 +845,8 @@
         </div>
       </div>
     </div>
-    <div class="section">
-      <img class="" alt="" />
+    <div class="section tw-flex-col md:tw-flex-row">
+      <img class="tw-pr-4 md:tw-pr-0" alt="" />
       <div class="section-content">
         <div class="section-description tw-text-center !tw-text-white">
           LED Lighting
@@ -840,10 +854,10 @@
       </div>
     </div>
     <div
-      class="tw-mb-5 tw-flex tw-justify-between tw-gap-5 md:tw-mb-10 md:tw-gap-10"
+      class="tw-mb-5 tw-grid tw-gap-5 md:tw-mb-10 md:tw-grid-cols-2 md:tw-gap-10"
     >
       <div
-        class="tw-flex tw-flex-1 tw-flex-col tw-justify-between md:tw-text-xl lg:tw-text-2xl"
+        class="tw-flex tw-flex-1 tw-flex-col tw-justify-between tw-text-xl lg:tw-text-2xl"
         style="background-color: #191919"
       >
         <div
