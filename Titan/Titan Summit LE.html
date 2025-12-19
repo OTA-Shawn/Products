@@ -458,6 +458,7 @@
 
     .sections .section {
       margin-bottom: 22px;
+      flex-direction: column;
     }
 
     .section .section-content {
@@ -476,8 +477,8 @@
     }
 
     .section-description {
-      font-size: 10px;
-      line-height: 16px;
+      font-size: 14px;
+      line-height: 21px;
     }
 
     .circle {
@@ -503,6 +504,11 @@
 
     .grid-section .grid-item {
       gap: 10px;
+    }
+
+    .section > img,
+    .section-content {
+      width: 100%;
     }
   }
 
@@ -532,7 +538,7 @@
       <img src="" alt="" class="!tw-w-full" />
     </div>
     <div class="section !tw-bg-black">
-      <img src="" alt="" class="!tw-w-1/2" />
+      <img src="" alt="" class="lg:tw-w-1/2" />
       <div class="section-content">
         <div class="section-header !tw-text-white">Body Scan System</div>
         <div class="section-description !tw-text-white">
@@ -544,8 +550,8 @@
       </div>
     </div>
 
-    <div class="section !tw-flex-row-reverse !tw-bg-black">
-      <img src="" alt="" class="!tw-w-1/2" />
+    <div class="section !tw-bg-black lg:tw-flex-row-reverse">
+      <img src="" alt="" class="lg:tw-w-1/2" />
       <div class="section-content">
         <div class="section-header !tw-text-white">SL-Track</div>
         <div class="section-description !tw-text-white">
@@ -558,7 +564,7 @@
       </div>
     </div>
     <div class="section !tw-bg-black">
-      <img src="" alt="" class="!tw-w-1/2" />
+      <img src="" alt="" class="lg:tw-w-1/2" />
       <div class="section-content">
         <div class="section-header !tw-text-white">
           Ultra-Quiet Massage Chair
@@ -572,8 +578,8 @@
         </div>
       </div>
     </div>
-    <div class="section !tw-flex-row-reverse !tw-bg-black">
-      <img src="" alt="" class="!tw-w-1/2" />
+    <div class="section !tw-bg-black lg:tw-flex-row-reverse">
+      <img src="" alt="" class="lg:tw-w-1/2" />
       <div class="section-content">
         <div class="section-header !tw-text-white">52” Track Massage</div>
         <div class="section-description !tw-text-white">
@@ -585,7 +591,8 @@
 
     <div class="section tw-flex-col !tw-bg-black">
       <div class="section-content !tw-w-full">
-        <div class="section-header tw-text-center !tw-text-white">
+        <img src="" alt="" class="lg:tw-order-2" />
+        <div class="section-header !tw-text-white lg:tw-text-center">
           2 Stage Zero Gravity Positions
         </div>
         <div class="section-description !tw-text-white">
@@ -595,12 +602,11 @@
           user an option on how far back they want their chair to recline
           automatically, or you can adjust the chair manually with the remote.
         </div>
-        <img src="" alt="" class="" />
       </div>
     </div>
 
     <div class="section !tw-bg-black">
-      <img src="" alt="" class="!tw-w-1/2" />
+      <img src="" alt="" class="lg:tw-w-1/2" />
       <div class="section-content">
         <div class="section-header !tw-text-white">Space Saving Technology</div>
         <div class="section-description !tw-text-white">
@@ -614,7 +620,8 @@
 
     <div class="section tw-flex-col !tw-bg-black">
       <div class="section-content !tw-w-full">
-        <div class="section-header tw-text-center !tw-text-white">
+        <img src="" alt="" class="tw-self-center lg:tw-order-2 lg:tw-w-2/3" />
+        <div class="section-header !tw-text-white lg:tw-text-center">
           2D Massage Mechanism
         </div>
         <div class="section-description !tw-text-white">
@@ -623,7 +630,6 @@
           lets you adjust the speed and width of 2D rollers at any point in the
           massage, whether you are in an auto mode or a manual mode.
         </div>
-        <img src="" alt="" class="!tw-w-2/3 tw-self-center" />
       </div>
     </div>
 
@@ -640,7 +646,7 @@
       </div>
       <img src="" alt="" class="" />
     </div>
-    <div class="section !tw-flex-row-reverse !tw-bg-white">
+    <div class="section !tw-bg-white lg:tw-flex-row-reverse">
       <div class="section-content">
         <div class="section-header">Back and Calf Infrared Heat</div>
         <div class="section-description">
@@ -661,43 +667,43 @@
     <div
       class="tw-mb-10 tw-grid tw-grid-cols-1 tw-bg-[var(--section-bg-color)] tw-px-5 tw-py-10 lg:tw-grid-cols-2"
     >
-      <div class="tw-flex tw-items-center tw-gap-1 tw-pb-5">
+      <div class="tw-flex tw-items-center tw-gap-4 tw-pb-5">
         <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
-        <div class="tw-flex tw-flex-col">
+        <div class="tw-flex tw-flex-col tw-gap-1">
           <div class="md:tw-text-xl">Extension</div>
           <div class="tw-font-normal">
             Full body stretching to relax and energize the body
           </div>
         </div>
       </div>
-      <div class="tw-flex tw-items-center tw-gap-1 tw-pb-5">
+      <div class="tw-flex tw-items-center tw-gap-4 tw-pb-5">
         <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
-        <div class="tw-flex tw-flex-col">
+        <div class="tw-flex tw-flex-col tw-gap-1">
           <div class="md:tw-text-xl">Lady</div>
           <div class="tw-font-normal">Mild massage to build strength</div>
         </div>
       </div>
-      <div class="tw-flex tw-items-center tw-gap-1 tw-pb-5">
+      <div class="tw-flex tw-items-center tw-gap-4 tw-pb-5">
         <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
-        <div class="tw-flex tw-flex-col">
+        <div class="tw-flex tw-flex-col tw-gap-1">
           <div class="md:tw-text-xl">Release</div>
           <div class="tw-font-normal">
             Revitalizing muscles that are fatigued
           </div>
         </div>
       </div>
-      <div class="tw-flex tw-items-center tw-gap-1 tw-pb-5">
+      <div class="tw-flex tw-items-center tw-gap-4 tw-pb-5">
         <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
-        <div class="tw-flex tw-flex-col">
+        <div class="tw-flex tw-flex-col tw-gap-1">
           <div class="md:tw-text-xl">Seniors</div>
           <div class="tw-font-normal">
             Very soft massage session to relax muscles
           </div>
         </div>
       </div>
-      <div class="tw-flex tw-items-center tw-gap-1 tw-pb-5">
+      <div class="tw-flex tw-items-center tw-gap-4 tw-pb-5">
         <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
-        <div class="tw-flex tw-flex-col">
+        <div class="tw-flex tw-flex-col tw-gap-1">
           <div class="md:tw-text-xl">Yoga</div>
           <div class="tw-font-normal">
             Uses moderate kneading and stretching techniques to relax tired
@@ -705,18 +711,18 @@
           </div>
         </div>
       </div>
-      <div class="tw-flex tw-items-center tw-gap-1 tw-pb-5">
+      <div class="tw-flex tw-items-center tw-gap-4 tw-pb-5">
         <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
-        <div class="tw-flex tw-flex-col">
+        <div class="tw-flex tw-flex-col tw-gap-1">
           <div class="md:tw-text-xl">Neck & Shoulder</div>
           <div class="tw-font-normal">
             Effective and unique massage for the cervical spine and scapula
           </div>
         </div>
       </div>
-      <div class="tw-flex tw-items-center tw-gap-1 tw-pb-5">
+      <div class="tw-flex tw-items-center tw-gap-4 tw-pb-5">
         <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
-        <div class="tw-flex tw-flex-col">
+        <div class="tw-flex tw-flex-col tw-gap-1">
           <div class="md:tw-text-xl">Thai</div>
           <div class="tw-font-normal">
             Focuses on the back and waist Chinese Focuses Lower back and key
@@ -724,9 +730,9 @@
           </div>
         </div>
       </div>
-      <div class="tw-flex tw-items-center tw-gap-1 tw-pb-5">
+      <div class="tw-flex tw-items-center tw-gap-4 tw-pb-5">
         <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
-        <div class="tw-flex tw-flex-col">
+        <div class="tw-flex tw-flex-col tw-gap-1">
           <div class="md:tw-text-xl">Waist & Glutes</div>
           <div class="tw-font-normal">
             Focus on the lumbar spine and alleviating the stiffness of the waist
@@ -734,34 +740,34 @@
           </div>
         </div>
       </div>
-      <div class="tw-flex tw-items-center tw-gap-1 tw-pb-5">
+      <div class="tw-flex tw-items-center tw-gap-4 tw-pb-5">
         <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
-        <div class="tw-flex tw-flex-col">
+        <div class="tw-flex tw-flex-col tw-gap-1">
           <div class="md:tw-text-xl">Ancient</div>
           <div class="tw-font-normal">
             Combination massage to relieve joint and muscular tension
           </div>
         </div>
       </div>
-      <div class="tw-flex tw-items-center tw-gap-1 tw-pb-5">
+      <div class="tw-flex tw-items-center tw-gap-4 tw-pb-5">
         <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
-        <div class="tw-flex tw-flex-col">
+        <div class="tw-flex tw-flex-col tw-gap-1">
           <div class="md:tw-text-xl">Back & Spine</div>
           <div class="tw-font-normal">
             Focuses on muscles along the spine, upper & lower back, and lumbar
           </div>
         </div>
       </div>
-      <div class="tw-flex tw-items-center tw-gap-1 tw-pb-5">
+      <div class="tw-flex tw-items-center tw-gap-4 tw-pb-5">
         <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
-        <div class="tw-flex tw-flex-col">
+        <div class="tw-flex tw-flex-col tw-gap-1">
           <div class="md:tw-text-xl">Boss</div>
           <div class="tw-font-normal">Medium-High intensity massage</div>
         </div>
       </div>
-      <div class="tw-flex tw-items-center tw-gap-1 tw-pb-5">
+      <div class="tw-flex tw-items-center tw-gap-4 tw-pb-5">
         <img src="" alt="" class="!tw-w-12 md:!tw-w-16 lg:!tw-w-24" />
-        <div class="tw-flex tw-flex-col">
+        <div class="tw-flex tw-flex-col tw-gap-1">
           <div class="md:tw-text-xl">Chinese</div>
           <div class="tw-font-normal">
             Chinese massage balances energy flow through pressure for
