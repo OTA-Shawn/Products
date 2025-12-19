@@ -940,6 +940,10 @@
   max-width: 36rem;
 }
 
+.tw-max-w-full {
+  max-width: 100%;
+}
+
 .\!tw-flex-initial {
   flex: 0 1 auto !important;
 }
@@ -1011,6 +1015,23 @@
 
 .tw-transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.tw-touch-pan-x {
+  --tw-pan-x: pan-x;
+  touch-action: var(--tw-pan-x) var(--tw-pan-y) var(--tw-pinch-zoom);
+}
+
+.tw-snap-x {
+  scroll-snap-type: x var(--tw-scroll-snap-strictness);
+}
+
+.tw-snap-mandatory {
+  --tw-scroll-snap-strictness: mandatory;
+}
+
+.tw-snap-start {
+  scroll-snap-align: start;
 }
 
 .tw-list-inside {
@@ -1411,6 +1432,14 @@
   overflow: hidden;
 }
 
+.tw-overflow-x-auto {
+  overflow-x: auto;
+}
+
+.tw-scroll-smooth {
+  scroll-behavior: smooth;
+}
+
 .tw-rounded-2xl {
   border-radius: 1rem;
 }
@@ -1679,6 +1708,10 @@
 .tw-bg-yellow-950 {
   --tw-bg-opacity: 1;
   background-color: rgb(66 32 6 / var(--tw-bg-opacity, 1));
+}
+
+.tw-bg-black\/50 {
+  background-color: rgb(0 0 0 / 0.5);
 }
 
 .tw-bg-opacity-50 {
@@ -2603,6 +2636,11 @@ img{
   cursor: pointer;
 }
 
+.hover\:tw-bg-black:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:tw-bg-opacity-100:hover {
   --tw-bg-opacity: 1;
 }
@@ -2667,6 +2705,16 @@ img{
 @media (min-width: 480px) {
   .min-\[480px\]\:tw-w-\[480px\] {
     width: 480px;
+  }
+}
+
+@media (min-width: 640px) {
+  .sm\:tw-inline-flex {
+    display: inline-flex;
+  }
+
+  .sm\:tw-overflow-hidden {
+    overflow: hidden;
   }
 }
 

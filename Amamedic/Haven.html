@@ -457,69 +457,92 @@
       </div>
     </div>
 
-    <!-- Swatch Static Container -->
+    <!-- Thumbnail Swatches Begin-->
     <div
       id="swatch-static-container"
       class="tw-relative tw-mx-auto tw-mb-20 tw-w-full tw-max-w-xl"
     >
-      <div class="tw-relative tw-h-96">
-        <!-- <img
-          src=""
-          class="slide-image tw-absolute tw-left-0 tw-top-0 tw-h-full tw-w-full tw-object-contain tw-opacity-0 tw-transition-opacity tw-duration-300"
-        /> -->
-        <img
-          src=""
-          class="slide-image tw-absolute tw-left-0 tw-top-0 tw-h-full tw-w-full tw-object-contain tw-opacity-0 tw-transition-opacity tw-duration-300"
-        />
-        <img
-          src=""
-          class="slide-image tw-absolute tw-left-0 tw-top-0 tw-h-full tw-w-full tw-object-contain tw-opacity-0 tw-transition-opacity tw-duration-300"
-        />
-        <img
-          src=""
-          class="slide-image tw-absolute tw-left-0 tw-top-0 tw-h-full tw-w-full tw-object-contain tw-opacity-0 tw-transition-opacity tw-duration-300"
-        />
+      <!-- SLIDER (horizontal scroll + snap) -->
+      <div class="tw-relative">
+        <div
+          id="slide-track"
+          class="tw-flex tw-h-96 tw-touch-pan-x tw-snap-x tw-snap-mandatory tw-overflow-x-auto tw-scroll-smooth sm:tw-overflow-hidden"
+          style="
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+          "
+        >
+          <!-- Slide 0 -->
+          <div
+            class="tw-flex tw-w-full tw-flex-none tw-snap-start tw-items-center tw-justify-center"
+          >
+            <img src="" alt="" class="tw-h-full tw-w-full tw-object-contain" />
+          </div>
+
+          <!-- Slide 1 -->
+          <div
+            class="tw-flex tw-w-full tw-flex-none tw-snap-start tw-items-center tw-justify-center"
+          >
+            <img src="" alt="" class="tw-h-full tw-w-full tw-object-contain" />
+          </div>
+
+          <!-- Slide 2 -->
+          <div
+            class="tw-flex tw-w-full tw-flex-none tw-snap-start tw-items-center tw-justify-center"
+          >
+            <img src="" alt="" class="tw-h-full tw-w-full tw-object-contain" />
+          </div>
+        </div>
       </div>
 
+      <!-- Arrows (optional: hide on mobile with tw-hidden sm:tw-inline-flex) -->
       <button
         id="static-prev"
-        class="tw-absolute tw-left-2 tw-top-1/2 tw--translate-y-1/2 tw-rounded-full tw-bg-black tw-bg-opacity-50 tw-p-2 hover:tw-cursor-pointer hover:tw-bg-opacity-100 focus:tw-outline-none lg:tw-text-white"
+        class="tw-absolute tw-left-2 tw-top-1/2 tw--translate-y-1/2 tw-rounded-full tw-bg-black tw-bg-opacity-50 tw-p-2 tw-text-white hover:tw-cursor-pointer hover:tw-bg-opacity-100 focus:tw-outline-none"
+        aria-label="Previous slide"
       >
         &#10094;
       </button>
+
       <button
         id="static-next"
-        class="tw-absolute tw-right-2 tw-top-1/2 tw--translate-y-1/2 tw-rounded-full tw-bg-black tw-bg-opacity-50 tw-p-2 hover:tw-cursor-pointer hover:tw-bg-opacity-100 focus:tw-outline-none lg:tw-text-white"
+        class="tw-absolute tw-right-2 tw-top-1/2 tw--translate-y-1/2 tw-rounded-full tw-bg-black tw-bg-opacity-50 tw-p-2 tw-text-white hover:tw-cursor-pointer hover:tw-bg-opacity-100 focus:tw-outline-none"
+        aria-label="Next slide"
       >
         &#10095;
       </button>
 
+      <!-- Swatches (also horizontally scrollable if needed) -->
       <div class="tw-mt-4 tw-flex tw-w-full tw-justify-center">
         <div
-          class="tw-flex tw-space-x-2 tw-rounded-full tw-border-2 tw-border-gray-200 tw-bg-gray-100 tw-p-4 tw-px-6"
+          class="tw-flex tw-max-w-full tw-gap-2 tw-overflow-x-auto tw-rounded-full tw-bg-gray-100 tw-p-4 tw-px-6"
+          style="-webkit-overflow-scrolling: touch"
         >
-          <!-- <button
-            class="swatch-button pp-sphere-swatch tw-h-8 tw-w-8 tw-rounded-full hover:tw-cursor-pointer focus:tw-outline-none"
-            data-index="0"
-          ></button> -->
           <button
             class="swatch-button tw-h-8 tw-w-8 tw-rounded-full hover:tw-cursor-pointer focus:tw-outline-none"
             style="background-color: #1d1d1d"
             data-index="0"
+            aria-label="swatch0"
           ></button>
+
           <button
             class="swatch-button tw-h-8 tw-w-8 tw-rounded-full hover:tw-cursor-pointer focus:tw-outline-none"
-            style="background-color: #9b7147"
+            style="background-color: #4b3c2a"
             data-index="1"
+            aria-label="swatch1"
           ></button>
+
           <button
             class="swatch-button tw-h-8 tw-w-8 tw-rounded-full hover:tw-cursor-pointer focus:tw-outline-none"
-            style="background-color: #ece4d4"
+            style="background-color: #e1d9d3"
             data-index="2"
+            aria-label="swatch2"
           ></button>
         </div>
       </div>
     </div>
+    <!-- Thumbnail Swatches End -->
 
     <div
       class="section pp-desktop-background tw-mb-40 tw-flex tw-flex-col tw-items-center tw-gap-y-4 tw-pt-10 lg:tw-mb-40 lg:tw-text-center"
@@ -1366,49 +1389,66 @@
   })()
 </script>
 
+<!-- Thumbnail Swatches Begin-->
 <script>
   ;(function () {
-    const images = document.querySelectorAll(".slide-image")
+    const track = document.getElementById("slide-track")
     const swatches = document.querySelectorAll(".swatch-button")
     const prevBtn = document.getElementById("static-prev")
     const nextBtn = document.getElementById("static-next")
-    const totalSlides = images.length
+    const totalSlides = swatches.length
     let currentIndex = 0
 
-    const showSlide = (index) => {
-      // Hide all images by setting opacity to 0
-      images.forEach((img) => img.classList.remove("tw-opacity-100"))
-      images.forEach((img) => img.classList.add("tw-opacity-0"))
+    const slideWidth = () => track.clientWidth
 
-      // Show the current image by setting opacity to 100
-      images[index].classList.remove("tw-opacity-0")
-      images[index].classList.add("tw-opacity-100")
-
-      // Update the active style on the swatches
-      swatches.forEach((swatch) => {
-        swatch.style.outline = "none"
-      })
+    const setActiveSwatch = (index) => {
+      swatches.forEach((s) => (s.style.outline = "none"))
       swatches[index].style.outline = "3px solid #4299e1"
       swatches[index].style.outlineOffset = "2px"
     }
 
+    const scrollToSlide = (index) => {
+      currentIndex = index
+      track.scrollTo({ left: index * slideWidth(), behavior: "smooth" })
+      setActiveSwatch(index)
+    }
+
     prevBtn.addEventListener("click", () => {
-      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides
-      showSlide(currentIndex)
+      const next = (currentIndex - 1 + totalSlides) % totalSlides
+      scrollToSlide(next)
     })
 
     nextBtn.addEventListener("click", () => {
-      currentIndex = (currentIndex + 1) % totalSlides
-      showSlide(currentIndex)
+      const next = (currentIndex + 1) % totalSlides
+      scrollToSlide(next)
     })
 
     swatches.forEach((swatch) => {
       swatch.addEventListener("click", () => {
-        currentIndex = parseInt(swatch.dataset.index, 10)
-        showSlide(currentIndex)
+        scrollToSlide(parseInt(swatch.dataset.index, 10))
       })
     })
 
-    showSlide(0) // Initialize with the first slide visible
+    // Update active swatch while user swipes
+    let raf = null
+    track.addEventListener("scroll", () => {
+      if (raf) cancelAnimationFrame(raf)
+      raf = requestAnimationFrame(() => {
+        const idx = Math.round(track.scrollLeft / slideWidth())
+        if (idx !== currentIndex) {
+          currentIndex = idx
+          setActiveSwatch(idx)
+        }
+      })
+    })
+
+    // Keep position correct on resize/orientation change
+    window.addEventListener("resize", () => {
+      track.scrollTo({ left: currentIndex * slideWidth() })
+    })
+
+    // Init
+    setActiveSwatch(0)
   })()
 </script>
+<!-- Thumbnail Swatches End-->
