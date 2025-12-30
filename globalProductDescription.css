@@ -1275,6 +1275,18 @@
   gap: 6px;
 }
 
+.tw-gap-12 {
+  gap: 48px;
+}
+
+.tw-gap-16 {
+  gap: 64px;
+}
+
+.tw-gap-24 {
+  gap: 96px;
+}
+
 .tw-gap-x-10 {
   -moz-column-gap: 40px;
        column-gap: 40px;
