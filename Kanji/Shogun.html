@@ -21,361 +21,436 @@
   const youtube_link = ""
 
   const imgs = [
-    // {
-    //   "img_order": 1,
-    //   "img_name": "shogun_product_main",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/1.shogun_product_main.webp"
-    // },
-    // {
-    //   "img_order": 2,
-    //   "img_name": "shogun_colors_all",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/2.shogun_colors_all.webp"
-    // },
-    // {
-    //   "img_order": 3,
-    //   "img_name": "shogun_color_taupe",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.shogun_color_taupe.webp"
-    // },
-    // {
-    //   "img_order": 4,
-    //   "img_name": "shogun_color_black",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4.shogun_color_black.webp"
-    // },
-    // {
-    //   "img_order": 5,
-    //   "img_name": "shogun_icon_ai-series",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/14.shogun_icon_ai-series.webp"
-    // },
-    // {
-    //   "img_order": 6,
-    //   "img_name": "shogun_health-detection",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/15.shogun_health-detection.webp"
-    // },
-    // {
-    //   "img_order": 7,
-    //   "img_name": "shogun_icon_gear",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/16.shogun_icon_gear.webp"
-    // },
-    // {
-    //   "img_order": 8,
-    //   "img_name": "shogun_duo-mech",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/17.shogun_duo-mech.webp"
-    // },
-    // {
-    //   "img_order": 9,
-    //   "img_name": "shogun_heating-core",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/18.shogun_heating-core.webp"
-    // },
-    // {
-    //   "img_order": 10,
-    //   "img_name": "shogun_heating-core_image",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19.shogun_heating-core_image.webp"
-    // },
-    // {
-    //   "img_order": 11,
-    //   "img_name": "shogun_SL-flex-track",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/20.shogun_SL-flex-track.webp"
-    // },
-    // {
-    //   "img_order": 12,
-    //   "img_name": "shogun_piano-key",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/21.shogun_piano-key.webp"
-    // },
-    // {
-    //   "img_order": 13,
-    //   "img_name": "shogun_calf-rollers",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/22.shogun_calf-rollers.webp"
-    // },
-    // {
-    //   "img_order": 14,
-    //   "img_name": "shogun_icon_mic",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/23.shogun_icon_mic.webp"
-    // },
-    // {
-    //   "img_order": 15,
-    //   "img_name": "shogun_voice-control",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/24.shogun_voice-control.webp"
-    // },
-    // {
-    //   "img_order": 16,
-    //   "img_name": "shogun_phone-control",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/25.shogun_phone-control.webp"
-    // },
-    // {
-    //   "img_order": 17,
-    //   "img_name": "shogun_google-play",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/26.shogun_google-play.webp"
-    // },
-    // {
-    //   "img_order": 18,
-    //   "img_name": "shogun_app-store",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/27.shogun_app-store.webp"
-    // },
-    // {
-    //   "img_order": 19,
-    //   "img_name": "shogun_icon_ZG",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/28.shogun_icon_ZG.webp"
-    // },
-    // {
-    //   "img_order": 20,
-    //   "img_name": "shogun_ZG",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/29.shogun_ZG.webp"
-    // },
-    // {
-    //   "img_order": 21,
-    //   "img_name": "shogun_icon_body-scan",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/30.shogun_icon_body-scan.webp"
-    // },
-    // {
-    //   "img_order": 22,
-    //   "img_name": "shogun_body-scan",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/31.shogun_body-scan.webp"
-    // },
-    // {
-    //   "img_order": 23,
-    //   "img_name": "shogun_icon_space-saving",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/32.shogun_icon_space-saving.webp"
-    // },
-    // {
-    //   "img_order": 24,
-    //   "img_name": "shogun_space-saving",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/33.shogun_space-saving.webp"
-    // },
-    // {
-    //   "img_order": 25,
-    //   "img_name": "shogun_air-cell",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/34.shogun_air-cell.webp"
-    // },
-    // {
-    //   "img_order": 26,
-    //   "img_name": "shogun_icon_heating",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/35.shogun_icon_heating.webp"
-    // },
-    // {
-    //   "img_order": 27,
-    //   "img_name": "shogun_heating",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/36.shogun_heating.webp"
-    // },
-    // {
-    //   "img_order": 28,
-    //   "img_name": "shogun_icon_total_relax",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/37.shogun_icon_total_relax.webp"
-    // },
-    // {
-    //   "img_order": 29,
-    //   "img_name": "shogun_icon_stress-release",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/38.shogun_icon_stress-release.webp"
-    // },
-    // {
-    //   "img_order": 30,
-    //   "img_name": "shogun_icon_full-airbag",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/39.shogun_icon_full-airbag.webp"
-    // },
-    // {
-    //   "img_order": 31,
-    //   "img_name": "shogun_icon_chinese-massage",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/40.shogun_icon_chinese-massage.webp"
-    // },
-    // {
-    //   "img_order": 32,
-    //   "img_name": "shogun_icon_thai-massage",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/41.shogun_icon_thai-massage.webp"
-    // },
-    // {
-    //   "img_order": 33,
-    //   "img_name": "shogun_icon_meridian-treatment",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/42.shogun_icon_meridian-treatment.webp"
-    // },
-    // {
-    //   "img_order": 34,
-    //   "img_name": "shogun_icon_neck-shoulder-care",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/43.shogun_icon_neck-shoulder-care.webp"
-    // },
-    // {
-    //   "img_order": 35,
-    //   "img_name": "shogun_icon_waist-care",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/44.shogun_icon_waist-care.webp"
-    // },
-    // {
-    //   "img_order": 36,
-    //   "img_name": "shogun_icon_waist-buttock-shape",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/45.shogun_icon_waist-buttock-shape.webp"
-    // },
-    // {
-    //   "img_order": 37,
-    //   "img_name": "shogun_icon_leg-foot-relieve",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/46.shogun_icon_leg-foot-relieve.webp"
-    // },
-    // {
-    //   "img_order": 38,
-    //   "img_name": "shogun_icon_president-cosy",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/47.shogun_icon_president-cosy.webp"
-    // },
-    // {
-    //   "img_order": 39,
-    //   "img_name": "shogun_icon_keep-fit",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/48.shogun_icon_keep-fit.webp"
-    // },
-    // {
-    //   "img_order": 40,
-    //   "img_name": "shogun_icon_superior-enjoyable",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/49.shogun_icon_superior-enjoyable.webp"
-    // },
-    // {
-    //   "img_order": 41,
-    //   "img_name": "shogun_icon_office-regimen",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/50.shogun_icon_office-regimen.webp"
-    // },
-    // {
-    //   "img_order": 42,
-    //   "img_name": "shogun_icon_health-recharge",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/51.shogun_icon_health-recharge.webp"
-    // },
-    // {
-    //   "img_order": 43,
-    //   "img_name": "shogun_icon_energy-boost",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/52.shogun_icon_energy-boost.webp"
-    // },
-    // {
-    //   "img_order": 44,
-    //   "img_name": "shogun_icon_lunch-break",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/53.shogun_icon_lunch-break.webp"
-    // },
-    // {
-    //   "img_order": 45,
-    //   "img_name": "shogun_icon_sweet-dream",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/54.shogun_icon_sweet-dream.webp"
-    // },
-    // {
-    //   "img_order": 46,
-    //   "img_name": "shogun_icon_brain-refresh",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/55.shogun_icon_brain-refresh.webp"
-    // },
-    // {
-    //   "img_order": 47,
-    //   "img_name": "shogun_icon_rejuevate",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/56.shogun_icon_rejuevate.webp"
-    // },
-    // {
-    //   "img_order": 48,
-    //   "img_name": "shogun_icon_knead",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/57.shogun_icon_knead.webp"
-    // },
-    // {
-    //   "img_order": 49,
-    //   "img_name": "shogun_icon_tapI",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/58.shogun_icon_tapI.webp"
-    // },
-    // {
-    //   "img_order": 50,
-    //   "img_name": "shogun_icon_tapII",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/59.shogun_icon_tapII.webp"
-    // },
-    // {
-    //   "img_order": 51,
-    //   "img_name": "shogun_icon_knead-tap",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/60.shogun_icon_knead-tap.webp"
-    // },
-    // {
-    //   "img_order": 52,
-    //   "img_name": "shogun_icon_shiatsuI",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/61.shogun_icon_shiatsuI.webp"
-    // },
-    // {
-    //   "img_order": 53,
-    //   "img_name": "shogun_icon_shiatsuII",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/62.shogun_icon_shiatsuII.webp"
-    // },
-    // {
-    //   "img_order": 54,
-    //   "img_name": "shogun_icon_grasp",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/63.shogun_icon_grasp.webp"
-    // },
-    // {
-    //   "img_order": 55,
-    //   "img_name": "shogun_icon_4D_I",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/64.shogun_icon_4D_I.webp"
-    // },
-    // {
-    //   "img_order": 56,
-    //   "img_name": "shogun_icon_4D_II",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/65.shogun_icon_4D_II.webp"
-    // },
-    // {
-    //   "img_order": 57,
-    //   "img_name": "shogun_icon_4D_III",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/66.shogun_icon_4D_III.webp"
-    // },
-    // {
-    //   "img_order": 58,
-    //   "img_name": "shogun_icon_4D_IV",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/67.shogun_icon_4D_IV.webp"
-    // },
-    // {
-    //   "img_order": 59,
-    //   "img_name": "shogun_deep-calf",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/68.shogun_deep-calf.webp"
-    // },
-    // {
-    //   "img_order": 60,
-    //   "img_name": "shogun_foot-rollers",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/69.shogun_foot-rollers.webp"
-    // },
-    // {
-    //   "img_order": 61,
-    //   "img_name": "shogun_icon_foot",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/70.shogun_icon_foot.webp"
-    // },
-    // {
-    //   "img_order": 62,
-    //   "img_name": "shogun_foot-extension",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/71.shogun_foot-extension.webp"
-    // },
-    // {
-    //   "img_order": 63,
-    //   "img_name": "shogun_icon_extend",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/72.shogun_icon_extend.webp"
-    // },
-    // {
-    //   "img_order": 64,
-    //   "img_name": "shogun_negative-oxygen-ions",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/73.shogun_negative-oxygen-ions.webp"
-    // },
-    // {
-    //   "img_order": 65,
-    //   "img_name": "shogun_touchscreen",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/74.shogun_touchscreen.webp"
-    // },
-    // {
-    //   "img_order": 66,
-    //   "img_name": "shogun_icon_hand",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/75.shogun_icon_hand.webp"
-    // },
-    // {
-    //   "img_order": 67,
-    //   "img_name": "shogun_side_control",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/76.shogun_side_control.webp"
-    // },
-    // {
-    //   "img_order": 68,
-    //   "img_name": "shogun_speakers",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/77.shogun_speakers.webp"
-    // },
-    // {
-    //   "img_order": 69,
-    //   "img_name": "shogun_icon_bluetooth",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/78.shogun_icon_bluetooth.webp"
-    // },
-    // {
-    //   "img_order": 70,
-    //   "img_name": "shogun_wireless",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/79.shogun_wireless.webp"
-    // },
-    // {
-    //   "img_order": 71,
-    //   "img_name": "shogun_USB",
-    //   "img_src": "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/80.shogun_USB.webp"
-    // },
+    {
+      img_order: 1,
+      img_name: "shogun_product_main",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/1.shogun_product_main.webp",
+    },
+    {
+      img_order: 2,
+      img_name: "shogun_colors_all",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/2.shogun_colors_all.webp",
+    },
+    {
+      img_order: 3,
+      img_name: "shogun_color_taupe",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.shogun_color_taupe.webp",
+    },
+    {
+      img_order: 4,
+      img_name: "shogun_color_black",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4.shogun_color_black.webp",
+    },
+
+    {
+      img_order: 6,
+      img_name: "shogun_health-detection",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/15.shogun_health-detection.webp",
+    },
+    {
+      img_order: 5,
+      img_name: "shogun_icon_ai-series",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/14.shogun_icon_ai-series.webp",
+    },
+    {
+      img_order: 8,
+      img_name: "shogun_duo-mech",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/17.shogun_duo-mech.webp",
+    },
+    {
+      img_order: 7,
+      img_name: "shogun_icon_gear",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/16.shogun_icon_gear.webp",
+    },
+
+    {
+      img_order: 9,
+      img_name: "shogun_heating-core",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/18.shogun_heating-core.webp",
+    },
+    {
+      img_order: 10,
+      img_name: "shogun_heating-core_image",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19.shogun_heating-core_image.webp",
+    },
+    {
+      img_order: 11,
+      img_name: "shogun_SL-flex-track",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/20.shogun_SL-flex-track.webp",
+    },
+    {
+      img_order: 12,
+      img_name: "shogun_piano-key",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/21.shogun_piano-key.webp",
+    },
+    {
+      img_order: 13,
+      img_name: "shogun_calf-rollers",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/22.shogun_calf-rollers.webp",
+    },
+    {
+      img_order: 15,
+      img_name: "shogun_voice-control",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/24.shogun_voice-control.webp",
+    },
+    {
+      img_order: 14,
+      img_name: "shogun_icon_mic",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/23.shogun_icon_mic.webp",
+    },
+    {
+      img_order: 16,
+      img_name: "shogun_phone-control",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/25.shogun_phone-control.webp",
+    },
+    {
+      img_order: 17,
+      img_name: "shogun_google-play",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/26.shogun_google-play.webp",
+    },
+    {
+      img_order: 18,
+      img_name: "shogun_app-store",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/27.shogun_app-store.webp",
+    },
+    {
+      img_order: 20,
+      img_name: "shogun_ZG",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/29.shogun_ZG.webp",
+    },
+    {
+      img_order: 19,
+      img_name: "shogun_icon_ZG",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/28.shogun_icon_ZG.webp",
+    },
+    {
+      img_order: 22,
+      img_name: "shogun_body-scan",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/31.shogun_body-scan.webp",
+    },
+    {
+      img_order: 21,
+      img_name: "shogun_icon_body-scan",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/30.shogun_icon_body-scan.webp",
+    },
+    {
+      img_order: 24,
+      img_name: "shogun_space-saving",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/33.shogun_space-saving.webp",
+    },
+
+    {
+      img_order: 23,
+      img_name: "shogun_icon_space-saving",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/32.shogun_icon_space-saving.webp",
+    },
+
+    {
+      img_order: 25,
+      img_name: "shogun_air-cell",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/34.shogun_air-cell.webp",
+    },
+    {
+      img_order: 27,
+      img_name: "shogun_heating",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/36.shogun_heating.webp",
+    },
+    {
+      img_order: 26,
+      img_name: "shogun_icon_heating",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/35.shogun_icon_heating.webp",
+    },
+    {
+      img_order: 28,
+      img_name: "shogun_icon_total_relax",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/37.shogun_icon_total_relax.webp",
+    },
+    {
+      img_order: 29,
+      img_name: "shogun_icon_stress-release",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/38.shogun_icon_stress-release.webp",
+    },
+    {
+      img_order: 30,
+      img_name: "shogun_icon_full-airbag",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/39.shogun_icon_full-airbag.webp",
+    },
+    {
+      img_order: 31,
+      img_name: "shogun_icon_chinese-massage",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/40.shogun_icon_chinese-massage.webp",
+    },
+    {
+      img_order: 32,
+      img_name: "shogun_icon_thai-massage",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/41.shogun_icon_thai-massage.webp",
+    },
+    {
+      img_order: 33,
+      img_name: "shogun_icon_meridian-treatment",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/42.shogun_icon_meridian-treatment.webp",
+    },
+    {
+      img_order: 34,
+      img_name: "shogun_icon_neck-shoulder-care",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/43.shogun_icon_neck-shoulder-care.webp",
+    },
+    {
+      img_order: 35,
+      img_name: "shogun_icon_waist-care",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/44.shogun_icon_waist-care.webp",
+    },
+    {
+      img_order: 36,
+      img_name: "shogun_icon_waist-buttock-shape",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/45.shogun_icon_waist-buttock-shape.webp",
+    },
+    {
+      img_order: 37,
+      img_name: "shogun_icon_leg-foot-relieve",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/46.shogun_icon_leg-foot-relieve.webp",
+    },
+    {
+      img_order: 38,
+      img_name: "shogun_icon_president-cosy",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/47.shogun_icon_president-cosy.webp",
+    },
+    {
+      img_order: 39,
+      img_name: "shogun_icon_keep-fit",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/48.shogun_icon_keep-fit.webp",
+    },
+    {
+      img_order: 40,
+      img_name: "shogun_icon_superior-enjoyable",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/49.shogun_icon_superior-enjoyable.webp",
+    },
+    {
+      img_order: 41,
+      img_name: "shogun_icon_office-regimen",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/50.shogun_icon_office-regimen.webp",
+    },
+    {
+      img_order: 42,
+      img_name: "shogun_icon_health-recharge",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/51.shogun_icon_health-recharge.webp",
+    },
+    {
+      img_order: 43,
+      img_name: "shogun_icon_energy-boost",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/52.shogun_icon_energy-boost.webp",
+    },
+    {
+      img_order: 44,
+      img_name: "shogun_icon_lunch-break",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/53.shogun_icon_lunch-break.webp",
+    },
+    {
+      img_order: 45,
+      img_name: "shogun_icon_sweet-dream",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/54.shogun_icon_sweet-dream.webp",
+    },
+    {
+      img_order: 46,
+      img_name: "shogun_icon_brain-refresh",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/55.shogun_icon_brain-refresh.webp",
+    },
+    {
+      img_order: 47,
+      img_name: "shogun_icon_rejuevate",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/56.shogun_icon_rejuevate.webp",
+    },
+    {
+      img_order: 48,
+      img_name: "shogun_icon_knead",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/57.shogun_icon_knead.webp",
+    },
+    {
+      img_order: 49,
+      img_name: "shogun_icon_tapI",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/58.shogun_icon_tapI.webp",
+    },
+    {
+      img_order: 50,
+      img_name: "shogun_icon_tapII",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/59.shogun_icon_tapII.webp",
+    },
+    {
+      img_order: 51,
+      img_name: "shogun_icon_knead-tap",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/60.shogun_icon_knead-tap.webp",
+    },
+    {
+      img_order: 52,
+      img_name: "shogun_icon_shiatsuI",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/61.shogun_icon_shiatsuI.webp",
+    },
+    {
+      img_order: 53,
+      img_name: "shogun_icon_shiatsuII",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/62.shogun_icon_shiatsuII.webp",
+    },
+    {
+      img_order: 54,
+      img_name: "shogun_icon_grasp",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/63.shogun_icon_grasp.webp",
+    },
+    {
+      img_order: 55,
+      img_name: "shogun_icon_4D_I",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/64.shogun_icon_4D_I.webp",
+    },
+    {
+      img_order: 56,
+      img_name: "shogun_icon_4D_II",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/65.shogun_icon_4D_II.webp",
+    },
+    {
+      img_order: 57,
+      img_name: "shogun_icon_4D_III",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/66.shogun_icon_4D_III.webp",
+    },
+    {
+      img_order: 58,
+      img_name: "shogun_icon_4D_IV",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/67.shogun_icon_4D_IV.webp",
+    },
+    {
+      img_order: 59,
+      img_name: "shogun_deep-calf",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/68.shogun_deep-calf.webp",
+    },
+    {
+      img_order: 60,
+      img_name: "shogun_foot-rollers",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/69.shogun_foot-rollers.webp",
+    },
+    {
+      img_order: 61,
+      img_name: "shogun_icon_foot",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/70.shogun_icon_foot.webp",
+    },
+    {
+      img_order: 62,
+      img_name: "shogun_foot-extension",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/71.shogun_foot-extension.webp",
+    },
+    {
+      img_order: 63,
+      img_name: "shogun_icon_extend",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/72.shogun_icon_extend.webp",
+    },
+    {
+      img_order: 64,
+      img_name: "shogun_negative-oxygen-ions",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/73.shogun_negative-oxygen-ions.webp",
+    },
+    {
+      img_order: 65,
+      img_name: "shogun_touchscreen",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/74.shogun_touchscreen.webp",
+    },
+    {
+      img_order: 66,
+      img_name: "shogun_icon_hand",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/75.shogun_icon_hand.webp",
+    },
+    {
+      img_order: 67,
+      img_name: "shogun_side_control",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/76.shogun_side_control.webp",
+    },
+    {
+      img_order: 68,
+      img_name: "shogun_speakers",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/77.shogun_speakers.webp",
+    },
+    {
+      img_order: 69,
+      img_name: "shogun_icon_bluetooth",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/78.shogun_icon_bluetooth.webp",
+    },
+    {
+      img_order: 70,
+      img_name: "shogun_wireless",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/79.shogun_wireless.webp",
+    },
+    {
+      img_order: 71,
+      img_name: "shogun_USB",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/80.shogun_USB.webp",
+    },
     {
       img_order: 72,
       img_name: "shogun_min",
@@ -440,9 +515,64 @@
     .pp-height {
       height: 600px;
     }
+
+    .desktop-only-gradient-b {
+      background: linear-gradient(
+        to bottom,
+        oklch(48.198% 0.09963 250.277),
+        oklch(12% 0 0)
+      );
+    }
+
+    .desktop-only-gradient-r {
+      background: linear-gradient(
+        to right,
+        oklch(48.198% 0.09963 250.277),
+        oklch(12% 0 0)
+      );
+    }
+
+    .desktop-only-gradient-l {
+      background: linear-gradient(
+        to left,
+        oklch(48.198% 0.09963 250.277),
+        oklch(12% 0 0)
+      );
+    }
+
+    .desktop-only-gradient-2 {
+      background: linear-gradient(
+        to bottom,
+        oklch(48.198% 0.09963 250.277),
+        oklch(12% 0 0),
+        oklch(48.198% 0.09963 250.277),
+        oklch(12% 0 0)
+      );
+    }
+    .mobile-invert {
+      filter: initial;
+    }
+    .mobile-only-bg {
+      background-color: initial;
+    }
     @media (max-width: 1024px) {
       .pp-height {
         height: auto;
+      }
+
+      .desktop-only-gradient-b,
+      .desktop-only-gradient-r,
+      .desktop-only-gradient-l,
+      .desktop-only-gradient-2 {
+        background: initial;
+      }
+
+      .mobile-invert {
+        filter: invert(1);
+      }
+
+      .mobile-only-bg {
+        background-color: #e0d1be;
       }
     }
   </style>
@@ -453,8 +583,890 @@
   >
     <div
       id="youtube-link"
-      class="[&>*]:tw-mb-40 [&>*]:tw-aspect-video [&>*]:tw-w-full"
+      class="[&>*]:tw-mb-20 [&>*]:tw-aspect-video [&>*]:tw-w-full"
     ></div>
+    <div class="">
+      <img src="" alt="" class="!tw-w-full" />
+      <div class="tw-p-4 tw-text-xl lg:tw-mx-10" style="color: #777">
+        Experience next-level relaxation with the Shogun 4D Massage Chair,
+        engineered for precision and full-body comfort. Its advanced 4D
+        mechanism works alongside a Duo Mech system to deliver synchronized
+        upper and lower body massages with customizable intensity. The SL Flex
+        Track follows the natural curve of your spine, ensuring consistent
+        support from neck to glutes. With Intelligent Health Detection, Shogun
+        analyzes your body in real time to recommend personalized massage
+        programs for a truly tailored wellness experience.
+      </div>
+    </div>
+
+    <!-- Thumbnail Swatches Begin-->
+    <div
+      id="swatch-static-container"
+      class="tw-relative tw-mx-auto tw-mb-20 tw-w-full tw-max-w-xl"
+    >
+      <!-- SLIDER (horizontal scroll + snap) -->
+      <div class="tw-relative">
+        <div
+          id="slide-track"
+          class="tw-flex tw-h-96 tw-touch-pan-x tw-snap-x tw-snap-mandatory tw-overflow-x-auto tw-scroll-smooth sm:tw-overflow-hidden"
+          style="
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+          "
+        >
+          <!-- Slide 0 -->
+          <div
+            class="tw-flex tw-w-full tw-flex-none tw-snap-start tw-items-center tw-justify-center"
+          >
+            <img src="" alt="" class="tw-h-full tw-w-full tw-object-contain" />
+          </div>
+
+          <!-- Slide 1 -->
+          <div
+            class="tw-flex tw-w-full tw-flex-none tw-snap-start tw-items-center tw-justify-center"
+          >
+            <img src="" alt="" class="tw-h-full tw-w-full tw-object-contain" />
+          </div>
+
+          <!-- Slide 2 -->
+          <div
+            class="tw-flex tw-w-full tw-flex-none tw-snap-start tw-items-center tw-justify-center"
+          >
+            <img src="" alt="" class="tw-h-full tw-w-full tw-object-contain" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrows (optional: hide on mobile with tw-hidden sm:tw-inline-flex) -->
+      <button
+        id="static-prev"
+        class="tw-absolute tw-left-2 tw-top-1/2 tw--translate-y-1/2 tw-rounded-full tw-bg-black tw-bg-opacity-50 tw-p-2 hover:tw-cursor-pointer hover:tw-bg-opacity-100 focus:tw-outline-none lg:tw-text-white"
+        aria-label="Previous slide"
+      >
+        &#10094;
+      </button>
+
+      <button
+        id="static-next"
+        class="tw-absolute tw-right-2 tw-top-1/2 tw--translate-y-1/2 tw-rounded-full tw-bg-black tw-bg-opacity-50 tw-p-2 hover:tw-cursor-pointer hover:tw-bg-opacity-100 focus:tw-outline-none lg:tw-text-white"
+        aria-label="Next slide"
+      >
+        &#10095;
+      </button>
+
+      <!-- Swatches (also horizontally scrollable if needed) -->
+      <div class="tw-mt-4 tw-flex tw-w-full tw-justify-center">
+        <div
+          class="tw-flex tw-max-w-full tw-gap-2 tw-overflow-x-auto tw-rounded-full tw-bg-gray-100 tw-p-4 tw-px-6"
+          style="-webkit-overflow-scrolling: touch"
+        >
+          <button
+            class="swatch-button tw-h-8 tw-w-8 tw-rounded-full hover:tw-cursor-pointer focus:tw-outline-none"
+            style="
+              background-image:
+                radial-gradient(
+                  circle at 40% 35%,
+                  oklab(1 0 0 / 1) 0 4%,
+                  oklab(1 0 0 / 0) 50%
+                ),
+                conic-gradient(
+                  from 0deg,
+                  oklab(76.8% 0.001 0.01) 0deg,
+                  oklab(41.598% 0.01388 0.04585) 90deg,
+                  oklab(19.241% 0.00154 0.00046) 180deg,
+                  oklab(45.45% 0.0193 0.08842) 270deg,
+                  oklab(76.8% 0.001 0.01) 360deg
+                );
+            "
+            data-index="0"
+            aria-label="swatch0"
+          ></button>
+          <button
+            class="swatch-button tw-h-8 tw-w-8 tw-rounded-full hover:tw-cursor-pointer focus:tw-outline-none"
+            style="background-color: #e0d1be"
+            data-index="1"
+            aria-label="swatch1"
+          ></button>
+
+          <button
+            class="swatch-button tw-h-8 tw-w-8 tw-rounded-full hover:tw-cursor-pointer focus:tw-outline-none"
+            style="background-color: #1d1d1d"
+            data-index="2"
+            aria-label="swatch2"
+          ></button>
+        </div>
+      </div>
+    </div>
+    <!-- Thumbnail Swatches End -->
+
+    <div
+      class="section desktop-only-gradient-b tw-mx-auto tw-mb-20 tw-flex tw-flex-col tw-items-center tw-gap-y-4 tw-overflow-hidden lg:tw-rounded-3xl lg:tw-text-center"
+    >
+      <img
+        src=""
+        alt=""
+        class="tw-h-96 tw-object-cover lg:tw-order-2 lg:tw-h-auto"
+        style="object-position: 90% 50%"
+      />
+      <div
+        class="tw-flex tw-flex-col tw-space-y-4 tw-p-4 lg:tw-w-3/4 lg:tw-items-center lg:tw-p-10"
+      >
+        <img src="" alt="" class="mobile-invert tw-w-36 lg:tw-w-48" />
+        <div class="tw-text-4xl tw-font-semibold tw-uppercase lg:tw-text-white">
+          intelligent health detection
+        </div>
+        <div class="tw-mx-auto tw-text-lg tw-text-gray-400">
+          The Shogun 4D elevates your experience with built-in health detection
+          that
+          <b class="tw-brightness-50 lg:tw-brightness-200"
+            >monitors key metrics like heart rate, blood oxygen,
+            microcirculation, and fatigue levels</b
+          >. Using AI technology, it tailors each session in real time to
+          <b class="tw-brightness-50 lg:tw-brightness-200"
+            >match your body’s current needs for a more personalized and
+            effective massage</b
+          >.
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="section desktop-only-gradient-l tw-mx-auto tw-mb-20 tw-grid tw-gap-y-4 tw-overflow-hidden lg:tw-grid-cols-2 lg:tw-rounded-3xl"
+    >
+      <img src="" alt="" class="lg:tw-p-10" />
+      <div
+        class="tw-flex tw-flex-col tw-justify-center tw-space-y-4 tw-p-4 lg:tw-p-20 lg:tw-pl-0"
+      >
+        <img src="" alt="" class="tw-w-16 lg:tw-mb-4" />
+        <div class="tw-text-4xl tw-font-semibold tw-uppercase lg:tw-text-white">
+          duo mech 4d + 4D massage mechanism
+        </div>
+        <div class="tw-text-lg tw-text-gray-400">
+          The Duo Mech 4D+4D massage mechanism features dual independent massage
+          units that work in sync to deliver a more comprehensive, full-body
+          experience.
+          <b class="tw-brightness-50 lg:tw-brightness-200"
+            >With advanced 4D technology in both systems, it precisely controls
+            speed, depth, and intensity</b
+          >—allowing simultaneous upper and lower body coverage for deeper
+          relief, improved muscle recovery, and a more immersive, human-like
+          massage.
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="section desktop-only-gradient-r tw-mx-auto tw-mb-20 tw-grid tw-gap-y-4 tw-overflow-hidden lg:tw-grid-cols-2 lg:tw-rounded-3xl"
+    >
+      <img
+        src=""
+        alt=""
+        class="tw-mt-auto lg:tw-order-2 lg:tw-pb-0 lg:tw-pr-10"
+      />
+      <div
+        class="tw-flex tw-flex-col tw-justify-center tw-gap-y-4 tw-p-4 lg:tw-p-20 lg:tw-pr-10"
+      >
+        <img
+          src=""
+          alt=""
+          class="tw-bg-white tw-p-10 lg:tw-order-2 lg:tw-rounded-3xl"
+        />
+        <div class="tw-text-4xl tw-font-semibold tw-uppercase lg:tw-text-white">
+          2 heating cores
+        </div>
+        <div class="tw-text-lg tw-text-gray-400 lg:tw-mb-4">
+          The Shogun 4D features
+          <b class="tw-brightness-50 lg:tw-brightness-200"
+            >heated jade cores that move smoothly along your body’s contours,
+            blending precise massage with therapeutic heat</b
+          >
+          to provide targeted, deeply soothing relief.
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="section desktop-only-gradient-l tw-mx-auto tw-mb-20 tw-grid tw-gap-y-4 tw-overflow-hidden lg:tw-grid-cols-2 lg:tw-rounded-3xl"
+    >
+      <img src="" alt="" class="lg:tw-p-10" />
+      <div
+        class="tw-flex tw-flex-col tw-justify-center tw-space-y-4 tw-p-4 lg:tw-p-20 lg:tw-pl-0"
+      >
+        <div class="tw-text-4xl tw-font-semibold tw-uppercase lg:tw-text-white">
+          SL Flex Track
+        </div>
+        <div class="tw-text-lg tw-text-gray-400">
+          The Shogun 4D reimagines traditional SL-track technology with its
+          advanced flexible design. Its SL Flex Track
+          <b class="tw-brightness-50 lg:tw-brightness-200"
+            >dynamically adjusts to your body’s position</b
+          >, enhancing both comfort and precision throughout each session. This
+          innovative system
+          <b class="tw-brightness-50 lg:tw-brightness-200"
+            >delivers consistent, full-body coverage—from the neck and shoulders
+            down to the glutes</b
+          >—for a more seamless and restorative massage experience.
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="section desktop-only-gradient-r tw-mx-auto tw-mb-20 tw-grid tw-gap-y-4 tw-overflow-hidden lg:tw-grid-cols-2 lg:tw-rounded-3xl"
+    >
+      <div class="lg:tw-order-2 lg:tw-p-10">
+        <img src="" alt="" class="tw-overflow-hidden lg:tw-rounded-3xl" />
+      </div>
+      <div
+        class="tw-flex tw-flex-col tw-justify-center tw-gap-y-4 tw-p-4 lg:tw-p-20 lg:tw-pr-10"
+      >
+        <div class="tw-text-4xl tw-font-semibold tw-uppercase lg:tw-text-white">
+          piano key massage
+        </div>
+        <div class="tw-text-lg tw-text-gray-400 lg:tw-mb-4">
+          Crafted with thoughtful precision, the piano key arm massager gently
+          supports and surrounds your arms, delivering a smooth, rhythmic
+          massage experience. This unique feature
+          <b class="tw-brightness-50 lg:tw-brightness-200"
+            >targets built-up tension in the arms—an area often neglected by
+            traditional massage chairs—for more complete, full-body relief</b
+          >.
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="section desktop-only-gradient-l tw-mx-auto tw-mb-20 tw-grid tw-gap-y-4 tw-overflow-hidden lg:tw-grid-cols-2 lg:tw-rounded-3xl"
+    >
+      <img src="" alt="" class="lg:tw-p-10 lg:tw-pt-0" />
+      <div
+        class="tw-flex tw-flex-col tw-justify-center tw-space-y-4 tw-p-4 lg:tw-p-20 lg:tw-pl-10"
+      >
+        <div class="tw-text-4xl tw-font-semibold tw-uppercase lg:tw-text-white">
+          calf rollers massage
+        </div>
+        <div class="tw-text-lg tw-text-gray-400">
+          Understanding that calves are frequently neglected, the Shogun 4D
+          features innovative calf rollers built into the footrest for targeted
+          relief and enhanced circulation.
+          <b class="tw-brightness-50 lg:tw-brightness-200"
+            >These rollers glide along the muscles, providing comprehensive care
+            and soothing tension to the calves</b
+          >.
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="section desktop-only-gradient-r tw-mx-auto tw-mb-20 tw-grid tw-gap-y-4 tw-overflow-hidden lg:tw-grid-cols-2 lg:tw-rounded-3xl"
+    >
+      <img
+        src=""
+        alt=""
+        class="tw-mt-auto tw-overflow-hidden lg:tw-order-2 lg:tw-rounded-3xl"
+      />
+      <div
+        class="tw-flex tw-flex-col tw-justify-center tw-gap-y-4 tw-p-4 lg:tw-p-20 lg:tw-pr-10"
+      >
+        <img src="" alt="" class="tw-w-8 lg:tw-mb-4" />
+        <div class="tw-text-4xl tw-font-semibold tw-uppercase lg:tw-text-white">
+          Intelligent <br />voice control
+        </div>
+        <div class="tw-text-lg tw-text-gray-400 lg:tw-mb-4">
+          The Shogun 4D’s Intelligent Voice Control lets you
+          <b class="tw-brightness-50 lg:tw-brightness-200"
+            >operate the chair hands-free</b
+          >, easily adjusting settings, starting programs, and customizing your
+          massage with simple voice commands for
+          <b class="tw-brightness-50 lg:tw-brightness-200"
+            >effortless convenience</b
+          >.
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="section desktop-only-gradient-l tw-mx-auto tw-mb-20 tw-hidden tw-gap-y-4 tw-overflow-hidden lg:tw-rounded-3xl"
+    >
+      <img src="" alt="" class="lg:tw-p-10 lg:tw-pt-0" />
+      <div
+        class="tw-flex tw-flex-col tw-justify-center tw-space-y-4 tw-p-4 lg:tw-p-20 lg:tw-pl-10"
+      >
+        <div class="tw-text-4xl tw-font-semibold tw-uppercase lg:tw-text-white">
+          easy app control
+        </div>
+        <div class="tw-text-lg tw-text-gray-400">
+          If you have an iPhone or Android, go to the App Store or Google Play
+          Store to download the DuoMax App to control the massage chair with the
+          full features from the remote on your phone. The DuoMax App is
+          compatible with this chair as well.
+        </div>
+        <div class="tw-grid tw-grid-cols-2 tw-gap-4 lg:tw-w-3/4">
+          <img src="" alt="" class="tw-rounded-xl" />
+          <img src="" alt="" class="tw-rounded-xl" />
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="desktop-only-gradient-2 tw-mb-20 tw-overflow-hidden lg:tw-rounded-3xl"
+    >
+      <div
+        class="section tw-mx-auto tw-mb-20 tw-flex tw-flex-col tw-items-center tw-gap-y-4 lg:tw-text-center"
+      >
+        <img src="" alt="" class="lg:tw-order-2 lg:tw-w-1/3" />
+        <div
+          class="tw-flex tw-flex-col tw-space-y-4 tw-p-4 lg:tw-w-3/4 lg:tw-items-center lg:tw-p-10"
+        >
+          <img src="" alt="" class="mobile-invert tw-w-16" />
+          <div
+            class="tw-text-4xl tw-font-semibold tw-uppercase lg:tw-text-white"
+          >
+            2-stage <br />
+            zero gravity reclining
+          </div>
+          <div class="tw-mx-auto tw-text-lg tw-text-gray-400">
+            Inspired by NASA technology, the Shogun 4D boasts advanced Zero
+            Gravity Recline, offering three near-weightless positions that
+            <b class="tw-brightness-50 lg:tw-brightness-200"
+              >evenly distribute body weight, relieve spinal pressure</b
+            >, and maximize total-body relaxation.
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="tw-mb-20 tw-grid tw-gap-20 lg:tw-mx-20 lg:tw-grid-cols-2 lg:tw-text-left"
+      >
+        <div class="tw-flex tw-flex-col tw-items-start tw-gap-4">
+          <img src="" alt="" class="lg:tw-order-2 lg:tw-h-80" />
+          <div class="tw-flex tw-flex-col tw-items-start tw-gap-4 tw-p-4">
+            <img src="" alt="" class="tw-h-12" />
+            <div
+              class="tw-text-4xl tw-font-semibold tw-uppercase lg:tw-text-white"
+            >
+              body scan Technology
+            </div>
+            <div class="tw-mx-auto tw-text-lg tw-text-gray-400">
+              The Body Scan detects your shoulder height and body shape,
+              <b class="tw-brightness-50 lg:tw-brightness-200"
+                >adjusting the rollers for a precise, personalized massage</b
+              >.
+            </div>
+          </div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-start tw-gap-4">
+          <img src="" alt="" class="lg:tw-order-2 lg:tw-h-80" />
+          <div class="tw-flex tw-flex-col tw-items-start tw-gap-4 tw-p-4">
+            <img src="" alt="" class="tw-h-12" />
+            <div
+              class="tw-text-4xl tw-font-semibold tw-uppercase lg:tw-text-white"
+            >
+              Space-saving TEchnology
+            </div>
+            <div class="tw-mx-auto tw-text-lg tw-text-gray-400">
+              Its space-saving design allows full recline with
+              <b class="tw-brightness-50 lg:tw-brightness-200"
+                >5.5 inches of clearance, perfect for compact spaces</b
+              >
+              without sacrificing comfort.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="section tw-mx-auto tw-mb-20 tw-flex tw-flex-col tw-items-center tw-gap-y-4 lg:tw-text-center"
+      >
+        <img
+          src=""
+          alt=""
+          class="mobile-only-bg lg:tw-order-2 lg:tw-w-1/3 lg:tw-rounded-3xl"
+        />
+        <div
+          class="tw-flex tw-flex-col tw-items-center tw-space-y-4 tw-p-4 lg:tw-w-3/4 lg:tw-p-10"
+        >
+          <div
+            class="tw-text-4xl tw-font-semibold tw-uppercase lg:tw-text-white"
+          >
+            32-CELL <br />
+            AIR Compression MASSAGE
+          </div>
+          <div class="tw-mx-auto tw-text-lg tw-text-gray-400">
+            The Shogun’s air cell compression massage gently inflates and
+            deflates airbags to hug your body,
+            <b class="tw-brightness-50 lg:tw-brightness-200"
+              >relieving tension, improving circulation, and enhancing overall
+              relaxation</b
+            >.
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="section tw-mx-auto tw-mb-20 tw-flex tw-flex-col tw-items-center tw-gap-y-4 lg:tw-text-center"
+      >
+        <img src="" alt="" class="lg:tw-order-2 lg:tw-w-1/3" />
+        <div
+          class="tw-flex tw-flex-col tw-space-y-4 tw-p-4 lg:tw-w-1/2 lg:tw-items-center lg:tw-p-10"
+        >
+          <img src="" alt="" class="tw-w-10" />
+          <div
+            class="tw-text-4xl tw-font-semibold tw-uppercase lg:tw-text-white"
+          >
+            lumbar <br />
+            HEATING therapy
+          </div>
+          <div class="tw-mx-auto tw-text-lg tw-text-gray-400">
+            The Shogun’s heating therapy delivers
+            <b class="tw-brightness-50 lg:tw-brightness-200"
+              >soothing warmth to the lower back</b
+            >, relaxing muscles and enhancing the overall massage for a deeper,
+            more restorative experience.
+          </div>
+          <div class="tw-text-sm tw-text-gray-400">
+            The heating therapy provides warmth in the range of approximately 75
+            - 83°F.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="desktop-only-gradient-b tw-mb-20 tw-overflow-hidden tw-text-center lg:tw-rounded-3xl lg:tw-p-20"
+    >
+      <div
+        class="tw-py-10 tw-text-4xl tw-font-semibold tw-uppercase lg:tw-p-10 lg:tw-text-white"
+      >
+        20 Auto programs
+      </div>
+      <div
+        class="tw-grid tw-grid-cols-3 tw-gap-4 tw-gap-y-10 tw-text-center tw-text-sm lg:tw-grid-cols-5 lg:tw-gap-10 lg:tw-gap-y-20 lg:tw-text-white"
+      >
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img src="" alt="" class="mobile-invert tw-w-20 lg:tw-w-24" />
+          <div>
+            TOTAL <br />
+            RELAX
+          </div>
+        </div>
+
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img src="" alt="" class="mobile-invert tw-w-20 lg:tw-w-24" />
+          <div>
+            STRESS <br />
+            RELEASE
+          </div>
+        </div>
+
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img src="" alt="" class="mobile-invert tw-w-20 lg:tw-w-24" />
+          <div>
+            FULL <br />
+            AIRBAG
+          </div>
+        </div>
+
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img src="" alt="" class="mobile-invert tw-w-20 lg:tw-w-24" />
+          <div>
+            CHINESE <br />
+            MASSAGE
+          </div>
+        </div>
+
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img src="" alt="" class="mobile-invert tw-w-20 lg:tw-w-24" />
+          <div>
+            THAI <br />
+            MASSAGE
+          </div>
+        </div>
+
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img src="" alt="" class="mobile-invert tw-w-20 lg:tw-w-24" />
+          <div>
+            MERIDIAN <br />
+            TREATMENT
+          </div>
+        </div>
+
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img src="" alt="" class="mobile-invert tw-w-20 lg:tw-w-24" />
+          <div>
+            NECK & <br />
+            SHOULDER CARE
+          </div>
+        </div>
+
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img src="" alt="" class="mobile-invert tw-w-20 lg:tw-w-24" />
+          <div>
+            WAIST <br />
+            CARE
+          </div>
+        </div>
+
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img src="" alt="" class="mobile-invert tw-w-20 lg:tw-w-24" />
+          <div>
+            WAIST & <br />
+            BUTTOCK SHAPE
+          </div>
+        </div>
+
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img src="" alt="" class="mobile-invert tw-w-20 lg:tw-w-24" />
+          <div>
+            LEG & <br />
+            FOOT RELIEVE
+          </div>
+        </div>
+
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img src="" alt="" class="mobile-invert tw-w-20 lg:tw-w-24" />
+          <div>
+            PRESIDENT <br />
+            COSY
+          </div>
+        </div>
+
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img src="" alt="" class="mobile-invert tw-w-20 lg:tw-w-24" />
+          <div>
+            KEEP <br />
+            FIT
+          </div>
+        </div>
+
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img src="" alt="" class="mobile-invert tw-w-20 lg:tw-w-24" />
+          <div>
+            SUPERIOR <br />
+            ENJOYABLE
+          </div>
+        </div>
+
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img src="" alt="" class="mobile-invert tw-w-20 lg:tw-w-24" />
+          <div>
+            OFFICE <br />
+            REGIMEN
+          </div>
+        </div>
+
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img src="" alt="" class="mobile-invert tw-w-20 lg:tw-w-24" />
+          <div>
+            HEALTH <br />
+            RECHARGE
+          </div>
+        </div>
+
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img src="" alt="" class="mobile-invert tw-w-20 lg:tw-w-24" />
+          <div>
+            ENERGY <br />
+            BOOST
+          </div>
+        </div>
+
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img src="" alt="" class="mobile-invert tw-w-20 lg:tw-w-24" />
+          <div>
+            LUNCH <br />
+            BREAK
+          </div>
+        </div>
+
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img src="" alt="" class="mobile-invert tw-w-20 lg:tw-w-24" />
+          <div>
+            SWEET <br />
+            DREAM
+          </div>
+        </div>
+
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img src="" alt="" class="mobile-invert tw-w-20 lg:tw-w-24" />
+          <div>
+            BRAIN <br />
+            REFRESH
+          </div>
+        </div>
+
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img src="" alt="" class="mobile-invert tw-w-20 lg:tw-w-24" />
+          <div>REJUVENATE</div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="desktop-only-gradient-b tw-mb-40 tw-overflow-hidden tw-text-center lg:tw-mb-20 lg:tw-rounded-3xl lg:tw-p-20"
+    >
+      <div
+        class="tw-py-10 tw-text-4xl tw-font-semibold tw-uppercase lg:tw-p-10 lg:tw-text-white"
+      >
+        11 Manual Modes
+      </div>
+      <div
+        class="tw-grid tw-grid-cols-3 tw-flex-wrap tw-justify-center tw-gap-4 tw-gap-y-10 tw-text-center tw-text-sm lg:tw-flex lg:tw-gap-10 lg:tw-gap-y-20 lg:tw-text-white"
+      >
+        <div class="tw-hidden lg:tw-block lg:tw-w-12"></div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img src="" alt="" class="mobile-invert tw-w-20 lg:tw-w-24" />
+          <div>KNEAD</div>
+        </div>
+
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img src="" alt="" class="mobile-invert tw-w-20 lg:tw-w-24" />
+          <div>TAP I</div>
+        </div>
+
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img src="" alt="" class="mobile-invert tw-w-20 lg:tw-w-24" />
+          <div>TAP II</div>
+        </div>
+
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img src="" alt="" class="mobile-invert tw-w-20 lg:tw-w-24" />
+          <div>KNEAD & TAP</div>
+        </div>
+
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img src="" alt="" class="mobile-invert tw-w-20 lg:tw-w-24" />
+          <div>SHIATSU I</div>
+        </div>
+        <div class="tw-hidden lg:tw-block lg:tw-w-12"></div>
+
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img src="" alt="" class="mobile-invert tw-w-20 lg:tw-w-24" />
+          <div>SHIATSU II</div>
+        </div>
+
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img src="" alt="" class="mobile-invert tw-w-20 lg:tw-w-24" />
+          <div>GRASP</div>
+        </div>
+
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img src="" alt="" class="mobile-invert tw-w-20 lg:tw-w-24" />
+          <div>4D I</div>
+        </div>
+
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img src="" alt="" class="mobile-invert tw-w-20 lg:tw-w-24" />
+          <div>4D II</div>
+        </div>
+
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img src="" alt="" class="mobile-invert tw-w-20 lg:tw-w-24" />
+          <div>4D III</div>
+        </div>
+
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <img src="" alt="" class="mobile-invert tw-w-20 lg:tw-w-24" />
+          <div>4D IV</div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="section desktop-only-gradient-r tw-mx-auto tw-mb-20 tw-grid tw-gap-y-4 tw-overflow-hidden lg:tw-grid-cols-2 lg:tw-rounded-3xl"
+    >
+      <img
+        src=""
+        alt=""
+        class="tw-mt-auto tw-overflow-hidden lg:tw-order-2 lg:tw-rounded-3xl"
+      />
+      <div
+        class="tw-flex tw-flex-col tw-justify-center tw-gap-y-4 tw-p-4 lg:tw-p-20 lg:tw-pr-10"
+      >
+        <div class="tw-text-4xl tw-font-semibold tw-uppercase lg:tw-text-white">
+          deep calf kneading
+        </div>
+        <div class="tw-text-lg tw-text-gray-400 lg:tw-mb-4">
+          The Shogun 4D provides a revitalizing calf massage that targets
+          deep-seated tension and muscle fatigue. By combining vertical kneading
+          rollers with air compression, it delivers
+          <b class="tw-brightness-50 lg:tw-brightness-200"
+            >a more thorough, dynamic treatment that address better circulation
+            in the calves</b
+          >.
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="section desktop-only-gradient-l tw-mx-auto tw-mb-20 tw-grid tw-gap-y-4 tw-overflow-hidden lg:tw-grid-cols-2 lg:tw-rounded-3xl"
+    >
+      <img src="" alt="" class="lg:tw-p-10 lg:tw-pt-0" />
+      <div
+        class="tw-flex tw-flex-col tw-justify-center tw-space-y-4 tw-p-4 lg:tw-p-20 lg:tw-pl-10"
+      >
+        <img src="" alt="" class="mobile-invert tw-w-16" />
+        <div class="tw-text-4xl tw-font-semibold tw-uppercase lg:tw-text-white">
+          specialized <br />
+          foot ROLLERS
+        </div>
+        <div class="tw-text-lg tw-text-gray-400">
+          The footrest is equipped with
+          <b class="tw-brightness-50 lg:tw-brightness-200"
+            >rotating rollers and reflexology ridges that stimulate key pressure
+            points</b
+          >, providing a deep, therapeutic massage to support foot wellness and
+          relaxation.
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="section desktop-only-gradient-r tw-mx-auto tw-mb-20 tw-grid tw-gap-y-4 tw-overflow-hidden lg:tw-grid-cols-2 lg:tw-rounded-3xl"
+    >
+      <img src="" alt="" class="lg:tw-order-2" />
+      <div
+        class="tw-flex tw-flex-col tw-justify-center tw-gap-y-4 tw-p-4 lg:tw-p-20 lg:tw-pr-10"
+      >
+        <img src="" alt="" class="mobile-invert tw-w-16" />
+        <div class="tw-text-4xl tw-font-semibold tw-uppercase lg:tw-text-white">
+          Automatic <br />
+          EXTENDABLE <br />
+          fOOTREST
+        </div>
+        <div class="tw-text-lg tw-text-gray-400 lg:tw-mb-4">
+          The Shogun features an automatic extendable footrest that
+          <b class="tw-brightness-50 lg:tw-brightness-200"
+            >adjusts to your leg length, ensuring a comfortable, customized fit
+            for users of different heights</b
+          >.
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="section desktop-only-gradient-l tw-mx-auto tw-mb-20 tw-grid tw-gap-y-4 tw-overflow-hidden lg:tw-grid-cols-2 lg:tw-rounded-3xl"
+    >
+      <img src="" alt="" class="tw-mr-auto lg:tw-w-5/6" />
+      <div
+        class="tw-flex tw-flex-col tw-justify-center tw-space-y-4 tw-p-4 lg:tw-p-20 lg:tw-pl-10"
+      >
+        <div class="tw-text-4xl tw-font-semibold tw-uppercase lg:tw-text-white">
+          negative <br />
+          oxygen <br />
+          ions
+        </div>
+        <div class="tw-text-lg tw-text-gray-400">
+          The Shogun 4D includes built-in negative air ionization therapy, which
+          research suggests that it can help ease stress and promote a more
+          refreshed, energized state.
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="section desktop-only-gradient-r tw-mx-auto tw-mb-20 tw-grid tw-gap-y-4 tw-overflow-hidden lg:tw-grid-cols-2 lg:tw-rounded-3xl"
+    >
+      <img src="" alt="" class="tw-mt-auto lg:tw-order-2" />
+      <div
+        class="tw-flex tw-flex-col tw-justify-center tw-gap-y-4 tw-p-4 lg:tw-p-20 lg:tw-pr-10"
+      >
+        <img src="" alt="" class="mobile-invert tw-w-16 lg:tw-mb-4" />
+        <div class="tw-text-4xl tw-font-semibold tw-uppercase lg:tw-text-white">
+          touchscreen <br />
+          Controller
+        </div>
+        <div class="tw-text-lg tw-text-gray-400 lg:tw-mb-4">
+          The Shogun features a sleek touchscreen controller that makes it
+          <b class="tw-brightness-50 lg:tw-brightness-200"
+            >easy to navigate programs, adjust settings, and customize your
+            massage with just a few taps</b
+          >.
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="section desktop-only-gradient-l tw-mx-auto tw-mb-20 tw-grid tw-gap-y-4 tw-overflow-hidden lg:tw-grid-cols-2 lg:tw-rounded-3xl"
+    >
+      <img src="" alt="" class="tw-mr-auto lg:tw-w-5/6" />
+      <div
+        class="tw-flex tw-flex-col tw-justify-center tw-space-y-4 tw-p-4 lg:tw-p-20 lg:tw-pl-10"
+      >
+        <div class="tw-text-4xl tw-font-semibold tw-uppercase lg:tw-text-white">
+          quick <br />
+          side control
+        </div>
+        <div class="tw-text-lg tw-text-gray-400">
+          The Shogun’s quick side control panel offers convenient access to
+          essential functions,
+          <b class="tw-brightness-50 lg:tw-brightness-200"
+            >allowing you to adjust settings or positions</b
+          >
+          instantly without reaching for the main controller.
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="section desktop-only-gradient-r tw-mx-auto tw-mb-20 tw-grid tw-gap-y-4 tw-overflow-hidden lg:tw-grid-cols-2 lg:tw-rounded-3xl"
+    >
+      <img src="" alt="" class="tw-mt-auto lg:tw-order-2" />
+      <div
+        class="tw-flex tw-flex-col tw-justify-center tw-gap-y-4 tw-p-4 lg:tw-p-20 lg:tw-pr-10"
+      >
+        <img src="" alt="" class="mobile-invert tw-w-16 lg:tw-mb-4" />
+        <div class="tw-text-4xl tw-font-semibold tw-uppercase lg:tw-text-white">
+          quality <br />
+          bluetooth <br />
+          speakers
+        </div>
+        <div class="tw-text-lg tw-text-gray-400 lg:tw-mb-4">
+          High-quality Bluetooth speakers built into the chair to deliver crisp,
+          immersive sound, letting you
+          <b class="tw-brightness-50 lg:tw-brightness-200"
+            >enjoy music, podcasts, or guided meditations seamlessly while you
+            relax</b
+          >.
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="tw-mb-40 tw-grid tw-gap-10 tw-gap-y-20 lg:tw-grid-cols-2 lg:tw-gap-y-10"
+    >
+      <div class="tw-flex tw-flex-col tw-gap-4">
+        <img
+          src=""
+          alt=""
+          class="desktop-only-gradient-r tw-overflow-hidden lg:tw-rounded-3xl"
+        />
+        <div class="tw-space-y-4 tw-p-4">
+          <div class="tw-text-4xl tw-font-semibold tw-uppercase">
+            wireless <br />
+            charging surface
+          </div>
+          <div class="tw-text-lg tw-text-gray-400 lg:tw-mb-4">
+            The Shogun features a built-in wireless charging surface, allowing
+            you to conveniently power your devices while you relax—no cables
+            needed.
+          </div>
+        </div>
+      </div>
+      <div class="tw-flex tw-flex-col tw-gap-4">
+        <img src="" alt="" class="tw-overflow-hidden lg:tw-rounded-3xl" />
+        <div class="tw-space-y-4 tw-p-4">
+          <div class="tw-text-4xl tw-font-semibold tw-uppercase">
+            easy usb-A <br />
+            charging port
+          </div>
+          <div class="tw-text-lg tw-text-gray-400 lg:tw-mb-4">
+            The Shogun includes a USB-A charging port for fast, convenient
+            device charging, keeping your essentials powered while you unwind.
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="tw-mx-auto tw-mb-40 lg:tw-w-3/5">
       <div
@@ -491,7 +1503,7 @@
           class="tw-mx-auto tw-flex tw-w-1/2 tw-justify-center"
         />
       </div>
-      <div class="tw-grid lg:tw-grid-cols-3">
+      <div class="tw-grid tw-w-4/5 lg:tw-w-full lg:tw-grid-cols-3">
         <img src="" alt="" class="" />
         <img src="" alt="" class="tw-w-4/5" />
         <img src="" alt="" class="tw-w-2/3" />
@@ -530,7 +1542,7 @@
           <div class="tw-grid tw-w-full tw-grid-cols-2 tw-gap-2">
             <a
               class="!tw-text-red-500 !tw-no-underline"
-              href="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/A801-52_Shogun_Duo_manual.pdf?v=1775075025"
+              href="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/Shogun_Duo_manual_App_X.pdf?v=1775246769"
               target="_blank"
               >Download</a
             >
@@ -668,7 +1680,7 @@
       return dst
     }
     const iframe = document.createElement("iframe")
-    // iframe.classList = "tw-aspect-video tw-w-full tw-mb-40"
+    // iframe.classList = "tw-aspect-video tw-w-full tw-mb-20"
     try {
       iframe.src = getYoutubeSrc(youtube_link)
       document.getElementById("youtube-link").appendChild(iframe)
@@ -677,3 +1689,67 @@
     }
   })()
 </script>
+
+<!-- Thumbnail Swatches Begin-->
+<script>
+  ;(function () {
+    const track = document.getElementById("slide-track")
+    const swatches = document.querySelectorAll(".swatch-button")
+    const prevBtn = document.getElementById("static-prev")
+    const nextBtn = document.getElementById("static-next")
+    const totalSlides = swatches.length
+    let currentIndex = 0
+
+    const slideWidth = () => track.clientWidth
+
+    const setActiveSwatch = (index) => {
+      swatches.forEach((s) => (s.style.outline = "none"))
+      swatches[index].style.outline = "3px solid #4299e1"
+      swatches[index].style.outlineOffset = "2px"
+    }
+
+    const scrollToSlide = (index) => {
+      currentIndex = index
+      track.scrollTo({ left: index * slideWidth(), behavior: "smooth" })
+      setActiveSwatch(index)
+    }
+
+    prevBtn.addEventListener("click", () => {
+      const next = (currentIndex - 1 + totalSlides) % totalSlides
+      scrollToSlide(next)
+    })
+
+    nextBtn.addEventListener("click", () => {
+      const next = (currentIndex + 1) % totalSlides
+      scrollToSlide(next)
+    })
+
+    swatches.forEach((swatch) => {
+      swatch.addEventListener("click", () => {
+        scrollToSlide(parseInt(swatch.dataset.index, 10))
+      })
+    })
+
+    // Update active swatch while user swipes
+    let raf = null
+    track.addEventListener("scroll", () => {
+      if (raf) cancelAnimationFrame(raf)
+      raf = requestAnimationFrame(() => {
+        const idx = Math.round(track.scrollLeft / slideWidth())
+        if (idx !== currentIndex) {
+          currentIndex = idx
+          setActiveSwatch(idx)
+        }
+      })
+    })
+
+    // Keep position correct on resize/orientation change
+    window.addEventListener("resize", () => {
+      track.scrollTo({ left: currentIndex * slideWidth() })
+    })
+
+    // Init
+    setActiveSwatch(0)
+  })()
+</script>
+<!-- Thumbnail Swatches End-->
