@@ -3853,6 +3853,10 @@ img{
     width: 176px;
   }
 
+  .lg\:tw-w-48 {
+    width: 192px;
+  }
+
   .lg\:tw-w-5 {
     width: 20px;
   }

@@ -520,7 +520,7 @@
       background: linear-gradient(
         to bottom,
         oklch(48.198% 0.09963 250.277),
-        oklch(12% 0 0)
+        oklch(12% 0 0) 50%
       );
     }
 
@@ -528,7 +528,7 @@
       background: linear-gradient(
         to right,
         oklch(48.198% 0.09963 250.277),
-        oklch(12% 0 0)
+        oklch(12% 0 0) 70%
       );
     }
 
@@ -544,11 +544,36 @@
       background: linear-gradient(
         to bottom,
         oklch(48.198% 0.09963 250.277),
-        oklch(12% 0 0),
+        oklch(12% 0 0) 25%,
+        oklch(48.198% 0.09963 250.277) 65%,
+        oklch(12% 0 0) 85%
+      );
+    }
+
+    .desktop-only-gradient-b-grid {
+      background: linear-gradient(
+        to bottom,
         oklch(48.198% 0.09963 250.277),
         oklch(12% 0 0)
       );
     }
+
+    .desktop-only-gradient-r-2 {
+      background: linear-gradient(
+        to right,
+        oklch(48.198% 0.09963 250.277) 30%,
+        oklch(12% 0 0)
+      );
+    }
+
+    .desktop-only-gradient-l-2 {
+      background: linear-gradient(
+        to left,
+        oklch(48.198% 0.09963 250.277) 30%,
+        oklch(12% 0 0)
+      );
+    }
+
     .mobile-invert {
       filter: initial;
     }
@@ -563,7 +588,10 @@
       .desktop-only-gradient-b,
       .desktop-only-gradient-r,
       .desktop-only-gradient-l,
-      .desktop-only-gradient-2 {
+      .desktop-only-gradient-2,
+      .desktop-only-gradient-b-grid,
+      .desktop-only-gradient-r-2,
+      .desktop-only-gradient-l-2 {
         background: initial;
       }
 
@@ -712,7 +740,7 @@
       <div
         class="tw-flex tw-flex-col tw-space-y-4 tw-p-4 lg:tw-w-3/4 lg:tw-items-center lg:tw-p-10"
       >
-        <img src="" alt="" class="mobile-invert tw-w-36 lg:tw-w-48" />
+        <img src="" alt="" class="mobile-invert tw-w-32 lg:tw-w-48" />
         <div class="tw-text-4xl tw-font-semibold tw-uppercase lg:tw-text-white">
           intelligent health detection
         </div>
@@ -1033,7 +1061,7 @@
     </div>
 
     <div
-      class="desktop-only-gradient-b tw-mb-20 tw-overflow-hidden tw-text-center lg:tw-rounded-3xl lg:tw-p-20"
+      class="desktop-only-gradient-b-grid tw-mb-20 tw-overflow-hidden tw-text-center lg:tw-rounded-3xl lg:tw-p-20"
     >
       <div
         class="tw-py-10 tw-text-4xl tw-font-semibold tw-uppercase lg:tw-p-10 lg:tw-text-white"
@@ -1203,7 +1231,7 @@
     </div>
 
     <div
-      class="desktop-only-gradient-b tw-mb-40 tw-overflow-hidden tw-text-center lg:tw-mb-20 lg:tw-rounded-3xl lg:tw-p-20"
+      class="desktop-only-gradient-b-grid tw-mb-40 tw-overflow-hidden tw-text-center lg:tw-mb-20 lg:tw-rounded-3xl lg:tw-p-20"
     >
       <div
         class="tw-py-10 tw-text-4xl tw-font-semibold tw-uppercase lg:tw-p-10 lg:tw-text-white"
@@ -1273,7 +1301,7 @@
     </div>
 
     <div
-      class="section desktop-only-gradient-r tw-mx-auto tw-mb-20 tw-grid tw-gap-y-4 tw-overflow-hidden lg:tw-grid-cols-2 lg:tw-rounded-3xl"
+      class="section desktop-only-gradient-l-2 tw-mx-auto tw-mb-20 tw-grid tw-gap-y-4 tw-overflow-hidden lg:tw-grid-cols-2 lg:tw-rounded-3xl"
     >
       <img
         src=""
@@ -1299,7 +1327,7 @@
     </div>
 
     <div
-      class="section desktop-only-gradient-l tw-mx-auto tw-mb-20 tw-grid tw-gap-y-4 tw-overflow-hidden lg:tw-grid-cols-2 lg:tw-rounded-3xl"
+      class="section desktop-only-gradient-r-2 tw-mx-auto tw-mb-20 tw-grid tw-gap-y-4 tw-overflow-hidden lg:tw-grid-cols-2 lg:tw-rounded-3xl"
     >
       <img src="" alt="" class="lg:tw-p-10 lg:tw-pt-0" />
       <div
@@ -1322,7 +1350,7 @@
     </div>
 
     <div
-      class="section desktop-only-gradient-r tw-mx-auto tw-mb-20 tw-grid tw-gap-y-4 tw-overflow-hidden lg:tw-grid-cols-2 lg:tw-rounded-3xl"
+      class="section desktop-only-gradient-l-2 tw-mx-auto tw-mb-20 tw-grid tw-gap-y-4 tw-overflow-hidden lg:tw-grid-cols-2 lg:tw-rounded-3xl"
     >
       <img src="" alt="" class="lg:tw-order-2" />
       <div
@@ -1439,7 +1467,7 @@
         <img
           src=""
           alt=""
-          class="desktop-only-gradient-r tw-overflow-hidden lg:tw-rounded-3xl"
+          class="desktop-only-gradient-r-2 tw-overflow-hidden lg:tw-rounded-3xl"
         />
         <div class="tw-space-y-4 tw-p-4">
           <div class="tw-text-4xl tw-font-semibold tw-uppercase">

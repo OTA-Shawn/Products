@@ -8,7 +8,8 @@ const BRANDS = [
   "Others",
   "Theramedic",
   "Titan",
-  "utils",
+  "Kanji",
+  "utils",  
 ]
 module.exports = {
   // content: ["./**/*.{html,js}"],
