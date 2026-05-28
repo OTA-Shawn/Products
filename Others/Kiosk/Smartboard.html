@@ -1,0 +1,2083 @@
+<script>
+  const imgs = [
+    {
+      img_order: 1,
+      img_name: "smartboard_write_draw",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/1.smartboard_write_draw.webp",
+    },
+    {
+      img_order: 2,
+      img_name: "smartboard_mirror",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/2.smartboard_mirror.webp",
+    },
+    {
+      img_order: 3,
+      img_name: "smartboard_runs_apps",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/3.smartboard_runs_apps.webp",
+    },
+    {
+      img_order: 4,
+      img_name: "smartboard_display4k",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/4.smartboard_display4k.webp",
+    },
+    {
+      img_order: 5,
+      img_name: "smartboard_multi-user",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/5.smartboard_multi-user.webp",
+    },
+    {
+      img_order: 6,
+      img_name: "smartboard_built-for-zoom",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/6.smartboard_built-for-zoom.webp",
+    },
+    {
+      img_order: 7,
+      img_name: "smartboard_anti-glare",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/7.smartboard_anti-glare.webp",
+    },
+    {
+      img_order: 8,
+      img_name: "smartboard_annotate",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/8.smartboard_annotate.webp",
+    },
+    {
+      img_order: 9,
+      img_name: "smartboard_icon_screen-size",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/9.smartboard_icon_screen-size.webp",
+    },
+    {
+      img_order: 10,
+      img_name: "smartboard_icon_resolution",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/10.smartboard_icon_resolution.webp",
+    },
+    {
+      img_order: 11,
+      img_name: "smartboard_icon_touch",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/11.smartboard_icon_touch.webp",
+    },
+    {
+      img_order: 12,
+      img_name: "smartboard_icon_processor",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/12.smartboard_icon_processor.webp",
+    },
+    {
+      img_order: 13,
+      img_name: "smartboard_icon_storage",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/13.smartboard_icon_storage.webp",
+    },
+    {
+      img_order: 14,
+      img_name: "smartboard_icon_wireless",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/14.smartboard_icon_wireless.webp",
+    },
+    {
+      img_order: 15,
+      img_name: "smartboard_icon_writing",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/15.smartboard_icon_writing.webp",
+    },
+    {
+      img_order: 16,
+      img_name: "smartboard_icon_audio",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/16.smartboard_icon_audio.webp",
+    },
+    {
+      img_order: 17,
+      img_name: "smartboard_icon_screen-cast",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/17.smartboard_icon_screen-cast.webp",
+    },
+    {
+      img_order: 18,
+      img_name: "smartboard_icon_dual-OS",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/18.smartboard_icon_dual-OS.webp",
+    },
+    {
+      img_order: 19,
+      img_name: "smartboard_religious",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/19.smartboard_religious.webp",
+    },
+    {
+      img_order: 20,
+      img_name: "smartboard_icon_religious",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/20.smartboard_icon_religious.webp",
+    },
+    {
+      img_order: 21,
+      img_name: "smartboard_healthcare",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/21.smartboard_healthcare.webp",
+    },
+    {
+      img_order: 22,
+      img_name: "smartboard_icon_healthcare",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/22.smartboard_icon_healthcare.webp",
+    },
+    {
+      img_order: 23,
+      img_name: "smartboard_school",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/23.smartboard_school.webp",
+    },
+    {
+      img_order: 24,
+      img_name: "smartboard_icon_school",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/24.smartboard_icon_school.webp",
+    },
+    {
+      img_order: 25,
+      img_name: "smartboard_corporate-meeting",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/25.smartboard_corporate-meeting.webp",
+    },
+    {
+      img_order: 26,
+      img_name: "smartboard_icon_corporate-m",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/26.smartboard_icon_corporate-m.webp",
+    },
+    {
+      img_order: 27,
+      img_name: "smartboard_corporate-onboard",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/27.smartboard_corporate-onboard.webp",
+    },
+    {
+      img_order: 28,
+      img_name: "smartboard_icon_corporate-o",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/28.smartboard_icon_corporate-o.webp",
+    },
+    {
+      img_order: 29,
+      img_name: "smartboard_govt",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/29.smartboard_govt.webp",
+    },
+    {
+      img_order: 30,
+      img_name: "smartboard_icon_govt",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/30.smartboard_icon_govt.webp",
+    },
+    {
+      img_order: 31,
+      img_name: "smarboard_icon_checkmark",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/31.smarboard_icon_checkmark.webp",
+    },
+    {
+      img_order: 32,
+      img_name: "smartboard_icon_locatoin",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/32.smartboard_icon_locatoin.webp",
+    },
+    {
+      img_order: 33,
+      img_name: "smartboard_icon_domestic",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/33.smartboard_icon_domestic.webp",
+    },
+    {
+      img_order: 34,
+      img_name: "smartboard_icon_direct",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/34.smartboard_icon_direct.webp",
+    },
+    {
+      img_order: 35,
+      img_name: "smartboard_icon_healthcare",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/35.smartboard_icon_healthcare.webp",
+    },
+    {
+      img_order: 36,
+      img_name: "smartboard_icon_corporate",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/36.smartboard_icon_corporate.webp",
+    },
+    {
+      img_order: 37,
+      img_name: "smartboard_icon_best_value",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/37.smartboard_icon_best_value.webp",
+    },
+    {
+      img_order: 38,
+      img_name: "smartboard_icon_shopping",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/38.smartboard_icon_shopping.webp",
+    },
+    {
+      img_order: 39,
+      img_name: "smartboard_icon_demo",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0566/7572/9602/files/39.smartboard_icon_demo.webp",
+    },
+  ]
+
+  const cart_variant_id = {
+    website: {
+      ledscopic: {
+        base_url: "https://ledscopic.com/cart/add?id=",
+        option1: 45924423827650,
+        option2: 45924423860418,
+        option3: 45924423893186,
+      },
+      ledkioskdisplay: {
+        base_url: "https://ledkioskdisplay.com/cart/add?id=",
+        option1: 51497098576181,
+        option2: 51497098608949,
+        option3: 51497098641717,
+      },
+    },
+  }
+</script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LEDscopic Smart Board – Interactive Display</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    .pp-root {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    :root {
+      --pp-teal: #0eb39e;
+      --pp-teal-light: #e6f9f7;
+      --pp-teal-dark: #0a8f7d;
+      --pp-navy: #1a2340;
+      --pp-text: #1a2340;
+      --pp-text-muted: #6b7694;
+      --pp-text-light: #9ba5c0;
+      --pp-bg: #ffffff;
+      --pp-bg-alt: #f7f8fc;
+      --pp-bg-dark: #0f1b35;
+      --pp-border: #e8eaf2;
+      --pp-gold: #f5a623;
+      --pp-red: #ef4444;
+      --pp-green: #22c55e;
+    }
+    .pp-root {
+      font-family: "Inter", sans-serif;
+      color: var(--pp-text);
+      background: #fff;
+      line-height: 1.6;
+    }
+    .pp-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ── PROMO BANNER ── */
+    .pp-promo-bar {
+      background: var(--pp-teal);
+      color: #fff;
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+    }
+    .pp-promo-bar .pp-strong {
+      font-weight: 700;
+    }
+    .pp-promo-bar .pp-promo-link {
+      display: inline-block;
+      margin-left: 12px;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 2px 10px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .pp-promo-bar .pp-promo-link:hover {
+      background: rgba(255, 255, 255, 0.35);
+    }
+
+    /* ── NAV ── */
+    .pp-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--pp-border);
+      padding: 0 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .pp-nav-logo {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--pp-navy);
+      letter-spacing: -0.02em;
+    }
+    .pp-nav-logo .pp-logo-accent {
+      color: var(--pp-teal);
+    }
+    .pp-nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+    .pp-nav-links .pp-link {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--pp-text-muted);
+      transition: color 0.2s;
+    }
+    .pp-nav-links .pp-link:hover {
+      color: var(--pp-text);
+    }
+    .pp-nav-actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .pp-btn-nav-ghost {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--pp-text-muted);
+      padding: 8px 16px;
+      border: 1.5px solid var(--pp-border);
+      border-radius: 8px;
+      background: transparent;
+      cursor: pointer;
+      transition:
+        border-color 0.2s,
+        color 0.2s;
+      font-family: "Inter", sans-serif;
+    }
+    .pp-btn-nav-ghost:hover {
+      border-color: var(--pp-teal);
+      color: var(--pp-teal);
+    }
+    .pp-btn-nav-primary {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #fff;
+      padding: 8px 18px;
+      border: none;
+      border-radius: 8px;
+      background: var(--pp-teal);
+      cursor: pointer;
+      transition: background 0.2s;
+      font-family: "Inter", sans-serif;
+    }
+    .pp-btn-nav-primary:hover {
+      background: var(--pp-teal-dark);
+    }
+
+    /* ── HERO ── */
+    .pp-hero {
+      background: #fff;
+      padding: 80px 48px 0;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .pp-hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--pp-teal-light);
+      color: var(--pp-teal-dark);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      letter-spacing: 0.03em;
+    }
+    .pp-hero .pp-title-h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      color: var(--pp-navy);
+      margin-bottom: 16px;
+    }
+    .pp-hero .pp-title-h1 .pp-em {
+      color: var(--pp-teal);
+      font-style: normal;
+    }
+    .pp-hero-desc {
+      font-size: 1.05rem;
+      color: var(--pp-text-muted);
+      font-weight: 400;
+      margin-bottom: 28px;
+      line-height: 1.7;
+      max-width: 480px;
+    }
+    .pp-hero-pricing {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+    .pp-hero-pricing .pp-price-from {
+      font-size: 0.85rem;
+      color: var(--pp-text-muted);
+      font-weight: 500;
+    }
+    .pp-hero-pricing .pp-price-val {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--pp-navy);
+      letter-spacing: -0.03em;
+    }
+    .pp-hero-pricing .pp-price-old {
+      font-size: 1rem;
+      color: var(--pp-text-light);
+      text-decoration: line-through;
+    }
+    .pp-hero-pricing .pp-price-save {
+      font-size: 0.78rem;
+      font-weight: 700;
+      background: #fef2f2;
+      color: var(--pp-red);
+      padding: 3px 8px;
+      border-radius: 5px;
+    }
+    .pp-hero-ctas {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+    .pp-btn-primary {
+      background: var(--pp-teal);
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 14px 28px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      font-family: "Inter", sans-serif;
+      transition:
+        background 0.2s,
+        transform 0.15s;
+    }
+    .pp-btn-primary:hover {
+      background: var(--pp-teal-dark);
+      transform: translateY(-1px);
+    }
+    .pp-btn-ghost {
+      background: transparent;
+      color: var(--pp-text);
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 14px 28px;
+      border-radius: 10px;
+      border: 1.5px solid var(--pp-border);
+      cursor: pointer;
+      font-family: "Inter", sans-serif;
+      transition: border-color 0.2s;
+    }
+    .pp-btn-ghost:hover {
+      border-color: var(--pp-teal);
+      color: var(--pp-teal);
+    }
+    .pp-hero-meta {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .pp-hero-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      color: var(--pp-text-muted);
+      font-weight: 500;
+    }
+    .pp-hero-meta-item .pp-dot {
+      color: var(--pp-teal);
+      font-size: 1rem;
+    }
+
+    .pp-hero-visual {
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+    .pp-hero-img-wrap {
+      background: linear-gradient(160deg, #f0faf9 0%, #e8f4ff 100%);
+      border-radius: 24px 24px 0 0;
+      padding: 40px 30px 0;
+      width: 100%;
+      min-height: 360px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .pp-hero-img-wrap .pp-image {
+      width: 100%;
+      max-width: 460px;
+      display: block;
+      filter: drop-shadow(0 16px 48px rgba(14, 179, 158, 0.18));
+    }
+    .pp-badge-float {
+      position: absolute;
+      top: 24px;
+      right: 16px;
+      background: #fff;
+      border: 1px solid var(--pp-border);
+      border-radius: 12px;
+      padding: 12px 14px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--pp-navy);
+      text-align: center;
+      line-height: 1.4;
+    }
+    .pp-badge-float .pp-bf-icon {
+      font-size: 1.3rem;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    /* ── TRUST STRIP ── */
+    .pp-trust-strip {
+      border-top: 1px solid var(--pp-border);
+      border-bottom: 1px solid var(--pp-border);
+      padding: 20px 48px;
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap;
+      margin-top: 60px;
+    }
+    .pp-trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--pp-text-muted);
+    }
+    .pp-trust-item .pp-ti-icon {
+      font-size: 1.1rem;
+    }
+    .pp-trust-item .pp-strong {
+      color: var(--pp-navy);
+    }
+
+    /* ── SECTIONS ── */
+    .pp-section {
+      padding: 80px 48px;
+    }
+    .pp-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .pp-section-label {
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--pp-teal);
+      margin-bottom: 12px;
+    }
+    .pp-section-title {
+      font-size: 2.2rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      color: var(--pp-navy);
+      margin-bottom: 12px;
+    }
+    .pp-section-sub {
+      font-size: 1.05rem;
+      color: var(--pp-text-muted);
+      max-width: 560px;
+      line-height: 1.7;
+      margin-bottom: 48px;
+    }
+    .pp-section-sub.pp-wide {
+      max-width: none;
+    }
+
+    /* ── UTILITY CARDS ── */
+    .pp-utility-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1px;
+      background: var(--pp-border);
+      border: 1px solid var(--pp-border);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .pp-utility-card {
+      background: #fff;
+      transition: background 0.2s;
+    }
+    .pp-utility-card:hover {
+      background: #fafbff;
+    }
+    .pp-uc-icon {
+      width: 44px;
+      height: 44px;
+      background: var(--pp-teal-light);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      margin-bottom: 16px;
+    }
+    .pp-utility-card .pp-title-h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--pp-navy);
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+    .pp-utility-card .pp-text-p {
+      font-size: 0.875rem;
+      color: var(--pp-text-muted);
+      line-height: 1.65;
+    }
+
+    /* ── WHO IT'S FOR ── */
+    .pp-audience-tabs {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 32px;
+    }
+    .pp-a-tab {
+      padding: 8px 18px;
+      border: 1.5px solid var(--pp-border);
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      background: #fff;
+      color: var(--pp-text-muted);
+      transition: all 0.2s;
+      font-family: "Inter", sans-serif;
+    }
+    .pp-a-tab.pp-active,
+    .pp-a-tab:hover {
+      border-color: var(--pp-teal);
+      color: var(--pp-teal);
+      background: var(--pp-teal-light);
+    }
+    .pp-audience-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .pp-audience-card {
+      background: #fff;
+      border: 1.5px solid var(--pp-border);
+      border-radius: 16px;
+      transition:
+        border-color 0.2s,
+        box-shadow 0.2s;
+    }
+    .pp-audience-card:hover {
+      border-color: var(--pp-teal);
+      box-shadow: 0 8px 32px rgba(14, 179, 158, 0.1);
+    }
+    .pp-ac-icon {
+      font-size: 2rem;
+      margin-bottom: 14px;
+    }
+    .pp-audience-card .pp-title-h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--pp-navy);
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+    .pp-audience-card .pp-text-p {
+      font-size: 0.85rem;
+      color: var(--pp-text-muted);
+      margin-bottom: 14px;
+      line-height: 1.6;
+    }
+    .pp-use-chips {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .pp-use-chip {
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--pp-teal-dark);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .pp-use-chip::before {
+      content: "→";
+      font-size: 0.75rem;
+    }
+
+    /* ── FEATURES ICON ROW ── */
+    .pp-features-row {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+    }
+    .pp-feat-card {
+      background: #fff;
+      border: 1.5px solid var(--pp-border);
+      border-radius: 14px;
+      padding: 24px 16px;
+      text-align: center;
+      transition:
+        border-color 0.2s,
+        box-shadow 0.2s;
+    }
+    .pp-feat-card:hover {
+      border-color: var(--pp-teal);
+      box-shadow: 0 6px 20px rgba(14, 179, 158, 0.1);
+    }
+    .pp-feat-card .pp-fc-icon {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+    .pp-feat-card .pp-fc-label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--pp-text-muted);
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .pp-feat-card .pp-fc-val {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--pp-navy);
+      letter-spacing: -0.01em;
+    }
+
+    /* ── COMPARISON TABLE ── */
+    .pp-compare-wrap {
+      overflow-x: auto;
+      border-radius: 16px;
+      border: 1px solid var(--pp-border);
+    }
+    .pp-compare-table {
+      border-collapse: collapse;
+      font-size: 0.875rem;
+      /* background: #fff; */
+      width: 100%;
+    }
+    .pp-compare-head .pp-compare-row {
+      background: var(--pp-bg-dark);
+    }
+    .pp-compare-head-cell {
+      min-width: 125px;
+      padding: 18px 22px;
+      text-align: left;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.6);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .pp-compare-head-cell.pp-ours {
+      min-width: 225px;
+      color: var(--pp-teal);
+      background: rgba(14, 179, 158, 0.15);
+    }
+    .pp-compare-body .pp-compare-row {
+      border-bottom: 1px solid var(--pp-border);
+    }
+    .pp-compare-body .pp-compare-row:last-child {
+      border-bottom: none;
+    }
+    .pp-compare-body .pp-compare-row:hover {
+      background: var(--pp-bg-alt);
+    }
+    .pp-compare-body-cell {
+      padding: 16px 22px;
+      color: var(--pp-text-muted);
+      vertical-align: middle;
+    }
+    .pp-compare-body-cell.pp-first-col {
+      font-weight: 600;
+      color: var(--pp-navy);
+    }
+    .pp-compare-body-cell.pp-ours {
+      color: var(--pp-navy);
+      font-weight: 600;
+      background: rgba(14, 179, 158, 0.04);
+    }
+    .pp-check {
+      color: var(--pp-teal);
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+    .pp-cross {
+      color: #d1d5e0;
+      font-size: 1rem;
+    }
+    .pp-partial {
+      color: var(--pp-gold);
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    .pp-pill-our {
+      display: inline-block;
+      background: var(--pp-teal-light);
+      color: var(--pp-teal-dark);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 5px;
+      margin-left: 4px;
+    }
+
+    /* ── MODEL CARDS ── */
+    .pp-models-section {
+      border: 1.5px solid var(--pp-border);
+      border-radius: 20px;
+      transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+    }
+    .pp-models-section:hover {
+      border-color: var(--pp-teal);
+      box-shadow: 0 10px 28px rgba(14, 179, 158, 0.1);
+    }
+    .pp-model-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .pp-model-card {
+      border: 1.5px solid var(--pp-border);
+      border-radius: 16px;
+      padding: 28px 24px;
+      background: #fff;
+      transition:
+        border-color 0.2s,
+        box-shadow 0.2s;
+      cursor: pointer;
+    }
+    .pp-model-card:hover,
+    .pp-model-card.pp-active {
+      border-color: var(--pp-teal);
+      box-shadow: 0 8px 32px rgba(14, 179, 158, 0.12);
+    }
+    .pp-model-card.pp-active .pp-mc-badge {
+      background: var(--pp-teal);
+      color: #fff;
+    }
+    .pp-mc-badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 3px 9px;
+      border-radius: 5px;
+      background: var(--pp-teal-light);
+      color: var(--pp-teal-dark);
+      margin-bottom: 14px;
+      letter-spacing: 0.04em;
+    }
+    .pp-mc-size {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--pp-navy);
+      letter-spacing: -0.04em;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .pp-mc-model {
+      font-size: 0.8rem;
+      color: var(--pp-text-muted);
+      font-weight: 500;
+      margin-bottom: 14px;
+    }
+    .pp-mc-price {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--pp-navy);
+      letter-spacing: -0.02em;
+    }
+    .pp-mc-was {
+      font-size: 0.85rem;
+      color: var(--pp-text-light);
+      text-decoration: line-through;
+      margin-left: 6px;
+    }
+    .pp-mc-desc {
+      font-size: 0.82rem;
+      color: var(--pp-text-muted);
+      margin-top: 10px;
+      line-height: 1.5;
+    }
+
+    /* ── SPECS ── */
+    .pp-specs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+    .pp-spec-group .pp-title-h4 {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--pp-teal);
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1.5px solid var(--pp-teal-light);
+    }
+    .pp-spec-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--pp-bg-alt);
+    }
+    .pp-spec-label {
+      font-size: 0.85rem;
+      color: var(--pp-text-muted);
+    }
+    .pp-spec-val {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--pp-navy);
+      text-align: right;
+    }
+
+    /* ── DARK SECTION ── */
+    .pp-dark-section {
+      background: var(--pp-bg-dark);
+      padding: 80px 48px;
+    }
+    .pp-dark-section .pp-section-title {
+      color: #fff;
+    }
+    .pp-dark-section .pp-section-sub {
+      color: rgba(255, 255, 255, 0.55);
+    }
+    .pp-dark-section .pp-section-label {
+      color: var(--pp-teal);
+    }
+
+    .pp-use-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .pp-use-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 24px 20px;
+      transition: background 0.2s;
+    }
+    .pp-use-card:hover {
+      background: rgba(255, 255, 255, 0.08);
+    }
+    .pp-uc2-icon {
+      font-size: 1.8rem;
+      margin-bottom: 12px;
+    }
+    .pp-use-card .pp-title-h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+    .pp-use-card .pp-text-p {
+      font-size: 0.82rem;
+      color: rgba(255, 255, 255, 0.5);
+      line-height: 1.6;
+    }
+
+    /* ── TESTIMONIAL ── */
+    .pp-testimonial-strip {
+      background: var(--pp-teal-light);
+      border-top: 1px solid #c8ede9;
+      border-bottom: 1px solid #c8ede9;
+      padding: 40px 48px;
+      text-align: center;
+    }
+    .pp-testimonial-strip .pp-quote {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: var(--pp-navy);
+      max-width: 700px;
+      margin: 0 auto 14px;
+      line-height: 1.6;
+      font-style: italic;
+    }
+    .pp-testimonial-strip .pp-cite {
+      font-size: 0.85rem;
+      color: var(--pp-teal-dark);
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    /* ── CTA BLOCK ── */
+    .pp-cta-block {
+      background: linear-gradient(135deg, #0eb39e 0%, #0a8f7d 100%);
+      padding: 80px 48px;
+      text-align: center;
+    }
+    .pp-cta-block .pp-title-h2 {
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -0.03em;
+      margin-bottom: 12px;
+    }
+    .pp-cta-block .pp-text-p {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 1rem;
+      margin-bottom: 32px;
+    }
+    .pp-cta-btns {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .pp-btn-white {
+      background: #fff;
+      color: var(--pp-teal-dark);
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 14px 32px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      font-family: "Inter", sans-serif;
+      transition:
+        opacity 0.2s,
+        transform 0.15s;
+    }
+    .pp-btn-white:hover {
+      opacity: 0.92;
+      transform: translateY(-1px);
+    }
+    .pp-btn-outline-white {
+      background: transparent;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 14px 32px;
+      border-radius: 10px;
+      border: 2px solid rgba(255, 255, 255, 0.4);
+      cursor: pointer;
+      font-family: "Inter", sans-serif;
+      transition: border-color 0.2s;
+    }
+    .pp-btn-outline-white:hover {
+      border-color: #fff;
+    }
+    .pp-cta-footer-note {
+      margin-top: 24px;
+      font-size: 0.82rem;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    /* ── FOOTER ── */
+    .pp-page-footer {
+      background: var(--pp-bg-dark);
+      padding: 20px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .pp-page-footer .pp-footer-logo {
+      font-size: 1rem;
+      font-weight: 800;
+      color: #fff;
+    }
+    .pp-page-footer .pp-footer-logo .pp-logo-accent {
+      color: var(--pp-teal);
+    }
+    .pp-page-footer .pp-text-p {
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.35);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 960px) {
+      .pp-hero {
+        grid-template-columns: 1fr;
+        padding: 48px 24px 0;
+      }
+      .pp-hero-visual {
+        margin-top: 0;
+      }
+      .pp-utility-grid,
+      .pp-audience-grid,
+      .pp-use-grid,
+      .pp-model-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .pp-features-row {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .pp-specs-grid {
+        grid-template-columns: 1fr;
+      }
+      .pp-section,
+      .pp-dark-section {
+        padding: 60px 24px;
+      }
+      .pp-trust-strip {
+        padding: 20px 24px;
+        gap: 24px;
+      }
+      .pp-nav {
+        padding: 0 24px;
+      }
+    }
+    @media (max-width: 600px) {
+      .pp-hero .pp-title-h1 {
+        font-size: 2rem;
+      }
+      .pp-utility-grid,
+      .pp-audience-grid,
+      .pp-features-row,
+      .pp-use-grid,
+      .pp-model-grid {
+        grid-template-columns: 1fr;
+      }
+      .pp-nav .pp-nav-links {
+        display: none;
+      }
+      .pp-trust-strip {
+        gap: 16px;
+      }
+    }
+    .pp-text-block {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="pp-root sections">
+    <!-- WHAT DOES IT DO -->
+    <div class="pp-section" style="background: var(--pp-bg)">
+      <div class="pp-inner">
+        <div class="pp-section-label">Product Utility</div>
+        <div class="pp-section-title">What does a Smart Board actually do?</div>
+        <div class="pp-section-sub">
+          Everything explained in plain language — no tech jargon required.
+        </div>
+        <div class="pp-utility-grid">
+          <div class="pp-utility-card">
+            <img src="" alt="" style="width: 100%" />
+            <div class="pp-text-block">
+              <div class="pp-title-h3">Write & Draw Interactively</div>
+              <div class="pp-text-p">
+                Use your finger or stylus to write, sketch, annotate, and erase
+                directly on screen — like a whiteboard, but everything saves
+                automatically. No markers, no mess.
+              </div>
+            </div>
+          </div>
+          <div class="pp-utility-card">
+            <img src="" alt="" style="width: 100%" />
+            <div class="pp-text-block">
+              <div class="pp-title-h3">Mirror Any Device Wirelessly</div>
+              <div class="pp-text-p">
+                Cast your laptop, phone, or tablet to the board in seconds.
+                Share a presentation, video, or website with everyone in the
+                room — no cables needed.
+              </div>
+            </div>
+          </div>
+          <div class="pp-utility-card">
+            <img src="" alt="" style="width: 100%" />
+            <div class="pp-text-block">
+              <div class="pp-title-h3">Runs the Apps Schools Already Love</div>
+              <div class="pp-text-p">
+                Install and run the most popular classroom tools directly on the
+                board — no extra devices needed. Everything your teachers and
+                students already know, now on a giant interactive screen.
+              </div>
+            </div>
+          </div>
+          <div class="pp-utility-card">
+            <img src="" alt="" style="width: 100%" />
+            <div class="pp-text-block">
+              <div class="pp-title-h3">Display 4K Content Vividly</div>
+              <div class="pp-text-p">
+                Stream videos, display Scripture, show presentations, or run
+                digital signage in stunning 4K clarity — bright and readable
+                from across any room.
+              </div>
+            </div>
+          </div>
+          <div class="pp-utility-card">
+            <img src="" alt="" style="width: 100%" />
+            <div class="pp-text-block">
+              <div class="pp-title-h3">Multi-User Touch Collaboration</div>
+              <div class="pp-text-p">
+                Up to 20 simultaneous touch points — multiple people interact at
+                once. Perfect for group activities, team brainstorming, and
+                interactive worship.
+              </div>
+            </div>
+          </div>
+          <div class="pp-utility-card">
+            <img src="" alt="" style="width: 100%" />
+            <div class="pp-text-block">
+              <div class="pp-title-h3">
+                Built for Zoom, Teams & Video Conferencing
+              </div>
+              <div class="pp-text-p">
+                Host seamless hybrid meetings directly from the board. With a
+                built-in array microphone, dual 15W speakers, and native
+                compatibility with Zoom, Microsoft Teams, and Google Meet — your
+                team stays connected without extra equipment.
+              </div>
+            </div>
+          </div>
+          <div class="pp-utility-card">
+            <img src="" alt="" style="width: 100%" />
+            <div class="pp-text-block">
+              <div class="pp-title-h3">
+                Anti-Glare Display for Any Lighting Condition
+              </div>
+              <div class="pp-text-p">
+                Premium tempered anti-glare glass with a matte finish coating
+                eliminates reflections and reduces eye strain — even in brightly
+                lit classrooms or rooms with direct sunlight. A 178° wide
+                viewing angle and 400-nit brightness ensure everyone in the room
+                sees a crisp, clear image.
+              </div>
+            </div>
+          </div>
+          <div class="pp-utility-card">
+            <img src="" alt="" style="width: 100%" />
+            <div class="pp-text-block">
+              <div class="pp-title-h3">Annotate Over Anything in Real Time</div>
+              <div class="pp-text-p">
+                Draw, highlight, and write directly over any app, website,
+                video, or live document on screen — without ever leaving what
+                you're viewing. Circle key data in a spreadsheet, underline
+                important lines, mark up a patient diagram, or highlight code
+                during a training session.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURES AT A GLANCE -->
+    <div class="pp-section" style="background: var(--pp-bg-alt)">
+      <div class="pp-inner">
+        <div class="pp-section-label">Specifications</div>
+        <div class="pp-section-title">Key features at a glance</div>
+        <div class="pp-section-sub">
+          Powerful hardware engineered into one elegant display.
+        </div>
+        <div class="pp-features-row">
+          <div class="pp-feat-card">
+            <img src="" alt="" style="width: 60px; margin-bottom: 1rem" />
+            <div class="pp-fc-label">Screen Size</div>
+            <div class="pp-fc-val">65" / 75" / 86"</div>
+          </div>
+          <div class="pp-feat-card">
+            <img src="" alt="" style="width: 60px; margin-bottom: 1rem" />
+            <div class="pp-fc-label">Resolution</div>
+            <div class="pp-fc-val">4K UHD</div>
+          </div>
+          <div class="pp-feat-card">
+            <img src="" alt="" style="width: 60px; margin-bottom: 1rem" />
+            <div class="pp-fc-label">Touch Points</div>
+            <div class="pp-fc-val">20-Point Multi-Touch</div>
+          </div>
+          <div class="pp-feat-card">
+            <img src="" alt="" style="width: 60px; margin-bottom: 1rem" />
+            <div class="pp-fc-label">Processor</div>
+            <div class="pp-fc-val">8-Core Android</div>
+          </div>
+          <div class="pp-feat-card">
+            <img src="" alt="" style="width: 60px; margin-bottom: 1rem" />
+            <div class="pp-fc-label">Storage</div>
+            <div class="pp-fc-val">256 GB SSD</div>
+          </div>
+          <div class="pp-feat-card">
+            <img src="" alt="" style="width: 60px; margin-bottom: 1rem" />
+            <div class="pp-fc-label">Wireless</div>
+            <div class="pp-fc-val">WiFi 5 + BT 5.0</div>
+          </div>
+          <div class="pp-feat-card">
+            <img src="" alt="" style="width: 60px; margin-bottom: 1rem" />
+            <div class="pp-fc-label">Writing</div>
+            <div class="pp-fc-val">Finger + Stylus</div>
+          </div>
+          <div class="pp-feat-card">
+            <img src="" alt="" style="width: 60px; margin-bottom: 1rem" />
+            <div class="pp-fc-label">Audio</div>
+            <div class="pp-fc-val">2×15W Built-In</div>
+          </div>
+          <div class="pp-feat-card">
+            <img src="" alt="" style="width: 60px; margin-bottom: 1rem" />
+            <div class="pp-fc-label">Screen Cast</div>
+            <div class="pp-fc-val">iOS / Android / PC</div>
+          </div>
+          <div class="pp-feat-card">
+            <img src="" alt="" style="width: 60px; margin-bottom: 1rem" />
+            <div class="pp-fc-label">OS Dual</div>
+            <div class="pp-fc-val">Android + Windows</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHO IT'S FOR -->
+    <div class="pp-section pp-models-section" style="background: #fff">
+      <div class="pp-inner">
+        <div class="pp-section-label">UTILITY</div>
+        <div class="pp-section-title">Designed for every environment</div>
+        <div class="pp-section-sub">
+          One board, built for the spaces that matter most.
+        </div>
+        <div class="pp-audience-grid">
+          <div class="pp-audience-card">
+            <img src="" alt="" style="width: 100%" />
+            <div class="pp-text-block">
+              <img src="" alt="" style="width: 40px; margin-bottom: 1rem" />
+              <div class="pp-title-h3">Religious Organizations</div>
+              <div class="pp-text-p">
+                Display worship lyrics, Scripture, announcements, and sermon
+                visuals all from one display your entire congregation sees
+                clearly.
+              </div>
+              <div class="pp-use-chips">
+                <span class="pp-use-chip">Worship lyrics & Scripture</span>
+                <span class="pp-use-chip">Children's ministry activities</span>
+                <span class="pp-use-chip">Event & bulletin announcements</span>
+                <span class="pp-use-chip">Live streaming integration</span>
+              </div>
+            </div>
+          </div>
+          <div class="pp-audience-card">
+            <img src="" alt="" style="width: 100%" />
+            <div class="pp-text-block">
+              <img src="" alt="" style="width: 40px; margin-bottom: 1rem" />
+              <div class="pp-title-h3">Healthcare & Medical Facilities</div>
+              <div class="pp-text-p">
+                Equip hospitals, clinics, and medical schools with a display
+                that enhances patient education, powers staff training, and
+                supports telemedicine consultations.
+              </div>
+              <div class="pp-use-chips">
+                <span class="pp-use-chip"
+                  >Patient education & procedure visuals</span
+                >
+                <span class="pp-use-chip"
+                  >Medical staff training & simulations</span
+                >
+                <span class="pp-use-chip"
+                  >Telemedicine & remote consultations</span
+                >
+                <span class="pp-use-chip">Meetings & case reviews</span>
+              </div>
+            </div>
+          </div>
+          <div class="pp-audience-card">
+            <img src="" alt="" style="width: 100%" />
+            <div class="pp-text-block">
+              <img src="" alt="" style="width: 40px; margin-bottom: 1rem" />
+              <div class="pp-title-h3">Schools & Classrooms</div>
+              <div class="pp-text-p">
+                Replace the old projector with a vivid, touch-enabled display
+                that makes every lesson more interactive and memorable.
+              </div>
+              <div class="pp-use-chips">
+                <span class="pp-use-chip">Lesson delivery & annotation</span>
+                <span class="pp-use-chip">Student collaboration tools</span>
+                <span class="pp-use-chip">Video & multimedia lessons</span>
+                <span class="pp-use-chip">Digital whiteboarding</span>
+              </div>
+            </div>
+          </div>
+          <div class="pp-audience-card">
+            <img src="" alt="" style="width: 100%" />
+            <div class="pp-text-block">
+              <img src="" alt="" style="width: 40px; margin-bottom: 1rem" />
+              <div class="pp-title-h3">Corporate & Meeting Rooms</div>
+              <div class="pp-text-p">
+                Run more productive meetings connecting to Zoom, Teams, and
+                Google Meet — with everyone contributing in real time.
+              </div>
+              <div class="pp-use-chips">
+                <span class="pp-use-chip">Video conferencing hub</span>
+                <span class="pp-use-chip">Brainstorming & ideation</span>
+                <span class="pp-use-chip">Training & onboarding</span>
+                <span class="pp-use-chip">Data & dashboard display</span>
+              </div>
+            </div>
+          </div>
+          <div class="pp-audience-card">
+            <img src="" alt="" style="width: 100%" />
+            <div class="pp-text-block">
+              <img src="" alt="" style="width: 40px; margin-bottom: 1rem" />
+              <div class="pp-title-h3">Corporate Training & Onboarding</div>
+              <div class="pp-text-p">
+                Give your HR, L&D, and operations teams a powerful tool to
+                onboard new hires, deliver compliance training, and run dynamic
+                all-hands sessions.
+              </div>
+              <div class="pp-use-chips">
+                <span class="pp-use-chip">Compliance & safety training</span>
+                <span class="pp-use-chip"
+                  >Interactive process walkthroughs</span
+                >
+                <span class="pp-use-chip">Hybrid team all-hands meetings</span>
+                <span class="pp-use-chip">Sales enablement & coaching</span>
+              </div>
+            </div>
+          </div>
+          <div class="pp-audience-card">
+            <img src="" alt="" style="width: 100%" />
+            <div class="pp-text-block">
+              <img src="" alt="" style="width: 40px; margin-bottom: 1rem" />
+              <div class="pp-title-h3">Government & Public Spaces</div>
+              <div class="pp-text-p">
+                Deliver clear wayfinding, critical communications, and public
+                information on a display always on and remotely manageable.
+              </div>
+              <div class="pp-use-chips">
+                <span class="pp-use-chip">Wayfinding & directories</span>
+                <span class="pp-use-chip">Emergency alert display</span>
+                <span class="pp-use-chip">Workforce communications</span>
+                <span class="pp-use-chip">Public kiosk touchpoints</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMPARISON TABLE -->
+    <div class="pp-section" style="background: var(--pp-bg-alt)">
+      <div class="pp-inner">
+        <div class="pp-section-label">Comparison</div>
+        <div class="pp-section-title">How does LEDscopic compare?</div>
+        <div class="pp-section-sub">
+          See how we stack up against the top smart board brands side by side.
+        </div>
+        <div class="pp-compare-wrap pp-compare-table">
+          <table class="pp-compare pp-table pp-compare-table">
+            <thead class="pp-compare-head pp-compare-table">
+              <tr class="pp-compare-row pp-compare-table">
+                <th
+                  style="width: 200px"
+                  class="pp-compare-head-cell pp-compare-table"
+                >
+                  Feature
+                </th>
+                <th class="pp-ours pp-compare-head-cell pp-compare-table">
+                  ✅ LEDscopic Smart Board
+                </th>
+                <th class="pp-compare-head-cell pp-compare-table">
+                  SMART Board MX
+                </th>
+                <th class="pp-compare-head-cell pp-compare-table">
+                  Vibe Board S1
+                </th>
+                <th class="pp-compare-head-cell pp-compare-table">
+                  BenQ Board
+                </th>
+              </tr>
+            </thead>
+            <tbody class="pp-compare-body pp-compare-table">
+              <tr class="pp-compare-row pp-compare-table">
+                <td class="pp-compare-body-cell pp-first-col pp-compare-table">
+                  Starting Price
+                </td>
+                <td class="pp-ours pp-compare-body-cell pp-compare-table">
+                  <strong class="pp-strong">$2,699</strong>
+                  <span class="pp-pill-our">Best Value</span>
+                </td>
+                <td class="pp-compare-body-cell pp-compare-table">~$3,500+</td>
+                <td class="pp-compare-body-cell pp-compare-table">~$2,999</td>
+                <td class="pp-compare-body-cell pp-compare-table">~$3,200+</td>
+              </tr>
+              <tr class="pp-compare-row pp-compare-table">
+                <td class="pp-compare-body-cell pp-first-col pp-compare-table">
+                  4K UHD Display
+                </td>
+                <td class="pp-ours pp-compare-body-cell pp-compare-table">
+                  <span class="pp-check">✔</span>
+                </td>
+                <td class="pp-compare-body-cell pp-compare-table">
+                  <span class="pp-check">✔</span>
+                </td>
+                <td class="pp-compare-body-cell pp-compare-table">
+                  <span class="pp-check">✔</span>
+                </td>
+                <td class="pp-compare-body-cell pp-compare-table">
+                  <span class="pp-check">✔</span>
+                </td>
+              </tr>
+              <tr class="pp-compare-row pp-compare-table">
+                <td class="pp-compare-body-cell pp-first-col pp-compare-table">
+                  20-Point Multi-Touch
+                </td>
+                <td class="pp-ours pp-compare-body-cell pp-compare-table">
+                  <span class="pp-check">✔</span>
+                </td>
+                <td class="pp-compare-body-cell pp-compare-table">
+                  <span class="pp-check">✔</span>
+                </td>
+                <td class="pp-compare-body-cell pp-compare-table">
+                  <span class="pp-check">✔</span>
+                </td>
+                <td class="pp-compare-body-cell pp-compare-table">
+                  <span class="pp-check">✔</span>
+                </td>
+              </tr>
+              <tr class="pp-compare-row pp-compare-table">
+                <td class="pp-compare-body-cell pp-first-col pp-compare-table">
+                  Built-in Android OS
+                </td>
+                <td class="pp-ours pp-compare-body-cell pp-compare-table">
+                  <span class="pp-check">✔</span>
+                </td>
+                <td class="pp-compare-body-cell pp-compare-table">
+                  <span class="pp-partial">⚠ Add-on cost</span>
+                </td>
+                <td class="pp-compare-body-cell pp-compare-table">
+                  <span class="pp-check">✔</span>
+                </td>
+                <td class="pp-compare-body-cell pp-compare-table">
+                  <span class="pp-check">✔</span>
+                </td>
+              </tr>
+              <tr class="pp-compare-row pp-compare-table">
+                <td class="pp-compare-body-cell pp-first-col pp-compare-table">
+                  Windows OPS Module
+                </td>
+                <td class="pp-ours pp-compare-body-cell pp-compare-table">
+                  <span class="pp-check">✔ Included</span>
+                </td>
+                <td class="pp-compare-body-cell pp-compare-table">
+                  <span class="pp-partial">⚠ Extra cost</span>
+                </td>
+                <td class="pp-compare-body-cell pp-compare-table">
+                  <span class="pp-cross">✗ Not available</span>
+                </td>
+                <td class="pp-compare-body-cell pp-compare-table">
+                  <span class="pp-partial">⚠ Extra cost</span>
+                </td>
+              </tr>
+              <tr class="pp-compare-row pp-compare-table">
+                <td class="pp-compare-body-cell pp-first-col pp-compare-table">
+                  Available Sizes
+                </td>
+                <td class="pp-ours pp-compare-body-cell pp-compare-table">
+                  65" / 75" / 86"
+                </td>
+                <td class="pp-compare-body-cell pp-compare-table">
+                  65" / 75" / 86"
+                </td>
+                <td class="pp-compare-body-cell pp-compare-table">
+                  55" / 75" only
+                </td>
+                <td class="pp-compare-body-cell pp-compare-table">
+                  65" / 75" / 86"
+                </td>
+              </tr>
+              <tr class="pp-compare-row pp-compare-table">
+                <td class="pp-compare-body-cell pp-first-col pp-compare-table">
+                  Local DFW Showroom
+                </td>
+                <td class="pp-ours pp-compare-body-cell pp-compare-table">
+                  <span class="pp-check">✔</span> Carrollton, TX
+                </td>
+                <td class="pp-compare-body-cell pp-compare-table">
+                  <span class="pp-cross">✗</span>
+                </td>
+                <td class="pp-compare-body-cell pp-compare-table">
+                  <span class="pp-cross">✗</span>
+                </td>
+                <td class="pp-compare-body-cell pp-compare-table">
+                  <span class="pp-cross">✗</span>
+                </td>
+              </tr>
+              <tr class="pp-compare-row pp-compare-table">
+                <td class="pp-compare-body-cell pp-first-col pp-compare-table">
+                  Free Hands-On Demo
+                </td>
+                <td class="pp-ours pp-compare-body-cell pp-compare-table">
+                  <span class="pp-check">✔ Free, in person</span>
+                </td>
+                <td class="pp-compare-body-cell pp-compare-table">
+                  <span class="pp-partial">⚠ Varies by dealer</span>
+                </td>
+                <td class="pp-compare-body-cell pp-compare-table">
+                  <span class="pp-partial">⚠ Online only</span>
+                </td>
+                <td class="pp-compare-body-cell pp-compare-table">
+                  <span class="pp-partial">⚠ Dealer req.</span>
+                </td>
+              </tr>
+              <tr class="pp-compare-row pp-compare-table">
+                <td class="pp-compare-body-cell pp-first-col pp-compare-table">
+                  DFW Installation Support
+                </td>
+                <td class="pp-ours pp-compare-body-cell pp-compare-table">
+                  <span class="pp-check">✔ Available</span>
+                </td>
+                <td class="pp-compare-body-cell pp-compare-table">
+                  <span class="pp-cross">✗ 3rd party only</span>
+                </td>
+                <td class="pp-compare-body-cell pp-compare-table">
+                  <span class="pp-cross">✗</span>
+                </td>
+                <td class="pp-compare-body-cell pp-compare-table">
+                  <span class="pp-cross">✗ 3rd party only</span>
+                </td>
+              </tr>
+              <tr class="pp-compare-row pp-compare-table">
+                <td class="pp-compare-body-cell pp-first-col pp-compare-table">
+                  Senior Care / Church Focus
+                </td>
+                <td class="pp-ours pp-compare-body-cell pp-compare-table">
+                  <span class="pp-check">✔ Specialist</span>
+                </td>
+                <td class="pp-compare-body-cell pp-compare-table">
+                  <span class="pp-cross">✗</span>
+                </td>
+                <td class="pp-compare-body-cell pp-compare-table">
+                  <span class="pp-cross">✗</span>
+                </td>
+                <td class="pp-compare-body-cell pp-compare-table">
+                  <span class="pp-cross">✗</span>
+                </td>
+              </tr>
+              <tr class="pp-compare-row pp-compare-table">
+                <td class="pp-compare-body-cell pp-first-col pp-compare-table">
+                  Warranty
+                </td>
+                <td class="pp-ours pp-compare-body-cell pp-compare-table">
+                  2 Years
+                </td>
+                <td class="pp-compare-body-cell pp-compare-table">3 Years</td>
+                <td class="pp-compare-body-cell pp-compare-table">1 Year</td>
+                <td class="pp-compare-body-cell pp-compare-table">3 Years</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div
+          style="
+            margin-top: 12px;
+            font-size: 0.75rem;
+            color: var(--pp-text-light);
+          "
+          class="pp-text-p"
+        >
+          * Competitor pricing and features are approximate. Verify current
+          specs on manufacturer websites.
+        </div>
+      </div>
+    </div>
+
+    <!-- MODELS / SHOP -->
+    <div class="pp-section" style="background: #fff">
+      <div class="pp-inner">
+        <div class="pp-section-label">Choose Your Model</div>
+        <div class="pp-section-title">Find the right size for your space</div>
+        <div class="pp-section-sub">
+          All models include 4K display, 20-point touch, dual OS, and free
+          shipping.
+        </div>
+        <div class="pp-model-grid">
+          <div class="pp-model-card pp-active">
+            <div class="pp-mc-badge">BEST VALUE</div>
+            <div class="pp-mc-size">65"</div>
+            <div class="pp-mc-model">Model LSB65</div>
+            <div>
+              <span class="pp-mc-price">$2,699</span>
+              <span class="pp-mc-was">$2,999</span>
+            </div>
+            <div class="pp-mc-desc">
+              Ideal for smaller classrooms, church side rooms, small conference
+              spaces, and care activity rooms.
+            </div>
+            <button
+              class="pp-btn-primary"
+              style="
+                width: 100%;
+                margin-top: 18px;
+                font-size: 0.9rem;
+                padding: 12px;
+              "
+              data-cart-option="option1"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="pp-model-card">
+            <div class="pp-mc-badge">MOST POPULAR</div>
+            <div class="pp-mc-size">75"</div>
+            <div class="pp-mc-model">Model LSB75</div>
+            <div>
+              <span class="pp-mc-price">$3,510</span>
+              <span class="pp-mc-was">$3,810</span>
+            </div>
+            <div class="pp-mc-desc">
+              The sweet spot — great for medium classrooms, church fellowship
+              halls, and standard boardrooms.
+            </div>
+            <button
+              class="pp-btn-primary"
+              style="
+                width: 100%;
+                margin-top: 18px;
+                font-size: 0.9rem;
+                padding: 12px;
+              "
+              data-cart-option="option2"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="pp-model-card">
+            <div class="pp-mc-badge">LARGEST DISPLAY</div>
+            <div class="pp-mc-size">86"</div>
+            <div class="pp-mc-model">Model LSB86</div>
+            <div>
+              <span class="pp-mc-price">$4,410</span>
+              <span class="pp-mc-was">$4,710</span>
+            </div>
+            <div class="pp-mc-desc">
+              Maximum impact for sanctuaries, large auditoriums, training
+              centers, and open common areas.
+            </div>
+            <button
+              class="pp-btn-primary"
+              style="
+                width: 100%;
+                margin-top: 18px;
+                font-size: 0.9rem;
+                padding: 12px;
+              "
+              data-cart-option="option3"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- SPECS -->
+        <div class="pp-specs-grid">
+          <div class="pp-spec-group">
+            <div class="pp-title-h4">Display</div>
+            <div class="pp-spec-row">
+              <span class="pp-spec-label">Resolution</span
+              ><span class="pp-spec-val">4K UHD (3840 × 2160)</span>
+            </div>
+            <div class="pp-spec-row">
+              <span class="pp-spec-label">Panel Type</span
+              ><span class="pp-spec-val">LED-backlit IPS LCD</span>
+            </div>
+            <div class="pp-spec-row">
+              <span class="pp-spec-label">Brightness</span
+              ><span class="pp-spec-val">400 nits</span>
+            </div>
+            <div class="pp-spec-row">
+              <span class="pp-spec-label">Touch Technology</span
+              ><span class="pp-spec-val">Infrared, 20-point</span>
+            </div>
+            <div class="pp-spec-row">
+              <span class="pp-spec-label">Writing Input</span
+              ><span class="pp-spec-val">Finger + stylus pen</span>
+            </div>
+          </div>
+          <div class="pp-spec-group">
+            <div class="pp-title-h4">Computing</div>
+            <div class="pp-spec-row">
+              <span class="pp-spec-label">Operating System</span
+              ><span class="pp-spec-val">Android 11 + Windows OPS</span>
+            </div>
+            <div class="pp-spec-row">
+              <span class="pp-spec-label">Processor</span
+              ><span class="pp-spec-val">8-Core ARM</span>
+            </div>
+            <div class="pp-spec-row">
+              <span class="pp-spec-label">RAM</span
+              ><span class="pp-spec-val">8 GB</span>
+            </div>
+            <div class="pp-spec-row">
+              <span class="pp-spec-label">Internal Storage</span
+              ><span class="pp-spec-val">128 GB Android / 256 GB SSD OPS</span>
+            </div>
+          </div>
+          <div class="pp-spec-group">
+            <div class="pp-title-h4">Connectivity</div>
+            <div class="pp-spec-row">
+              <span class="pp-spec-label">HDMI</span
+              ><span class="pp-spec-val">3× In / 1× Out</span>
+            </div>
+            <div class="pp-spec-row">
+              <span class="pp-spec-label">USB</span
+              ><span class="pp-spec-val">USB-A ×4, USB-C ×1</span>
+            </div>
+            <div class="pp-spec-row">
+              <span class="pp-spec-label">Wireless</span
+              ><span class="pp-spec-val">WiFi 5, Bluetooth 5.0</span>
+            </div>
+            <div class="pp-spec-row">
+              <span class="pp-spec-label">Screen Casting</span
+              ><span class="pp-spec-val">Miracast · AirPlay · Chromecast</span>
+            </div>
+            <div class="pp-spec-row">
+              <span class="pp-spec-label">Network</span
+              ><span class="pp-spec-val">RJ45 Gigabit Ethernet</span>
+            </div>
+          </div>
+          <div class="pp-spec-group">
+            <div class="pp-title-h4">Audio & Physical</div>
+            <div class="pp-spec-row">
+              <span class="pp-spec-label">Speakers</span
+              ><span class="pp-spec-val">2 × 15W built-in</span>
+            </div>
+            <div class="pp-spec-row">
+              <span class="pp-spec-label">Microphone</span
+              ><span class="pp-spec-val">Built-in array mic</span>
+            </div>
+            <div class="pp-spec-row">
+              <span class="pp-spec-label">VESA Mount</span
+              ><span class="pp-spec-val">600 × 400 mm compatible</span>
+            </div>
+            <div class="pp-spec-row">
+              <span class="pp-spec-label">Power</span
+              ><span class="pp-spec-val">AC 100–240V, 50/60Hz</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DARK USE CASES -->
+    <div class="pp-dark-section">
+      <div class="pp-inner">
+        <div class="pp-section-label">Why LEDscopic</div>
+        <div class="pp-section-title" style="color: #fff">
+          Local expertise meets enterprise technology
+        </div>
+        <div
+          class="pp-section-sub"
+          style="color: rgba(255, 255, 255, 0.55); margin-bottom: 48px"
+        >
+          We're not just a vendor — we're your local DFW technology partner.
+        </div>
+        <div class="pp-use-grid">
+          <div class="pp-use-card">
+            <img src="" alt="" style="width: 40px; margin-bottom: 1rem" />
+            <div class="pp-title-h3">Headquarters & Showroom in Texas</div>
+            <div class="pp-text-p">
+              Come see and touch the board in person at 1001 W. Crosby Rd before
+              making any purchase decision. No online guessing.
+            </div>
+          </div>
+          <div class="pp-use-card">
+            <img src="" alt="" style="width: 40px; margin-bottom: 1rem" />
+            <div class="pp-title-h3">Domestic Tech Support</div>
+            <div class="pp-text-p">
+              Our team handles delivery, wall mounting, network configuration,
+              and staff training — all in the DFW area.
+            </div>
+          </div>
+          <div class="pp-use-card">
+            <img src="" alt="" style="width: 40px; margin-bottom: 1rem" />
+            <div class="pp-title-h3">Direct Human Support</div>
+            <div class="pp-text-p">
+              Call 888-588-5411 and speak with a real person. No ticket queues,
+              no overseas call centers.
+            </div>
+          </div>
+          <div class="pp-use-card">
+            <img src="" alt="" style="width: 40px; margin-bottom: 1rem" />
+            <div class="pp-title-h3">Healthcare Industry Expertise</div>
+            <div class="pp-text-p">
+              We understand the unique demands of medical environments — from
+              patient-facing displays to staff training rooms and telemedicine
+              setups that require reliable, high-clarity visuals.
+            </div>
+          </div>
+          <div class="pp-use-card">
+            <img src="" alt="" style="width: 40px; margin-bottom: 1rem" />
+            <div class="pp-title-h3">Corporate Training Specialists</div>
+            <div class="pp-text-p">
+              We've helped DFW businesses build better training rooms — from new
+              hire onboarding setups to compliance training environments that
+              keep employees engaged and retained.
+            </div>
+          </div>
+          <div class="pp-use-card">
+            <img src="" alt="" style="width: 40px; margin-bottom: 1rem" />
+            <div class="pp-title-h3">Best Value in its Class</div>
+            <div class="pp-text-p">
+              More features than Vibe and SMART at a lower starting price — with
+              local support they simply can't offer.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TESTIMONIAL -->
+    <div class="pp-testimonial-strip">
+      <div class="pp-quote">
+        "The LEDscopic Smart Board transformed our activity room. Residents are
+        more engaged, and our staff loves how easy it is to load activities each
+        morning."
+      </div>
+      <div class="pp-cite">
+        — Activities Director, Senior Care Community, Dallas TX
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="pp-cta-block">
+      <div class="pp-title-h2">Ready to see it in person?</div>
+      <div class="pp-text-p">
+        Visit our Carrollton showroom — no obligation, no pressure. Try it
+        yourself before you decide.
+      </div>
+      <div class="pp-cta-btns">
+        <a class="pp-btn-white" href="/contact" style="text-decoration: none"
+          >🛒 Shop Smart Boards</a
+        >
+        <a
+          class="pp-btn-outline-white"
+          href="/contact"
+          style="text-decoration: none"
+          >📍 Book a Free Demo</a
+        >
+      </div>
+      <div class="pp-cta-footer-note">
+        📞 888-588-5411 &nbsp;·&nbsp; 1001 W. Crosby Rd, Carrollton TX 75006
+        &nbsp;·&nbsp; Mon–Fri 10AM–6:30PM CT
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  ;(function getImages() {
+    document.querySelectorAll(".sections img").forEach((img, i) => {
+      img.src = imgs[i].img_src
+      img.alt = imgs[i].img_name
+    })
+  })()
+</script>
+<script>
+  ;(() => {
+    const modelCards = Array.from(document.querySelectorAll(".pp-model-card"))
+
+    if (!modelCards.length) {
+      return
+    }
+
+    const setActiveModelCard = (activeCard) => {
+      modelCards.forEach((card) => {
+        card.classList.toggle("pp-active", card === activeCard)
+      })
+    }
+
+    modelCards.forEach((card) => {
+      card.addEventListener("click", () => {
+        setActiveModelCard(card)
+      })
+
+      const addToCartButton = card.querySelector(".pp-btn-primary")
+      if (addToCartButton) {
+        addToCartButton.addEventListener("focus", () => {
+          setActiveModelCard(card)
+        })
+      }
+    })
+  })()
+</script>
+<script>
+  function getCurrentWebsiteKey() {
+    const hostname = window.location.hostname.replace("www.", "")
+
+    if (hostname.includes("ledscopic.com")) {
+      return "ledscopic"
+    }
+
+    if (hostname.includes("ledkioskdisplay.com")) {
+      return "ledkioskdisplay"
+    }
+
+    return null
+  }
+
+  document.querySelectorAll(".pp-btn-primary").forEach((button) => {
+    button.addEventListener("click", () => {
+      const websiteKey = getCurrentWebsiteKey()
+
+      const optionKey = button.dataset.cartOption || "option1"
+
+      if (!websiteKey) {
+        console.error("Unsupported website:", window.location.hostname)
+
+        return
+      }
+
+      const websiteCart = cart_variant_id.website[websiteKey]
+
+      const variantId = websiteCart[optionKey]
+
+      if (!variantId) {
+        console.error("Invalid cart option:", optionKey)
+
+        return
+      }
+
+      window.location.href = `${websiteCart.base_url}${variantId}`
+    })
+  })
+</script>
