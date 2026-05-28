@@ -647,6 +647,7 @@
     .pp-utility-card {
       background: #fff;
       transition: background 0.2s;
+      overflow: hidden;
     }
     .pp-utility-card:hover {
       background: #fafbff;
@@ -709,6 +710,7 @@
       background: #fff;
       border: 1.5px solid var(--pp-border);
       border-radius: 16px;
+      overflow: hidden;
       transition:
         border-color 0.2s,
         box-shadow 0.2s;
@@ -815,6 +817,7 @@
       color: rgba(255, 255, 255, 0.6);
       letter-spacing: 0.05em;
       text-transform: uppercase;
+      margin-left: 22px;
     }
     .pp-compare-head-cell.pp-ours {
       min-width: 225px;
@@ -838,6 +841,7 @@
     .pp-compare-body-cell.pp-first-col {
       font-weight: 600;
       color: var(--pp-navy);
+      padding-left: 22px;
     }
     .pp-compare-body-cell.pp-ours {
       color: var(--pp-navy);
@@ -1192,6 +1196,10 @@
     }
     .pp-text-block {
       padding: 20px;
+    }
+
+    th:first-child.pp-compare-head-cell {
+      padding-left: 22px;
     }
   </style>
 </head>
@@ -1987,12 +1995,15 @@
         yourself before you decide.
       </div>
       <div class="pp-cta-btns">
-        <a class="pp-btn-white" href="/contact" style="text-decoration: none"
+        <a
+          class="pp-btn-white"
+          href="/pages/contact-us"
+          style="text-decoration: none"
           >🛒 Shop Smart Boards</a
         >
         <a
           class="pp-btn-outline-white"
-          href="/contact"
+          href="/pages/contact-us"
           style="text-decoration: none"
           >📍 Book a Free Demo</a
         >
