@@ -338,11 +338,6 @@
   margin-right: 8px;
 }
 
-.tw-mx-20 {
-  margin-left: 80px;
-  margin-right: 80px;
-}
-
 .tw-mx-4 {
   margin-left: 16px;
   margin-right: 16px;
@@ -1843,10 +1838,6 @@
   padding: 8px;
 }
 
-.tw-p-20 {
-  padding: 80px;
-}
-
 .tw-p-3 {
   padding: 12px;
 }
@@ -1905,11 +1896,6 @@
 .tw-px-2 {
   padding-left: 8px;
   padding-right: 8px;
-}
-
-.tw-px-20 {
-  padding-left: 80px;
-  padding-right: 80px;
 }
 
 .tw-px-4 {
@@ -3534,6 +3520,10 @@ img{
     grid-column: span 7 / span 7;
   }
 
+  .lg\:tw-col-span-full {
+    grid-column: 1 / -1;
+  }
+
   .lg\:tw-m-0 {
     margin: 0px;
   }
@@ -3983,6 +3973,10 @@ img{
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
+  .lg\:tw-grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
   .lg\:tw-grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -4009,10 +4003,6 @@ img{
 
   .lg\:tw-grid-cols-8 {
     grid-template-columns: repeat(8, minmax(0, 1fr));
-  }
-
-  .lg\:tw-grid-cols-12 {
-    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
   .lg\:\!tw-flex-row {
@@ -4158,6 +4148,10 @@ img{
 
   .lg\:tw-self-center {
     align-self: center;
+  }
+
+  .lg\:tw-overflow-hidden {
+    overflow: hidden;
   }
 
   .lg\:tw-rounded-3xl {
@@ -4344,6 +4338,10 @@ img{
     padding-bottom: 40px;
   }
 
+  .lg\:tw-pb-20 {
+    padding-bottom: 80px;
+  }
+
   .lg\:tw-pb-4 {
     padding-bottom: 16px;
   }
@@ -4398,6 +4396,10 @@ img{
 
   .lg\:tw-pt-6 {
     padding-top: 24px;
+  }
+
+  .lg\:tw-pb-16 {
+    padding-bottom: 64px;
   }
 
   .lg\:tw-text-left {

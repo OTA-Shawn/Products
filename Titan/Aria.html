@@ -1,5 +1,4 @@
 <!-- <ul class="feature-section">
-  <li>Intelligent Health Detection</li>
   <li style="font-weight: bold">Dual Rail Massage System</li>
   <li>Intelligent Voice Control</li>
   <li style="font-weight: bold">4D Massage Mechanism</li>
@@ -8,9 +7,10 @@
   <li>28-Cell Full Body Air Massage</li>
   <li>Lumbar & Foot Heating Therapy</li>
 
+  <li>Intelligent Health Detection</li>
+
   <li style="font-weight: bold">Triple Foot & Calf Roller Massage</li>
   <li>Automatic Leg Extension</li>
-  <li style="font-weight: bold">Leg Angle Control</li>
 </ul> -->
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,360 +24,379 @@
   const youtube_link = ""
 
   const imgs = [
-    // {
-    //   img_order: 1,
-    //   img_name: "Aria_main",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/1.Aria_main.webp",
-    // },
-    // {
-    //   img_order: 2,
-    //   img_name: "Aria_color_all",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/2.Aria_color_all.webp",
-    // },
-    // {
-    //   img_order: 3,
-    //   img_name: "Aria_color_black",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.Aria_color_black.webp",
-    // },
-    // {
-    //   img_order: 4,
-    //   img_name: "Aria_color_taupe",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/5.Aria_color_taupe.webp",
-    // },
-    // {
-    //   img_order: 5,
-    //   img_name: "Aria_dual_rail",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/7.Aria_dual_rail.webp",
-    // },
-    // {
-    //   img_order: 6,
-    //   img_name: "Aria_icon_rail",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/8.Aria_icon_rail.webp",
-    // },
-    // {
-    //   img_order: 7,
-    //   img_name: "Aria_voice_control",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/9.Aria_voice_control.webp",
-    // },
-    // {
-    //   img_order: 8,
-    //   img_name: "Aria_icon_voice",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.Aria_icon_voice.webp",
-    // },
-    // {
-    //   img_order: 9,
-    //   img_name: "Aria_4D",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/11.Aria_4D.webp",
-    // },
-    // {
-    //   img_order: 10,
-    //   img_name: "Aria_body_scan",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12.Aria_body_scan.webp",
-    // },
-    // {
-    //   img_order: 11,
-    //   img_name: "Aria_ZG",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/13.Aria_ZG.webp",
-    // },
-    // {
-    //   img_order: 12,
-    //   img_name: "Aria_SL",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/14.Aria_SL.webp",
-    // },
-    // {
-    //   img_order: 13,
-    //   img_name: "Aria_space_saving",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/15.Aria_space_saving.webp",
-    // },
-    // {
-    //   img_order: 14,
-    //   img_name: "Aria_air_cell",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/16.Aria_air_cell.webp",
-    // },
-    // {
-    //   img_order: 15,
-    //   img_name: "Aria_icon_heating",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/17.Aria_icon_heating.webp",
-    // },
-    // {
-    //   img_order: 16,
-    //   img_name: "Aria_heating",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/18.Aria_heating.webp",
-    // },
-    // {
-    //   img_order: 17,
-    //   img_name: "Aria_icon_demo",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19.Aria_icon_demo.webp",
-    // },
-    // {
-    //   img_order: 18,
-    //   img_name: "Aria_icon_thai",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/20.Aria_icon_thai.webp",
-    // },
-    // {
-    //   img_order: 19,
-    //   img_name: "Aria_icon_body_citculation",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/21.Aria_icon_body_citculation.webp",
-    // },
-    // {
-    //   img_order: 20,
-    //   img_name: "Aria_icon_relax",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/22.Aria_icon_relax.webp",
-    // },
-    // {
-    //   img_order: 21,
-    //   img_name: "Aria_icon_morning_care",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/23.Aria_icon_morning_care.webp",
-    // },
-    // {
-    //   img_order: 22,
-    //   img_name: "Aria_icon_midday",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/24.Aria_icon_midday.webp",
-    // },
-    // {
-    //   img_order: 23,
-    //   img_name: "Aria_icon_night",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/25.Aria_icon_night.webp",
-    // },
-    // {
-    //   img_order: 24,
-    //   img_name: "Aria_icon_deep_tissue",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/26.Aria_icon_deep_tissue.webp",
-    // },
-    // {
-    //   img_order: 25,
-    //   img_name: "Aria_icon_extension",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/27.Aria_icon_extension.webp",
-    // },
-    // {
-    //   img_order: 26,
-    //   img_name: "Aria_icon_women",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/28.Aria_icon_women.webp",
-    // },
-    // {
-    //   img_order: 27,
-    //   img_name: "Aria_icon_shiatsu",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/29.Aria_icon_shiatsu.webp",
-    // },
-    // {
-    //   img_order: 28,
-    //   img_name: "Aria_icon_men",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/30.Aria_icon_men.webp",
-    // },
-    // {
-    //   img_order: 29,
-    //   img_name: "Aria_icon_office",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/31.Aria_icon_office.webp",
-    // },
-    // {
-    //   img_order: 30,
-    //   img_name: "Aria_icon_sports",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/32.Aria_icon_sports.webp",
-    // },
-    // {
-    //   img_order: 31,
-    //   img_name: "Aria_icon_foot",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/33.Aria_icon_foot.webp",
-    // },
-    // {
-    //   img_order: 32,
-    //   img_name: "Aria_icon_rejuvenate",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/34.Aria_icon_rejuvenate.webp",
-    // },
-    // {
-    //   img_order: 33,
-    //   img_name: "Aria_icon_neck",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/35.Aria_icon_neck.webp",
-    // },
-    // {
-    //   img_order: 34,
-    //   img_name: "Aria_icon_neck_shoulder",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/36.Aria_icon_neck_shoulder.webp",
-    // },
-    // {
-    //   img_order: 35,
-    //   img_name: "Aria_icon_back",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/37.Aria_icon_back.webp",
-    // },
-    // {
-    //   img_order: 36,
-    //   img_name: "Aria_icon_lumber",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/38.Aria_icon_lumber.webp",
-    // },
-    // {
-    //   img_order: 37,
-    //   img_name: "Aria_icon_waist_hip",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/39.Aria_icon_waist_hip.webp",
-    // },
-    // {
-    //   img_order: 38,
-    //   img_name: "Aria_icon_legs",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/40.Aria_icon_legs.webp",
-    // },
-    // {
-    //   img_order: 39,
-    //   img_name: "Aria_icon_upper",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/41.Aria_icon_upper.webp",
-    // },
-    // {
-    //   img_order: 40,
-    //   img_name: "Aria_icon_lower",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/42.Aria_icon_lower.webp",
-    // },
-    // {
-    //   img_order: 41,
-    //   img_name: "Aria_icon_kneading",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/43.Aria_icon_kneading.webp",
-    // },
-    // {
-    //   img_order: 42,
-    //   img_name: "Aria_icon_percussion",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/44.Aria_icon_percussion.webp",
-    // },
-    // {
-    //   img_order: 43,
-    //   img_name: "Aria_icon_acupressure",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/45.Aria_icon_acupressure.webp",
-    // },
-    // {
-    //   img_order: 44,
-    //   img_name: "Aria_icon_flap",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/46.Aria_icon_flap.webp",
-    // },
-    // {
-    //   img_order: 45,
-    //   img_name: "Aria_icon_slap",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/47.Aria_icon_slap.webp",
-    // },
-    // {
-    //   img_order: 46,
-    //   img_name: "Aria_icon_mixture",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/48.Aria_icon_mixture.webp",
-    // },
-    // {
-    //   img_order: 47,
-    //   img_name: "Aria_foot_rollers",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/49.Aria_foot_rollers.webp",
-    // },
-    // {
-    //   img_order: 48,
-    //   img_name: "Aria_calf_rollers",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/50.Aria_calf_rollers.webp",
-    // },
-    // {
-    //   img_order: 49,
-    //   img_name: "Aria_leg_extension",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/51.Aria_leg_extension.webp",
-    // },
-    // {
-    //   img_order: 50,
-    //   img_name: "Aria_speakers_LED",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/52.Aria_speakers_LED.webp",
-    // },
-    // {
-    //   img_order: 51,
-    //   img_name: "Aria_headrest1",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/53.Aria_headrest1.webp",
-    // },
-    // {
-    //   img_order: 52,
-    //   img_name: "Aria_headrest2",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/54.Aria_headrest2.webp",
-    // },
-    // {
-    //   img_order: 53,
-    //   img_name: "Aria_headrest3",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/55.Aria_headrest3.webp",
-    // },
-    // {
-    //   img_order: 54,
-    //   img_name: "Aria_touchscreen",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/56.Aria_touchscreen.webp",
-    // },
-    // {
-    //   img_order: 55,
-    //   img_name: "Aria_icon_touchscreen",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/57.Aria_icon_touchscreen.webp",
-    // },
-    // {
-    //   img_order: 56,
-    //   img_name: "Aria_charging",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/58.Aria_charging.webp",
-    // },
-    // {
-    //   img_order: 57,
-    //   img_name: "Aria_icon_charging",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/59.Aria_icon_charging.webp",
-    // },
-    // {
-    //   img_order: 58,
-    //   img_name: "Aria_control_panel",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/60.Aria_control_panel.webp",
-    // },
-    // {
-    //   img_order: 59,
-    //   img_name: "Aria_icon_panel",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/61.Aria_icon_panel.webp",
-    // },
+    {
+      img_order: 1,
+      img_name: "Aria_main",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/1.Aria_main.webp",
+    },
+    {
+      img_order: 2,
+      img_name: "Aria_color_all",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/2.Aria_color_all.webp",
+    },
+    {
+      img_order: 3,
+      img_name: "Aria_color_black",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.Aria_color_black.webp",
+    },
+
+    {
+      img_order: 64,
+      img_name: "Aria_color_brown",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4_Aria_color_taupe_webp.webp",
+    },
+    {
+      img_order: 4,
+      img_name: "Aria_color_taupe",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/5.Aria_color_taupe.webp",
+    },
+    {
+      img_order: 5,
+      img_name: "Aria_dual_rail",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/7.Aria_dual_rail.webp",
+    },
+    {
+      img_order: 6,
+      img_name: "Aria_icon_rail",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/8.Aria_icon_rail.webp",
+    },
+    {
+      img_order: 7,
+      img_name: "Aria_voice_control",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/9.Aria_voice_control.webp",
+    },
+    {
+      img_order: 8,
+      img_name: "Aria_icon_voice",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.Aria_icon_voice.webp",
+    },
+    {
+      img_order: 9,
+      img_name: "Aria_4D",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/11.Aria_4D.webp",
+    },
+    {
+      img_order: 10,
+      img_name: "Aria_body_scan",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12.Aria_body_scan.webp",
+    },
+    {
+      img_order: 11,
+      img_name: "Aria_ZG",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/13.Aria_ZG.webp",
+    },
+    {
+      img_order: 12,
+      img_name: "Aria_SL",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/14.Aria_SL.webp",
+    },
+    {
+      img_order: 15,
+      img_name: "Epic_icon_SL",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19.Epic_icon_SL.webp",
+    },
+    {
+      img_order: 13,
+      img_name: "Aria_space_saving",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/15.Aria_space_saving.webp",
+    },
+    {
+      img_order: 17,
+      img_name: "Epic_SL_track",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/21.Epic_SL_track.webp",
+    },
+    {
+      img_order: 14,
+      img_name: "Aria_air_cell",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/16.Aria_air_cell.webp",
+    },
+    {
+      img_order: 16,
+      img_name: "Aria_heating",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/18.Aria_heating.webp",
+    },
+    {
+      img_order: 15,
+      img_name: "Aria_icon_heating",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/17.Aria_icon_heating.webp",
+    },
+    {
+      img_order: 17,
+      img_name: "Aria_icon_demo",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19.Aria_icon_demo.webp",
+    },
+    {
+      img_order: 18,
+      img_name: "Aria_icon_thai",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/20.Aria_icon_thai.webp",
+    },
+    {
+      img_order: 19,
+      img_name: "Aria_icon_body_citculation",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/21.Aria_icon_body_citculation.webp",
+    },
+    {
+      img_order: 20,
+      img_name: "Aria_icon_relax",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/22.Aria_icon_relax.webp",
+    },
+    {
+      img_order: 21,
+      img_name: "Aria_icon_morning_care",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/23.Aria_icon_morning_care.webp",
+    },
+    {
+      img_order: 22,
+      img_name: "Aria_icon_midday",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/24.Aria_icon_midday.webp",
+    },
+    {
+      img_order: 23,
+      img_name: "Aria_icon_night",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/25.Aria_icon_night.webp",
+    },
+    {
+      img_order: 24,
+      img_name: "Aria_icon_deep_tissue",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/26.Aria_icon_deep_tissue.webp",
+    },
+    {
+      img_order: 25,
+      img_name: "Aria_icon_extension",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/27.Aria_icon_extension.webp",
+    },
+    {
+      img_order: 26,
+      img_name: "Aria_icon_women",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/28.Aria_icon_women.webp",
+    },
+    {
+      img_order: 27,
+      img_name: "Aria_icon_shiatsu",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/29.Aria_icon_shiatsu.webp",
+    },
+    {
+      img_order: 28,
+      img_name: "Aria_icon_men",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/30.Aria_icon_men.webp",
+    },
+    {
+      img_order: 29,
+      img_name: "Aria_icon_office",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/31.Aria_icon_office.webp",
+    },
+    {
+      img_order: 30,
+      img_name: "Aria_icon_sports",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/32.Aria_icon_sports.webp",
+    },
+    {
+      img_order: 31,
+      img_name: "Aria_icon_foot",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/33.Aria_icon_foot.webp",
+    },
+    {
+      img_order: 32,
+      img_name: "Aria_icon_rejuvenate",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/34.Aria_icon_rejuvenate.webp",
+    },
+    {
+      img_order: 33,
+      img_name: "Aria_icon_neck",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/35.Aria_icon_neck.webp",
+    },
+    {
+      img_order: 34,
+      img_name: "Aria_icon_neck_shoulder",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/36.Aria_icon_neck_shoulder.webp",
+    },
+    {
+      img_order: 35,
+      img_name: "Aria_icon_back",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/37.Aria_icon_back.webp",
+    },
+    {
+      img_order: 36,
+      img_name: "Aria_icon_lumber",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/38.Aria_icon_lumber.webp",
+    },
+    {
+      img_order: 37,
+      img_name: "Aria_icon_waist_hip",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/39.Aria_icon_waist_hip.webp",
+    },
+    {
+      img_order: 38,
+      img_name: "Aria_icon_legs",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/40.Aria_icon_legs.webp",
+    },
+    {
+      img_order: 39,
+      img_name: "Aria_icon_upper",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/41.Aria_icon_upper.webp",
+    },
+    {
+      img_order: 40,
+      img_name: "Aria_icon_lower",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/42.Aria_icon_lower.webp",
+    },
+    {
+      img_order: 41,
+      img_name: "Aria_icon_kneading",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/43.Aria_icon_kneading.webp",
+    },
+    {
+      img_order: 42,
+      img_name: "Aria_icon_percussion",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/44.Aria_icon_percussion.webp",
+    },
+    {
+      img_order: 43,
+      img_name: "Aria_icon_acupressure",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/45.Aria_icon_acupressure.webp",
+    },
+    {
+      img_order: 44,
+      img_name: "Aria_icon_flap",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/46.Aria_icon_flap.webp",
+    },
+    {
+      img_order: 45,
+      img_name: "Aria_icon_slap",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/47.Aria_icon_slap.webp",
+    },
+    {
+      img_order: 46,
+      img_name: "Aria_icon_mixture",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/48.Aria_icon_mixture.webp",
+    },
+    {
+      img_order: 47,
+      img_name: "Aria_foot_rollers",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/49.Aria_foot_rollers.webp",
+    },
+    {
+      img_order: 48,
+      img_name: "Aria_calf_rollers",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/50.Aria_calf_rollers.webp",
+    },
+    {
+      img_order: 49,
+      img_name: "Aria_leg_extension",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/51.Aria_leg_extension.webp",
+    },
+    {
+      img_order: 50,
+      img_name: "Aria_speakers_LED",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/52.Aria_speakers_LED.webp",
+    },
+    {
+      img_order: 51,
+      img_name: "Aria_headrest1",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/53.Aria_headrest1.webp",
+    },
+    {
+      img_order: 52,
+      img_name: "Aria_headrest2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/54.Aria_headrest2.webp",
+    },
+    {
+      img_order: 53,
+      img_name: "Aria_headrest3",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/55.Aria_headrest3.webp",
+    },
+    {
+      img_order: 54,
+      img_name: "Aria_touchscreen",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/56.Aria_touchscreen.webp",
+    },
+    {
+      img_order: 55,
+      img_name: "Aria_icon_touchscreen",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/57.Aria_icon_touchscreen.webp",
+    },
+    {
+      img_order: 56,
+      img_name: "Aria_charging",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/58.Aria_charging.webp",
+    },
+    {
+      img_order: 57,
+      img_name: "Aria_icon_charging",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/59.Aria_icon_charging.webp",
+    },
+    {
+      img_order: 58,
+      img_name: "Aria_control_panel",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/60.Aria_control_panel.webp",
+    },
+    {
+      img_order: 59,
+      img_name: "Aria_icon_panel",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/61.Aria_icon_panel.webp",
+    },
     {
       img_order: 60,
       img_name: "Aria_doorway",
@@ -402,23 +421,15 @@
       img_src:
         "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/64.Aria_Demensions.webp",
     },
-    {
-      img_order: 64,
-      img_name: "webp",
-      img_src:
-        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4_Aria_color_taupe_webp.webp",
-    },
   ]
 </script>
-
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+  rel="stylesheet"
+/>
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
-    rel="stylesheet"
-  />
-
   <style>
     .pp-font {
       font-family: "Nunito", sans-serif;
@@ -453,15 +464,21 @@
     }
 
     .header-font {
-      font-family: "Orbitron", sans-serif;
+      font-family: "Russo One", sans-serif;
       font-weight: 600;
       font-style: normal;
     }
 
+    .desktop-gradient {
+      background: linear-gradient(to bottom, #b0bfe7, #edf1fc 20%);
+    }
+
     @media (max-width: 1024px) {
       .desktop-gray,
-      .desktop-blue {
+      .desktop-blue,
+      .desktop-gradient {
         background-color: initial;
+        background: initial;
       }
 
       .desktop-only {
@@ -487,6 +504,836 @@
   <div
     class="sections pp-font tw-m-auto tw-flex tw-flex-col tw-text-base tw-leading-normal min-[480px]:tw-w-[480px] md:tw-w-[768px] lg:tw-w-[1024px]"
   >
+    <div
+      id="youtube-link"
+      class="[&>*]:tw-mb-20 [&>*]:tw-aspect-video [&>*]:tw-w-full"
+    ></div>
+    <div class="">
+      <img src="" alt="" class="!tw-w-full" />
+      <div
+        class="2xl tw-mb-4 tw-py-10 tw-pt-4 tw-text-xl lg:tw-mx-10"
+        style="color: #777"
+      >
+        Titan Pro 4D Aria is designed to bring the experience of a premium
+        wellness lounge into your everyday life. Engineered with advanced 4D
+        massage technology, intelligent body scanning, and a full-length SL
+        track system, it delivers deeply personalized comfort tailored to the
+        natural curves of the body. From heated therapy and air compression
+        massage to zero gravity positioning and immersive Bluetooth audio, every
+        feature works together to support full-body relaxation, recovery, and
+        everyday wellness.
+      </div>
+    </div>
+
+    <!-- Thumbnail Swatches Begin-->
+    <div
+      id="swatch-static-container"
+      class="tw-relative tw-mx-auto tw-mb-20 tw-w-full tw-max-w-xl"
+    >
+      <!-- SLIDER (horizontal scroll + snap) -->
+      <div class="tw-relative">
+        <div
+          id="slide-track"
+          class="tw-flex tw-h-96 tw-touch-pan-x tw-snap-x tw-snap-mandatory tw-overflow-x-auto tw-scroll-smooth sm:tw-overflow-hidden"
+          style="
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+          "
+        >
+          <!-- Slide 0 -->
+          <div
+            class="tw-flex tw-w-full tw-flex-none tw-snap-start tw-items-center tw-justify-center"
+          >
+            <img src="" alt="" class="tw-h-full tw-w-full tw-object-contain" />
+          </div>
+
+          <!-- Slide 1 -->
+          <div
+            class="tw-flex tw-w-full tw-flex-none tw-snap-start tw-items-center tw-justify-center"
+          >
+            <img src="" alt="" class="tw-h-full tw-w-full tw-object-contain" />
+          </div>
+
+          <!-- Slide 2 -->
+          <div
+            class="tw-flex tw-w-full tw-flex-none tw-snap-start tw-items-center tw-justify-center"
+          >
+            <img src="" alt="" class="tw-h-full tw-w-full tw-object-contain" />
+          </div>
+
+          <!-- Slide 3 -->
+          <div
+            class="tw-flex tw-w-full tw-flex-none tw-snap-start tw-items-center tw-justify-center"
+          >
+            <img src="" alt="" class="tw-h-full tw-w-full tw-object-contain" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrows (optional: hide on mobile with tw-hidden sm:tw-inline-flex) -->
+      <button
+        id="static-prev"
+        class="tw-absolute tw-left-2 tw-top-1/2 tw--translate-y-1/2 tw-rounded-full tw-bg-black tw-bg-opacity-50 tw-p-2 tw-text-white hover:tw-cursor-pointer hover:tw-bg-opacity-100 focus:tw-outline-none"
+        aria-label="Previous slide"
+      >
+        &#10094;
+      </button>
+
+      <button
+        id="static-next"
+        class="tw-absolute tw-right-2 tw-top-1/2 tw--translate-y-1/2 tw-rounded-full tw-bg-black tw-bg-opacity-50 tw-p-2 tw-text-white hover:tw-cursor-pointer hover:tw-bg-opacity-100 focus:tw-outline-none"
+        aria-label="Next slide"
+      >
+        &#10095;
+      </button>
+
+      <!-- Swatches (also horizontally scrollable if needed) -->
+      <div class="tw-mt-4 tw-flex tw-w-full tw-justify-center">
+        <div
+          class="tw-flex tw-max-w-full tw-gap-2 tw-overflow-x-auto tw-rounded-full tw-bg-gray-100 tw-p-4 tw-px-6"
+          style="-webkit-overflow-scrolling: touch"
+        >
+          <button
+            class="swatch-button tw-h-8 tw-w-8 tw-rounded-full hover:tw-cursor-pointer focus:tw-outline-none"
+            style="
+              background-image:
+                radial-gradient(
+                  circle at 40% 35%,
+                  oklab(1 0 0 / 1) 0 4%,
+                  oklab(1 0 0 / 0) 50%
+                ),
+                conic-gradient(
+                  from 0deg,
+                  oklab(76.8% 0.001 0.01) 0deg,
+                  oklab(41.598% 0.01388 0.04585) 90deg,
+                  oklab(19.241% 0.00154 0.00046) 180deg,
+                  oklab(45.45% 0.0193 0.08842) 270deg,
+                  oklab(76.8% 0.001 0.01) 360deg
+                );
+            "
+            data-index="0"
+            aria-label="swatch0"
+          ></button>
+          <button
+            class="swatch-button tw-h-8 tw-w-8 tw-rounded-full hover:tw-cursor-pointer focus:tw-outline-none"
+            style="background-color: #1d1d1d"
+            data-index="1"
+            aria-label="swatch1"
+          ></button>
+
+          <button
+            class="swatch-button tw-h-8 tw-w-8 tw-rounded-full hover:tw-cursor-pointer focus:tw-outline-none"
+            style="background-color: #684a08"
+            data-index="2"
+            aria-label="swatch2"
+          ></button>
+
+          <button
+            class="swatch-button tw-h-8 tw-w-8 tw-rounded-full hover:tw-cursor-pointer focus:tw-outline-none"
+            style="background-color: #c7bfae"
+            data-index="3"
+            aria-label="swatch3"
+          ></button>
+        </div>
+      </div>
+    </div>
+    <!-- Thumbnail Swatches End -->
+
+    <!-- <div class="section desktop-blue tw-mb-20 tw-flex tw-flex-col">
+      <img
+        src=""
+        alt=""
+        class="tw-h-96 tw-object-cover lg:tw-order-2 lg:tw-h-auto"
+        style="object-position: 82% 50%"
+      />
+      <div
+        class="tw-flex tw-flex-col tw-gap-4 tw-p-4 lg:tw-p-10 lg:tw-px-20 lg:tw-pt-20"
+      >
+        <img src="" alt="" class="tw-w-36" />
+        <div class="header-font tw-text-4xl tw-font-semibold tw-uppercase">
+          <span style="color: #2b56c1">INTELLIGENT</span>
+          <br class="tw-block lg:tw-hidden" />
+          HEALTH DETECTION
+        </div>
+        <div class="tw-text-lg tw-text-neutral-500">
+          Equipped with an intelligent health detection system, Epic LE monitors
+          <b class="tw-font-semibold tw-brightness-50">heart rate</b> and
+          <b class="tw-font-semibold tw-brightness-50">blood oxygen levels</b>
+          with a simple finger touch. This smart detection feature helps the
+          chair better understand the body’s condition and assist in selecting a
+          more suitable massage mode for a personalized relaxation experience.
+        </div>
+      </div>
+    </div> -->
+
+    <div
+      class="section desktop-blue tw-mb-20 tw-flex tw-flex-col tw-gap-10 lg:tw-rounded-3xl lg:tw-p-10 lg:tw-px-20 lg:tw-pt-20"
+    >
+      <div class="tw-grid tw-gap-4 lg:tw-grid-cols-2">
+        <img src="" alt="" class="" />
+        <div class="tw-flex tw-flex-col tw-gap-4 tw-p-4 lg:tw-text-right">
+          <img src="" alt="" class="tw-w-10 lg:tw-ml-auto" />
+          <div class="header-font tw-text-4xl tw-font-semibold tw-uppercase">
+            <span style="color: #2b56c1">dual rail</span>
+            <br class="tw-hidden lg:tw-block" />
+            <br class="tw-block lg:tw-hidden" />
+            massage system
+          </div>
+          <div class="tw-text-lg tw-text-neutral-700">
+            Featuring a
+            <b class="tw-font-semibold tw-brightness-50"
+              >53-inch dual guide rail</b
+            >
+            design, the massage rollers glide smoothly along the body’s natural
+            curve. The extended SL-Track reaches from the neck and shoulders to
+            the upper hamstrings, delivering a more seamless full-body massage
+            experience.
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="header-font tw-grid tw-gap-4 tw-text-sm tw-font-semibold tw-uppercase lg:tw-grid-cols-4"
+      >
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <video
+            src="https://cdn.shopify.com/videos/c/o/v/586ef75c47734480a2dbaedce574baef.mp4"
+            autoplay
+            muted
+            loop
+            class="lg:tw-rounded-3xl"
+          ></video>
+          <div>Neck</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <video
+            src="https://cdn.shopify.com/videos/c/o/v/4ae398d7dde640b0987b857b06d72ad3.mp4"
+            autoplay
+            muted
+            loop
+            class="lg:tw-rounded-3xl"
+          ></video>
+          <div>Shoulders</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <video
+            src="https://cdn.shopify.com/videos/c/o/v/761021952fdf447a81e81bebcb2f33c6.mp4"
+            autoplay
+            muted
+            loop
+            class="lg:tw-rounded-3xl"
+          ></video>
+          <div>Lower back</div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <video
+            src="https://cdn.shopify.com/videos/c/o/v/2147b20b35fe49ba8795871c9e578aeb.mp4"
+            autoplay
+            muted
+            loop
+            class="lg:tw-rounded-3xl"
+          ></video>
+          <div>Buttocks</div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="section desktop-blue tw-mb-20 tw-grid tw-items-center tw-overflow-hidden lg:tw-grid-cols-12 lg:tw-rounded-3xl"
+    >
+      <img src="" alt="" class="lg:tw-order-2 lg:tw-col-span-7" />
+      <div
+        class="tw-flex tw-flex-col tw-gap-y-4 tw-p-4 lg:tw-col-span-5 lg:tw-p-10 lg:tw-pl-20 lg:tw-pr-0"
+      >
+        <img src="" alt="" class="tw-hidden tw-w-8 lg:tw-block" />
+        <div class="header-font tw-text-4xl tw-font-semibold tw-uppercase">
+          <span style="color: #2b56c1">INTELLIGENT </span> <br />
+          Voice control
+        </div>
+        <div class="tw-text-lg tw-text-neutral-500">
+          The Titan Pro 4D Aria features
+          <b class="tw-font-semibold tw-brightness-50">voice command control</b>
+          for a truly
+          <b class="tw-font-semibold tw-brightness-50">hands-free experience</b
+          >. Simply speak to adjust your massage settings without interrupting
+          your relaxation.
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="tw-mb-40 tw-grid tw-gap-10 tw-gap-y-20 lg:tw-mx-20 lg:tw-grid-cols-2 lg:tw-text-center"
+    >
+      <div
+        class="desktop-blue tw-flex tw-flex-col tw-overflow-hidden lg:tw-rounded-3xl lg:tw-shadow-xl"
+      >
+        <img src="" alt="" />
+        <div class="tw-flex tw-flex-col tw-gap-y-4 tw-p-4 lg:tw-p-10">
+          <div
+            class="header-font tw-text-4xl tw-font-semibold tw-uppercase lg:tw-text-3xl"
+          >
+            <span style="color: #2b56c1"> 4D Massage</span> <br />
+            Mechanism
+          </div>
+          <div class="tw-text-lg tw-text-neutral-500">
+            The Titan Pro 4D Aria features an
+            <b class="tw-font-semibold tw-brightness-50"
+              >advanced 4D massage system</b
+            >
+            designed to deliver deeper, more flexible massage movement. Its
+            responsive roller mechanism combines strong pressure with smooth
+            motion, creating a massage experience that feels powerful,
+            comfortable, and natural without harsh impact.
+          </div>
+        </div>
+      </div>
+      <div
+        class="desktop-blue tw-flex tw-flex-col tw-overflow-hidden lg:tw-rounded-3xl lg:tw-shadow-xl"
+      >
+        <img src="" alt="" />
+        <div class="tw-flex tw-flex-col tw-gap-y-4 tw-p-4 lg:tw-p-10">
+          <div
+            class="header-font tw-text-4xl tw-font-semibold tw-uppercase lg:tw-text-3xl"
+          >
+            <span style="color: #2b56c1"> Smart </span> <br />
+            Body Scan
+          </div>
+          <div class="tw-text-lg tw-text-neutral-500">
+            The Titan Pro 4D Aria features an intelligent body scanning system
+            that detects the body’s natural contours for a more precise massage.
+            By adjusting the massage path from the
+            <span class="tw-font-semibold tw-brightness-50"
+              >neck and shoulders to the lower back and hips</span
+            >, it helps deliver smoother, more personalized full-body comfort.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="desktop-gradient tw-mb-40 lg:tw-rounded-3xl lg:tw-p-20">
+      <div
+        class="section tw-mx-auto tw-mb-20 tw-flex tw-flex-col tw-gap-y-4 lg:tw-text-center"
+      >
+        <img src="" alt="" class="tw-mx-auto lg:tw-w-3/4" />
+        <div
+          class="header-font tw-p-4 tw-pb-0 tw-text-4xl tw-font-semibold tw-uppercase lg:tw-order-first"
+        >
+          <span style="color: #2b56c1">3-stage </span> <br />
+          zero gravity reclining
+        </div>
+        <div class="tw-p-4 tw-pt-0 tw-text-lg tw-text-neutral-500">
+          Experience complete relaxation with Aria’s
+          <span class="tw-font-semibold tw-brightness-50"
+            >Zero Gravity Reclining</span
+          >. This
+          <span class="tw-font-semibold tw-brightness-50">3-stage</span>,
+          NASA-inspired technology gently positions your body to help relieve
+          pressure and create a weightless feeling.
+        </div>
+      </div>
+
+      <div class="tw-mb-40 tw-grid tw-gap-20 tw-gap-y-20 lg:tw-grid-cols-2">
+        <div class="tw-flex tw-flex-col tw-overflow-hidden lg:tw-rounded-3xl">
+          <img src="" alt="" class="lg:tw-order-2 lg:tw-rounded-3xl" />
+          <div
+            class="tw-flex tw-flex-col tw-items-start tw-space-y-4 tw-p-4 lg:tw-p-10 lg:tw-px-0"
+          >
+            <img src="" alt="" class="tw-h-10" />
+            <div
+              class="header-font tw-text-4xl tw-font-semibold tw-uppercase lg:tw-text-3xl"
+            >
+              <span style="color: #2b56c1"> SL-Track</span> <br />
+
+              SYSTEM
+            </div>
+            <div class="tw-text-lg tw-text-neutral-500">
+              The extended SL track merges S and L shapes to follow your spine’s
+              natural curve, reaching from neck to upper glutes for broader
+              coverage and quicker recovery.
+            </div>
+          </div>
+        </div>
+        <div class="tw-flex tw-flex-col tw-overflow-hidden lg:tw-rounded-3xl">
+          <img src="" alt="" class="lg:tw-order-2 lg:tw-rounded-3xl" />
+          <div
+            class="tw-flex tw-flex-col tw-items-start tw-space-y-4 tw-p-4 lg:tw-p-10 lg:tw-px-0"
+          >
+            <img src="" alt="" class="tw-h-10" />
+            <div
+              class="header-font tw-text-4xl tw-font-semibold tw-uppercase lg:tw-text-3xl"
+            >
+              <span style="color: #2b56c1"> Space-saving </span> <br />
+
+              TEchnology
+            </div>
+            <div class="tw-text-lg tw-text-neutral-500">
+              Engineered for space efficiency, the chair’s advanced technology
+              lets it slide forward as it reclines, enabling a full recline even
+              when positioned just
+              <span class="tw-font-semibold tw-brightness-50">6 inches</span>
+              from the wall.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="section tw-mx-auto tw-mb-20 tw-grid tw-items-center lg:tw-grid-cols-2"
+      >
+        <img src="" alt="" class="tw-mx-auto lg:tw-w-5/6" />
+        <div class="tw-flex tw-flex-col tw-gap-y-4 tw-p-4">
+          <div class="header-font tw-text-4xl tw-font-semibold tw-uppercase">
+            <span style="color: #2b56c1"> 28-Cell </span> <br />
+
+            Full Body <br />
+            Air massage
+          </div>
+          <div class="tw-text-lg tw-text-neutral-500">
+            Large flexible airbags gently surround the shoulders, arms, waist,
+            legs, feet, and calves to deliver a soothing
+            <span class="tw-font-semibold tw-brightness-50"
+              >full-body compression massage</span
+            >. Rhythmic air pressure and adjustable intensity levels help ease
+            built-up tension, reduce fatigue, and create a more relaxing
+            recovery experience.
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="section tw-mx-auto tw-mb-20 tw-grid tw-items-center lg:tw-grid-cols-2"
+      >
+        <img
+          src=""
+          alt=""
+          class="tw-mx-auto tw-w-5/6 lg:tw-order-2 lg:tw-w-2/3"
+        />
+        <div class="tw-flex tw-flex-col tw-gap-y-4 tw-p-4">
+          <img src="" alt="" class="tw-w-10" />
+          <div
+            class="header-font tw-text-3xl tw-font-semibold tw-uppercase lg:tw-text-4xl"
+          >
+            Lumbar & Foot<br />
+            <span style="color: red"> Heating</span>
+            Therapy
+          </div>
+          <div class="tw-text-lg tw-text-neutral-500">
+            The Titan Pro 4D Aria features soothing
+            <span class="tw-font-semibold tw-brightness-50">lumbar</span> and
+            <span class="tw-font-semibold tw-brightness-50">foot heating</span>
+            designed to warm key areas of the body during massage. Combined with
+            lower-back kneading, the gentle heat helps ease tension and create a
+            more relaxing full-body experience.
+          </div>
+          <div class="tw-text-sm tw-italic tw-text-neutral-400">
+            *The heating pads provide warmth in the range of approximately 75 -
+            83°F
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tw-mb-40 tw-text-center tw-uppercase">
+      <div
+        class="header-font tw-py-10 tw-text-4xl tw-font-semibold tw-uppercase"
+      >
+        <span style="color: #2b56c1"> 24 Auto </span>
+        Programs
+      </div>
+      <div
+        class="desktop-blue tw-mb-10 tw-bg-white lg:tw-rounded-3xl lg:tw-shadow-xl"
+      >
+        <div class="tw-py-20">
+          <div
+            class="header-font tw-p-10 tw-pt-0 tw-text-3xl tw-font-semibold tw-uppercase"
+          >
+            <span style="color: #2b56c1"> 8 CLASSICAL </span>
+            Mode
+          </div>
+          <div
+            class="tw-mx-auto tw-grid tw-grid-cols-3 tw-gap-4 tw-gap-y-10 tw-text-sm tw-font-semibold lg:tw-w-3/4 lg:tw-grid-cols-4 lg:tw-gap-10"
+          >
+            <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+              <img src="" alt="" class="tw-w-20" />
+              <div>demo</div>
+            </div>
+
+            <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+              <img src="" alt="" class="tw-w-20" />
+              <div>thai stretch</div>
+            </div>
+
+            <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+              <img src="" alt="" class="tw-w-20" />
+              <div>
+                body <br />
+                circulation
+              </div>
+            </div>
+
+            <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+              <img src="" alt="" class="tw-w-20" />
+              <div>relax</div>
+            </div>
+
+            <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+              <img src="" alt="" class="tw-w-20" />
+              <div>morning care</div>
+            </div>
+
+            <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+              <img src="" alt="" class="tw-w-20" />
+              <div>midday care</div>
+            </div>
+
+            <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+              <img src="" alt="" class="tw-w-20" />
+              <div>night care</div>
+            </div>
+
+            <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+              <img src="" alt="" class="tw-w-20" />
+              <div>deep tissue</div>
+            </div>
+          </div>
+        </div>
+        <div class="desktop-blue tw-py-20 lg:tw-rounded-3xl">
+          <div
+            class="header-font tw-p-10 tw-pt-0 tw-text-3xl tw-font-semibold tw-uppercase"
+          >
+            <span style="color: #2b56c1"> 8 Customized </span>
+            Mode
+          </div>
+          <div
+            class="tw-mx-auto tw-grid tw-grid-cols-3 tw-gap-4 tw-gap-y-10 tw-text-sm tw-font-semibold lg:tw-w-3/4 lg:tw-grid-cols-4 lg:tw-gap-10"
+          >
+            <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+              <img src="" alt="" class="tw-w-20" />
+              <div>extension</div>
+            </div>
+
+            <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+              <img src="" alt="" class="tw-w-20" />
+              <div>women's health</div>
+            </div>
+
+            <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+              <img src="" alt="" class="tw-w-20" />
+              <div>shiatsu</div>
+            </div>
+
+            <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+              <img src="" alt="" class="tw-w-20" />
+              <div>men's health</div>
+            </div>
+
+            <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+              <img src="" alt="" class="tw-w-20" />
+              <div>office relief</div>
+            </div>
+
+            <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+              <img src="" alt="" class="tw-w-20" />
+              <div>sports recovery</div>
+            </div>
+
+            <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+              <img src="" alt="" class="tw-w-20" />
+              <div>foot care</div>
+            </div>
+
+            <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+              <img src="" alt="" class="tw-w-20" />
+              <div>rejuvenate</div>
+            </div>
+          </div>
+        </div>
+        <div class="desktop-blue tw-py-20 lg:tw-rounded-3xl">
+          <div
+            class="header-font tw-p-10 tw-pt-0 tw-text-3xl tw-font-semibold tw-uppercase"
+          >
+            <span style="color: #2b56c1"> 8 position </span>
+            <br class="tw-block lg:tw-hidden" />
+            Mode
+          </div>
+          <div
+            class="tw-mx-auto tw-grid tw-grid-cols-3 tw-gap-4 tw-gap-y-10 tw-text-sm tw-font-semibold lg:tw-w-3/4 lg:tw-grid-cols-4 lg:tw-gap-10"
+          >
+            <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+              <img src="" alt="" class="tw-w-20" />
+              <div>
+                neck <br />
+                massage
+              </div>
+            </div>
+
+            <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+              <img src="" alt="" class="tw-w-20" />
+              <div>
+                neck and <br />
+                shoulder massage
+              </div>
+            </div>
+
+            <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+              <img src="" alt="" class="tw-w-20" />
+              <div>
+                back <br />
+                massage
+              </div>
+            </div>
+
+            <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+              <img src="" alt="" class="tw-w-20" />
+              <div>
+                lumbar <br />
+                massage
+              </div>
+            </div>
+
+            <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+              <img src="" alt="" class="tw-w-20" />
+              <div>
+                waist & hip <br />
+                massage
+              </div>
+            </div>
+
+            <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+              <img src="" alt="" class="tw-w-20" />
+              <div>
+                legs <br />
+                massages
+              </div>
+            </div>
+
+            <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+              <img src="" alt="" class="tw-w-20" />
+              <div>upper body</div>
+            </div>
+
+            <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+              <img src="" alt="" class="tw-w-20" />
+              <div>lower body</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="header-font tw-py-10 tw-text-4xl tw-font-semibold tw-uppercase"
+      >
+        <span style="color: #2b56c1"> 6 Manual </span>
+        Programs
+      </div>
+      <div class="desktop-blue tw-mb-10 lg:tw-rounded-3xl lg:tw-shadow-xl">
+        <div class="tw-py-20 lg:tw-p-10">
+          <div
+            class="tw-mx-auto tw-grid tw-grid-cols-3 tw-gap-4 tw-gap-y-10 tw-font-semibold lg:tw-w-3/4 lg:tw-gap-10"
+          >
+            <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+              <img src="" alt="" class="tw-w-20 lg:tw-w-28" />
+              <div>kneading</div>
+            </div>
+            <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+              <img src="" alt="" class="tw-w-20 lg:tw-w-28" />
+              <div>percussion</div>
+            </div>
+            <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+              <img src="" alt="" class="tw-w-20 lg:tw-w-28" />
+              <div>acupressure</div>
+            </div>
+            <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+              <img src="" alt="" class="tw-w-20 lg:tw-w-28" />
+              <div>flap</div>
+            </div>
+            <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+              <img src="" alt="" class="tw-w-20 lg:tw-w-28" />
+              <div>slap</div>
+            </div>
+            <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+              <img src="" alt="" class="tw-w-20 lg:tw-w-28" />
+              <div>mixture</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="tw-mb-40 tw-grid tw-gap-10 tw-gap-y-20 lg:tw-mx-20 lg:tw-grid-cols-2 lg:tw-text-center"
+    >
+      <div
+        class="desktop-blue tw-flex tw-flex-col tw-overflow-hidden lg:tw-rounded-3xl lg:tw-shadow-xl"
+      >
+        <img src="" alt="" />
+        <div class="tw-flex tw-flex-col tw-gap-y-4 tw-p-4 lg:tw-p-10">
+          <div
+            class="header-font tw-text-4xl tw-font-semibold tw-uppercase lg:tw-text-3xl"
+          >
+            <span style="color: #2b56c1"> 3-row</span> <br />
+
+            foot rollers <br />
+            massage
+          </div>
+          <div class="tw-text-lg tw-text-neutral-500">
+            Three rows of advanced foot rollers gently massage the soles to help
+            relieve built-up tension and everyday fatigue. Designed to stimulate
+            key pressure points, the system promotes improved circulation and
+            enhanced relaxation.
+          </div>
+        </div>
+      </div>
+      <div
+        class="desktop-blue tw-flex tw-flex-col tw-overflow-hidden lg:tw-rounded-3xl lg:tw-shadow-xl"
+      >
+        <img src="" alt="" />
+        <div class="tw-flex tw-flex-col tw-gap-y-4 tw-p-4 lg:tw-p-10">
+          <div
+            class="header-font tw-text-4xl tw-font-semibold tw-uppercase lg:tw-text-3xl"
+          >
+            <span style="color: #2b56c1"> 2 Calf rollers </span> <br />
+
+            massage
+          </div>
+          <div class="tw-text-lg tw-text-neutral-500">
+            Dedicated calf rollers gently massage tired lower legs to help
+            relieve built-up tension and everyday fatigue. Designed to promote
+            improved circulation and soothing recovery for enhanced lower-body
+            comfort.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="section tw-mx-auto tw-mb-40 tw-grid tw-items-center lg:tw-grid-cols-2"
+    >
+      <img src="" alt="" class="desktop-blue tw-mx-auto lg:tw-rounded-3xl" />
+      <div class="tw-flex tw-flex-col tw-gap-y-4 tw-p-4 lg:tw-pl-20">
+        <div class="header-font tw-text-4xl tw-font-semibold tw-uppercase">
+          <span style="color: #2b56c1"> Automatic </span> <br />
+          Leg Extension
+        </div>
+        <div class="tw-text-lg tw-text-neutral-500">
+          Featuring an
+          <span class="tw-font-semibold tw-brightness-50"
+            >auto-extending footrest</span
+          >, the Titan Pro 4D Aria adapts smoothly to different leg lengths for
+          a more comfortable fit. With
+          <span class="tw-font-semibold tw-brightness-50">up to 6 inches</span>
+          of extension, the footrest adjusts automatically without the need for
+          manual positioning.
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="section tw-mb-40 tw-flex tw-flex-col tw-gap-y-4 lg:tw-text-center"
+    >
+      <img
+        src=""
+        alt=""
+        class="tw-h-96 tw-object-cover lg:tw-h-auto lg:tw-rounded-3xl"
+        style="object-position: 82% 50%"
+      />
+      <div
+        class="header-font tw-text-3xl tw-font-semibold tw-uppercase lg:tw-order-first lg:tw-text-4xl"
+      >
+        IMMERSIVE <br class="tw-block lg:tw-hidden" />
+        <span style="color: #2b56c1">BLUETOOTH SPEAKERS </span>
+        <br class="" />
+        & <span style="color: #2b56c1">LED </span>
+        EXPERIENCE
+      </div>
+      <div class="tw-mx-auto tw-text-lg tw-text-neutral-500 lg:tw-w-3/4">
+        Built-in Bluetooth speakers create a more immersive and relaxing massage
+        experience. Enjoy music, podcasts, or calming audio while unwinding in
+        comfort for a more complete sense of relaxation.
+      </div>
+    </div>
+    <div class="tw-mb-40 tw-flex tw-flex-col lg:tw-text-center">
+      <div class="tw-grid tw-gap-4 lg:tw-order-2 lg:tw-grid-cols-3">
+        <img src="" alt="" class="lg:tw-rounded-3xl" />
+        <img src="" alt="" class="lg:tw-rounded-3xl" />
+        <img src="" alt="" class="lg:tw-rounded-3xl" />
+      </div>
+      <div
+        class="tw-mx-auto tw-flex tw-flex-col tw-gap-y-4 tw-p-4 lg:tw-w-2/3 lg:tw-p-10"
+      >
+        <div class="header-font tw-text-4xl tw-font-semibold tw-uppercase">
+          <span style="color: #2b56c1"> Removable </span> <br />
+          headrest
+        </div>
+        <div class="tw-text-lg tw-text-neutral-500">
+          Removable headrest allows for a deeper, more targeted massage on the
+          neck and upper shoulders.
+        </div>
+      </div>
+    </div>
+    <div
+      class="section desktop-blue tw-mx-auto tw-mb-10 tw-grid tw-items-center tw-overflow-hidden lg:tw-mb-20 lg:tw-grid-cols-2 lg:tw-rounded-3xl lg:tw-text-center"
+    >
+      <img src="" alt="" class="" />
+      <div class="tw-flex tw-flex-col tw-gap-y-4 tw-p-4 lg:tw-p-10">
+        <img src="" alt="" class="tw-w-12 lg:tw-mx-auto" />
+        <div class="header-font tw-text-3xl tw-font-semibold tw-uppercase">
+          <span style="color: #2b56c1"> Touchscreen </span> <br />
+          Controller
+        </div>
+        <div class="tw-text-lg tw-text-neutral-500">
+          The Titan Pro 4D features an intuitive
+          <span class="tw-font-semibold tw-brightness-50"
+            >7-inch touchscreen controller</span
+          >
+          designed for simple and convenient operation. Easily access massage
+          programs, adjust settings, and personalize the massage experience with
+          a clear, user-friendly interface.
+        </div>
+      </div>
+    </div>
+    <div
+      class="section desktop-blue tw-mx-auto tw-mb-10 tw-grid tw-items-center tw-overflow-hidden lg:tw-mb-20 lg:tw-grid-cols-2 lg:tw-rounded-3xl lg:tw-text-center"
+    >
+      <img src="" alt="" class="lg:tw-order-2" />
+      <div class="tw-flex tw-flex-col tw-gap-y-4 tw-p-4 lg:tw-p-10">
+        <img src="" alt="" class="tw-w-12 lg:tw-mx-auto" />
+        <div class="header-font tw-text-3xl tw-font-semibold tw-uppercase">
+          <span style="color: #2b56c1"> Wireless </span> <br />
+          Charging
+        </div>
+        <div class="tw-text-lg tw-text-neutral-500">
+          <span class="tw-font-semibold tw-brightness-50"
+            >Built-in wireless charging</span
+          >
+          allows you to conveniently power compatible devices while you relax,
+          creating a more seamless and comfortable massage experience.
+        </div>
+      </div>
+    </div>
+    <div
+      class="section desktop-blue tw-mx-auto tw-mb-40 tw-grid tw-items-center tw-overflow-hidden lg:tw-grid-cols-2 lg:tw-rounded-3xl lg:tw-text-center"
+    >
+      <img src="" alt="" class="" />
+      <div class="tw-flex tw-flex-col tw-gap-y-4 tw-p-4 lg:tw-p-10">
+        <img src="" alt="" class="tw-w-12 lg:tw-mx-auto" />
+        <div class="header-font tw-text-3xl tw-font-semibold tw-uppercase">
+          <span style="color: #2b56c1"> Quick access </span> <br />
+          Control Panel
+        </div>
+        <div class="tw-text-lg tw-text-neutral-500">
+          The Titan Pro 4D Aria features a convenient
+          <span class="tw-font-semibold tw-brightness-50"
+            >quick control button</span
+          >
+          built into the armrest for easy access during massage. Adjust key
+          functions such as massage position, intensity, and recline settings
+          without needing to use the touchscreen.
+        </div>
+      </div>
+    </div>
+
     <div
       class="tw-mx-auto tw-mb-40 tw-grid lg:tw-grid-cols-2 lg:tw-items-center"
     >
