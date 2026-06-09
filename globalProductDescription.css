@@ -3520,10 +3520,6 @@ img{
     grid-column: span 7 / span 7;
   }
 
-  .lg\:tw-col-span-full {
-    grid-column: 1 / -1;
-  }
-
   .lg\:tw-m-0 {
     margin: 0px;
   }
@@ -4398,10 +4394,6 @@ img{
     padding-top: 24px;
   }
 
-  .lg\:tw-pb-16 {
-    padding-bottom: 64px;
-  }
-
   .lg\:tw-text-left {
     text-align: left;
   }
@@ -4520,6 +4512,11 @@ img{
     color: rgb(255 255 255 / var(--tw-text-opacity, 1));
   }
 
+  .lg\:tw-text-neutral-200 {
+    --tw-text-opacity: 1;
+    color: rgb(229 229 229 / var(--tw-text-opacity, 1));
+  }
+
   .lg\:tw-shadow-lg {
     --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
@@ -4530,6 +4527,11 @@ img{
     --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
     --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .lg\:tw-brightness-100 {
+    --tw-brightness: brightness(1);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
   }
 
   .lg\:tw-brightness-150 {
