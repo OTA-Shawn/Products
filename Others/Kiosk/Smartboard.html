@@ -814,7 +814,7 @@
       background: var(--pp-bg-dark);
     }
     .pp-compare-head-cell {
-      min-width: 125px;
+      min-width: 150px;
       padding: 18px 22px;
       text-align: left;
       font-size: 12.8px;
@@ -823,6 +823,9 @@
       letter-spacing: 0.05em;
       text-transform: uppercase;
       margin-left: 22px;
+    }
+    .pp-compare-first-cell {
+      min-width: 125px;
     }
     .pp-compare-head-cell.pp-ours {
       min-width: 225px;
@@ -1522,8 +1525,7 @@
             <thead class="pp-compare-head pp-compare-table">
               <tr class="pp-compare-row pp-compare-table">
                 <th
-                  style="width: 200px"
-                  class="pp-compare-head-cell pp-compare-table"
+                  class="pp-compare-head-cell pp-compare-table pp-compare-first-cell"
                 >
                   Feature
                 </th>
@@ -1543,7 +1545,9 @@
             </thead>
             <tbody class="pp-compare-body pp-compare-table">
               <tr class="pp-compare-row pp-compare-table">
-                <td class="pp-compare-body-cell pp-first-col pp-compare-table">
+                <td
+                  class="pp-compare-body-cell pp-first-col pp-compare-table pp-compare-first-cell"
+                >
                   Starting Price
                 </td>
                 <td class="pp-ours pp-compare-body-cell pp-compare-table">
