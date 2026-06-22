@@ -1377,32 +1377,6 @@
   })()
 </script>
 
-<script>
-  ;(function getImages() {
-    document.querySelectorAll(".sections img").forEach((img, i) => {
-      img.src = imgs[i].img_src
-      img.alt = imgs[i].img_name
-    })
-  })()
-  ;(function createVideoDOM() {
-    const getYoutubeSrc = (src) => {
-      const regex = /[a-z0-9_-]{11}/gi
-
-      const id = src.match(regex)[0]
-      const dst = "https://www.youtube.com/embed/" + id + "?mute=1&autoplay=1"
-      return dst
-    }
-    const iframe = document.createElement("iframe")
-    // iframe.classList = "tw-aspect-video tw-w-full tw-mb-20"
-    try {
-      iframe.src = getYoutubeSrc(youtube_link)
-      document.getElementById("youtube-link").appendChild(iframe)
-    } catch (err) {
-      console.log(err)
-    }
-  })()
-</script>
-
 <!-- Thumbnail Swatches Begin-->
 <script>
   ;(function () {
