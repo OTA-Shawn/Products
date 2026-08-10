@@ -456,6 +456,10 @@
   margin-bottom: 80px;
 }
 
+.tw-mb-28 {
+  margin-bottom: 112px;
+}
+
 .tw-mb-32 {
   margin-bottom: 128px;
 }
@@ -582,6 +586,10 @@
 
 .tw-mt-auto {
   margin-top: auto;
+}
+
+.tw-mt-16 {
+  margin-top: 64px;
 }
 
 .tw-box-border {
@@ -1436,6 +1444,10 @@
 
 .tw-scroll-smooth {
   scroll-behavior: smooth;
+}
+
+.tw-text-wrap {
+  text-wrap: wrap;
 }
 
 .tw-rounded-2xl {
@@ -4255,6 +4267,16 @@ img{
     background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
   }
 
+  .lg\:tw-bg-neutral-300 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(212 212 212 / var(--tw-bg-opacity, 1));
+  }
+
+  .lg\:tw-bg-neutral-200 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(229 229 229 / var(--tw-bg-opacity, 1));
+  }
+
   .lg\:\!tw-p-10 {
     padding: 40px !important;
   }
@@ -4419,6 +4441,10 @@ img{
     padding-right: 80px;
   }
 
+  .lg\:tw-pr-24 {
+    padding-right: 96px;
+  }
+
   .lg\:tw-pr-5 {
     padding-right: 20px;
   }
@@ -4441,6 +4467,10 @@ img{
 
   .lg\:tw-pt-6 {
     padding-top: 24px;
+  }
+
+  .lg\:tw-pr-28 {
+    padding-right: 112px;
   }
 
   .lg\:tw-text-left {
@@ -4543,6 +4573,11 @@ img{
   .lg\:tw-text-neutral-100 {
     --tw-text-opacity: 1;
     color: rgb(245 245 245 / var(--tw-text-opacity, 1));
+  }
+
+  .lg\:tw-text-neutral-200 {
+    --tw-text-opacity: 1;
+    color: rgb(229 229 229 / var(--tw-text-opacity, 1));
   }
 
   .lg\:tw-text-neutral-300 {

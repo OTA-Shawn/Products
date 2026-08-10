@@ -1,16 +1,22 @@
 <!-- <ul>
-  <li><b> 3D Massage Mechanism </b></li>
-  <li>Computer Body Scan System</li>
+  <li><b>Intelligent Voice Control</b></li>
+  <li><b>Dual Rail Massage System</b></li>
+  <li><b>4D Massage Mechanism</b></li>
 
-  <li><b> SL-Track </b></li>
-  <li>Full Body Compression Massage</li>
-
-  <li>Lumbar Heat Therapy</li>
-  <li>6 Auto Programs &amp; 6 Massage Styles</li>
-
-  <li>Zero Gravity Reclining</li>
+  <li>Body Scan System</li>
+  <li><b>SL-Track</b></li>
+  <li>3 Stage Zero Gravity Reclining</li>
   <li>Space Saving Technology</li>
-  <li><b>Spring-Loaded Extendable Footrest</b></li>
+
+  <li>28-Cell Full Body Air Massage</li>
+  <li>Lumbar &amp; Foot Heat Therapy</li>
+
+  <li>24 Auto Programs &amp; 6 Massage Styles</li>
+
+  <li><b>Calf Roller Massage</b></li>
+  <li><b>3 Row Foot Roller Massage</b></li>
+
+  <li><b>Automatic Leg Extension</b></li>
   <li>Bluetooth Speakers</li>
 </ul> -->
 
@@ -25,354 +31,366 @@
   const youtube_link = " "
 
   const imgs = [
-    // {
-    //   img_order: 1,
-    //   img_name: "Optim_main",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.Optim_main.webp",
-    // },
-    // {
-    //   img_order: 2,
-    //   img_name: "Artboard-7",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3-2.Artboard-7.webp",
-    // },
-    // {
-    //   img_order: 3,
-    //   img_name: "Optim_color_black",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4.Optim_color_black.webp",
-    // },
-    // {
-    //   img_order: 4,
-    //   img_name: "Optim_color_brown",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/5.Optim_color_brown.webp",
-    // },
-    // {
-    //   img_order: 5,
-    //   img_name: "Optim_color_taupe",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/6.Optim_color_taupe.webp",
-    // },
-    // {
-    //   img_order: 6,
-    //   img_name: "Optim_voice-control",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/9.Optim_voice-control.webp",
-    // },
-    // {
-    //   img_order: 7,
-    //   img_name: "Optim_dual-rail",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.Optim_dual-rail.webp",
-    // },
-    // {
-    //   img_order: 8,
-    //   img_name: "Optim_4D",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/11.Optim_4D.webp",
-    // },
-    // {
-    //   img_order: 9,
-    //   img_name: "Optim_bodyscan",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12.Optim_bodyscan.webp",
-    // },
-    // {
-    //   img_order: 10,
-    //   img_name: "Optim_SL-track",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/13.Optim_SL-track.webp",
-    // },
-    // {
-    //   img_order: 11,
-    //   img_name: "Optim_ZG",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/14.Optim_ZG.webp",
-    // },
-    // {
-    //   img_order: 12,
-    //   img_name: "Optim_space-saving",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/16.Optim_space-saving.webp",
-    // },
-    // {
-    //   img_order: 13,
-    //   img_name: "Optim_icon_space-saving",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/16-2.Optim_icon_space-saving.webp",
-    // },
-    // {
-    //   img_order: 14,
-    //   img_name: "Optim_air-cell",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/17.Optim_air-cell.webp",
-    // },
-    // {
-    //   img_order: 15,
-    //   img_name: "Optim_heating",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19.Optim_heating.webp",
-    // },
-    // {
-    //   img_order: 16,
-    //   img_name: "Optim_icon_heating",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19-2.Optim_icon_heating.webp",
-    // },
-    // {
-    //   img_order: 17,
-    //   img_name: "Optim_icon_demo",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/20.Optim_icon_demo.webp",
-    // },
-    // {
-    //   img_order: 18,
-    //   img_name: "Optim_icon_thai-stretch",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/21.Optim_icon_thai-stretch.webp",
-    // },
-    // {
-    //   img_order: 19,
-    //   img_name: "Optim_icon_body-circulation",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/22.Optim_icon_body-circulation.webp",
-    // },
-    // {
-    //   img_order: 20,
-    //   img_name: "Optim_icon_relax",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/23.Optim_icon_relax.webp",
-    // },
-    // {
-    //   img_order: 21,
-    //   img_name: "Artboard-24",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/24.Artboard-24.webp",
-    // },
-    // {
-    //   img_order: 22,
-    //   img_name: "Optim_icon_midday-care",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/25.Optim_icon_midday-care.webp",
-    // },
-    // {
-    //   img_order: 23,
-    //   img_name: "Optim_icon_night-care",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/26.Optim_icon_night-care.webp",
-    // },
-    // {
-    //   img_order: 24,
-    //   img_name: "Optim_icon_deep-tissue",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/27.Optim_icon_deep-tissue.webp",
-    // },
-    // {
-    //   img_order: 25,
-    //   img_name: "Optim_icon_extension",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/28.Optim_icon_extension.webp",
-    // },
-    // {
-    //   img_order: 26,
-    //   img_name: "Optim_icon_women",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/29.Optim_icon_women.webp",
-    // },
-    // {
-    //   img_order: 27,
-    //   img_name: "shiatsu",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/30.shiatsu.webp",
-    // },
-    // {
-    //   img_order: 28,
-    //   img_name: "Optim_icon_men",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/31.Optim_icon_men.webp",
-    // },
-    // {
-    //   img_order: 29,
-    //   img_name: "Optim_icon_office",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/32.Optim_icon_office.webp",
-    // },
-    // {
-    //   img_order: 30,
-    //   img_name: "Optim_icon_sports",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/33.Optim_icon_sports.webp",
-    // },
-    // {
-    //   img_order: 31,
-    //   img_name: "Optim_icon_foot-care",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/34.Optim_icon_foot-care.webp",
-    // },
-    // {
-    //   img_order: 32,
-    //   img_name: "Optim_icon_rejuvenate",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/35.Optim_icon_rejuvenate.webp",
-    // },
-    // {
-    //   img_order: 33,
-    //   img_name: "Optim_icon_neck",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/36.Optim_icon_neck.webp",
-    // },
-    // {
-    //   img_order: 34,
-    //   img_name: "Optim_icon_neck-_-shoulder",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/37.Optim_icon_neck-_-shoulder.webp",
-    // },
-    // {
-    //   img_order: 35,
-    //   img_name: "Optim_icon_back",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/38.Optim_icon_back.webp",
-    // },
-    // {
-    //   img_order: 36,
-    //   img_name: "Optim_icon_lumbar",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/39.Optim_icon_lumbar.webp",
-    // },
-    // {
-    //   img_order: 37,
-    //   img_name: "Optim_icon_waist-_-hip",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/40.Optim_icon_waist-_-hip.webp",
-    // },
-    // {
-    //   img_order: 38,
-    //   img_name: "Optim_icon_legs",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/41.Optim_icon_legs.webp",
-    // },
-    // {
-    //   img_order: 39,
-    //   img_name: "Optim_icon_upper-body",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/42.Optim_icon_upper-body.webp",
-    // },
-    // {
-    //   img_order: 40,
-    //   img_name: "Optim_icon_lower-body",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/43.Optim_icon_lower-body.webp",
-    // },
-    // {
-    //   img_order: 41,
-    //   img_name: "Optim_icon_kneading",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/44.Optim_icon_kneading.webp",
-    // },
-    // {
-    //   img_order: 42,
-    //   img_name: "Optim_icon_percussion",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/45.Optim_icon_percussion.webp",
-    // },
-    // {
-    //   img_order: 43,
-    //   img_name: "Optim_icon_acupressure",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/46.Optim_icon_acupressure.webp",
-    // },
-    // {
-    //   img_order: 44,
-    //   img_name: "Optim_icon_flap",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/47.Optim_icon_flap.webp",
-    // },
-    // {
-    //   img_order: 45,
-    //   img_name: "Optim_icon_slap",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/48.Optim_icon_slap.webp",
-    // },
-    // {
-    //   img_order: 46,
-    //   img_name: "Optim_icon_mixture",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/49.Optim_icon_mixture.webp",
-    // },
-    // {
-    //   img_order: 47,
-    //   img_name: "Optim_calf-roller",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/50.Optim_calf-roller.webp",
-    // },
-    // {
-    //   img_order: 48,
-    //   img_name: "Optim_foot-roller",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/51.Optim_foot-roller.webp",
-    // },
-    // {
-    //   img_order: 49,
-    //   img_name: "Optim_leg-extension",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/53.Optim_leg-extension.webp",
-    // },
-    // {
-    //   img_order: 50,
-    //   img_name: "Optim_icon_leg-extension",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/53-2.Optim_icon_leg-extension.webp",
-    // },
-    // {
-    //   img_order: 51,
-    //   img_name: "Optim_led",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/55.Optim_led.webp",
-    // },
-    // {
-    //   img_order: 52,
-    //   img_name: "Optim_icon_led",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/55-2.Optim_icon_led.webp",
-    // },
-    // {
-    //   img_order: 53,
-    //   img_name: "Optim_bluetooth-speakers",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/57.Optim_bluetooth-speakers.webp",
-    // },
-    // {
-    //   img_order: 54,
-    //   img_name: "Optim_icon_bluetooth-speakers",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/57-2.Optim_icon_bluetooth-speakers.webp",
-    // },
-    // {
-    //   img_order: 55,
-    //   img_name: "Optim_control-panel",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/58.Optim_control-panel.webp",
-    // },
-    // {
-    //   img_order: 56,
-    //   img_name: "Optim_touchscreen",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/59.Optim_touchscreen.webp",
-    // },
-    // {
-    //   img_order: 57,
-    //   img_name: "Optim_wireless-charging",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/60.Optim_wireless-charging.webp",
-    // },
-    // {
-    //   img_order: 58,
-    //   img_name: "Optim_headrest",
-    //   img_src:
-    //     "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/61.Optim_headrest.webp",
-    // },
+    {
+      img_order: 1,
+      img_name: "Optim_main",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.Optim_main.webp",
+    },
+    {
+      img_order: 2,
+      img_name: "Artboard-7",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3-2.Artboard-7.webp",
+    },
+    {
+      img_order: 3,
+      img_name: "Optim_color_black",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4.Optim_color_black.webp",
+    },
+    {
+      img_order: 4,
+      img_name: "Optim_color_brown",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/5.Optim_color_brown.webp",
+    },
+    {
+      img_order: 5,
+      img_name: "Optim_color_taupe",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/6.Optim_color_taupe.webp",
+    },
+    {
+      img_order: 6,
+      img_name: "Optim_voice-control",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/9.Optim_voice-control.webp",
+    },
+    {
+      img_order: 7,
+      img_name: "Optim_dual-rail",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.Optim_dual-rail.webp",
+    },
+    {
+      img_order: 8,
+      img_name: "Optim_4D",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/11.Optim_4D.webp",
+    },
+    {
+      img_order: 9,
+      img_name: "Optim_bodyscan",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12.Optim_bodyscan.webp",
+    },
+    {
+      img_order: 10,
+      img_name: "Optim_SL-track",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/13.Optim_SL-track.webp",
+    },
+    {
+      img_order: 11,
+      img_name: "Optim_ZG",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/14.Optim_ZG.webp",
+    },
+    {
+      img_order: 12,
+      img_name: "Optim_space-saving",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/16.Optim_space-saving.webp",
+    },
+    {
+      img_order: 13,
+      img_name: "Optim_icon_space-saving",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/16-2.Optim_icon_space-saving.webp",
+    },
+    {
+      img_order: 14,
+      img_name: "Optim_air-cell",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/17.Optim_air-cell.webp",
+    },
+    {
+      img_order: 15,
+      img_name: "Optim_heating",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19.Optim_heating.webp",
+    },
+    {
+      img_order: 15 - 2,
+      img_name: "Optim_heating-mobile-1",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19-2.Optim_heating_mobile_lumbar.webp?v=1786117024",
+    },
+    {
+      img_order: 15 - 3,
+      img_name: "Optim_heating-mobile-2",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19-3.Optim_heating_lumbar_foot.webp?v=1786117024",
+    },
+    {
+      img_order: 16,
+      img_name: "Optim_icon_heating",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19-2.Optim_icon_heating.webp",
+    },
+    {
+      img_order: 17,
+      img_name: "Optim_icon_demo",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/20.Optim_icon_demo.webp",
+    },
+    {
+      img_order: 18,
+      img_name: "Optim_icon_thai-stretch",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/21.Optim_icon_thai-stretch.webp",
+    },
+    {
+      img_order: 19,
+      img_name: "Optim_icon_body-circulation",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/22.Optim_icon_body-circulation.webp",
+    },
+    {
+      img_order: 20,
+      img_name: "Optim_icon_relax",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/23.Optim_icon_relax.webp",
+    },
+    {
+      img_order: 21,
+      img_name: "Artboard-24",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/24.Artboard-24.webp",
+    },
+    {
+      img_order: 22,
+      img_name: "Optim_icon_midday-care",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/25.Optim_icon_midday-care.webp",
+    },
+    {
+      img_order: 23,
+      img_name: "Optim_icon_night-care",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/26.Optim_icon_night-care.webp",
+    },
+    {
+      img_order: 24,
+      img_name: "Optim_icon_deep-tissue",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/27.Optim_icon_deep-tissue.webp",
+    },
+    {
+      img_order: 25,
+      img_name: "Optim_icon_extension",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/28.Optim_icon_extension.webp",
+    },
+    {
+      img_order: 26,
+      img_name: "Optim_icon_women",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/29.Optim_icon_women.webp",
+    },
+    {
+      img_order: 27,
+      img_name: "shiatsu",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/30.shiatsu.webp",
+    },
+    {
+      img_order: 28,
+      img_name: "Optim_icon_men",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/31.Optim_icon_men.webp",
+    },
+    {
+      img_order: 29,
+      img_name: "Optim_icon_office",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/32.Optim_icon_office.webp",
+    },
+    {
+      img_order: 30,
+      img_name: "Optim_icon_sports",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/33.Optim_icon_sports.webp",
+    },
+    {
+      img_order: 31,
+      img_name: "Optim_icon_foot-care",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/34.Optim_icon_foot-care.webp",
+    },
+    {
+      img_order: 32,
+      img_name: "Optim_icon_rejuvenate",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/35.Optim_icon_rejuvenate.webp",
+    },
+    {
+      img_order: 33,
+      img_name: "Optim_icon_neck",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/36.Optim_icon_neck.webp",
+    },
+    {
+      img_order: 34,
+      img_name: "Optim_icon_neck-_-shoulder",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/37.Optim_icon_neck-_-shoulder.webp",
+    },
+    {
+      img_order: 35,
+      img_name: "Optim_icon_back",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/38.Optim_icon_back.webp",
+    },
+    {
+      img_order: 36,
+      img_name: "Optim_icon_lumbar",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/39.Optim_icon_lumbar.webp",
+    },
+    {
+      img_order: 37,
+      img_name: "Optim_icon_waist-_-hip",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/40.Optim_icon_waist-_-hip.webp",
+    },
+    {
+      img_order: 38,
+      img_name: "Optim_icon_legs",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/41.Optim_icon_legs.webp",
+    },
+    {
+      img_order: 39,
+      img_name: "Optim_icon_upper-body",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/42.Optim_icon_upper-body.webp",
+    },
+    {
+      img_order: 40,
+      img_name: "Optim_icon_lower-body",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/43.Optim_icon_lower-body.webp",
+    },
+    {
+      img_order: 41,
+      img_name: "Optim_icon_kneading",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/44.Optim_icon_kneading.webp",
+    },
+    {
+      img_order: 42,
+      img_name: "Optim_icon_percussion",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/45.Optim_icon_percussion.webp",
+    },
+    {
+      img_order: 43,
+      img_name: "Optim_icon_acupressure",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/46.Optim_icon_acupressure.webp",
+    },
+    {
+      img_order: 44,
+      img_name: "Optim_icon_flap",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/47.Optim_icon_flap.webp",
+    },
+    {
+      img_order: 45,
+      img_name: "Optim_icon_slap",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/48.Optim_icon_slap.webp",
+    },
+    {
+      img_order: 46,
+      img_name: "Optim_icon_mixture",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/49.Optim_icon_mixture.webp",
+    },
+    {
+      img_order: 47,
+      img_name: "Optim_calf-roller",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/50.Optim_calf-roller.webp",
+    },
+    {
+      img_order: 48,
+      img_name: "Optim_foot-roller",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/51.Optim_foot-roller.webp",
+    },
+    {
+      img_order: 49,
+      img_name: "Optim_leg-extension",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/53.Optim_leg-extension.webp",
+    },
+    {
+      img_order: 50,
+      img_name: "Optim_icon_leg-extension",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/53-2.Optim_icon_leg-extension.webp",
+    },
+    {
+      img_order: 51,
+      img_name: "Optim_led",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/55.Optim_led.webp",
+    },
+    {
+      img_order: 52,
+      img_name: "Optim_icon_led",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/55-2.Optim_icon_led.webp",
+    },
+    {
+      img_order: 53,
+      img_name: "Optim_bluetooth-speakers",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/57.Optim_bluetooth-speakers.webp",
+    },
+    {
+      img_order: 54,
+      img_name: "Optim_icon_bluetooth-speakers",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/57-2.Optim_icon_bluetooth-speakers.webp",
+    },
+    {
+      img_order: 55,
+      img_name: "Optim_control-panel",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/58.Optim_control-panel.webp",
+    },
+    {
+      img_order: 56,
+      img_name: "Optim_touchscreen",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/59.Optim_touchscreen.webp",
+    },
+    {
+      img_order: 57,
+      img_name: "Optim_wireless-charging",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/60.Optim_wireless-charging.webp",
+    },
+    {
+      img_order: 58,
+      img_name: "Optim_headrest",
+      img_src:
+        "https://cdn.shopify.com/s/files/1/0086/1297/0558/files/61.Optim_headrest.webp",
+    },
     {
       img_order: 59,
       img_name: "Optim_doorway",
@@ -426,10 +444,6 @@
         drop-shadow(-35px 35px 5px #00000020);
     }
 
-    .desktop-h-500 {
-      height: 500px;
-    }
-
     .desktop-border-blue {
       border-left: solid 6px #1b1464;
     }
@@ -445,6 +459,9 @@
     .desktop-bg-blue {
       background-color: #e9eff4;
     }
+    .desktop-bg-beige {
+      background-color: #f8f4f3;
+    }
 
     .desktop-bg-gradient-blue-1 {
       background: linear-gradient(to right, #fcfeff, #deeffb 40%);
@@ -458,9 +475,26 @@
       background: linear-gradient(to right, #fcfeff, #d5eafa 50%);
     }
 
+    .mobile-h-550px {
+      height: initial;
+    }
+
+    .desktop-h-580px {
+      height: 580px;
+    }
+
+    .desktop-h-900px {
+      height: 900px;
+    }
+
+    .mobile-black-filter {
+      filter: initial;
+    }
+
     @media (max-width: 1024px) {
       .desktop-gray,
       .desktop-blue,
+      .desktop-bg-beige,
       .desktop-bg-blue,
       .desktop-bg-gradient-blue-1,
       .desktop-bg-gradient-blue-2,
@@ -475,8 +509,14 @@
       .mobile-only {
         display: block;
       }
-      .desktop-h-500 {
-        height: auto;
+
+      .desktop-h-580px,
+      .desktop-h-900px {
+        height: initial;
+      }
+
+      .mobile-h-550px {
+        height: 550px;
       }
 
       .lightlike-shadow {
@@ -489,6 +529,9 @@
       .desktop--mt-30 {
         margin-top: initial;
       }
+      .mobile-black-filter {
+        filter: brightness(10%);
+      }
     }
   </style>
 </head>
@@ -496,6 +539,899 @@
   <div
     class="sections pp-font tw-m-auto tw-flex tw-flex-col tw-text-base tw-leading-normal min-[480px]:tw-w-[480px] md:tw-w-[768px] lg:tw-w-[1024px]"
   >
+    <div
+      id="youtube-link"
+      class="[&>*]:tw-mb-20 [&>*]:tw-aspect-video [&>*]:tw-w-full"
+    ></div>
+    <div class="">
+      <img src="" alt="" class="!tw-w-full" />
+      <div class="tw-p-4 tw-text-xl" style="color: #777">
+        The Osaki Optim 4D brings together advanced 4D massage, intelligent body
+        detection, a 53-inch SL-track, and zero gravity comfort for a more
+        personalized full-body experience. Integrated heat, air compression,
+        foot rollers, and smart convenience features complete a refined approach
+        to everyday relaxation.
+      </div>
+    </div>
+
+    <!-- Thumbnail Swatches Begin-->
+    <div
+      id="swatch-static-container"
+      class="tw-relative tw-mx-auto tw-mb-20 tw-w-full tw-max-w-xl"
+    >
+      <!-- SLIDER (horizontal scroll + snap) -->
+      <div class="tw-relative">
+        <div
+          id="slide-track"
+          class="tw-flex tw-h-96 tw-touch-pan-x tw-snap-x tw-snap-mandatory tw-overflow-x-auto tw-scroll-smooth sm:tw-overflow-hidden"
+          style="
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+          "
+        >
+          <!-- Slide 0 -->
+          <div
+            class="tw-flex tw-w-full tw-flex-none tw-snap-start tw-items-center tw-justify-center"
+          >
+            <img src="" alt="" class="tw-h-full tw-w-full tw-object-contain" />
+          </div>
+
+          <!-- Slide 1 -->
+          <div
+            class="tw-flex tw-w-full tw-flex-none tw-snap-start tw-items-center tw-justify-center"
+          >
+            <img src="" alt="" class="tw-h-full tw-w-full tw-object-contain" />
+          </div>
+
+          <!-- Slide 2 -->
+          <div
+            class="tw-flex tw-w-full tw-flex-none tw-snap-start tw-items-center tw-justify-center"
+          >
+            <img src="" alt="" class="tw-h-full tw-w-full tw-object-contain" />
+          </div>
+
+          <!-- Slide 3 -->
+          <div
+            class="tw-flex tw-w-full tw-flex-none tw-snap-start tw-items-center tw-justify-center"
+          >
+            <img src="" alt="" class="tw-h-full tw-w-full tw-object-contain" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrows (optional: hide on mobile with tw-hidden sm:tw-inline-flex) -->
+      <button
+        id="static-prev"
+        class="tw-absolute tw-left-2 tw-top-1/2 tw--translate-y-1/2 tw-rounded-full tw-bg-black tw-bg-opacity-50 tw-p-2 tw-text-white hover:tw-cursor-pointer hover:tw-bg-opacity-100 focus:tw-outline-none"
+        aria-label="Previous slide"
+      >
+        &#10094;
+      </button>
+
+      <button
+        id="static-next"
+        class="tw-absolute tw-right-2 tw-top-1/2 tw--translate-y-1/2 tw-rounded-full tw-bg-black tw-bg-opacity-50 tw-p-2 tw-text-white hover:tw-cursor-pointer hover:tw-bg-opacity-100 focus:tw-outline-none"
+        aria-label="Next slide"
+      >
+        &#10095;
+      </button>
+
+      <!-- Swatches (also horizontally scrollable if needed) -->
+      <div class="tw-mt-4 tw-flex tw-w-full tw-justify-center">
+        <div
+          class="tw-flex tw-max-w-full tw-gap-2 tw-overflow-x-auto tw-rounded-full tw-bg-gray-100 tw-p-4 tw-px-6"
+          style="-webkit-overflow-scrolling: touch"
+        >
+          <button
+            class="swatch-button tw-h-8 tw-w-8 tw-rounded-full hover:tw-cursor-pointer focus:tw-outline-none"
+            style="
+              background-image:
+                radial-gradient(
+                  circle at 40% 35%,
+                  oklab(1 0 0 / 1) 0 4%,
+                  oklab(1 0 0 / 0) 50%
+                ),
+                conic-gradient(
+                  from 0deg,
+                  oklab(76.8% 0.001 0.01) 0deg,
+                  oklab(41.598% 0.01388 0.04585) 90deg,
+                  oklab(19.241% 0.00154 0.00046) 180deg,
+                  oklab(45.45% 0.0193 0.08842) 270deg,
+                  oklab(76.8% 0.001 0.01) 360deg
+                );
+            "
+            data-index="0"
+            aria-label="swatch0"
+          ></button>
+          <button
+            class="swatch-button tw-h-8 tw-w-8 tw-rounded-full hover:tw-cursor-pointer focus:tw-outline-none"
+            style="background-color: #1d1d1d"
+            data-index="1"
+            aria-label="swatch1"
+          ></button>
+
+          <button
+            class="swatch-button tw-h-8 tw-w-8 tw-rounded-full hover:tw-cursor-pointer focus:tw-outline-none"
+            style="background-color: #684a08"
+            data-index="2"
+            aria-label="swatch2"
+          ></button>
+
+          <button
+            class="swatch-button tw-h-8 tw-w-8 tw-rounded-full hover:tw-cursor-pointer focus:tw-outline-none"
+            style="background-color: #c7bfae"
+            data-index="3"
+            aria-label="swatch3"
+          ></button>
+        </div>
+      </div>
+    </div>
+    <!-- Thumbnail Swatches End -->
+
+    <div class="section tw-relative tw-mb-28 lg:tw-text-white">
+      <img
+        src=""
+        alt=""
+        class="tw-h-96 tw-object-cover lg:tw-h-auto lg:tw-rounded-3xl"
+        style="object-position: 15% 50%"
+      />
+      <div class="tw-left-0 tw-top-0 lg:tw-absolute">
+        <div
+          class="tw-mx-auto tw-space-y-4 tw-p-4 lg:tw-w-5/6 lg:tw-p-16 lg:tw-text-center"
+        >
+          <div class="header-font tw-text-3xl tw-font-semibold tw-uppercase">
+            INTELLIGENT Voice control
+          </div>
+          <div class="tw-text-lg tw-text-neutral-600 lg:tw-text-neutral-200">
+            The Osaki Optim 4D features voice command control for
+            <b class="tw-brightness-50 lg:tw-brightness-200"
+              >a truly hands-free experience</b
+            >. Simply speak to adjust your massage settings without interrupting
+            your relaxation.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section tw-mb-20 tw-flex tw-flex-col">
+      <div
+        class="desktop-bg-beige tw-grid tw-gap-y-4 tw-rounded-3xl lg:tw-order-2 lg:tw-grid-cols-2 lg:tw-overflow-hidden"
+      >
+        <div
+          class="tw-grid tw-grid-cols-2 tw-items-center tw-gap-4 tw-gap-y-6 tw-font-semibold tw-uppercase lg:tw-p-10"
+        >
+          <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+            <video
+              src="https://cdn.shopify.com/videos/c/o/v/586ef75c47734480a2dbaedce574baef.mp4"
+              autoplay
+              muted
+              loop
+              class="lg:tw-rounded-3xl"
+            ></video>
+            <div>Neck</div>
+          </div>
+          <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+            <video
+              src="https://cdn.shopify.com/videos/c/o/v/4ae398d7dde640b0987b857b06d72ad3.mp4"
+              autoplay
+              muted
+              loop
+              class="lg:tw-rounded-3xl"
+            ></video>
+            <div>Shoulders</div>
+          </div>
+          <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+            <video
+              src="https://cdn.shopify.com/videos/c/o/v/761021952fdf447a81e81bebcb2f33c6.mp4"
+              autoplay
+              muted
+              loop
+              class="lg:tw-rounded-3xl"
+            ></video>
+            <div>Lower back</div>
+          </div>
+          <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+            <video
+              src="https://cdn.shopify.com/videos/c/o/v/2147b20b35fe49ba8795871c9e578aeb.mp4"
+              autoplay
+              muted
+              loop
+              class="lg:tw-rounded-3xl"
+            ></video>
+            <div>Buttocks</div>
+          </div>
+        </div>
+        <img src="" alt="" class="tw-hidden tw-h-full lg:tw-block" />
+      </div>
+
+      <div class="tw-mb-4 tw-space-y-4 tw-p-4 lg:tw-px-10">
+        <div class="header-font tw-text-3xl tw-font-semibold tw-uppercase">
+          Dual Rail Massage System
+        </div>
+        <div class="tw-text-lg tw-text-neutral-600">
+          Featuring a
+          <b class="tw-brightness-50">53-inch dual guide rail design</b>, the
+          massage rollers glide smoothly along the body’s natural curve. The
+          <b class="tw-brightness-50">extended SL-Track</b> reaches from the
+          neck and shoulders to the upper hamstrings, <br />
+          delivering a more seamless full-body massage experience.
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="section tw-mb-20 tw-grid tw-items-center tw-overflow-hidden lg:tw-grid-cols-2 lg:tw-rounded-3xl"
+    >
+      <img src="" alt="" />
+      <div class="tw-flex tw-flex-col tw-gap-4 tw-p-4 lg:tw-p-10">
+        <div class="header-font tw-text-3xl tw-font-semibold tw-uppercase">
+          4D massage <br />
+          mechanism
+        </div>
+        <div class="tw-text-lg tw-text-neutral-600">
+          The Osaki Optim 4D features an
+          <b class="tw-brightness-50"
+            >advanced 4D massage system designed to deliver deeper, more
+            flexible massage movement</b
+          >. Its responsive roller mechanism combines strong pressure with
+          smooth motion, creating a massage experience that feels powerful,
+          comfortable, and natural without harsh impact.
+        </div>
+      </div>
+    </div>
+
+    <div class="tw-grid tw-gap-10 lg:tw-grid-cols-2">
+      <div class="section tw-relative tw-mb-20 lg:tw-text-white">
+        <img
+          src=""
+          alt=""
+          class="mobile-h-550px tw-w-full tw-object-cover lg:tw-rounded-3xl"
+          style="object-position: 50% 0%"
+        />
+        <div class="tw-bottom-0 tw-left-0 lg:tw-absolute">
+          <div class="tw-mx-auto tw-space-y-4 tw-p-4 lg:tw-p-10">
+            <div class="header-font tw-text-3xl tw-font-semibold tw-uppercase">
+              Body Scan <br />
+              System
+            </div>
+            <div class="tw-text-lg tw-text-neutral-600 lg:tw-text-neutral-200">
+              The Osaki Optim 4D features intelligent body scanning that
+              <b class="tw-brightness-50 lg:tw-brightness-200"
+                >detects your body's natural contours and adjusts the massage
+                path for smooth, personalized full-body comfort</b
+              >.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section tw-relative tw-mb-20 lg:tw-text-white">
+        <img
+          src=""
+          alt=""
+          class="mobile-h-550px tw-w-full tw-object-cover lg:tw-rounded-3xl"
+          style="object-position: 50% 0%"
+        />
+        <div class="tw-bottom-0 tw-left-0 lg:tw-absolute">
+          <div class="tw-mx-auto tw-space-y-4 tw-p-4 lg:tw-p-10">
+            <div class="header-font tw-text-3xl tw-font-semibold tw-uppercase">
+              SL-Track <br />
+              SYSTEM
+            </div>
+            <div class="tw-text-lg tw-text-neutral-600 lg:tw-text-neutral-200">
+              The extended SL track merges S and L shapes to
+              <b class="tw-brightness-50 lg:tw-brightness-200"
+                >follow your spine’s natural curve, reaching from neck to upper
+                glutes for broader coverage and quicker recovery</b
+              >.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section tw-relative tw-mb-28 lg:tw-text-white">
+      <img
+        src=""
+        alt=""
+        class="tw-h-96 tw-object-cover lg:tw-h-auto lg:tw-rounded-3xl"
+        style="object-position: 15% 50%"
+      />
+      <div class="tw-left-0 tw-top-0 lg:tw-absolute">
+        <div
+          class="desktop-h-900px tw-mx-auto tw-flex tw-flex-col tw-justify-between tw-space-y-4 tw-p-4 lg:tw-w-5/6 lg:tw-p-16 lg:tw-text-center"
+        >
+          <div class="header-font tw-text-3xl tw-font-semibold tw-uppercase">
+            3-stage <br />
+            zero gravity reclining
+          </div>
+          <div class="tw-text-lg tw-text-neutral-600 lg:tw-text-neutral-200">
+            Inspired by NASA technology, the Osaki Optim 4D offers Zero Gravity
+            that gently
+            <b class="lg:tw-brightness-200"
+              >positions the body into a near weightless state, helping reduce
+              pressure on the spine</b
+            >
+            while promoting deeper relaxation. This position promotes better
+            circulation and a weightless, stress-free massage experience.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section tw-relative tw-mb-28">
+      <img
+        src=""
+        alt=""
+        class="tw-h-96 tw-object-cover lg:tw-h-auto lg:tw-rounded-3xl"
+        style="object-position: 100% 50%"
+      />
+      <div class="desktop-h-580px tw-left-0 tw-top-0 lg:tw-absolute">
+        <div
+          class="tw-flex tw-h-full tw-flex-col tw-justify-center tw-space-y-4 tw-p-4 lg:tw-w-1/2 lg:tw-p-16 lg:tw-pr-28"
+        >
+          <img src="" alt="" class="tw-w-10 lg:tw-mb-4" />
+          <div class="header-font tw-text-3xl tw-font-semibold tw-uppercase">
+            Space-saving <br />
+            Technology
+          </div>
+          <div class="tw-text-lg tw-text-neutral-600">
+            Engineered for space efficiency, the chair’s advanced technology
+            lets it slide forward as it reclines, enabling a full recline even
+            when positioned just
+            <b class="tw-brightness-50">5 inches from the wall</b>.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section tw-relative tw-mb-28">
+      <img
+        src=""
+        alt=""
+        class="tw-h-96 tw-object-cover lg:tw-h-auto lg:tw-rounded-3xl"
+        style="object-position: 0% 50%"
+      />
+      <div class="desktop-h-580px tw-right-0 tw-top-0 lg:tw-absolute">
+        <div
+          class="tw-ml-auto tw-flex tw-h-full tw-flex-col tw-justify-center tw-space-y-4 tw-p-4 lg:tw-w-1/2 lg:tw-p-16"
+        >
+          <div class="header-font tw-text-3xl tw-font-semibold tw-uppercase">
+            28-Cell <br />
+            Full Body <br />
+            Air massage
+          </div>
+          <div class="tw-text-lg tw-text-neutral-600">
+            Large flexible airbags gently wrap around the
+            <b class="tw-brightness-50"
+              >shoulders, arms, waist, legs, feet, and ankles for soothing
+              full-body compression massage</b
+            >. With rhythmic air pressure and adjustable intensity levels, it
+            helps release built-up tension and create a more relaxing massage
+            experience.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section tw-relative tw-mb-28 lg:tw-text-white">
+      <div class="tw-flex tw-flex-col tw-gap-2">
+        <img src="" alt="" class="tw-hidden lg:tw-block lg:tw-rounded-3xl" />
+        <img src="" alt="" class="tw-block lg:tw-hidden" />
+        <img src="" alt="" class="tw-block lg:tw-hidden" />
+      </div>
+      <div class="tw-left-0 tw-top-0 lg:tw-absolute">
+        <div
+          class="tw-mx-auto tw-flex tw-flex-col tw-justify-between tw-space-y-4 tw-p-4 lg:tw-w-5/6 lg:tw-p-16 lg:tw-text-center"
+        >
+          <div
+            class="tw-flex tw-flex-col tw-items-start tw-justify-center tw-gap-4 lg:tw-flex-row"
+          >
+            <img src="" alt="" class="tw-h-8" />
+            <div class="header-font tw-text-3xl tw-font-semibold tw-uppercase">
+              Lumbar & Foot Heating Therapy
+            </div>
+          </div>
+          <div class="tw-text-lg tw-text-neutral-600 lg:tw-text-neutral-200">
+            The Optim 4D features soothing lumbar and foot heating designed to
+            <b class="tw-brightness-50 lg:tw-brightness-200"
+              >warm key areas of the body</b
+            >
+            during massage. Combined with lower-back kneading, the gentle heat
+            helps ease tension and create a more relaxing full-body experience.
+          </div>
+        </div>
+      </div>
+      <div
+        class="tw-absolute tw-right-0 tw-top-1/2 tw-mr-10 tw-mt-16 tw-hidden tw-w-80 tw-text-xs tw-font-light tw-italic tw-text-neutral-600 lg:tw-block"
+      >
+        *The heating pads provide warmth in the range of approximately 75 - 83°F
+      </div>
+    </div>
+
+    <div class="tw-mb-10 tw-text-center">
+      <div class="header-font tw-text-4xl tw-font-semibold tw-uppercase">
+        24 Auto Programs
+      </div>
+      <div
+        class="tw-my-10 tw-space-y-20 tw-rounded-3xl tw-bg-neutral-200 tw-p-4 tw-py-10 lg:tw-py-20"
+      >
+        <div class="tw-space-y-4">
+          <div class="header-font tw-text-3xl tw-font-semibold tw-uppercase">
+            8 Classical Mode
+          </div>
+          <div
+            class="tw-flex tw-flex-wrap tw-gap-4 tw-text-xs tw-font-semibold tw-text-white lg:tw-justify-center lg:tw-text-lg"
+          >
+            <div
+              class="tw-flex tw-items-center tw-gap-2 tw-rounded-3xl tw-p-2 tw-px-4"
+              style="background-color: #7a716e"
+            >
+              <img src="" alt="" class="tw-hidden tw-w-8 lg:tw-block" />
+              <div>DEMO</div>
+            </div>
+
+            <div
+              class="tw-flex tw-items-center tw-gap-2 tw-rounded-3xl tw-p-2 tw-px-4"
+              style="background-color: #7a716e"
+            >
+              <img src="" alt="" class="tw-hidden tw-w-8 lg:tw-block" />
+              <div>THAI STRETCH</div>
+            </div>
+
+            <div
+              class="tw-flex tw-items-center tw-gap-2 tw-rounded-3xl tw-p-2 tw-px-4"
+              style="background-color: #7a716e"
+            >
+              <img src="" alt="" class="tw-hidden tw-w-8 lg:tw-block" />
+              <div>BODY CIRCULATION</div>
+            </div>
+
+            <div
+              class="tw-flex tw-items-center tw-gap-2 tw-rounded-3xl tw-p-2 tw-px-4"
+              style="background-color: #7a716e"
+            >
+              <img src="" alt="" class="tw-hidden tw-w-8 lg:tw-block" />
+              <div>RELAX</div>
+            </div>
+
+            <div
+              class="tw-flex tw-items-center tw-gap-2 tw-rounded-3xl tw-p-2 tw-px-4"
+              style="background-color: #7a716e"
+            >
+              <img src="" alt="" class="tw-hidden tw-w-8 lg:tw-block" />
+              <div>MORNING CARE</div>
+            </div>
+
+            <div
+              class="tw-flex tw-items-center tw-gap-2 tw-rounded-3xl tw-p-2 tw-px-4"
+              style="background-color: #7a716e"
+            >
+              <img src="" alt="" class="tw-hidden tw-w-8 lg:tw-block" />
+              <div>MIDDAY CARE</div>
+            </div>
+
+            <div
+              class="tw-flex tw-items-center tw-gap-2 tw-rounded-3xl tw-p-2 tw-px-4"
+              style="background-color: #7a716e"
+            >
+              <img src="" alt="" class="tw-hidden tw-w-8 lg:tw-block" />
+              <div>NIGHT CARE</div>
+            </div>
+
+            <div
+              class="tw-flex tw-items-center tw-gap-2 tw-rounded-3xl tw-p-2 tw-px-4"
+              style="background-color: #7a716e"
+            >
+              <img src="" alt="" class="tw-hidden tw-w-8 lg:tw-block" />
+              <div>DEEP TISSUE</div>
+            </div>
+          </div>
+        </div>
+        <div class="tw-space-y-4">
+          <div class="header-font tw-text-3xl tw-font-semibold tw-uppercase">
+            8 Customized Mode
+          </div>
+          <div
+            class="tw-flex tw-flex-wrap tw-gap-4 tw-text-xs tw-font-semibold tw-text-white lg:tw-justify-center lg:tw-text-lg"
+          >
+            <div
+              class="tw-flex tw-items-center tw-gap-2 tw-rounded-3xl tw-p-2 tw-px-4"
+              style="background-color: #7a716e"
+            >
+              <img src="" alt="" class="tw-hidden tw-w-8 lg:tw-block" />
+              <div>EXTENSION</div>
+            </div>
+
+            <div
+              class="tw-flex tw-items-center tw-gap-2 tw-rounded-3xl tw-p-2 tw-px-4"
+              style="background-color: #7a716e"
+            >
+              <img src="" alt="" class="tw-hidden tw-w-8 lg:tw-block" />
+              <div>WOMEN'S HEALTH</div>
+            </div>
+
+            <div
+              class="tw-flex tw-items-center tw-gap-2 tw-rounded-3xl tw-p-2 tw-px-4"
+              style="background-color: #7a716e"
+            >
+              <img src="" alt="" class="tw-hidden tw-w-8 lg:tw-block" />
+              <div>SHIATSU</div>
+            </div>
+
+            <div
+              class="tw-flex tw-items-center tw-gap-2 tw-rounded-3xl tw-p-2 tw-px-4"
+              style="background-color: #7a716e"
+            >
+              <img src="" alt="" class="tw-hidden tw-w-8 lg:tw-block" />
+              <div>MEN'S HEALTH</div>
+            </div>
+
+            <div
+              class="tw-flex tw-items-center tw-gap-2 tw-rounded-3xl tw-p-2 tw-px-4"
+              style="background-color: #7a716e"
+            >
+              <img src="" alt="" class="tw-hidden tw-w-8 lg:tw-block" />
+              <div>OFFICE RELIEF</div>
+            </div>
+
+            <div
+              class="tw-flex tw-items-center tw-gap-2 tw-rounded-3xl tw-p-2 tw-px-4"
+              style="background-color: #7a716e"
+            >
+              <img src="" alt="" class="tw-hidden tw-w-8 lg:tw-block" />
+              <div>SPORTS RECOVERY</div>
+            </div>
+
+            <div
+              class="tw-flex tw-items-center tw-gap-2 tw-rounded-3xl tw-p-2 tw-px-4"
+              style="background-color: #7a716e"
+            >
+              <img src="" alt="" class="tw-hidden tw-w-8 lg:tw-block" />
+              <div>FOOT CARE</div>
+            </div>
+
+            <div
+              class="tw-flex tw-items-center tw-gap-2 tw-rounded-3xl tw-p-2 tw-px-4"
+              style="background-color: #7a716e"
+            >
+              <img src="" alt="" class="tw-hidden tw-w-8 lg:tw-block" />
+              <div>REJUVENATE</div>
+            </div>
+          </div>
+        </div>
+        <div class="tw-space-y-4">
+          <div class="header-font tw-text-3xl tw-font-semibold tw-uppercase">
+            8 position Mode
+          </div>
+          <div
+            class="tw-flex tw-flex-wrap tw-gap-4 tw-text-xs tw-font-semibold tw-text-white lg:tw-justify-center lg:tw-text-lg"
+          >
+            <div
+              class="tw-flex tw-items-center tw-gap-2 tw-rounded-3xl tw-p-2 tw-px-4"
+              style="background-color: #7a716e"
+            >
+              <img src="" alt="" class="tw-hidden tw-w-6 lg:tw-block" />
+              <div>NECK</div>
+            </div>
+
+            <div
+              class="tw-flex tw-items-center tw-gap-2 tw-rounded-3xl tw-p-2 tw-px-4"
+              style="background-color: #7a716e"
+            >
+              <img src="" alt="" class="tw-hidden tw-w-8 lg:tw-block" />
+              <div>NECK AND SHOULDER</div>
+            </div>
+
+            <div
+              class="tw-flex tw-items-center tw-gap-2 tw-rounded-3xl tw-p-2 tw-px-4"
+              style="background-color: #7a716e"
+            >
+              <img src="" alt="" class="tw-hidden tw-w-6 lg:tw-block" />
+              <div>BACK</div>
+            </div>
+
+            <div
+              class="tw-flex tw-items-center tw-gap-2 tw-rounded-3xl tw-p-2 tw-px-4"
+              style="background-color: #7a716e"
+            >
+              <img src="" alt="" class="tw-hidden tw-w-8 lg:tw-block" />
+              <div>LUMBAR</div>
+            </div>
+
+            <div
+              class="tw-flex tw-items-center tw-gap-2 tw-rounded-3xl tw-p-2 tw-px-4"
+              style="background-color: #7a716e"
+            >
+              <img src="" alt="" class="tw-hidden tw-w-8 lg:tw-block" />
+              <div>WAIST & HIP</div>
+            </div>
+
+            <div
+              class="tw-flex tw-items-center tw-gap-2 tw-rounded-3xl tw-p-2 tw-px-4"
+              style="background-color: #7a716e"
+            >
+              <img src="" alt="" class="tw-hidden tw-w-8 lg:tw-block" />
+              <div>LEGS</div>
+            </div>
+
+            <div
+              class="tw-flex tw-items-center tw-gap-2 tw-rounded-3xl tw-p-2 tw-px-4"
+              style="background-color: #7a716e"
+            >
+              <img src="" alt="" class="tw-hidden tw-w-8 lg:tw-block" />
+              <div>UPPER BODY</div>
+            </div>
+
+            <div
+              class="tw-flex tw-items-center tw-gap-2 tw-rounded-3xl tw-p-2 tw-px-4"
+              style="background-color: #7a716e"
+            >
+              <img src="" alt="" class="tw-hidden tw-w-8 lg:tw-block" />
+              <div>LOWER BODY</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tw-mb-40 tw-text-center">
+      <div class="header-font tw-text-4xl tw-font-semibold tw-uppercase">
+        6 Manual Programs
+      </div>
+      <div
+        class="tw-my-10 tw-rounded-3xl tw-bg-neutral-200 tw-p-4 tw-py-10 lg:tw-p-10"
+      >
+        <div
+          class="tw-mx-auto tw-flex tw-flex-wrap tw-justify-center tw-gap-4 tw-text-xs tw-font-semibold tw-text-white lg:tw-w-3/4 lg:tw-text-lg"
+        >
+          <div
+            class="tw-flex tw-items-center tw-gap-2 tw-rounded-3xl tw-p-2 tw-px-4"
+            style="background-color: #7a716e"
+          >
+            <img src="" alt="" class="tw-hidden tw-w-8 lg:tw-block" />
+            <div>KNEADING</div>
+          </div>
+
+          <div
+            class="tw-flex tw-items-center tw-gap-2 tw-rounded-3xl tw-p-2 tw-px-4"
+            style="background-color: #7a716e"
+          >
+            <img src="" alt="" class="tw-hidden tw-w-8 lg:tw-block" />
+            <div>PERCUSSION</div>
+          </div>
+
+          <div
+            class="tw-flex tw-items-center tw-gap-2 tw-rounded-3xl tw-p-2 tw-px-4"
+            style="background-color: #7a716e"
+          >
+            <img src="" alt="" class="tw-hidden tw-w-8 lg:tw-block" />
+            <div>ACUPRESSURE</div>
+          </div>
+
+          <div
+            class="tw-flex tw-items-center tw-gap-2 tw-rounded-3xl tw-p-2 tw-px-4"
+            style="background-color: #7a716e"
+          >
+            <img src="" alt="" class="tw-hidden tw-w-8 lg:tw-block" />
+            <div>FLAP</div>
+          </div>
+
+          <div
+            class="tw-flex tw-items-center tw-gap-2 tw-rounded-3xl tw-p-2 tw-px-4"
+            style="background-color: #7a716e"
+          >
+            <img src="" alt="" class="tw-hidden tw-w-8 lg:tw-block" />
+            <div>SLAP</div>
+          </div>
+
+          <div
+            class="tw-flex tw-items-center tw-gap-2 tw-rounded-3xl tw-p-2 tw-px-4"
+            style="background-color: #7a716e"
+          >
+            <img src="" alt="" class="tw-hidden tw-w-6 lg:tw-block" />
+            <div>MIXTURE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tw-grid tw-gap-10 lg:tw-grid-cols-2">
+      <div class="section tw-relative tw-mb-20 lg:tw-text-white">
+        <img
+          src=""
+          alt=""
+          class="mobile-h-550px tw-w-full tw-object-cover lg:tw-rounded-3xl"
+          style="object-position: 50% 100%"
+        />
+        <div class="tw-left-0 tw-top-0 lg:tw-absolute">
+          <div class="tw-mx-auto tw-space-y-4 tw-p-4 lg:tw-p-10">
+            <div class="header-font tw-text-3xl tw-font-semibold tw-uppercase">
+              Calf Roller <br />
+              Massage
+            </div>
+            <div class="tw-text-lg tw-text-neutral-600 lg:tw-text-neutral-200">
+              Designed to provide
+              <b class="tw-brightness-50 lg:tw-brightness-200"
+                >targeted calf massage</b
+              >, the Osaki Optim 4D delivers a soothing kneading experience that
+              enhances comfort and promotes a sense of relaxation from the legs
+              upward.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section tw-relative tw-mb-20 lg:tw-text-white">
+        <img
+          src=""
+          alt=""
+          class="mobile-h-550px tw-w-full tw-object-cover lg:tw-rounded-3xl"
+          style="object-position: 50% 100%"
+        />
+        <div class="tw-left-0 tw-top-0 lg:tw-absolute">
+          <div class="tw-mx-auto tw-space-y-4 tw-p-4 lg:tw-p-10">
+            <div class="header-font tw-text-3xl tw-font-semibold tw-uppercase">
+              3 Row foot roller massage
+            </div>
+            <div class="tw-text-lg tw-text-neutral-600 lg:tw-text-neutral-200">
+              Three rows of reflexology
+              <b class="tw-brightness-50 lg:tw-brightness-200"
+                >rollers gently massage the soles, arches, and sides of the
+                feet</b
+              >
+              with a smooth kneading motion. Designed for enhanced comfort, the
+              system delivers a more refined and immersive foot massage
+              experience.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section tw-relative tw-mb-28 lg:tw-text-white">
+      <img
+        src=""
+        alt=""
+        class="tw-h-96 tw-object-cover lg:tw-h-auto lg:tw-rounded-3xl"
+        style="object-position: 100% 50%"
+      />
+      <div class="desktop-h-580px tw-left-0 tw-top-0 lg:tw-absolute">
+        <div
+          class="tw-flex tw-h-full tw-flex-col tw-justify-center tw-space-y-4 tw-p-4 lg:tw-w-1/2 lg:tw-p-16 lg:tw-pr-28"
+        >
+          <img src="" alt="" class="mobile-black-filter tw-w-8 lg:tw-mb-4" />
+          <div class="header-font tw-text-3xl tw-font-semibold tw-uppercase">
+            Automatic <br />
+            Leg Extension
+          </div>
+          <div class="tw-text-lg tw-text-neutral-600 lg:tw-text-neutral-200">
+            The Automatic Leg Extension extends
+            <b class="tw-brightness-50 lg:tw-brightness-200">up to 6.5 inches</b
+            >, accommodating users of varying heights for a more comfortable and
+            personalized massage experience.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section tw-relative tw-mb-28 lg:tw-text-white">
+      <img
+        src=""
+        alt=""
+        class="tw-h-96 tw-object-cover lg:tw-h-auto lg:tw-rounded-3xl"
+        style="object-position: 0% 50%"
+      />
+      <div class="desktop-h-580px tw-right-0 tw-top-0 lg:tw-absolute">
+        <div
+          class="tw-ml-auto tw-flex tw-h-full tw-flex-col tw-justify-center tw-space-y-4 tw-p-4 lg:tw-w-1/2 lg:tw-p-16"
+        >
+          <img src="" alt="" class="mobile-black-filter tw-w-10 lg:tw-mb-4" />
+          <div class="header-font tw-text-3xl tw-font-semibold tw-uppercase">
+            LED Lighting
+          </div>
+          <div class="tw-text-lg tw-text-neutral-600 lg:tw-text-neutral-200">
+            Soft LED lighting enhances the ambiance of the Osaki Pro 3D Liberty,
+            creating
+            <b class="tw-brightness-50 lg:tw-brightness-200"
+              >a calming environment for a more relaxing massage experience</b
+            >.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section tw-relative tw-mb-28 lg:tw-text-white">
+      <img
+        src=""
+        alt=""
+        class="tw-h-96 tw-object-cover lg:tw-h-auto lg:tw-rounded-3xl"
+        style="object-position: 100% 50%"
+      />
+      <div class="desktop-h-580px tw-left-0 tw-top-0 lg:tw-absolute">
+        <div
+          class="tw-flex tw-h-full tw-flex-col tw-justify-center tw-space-y-4 tw-p-4 lg:tw-w-1/2 lg:tw-p-16 lg:tw-pr-28"
+        >
+          <img src="" alt="" class="mobile-black-filter tw-w-8 lg:tw-mb-4" />
+          <div class="header-font tw-text-3xl tw-font-semibold tw-uppercase">
+            Immersive <br />
+            Bluetooth Speakers
+          </div>
+          <div class="tw-text-lg tw-text-neutral-600 lg:tw-text-neutral-200">
+            Built-in Bluetooth speakers enhance your massage experience with
+            immersive audio.
+            <b class="tw-brightness-50 lg:tw-brightness-200"
+              >Enjoy your favorite music, podcasts, or relaxing sounds while
+              unwinding in comfort</b
+            >
+            for a more complete sense of relaxation.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tw-mb-40 tw-grid tw-gap-10 tw-gap-y-20 lg:tw-grid-cols-2">
+      <div class="tw-flex tw-flex-col">
+        <img src="" alt="" class="tw-rounded-t-3xl" />
+        <div class="tw-flex tw-flex-col tw-gap-4 tw-p-4">
+          <div class="header-font tw-text-3xl tw-font-semibold tw-uppercase">
+            Quick access <br />
+            Control Panel
+          </div>
+          <div class="tw-text-lg tw-text-neutral-600">
+            The Optim 4D features a convenient
+            <b class="tw-brightness-50">quick control button</b> built into the
+            armrest for easy access during massage. Adjust key functions such as
+            massage position, intensity, and recline settings without needing to
+            use the touchscreen.
+          </div>
+        </div>
+      </div>
+      <div class="tw-flex tw-flex-col">
+        <img src="" alt="" class="tw-rounded-t-3xl" />
+        <div class="tw-flex tw-flex-col tw-gap-4 tw-p-4">
+          <div class="header-font tw-text-3xl tw-font-semibold tw-uppercase">
+            Touchscreen <br />
+            Controller
+          </div>
+          <div class="tw-text-lg tw-text-neutral-600">
+            The Optim 4D features an intuitive
+            <b class="tw-brightness-50">7-inch touchscreen controller</b>
+            designed for simple and convenient operation. Easily access massage
+            programs, adjust settings, and personalize the massage experience
+            with a clear, user-friendly interface.
+          </div>
+        </div>
+      </div>
+      <div class="tw-flex tw-flex-col">
+        <img src="" alt="" class="tw-rounded-t-3xl" />
+        <div class="tw-flex tw-flex-col tw-gap-4 tw-p-4">
+          <div class="header-font tw-text-3xl tw-font-semibold tw-uppercase">
+            Wireless Charging
+          </div>
+          <div class="tw-text-lg tw-text-neutral-600">
+            The Optim 4D includes wireless charging to help keep devices powered
+            during relaxation. Designed for everyday convenience, it allows
+            <b class="tw-brightness-50">easy charging access</b> without
+            interrupting the massage experience.
+          </div>
+        </div>
+      </div>
+      <div class="tw-flex tw-flex-col">
+        <img src="" alt="" class="tw-rounded-t-3xl" />
+        <div class="tw-flex tw-flex-col tw-gap-4 tw-p-4">
+          <div class="header-font tw-text-3xl tw-font-semibold tw-uppercase">
+            Removable headrest
+          </div>
+          <div class="tw-text-lg tw-text-neutral-600">
+            Removable headrest allows for a
+            <b class="tw-brightness-50"
+              >deeper, more targeted massage on the neck and upper shoulders</b
+            >.
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div
       class="tw-mx-auto tw-mb-40 tw-grid lg:tw-grid-cols-2 lg:tw-items-center"
     >
