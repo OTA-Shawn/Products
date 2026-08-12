@@ -560,6 +560,10 @@
   margin-top: 48px;
 }
 
+.tw-mt-16 {
+  margin-top: 64px;
+}
+
 .tw-mt-2 {
   margin-top: 8px;
 }
@@ -586,10 +590,6 @@
 
 .tw-mt-auto {
   margin-top: auto;
-}
-
-.tw-mt-16 {
-  margin-top: 64px;
 }
 
 .tw-box-border {
@@ -1444,10 +1444,6 @@
 
 .tw-scroll-smooth {
   scroll-behavior: smooth;
-}
-
-.tw-text-wrap {
-  text-wrap: wrap;
 }
 
 .tw-rounded-2xl {
@@ -4267,16 +4263,6 @@ img{
     background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
   }
 
-  .lg\:tw-bg-neutral-300 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(212 212 212 / var(--tw-bg-opacity, 1));
-  }
-
-  .lg\:tw-bg-neutral-200 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(229 229 229 / var(--tw-bg-opacity, 1));
-  }
-
   .lg\:\!tw-p-10 {
     padding: 40px !important;
   }
@@ -4441,8 +4427,8 @@ img{
     padding-right: 80px;
   }
 
-  .lg\:tw-pr-24 {
-    padding-right: 96px;
+  .lg\:tw-pr-28 {
+    padding-right: 112px;
   }
 
   .lg\:tw-pr-5 {
@@ -4469,8 +4455,12 @@ img{
     padding-top: 24px;
   }
 
-  .lg\:tw-pr-28 {
-    padding-right: 112px;
+  .lg\:tw-pl-40 {
+    padding-left: 160px;
+  }
+
+  .lg\:tw-pl-28 {
+    padding-left: 112px;
   }
 
   .lg\:tw-text-left {
