@@ -388,6 +388,11 @@
   margin-bottom: auto;
 }
 
+.tw-mx-12 {
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
 .\!tw-mb-0 {
   margin-bottom: 0px !important;
 }
@@ -944,6 +949,10 @@
   width: 100%;
 }
 
+.tw-w-44 {
+  width: 176px;
+}
+
 .tw-min-w-0 {
   min-width: 0px;
 }
@@ -1193,6 +1202,10 @@
 
 .\!tw-justify-start {
   justify-content: flex-start !important;
+}
+
+.tw-justify-start {
+  justify-content: flex-start;
 }
 
 .\!tw-justify-end {
@@ -1448,6 +1461,10 @@
 
 .tw-scroll-smooth {
   scroll-behavior: smooth;
+}
+
+.tw-text-balance {
+  text-wrap: balance;
 }
 
 .tw-rounded-2xl {
@@ -1854,6 +1871,10 @@
   padding: 8px;
 }
 
+.tw-p-20 {
+  padding: 80px;
+}
+
 .tw-p-3 {
   padding: 12px;
 }
@@ -1912,6 +1933,11 @@
 .tw-px-2 {
   padding-left: 8px;
   padding-right: 8px;
+}
+
+.tw-px-20 {
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .tw-px-3 {
@@ -1977,6 +2003,11 @@
 .tw-py-6 {
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.tw-px-1 {
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 .\!tw-pb-0 {
@@ -3682,6 +3713,14 @@ img{
     margin-bottom: 80px;
   }
 
+  .lg\:tw-mb-28 {
+    margin-bottom: 112px;
+  }
+
+  .lg\:tw-mb-32 {
+    margin-bottom: 128px;
+  }
+
   .lg\:tw-mb-4 {
     margin-bottom: 16px;
   }
@@ -3758,14 +3797,6 @@ img{
     margin-top: 144px;
   }
 
-  .lg\:tw-mb-28 {
-    margin-bottom: 112px;
-  }
-
-  .lg\:tw-mb-32 {
-    margin-bottom: 128px;
-  }
-
   @media (min-width: 1024px) {
     .lg\:lg\:tw-block {
       display: block;
@@ -3834,6 +3865,10 @@ img{
 
   .lg\:tw-h-auto {
     height: auto;
+  }
+
+  .lg\:tw-h-16 {
+    height: 64px;
   }
 
   .lg\:\!tw-w-1\/12 {
@@ -3990,6 +4025,10 @@ img{
 
   .lg\:tw-w-full {
     width: 100%;
+  }
+
+  .lg\:tw-w-10 {
+    width: 40px;
   }
 
   .lg\:tw-basis-1\/2 {
@@ -4231,6 +4270,10 @@ img{
   .lg\:tw-rounded-t-3xl {
     border-top-left-radius: 1.5rem;
     border-top-right-radius: 1.5rem;
+  }
+
+  .lg\:tw-border {
+    border-width: 1px;
   }
 
   .lg\:tw-border-2 {
@@ -4568,6 +4611,10 @@ img{
   .lg\:tw-text-xs {
     font-size: 12px;
     line-height: 16px;
+  }
+
+  .lg\:tw-font-semibold {
+    font-weight: 600;
   }
 
   .lg\:tw-uppercase {
