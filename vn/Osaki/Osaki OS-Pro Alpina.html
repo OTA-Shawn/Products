@@ -253,7 +253,7 @@
     color: var(--section-strong-color);
   }
 
-  .sections .section {
+  .sections .pp-section {
     background-color: var(--section-bg-color);
     display: flex;
     justify-content: center;
@@ -261,25 +261,25 @@
     margin-bottom: 50px;
   }
 
-  .section > img,
-  .section-content {
+  .pp-section > img,
+  .pp-section-content {
     flex: 1 1 0%;
   }
 
-  .section-content {
+  .pp-section-content {
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 50px;
   }
 
-  .section-header {
+  .pp-section-header {
     font-size: 52px;
     line-height: 65px;
     color: var(--section-header-color);
   }
 
-  .section-description {
+  .pp-section-description {
     color: var(--section-content-color);
     font-size: 22px;
     line-height: 33px;
@@ -337,25 +337,25 @@
       max-width: 768px;
     }
 
-    .sections .section {
+    .sections .pp-section {
       margin-bottom: 35px;
     }
 
-    .section > img {
+    .pp-section > img {
       width: 50%;
     }
 
-    .section .section-content {
+    .pp-section .pp-section-content {
       gap: 22px;
       padding: 35px;
     }
 
-    .section-header {
+    .pp-section-header {
       font-size: 39px;
       line-height: 58px;
     }
 
-    .section-description {
+    .pp-section-description {
       font-size: 15px;
       line-height: 24px;
     }
@@ -394,21 +394,21 @@
       max-width: 480px;
     }
 
-    .sections .section {
+    .sections .pp-section {
       margin-bottom: 22px;
     }
 
-    .section .section-content {
+    .pp-section .pp-section-content {
       gap: 14px;
       padding: 22px;
     }
 
-    .section-header {
+    .pp-section-header {
       font-size: 26px;
       line-height: 38px;
     }
 
-    .section-description {
+    .pp-section-description {
       font-size: 10px;
       line-height: 16px;
     }
@@ -450,7 +450,7 @@
       id="youtube-link"
       class="[&>*]:tw-mb-40 [&>*]:tw-aspect-video [&>*]:tw-w-full"
     ></div>
-    <div class="section !tw-mb-40 !tw-flex-col !tw-bg-white md:!tw-mb-80">
+    <div class="pp-section !tw-mb-40 !tw-flex-col !tw-bg-white md:!tw-mb-80">
       <img alt="" class="!tw-w-full" />
       <div
         class="tw-px-10 tw-pb-5 tw-pt-10 tw-text-center tw-text-xl md:tw-text-2xl lg:tw-text-3xl"
@@ -476,10 +476,10 @@
         </div>
       </div>
     </div>
-    <div class="section tw-flex tw-flex-row-reverse">
-      <div class="section-content">
-        <div class="section-header">Cơ Chế Massage Tiên Tiến</div>
-        <div class="section-description">
+    <div class="pp-section tw-flex tw-flex-row-reverse">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Cơ Chế Massage Tiên Tiến</div>
+        <div class="pp-section-description">
           Cơ chế massage tiên tiến cho phép bạn điều chỉnh tốc độ và độ rộng của
           con lăn bất cứ lúc nào trong quá trình massage, dù bạn đang ở chế độ
           tự động hay thủ công.
@@ -487,11 +487,11 @@
       </div>
       <img alt="" />
     </div>
-    <div class="section tw-flex-row-reverse">
+    <div class="pp-section tw-flex-row-reverse">
       <img alt="" class="" />
-      <div class="section-content">
-        <div class="section-header">Điều Khiển Cảm Ứng</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Điều Khiển Cảm Ứng</div>
+        <div class="pp-section-description">
           Osaki OS-Pro Alpina được tích hợp với điều khiển cảm ứng cho phép bạn
           xem tất cả các chức năng cùng với các chương trình tự động. Màn hình
           cảm ứng có thể chuyển đổi giữa tiếng Anh, tiếng Trung, tiếng Tây Ban
@@ -499,10 +499,10 @@
         </div>
       </div>
     </div>
-    <div class="section tw-flex-row-reverse">
-      <div class="section-content">
-        <div class="section-header">Quét Cơ Thể Tự Động</div>
-        <div class="section-description">
+    <div class="pp-section tw-flex-row-reverse">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Quét Cơ Thể Tự Động</div>
+        <div class="pp-section-description">
           Trước khi bắt đầu bất kỳ chương trình tự động nào, Osaki OS-Pro Alpina
           sẽ tiến hành quét cơ thể và lập bản đồ các khu vực chính của cổ và
           lưng để đảm bảo áp lực đồng đều. Công nghệ quét cũng sẽ phát hiện
@@ -512,34 +512,34 @@
       </div>
       <img alt="" />
     </div>
-    <div class="section tw-flex-row-reverse">
+    <div class="pp-section tw-flex-row-reverse">
       <img alt="" />
-      <div class="section-content">
-        <div class="section-header">Cảm Biến Đau</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Cảm Biến Đau</div>
+        <div class="pp-section-description">
           Các cảm biến cho ngón tay của bạn nằm trong tay vịn của ghế massage
           Osaki OS-Pro Alpina. Điều này giúp ghế massage phát hiện các điểm căng
           thẳng để tập trung massage vào những nơi bạn cần nhất.
         </div>
       </div>
     </div>
-    <div class="section tw-relative tw-flex-row-reverse">
+    <div class="pp-section tw-relative tw-flex-row-reverse">
       <img alt="" />
       <div
-        class="section-content tw-absolute tw-right-0 tw-top-0 tw-items-end tw-text-right"
+        class="pp-section-content tw-absolute tw-right-0 tw-top-0 tw-items-end tw-text-right"
       >
-        <div class="section-header">Công Nghệ SL-track</div>
-        <div class="section-description tw-w-1/2">
+        <div class="pp-section-header">Công Nghệ SL-track</div>
+        <div class="pp-section-description tw-w-1/2">
           SL-Track được làm từ thép chế tạo bằng laser. Đường ray cho phép các
           con lăn massage bao phủ toàn bộ cơ thể của bạn. SL-Track kéo dài từ cổ
           và vai đến gân kheo của bạn.
         </div>
       </div>
     </div>
-    <div class="section tw-flex tw-flex-col">
-      <div class="section-content">
-        <div class="section-header">Tư Thế Không Trọng Lực</div>
-        <div class="section-description">
+    <div class="pp-section tw-flex tw-flex-col">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Tư Thế Không Trọng Lực</div>
+        <div class="pp-section-description">
           Lấy cảm hứng từ NASA, tư thế Không Trọng Lực là tư thế hoàn hảo để thư
           giãn tối đa. Khi bạn được đặt ở tư thế Không Trọng Lực, trọng lượng
           của lưng bạn gần như được hỗ trợ bởi tựa lưng, giúp giảm nén dọc theo
@@ -548,14 +548,14 @@
       </div>
       <img alt="" class="!tw-w-full" />
     </div>
-    <div class="section tw-flex tw-flex-row-reverse">
-      <div class="section-content">
-        <div class="section-header">
+    <div class="pp-section tw-flex tw-flex-row-reverse">
+      <div class="pp-section-content">
+        <div class="pp-section-header">
           22 Túi Khí <br />
           Toàn Thân <br />
           Massage
         </div>
-        <div class="section-description">
+        <div class="pp-section-description">
           Osaki OS-Pro Alpina bao gồm 22 túi khí, làm cho nó hiệu quả và đáng
           tin cậy. Các túi khí được làm từ công nghệ mới nhất, cho phép các túi
           khí ôm sát cơ thể và phân phối áp lực đều.
@@ -653,22 +653,22 @@
         <div>Lăn</div>
       </div>
     </div>
-    <div class="section tw-flex-row-reverse">
+    <div class="pp-section tw-flex-row-reverse">
       <img alt="" class="" />
-      <div class="section-content">
-        <div class="section-header">Liệu Pháp Nhiệt</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Liệu Pháp Nhiệt</div>
+        <div class="pp-section-description">
           Chỉ cần chạm vào nút, bạn có thể bật nhiệt ở vùng thắt lưng dưới trong
           chế độ massage. 2 miếng đệm được đặt thuận tiện để giúp làm ấm vùng
           thắt lưng dưới để có một massage kỹ lưỡng hơn.
         </div>
       </div>
     </div>
-    <div class="section">
+    <div class="pp-section">
       <img alt="" class="" />
-      <div class="section-content">
-        <div class="section-header">Con Lăn Chân Chuyên Biệt</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Con Lăn Chân Chuyên Biệt</div>
+        <div class="pp-section-description">
           Osaki OS-Pro Alpina cung cấp massage phản xạ nhẹ nhàng cho lòng bàn
           chân của bạn, nhắm vào các điểm áp lực để giảm căng thẳng khắp cơ thể.
           Các con lăn xoay nhào nặn đau chân và khó chịu trong khi các túi khí
@@ -676,20 +676,20 @@
         </div>
       </div>
     </div>
-    <div class="section tw-flex-row-reverse">
+    <div class="pp-section tw-flex-row-reverse">
       <img alt="" class="" />
-      <div class="section-content">
-        <div class="section-header">Rung Ghế</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Rung Ghế</div>
+        <div class="pp-section-description">
           Osaki OS-Pro Alpina được trang bị rung ghế, sẽ cung cấp rung nhẹ nhàng
           qua khu vực ghế.
         </div>
       </div>
     </div>
-    <div class="section tw-relative !tw-justify-normal">
+    <div class="pp-section tw-relative !tw-justify-normal">
       <img alt="" class="!tw-w-2/3 !tw-flex-initial" />
       <div
-        class="m-[5%] section-content section-description tw-absolute tw-right-0 tw-top-0 !tw-text-black"
+        class="m-[5%] pp-section-content pp-section-description tw-absolute tw-right-0 tw-top-0 !tw-text-black"
       >
         Loa Âm Thanh Vòm HD
       </div>

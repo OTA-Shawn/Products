@@ -290,7 +290,7 @@ DISCONTINUED
     color: var(--section-strong-color);
   }
 
-  .sections .section {
+  .sections .pp-section {
     background-color: var(--section-bg-color);
     display: flex;
     justify-content: center;
@@ -298,33 +298,33 @@ DISCONTINUED
     margin-bottom: 50px;
   }
 
-  .section > img,
-  .section-content {
+  .pp-section > img,
+  .pp-section-content {
     flex: 1 1 0%;
     width: 50%;
   }
 
-  .section-content {
+  .pp-section-content {
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 50px;
   }
 
-  .section-header {
+  .pp-section-header {
     font-size: 52px;
     line-height: 1.2;
     color: var(--section-header-color);
     font-weight: bold;
   }
 
-  .section-header2 {
+  .pp-section-header2 {
     font-size: 30px;
     line-height: 45px;
     color: var(--section-header-color);
   }
 
-  .section-description {
+  .pp-section-description {
     color: var(--section-content-color);
     font-size: 22px;
     line-height: 1.2;
@@ -382,28 +382,28 @@ DISCONTINUED
       max-width: 768px;
     }
 
-    .sections .section {
+    .sections .pp-section {
       margin-bottom: 35px;
     }
 
-    .section > img {
+    .pp-section > img {
       width: 50%;
     }
 
-    .section .section-content {
+    .pp-section .pp-section-content {
       gap: 22px;
       padding: 35px;
     }
 
-    .section-header {
+    .pp-section-header {
       font-size: 39px;
     }
 
-    .section-header2 {
+    .pp-section-header2 {
       font-size: 20px;
     }
 
-    .section-description {
+    .pp-section-description {
       font-size: 15px;
     }
 
@@ -441,24 +441,24 @@ DISCONTINUED
       max-width: 480px;
     }
 
-    .sections .section {
+    .sections .pp-section {
       margin-bottom: 22px;
     }
 
-    .section .section-content {
+    .pp-section .pp-section-content {
       gap: 14px;
       padding: 22px;
     }
 
-    .section-header {
+    .pp-section-header {
       font-size: 26px;
     }
 
-    .section-header {
+    .pp-section-header {
       font-size: 18px;
     }
 
-    .section-description {
+    .pp-section-description {
       font-size: 10px;
     }
 
@@ -512,7 +512,7 @@ DISCONTINUED
   <div class="sections">
     <div id="youtube-link"
       class="[&>*]:tw-mb-40 [&>*]:tw-aspect-video [&>*]:tw-w-full"></div>
-    <div class="!flex-col !bg-white !mb-10 md:!mb-40 section">
+    <div class="!flex-col !bg-white !mb-10 md:!mb-40 pp-section">
       <img src="" alt="" class="!w-full" />
       <div
         class="px-10 pt-10 pb-5 text-center text-xl md:text-left md:text-2xl lg:text-3xl"
@@ -528,14 +528,14 @@ DISCONTINUED
 
       <img src="" alt="" class="!w-full" />
     </div>
-    <div class="!bg-white section">
+    <div class="!bg-white pp-section">
       <img src="" alt="" class="!w-1/2" />
-      <div class="section-content">
-        <div class="section-header">
+      <div class="pp-section-content">
+        <div class="pp-section-header">
           Intelligent <br />
           Voice Control
         </div>
-        <div class="section-description">
+        <div class="pp-section-description">
           Otamic is keeping up with the latest technology by including an
           intelligent voice control function. Easily customize your massage,
           control your chair’s power, or even recline without having to lift a
@@ -545,11 +545,11 @@ DISCONTINUED
       </div>
     </div>
 
-    <div class="!flex-row-reverse !bg-black section">
+    <div class="!flex-row-reverse !bg-black pp-section">
       <img src="" alt="" class="!w-1/2" />
-      <div class="section-content">
-        <div class="!text-white section-header">3D Massage Mechanism</div>
-        <div class="!text-white section-description">
+      <div class="pp-section-content">
+        <div class="!text-white pp-section-header">3D Massage Mechanism</div>
+        <div class="!text-white pp-section-description">
           The Icon II comes complete with a unique 3D massage roller system.
           These human-esque rollers utilize five intensities, three distinct
           modes, three focus regions, three degrees of width, and six varying
@@ -565,11 +565,11 @@ DISCONTINUED
         </div>
       </div>
     </div>
-    <div class="!bg-black section">
+    <div class="!bg-black pp-section">
       <img src="" alt="" class="!w-1/2" />
-      <div class="section-content">
-        <div class="!text-white section-header">Smart Body Scan System</div>
-        <div class="!text-white section-description">
+      <div class="pp-section-content">
+        <div class="!text-white pp-section-header">Smart Body Scan System</div>
+        <div class="!text-white pp-section-description">
           From the second you power up your Icon II, it’ll begin working to
           personally relax you. The smart body scan software will measure
           multiple aspects of your body in order to efficiently prescribe the
@@ -577,15 +577,15 @@ DISCONTINUED
         </div>
       </div>
     </div>
-    <div class="!flex-row-reverse !bg-white section">
+    <div class="!flex-row-reverse !bg-white pp-section">
       <img src="" alt="" class="!w-1/2" />
-      <div class="section-content">
-        <div class="section-header">
+      <div class="pp-section-content">
+        <div class="pp-section-header">
           44 Air Cells <br />
           Full Body <br />
           Air Massage
         </div>
-        <div class="section-description">
+        <div class="pp-section-description">
           The Icon incorporates an unprecedented 44 air cells to provide one of
           the most thorough full body air massages on the market. This
           cloud-like massage can be experienced across the entire body on five
@@ -594,12 +594,12 @@ DISCONTINUED
       </div>
     </div>
 
-    <div class="flex-col !bg-black section">
-      <div class="!w-full section-content">
-        <div class="!text-white text-center section-header">
+    <div class="flex-col !bg-black pp-section">
+      <div class="!w-full pp-section-content">
+        <div class="!text-white text-center pp-section-header">
           Ergonomic SL-Track
         </div>
-        <div class="!text-white section-description">
+        <div class="!text-white pp-section-description">
           The Icon’s scientifically engineered SL track works to match the
           curvature of the human body, while allowing the three-dimensional
           massage rollers to reach everything from your neck to your hamstrings.
@@ -607,12 +607,12 @@ DISCONTINUED
         <img src="" alt="" class="" />
       </div>
     </div>
-    <div class="flex-col !bg-black section">
-      <div class="!w-full section-content">
-        <div class="!text-white text-center section-header">
+    <div class="flex-col !bg-black pp-section">
+      <div class="!w-full pp-section-content">
+        <div class="!text-white text-center pp-section-header">
           Zero Gravity Position
         </div>
-        <div class="!text-white section-description">
+        <div class="!text-white pp-section-description">
           Induce relaxation like never before, with the Icon’s zero gravity
           reclining. Originally developed by NASA, this technique positions the
           legs at a higher elevation than the heart for a weightless massage
@@ -621,12 +621,12 @@ DISCONTINUED
         <img src="" alt="" class="" />
       </div>
     </div>
-    <div class="flex-col !bg-black section">
-      <div class="!w-full section-content">
-        <div class="!text-white text-center section-header">
+    <div class="flex-col !bg-black pp-section">
+      <div class="!w-full pp-section-content">
+        <div class="!text-white text-center pp-section-header">
           Space Saving Technology
         </div>
-        <div class="!text-white section-description">
+        <div class="!text-white pp-section-description">
           Place the Icon ANYWHERE. With the Icon’s unique space saving reclining
           feature, the chair can be positioned as close as one inch away from
           the wall and still achieve a full recline. This is accomplished by
@@ -635,14 +635,14 @@ DISCONTINUED
         <img src="" alt="" class="" />
       </div>
     </div>
-    <div class="!flex-row-reverse section">
+    <div class="!flex-row-reverse pp-section">
       <img src="" alt="" class="!w-1/2" />
-      <div class="section-content">
-        <div class="section-header">
+      <div class="pp-section-content">
+        <div class="pp-section-header">
           Heating On <br />
           <strong>Back & Calf</strong>
         </div>
-        <div class="section-description">
+        <div class="pp-section-description">
           With the Icon’s back and calf heating function you’ll never want to
           get up again. The specialized heat mechanism hidden within the back
           and calf areas of the chair provide a deep, thorough,
@@ -729,40 +729,40 @@ DISCONTINUED
         <div class="">Pressing</div>
       </div>
     </div>
-    <div class="flex-row-reverse section">
+    <div class="flex-row-reverse pp-section">
       <img src="" alt="" class="self-start" />
-      <div class="section-content">
-        <div class="section-header">
+      <div class="pp-section-content">
+        <div class="pp-section-header">
           <strong>Specialized</strong> Footrest Massage
         </div>
-        <div class="section-description">
+        <div class="pp-section-description">
           Otamic could never overlook a massage aspect as important as the feet,
           as such we’ve developed a specialized system to treat each foot with
           incredible care and precision.
         </div>
       </div>
     </div>
-    <div class="section">
+    <div class="pp-section">
       <img src="" alt="" class="self-start" />
-      <div class="section-content">
-        <div class="section-header">
+      <div class="pp-section-content">
+        <div class="pp-section-header">
           <div class="text-sm md:text-2xl lg:text-4xl">
             <strong>Automatic</strong>
           </div>
           Extendable Footrest
         </div>
-        <div class="section-description">
+        <div class="pp-section-description">
           Some massage chairs take a ‘one size fits all approach,’ not the Icon
           though. Through its advanced automatic extending footrest, even the
           tallest of individuals get to experience a comfortable massage.
         </div>
       </div>
     </div>
-    <div class="flex-row-reverse section">
+    <div class="flex-row-reverse pp-section">
       <img src="" alt="" class="self-end" />
-      <div class="section-content">
-        <div class="section-header"><strong>Bluetooth</strong> Speakers</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header"><strong>Bluetooth</strong> Speakers</div>
+        <div class="pp-section-description">
           By utilizing dual surround sound Bluetooth speakers, the Icon II opens
           the doors to an entirely new dimension of the massage experience.
           Listen to your favorite tracks, relaxing sounds, or even that
@@ -770,46 +770,46 @@ DISCONTINUED
         </div>
       </div>
     </div>
-    <div class="flex-row-reverse section">
+    <div class="flex-row-reverse pp-section">
       <img src="" alt="" class="self-end" />
-      <div class="section-content">
-        <div class="section-header">
+      <div class="pp-section-content">
+        <div class="pp-section-header">
           <strong>Easy Reach</strong> USB Charger
         </div>
-        <div class="section-description">
+        <div class="pp-section-description">
           Your mobile device will never be out of reach ever again with the
           conveniently placed USB charging port. This additional port means
           you’ll never have to sacrifice battery life for a relaxing life again.
         </div>
       </div>
     </div>
-    <div class="relative flex-end !justify-end section">
+    <div class="relative flex-end !justify-end pp-section">
       <img src="" alt="" class="!flex-initial !w-2/3 self-end" />
-      <div class="left-0 absolute section-content">
-        <div class="section-header">
+      <div class="left-0 absolute pp-section-content">
+        <div class="pp-section-header">
           <strong>Convenient</strong> Remote Holder
         </div>
-        <div class="section-description">
+        <div class="pp-section-description">
           The Icon’s ergonomic remote holder fills two roles in one, both
           holding the remote when not in use, as well as providing a platform
           for quick access to the remote.
         </div>
       </div>
     </div>
-    <div class="section">
+    <div class="pp-section">
       <img src="" alt="" class="!flex-initial !w-1/4" />
-      <div class="section-content">
-        <div class="section-header">
+      <div class="pp-section-content">
+        <div class="pp-section-header">
           <strong>Convenient</strong> Remote Controller
         </div>
-        <div class="section-description">
+        <div class="pp-section-description">
           The Icon includes a remote controller for easy navigation and
           adjustment settings.
         </div>
       </div>
     </div>
 
-    <div class="section"><img src="" alt="" /></div>
+    <div class="pp-section"><img src="" alt="" /></div>
 
     <div class="section-dimensions">
       <div class="mt-40 text-3xl text-center lg:text-5xl">Dimensions</div>

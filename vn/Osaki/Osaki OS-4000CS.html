@@ -185,7 +185,7 @@ DISCONTINUED
     color: var(--section-strong-color);
   }
 
-  .sections .section {
+  .sections .pp-section {
     background-color: var(--section-bg-color);
     display: flex;
     justify-content: center;
@@ -193,32 +193,32 @@ DISCONTINUED
     margin-bottom: 50px;
   }
 
-  .section > img,
-  .section-content {
+  .pp-section > img,
+  .pp-section-content {
     flex: 1 1 0%;
     width: 50%;
   }
 
-  .section-content {
+  .pp-section-content {
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 50px;
   }
 
-  .section-header {
+  .pp-section-header {
     font-size: 52px;
     line-height: 65px;
     color: var(--section-header-color);
     font-weight: bold;
   }
-  .section-header2 {
+  .pp-section-header2 {
     font-size: 36px;
     line-height: 45px;
     color: var(--section-header-color);
   }
 
-  .section-description {
+  .pp-section-description {
     color: var(--section-content-color);
     font-size: 22px;
     line-height: 33px;
@@ -276,30 +276,30 @@ DISCONTINUED
       max-width: 768px;
     }
 
-    .sections .section {
+    .sections .pp-section {
       margin-bottom: 35px;
     }
 
-    .section > img {
+    .pp-section > img {
       width: 50%;
     }
 
-    .section .section-content {
+    .pp-section .pp-section-content {
       gap: 22px;
       padding: 35px;
     }
 
-    .section-header {
+    .pp-section-header {
       font-size: 39px;
       line-height: 58px;
     }
 
-    .section-header2 {
+    .pp-section-header2 {
       font-size: 27px;
       line-height: 40px;
     }
 
-    .section-description {
+    .pp-section-description {
       font-size: 15px;
       line-height: 24px;
     }
@@ -338,24 +338,24 @@ DISCONTINUED
       max-width: 480px;
     }
 
-    .sections .section {
+    .sections .pp-section {
       margin-bottom: 22px;
     }
 
-    .section .section-content {
+    .pp-section .pp-section-content {
       gap: 14px;
       padding: 22px;
     }
 
-    .section-header {
+    .pp-section-header {
       font-size: 26px;
       line-height: 38px;
     }
-    .section-header {
+    .pp-section-header {
       font-size: 24px;
       line-height: 1.1;
     }
-    .section-description {
+    .pp-section-description {
       font-size: 18px;
       line-height: 1.3;
     }
@@ -410,7 +410,7 @@ DISCONTINUED
   <div class="sections">
     <div id="youtube-link"
       class="[&>*]:tw-mb-40 [&>*]:tw-aspect-video [&>*]:tw-w-full"></div>
-    <div class="!flex-col !bg-white !mb-10 md:!mb-40 section">
+    <div class="!flex-col !bg-white !mb-10 md:!mb-40 pp-section">
       <img src="" alt="" class="!w-full" />
       <div class="px-10 pt-10 pb-5 text-center text-xl md:text-2xl lg:text-3xl">
         The Osaki OS-4000 CS is part of the bestselling OS-4000 Series, offering
@@ -420,13 +420,13 @@ DISCONTINUED
       </div>
     </div>
 
-    <div class="md:!flex-row-reverse !flex-col-reverse !bg-black section">
-      <div class="!w-full section-content">
-        <div class="!text-white section-header">
+    <div class="md:!flex-row-reverse !flex-col-reverse !bg-black pp-section">
+      <div class="!w-full pp-section-content">
+        <div class="!text-white pp-section-header">
           <strong class="block !text-[#0510EC]">Intelligent</strong> Body
           Scanning
         </div>
-        <div class="!text-[#808080] section-description">
+        <div class="!text-[#808080] pp-section-description">
           Equipped with the latest technology, the massage rollers map out the
           back’s curvature with great accuracy, translating into a more
           effective massage and hitting all the key areas. Regardless of your
@@ -437,10 +437,10 @@ DISCONTINUED
       <img src="" alt="" class="!w-full md:!w-1/2" />
     </div>
 
-    <div class="md:!flex-row !flex-col !mb-0 !pb-10 section">
-      <div class="!w-full section-content">
-        <div class="section-header">L-Track Massage</div>
-        <div class="!text-[#808080] section-description">
+    <div class="md:!flex-row !flex-col !mb-0 !pb-10 pp-section">
+      <div class="!w-full pp-section-content">
+        <div class="pp-section-header">L-Track Massage</div>
+        <div class="!text-[#808080] pp-section-description">
           L-Track system massages from the neck, past the glutes, and down to
           the back portion of the thighs. The track in which the massage heads
           move are curved to contour the back and glutes area.
@@ -448,10 +448,10 @@ DISCONTINUED
       </div>
       <img src="" alt="" class="!flex-initial !w-full md:!w-3/5" />
     </div>
-    <div class="md:!flex-row-reverse !flex-col !mb-0 !pb-10 section">
-      <div class="md:!pl-0 !w-full section-content">
-        <div class="section-header">Space Saving Technology</div>
-        <div class="!text-[#808080] section-description">
+    <div class="md:!flex-row-reverse !flex-col !mb-0 !pb-10 pp-section">
+      <div class="md:!pl-0 !w-full pp-section-content">
+        <div class="pp-section-header">Space Saving Technology</div>
+        <div class="!text-[#808080] pp-section-description">
           Typical massage chairs consume a more space due to the chair being in
           a reclined position. Massage chairs require up to 3 feet behind the
           backrest for the chair to fully recline. Titan’s innovative design
@@ -462,10 +462,10 @@ DISCONTINUED
       </div>
       <img src="" alt="" class="!flex-initial !w-full md:!w-3/5" />
     </div>
-    <div class="!flex-col section">
-      <div class="!w-full section-content">
-        <div class="!text-center section-header">Zero Gravity Reclining</div>
-        <div class="!text-[#808080] section-description">
+    <div class="!flex-col pp-section">
+      <div class="!w-full pp-section-content">
+        <div class="!text-center pp-section-header">Zero Gravity Reclining</div>
+        <div class="!text-[#808080] pp-section-description">
           Inspired by NASA technology, the Zero gravity position is the perfect
           position to enjoy a massage, aligning your back relative to your thigh
           at an optimal level of comfort. When reclined into the zero gravity
@@ -481,13 +481,13 @@ DISCONTINUED
       <img src="" alt="" class="!w-full" />
     </div>
 
-    <div class="md:!flex-row !flex-col-reverse !bg-white section">
-      <div class="!w-full section-content">
-        <div class="section-header">
+    <div class="md:!flex-row !flex-col-reverse !bg-white pp-section">
+      <div class="!w-full pp-section-content">
+        <div class="pp-section-header">
           <strong class="block !text-[#2D59F1]">24 Air Cell</strong> Full Body
           Compression
         </div>
-        <div class="!text-[#808080] section-description">
+        <div class="!text-[#808080] pp-section-description">
           Osaki strives to make its chairs efficient and extremely reliable.
           Other brands will market their chairs to have 70+ airbags for a full
           body massage. The engineers believe with more airbags and more valves,
@@ -503,12 +503,12 @@ DISCONTINUED
       <img src="" alt="" class="!w-2/3 md:!w-1/2" />
     </div>
 
-    <div class="md:!flex-row-reverse !flex-col-reverse !bg-white section">
-      <div class="!w-full section-content">
-        <div class="section-header">
+    <div class="md:!flex-row-reverse !flex-col-reverse !bg-white pp-section">
+      <div class="!w-full pp-section-content">
+        <div class="pp-section-header">
           <strong class="block !text-red-500">Lumbar</strong> Heat Therapy
         </div>
-        <div class="!text-[#808080] section-description">
+        <div class="!text-[#808080] pp-section-description">
           On each side of the lower lumbar area there are individual heating
           pads. The heat therapy is a great compliment to the roller and airbag
           massage. Heating the body’s temperature is known to increase blood
@@ -588,22 +588,22 @@ DISCONTINUED
       </div>
     </div>
 
-    <div class="md:!flex-row !flex-col section">
+    <div class="md:!flex-row !flex-col pp-section">
       <img src="" alt="" class="!w-full md:!w-1/2" />
-      <div class="!w-full section-content">
-        <div class="section-header">Auto Extendable Footrest</div>
-        <div class="section-description">
+      <div class="!w-full pp-section-content">
+        <div class="pp-section-header">Auto Extendable Footrest</div>
+        <div class="pp-section-description">
           You can lift or lower the footrest by pressing the button once, and
           press it again to stop it at your desired angle.
         </div>
       </div>
     </div>
 
-    <div class="md:!flex-row-reverse !flex-col section">
+    <div class="md:!flex-row-reverse !flex-col pp-section">
       <img src="" alt="" class="!w-full md:!w-1/2" />
-      <div class="!w-full section-content">
-        <div class="section-header">Adjustable Shoulder Width</div>
-        <div class="section-description">
+      <div class="!w-full pp-section-content">
+        <div class="pp-section-header">Adjustable Shoulder Width</div>
+        <div class="pp-section-description">
           Osaki has taken custom fitting to a whole new level by adding
           adjustable outer shoulders. The outer massage airbags are typically
           stationary and depending on the height and width of the user, the
@@ -614,14 +614,14 @@ DISCONTINUED
       </div>
     </div>
 
-    <div class="md:!flex-row !flex-col section">
+    <div class="md:!flex-row !flex-col pp-section">
       <img src="" alt="" class="!flex-initial md:!w-1/4" />
-      <div class="!w-full section-content">
-        <div class="section-header">
+      <div class="!w-full pp-section-content">
+        <div class="pp-section-header">
           Convenient <br />
           Remote Control
         </div>
-        <div class="section-description">
+        <div class="pp-section-description">
           The 4000CS includes a remote controller for easy navigation and
           adjustment settings.
         </div>

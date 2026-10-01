@@ -329,29 +329,29 @@
   .sections strong {
     color: var(--section-strong-color);
   }
-  .sections .section {
+  .sections .pp-section {
     background-color: var(--section-bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
   }
-  .section > img,
-  .section-content {
+  .pp-section > img,
+  .pp-section-content {
     flex: 1 1 0%;
   }
-  .section-content {
+  .pp-section-content {
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 50px;
   }
-  .section-header {
+  .pp-section-header {
     font-size: 52px;
     line-height: 65px;
     color: var(--section-header-color);
   }
-  .section-description {
+  .pp-section-description {
     color: var(--section-content-color);
     font-size: 22px;
     line-height: 33px;
@@ -399,21 +399,21 @@
     .sections {
       max-width: 768px;
     }
-    .sections .section {
+    .sections .pp-section {
       margin-bottom: 35px;
     }
-    .section > img {
+    .pp-section > img {
       width: 50%;
     }
-    .section .section-content {
+    .pp-section .pp-section-content {
       gap: 22px;
       padding: 35px;
     }
-    .section-header {
+    .pp-section-header {
       font-size: 39px;
       line-height: 58px;
     }
-    .section-description {
+    .pp-section-description {
       font-size: 15px;
       line-height: 24px;
     }
@@ -444,19 +444,19 @@
     .sections {
       max-width: 480px;
     }
-    .sections .section {
+    .sections .pp-section {
       margin-bottom: 22px;
     }
 
-    .section .section-content {
+    .pp-section .pp-section-content {
       gap: 14px;
       padding: 22px;
     }
-    .section-header {
+    .pp-section-header {
       font-size: 26px;
       line-height: 38px;
     }
-    .section-description {
+    .pp-section-description {
       font-size: 10px;
       line-height: 16px;
     }
@@ -492,10 +492,10 @@
       id="youtube-link"
       class="[&>*]:tw-mb-40 [&>*]:tw-aspect-video [&>*]:tw-w-full"
     ></div>
-    <div class="section">
+    <div class="pp-section">
       <!-- <img src="" alt="" /> -->
     </div>
-    <div class="section !tw-mb-40 !tw-flex-col !tw-bg-white md:!tw-mb-80">
+    <div class="pp-section !tw-mb-40 !tw-flex-col !tw-bg-white md:!tw-mb-80">
       <img alt="" class="!tw-w-full" />
       <div
         class="tw-px-4 tw-pb-5 tw-pt-10 tw-text-center tw-text-xl md:tw-px-10 md:tw-text-2xl lg:tw-text-3xl"
@@ -521,10 +521,10 @@
         </div>
       </div>
     </div>
-    <div class="section tw-flex-col">
-      <div class="section-content">
-        <div class="section-header">Phát hiện sức khỏe thông minh</div>
-        <div class="section-description">
+    <div class="pp-section tw-flex-col">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Phát hiện sức khỏe thông minh</div>
+        <div class="pp-section-description">
           Ghế massage Rejūv có khả năng tiên tiến với máy theo dõi sức khỏe tích
           hợp. Bằng cách phát hiện các chỉ số khác nhau như
           <strong> nhịp tim, mức oxy trong máu và chỉ số mệt mỏi </strong>, công
@@ -534,10 +534,10 @@
       </div>
       <img alt="" class="!tw-w-full" />
     </div>
-    <div class="section tw-flex-col" style="background-color: #dfe3e6">
-      <div class="section-content">
-        <div class="section-header">Nhận dạng giọng nói thông minh</div>
-        <div class="section-description">
+    <div class="pp-section tw-flex-col" style="background-color: #dfe3e6">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Nhận dạng giọng nói thông minh</div>
+        <div class="pp-section-description">
           Tính năng nhận dạng giọng nói trong Rejuv cung cấp trải nghiệm tiện
           lợi và rảnh tay. Người dùng có thể dễ dàng điều khiển ghế bằng cách
           điều chỉnh cài đặt và chọn chương trình chỉ bằng cách nói lệnh.
@@ -545,11 +545,11 @@
       </div>
       <img alt="" class="!tw-w-full" />
     </div>
-    <div class="section tw-flex-row">
+    <div class="pp-section tw-flex-row">
       <img alt="" class="" />
-      <div class="section-content">
-        <div class="section-header">Liệu pháp sưởi ấm nhẹ nhàng</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Liệu pháp sưởi ấm nhẹ nhàng</div>
+        <div class="pp-section-description">
           Hệ thống sưởi ấm thắt lưng của Rejuv sử dụng sưởi ấm graphene để giúp
           giảm căng thẳng ở lưng. Rejuv cũng bao gồm nhiệt nhắm mục tiêu dọc
           theo ngực và dạ dày. Chỉ cần đặt khăn choàng sưởi ấm lên cơ thể để
@@ -558,12 +558,12 @@
         <img src="" alt="" class="!tw-w-2/3" />
       </div>
     </div>
-    <div class="section tw-relative md:tw-flex-row">
+    <div class="pp-section tw-relative md:tw-flex-row">
       <div
-        class="section-content tw-absolute tw-bottom-0 max-[768px]:!tw-pt-0 md:tw-static"
+        class="pp-section-content tw-absolute tw-bottom-0 max-[768px]:!tw-pt-0 md:tw-static"
       >
-        <div class="section-header">Hệ thống SL-Track</div>
-        <div class="section-description">
+        <div class="pp-section-header">Hệ thống SL-Track</div>
+        <div class="pp-section-description">
           Thông qua việc sử dụng SL-Track được thiết kế khoa học, các con lăn
           massage có thể cung cấp độ phủ toàn thân bằng cách mở rộng từ đáy hộp
           sọ đến mép của gân kheo.
@@ -572,11 +572,11 @@
       <img alt="" class="tw-mb-12 !tw-w-full md:!tw-w-1/2" />
     </div>
     <div
-      class="section tw-flex-col-reverse md:tw-relative md:tw-flex-row-reverse md:!tw-justify-start"
+      class="pp-section tw-flex-col-reverse md:tw-relative md:tw-flex-row-reverse md:!tw-justify-start"
     >
-      <div class="section-content">
-        <div class="section-header">34 Túi khí nén massage</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">34 Túi khí nén massage</div>
+        <div class="pp-section-description">
           Rejūv cung cấp tổng cộng 34 túi khí trong ghế massage, bao phủ vai,
           cánh tay, bắp chân và bàn chân.
         </div>
@@ -584,13 +584,13 @@
       <img alt="" class="!tw-w-full md:!tw-w-1/2" />
     </div>
 
-    <div class="section tw-flex-col">
-      <div class="section-content !tw-pb-0">
-        <div class="section-header">
+    <div class="pp-section tw-flex-col">
+      <div class="pp-section-content !tw-pb-0">
+        <div class="pp-section-header">
           Tư thế không trọng lực <br />
           và Công nghệ tiết kiệm không gian
         </div>
-        <div class="section-description">
+        <div class="pp-section-description">
           Lấy cảm hứng từ NASA, tư thế không trọng lực là tư thế tốt nhất để trẻ
           hóa tối đa. Bằng cách ngả vào
           <strong> tư thế không trọng lực 3 giai đoạn </strong>, người dùng có
@@ -602,13 +602,13 @@
       </div>
       <img alt="" class="!tw-w-full" />
     </div>
-    <!-- <div class="md:tw-flex-row-reverse tw-flex-col-reverse section">
-      <div class="section-content">
-        <div class="section-header">
+    <!-- <div class="md:tw-flex-row-reverse tw-flex-col-reverse pp-section">
+      <div class="pp-section-content">
+        <div class="pp-section-header">
           Lumbar <br />
           Heating Therapy
         </div>
-        <div class="section-description">
+        <div class="pp-section-description">
           The lumbar heating system in the Solis uses its
           <strong>graphene heating</strong> to warm and reduce soreness along
           the back area.
@@ -815,21 +815,21 @@
       </div>
     </div>
 
-    <div class="section tw-flex-col-reverse md:tw-flex-row-reverse">
+    <div class="pp-section tw-flex-col-reverse md:tw-flex-row-reverse">
       <img alt="" class="!tw-w-2/3 !tw-self-end md:!tw-w-1/3" />
-      <div class="section-content max-[768px]:!tw-pb-0">
-        <div class="section-header">Điều khiển từ xa tiện lợi</div>
-        <div class="section-description">
+      <div class="pp-section-content max-[768px]:!tw-pb-0">
+        <div class="pp-section-header">Điều khiển từ xa tiện lợi</div>
+        <div class="pp-section-description">
           Rejūv bao gồm một bộ điều khiển từ xa để dễ dàng điều hướng và điều
           chỉnh cài đặt.
         </div>
       </div>
     </div>
-    <div class="section tw-flex-col md:tw-flex-row">
+    <div class="pp-section tw-flex-col md:tw-flex-row">
       <img alt="" class="!tw-w-full md:!tw-w-1/2" />
-      <div class="section-content max-[768px]:!tw-pt-0">
-        <div class="section-header">Chân đế tự động mở rộng</div>
-        <div class="section-description">
+      <div class="pp-section-content max-[768px]:!tw-pt-0">
+        <div class="pp-section-header">Chân đế tự động mở rộng</div>
+        <div class="pp-section-description">
           Được tạo ra cho người dùng có chiều cao và hình dáng cơ thể khác nhau,
           Rejūv cung cấp một chân đế tự động mở rộng. Chân đế có khả năng kéo
           dài lên đến <strong>6 inch</strong> để điều chỉnh cho bất kỳ người
@@ -837,11 +837,11 @@
         </div>
       </div>
     </div>
-    <div class="section tw-flex-col md:tw-flex-row-reverse">
+    <div class="pp-section tw-flex-col md:tw-flex-row-reverse">
       <img alt="" class="!tw-w-full md:!tw-w-1/2" />
-      <div class="section-content">
-        <!-- <div class="section-header">Spinning Calf Rollers</div> -->
-        <div class="section-description">
+      <div class="pp-section-content">
+        <!-- <div class="pp-section-header">Spinning Calf Rollers</div> -->
+        <div class="pp-section-description">
           Rejūv được trang bị
           <strong>Con lăn chân chuyên dụng</strong> được tạo ra để kích hoạt một
           loạt các điểm châm cứu bằng cách sử dụng
@@ -851,13 +851,13 @@
         </div>
       </div>
     </div>
-    <div class="section tw-relative tw-flex-col-reverse md:tw-flex-row">
+    <div class="pp-section tw-relative tw-flex-col-reverse md:tw-flex-row">
       <img alt="" class="tw-mt-10 !tw-w-full md:!tw-w-1/2" />
       <div
-        class="section-content tw-absolute tw-top-0 max-[768px]:!tw-pb-0 md:tw-relative"
+        class="pp-section-content tw-absolute tw-top-0 max-[768px]:!tw-pb-0 md:tw-relative"
       >
-        <div class="section-header">Gối đầu có thể tháo rời</div>
-        <div class="section-description">
+        <div class="pp-section-header">Gối đầu có thể tháo rời</div>
+        <div class="pp-section-description">
           Rejūv có gối đầu có thể tháo rời, có thể giúp bạn tùy chỉnh massage
           tốt nhất cho tất cả các vị trí đầu.
         </div>

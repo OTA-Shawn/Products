@@ -143,7 +143,7 @@
     line-height: 1.2 !tw-important;
   }
 
-  .sections .section {
+  .sections .pp-section {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     margin-bottom: 72px;
@@ -152,23 +152,23 @@
     justify-content: center;
     align-items: center;
   }
-  .sections .section > img {
+  .sections .pp-section > img {
     grid-column: span 6 / span 6;
   }
-  .section-content {
+  .pp-section-content {
     grid-column: span 6 / span 6;
     display: flex;
     flex-direction: column;
     gap: 16px;
     padding: 24px;
   }
-  .section-header {
+  .pp-section-header {
     color: var(--section-header-text-color);
     font-weight: bold;
     line-height: 1.1 !tw-important;
     font-size: 56px;
   }
-  .section-description {
+  .pp-section-description {
     color: var(--section-content-text-color);
     font-size: 24px;
   }
@@ -176,17 +176,17 @@
     .sections {
       max-width: 768px;
     }
-    .sections .section {
+    .sections .pp-section {
       margin-bottom: 40px;
     }
-    .section-content {
+    .pp-section-content {
       gap: 12px;
       padding: 20px;
     }
-    .section-header {
+    .pp-section-header {
       font-size: 40px;
     }
-    .section-description {
+    .pp-section-description {
       font-size: 24px;
     }
   }
@@ -194,17 +194,17 @@
     .sections {
       max-width: 480px;
     }
-    .section {
+    .pp-section {
       margin-bottom: 24px;
     }
-    .section-content {
+    .pp-section-content {
       gap: 8px;
       padding: 12px;
     }
-    .section-header {
+    .pp-section-header {
       font-size: 20px;
     }
-    .section-description {
+    .pp-section-description {
       font-size: 12px;
     }
   }
@@ -220,31 +220,31 @@
     <div class="tw-mb-[24px] lg:tw-mb-[58px]">
       <img src="" alt="" />
     </div>
-    <div class="section" style="background-color: #f7f7f7">
+    <div class="pp-section" style="background-color: #f7f7f7">
       <img src="" alt="" class="!tw-col-span-7" />
-      <div class="section-content !tw-col-span-5 tw-self-end">
-        <div class="section-header">Bảo vệ đường viền ghế</div>
-        <div class="section-description">
+      <div class="pp-section-content !tw-col-span-5 tw-self-end">
+        <div class="pp-section-header">Bảo vệ đường viền ghế</div>
+        <div class="pp-section-description">
           Bền chắc và dệt chặt chẽ, vỏ bọc massage của chúng tôi cung cấp sự bảo
           vệ đáng tin cậy, ngay cả trên những đường viền sắc nét nhất của nó.
         </div>
       </div>
     </div>
-    <div class="section" style="background-color: #f7f7f7">
+    <div class="pp-section" style="background-color: #f7f7f7">
       <img src="" alt="" class="!tw-col-span-12" />
-      <div class="section-content !tw-col-span-12">
-        <div class="section-header">Đáy đàn hồi</div>
-        <div class="section-description">
+      <div class="pp-section-content !tw-col-span-12">
+        <div class="pp-section-header">Đáy đàn hồi</div>
+        <div class="pp-section-description">
           Đáy của vỏ bọc ghế massage được thiết kế để có độ đàn hồi và hỗ trợ
           tối ưu.
         </div>
       </div>
     </div>
-    <div class="section !tw-bg-white md:!tw-mb-24 lg:!tw-mb-40">
+    <div class="pp-section !tw-bg-white md:!tw-mb-24 lg:!tw-mb-40">
       <img src="" alt="" class="!tw-col-span-7" />
-      <div class="section-content !tw-col-span-5">
-        <div class="section-header">Chất liệu đàn hồi</div>
-        <div class="section-description">
+      <div class="pp-section-content !tw-col-span-5">
+        <div class="pp-section-header">Chất liệu đàn hồi</div>
+        <div class="pp-section-description">
           Vừa vặn linh hoạt, <br />
           sử dụng thoải mái, và <br />
           bảo vệ hiệu quả. <br />
@@ -252,12 +252,12 @@
         </div>
       </div>
     </div>
-    <div class="section tw-relative !tw-bg-white md:!tw-mb-24 lg:!tw-mb-40">
-      <div class="section-content !tw-col-span-5 !tw-self-start">
-        <div class="section-header tw-absolute tw-top-0 tw-w-2/3">
+    <div class="pp-section tw-relative !tw-bg-white md:!tw-mb-24 lg:!tw-mb-40">
+      <div class="pp-section-content !tw-col-span-5 !tw-self-start">
+        <div class="pp-section-header tw-absolute tw-top-0 tw-w-2/3">
           Trình bày vỏ bọc được đánh bóng chính xác
         </div>
-        <div class="section-description tw-mt-12 md:tw-mt-24 lg:tw-mt-36">
+        <div class="pp-section-description tw-mt-12 md:tw-mt-24 lg:tw-mt-36">
           Trải nghiệm sự khéo léo tỉ mỉ với vỏ bọc ghế massage của chúng tôi, có
           đường hoàn thiện liền mạch và vừa khít, nhấn mạnh sự chú ý đến chi
           tiết.
@@ -265,13 +265,13 @@
       </div>
       <img src="" alt="" class="tw-col-span-7" />
     </div>
-    <div class="section !tw-bg-white">
+    <div class="pp-section !tw-bg-white">
       <img src="" alt="" class="!tw-col-span-7" />
       <div
-        class="section-content !tw-col-span-5 tw-self-end max-[768px]:!tw-pb-0"
+        class="pp-section-content !tw-col-span-5 tw-self-end max-[768px]:!tw-pb-0"
       >
-        <div class="section-header">Chất liệu mềm mại</div>
-        <div class="section-description">
+        <div class="pp-section-header">Chất liệu mềm mại</div>
+        <div class="pp-section-description">
           Vừa vặn linh hoạt, <br />sử dụng thoải mái,<br />
           bảo vệ hiệu quả. <br />Vỏ bọc ghế massage của chúng tôi thích ứng với
           mọi kích thước.
@@ -279,7 +279,7 @@
       </div>
     </div>
 
-    <div class="section !tw-flex tw-flex-col !tw-bg-white">
+    <div class="pp-section !tw-flex tw-flex-col !tw-bg-white">
       <div
         class="tw-mb-[30px] tw-mt-[50px] tw-text-center tw-text-[18px] tw-font-bold md:tw-text-[36px] lg:tw-text-[44px]"
       >
@@ -311,7 +311,7 @@
         </div>
       </div>
     </div>
-    <div class="section !tw-hidden tw-flex-col tw-items-center !tw-bg-white">
+    <div class="pp-section !tw-hidden tw-flex-col tw-items-center !tw-bg-white">
       <div
         class="text-[18px] md:text-[36px] lg:text-[44px] tw-text-center tw-font-bold"
       >
@@ -340,7 +340,7 @@
         </div>
       </div>
     </div>
-    <div class="section !tw-flex tw-flex-col tw-gap-y-[14px] !tw-bg-white">
+    <div class="pp-section !tw-flex tw-flex-col tw-gap-y-[14px] !tw-bg-white">
       <div
         class="tw-text-center tw-text-[18px] tw-font-bold md:tw-text-[36px] lg:tw-text-[44px]"
       >

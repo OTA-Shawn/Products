@@ -309,7 +309,7 @@
     color: var(--section-strong-color);
   }
 
-  .sections .section {
+  .sections .pp-section {
     background-color: var(--section-bg-color);
     display: flex;
     justify-content: center;
@@ -317,32 +317,32 @@
     margin-bottom: 50px;
   }
 
-  .section > img,
-  .section-content {
+  .pp-section > img,
+  .pp-section-content {
     flex: 1 1 0%;
     width: 50%;
   }
 
-  .section-content {
+  .pp-section-content {
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 50px;
   }
 
-  .section-header {
+  .pp-section-header {
     font-size: 52px;
     line-height: 65px;
     color: var(--section-header-color);
   }
 
-  .section-header2 {
+  .pp-section-header2 {
     font-size: 26px;
     line-height: 32px;
     color: var(--section-header-color);
   }
 
-  .section-description {
+  .pp-section-description {
     color: var(--section-content-color);
     font-size: 22px;
     line-height: 33px;
@@ -400,30 +400,30 @@
       max-width: 768px;
     }
 
-    .sections .section {
+    .sections .pp-section {
       margin-bottom: 35px;
     }
 
-    .section > img {
+    .pp-section > img {
       width: 50%;
     }
 
-    .section .section-content {
+    .pp-section .pp-section-content {
       gap: 22px;
       padding: 35px;
     }
 
-    .section-header {
+    .pp-section-header {
       font-size: 39px;
       line-height: 58px;
     }
 
-    .section-header2 {
+    .pp-section-header2 {
       font-size: 26px;
       line-height: 32px;
     }
 
-    .section-description {
+    .pp-section-description {
       font-size: 15px;
       line-height: 24px;
     }
@@ -462,26 +462,26 @@
       max-width: 480px;
     }
 
-    .sections .section {
+    .sections .pp-section {
       margin-bottom: 22px;
     }
 
-    .section .section-content {
+    .pp-section .pp-section-content {
       gap: 14px;
       padding: 22px;
     }
 
-    .section-header {
+    .pp-section-header {
       font-size: 26px;
       line-height: 38px;
     }
 
-    .section-header2 {
+    .pp-section-header2 {
       font-size: 13px;
       line-height: 19px;
     }
 
-    .section-description {
+    .pp-section-description {
       font-size: 10px;
       line-height: 16px;
     }
@@ -525,7 +525,7 @@
       class="[&>*]:tw-mb-40 [&>*]:tw-aspect-video [&>*]:tw-w-full"
     ></div>
 
-    <div class="section !tw-mb-40 !tw-flex-col !tw-bg-white md:!tw-mb-80">
+    <div class="pp-section !tw-mb-40 !tw-flex-col !tw-bg-white md:!tw-mb-80">
       <img src="" alt="" class="!tw-w-full" />
       <div
         class="px-4 tw-pb-5 tw-pt-10 tw-text-center tw-text-xl md:tw-px-10 md:tw-text-2xl lg:tw-text-3xl"
@@ -557,12 +557,12 @@
         </div>
       </div>
     </div>
-    <div class="section">
+    <div class="pp-section">
       <img src="" alt="" class="!tw-flex-initial" />
-      <div class="section-content">
+      <div class="pp-section-content">
         <img src="" alt="" class="mb-[-1em] md:mb-[-2em] !tw-w-1/3" />
-        <div class="section-header">Công Nghệ</div>
-        <div class="section-description">
+        <div class="pp-section-header">Công Nghệ</div>
+        <div class="pp-section-description">
           Chiếc ghế sử dụng
           <strong>cảm biến sức khỏe tích hợp</strong> và thu thập dữ liệu cho hệ
           thống Ai để nhận biết các vùng căng thẳng trên phần thân của bạn. Bằng
@@ -571,13 +571,13 @@
         </div>
       </div>
     </div>
-    <div class="section tw-flex-col-reverse">
+    <div class="pp-section tw-flex-col-reverse">
       <img src="" alt="" class="!tw-w-full" />
-      <div class="section-content !tw-w-full !tw-pb-0">
-        <div class="section-header">
+      <div class="pp-section-content !tw-w-full !tw-pb-0">
+        <div class="pp-section-header">
           Phát Hiện Sức Khỏe <strong>Thông Minh</strong>
         </div>
-        <div class="section-description">
+        <div class="pp-section-description">
           Ghế mát-xa Osaki Ai Vivo 4D+2D có khả năng vượt trội với cảm biến sức
           khỏe tích hợp. Bằng cách nhận biết các chỉ số như nhịp tim, nồng độ
           oxy trong máu, vi tuần hoàn và mức độ mệt mỏi, công nghệ Ai của ghế sẽ
@@ -586,13 +586,13 @@
         </div>
       </div>
     </div>
-    <div class="section !tw-bg-black">
+    <div class="pp-section !tw-bg-black">
       <img src="" alt="" class="" />
-      <div class="section-content">
-        <div class="section-header">
+      <div class="pp-section-content">
+        <div class="pp-section-header">
           <strong>3 Con Lăn </strong> Cho Cánh Tay
         </div>
-        <div class="section-description">
+        <div class="pp-section-description">
           Khi được kích hoạt, các con lăn ở phần tay sẽ nhào nặn và tác động lên
           cơ bắp, gân và các huyệt đạo trên cánh tay. Điều này mang lại cảm giác
           thư thái và kích thích, giúp giảm căng thẳng và tăng cường tuần hoàn
@@ -600,13 +600,13 @@
         </div>
       </div>
     </div>
-    <div class="section tw-flex-col md:tw-flex-row-reverse">
+    <div class="pp-section tw-flex-col md:tw-flex-row-reverse">
       <img src="" alt="" class="!tw-w-full" />
-      <div class="section-content !tw-w-full">
-        <div class="section-header">
+      <div class="pp-section-content !tw-w-full">
+        <div class="pp-section-header">
           Đường Ray SL <strong>Tự Điều Chỉnh</strong>
         </div>
-        <div class="section-description">
+        <div class="pp-section-description">
           Osaki Ai Vivo kết hợp hệ thống đường ray linh hoạt và
           <strong> khả năng kéo dài trong quá trình ngả ghế. </strong>
           Tính năng này tăng hiệu quả kéo giãn lưng của ghế mát-xa, đảm bảo trải
@@ -615,19 +615,19 @@
         </div>
       </div>
     </div>
-    <div class="section">
+    <div class="pp-section">
       <img src="" alt="" class="" />
-      <div class="section-content">
+      <div class="pp-section-content">
         <div
           class="tw--mb-5 tw-flex tw-bg-gradient-to-br tw-from-neutral-100 tw-to-neutral-600 tw-bg-clip-text tw-text-lg tw-font-bold tw-text-transparent md:tw-text-4xl"
         >
           Duo Mech™
         </div>
 
-        <div class="section-header2">
+        <div class="pp-section-header2">
           <strong>Công Nghệ Mát-xa 4D + 2D</strong>
         </div>
-        <div class="section-description">
+        <div class="pp-section-description">
           Ghế mát-xa Osaki Ai Vivo
           <strong> tích hợp đồng thời cơ chế mát-xa 4D và 2D </strong>
           để nhắm vào các vùng khác nhau trên cơ thể. Hệ thống 4D đảm nhiệm phần
@@ -637,13 +637,13 @@
       </div>
     </div>
 
-    <div class="section tw-flex-col">
-      <div class="section-content !tw-w-full tw-text-center">
-        <div class="section-header !tw-text-white">
+    <div class="pp-section tw-flex-col">
+      <div class="pp-section-content !tw-w-full tw-text-center">
+        <div class="pp-section-header !tw-text-white">
           Điều Khiển Giọng Nói <strong>Thông Minh</strong>
         </div>
         <img src="" alt="" class="!tw-w-full" />
-        <div class="section-description" style="color: #808084">
+        <div class="pp-section-description" style="color: #808084">
           Tính năng điều khiển bằng giọng nói trên ghế mát-xa Osaki Ai Vivo giúp
           việc sử dụng tiện lợi và dễ dàng hơn. Hãy làm theo hướng dẫn và các
           lệnh được ghi trong sách hướng dẫn để có được trải nghiệm mượt mà và
@@ -651,13 +651,13 @@
         </div>
       </div>
     </div>
-    <div class="section !tw-bg-black">
+    <div class="pp-section !tw-bg-black">
       <img src="" alt="" class="tw-self-start" />
-      <div class="section-content">
-        <div class="section-header">
+      <div class="pp-section-content">
+        <div class="pp-section-header">
           Chế Độ Nhào & Xoa <strong>Chân</strong>
         </div>
-        <div class="section-description">
+        <div class="pp-section-description">
           Osaki Ai Vivo cung cấp chế độ xoay 360 độ, nhào và xoa bắp chân. Bên
           cạnh đó, ghế còn sử dụng
           <strong>túi khí nén</strong> để tăng cường tuần hoàn máu và giảm căng
@@ -672,7 +672,7 @@
       <div
         class="tw-flex tw-h-full !tw-flex-col tw-bg-[var(--section-bg-color)]"
       >
-        <div class="section-header tw-p-4 max-[768px]:!tw-text-xl md:tw-p-10">
+        <div class="pp-section-header tw-p-4 max-[768px]:!tw-text-xl md:tw-p-10">
           <strong>Bộ Điều Khiển</strong> Màn Hình Cảm Ứng
         </div>
         <img src="" alt="" class="!tw-w-full tw-flex-1" />
@@ -682,13 +682,13 @@
       </div>
     </div>
 
-    <div class="section tw-flex-col">
-      <div class="section-content !tw-w-full">
-        <div class="section-header !tw-text-white">
+    <div class="pp-section tw-flex-col">
+      <div class="pp-section-content !tw-w-full">
+        <div class="pp-section-header !tw-text-white">
           <strong>Ngả Lưng Không Trọng Lực</strong> <br />
           và <strong>Tiết Kiệm Không Gian</strong>
         </div>
-        <div class="section-description" style="color: #808084">
+        <div class="pp-section-description" style="color: #808084">
           Ghế mát-xa Osaki Ai Vivo 4D được thiết kế đem lại trải nghiệm thư giãn
           bằng cách tích hợp
           <strong>công nghệ không trọng lực của NASA.</strong> Khi ngả lưng vào
@@ -701,14 +701,14 @@
       <img src="" alt="" class="!tw-w-full" />
     </div>
 
-    <div class="section">
+    <div class="pp-section">
       <img src="" alt="" class="!tw-flex-initial md:tw-px-12" />
-      <div class="section-content">
-        <div class="section-header">
+      <div class="pp-section-content">
+        <div class="pp-section-header">
           <strong>Nhiệt</strong> <br />
           Vùng Thắt Lưng
         </div>
-        <div class="section-description">
+        <div class="pp-section-description">
           Ghế mát-xa Osaki Ai Vivo được trang bị
           <strong>tấm sợi carbon</strong>
           tỏa nhiệt nhẹ nhàng đến vùng thắt lưng. Tính năng này sẽ giúp đẩy
@@ -852,14 +852,14 @@
       </div>
     </div>
 
-    <div class="section">
+    <div class="pp-section">
       <img src="" alt="" class="" />
-      <div class="section-content">
-        <div class="section-header">
+      <div class="pp-section-content">
+        <div class="pp-section-header">
           <strong>3 Con Lăn </strong> <br />
           Chuyên Biệt Cho Bàn Chân
         </div>
-        <div class="section-description">
+        <div class="pp-section-description">
           Các con lăn này được trang bị
           <strong>con lăn bấm huyệt</strong>, mô phỏng chuyển động của tay để
           tác động các huyệt đạo cụ thể ở bàn chân, giúp giảm căng thẳng cơ bắp
@@ -868,13 +868,13 @@
         </div>
       </div>
     </div>
-    <div class="section tw-flex-row-reverse">
+    <div class="pp-section tw-flex-row-reverse">
       <img src="" alt="" class="" />
-      <div class="section-content">
-        <div class="section-header">
+      <div class="pp-section-content">
+        <div class="pp-section-header">
           <strong>Chân Đế Tự Động</strong> Kéo Dài
         </div>
-        <div class="section-description">
+        <div class="pp-section-description">
           Phần chân ghế của Ai Vivo có thể
           <strong>kéo dài đến 6 inch</strong>, phù hợp với người dùng có chiều
           cao khác nhau, lên tới 6'4". Hệ thống quét cơ thể sẽ xác định chiều
@@ -889,7 +889,7 @@
       <div
         class="tw-flex tw-h-full !tw-flex-col tw-bg-[var(--section-bg-color)]"
       >
-        <div class="section-header2 tw-p-6 !tw-pb-0 md:tw-p-10">
+        <div class="pp-section-header2 tw-p-6 !tw-pb-0 md:tw-p-10">
           <strong>Bảng Điều Khiển</strong> Tiện Lợi
         </div>
         <img src="" alt="" class="!tw-w-full tw-flex-1" />
@@ -897,7 +897,7 @@
       <div
         class="tw-flex tw-h-full !tw-flex-col tw-bg-[var(--section-bg-color)]"
       >
-        <div class="section-header2 tw-p-6 !tw-pb-0 md:tw-p-10">
+        <div class="pp-section-header2 tw-p-6 !tw-pb-0 md:tw-p-10">
           <strong>Sạc Không Dây</strong> <br />
           Cho Điện Thoại
         </div>
@@ -910,7 +910,7 @@
       <div
         class="tw-flex tw-h-full !tw-flex-col tw-bg-[var(--section-bg-color)]"
       >
-        <div class="section-header2 tw-p-6 tw-pb-0 md:tw-p-10">
+        <div class="pp-section-header2 tw-p-6 tw-pb-0 md:tw-p-10">
           <strong>Loa Bluetooth HD</strong> <br />
           Âm Thanh Vòm
         </div>
@@ -919,7 +919,7 @@
       <div
         class="tw-flex tw-h-full !tw-flex-col tw-bg-[var(--section-bg-color)]"
       >
-        <div class="section-header2 tw-p-6 tw-pb-0 md:tw-p-10">
+        <div class="pp-section-header2 tw-p-6 tw-pb-0 md:tw-p-10">
           <strong>Cổng USB</strong> <br />
           Sạc Thiết Bị
         </div>

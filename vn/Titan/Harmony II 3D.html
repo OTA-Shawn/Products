@@ -285,30 +285,30 @@
   .sections strong {
     color: var(--section-strong-color);
   }
-  .sections .section {
+  .sections .pp-section {
     background-color: var(--section-bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
   }
-  .section > img,
-  .section-content {
+  .pp-section > img,
+  .pp-section-content {
     flex: 1 1 0%;
   }
-  .section-content {
+  .pp-section-content {
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 50px;
   }
-  .section-header {
+  .pp-section-header {
     font-size: 52px;
     line-height: 1.07;
     font-weight: 600;
     color: var(--section-header-color);
   }
-  .section-description {
+  .pp-section-description {
     color: var(--section-content-color);
     font-size: 22px;
     line-height: 33px;
@@ -356,21 +356,21 @@
     .sections {
       max-width: 768px;
     }
-    .sections .section {
+    .sections .pp-section {
       margin-bottom: 35px;
     }
-    .section > img {
+    .pp-section > img {
       width: 50%;
     }
-    .section .section-content {
+    .pp-section .pp-section-content {
       gap: 22px;
       padding: 35px;
     }
-    .section-header {
+    .pp-section-header {
       font-size: 39px;
       line-height: 1.08;
     }
-    .section-description {
+    .pp-section-description {
       font-size: 15px;
       line-height: 24px;
     }
@@ -401,19 +401,19 @@
     .sections {
       max-width: 480px;
     }
-    .sections .section {
+    .sections .pp-section {
       margin-bottom: 22px;
     }
 
-    .section .section-content {
+    .pp-section .pp-section-content {
       gap: 14px;
       padding: 22px;
     }
-    .section-header {
+    .pp-section-header {
       font-size: 32px;
       line-height: 1.11;
     }
-    .section-description {
+    .pp-section-description {
       font-size: 19px;
       line-height: 1.21053;
     }
@@ -445,10 +445,10 @@
       id="youtube-link"
       class="[&>*]:tw-mb-40 [&>*]:tw-aspect-video [&>*]:tw-w-full"
     ></div>
-    <div class="section">
+    <div class="pp-section">
       <!-- <img src="" alt="" /> -->
     </div>
-    <div class="md:!tw-mb-30 section !tw-mb-10 !tw-flex-col !tw-bg-white">
+    <div class="md:!tw-mb-30 pp-section !tw-mb-10 !tw-flex-col !tw-bg-white">
       <img alt="" class="!tw-w-full" />
       <div
         class="tw-mx-4 tw-pb-5 tw-pt-10 tw-text-xl md:tw-px-10 md:tw-text-center md:tw-text-2xl lg:tw-text-3xl"
@@ -460,13 +460,13 @@
       </div>
     </div>
 
-    <div class="section tw-relative tw-flex-col">
-      <div class="section-content !tw-pb-[20em] md:!tw-pb-[25em]">
-        <div class="section-header">
+    <div class="pp-section tw-relative tw-flex-col">
+      <div class="pp-section-content !tw-pb-[20em] md:!tw-pb-[25em]">
+        <div class="pp-section-header">
           Phát hiện sức khỏe thông minh
           <img src="" alt="" class="tw-my-2 tw-w-24 md:tw-w-32 lg:tw-w-40" />
         </div>
-        <div class="section-description md:tw-w-1/2">
+        <div class="pp-section-description md:tw-w-1/2">
           Ghế massage Harmony II có khả năng tiên tiến với máy theo dõi sức khỏe
           tích hợp. Bằng cách phát hiện các chỉ số khác nhau như
           <strong>nhịp tim, mức oxy trong máu và chỉ số mệt mỏi</strong>, công
@@ -480,10 +480,10 @@
       </div>
     </div>
 
-    <div class="section tw-flex-col-reverse md:tw-flex-row">
-      <div class="section-content">
-        <div class="section-header">Cơ chế massage 3D</div>
-        <div class="section-description">
+    <div class="pp-section tw-flex-col-reverse md:tw-flex-row">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Cơ chế massage 3D</div>
+        <div class="pp-section-description">
           Phạm vi & Chiều rộng. Công nghệ 3D cho phép bạn kiểm soát cường độ
           tổng thể của liệu pháp massage bằng cách quản lý độ sâu của con lăn
           lưng. HarmonyII cho phép bạn điều chỉnh độ sâu của con lăn 3D tại bất
@@ -493,10 +493,10 @@
       </div>
       <img alt="" class="!tw-w-2/3 md:!tw-w-1/2" />
     </div>
-    <div class="section tw-flex-col-reverse md:tw-flex-row-reverse">
-      <div class="section-content">
-        <div class="section-header">Hệ thống SL-Track</div>
-        <div class="section-description">
+    <div class="pp-section tw-flex-col-reverse md:tw-flex-row-reverse">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Hệ thống SL-Track</div>
+        <div class="pp-section-description">
           Thông qua việc sử dụng <strong>SL-Track</strong> được thiết kế khoa
           học, các con lăn massage có thể cung cấp độ phủ toàn thân bằng cách mở
           rộng từ đáy hộp sọ đến mép gân kheo của bạn.
@@ -504,13 +504,13 @@
       </div>
       <img alt="" class="!tw-w-full md:!tw-w-1/2" />
     </div>
-    <div class="section !tw-flex-col md:!tw-flex-row">
+    <div class="pp-section !tw-flex-col md:!tw-flex-row">
       <img alt="" class="!tw-w-2/3 tw-pl-4 md:!tw-w-1/3" />
-      <div class="section-content">
+      <div class="pp-section-content">
         <div class="tw-flex tw-items-center tw-gap-4 md:tw-gap-8">
-          <div class="section-header">Liệu pháp sưởi ấm nhẹ nhàng</div>
+          <div class="pp-section-header">Liệu pháp sưởi ấm nhẹ nhàng</div>
         </div>
-        <div class="section-description">
+        <div class="pp-section-description">
           Hệ thống sưởi ấm thắt lưng của Harmony II sử dụng hệ thống sưởi
           graphene để giúp giảm căng thẳng ở lưng. Harmony II cũng bao gồm nhiệt
           nhắm mục tiêu dọc theo ngực và dạ dày. Chỉ cần đặt
@@ -524,10 +524,10 @@
         />
       </div>
     </div>
-    <div class="section tw-flex-col">
-      <div class="section-content">
-        <div class="section-header">Tư thế không trọng lực</div>
-        <div class="section-description">
+    <div class="pp-section tw-flex-col">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Tư thế không trọng lực</div>
+        <div class="pp-section-description">
           Lấy cảm hứng từ NASA, tư thế không trọng lực là tư thế tốt nhất để
           phục hồi tối đa. Bằng cách ngả vào
           <strong>tư thế không trọng lực 3 giai đoạn</strong>, người dùng có thể
@@ -537,10 +537,10 @@
       </div>
       <img alt="" class="!tw-w-full" />
     </div>
-    <div class="section tw-flex-col">
-      <div class="section-content">
-        <div class="section-header">Công nghệ tiết kiệm không gian</div>
-        <div class="section-description">
+    <div class="pp-section tw-flex-col">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Công nghệ tiết kiệm không gian</div>
+        <div class="pp-section-description">
           Với <strong>Công nghệ tiết kiệm không gian</strong> của Osaki, ghế
           massage có thể được đặt <strong>4 inch</strong> từ tường và vẫn hoàn
           thành việc ngả hoàn toàn.
@@ -548,10 +548,10 @@
       </div>
       <img alt="" class="!tw-w-full" />
     </div>
-    <div class="section tw-flex-col-reverse md:tw-flex-row">
-      <div class="section-content">
-        <div class="section-header">26 túi khí nén</div>
-        <div class="section-description">
+    <div class="pp-section tw-flex-col-reverse md:tw-flex-row">
+      <div class="pp-section-content">
+        <div class="pp-section-header">26 túi khí nén</div>
+        <div class="pp-section-description">
           Harmony II cung cấp tổng cộng <strong>26 túi khí</strong> trong ghế
           massage, bao phủ vai, cánh tay, hông, bắp chân và bàn chân.
         </div>
@@ -660,11 +660,11 @@
       </div>
     </div>
 
-    <div class="section tw-flex-col md:tw-flex-row-reverse">
+    <div class="pp-section tw-flex-col md:tw-flex-row-reverse">
       <img alt="" class="!tw-w-4/5 tw-self-end md:!tw-w-1/2 md:tw-self-start" />
-      <div class="section-content">
-        <div class="section-header">Chân đế có thể mở rộng lò xo</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Chân đế có thể mở rộng lò xo</div>
+        <div class="pp-section-description">
           Được tạo ra cho người dùng có chiều cao và hình dáng cơ thể khác nhau,
           Harmony II cung cấp chân đế có thể mở rộng. Chân đế có khả năng kéo
           dài <strong>lên đến 7,5</strong> inch để điều chỉnh cho bất kỳ người
@@ -672,11 +672,11 @@
         </div>
       </div>
     </div>
-    <div class="section tw-flex-col md:tw-flex-row">
+    <div class="pp-section tw-flex-col md:tw-flex-row">
       <img alt="" class="!tw-w-2/3 md:!tw-w-1/2" />
-      <div class="section-content">
-        <div class="section-header">Con lăn chân</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Con lăn chân</div>
+        <div class="pp-section-description">
           Harmony II được trang bị Con lăn chân chuyên dụng được tạo ra để kích
           hoạt một loạt các điểm châm cứu bằng cách sử dụng các gờ phản xạ được
           thiết kế khoa học. Chân đế giữ <strong>3 con lăn</strong> cho mỗi bàn
@@ -685,38 +685,38 @@
       </div>
     </div>
     <div
-      class="section tw-relative tw-flex-col-reverse !tw-justify-start md:tw-flex-row-reverse"
+      class="pp-section tw-relative tw-flex-col-reverse !tw-justify-start md:tw-flex-row-reverse"
     >
       <img
         alt=""
         class="!tw-w-full !tw-flex-initial !tw-self-end md:!tw-w-11/12 md:tw-pt-7 lg:tw-pt-10"
       />
       <div
-        class="section-content tw-left-0 tw-top-0 md:tw-absolute md:!tw-w-1/2"
+        class="pp-section-content tw-left-0 tw-top-0 md:tw-absolute md:!tw-w-1/2"
       >
-        <div class="section-header">Điều khiển giọng nói thông minh</div>
-        <div class="section-description">
+        <div class="pp-section-header">Điều khiển giọng nói thông minh</div>
+        <div class="pp-section-description">
           Với tính năng <strong>điều khiển bằng giọng nói</strong> của Harmony
           II, bạn có thể dễ dàng sử dụng ghế mà không cần nhấc ngón tay. Khi bạn
           ra lệnh, ghế sẽ phản ứng tương ứng.
         </div>
       </div>
     </div>
-    <div class="section tw-flex-row">
+    <div class="pp-section tw-flex-row">
       <img alt="" class="!tw-w-1/2 !tw-flex-initial tw-self-end md:!tw-w-1/3" />
-      <div class="section-content">
-        <div class="section-header">Điều khiển từ xa tiện lợi</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Điều khiển từ xa tiện lợi</div>
+        <div class="pp-section-description">
           Harmony II bao gồm bộ điều khiển từ xa để dễ dàng điều hướng và điều
           chỉnh cài đặt.
         </div>
       </div>
     </div>
-    <div class="section tw-flex-col md:tw-flex-row-reverse">
+    <div class="pp-section tw-flex-col md:tw-flex-row-reverse">
       <img alt="" class="!tw-w-2/3 md:!tw-w-1/2" />
-      <div class="section-content">
-        <div class="section-header">Gối đầu có thể tháo rời</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Gối đầu có thể tháo rời</div>
+        <div class="pp-section-description">
           Harmony II có gối đầu có thể tháo rời, có thể giúp bạn tùy chỉnh liệu
           pháp massage tốt nhất cho mọi tư thế đầu.
         </div>
@@ -728,7 +728,7 @@
     >
       <div class="tw-relative tw-flex tw-bg-[var(--section-bg-color)]">
         <div
-          class="section-description tw-absolute tw-left-[5%] tw-top-[5%] !tw-text-black"
+          class="pp-section-description tw-absolute tw-left-[5%] tw-top-[5%] !tw-text-black"
         >
           Loa Bluetooth
         </div>
@@ -736,7 +736,7 @@
       </div>
       <div class="tw-relative tw-flex tw-bg-[var(--section-bg-color)]">
         <div
-          class="section-description tw-absolute tw-left-[5%] tw-top-[5%] !tw-text-black"
+          class="pp-section-description tw-absolute tw-left-[5%] tw-top-[5%] !tw-text-black"
         >
           Bảng điều khiển bên
         </div>
@@ -744,7 +744,7 @@
       </div>
       <div class="tw-relative tw-flex tw-bg-[var(--section-bg-color)]">
         <div
-          class="section-description tw-absolute tw-left-[5%] tw-top-[5%] !tw-text-black"
+          class="pp-section-description tw-absolute tw-left-[5%] tw-top-[5%] !tw-text-black"
         >
           Bộ sạc USB
         </div>
@@ -752,7 +752,7 @@
       </div>
       <div class="tw-relative tw-flex tw-bg-[var(--section-bg-color)]">
         <div
-          class="section-content section-description tw-absolute tw-bottom-0 tw-right-[10%] tw-pb-[5%]"
+          class="pp-section-content pp-section-description tw-absolute tw-bottom-0 tw-right-[10%] tw-pb-[5%]"
           style="color: #e2e2e2"
         >
           Túi điều khiển từ xa

@@ -366,29 +366,29 @@
   .sections strong {
     color: var(--section-strong-color);
   }
-  .sections .section {
+  .sections .pp-section {
     background-color: var(--section-bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
   }
-  .section > img,
-  .section-content {
+  .pp-section > img,
+  .pp-section-content {
     flex: 1 1 0%;
   }
-  .section-content {
+  .pp-section-content {
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 50px;
   }
-  .section-header {
+  .pp-section-header {
     font-size: 52px;
     line-height: 65px;
     color: var(--section-header-color);
   }
-  .section-description {
+  .pp-section-description {
     color: var(--section-content-color);
     font-size: 22px;
     line-height: 33px;
@@ -436,21 +436,21 @@
     .sections {
       max-width: 768px;
     }
-    .sections .section {
+    .sections .pp-section {
       margin-bottom: 35px;
     }
-    .section > img {
+    .pp-section > img {
       width: 50%;
     }
-    .section .section-content {
+    .pp-section .pp-section-content {
       gap: 22px;
       padding: 35px;
     }
-    .section-header {
+    .pp-section-header {
       font-size: 39px;
       line-height: 58px;
     }
-    .section-description {
+    .pp-section-description {
       font-size: 15px;
       line-height: 24px;
     }
@@ -481,19 +481,19 @@
     .sections {
       max-width: 480px;
     }
-    .sections .section {
+    .sections .pp-section {
       margin-bottom: 22px;
     }
 
-    .section .section-content {
+    .pp-section .pp-section-content {
       gap: 14px;
       padding: 22px;
     }
-    .section-header {
+    .pp-section-header {
       font-size: 26px;
       line-height: 38px;
     }
-    .section-description {
+    .pp-section-description {
       font-size: 10px;
       line-height: 16px;
     }
@@ -529,10 +529,10 @@
       id="youtube-link"
       class="[&>*]:tw-mb-40 [&>*]:tw-aspect-video [&>*]:tw-w-full"
     ></div>
-    <div class="section">
+    <div class="pp-section">
       <img src="" alt="" />
     </div>
-    <div class="section !tw-mb-40 !tw-flex-col !tw-bg-white md:!tw-mb-80">
+    <div class="pp-section !tw-mb-40 !tw-flex-col !tw-bg-white md:!tw-mb-80">
       <img alt="" class="!tw-w-full" />
       <div
         class="tw-px-10 tw-pb-5 tw-pt-10 tw-text-center tw-text-xl md:tw-text-2xl lg:tw-text-3xl"
@@ -559,11 +559,11 @@
       </div>
     </div>
     <div
-      class="section tw-flex-col-reverse md:tw-relative md:tw-flex-row md:!tw-justify-start"
+      class="pp-section tw-flex-col-reverse md:tw-relative md:tw-flex-row md:!tw-justify-start"
     >
-      <div class="section-content md:tw-absolute md:tw-right-0 md:tw-w-3/5">
-        <div class="section-header">Massage vai kỹ lưỡng</div>
-        <div class="section-description">
+      <div class="pp-section-content md:tw-absolute md:tw-right-0 md:tw-w-3/5">
+        <div class="pp-section-header">Massage vai kỹ lưỡng</div>
+        <div class="pp-section-description">
           OP-4D+ XRest tích hợp hệ thống nén túi khí để massage tỉ mỉ cho vai và
           cổ của bạn. Massage vai XRest có <strong>20 túi khí vai</strong> hoàn
           toàn phù hợp với vai của bạn.
@@ -572,11 +572,11 @@
       <img alt="" class="!tw-w-full md:!tw-w-1/2 md:!tw-flex-initial" />
     </div>
     <div
-      class="section tw-flex-col-reverse md:tw-relative md:tw-flex-row-reverse md:!tw-justify-start"
+      class="pp-section tw-flex-col-reverse md:tw-relative md:tw-flex-row-reverse md:!tw-justify-start"
     >
-      <div class="section-content md:tw-absolute md:tw-left-0 md:tw-w-3/5">
-        <div class="section-header">Điều chỉnh vai tự động</div>
-        <div class="section-description md:tw-w-3/4">
+      <div class="pp-section-content md:tw-absolute md:tw-left-0 md:tw-w-3/5">
+        <div class="pp-section-header">Điều chỉnh vai tự động</div>
+        <div class="pp-section-description md:tw-w-3/4">
           Tính năng cảm biến tự động sẽ <strong>tự động quét</strong> cơ thể của
           bạn trước để ghế có thể xử lý đúng vai của bạn, bất kể vóc dáng của
           bạn.
@@ -584,10 +584,10 @@
       </div>
       <img alt="" class="!tw-w-full md:!tw-w-1/2 md:!tw-flex-initial" />
     </div>
-    <div class="section tw-flex-col-reverse">
-      <div class="section-content">
-        <div class="section-header">Các nút massage vai</div>
-        <div class="section-description">
+    <div class="pp-section tw-flex-col-reverse">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Các nút massage vai</div>
+        <div class="pp-section-description">
           Bên trong khu vực massage vai XRest, có một nút massage bổ sung ở mỗi
           bên của miếng đệm vai. Nút này mô phỏng bản chất của một bàn tay
           massage trên vai của bạn.
@@ -595,16 +595,16 @@
       </div>
       <img alt="" class="!tw-w-full !tw-flex-initial md:!tw-w-2/5" />
     </div>
-    <div class="section tw-flex">
+    <div class="pp-section tw-flex">
       <img alt="" class="tw-self-end" />
-      <div class="section-content">
+      <div class="pp-section-content">
         <img
           src=""
           alt=""
           class="mb-[-1em] md:mb-[-1.5em] lg:mb-[-2em] !tw-w-12 md:!tw-w-24 lg:!tw-w-32"
         />
-        <div class="section-header">Phát hiện căng cơ</div>
-        <div class="section-description">
+        <div class="pp-section-header">Phát hiện căng cơ</div>
+        <div class="pp-section-description">
           Mỗi người có một cơ thể độc đáo với những nhu cầu khác nhau, vì vậy
           XRest tận dụng
           <strong>chương trình sức khỏe chuyên nghiệp nhận thức</strong> với
@@ -613,24 +613,24 @@
         </div>
       </div>
     </div>
-    <div class="section tw-flex-col md:tw-flex-row-reverse">
+    <div class="pp-section tw-flex-col md:tw-flex-row-reverse">
       <img alt="" class="!tw-w-full md:!tw-w-1/2" />
-      <div class="section-content">
-        <div class="section-header">Cơ chế massage 4D</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Cơ chế massage 4D</div>
+        <div class="pp-section-description">
           XRest là một chiếc ghế massage bốn chiều với 5 mức điều chỉnh tốc độ,
           7 mức độ mạnh và độ rộng. Ngoài ra, XRest còn có khả năng điều trị tại
           chỗ hoặc massage một phần vùng lưng.
         </div>
       </div>
     </div>
-    <div class="section tw-flex-col-reverse">
+    <div class="pp-section tw-flex-col-reverse">
       <img alt="" class="!tw-w-full" />
-      <div class="section-content !tw-flex-row">
-        <div class="basis-2/5 section-header">
+      <div class="pp-section-content !tw-flex-row">
+        <div class="basis-2/5 pp-section-header">
           Điều khiển bằng giọng nói thông minh
         </div>
-        <div class="basis-3/5 section-description">
+        <div class="basis-3/5 pp-section-description">
           OP-4D+ XRest có khả năng điều khiển bằng giọng nói. Các lệnh có thể
           được sử dụng <strong>thông qua Alexa</strong> theo các lệnh được xác
           định trước trong hướng dẫn sử dụng.
@@ -648,11 +648,11 @@
         </div>
       </div>
     </div>
-    <div class="section">
+    <div class="pp-section">
       <img alt="" />
-      <div class="section-content !tw-pl-0">
-        <div class="section-header">Điều khiển bằng ứng dụng</div>
-        <div class="section-description">
+      <div class="pp-section-content !tw-pl-0">
+        <div class="pp-section-header">Điều khiển bằng ứng dụng</div>
+        <div class="pp-section-description">
           Nếu bạn có iPhone hoặc Android, hãy vào App Store hoặc Google Play
           Store để tải xuống ứng dụng Osaki Premium XRest 4D để vận hành ghế
           massage với đầy đủ các tính năng của điều khiển từ xa từ điện thoại
@@ -671,35 +671,35 @@
         </div>
       </div>
     </div>
-    <div class="section tw-flex-col md:tw-flex-row-reverse">
+    <div class="pp-section tw-flex-col md:tw-flex-row-reverse">
       <img alt="" class="!tw-w-full md:!tw-w-1/2" />
-      <div class="section-content">
-        <div class="section-header">Điều khiển màn hình cảm ứng</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Điều khiển màn hình cảm ứng</div>
+        <div class="pp-section-description">
           Điều khiển từ xa OP-4D+ XRest hiện là bộ điều khiển màn hình cảm ứng
           để điều hướng và điều chỉnh cài đặt dễ dàng. Giá đỡ xoay dễ dàng cho
           phép màn hình cảm ứng được đặt ở nhiều góc độ.
         </div>
       </div>
     </div>
-    <div class="section">
+    <div class="pp-section">
       <img alt="" />
-      <div class="section-content">
-        <div class="section-header">
+      <div class="pp-section-content">
+        <div class="pp-section-header">
           46 túi khí <br />
           Massage toàn thân
         </div>
-        <div class="section-description">
+        <div class="pp-section-description">
           OP-4D+ XRest tích hợp 44 túi khí khắp ghế để cung cấp liệu pháp nén
           chuyên sâu.
         </div>
       </div>
     </div>
-    <div class="section tw-flex-col md:tw-flex-row-reverse">
+    <div class="pp-section tw-flex-col md:tw-flex-row-reverse">
       <img alt="" class="!tw-w-full md:!tw-w-1/2" />
-      <div class="section-content">
-        <div class="section-header">Gối từ tính có thể gắn</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Gối từ tính có thể gắn</div>
+        <div class="pp-section-description">
           OP-4D+ XRest bao gồm một chiếc gối từ tính, cho phép bạn gắn nó vào
           bên cạnh ghế massage trong khi bạn tận hưởng thói quen massage của
           mình.
@@ -714,11 +714,11 @@
       class="tw-mb-5 tw-flex tw-justify-between tw-gap-5 md:tw-mb-10 md:tw-gap-10"
     >
       <div
-        class="section-content tw-flex tw-flex-1 tw-flex-col tw-justify-between tw-gap-0 !tw-p-0 md:tw-text-xl lg:tw-text-2xl"
+        class="pp-section-content tw-flex tw-flex-1 tw-flex-col tw-justify-between tw-gap-0 !tw-p-0 md:tw-text-xl lg:tw-text-2xl"
         style="background-color: var(--section-bg-color)"
       >
         <div class="tw-p-4 !tw-pb-0 md:tw-p-8 lg:tw-p-10">
-          <div class="section-description">
+          <div class="pp-section-description">
             <strong>SL-Track</strong> được làm từ
             <strong>thép cắt laser</strong>. Đường ray cho phép các con lăn
             massage chạm vào toàn bộ cơ thể của bạn một cách dễ dàng. SL-Track
@@ -728,12 +728,12 @@
         <img alt="" class="tw-w-full" />
       </div>
       <div
-        class="section-content tw-flex tw-flex-1 tw-flex-col tw-justify-between !tw-p-0 md:tw-text-xl lg:tw-text-2xl"
+        class="pp-section-content tw-flex tw-flex-1 tw-flex-col tw-justify-between !tw-p-0 md:tw-text-xl lg:tw-text-2xl"
         style="background-color: var(--section-bg-color)"
       >
         <div class="tw-p-4 !tw-pb-0 md:tw-p-8 lg:tw-p-10">
           <div class="section-header2">Ion oxy âm</div>
-          <div class="section-description">
+          <div class="pp-section-description">
             XRest được trang bị liệu pháp ion hóa không khí âm tích hợp. Theo
             nghiên cứu, liệu pháp ion hóa không khí âm giúp giảm căng thẳng và
             tăng cường năng lượng.
@@ -742,14 +742,14 @@
         <img alt="" class="tw-w-full" />
       </div>
     </div>
-    <div class="section tw-flex-col-reverse">
+    <div class="pp-section tw-flex-col-reverse">
       <img alt="" class="!tw-w-full" />
-      <div class="section-content">
-        <div class="section-header tw-flex-1">
+      <div class="pp-section-content">
+        <div class="pp-section-header tw-flex-1">
           Tư thế không trọng lực <br />
           và tiết kiệm không gian
         </div>
-        <div class="section-description tw-flex-1">
+        <div class="pp-section-description tw-flex-1">
           Trải nghiệm sự nhẹ nhõm trong trạng thái không trọng lực với tư thế
           không trọng lực một giai đoạn của OP-4D XRest. Công nghệ quan trọng
           này ban đầu được phát triển bởi NASA. Với Công nghệ Tiết kiệm Không
@@ -758,11 +758,11 @@
         </div>
       </div>
     </div>
-    <div class="section tw-flex-col md:tw-flex-row-reverse">
+    <div class="pp-section tw-flex-col md:tw-flex-row-reverse">
       <img alt="" class="!tw-w-full md:!tw-w-1/2" />
-      <div class="section-content">
-        <div class="section-header">Hệ thống sưởi lưng và chân</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Hệ thống sưởi lưng và chân</div>
+        <div class="pp-section-description">
           Từ bỏ sự cứng nhắc không mong muốn với hệ thống sưởi lưng và chân của
           XRest. Các <strong>cuộn dây sưởi</strong> này làm ấm và giảm đau dọc
           theo lưng dưới và bàn chân.
@@ -914,10 +914,10 @@
       </div>
     </div>
 
-    <div class="section tw-flex-col md:tw-flex-row">
+    <div class="pp-section tw-flex-col md:tw-flex-row">
       <img alt="" class="!tw-w-full md:!tw-w-1/2" />
-      <div class="section-content">
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-description">
           XRest cung cấp <strong>massage bắp chân</strong> cho các cơ chân mệt
           mỏi do sử dụng nhiều. Massage là sự kết hợp của các con lăn nhào di
           chuyển theo chiều dọc và các chức năng massage túi khí nén các cơ bắp
@@ -925,10 +925,10 @@
         </div>
       </div>
     </div>
-    <div class="section tw-flex-col md:tw-flex-row-reverse">
+    <div class="pp-section tw-flex-col md:tw-flex-row-reverse">
       <img alt="" class="!tw-w-full md:!tw-w-1/2" />
-      <div class="section-content">
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-description">
           Con lăn chân chuyên dụng OP-4D XRest được thiết kế độc đáo để kích
           hoạt nhiều <strong>điểm châm cứu</strong> thông qua phương pháp
           <strong>gờ phản xạ học</strong> được thiết kế khoa học. Các bộ phận mở
@@ -937,10 +937,10 @@
         </div>
       </div>
     </div>
-    <div class="section tw-flex-col md:tw-flex-row">
+    <div class="pp-section tw-flex-col md:tw-flex-row">
       <img alt="" class="!tw-w-full md:!tw-w-1/2" />
-      <div class="section-content">
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-description">
           <strong>Được làm với bất kỳ người dùng nào trong tâm trí</strong>.
           XRest được thiết kế cho người dùng có chiều cao và hình dáng cơ thể
           khác nhau. <strong>Ghế tự động kéo dài chân có lò xo</strong> kéo dài
@@ -948,10 +948,10 @@
         </div>
       </div>
     </div>
-    <div class="section tw-flex-col md:tw-flex-row">
+    <div class="pp-section tw-flex-col md:tw-flex-row">
       <img alt="" class="!tw-w-full md:!tw-w-1/2" />
-      <div class="section-content">
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-description">
           Bảng điều khiển bên OP-4D XRest bao gồm các cài đặt nhanh như sưởi ấm,
           thay đổi túi khí, thay đổi massage 4D, điều chỉnh tựa lưng và tựa
           chân.
@@ -982,7 +982,7 @@
         <img src="" alt="" class="" />
       </div>
     </div>
-    <div class="section tw-flex-col !tw-items-start">
+    <div class="pp-section tw-flex-col !tw-items-start">
       <div
         class="tw-p-4 !tw-pb-0 tw-text-base md:tw-p-7 md:tw-text-lg lg:tw-p-10 lg:tw-text-xl"
       >

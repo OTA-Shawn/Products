@@ -247,7 +247,7 @@
     color: var(--section-strong-color);
   }
 
-  .sections .section {
+  .sections .pp-section {
     background-color: var(--section-bg-color);
     display: flex;
     justify-content: center;
@@ -255,25 +255,25 @@
     margin-bottom: 50px;
   }
 
-  .section > img,
-  .section-content {
+  .pp-section > img,
+  .pp-section-content {
     flex: 1 1 0%;
   }
 
-  .section-content {
+  .pp-section-content {
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 50px;
   }
 
-  .section-header {
+  .pp-section-header {
     font-size: 52px;
     line-height: 65px;
     color: var(--section-header-color);
   }
 
-  .section-description {
+  .pp-section-description {
     color: var(--section-content-color);
     font-size: 22px;
     line-height: 33px;
@@ -326,25 +326,25 @@
       max-width: 768px;
     }
 
-    .sections .section {
+    .sections .pp-section {
       margin-bottom: 35px;
     }
 
-    .section > img {
+    .pp-section > img {
       width: 50%;
     }
 
-    .section .section-content {
+    .pp-section .pp-section-content {
       gap: 22px;
       padding: 35px;
     }
 
-    .section-header {
+    .pp-section-header {
       font-size: 39px;
       line-height: 58px;
     }
 
-    .section-description {
+    .pp-section-description {
       font-size: 15px;
       line-height: 24px;
     }
@@ -374,21 +374,21 @@
       max-width: 480px;
     }
 
-    .sections .section {
+    .sections .pp-section {
       margin-bottom: 22px;
     }
 
-    .section .section-content {
+    .pp-section .pp-section-content {
       gap: 14px;
       padding: 22px;
     }
 
-    .section-header {
+    .pp-section-header {
       font-size: 26px;
       line-height: 38px;
     }
 
-    .section-description {
+    .pp-section-description {
       font-size: 10px;
       line-height: 16px;
     }
@@ -421,7 +421,7 @@
       id="youtube-link"
       class="[&>*]:tw-mb-40 [&>*]:tw-aspect-video [&>*]:tw-w-full"
     ></div>
-    <div class="section !tw-mb-40 !tw-flex-col !tw-bg-white md:!tw-mb-80">
+    <div class="pp-section !tw-mb-40 !tw-flex-col !tw-bg-white md:!tw-mb-80">
       <img src="" alt="" class="!tw-w-full" />
       <div
         class="tw-px-10 tw-pb-5 tw-pt-10 tw-text-center tw-text-xl md:tw-text-2xl lg:tw-text-3xl"
@@ -447,10 +447,10 @@
       </div>
     </div>
 
-    <div class="section tw-flex">
-      <div class="section-content">
-        <div class="section-header">Cơ chế massage 4D</div>
-        <div class="section-description">
+    <div class="pp-section tw-flex">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Cơ chế massage 4D</div>
+        <div class="pp-section-description">
           Massage 4D cho phép trải nghiệm khác với tốc độ và nhịp điệu của
           massage. Các massage có thể điều chỉnh với 8 điều chỉnh 4D, 5 điều
           chỉnh sức mạnh, 5 điều chỉnh cường độ và 5 điều chỉnh tốc độ cho các
@@ -459,14 +459,14 @@
       </div>
       <img src="" alt="" />
     </div>
-    <div class="section">
+    <div class="pp-section">
       <img src="" alt="" class="" />
-      <div class="section-content">
-        <div class="section-header">
+      <div class="pp-section-content">
+        <div class="pp-section-header">
           Massage <br />
           Bắp chân
         </div>
-        <div class="section-description">
+        <div class="pp-section-description">
           Chuyển động nhào bắp chân sẽ tăng cường lưu thông máu ở chân, giúp
           chúng đạt được mức độ thư giãn cao hơn. Ở phần trên của chân, các máy
           massage không khí sẽ xoay theo chuyển động tròn để thêm một chiều mới
@@ -474,10 +474,10 @@
         </div>
       </div>
     </div>
-    <div class="section tw-flex">
-      <div class="section-content">
-        <div class="section-header">Công nghệ quét cơ thể</div>
-        <div class="section-description">
+    <div class="pp-section tw-flex">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Công nghệ quét cơ thể</div>
+        <div class="pp-section-description">
           OS-Pro Maestro sẽ thực hiện quét cơ thể để lập bản đồ các khu vực
           chính của cổ và lưng để đảm bảo áp lực tối ưu được áp dụng trong quá
           trình massage. Công nghệ quét sẽ phát hiện chiều cao vai của bạn, có
@@ -487,26 +487,26 @@
       <img src="" alt="" />
     </div>
 
-    <div class="section tw-relative tw-flex-row-reverse">
+    <div class="pp-section tw-relative tw-flex-row-reverse">
       <img src="" alt="" />
       <div
-        class="section-content tw-absolute tw-right-0 tw-top-0 tw-items-end tw-text-right"
+        class="pp-section-content tw-absolute tw-right-0 tw-top-0 tw-items-end tw-text-right"
       >
-        <div class="section-header">Công nghệ SL-track</div>
-        <div class="section-description tw-w-1/2">
+        <div class="pp-section-header">Công nghệ SL-track</div>
+        <div class="pp-section-description tw-w-1/2">
           SL-Track được làm từ thép được chế tạo bằng laser. Đường ray cho phép
           các con lăn massage bao phủ toàn bộ cơ thể của bạn. SL-Track kéo dài
           từ cổ và vai đến gân kheo của bạn.
         </div>
       </div>
     </div>
-    <div class="section tw-flex tw-flex-col">
-      <div class="section-content">
-        <div class="section-header">
+    <div class="pp-section tw-flex tw-flex-col">
+      <div class="pp-section-content">
+        <div class="pp-section-header">
           Tư thế không trọng lực <br />
           và tiết kiệm không gian
         </div>
-        <div class="section-description">
+        <div class="pp-section-description">
           Lấy cảm hứng từ NASA, tư thế không trọng lực là tư thế hoàn hảo để thư
           giãn tối đa và giúp tăng cường cường độ của massage. Với công nghệ
           tiết kiệm không gian của Osaki, bạn có thể đặt ghế cách tường 5 inch
@@ -515,13 +515,13 @@
       </div>
       <img src="" alt="" />
     </div>
-    <div class="section tw-flex tw-flex-row-reverse">
-      <div class="section-content">
-        <div class="section-header">
+    <div class="pp-section tw-flex tw-flex-row-reverse">
+      <div class="pp-section-content">
+        <div class="pp-section-header">
           32 túi khí <br />
           Massage toàn thân
         </div>
-        <div class="section-description">
+        <div class="pp-section-description">
           Osaki OS-4D Pro Maestro cung cấp tổng cộng 32 túi khí trong ghế
           massage. Massage nén này giúp tiếp tục tăng cường lưu thông máu khắp
           cơ thể để giảm đau và căng thẳng.
@@ -529,11 +529,11 @@
       </div>
       <img src="" alt="" />
     </div>
-    <!-- <div class="section">
+    <!-- <div class="pp-section">
       <img src="" alt="" />
-      <div class="section-content">
-        <div class="section-header">Touchscreen Controller</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Touchscreen Controller</div>
+        <div class="pp-section-description">
           The remote controller is upgraded to a larger screen for user’s
           convenience to operate the massage chair. It has an easy view screen
           displaying the function the chair has activated. It also has magnetic
@@ -612,11 +612,11 @@
       </div>
     </div>
 
-    <div class="section">
+    <div class="pp-section">
       <img src="" alt="" class="" />
-      <div class="section-content">
-        <div class="section-header">Con lăn chân chuyên dụng</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Con lăn chân chuyên dụng</div>
+        <div class="pp-section-description">
           Các bộ mở rộng chân bao gồm một con lăn phản xạ quay để cung cấp một
           massage chân tuyệt vời. Các con lăn dưới chân sẽ di chuyển dọc theo
           các bên và giữa bàn chân của bạn để cung cấp trải nghiệm nhào nặn
@@ -624,22 +624,22 @@
         </div>
       </div>
     </div>
-    <div class="section">
+    <div class="pp-section">
       <img src="" alt="" class="" />
-      <div class="section-content">
-        <div class="section-header">Chân đế tự động mở rộng</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Chân đế tự động mở rộng</div>
+        <div class="pp-section-description">
           Ghế đẩu sẽ quét chân của bạn để đảm bảo chiều dài chân tối ưu cho
           chiều cao của bạn. Chân đế tự động mở rộng kéo dài lên đến 8 inch để
           tạo sự thoải mái tối đa.
         </div>
       </div>
     </div>
-    <div class="section tw-flex-row-reverse">
+    <div class="pp-section tw-flex-row-reverse">
       <img src="" alt="" class="" />
-      <div class="section-content">
-        <div class="section-header">Điều khiển từ xa</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Điều khiển từ xa</div>
+        <div class="pp-section-description">
           Có 4 nút đơn giản ở dưới cùng của điều khiển từ xa để điều chỉnh độ
           nghiêng, độ nghiêng, tự động và về nhà. Màn hình cảm ứng giúp dễ dàng
           chọn massage theo ý muốn và điều chỉnh bất kỳ cài đặt nào khác cần
@@ -647,11 +647,11 @@
         </div>
       </div>
     </div>
-    <div class="section">
+    <div class="pp-section">
       <img src="" alt="" class="" />
-      <div class="section-content">
-        <div class="section-header">Điều khiển ứng dụng dễ dàng</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Điều khiển ứng dụng dễ dàng</div>
+        <div class="pp-section-description">
           Nếu bạn có iPhone hoặc Android, hãy vào App Store hoặc Google Play
           Store để tải xuống ứng dụng Osaki Pro Maestro để điều khiển ghế
           massage với đầy đủ các tính năng của điều khiển từ xa từ điện thoại
@@ -677,7 +677,7 @@
       class="tw-mb-5 tw-flex tw-justify-between tw-gap-5 md:tw-mb-10 md:tw-gap-10"
     >
       <div
-        class="section-content tw-flex tw-flex-1 tw-flex-col tw-justify-between !tw-p-0 md:tw-text-xl lg:tw-text-2xl"
+        class="pp-section-content tw-flex tw-flex-1 tw-flex-col tw-justify-between !tw-p-0 md:tw-text-xl lg:tw-text-2xl"
         style="background-color: var(--section-bg-color)"
       >
         <div
@@ -689,7 +689,7 @@
         <img src="" alt="" class="tw-w-full" />
       </div>
       <div
-        class="section-content tw-relative tw-flex tw-flex-1 tw-flex-col-reverse tw-justify-between !tw-gap-0 !tw-p-0 md:tw-text-xl lg:tw-text-2xl"
+        class="pp-section-content tw-relative tw-flex tw-flex-1 tw-flex-col-reverse tw-justify-between !tw-gap-0 !tw-p-0 md:tw-text-xl lg:tw-text-2xl"
         style="background-color: var(--section-bg-color)"
       >
         <div

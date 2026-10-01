@@ -206,7 +206,7 @@ DISCOUNTINUED
     color: var(--section-strong-color);
   }
 
-  .sections .section {
+  .sections .pp-section {
     background-color: var(--section-bg-color);
     display: flex;
     justify-content: center;
@@ -214,32 +214,32 @@ DISCOUNTINUED
     margin-bottom: 50px;
   }
 
-  .section > img,
-  .section-content {
+  .pp-section > img,
+  .pp-section-content {
     flex: 1 1 0%;
     width: 50%;
   }
 
-  .section-content {
+  .pp-section-content {
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 50px;
   }
 
-  .section-header {
+  .pp-section-header {
     font-size: 52px;
     line-height: 65px;
     color: var(--section-header-color);
     font-weight: bold;
   }
-  .section-header2 {
+  .pp-section-header2 {
     font-size: 36px;
     line-height: 45px;
     color: var(--section-header-color);
   }
 
-  .section-description {
+  .pp-section-description {
     color: var(--section-content-color);
     font-size: 22px;
     line-height: 33px;
@@ -297,30 +297,30 @@ DISCOUNTINUED
       max-width: 768px;
     }
 
-    .sections .section {
+    .sections .pp-section {
       margin-bottom: 35px;
     }
 
-    .section > img {
+    .pp-section > img {
       width: 50%;
     }
 
-    .section .section-content {
+    .pp-section .pp-section-content {
       gap: 22px;
       padding: 35px;
     }
 
-    .section-header {
+    .pp-section-header {
       font-size: 39px;
       line-height: 58px;
     }
 
-    .section-header2 {
+    .pp-section-header2 {
       font-size: 27px;
       line-height: 40px;
     }
 
-    .section-description {
+    .pp-section-description {
       font-size: 15px;
       line-height: 24px;
     }
@@ -359,24 +359,24 @@ DISCOUNTINUED
       max-width: 480px;
     }
 
-    .sections .section {
+    .sections .pp-section {
       margin-bottom: 22px;
     }
 
-    .section .section-content {
+    .pp-section .pp-section-content {
       gap: 14px;
       padding: 22px;
     }
 
-    .section-header {
+    .pp-section-header {
       font-size: 26px;
       line-height: 38px;
     }
-    .section-header {
+    .pp-section-header {
       font-size: 24px;
       line-height: 1.1;
     }
-    .section-description {
+    .pp-section-description {
       font-size: 18px;
       line-height: 1.3;
     }
@@ -431,7 +431,7 @@ DISCOUNTINUED
   <div class="sections">
     <div id="youtube-link"
       class="[&>*]:tw-mb-40 [&>*]:tw-aspect-video [&>*]:tw-w-full"></div>
-    <div class="!flex-col !bg-white !mb-10 md:!mb-40 section">
+    <div class="!flex-col !bg-white !mb-10 md:!mb-40 pp-section">
       <img src="" alt="" class="!w-full" />
       <div class="px-10 pt-10 pb-5 text-center text-xl md:text-2xl lg:text-3xl">
         The Osaki OS-Aster has a modern design with slick line, a comfortable
@@ -444,13 +444,13 @@ DISCOUNTINUED
       </div>
     </div>
 
-    <div class="md:!flex-row-reverse !flex-col-reverse !bg-black section">
-      <div class="!w-full section-content">
-        <div class="!text-white section-header">
+    <div class="md:!flex-row-reverse !flex-col-reverse !bg-black pp-section">
+      <div class="!w-full pp-section-content">
+        <div class="!text-white pp-section-header">
           <strong class="block !text-[#0510EB]">Intelligent</strong> Body
           Scanning
         </div>
-        <div class="!text-[#808080] section-description">
+        <div class="!text-[#808080] pp-section-description">
           Sensor in the back massage module scans the curvature of user’s body
           for the accurate massager movement.
         </div>
@@ -458,10 +458,10 @@ DISCOUNTINUED
       <img src="" alt="" class="" />
     </div>
 
-    <div class="md:!flex-row !flex-col section">
-      <div class="!w-full section-content">
-        <div class="section-header">SL-Track Massage</div>
-        <div class="!text-[#808080] section-description">
+    <div class="md:!flex-row !flex-col pp-section">
+      <div class="!w-full pp-section-content">
+        <div class="pp-section-header">SL-Track Massage</div>
+        <div class="!text-[#808080] pp-section-description">
           S, L-type backrest track fits the human body curve. As the roller
           system massages the neck area, it continues through to the lower back
           and then proceeds to massage the glutes and upper hamstrings.
@@ -469,10 +469,10 @@ DISCOUNTINUED
       </div>
       <img src="" alt="" class="" />
     </div>
-    <div class="!flex-col section">
-      <div class="!w-full section-content">
-        <div class="text-center section-header">Zero Gravity</div>
-        <div class="!text-[#808080] section-description">
+    <div class="!flex-col pp-section">
+      <div class="!w-full pp-section-content">
+        <div class="text-center pp-section-header">Zero Gravity</div>
+        <div class="!text-[#808080] pp-section-description">
           Inspired by NASA technology, the Zero gravity position is the perfect
           position to enjoy a massage, aligning your back relative to your thigh
           at an optimal level of comfort. When reclined into the zero-gravity
@@ -482,12 +482,12 @@ DISCOUNTINUED
       </div>
       <img src="" alt="" class="!w-2/3" />
     </div>
-    <div class="md:flex-row !flex-col-reverse section">
-      <div class="!w-full section-content">
-        <div class="section-header">
+    <div class="md:flex-row !flex-col-reverse pp-section">
+      <div class="!w-full pp-section-content">
+        <div class="pp-section-header">
           <strong class="!text-[#0013FF]">Air</strong> Massage
         </div>
-        <div class="!text-[#808080] section-description">
+        <div class="!text-[#808080] pp-section-description">
           There are multiple airbags located throughout the massage chair to
           offer a full body massage experience. The OS-Aster offers a total of
           18 airbags in the massage chair. Airbags are located at the shoulders,
@@ -498,12 +498,12 @@ DISCOUNTINUED
       </div>
       <img src="" alt="" class="" />
     </div>
-    <div class="md:!flex-row-reverse !flex-col-reverse section">
-      <div class="!w-full section-content">
-        <div class="section-header">
+    <div class="md:!flex-row-reverse !flex-col-reverse pp-section">
+      <div class="!w-full pp-section-content">
+        <div class="pp-section-header">
           <strong class="block !text-[#E92D2D]">Lumbar</strong> Heat Therapy
         </div>
-        <div class="!text-[#808080] section-description">
+        <div class="!text-[#808080] pp-section-description">
           With Aster’s heat shawl lumbar therapy, the incorporated graphene
           effectively warm and help ease soreness in the lower back area.
         </div>
@@ -574,11 +574,11 @@ DISCOUNTINUED
       </div>
     </div>
 
-    <div class="md:flex-row !flex-col section">
+    <div class="md:flex-row !flex-col pp-section">
       <img src="" alt="" class="md:!self-start" />
-      <div class="!w-full section-content">
-        <div class="section-header">Foot Roller Massage</div>
-        <div class="section-description">
+      <div class="!w-full pp-section-content">
+        <div class="pp-section-header">Foot Roller Massage</div>
+        <div class="pp-section-description">
           OS-Aster has Two Rollers located on the bottom of the feet are
           spinning reflexology massagers which provide a soothing kneading style
           application. As the rollers spin it will stimulate acupuncture points
@@ -587,23 +587,23 @@ DISCOUNTINUED
         </div>
       </div>
     </div>
-    <div class="md:!flex-row-reverse !flex-col-reverse section">
+    <div class="md:!flex-row-reverse !flex-col-reverse pp-section">
       <img src="" alt="" class="self-end" />
-      <div class="!w-full section-content">
-        <div class="section-header">Extendable Footrest</div>
-        <div class="section-description">
+      <div class="!w-full pp-section-content">
+        <div class="pp-section-header">Extendable Footrest</div>
+        <div class="pp-section-description">
           OS-Aster has Extendable Footrest which can be extended up to 7 inches.
         </div>
       </div>
     </div>
-    <div class="md:!flex-row !flex-col section">
+    <div class="md:!flex-row !flex-col pp-section">
       <img src="" alt="" class="!w-full" />
-      <div class="!w-full section-content">
-        <div class="section-header">
+      <div class="!w-full pp-section-content">
+        <div class="pp-section-header">
           Easy to use <br />
           LCD Remote
         </div>
-        <div class="section-description">
+        <div class="pp-section-description">
           The Osaki OS-Aster remote is an easy view screen displaying the
           functions the chair has activated. On the remote it allows you to
           select the massage type, speed and location. You can also operate the

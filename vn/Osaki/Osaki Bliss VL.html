@@ -209,7 +209,7 @@
     color: var(--section-strong-color);
   }
 
-  .sections .section {
+  .sections .pp-section {
     background-color: var(--section-bg-color);
     display: flex;
     justify-content: center;
@@ -217,25 +217,25 @@
     margin-bottom: 50px;
   }
 
-  .section > img,
-  .section-content {
+  .pp-section > img,
+  .pp-section-content {
     flex: 1 1 0%;
   }
 
-  .section-content {
+  .pp-section-content {
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 50px;
   }
 
-  .section-header {
+  .pp-section-header {
     font-size: 52px;
     line-height: 65px;
     color: var(--section-header-color);
   }
 
-  .section-description {
+  .pp-section-description {
     color: var(--section-content-color);
     font-size: 22px;
     line-height: 33px;
@@ -293,25 +293,25 @@
       max-width: 768px;
     }
 
-    .sections .section {
+    .sections .pp-section {
       margin-bottom: 35px;
     }
 
-    .section > img {
+    .pp-section > img {
       width: 50%;
     }
 
-    .section .section-content {
+    .pp-section .pp-section-content {
       gap: 22px;
       padding: 35px;
     }
 
-    .section-header {
+    .pp-section-header {
       font-size: 39px;
       line-height: 58px;
     }
 
-    .section-description {
+    .pp-section-description {
       font-size: 15px;
       line-height: 24px;
     }
@@ -350,21 +350,21 @@
       max-width: 480px;
     }
 
-    .sections .section {
+    .sections .pp-section {
       margin-bottom: 22px;
     }
 
-    .section .section-content {
+    .pp-section .pp-section-content {
       gap: 14px;
       padding: 22px;
     }
 
-    .section-header {
+    .pp-section-header {
       font-size: 26px;
       line-height: 38px;
     }
 
-    .section-description {
+    .pp-section-description {
       font-size: 10px;
       line-height: 16px;
     }
@@ -407,7 +407,7 @@
       class="[&>*]:tw-mb-40 [&>*]:tw-aspect-video [&>*]:tw-w-full"
     ></div>
 
-    <div class="section !tw-mb-40 !tw-flex-col !tw-bg-white md:!tw-mb-80">
+    <div class="pp-section !tw-mb-40 !tw-flex-col !tw-bg-white md:!tw-mb-80">
       <img src="" alt="" class="!tw-w-full" />
       <div
         class="tw-px-10 tw-pb-5 tw-pt-10 tw-text-center tw-text-xl md:tw-text-2xl lg:tw-text-3xl"
@@ -433,10 +433,10 @@
       </div>
     </div>
 
-    <div class="section tw-flex tw-flex-row-reverse">
-      <div class="section-content">
-        <div class="section-header">Điều chỉnh vị trí vai</div>
-        <div class="section-description">
+    <div class="pp-section tw-flex tw-flex-row-reverse">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Điều chỉnh vị trí vai</div>
+        <div class="pp-section-description">
           Bliss cho phép các con lăn di chuyển không chỉ lên và xuống mà còn
           sang trái và phải. Công nghệ này cho phép ghế mô phỏng trải nghiệm của
           bàn tay con người trong khi cho phép người dùng điều chỉnh
@@ -446,20 +446,20 @@
       </div>
       <img src="" alt="" />
     </div>
-    <div class="section tw-flex-row-reverse">
+    <div class="pp-section tw-flex-row-reverse">
       <img src="" alt="" />
-      <div class="section-content">
-        <div class="section-header">Điều khiển từ xa tiện lợi</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Điều khiển từ xa tiện lợi</div>
+        <div class="pp-section-description">
           Bliss bao gồm một điều khiển từ xa để dễ dàng điều hướng và điều chỉnh
           cài đặt.
         </div>
       </div>
     </div>
-    <div class="section tw-flex tw-flex-row-reverse">
-      <div class="section-content">
-        <div class="section-header">Hệ thống SL-track</div>
-        <div class="section-description">
+    <div class="pp-section tw-flex tw-flex-row-reverse">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Hệ thống SL-track</div>
+        <div class="pp-section-description">
           SL-Track được làm bằng <strong>Thép Chế Tạo Bằng Laser</strong>. Đường
           ray cho phép các con lăn massage dễ dàng tiếp cận từ đầu đến vùng
           hông.
@@ -467,21 +467,21 @@
       </div>
       <img src="" alt="" />
     </div>
-    <div class="section tw-flex-row-reverse">
+    <div class="pp-section tw-flex-row-reverse">
       <img src="" alt="" />
-      <div class="section-content">
-        <div class="section-header">Massage nén khí hông</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Massage nén khí hông</div>
+        <div class="pp-section-description">
           Bliss tích hợp <strong>2 túi khí</strong> ở vùng hông để cung cấp một
           massage nén khí thư giãn. Massage này có thể được điều chỉnh ở
           <strong> hai mức độ nén khí </strong>.
         </div>
       </div>
     </div>
-    <div class="section tw-flex tw-flex-row-reverse">
-      <div class="section-content">
-        <div class="section-header">Vị trí ngả dễ dàng</div>
-        <div class="section-description">
+    <div class="pp-section tw-flex tw-flex-row-reverse">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Vị trí ngả dễ dàng</div>
+        <div class="pp-section-description">
           Ghế massage Bliss cho phép bạn ngả lưng ra khoảng
           <strong> góc 60 độ </strong>. Bằng cách xoay núm dưới ghế, bạn có thể
           điều chỉnh độ căng để đưa ghế trở lại vị trí thẳng đứng.
@@ -489,10 +489,10 @@
       </div>
       <img src="" alt="" />
     </div>
-    <div class="section tw-flex tw-flex-row-reverse">
-      <div class="section-content">
-        <div class="section-header">Liệu pháp nhiệt vùng thắt lưng</div>
-        <div class="section-description">
+    <div class="pp-section tw-flex tw-flex-row-reverse">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Liệu pháp nhiệt vùng thắt lưng</div>
+        <div class="pp-section-description">
           <strong>Cuộn dây carbon</strong> trong Bliss sẽ làm ấm hiệu quả và
           giúp giải tỏa căng thẳng ở vùng lưng dưới của bạn.
         </div>
@@ -635,39 +635,39 @@
       </div>
     </div>
 
-    <div class="section tw-flex-row-reverse">
+    <div class="pp-section tw-flex-row-reverse">
       <img src="" alt="" class="" />
-      <div class="section-content">
-        <div class="section-header">Điều chỉnh chiều cao ghế đôn</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Điều chỉnh chiều cao ghế đôn</div>
+        <div class="pp-section-description">
           Ghế đôn có thể dễ dàng nâng lên đến <strong>7 inch</strong> bằng cách
           kéo tay cầm
         </div>
       </div>
     </div>
-    <div class="section">
+    <div class="pp-section">
       <img src="" alt="" class="" />
-      <div class="section-content">
-        <div class="section-header">Xoay 360°</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Xoay 360°</div>
+        <div class="pp-section-description">
           Bliss cho phép xoay 360°, giúp dễ dàng xoay chuyển.
         </div>
       </div>
     </div>
-    <div class="section tw-flex-row-reverse">
+    <div class="pp-section tw-flex-row-reverse">
       <img src="" alt="" class="" />
-      <div class="section-content">
-        <div class="section-header">Gối đầu có thể tháo rời</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Gối đầu có thể tháo rời</div>
+        <div class="pp-section-description">
           Bliss có gối đầu có thể tháo rời, có thể lật lại để trải nghiệm
           massage cổ và vai sâu hơn.
         </div>
       </div>
     </div>
-    <div class="section tw-flex tw-flex-row-reverse">
+    <div class="pp-section tw-flex tw-flex-row-reverse">
       <img src="" alt="" class="" />
-      <div class="section-content">
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-description">
           Túi bên để điện thoại và điều khiển từ xa
         </div>
       </div>
@@ -676,7 +676,7 @@
       class="tw-mb-5 tw-grid tw-grid-cols-2 tw-justify-between tw-gap-5 md:tw-mb-10 md:tw-gap-10"
     >
       <div
-        class="section-content tw-flex tw-flex-1 tw-flex-col tw-justify-between !tw-p-0 md:tw-text-xl lg:tw-text-2xl"
+        class="pp-section-content tw-flex tw-flex-1 tw-flex-col tw-justify-between !tw-p-0 md:tw-text-xl lg:tw-text-2xl"
         style="background-color: var(--section-bg-color)"
       >
         <div
@@ -692,16 +692,16 @@
         <img src="" alt="" class="tw-w-full" />
       </div>
       <div
-        class="section-content tw-relative tw-flex tw-flex-1 tw-flex-col tw-justify-between !tw-gap-0 !tw-p-0 md:tw-text-xl lg:tw-text-2xl"
+        class="pp-section-content tw-relative tw-flex tw-flex-1 tw-flex-col tw-justify-between !tw-gap-0 !tw-p-0 md:tw-text-xl lg:tw-text-2xl"
         style="background-color: var(--section-bg-color)"
       >
         <div
-          class="section-content !tw-pb-0 max-[768px]:!tw-gap-0 max-[768px]:!tw-p-4"
+          class="pp-section-content !tw-pb-0 max-[768px]:!tw-gap-0 max-[768px]:!tw-p-4"
         >
-          <div class="section-header !tw-text-lg md:!tw-text-2xl">
+          <div class="pp-section-header !tw-text-lg md:!tw-text-2xl">
             Cổng sạc USB
           </div>
-          <div class="section-description">cho USB Type C và Type A</div>
+          <div class="pp-section-description">cho USB Type C và Type A</div>
         </div>
         <img src="" alt="" class="" />
       </div>

@@ -159,7 +159,7 @@ DISCONTINUED
     color: var(--section-strong-color);
   }
 
-  .sections .section {
+  .sections .pp-section {
     background-color: var(--section-bg-color);
     display: flex;
     justify-content: center;
@@ -167,31 +167,31 @@ DISCONTINUED
     margin-bottom: 50px;
   }
 
-  .section > img,
-  .section-content {
+  .pp-section > img,
+  .pp-section-content {
     flex: 1 1 0%;
     width: 50%;
   }
 
-  .section-content {
+  .pp-section-content {
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 50px;
   }
 
-  .section-header {
+  .pp-section-header {
     font-size: 52px;
     line-height: 65px;
     color: var(--section-header-color);
   }
-  .section-header2 {
+  .pp-section-header2 {
     font-size: 36px;
     line-height: 45px;
     color: var(--section-header-color);
   }
 
-  .section-description {
+  .pp-section-description {
     color: var(--section-content-color);
     font-size: 22px;
     line-height: 33px;
@@ -249,30 +249,30 @@ DISCONTINUED
       max-width: 768px;
     }
 
-    .sections .section {
+    .sections .pp-section {
       margin-bottom: 35px;
     }
 
-    .section > img {
+    .pp-section > img {
       width: 50%;
     }
 
-    .section .section-content {
+    .pp-section .pp-section-content {
       gap: 22px;
       padding: 35px;
     }
 
-    .section-header {
+    .pp-section-header {
       font-size: 39px;
       line-height: 58px;
     }
 
-    .section-header2 {
+    .pp-section-header2 {
       font-size: 27px;
       line-height: 40px;
     }
 
-    .section-description {
+    .pp-section-description {
       font-size: 15px;
       line-height: 24px;
     }
@@ -311,24 +311,24 @@ DISCONTINUED
       max-width: 480px;
     }
 
-    .sections .section {
+    .sections .pp-section {
       margin-bottom: 22px;
     }
 
-    .section .section-content {
+    .pp-section .pp-section-content {
       gap: 14px;
       padding: 22px;
     }
 
-    .section-header {
+    .pp-section-header {
       font-size: 26px;
       line-height: 38px;
     }
-    .section-header {
+    .pp-section-header {
       font-size: 18px;
       line-height: 26px;
     }
-    .section-description {
+    .pp-section-description {
       font-size: 10px;
       line-height: 16px;
     }
@@ -383,7 +383,7 @@ DISCONTINUED
   <div class="sections">
     <div id="youtube-link"
       class="[&>*]:tw-mb-40 [&>*]:tw-aspect-video [&>*]:tw-w-full"></div>
-    <div class="!flex-col !bg-white !mb-40 md:!mb-80 section">
+    <div class="!flex-col !bg-white !mb-40 md:!mb-80 pp-section">
       <div class="text-4xl text-center md:text-5xl lg:text-6xl">OS-4000LS</div>
       <img src="" alt="" class="!w-2/3" />
       <div class="px-10 pt-10 pb-5 text-center text-xl md:text-2xl lg:text-3xl">
@@ -408,13 +408,13 @@ DISCONTINUED
       </div>
     </div>
 
-    <div class="flex flex-row-reverse !bg-black !mb-0 !pb-10 section">
-      <div class="section-content">
-        <div class="!text-white section-header">
+    <div class="flex flex-row-reverse !bg-black !mb-0 !pb-10 pp-section">
+      <div class="pp-section-content">
+        <div class="!text-white pp-section-header">
           <strong class="!text-[#2D59F2]">Intelligent <br /> </strong> Body
           Scanning
         </div>
-        <div class="!text-[#808084] section-description">
+        <div class="!text-[#808084] pp-section-description">
           Equipped with the latest technology, the massage rollers map out the
           back’s curvature with great accuracy, translating into a more
           effective massage and hitting all the key areas. Regardless of your
@@ -424,14 +424,14 @@ DISCONTINUED
       </div>
       <img src="" alt="" />
     </div>
-    <div class="flex-row-reverse !bg-black !mb-0 !pb-10 section">
+    <div class="flex-row-reverse !bg-black !mb-0 !pb-10 pp-section">
       <img src="" alt="" />
-      <div class="section-content">
-        <div class="!text-white section-header">
+      <div class="pp-section-content">
+        <div class="!text-white pp-section-header">
           <strong class="!text-[#2D59F2]">L-Track </strong><br />
           Massage
         </div>
-        <div class="!text-[#808084] section-description">
+        <div class="!text-[#808084] pp-section-description">
           L-Track system massages from the neck, past the glutes, and down to
           the back portion of the thighs. The track in which the massage heads
           move are curved to contour the back and glutes area.
@@ -440,16 +440,16 @@ DISCONTINUED
     </div>
 
     
-    <div class="flex-col !bg-white pb-16 section">
+    <div class="flex-col !bg-white pb-16 pp-section">
       <img src="" alt="" class="mb-[-4em] md:mb-[-7em] lg:mb-[-10em] !w-4/5" />
 
       <div class="flex gap-3">
-        <div class="bg-[#EFEFEF] rounded-3xl !w-4/5 section-content">
-          <div class="section-header">
+        <div class="bg-[#EFEFEF] rounded-3xl !w-4/5 pp-section-content">
+          <div class="pp-section-header">
             <strong class="!text-[#2D59F2]">Zero Gravity </strong>
             Reclining
           </div>
-          <div class="!text-[#808084] section-description">
+          <div class="!text-[#808084] pp-section-description">
             Zero gravity is perfect for massage, aligning back and thigh for
             comfort. It maximizes massage intensity, improves spinal
             decompression, and reduces muscle tension. 2 stages of zero gravity
@@ -457,12 +457,12 @@ DISCONTINUED
             provides immediate therapeutic effects.
           </div>
         </div>
-        <div class="bg-[#EFEFEF] rounded-3xl !w-4/5 section-content">
-          <div class="section-header">
+        <div class="bg-[#EFEFEF] rounded-3xl !w-4/5 pp-section-content">
+          <div class="pp-section-header">
             <strong class="!text-[#2D59F2]">Space Saving </strong>
             Technology
           </div>
-          <div class="!text-[#808084] section-description">
+          <div class="!text-[#808084] pp-section-description">
             Titan's innovative massage chairs save space by sliding forward as
             they recline. They only require 6 inches of space from the wall when
             fully reclined, unlike typical chairs that need 3 feet.
@@ -470,40 +470,40 @@ DISCONTINUED
         </div>
       </div>
     </div>
-    <div class="section">
+    <div class="pp-section">
       <img src="" alt="" class="!flex-initial px-12" />
-      <div class="section-content">
-        <div class="section-header">
+      <div class="pp-section-content">
+        <div class="pp-section-header">
           <strong class="!text-[#2D59F2]">24 Cells</strong> <br />
           Full Body <br />
           Air Massage
         </div>
-        <div class="section-description">
+        <div class="pp-section-description">
           Osaki focuses on efficiency and reliability, reducing airbag count
           while increasing surface area. Strategically placed 24 airbags
           optimize squeezing effect on various body parts.
         </div>
       </div>
     </div>
-    <div class="flex-row-reverse section">
+    <div class="flex-row-reverse pp-section">
       <img src="" alt="" />
-      <div class="section-content">
-        <div class="section-header">Adjustable Shoulder Width</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Adjustable Shoulder Width</div>
+        <div class="pp-section-description">
           Osaki introduces adjustable outer shoulders for custom fitting. Users
           can improve outer shoulder massage strength and fitting with 3 width
           options.
         </div>
       </div>
     </div>
-    <div class="section">
+    <div class="pp-section">
       <img src="" alt="" />
-      <div class="section-content">
-        <div class="section-header">
+      <div class="pp-section-content">
+        <div class="pp-section-header">
           <strong class="!text-[#DC1d1d]">Lumbar Heat </strong><br />
           Therapy
         </div>
-        <div class="section-description">
+        <div class="pp-section-description">
           Individual heating pads on each side of the lower lumbar area
           complement the roller and airbag massage. Heat therapy increases blood
           circulation and relaxes tense muscles. Use the heating pad for a

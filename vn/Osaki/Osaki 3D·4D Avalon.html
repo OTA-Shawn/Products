@@ -368,28 +368,28 @@
   .sections strong {
     color: black;
   }
-  .sections .section {
+  .sections .pp-section {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #eaeaea;
     margin-bottom: 50px;
   }
-  .section > img,
-  .section-content {
+  .pp-section > img,
+  .pp-section-content {
     flex: 1 1 0%;
   }
-  .section .section-content {
+  .pp-section .pp-section-content {
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 50px;
   }
-  .section .section-header {
+  .pp-section .pp-section-header {
     font-size: 52px;
     line-height: 65px;
   }
-  .section .section-description {
+  .pp-section .pp-section-description {
     color: #8a8c8e;
     font-size: 22px;
     line-height: 33px;
@@ -436,21 +436,21 @@
     .sections {
       max-width: 768px;
     }
-    .sections .section {
+    .sections .pp-section {
       margin-bottom: 35px;
     }
-    .section > img {
+    .pp-section > img {
       width: 50%;
     }
-    .section .section-content {
+    .pp-section .pp-section-content {
       gap: 22px;
       padding: 35px;
     }
-    .section .section-header {
+    .pp-section .pp-section-header {
       font-size: 39px;
       line-height: 58px;
     }
-    .section .section-description {
+    .pp-section .pp-section-description {
       font-size: 15px;
       line-height: 24px;
     }
@@ -481,19 +481,19 @@
     .sections {
       max-width: 480px;
     }
-    .sections .section {
+    .sections .pp-section {
       margin-bottom: 22px;
     }
 
-    .section .section-content {
+    .pp-section .pp-section-content {
       gap: 14px;
       padding: 22px;
     }
-    .section .section-header {
+    .pp-section .pp-section-header {
       font-size: 26px;
       line-height: 38px;
     }
-    .section .section-description {
+    .pp-section .pp-section-description {
       font-size: 10px;
       line-height: 16px;
     }
@@ -527,7 +527,7 @@
       class="[&>*]:tw-mb-40 [&>*]:tw-aspect-video [&>*]:tw-w-full"
     ></div>
 
-    <div class="section !tw-mb-40 !tw-flex-col !tw-bg-white md:!tw-mb-80">
+    <div class="pp-section !tw-mb-40 !tw-flex-col !tw-bg-white md:!tw-mb-80">
       <img src="" alt="" class="!tw-w-full" />
       <div
         class="tw-px-10 tw-pb-5 tw-pt-10 tw-text-center tw-text-xl md:tw-text-2xl lg:tw-text-3xl"
@@ -561,11 +561,11 @@
       </div>
     </div>
 
-    <div class="section tw-flex-col">
-      <div class="!gap-2 lg:!gap-5 section-content">
+    <div class="pp-section tw-flex-col">
+      <div class="!gap-2 lg:!gap-5 pp-section-content">
         <img src="" alt="" class="!tw-w-24" />
-        <div class="section-header">Quét cơ thể tự động</div>
-        <div class="section-description">
+        <div class="pp-section-header">Quét cơ thể tự động</div>
+        <div class="pp-section-description">
           Sử dụng công nghệ AI, Avalon sẽ thực hiện quét cơ thể tự động để đánh
           giá dữ liệu về độ bão hòa oxy, nhịp tim, chỉ số mệt mỏi và vi tuần
           hoàn. Dựa trên kết quả, Avalon sẽ tạo ra chế độ massage tối ưu cho cơ
@@ -623,71 +623,71 @@
       <img src="" alt="" class="!tw-w-full" />
     </div>
 
-    <div class="section tw-flex">
+    <div class="pp-section tw-flex">
       <img src="" alt="" class="" />
-      <div class="section-content">
+      <div class="pp-section-content">
         <img src="" alt="" class="tw-w-1/2" />
-        <div class="section-header">Phát hiện căng cơ</div>
-        <div class="section-description">
+        <div class="pp-section-header">Phát hiện căng cơ</div>
+        <div class="pp-section-description">
           Avalon sử dụng cảm biến đau nhức để phát hiện bất kỳ căng thẳng nào ở
           vùng thân trên của bạn. Tính năng này sẽ điều chỉnh chương trình
           massage theo nhu cầu cụ thể của bạn.
         </div>
       </div>
     </div>
-    <div class="section tw-flex-row-reverse">
+    <div class="pp-section tw-flex-row-reverse">
       <img src="" alt="" />
-      <div class="section-content">
-        <div class="section-header">Cơ chế massage 4D</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Cơ chế massage 4D</div>
+        <div class="pp-section-description">
           Massage 4D mô phỏng một người mát-xa thông qua việc sử dụng công nghệ
           3D di chuyển lên xuống, sang hai bên, vào ra (cường độ), và chiều thứ
           tư đóng góp tốc độ và nhịp điệu.
         </div>
       </div>
     </div>
-    <div class="section tw-flex-col-reverse">
+    <div class="pp-section tw-flex-col-reverse">
       <img src="" alt="" class="!tw-w-full" />
-      <div class="!flex-row section-content">
-        <div class="section-header tw-flex-1">
+      <div class="!flex-row pp-section-content">
+        <div class="pp-section-header tw-flex-1">
           Điều khiển <br />Giọng nói thông minh
         </div>
-        <div class="section-description tw-flex-1">
+        <div class="pp-section-description tw-flex-1">
           Với tính năng điều khiển giọng nói của Avalon, bạn có thể dễ dàng sử
           dụng ghế mà không cần nhấc một ngón tay. Khi bạn ra lệnh, ghế sẽ phản
           ứng tương ứng.
         </div>
       </div>
     </div>
-    <div class="section tw-flex-row-reverse">
+    <div class="pp-section tw-flex-row-reverse">
       <img src="" alt="" />
-      <div class="section-content">
-        <div class="section-header">Điều khiển màn hình cảm ứng</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Điều khiển màn hình cảm ứng</div>
+        <div class="pp-section-description">
           Điều khiển từ xa của Avalon hiện là một bộ điều khiển màn hình cảm ứng
           để điều hướng và điều chỉnh cài đặt thuận tiện. Ghế massage cung cấp
           20 chế độ massage tự động và 11 kiểu massage thủ công.
         </div>
       </div>
     </div>
-    <div class="section">
+    <div class="pp-section">
       <img src="" alt="" />
-      <div class="section-content">
-        <div class="section-header">
+      <div class="pp-section-content">
+        <div class="pp-section-header">
           20 Tế bào<br />
           Massage toàn thân<br />
           Bằng khí
         </div>
-        <div class="section-description">
+        <div class="pp-section-description">
           Avalon tích hợp 20 tế bào khí khắp ghế để cung cấp liệu pháp nén hoàn
           chỉnh.
         </div>
       </div>
     </div>
-    <div class="section tw-relative">
+    <div class="pp-section tw-relative">
       <img src="" alt="" />
-      <div class="section-content tw-absolute tw-left-0 tw-top-0 tw-w-1/2">
-        <div class="section-description">
+      <div class="pp-section-content tw-absolute tw-left-0 tw-top-0 tw-w-1/2">
+        <div class="pp-section-description">
           SL-Track được làm từ
           <strong>Thép chế tạo bằng laser.</strong> Đường ray cho phép các con
           lăn massage chạm vào toàn bộ cơ thể bạn một cách dễ dàng. SL-Track kéo
@@ -696,14 +696,14 @@
       </div>
     </div>
 
-    <div class="section tw-flex-col-reverse">
+    <div class="pp-section tw-flex-col-reverse">
       <img src="" alt="" class="!tw-w-full" />
-      <div class="section-content tw-mx-10 md:tw-mx-20">
-        <div class="section-header">
+      <div class="pp-section-content tw-mx-10 md:tw-mx-20">
+        <div class="pp-section-header">
           Tư thế không trọng lực <br />
           và tiết kiệm không gian
         </div>
-        <div class="section-description">
+        <div class="pp-section-description">
           Lấy cảm hứng từ NASA, tư thế <strong>Không trọng lực</strong> là tư
           thế hoàn hảo để thư giãn tối đa và giúp tăng cường cường độ massage.
           Với công nghệ <strong>Tiết kiệm không gian</strong> của Osaki, bạn có
@@ -712,11 +712,11 @@
         </div>
       </div>
     </div>
-    <div class="section">
+    <div class="pp-section">
       <img src="" alt="" />
-      <div class="section-content">
-        <div class="section-header">Liệu pháp nhiệt cho vùng thắt lưng</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Liệu pháp nhiệt cho vùng thắt lưng</div>
+        <div class="pp-section-description">
           Với liệu pháp nhiệt cho vùng thắt lưng của Avalon,
           <strong>graphene tích hợp</strong> sẽ làm ấm và giúp giảm đau nhức ở
           vùng lưng dưới. Đặt khăn choàng lên cơ thể để nhắm vào các khu vực
@@ -838,22 +838,22 @@
         <div>Massage 4D (I, II, III, IV)</div>
       </div>
     </div>
-    <div class="section">
+    <div class="pp-section">
       <img src="" alt="" class="" />
-      <div class="section-content">
-        <div class="section-header">Nhào bắp chân sâu</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Nhào bắp chân sâu</div>
+        <div class="pp-section-description">
           Avalon cung cấp <strong>massage bắp chân sâu</strong> cho các cơ chân
           mệt mỏi. Massage bao gồm <strong>con lăn nhào bắp chân</strong> di
           chuyển theo chiều dọc và massage túi khí nén các cơ bắp chân.
         </div>
       </div>
     </div>
-    <div class="section tw-flex-row-reverse">
+    <div class="pp-section tw-flex-row-reverse">
       <img src="" alt="" class="" />
-      <div class="section-content">
-        <div class="section-header">Con lăn chân chuyên dụng</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Con lăn chân chuyên dụng</div>
+        <div class="pp-section-description">
           <strong>Con lăn chân chuyên dụng</strong> của Avalon bao gồm nhiều
           <strong>điểm châm cứu</strong> thông qua phương pháp các gờ phản xạ
           học được thiết kế khoa học. Các bộ mở rộng chân chứa
@@ -862,22 +862,22 @@
         </div>
       </div>
     </div>
-    <div class="section">
+    <div class="pp-section">
       <img src="" alt="" class="" />
-      <div class="section-content">
-        <div class="section-header">Ghế tự động mở rộng chân</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Ghế tự động mở rộng chân</div>
+        <div class="pp-section-description">
           Avalon được thiết kế cho người dùng có chiều cao và hình dáng cơ thể
           khác nhau. Ghế <strong>tự động mở rộng chân</strong> kéo dài lên đến
           6.9 inch để mang lại sự thoải mái tối đa.
         </div>
       </div>
     </div>
-    <div class="section">
+    <div class="pp-section">
       <img src="" alt="" class="" />
-      <div class="section-content">
-        <div class="section-header">Bảng điều khiển phím tắt tiện lợi</div>
-        <div class="section-description">
+      <div class="pp-section-content">
+        <div class="pp-section-header">Bảng điều khiển phím tắt tiện lợi</div>
+        <div class="pp-section-description">
           Dễ dàng quản lý các chức năng chính của ghế trong tầm tay bạn bằng
           <strong>bảng điều khiển phím tắt tiện lợi.</strong> Bảng điều khiển
           phím tắt của Avalon bao gồm điều chỉnh ghế và chân, không trọng lực,
