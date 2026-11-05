@@ -388,11 +388,6 @@
   margin-bottom: auto;
 }
 
-.tw-mx-12 {
-  margin-left: 48px;
-  margin-right: 48px;
-}
-
 .\!tw-mb-0 {
   margin-bottom: 0px !important;
 }
@@ -949,8 +944,8 @@
   width: 100%;
 }
 
-.tw-w-44 {
-  width: 176px;
+.tw-w-72 {
+  width: 288px;
 }
 
 .tw-min-w-0 {
@@ -961,8 +956,24 @@
   min-width: 96px;
 }
 
+.tw-min-w-80 {
+  min-width: 320px;
+}
+
 .tw-min-w-full {
   min-width: 100%;
+}
+
+.tw-min-w-72 {
+  min-width: 288px;
+}
+
+.tw-min-w-60 {
+  min-width: 240px;
+}
+
+.tw-min-w-64 {
+  min-width: 256px;
 }
 
 .tw-max-w-full {
@@ -1202,10 +1213,6 @@
 
 .\!tw-justify-start {
   justify-content: flex-start !important;
-}
-
-.tw-justify-start {
-  justify-content: flex-start;
 }
 
 .\!tw-justify-end {
@@ -1461,10 +1468,6 @@
 
 .tw-scroll-smooth {
   scroll-behavior: smooth;
-}
-
-.tw-text-balance {
-  text-wrap: balance;
 }
 
 .tw-rounded-2xl {
@@ -1871,10 +1874,6 @@
   padding: 8px;
 }
 
-.tw-p-20 {
-  padding: 80px;
-}
-
 .tw-p-3 {
   padding: 12px;
 }
@@ -1918,6 +1917,11 @@
 .tw-px-0 {
   padding-left: 0px;
   padding-right: 0px;
+}
+
+.tw-px-1 {
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 .tw-px-10 {
@@ -2003,11 +2007,6 @@
 .tw-py-6 {
   padding-top: 24px;
   padding-bottom: 24px;
-}
-
-.tw-px-1 {
-  padding-left: 4px;
-  padding-right: 4px;
 }
 
 .\!tw-pb-0 {
@@ -3612,6 +3611,10 @@ img{
     margin: 80px;
   }
 
+  .lg\:tw-m-auto {
+    margin: auto;
+  }
+
   .lg\:tw-mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -3831,6 +3834,10 @@ img{
     height: 0px;
   }
 
+  .lg\:tw-h-16 {
+    height: 64px;
+  }
+
   .lg\:tw-h-20 {
     height: 80px;
   }
@@ -3867,8 +3874,16 @@ img{
     height: auto;
   }
 
-  .lg\:tw-h-16 {
-    height: 64px;
+  .lg\:tw-h-10 {
+    height: 40px;
+  }
+
+  .lg\:tw-h-12 {
+    height: 48px;
+  }
+
+  .lg\:tw-h-14 {
+    height: 56px;
   }
 
   .lg\:\!tw-w-1\/12 {
@@ -3921,6 +3936,10 @@ img{
 
   .lg\:tw-w-1\/5 {
     width: 20%;
+  }
+
+  .lg\:tw-w-10 {
+    width: 40px;
   }
 
   .lg\:tw-w-11\/12 {
@@ -4025,10 +4044,6 @@ img{
 
   .lg\:tw-w-full {
     width: 100%;
-  }
-
-  .lg\:tw-w-10 {
-    width: 40px;
   }
 
   .lg\:tw-basis-1\/2 {
